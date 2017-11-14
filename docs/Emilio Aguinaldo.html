@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="be30a99c-1a13-4550-9b7e-7be944f47855"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"ef25263d-73d5-46f3-bc68-b85961e9014b":{"roots":{"references":[{"attributes":{"dimension":1,"plot":{"id":"0785ece9-f10c-4833-9807-519aa84cd05f","subtype":"Figure","type":"Plot"},"ticker":{"id":"da268bb1-e9e4-4408-840c-9d3eeed5dfa8","type":"BasicTicker"}},"id":"ce33f7c5-2065-46d0-9ce3-e8651c9c8a88","type":"Grid"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2adcd65c-a547-42ea-9230-6eeb507e19ca","type":"Line"},{"attributes":{"callback":null,"factors":["Battle of Binakayan-Dalahican","Battle of Manila (1898)","Battle of Manila (1899)"]},"id":"159cf04a-410e-48fc-8ff9-7f4a02a58cc6","type":"FactorRange"},{"attributes":{},"id":"b5e82ba5-f855-405e-be61-f879c775b73f","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"b0c786eb-15cc-4d7b-806d-6e4aa7a65f71","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Emilio Aguinaldo (2 - 0 - 1)"},"id":"90a875cd-3dff-4379-a687-787849c44850","type":"Title"},{"attributes":{"data_source":{"id":"a61aeeed-a571-4499-b716-b7fd53380562","type":"ColumnDataSource"},"glyph":{"id":"c25d93b4-f827-4dec-b476-93392e738515","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"460e67e0-d315-4291-8067-c781e55e8478","type":"VBar"},"selection_glyph":null,"view":{"id":"3e93ef0c-34bd-4e43-8f11-7a9d9647c6e3","type":"CDSView"}},"id":"9c3b53ee-ddbc-4506-8ef3-89dff409bac1","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"756c3f91-256b-4147-9108-095916a46378","type":"CategoricalColorMapper"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"375cdf03-89e4-4e76-8960-1d3250a8d430","type":"Line"},{"attributes":{"formatter":{"id":"15b0c2a7-9883-44cb-af96-ae815ead8045","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"0785ece9-f10c-4833-9807-519aa84cd05f","subtype":"Figure","type":"Plot"},"ticker":{"id":"808079d5-9474-4436-8a7a-dd7fc895dede","type":"CategoricalTicker"}},"id":"3244a8d6-e1ac-4386-a8f6-227ec5575d41","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"0785ece9-f10c-4833-9807-519aa84cd05f","subtype":"Figure","type":"Plot"},"ticker":{"id":"808079d5-9474-4436-8a7a-dd7fc895dede","type":"CategoricalTicker"}},"id":"ddd6f4bb-196b-401b-9089-61f49bd9ef6f","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"15ca64e6-df87-4dc5-b45a-4e3c505eda5a","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"756c3f91-256b-4147-9108-095916a46378","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"756c3f91-256b-4147-9108-095916a46378","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c25d93b4-f827-4dec-b476-93392e738515","type":"VBar"},{"attributes":{"formatter":{"id":"b5e82ba5-f855-405e-be61-f879c775b73f","type":"BasicTickFormatter"},"plot":{"id":"0785ece9-f10c-4833-9807-519aa84cd05f","subtype":"Figure","type":"Plot"},"ticker":{"id":"da268bb1-e9e4-4408-840c-9d3eeed5dfa8","type":"BasicTicker"}},"id":"b25a867f-9eb3-4667-94b6-6dc919f22ce7","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Binakayan-Dalahican","Battle of Manila (1898)","Battle of Manila (1899)"],"cumulative":{"__ndarray__":"rnCFvK0y2z/acNfru93rP692A79ZaNg/","dtype":"float64","shape":[3]},"general":["Emilio Aguinaldo","Emilio Aguinaldo","Emilio Aguinaldo"],"outcome":["V","V","D"],"value":{"__ndarray__":"rnCFvK0y2z8GcSkbyojcPwVrqxgeU9+/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAACgnUAAAAAAAKidQAAAAAAArJ1A","dtype":"float64","shape":[3]}}},"id":"a61aeeed-a571-4499-b716-b7fd53380562","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"a61aeeed-a571-4499-b716-b7fd53380562","type":"ColumnDataSource"},"glyph":{"id":"375cdf03-89e4-4e76-8960-1d3250a8d430","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2adcd65c-a547-42ea-9230-6eeb507e19ca","type":"Line"},"selection_glyph":null,"view":{"id":"e8c9268f-659a-4a07-a642-b5f87a5490ed","type":"CDSView"}},"id":"274803c7-b8fc-4fe4-aab4-e589209499b9","type":"GlyphRenderer"},{"attributes":{},"id":"15b0c2a7-9883-44cb-af96-ae815ead8045","type":"CategoricalTickFormatter"},{"attributes":{},"id":"da268bb1-e9e4-4408-840c-9d3eeed5dfa8","type":"BasicTicker"},{"attributes":{},"id":"57b9dbcc-c343-407d-b7b5-84a54e9c1ede","type":"CategoricalScale"},{"attributes":{},"id":"808079d5-9474-4436-8a7a-dd7fc895dede","type":"CategoricalTicker"},{"attributes":{"source":{"id":"a61aeeed-a571-4499-b716-b7fd53380562","type":"ColumnDataSource"}},"id":"3e93ef0c-34bd-4e43-8f11-7a9d9647c6e3","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"460e67e0-d315-4291-8067-c781e55e8478","type":"VBar"},{"attributes":{"below":[{"id":"3244a8d6-e1ac-4386-a8f6-227ec5575d41","type":"CategoricalAxis"}],"left":[{"id":"b25a867f-9eb3-4667-94b6-6dc919f22ce7","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"3244a8d6-e1ac-4386-a8f6-227ec5575d41","type":"CategoricalAxis"},{"id":"ddd6f4bb-196b-401b-9089-61f49bd9ef6f","type":"Grid"},{"id":"b25a867f-9eb3-4667-94b6-6dc919f22ce7","type":"LinearAxis"},{"id":"ce33f7c5-2065-46d0-9ce3-e8651c9c8a88","type":"Grid"},{"id":"274803c7-b8fc-4fe4-aab4-e589209499b9","type":"GlyphRenderer"},{"id":"9c3b53ee-ddbc-4506-8ef3-89dff409bac1","type":"GlyphRenderer"}],"title":{"id":"90a875cd-3dff-4379-a687-787849c44850","type":"Title"},"toolbar":{"id":"80647e62-2ff7-468d-a2e2-3594569b8e47","type":"Toolbar"},"x_range":{"id":"159cf04a-410e-48fc-8ff9-7f4a02a58cc6","type":"FactorRange"},"x_scale":{"id":"57b9dbcc-c343-407d-b7b5-84a54e9c1ede","type":"CategoricalScale"},"y_range":{"id":"b0c786eb-15cc-4d7b-806d-6e4aa7a65f71","type":"DataRange1d"},"y_scale":{"id":"42523b64-f308-4e8d-a5c5-b044f3922053","type":"LinearScale"}},"id":"0785ece9-f10c-4833-9807-519aa84cd05f","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"42523b64-f308-4e8d-a5c5-b044f3922053","type":"LinearScale"},{"attributes":{"source":{"id":"a61aeeed-a571-4499-b716-b7fd53380562","type":"ColumnDataSource"}},"id":"e8c9268f-659a-4a07-a642-b5f87a5490ed","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"15ca64e6-df87-4dc5-b45a-4e3c505eda5a","type":"HoverTool"}]},"id":"80647e62-2ff7-468d-a2e2-3594569b8e47","type":"Toolbar"}],"root_ids":["0785ece9-f10c-4833-9807-519aa84cd05f"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"ef25263d-73d5-46f3-bc68-b85961e9014b","elementid":"be30a99c-1a13-4550-9b7e-7be944f47855","modelid":"0785ece9-f10c-4833-9807-519aa84cd05f"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

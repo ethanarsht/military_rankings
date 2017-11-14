@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="0b2089ca-a4de-4a5b-8c8a-396a71c920c2"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"8eb25541-3dab-4c79-9661-2d7e2f773c96":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"66d5b3f9-2d6e-4604-92e8-9dabb2048685","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"b0b60119-10d0-425f-b261-a374174829b0","type":"CategoricalColorMapper"},{"attributes":{},"id":"7e39612a-9358-45a8-99c8-d4175783ebbc","type":"CategoricalTicker"},{"attributes":{},"id":"0a386c8a-e585-4d0a-8cd4-b9594d4e7d17","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"eeae9dff-cb8c-477e-bffd-96fed21e4b94","type":"HoverTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"eeae9dff-cb8c-477e-bffd-96fed21e4b94","type":"HoverTool"}]},"id":"a172be7b-1164-4963-9f44-f0b17f754879","type":"Toolbar"},{"attributes":{"plot":{"id":"50950542-7e2a-4ff2-b5c0-a3fd90ccc7a6","subtype":"Figure","type":"Plot"},"ticker":{"id":"7e39612a-9358-45a8-99c8-d4175783ebbc","type":"CategoricalTicker"}},"id":"ee81b9a5-ba0c-4124-9af8-54735232bb72","type":"Grid"},{"attributes":{},"id":"b79c4682-9a36-43f9-b5e2-990ea70701c7","type":"CategoricalScale"},{"attributes":{},"id":"6fd6ceb4-54d3-4989-948a-99d342fbc277","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"1dead03f-eac6-45b0-996b-28698daad9ff","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"50950542-7e2a-4ff2-b5c0-a3fd90ccc7a6","subtype":"Figure","type":"Plot"},"ticker":{"id":"7e39612a-9358-45a8-99c8-d4175783ebbc","type":"CategoricalTicker"}},"id":"70ccf5dc-bce0-44f1-9705-3468fdb728f4","type":"CategoricalAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Sinking of CSS Alabama"],"cumulative":{"__ndarray__":"gDuvqk8M4L8=","dtype":"float64","shape":[1]},"general":["Raphael Semmes"],"outcome":["D"],"value":{"__ndarray__":"gDuvqk8M4L8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAgnUA=","dtype":"float64","shape":[1]}}},"id":"8a86b164-76fe-48ee-815c-763cf3947b32","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6afb771d-10f1-44cf-ad09-120f030d1ec5","type":"VBar"},{"attributes":{},"id":"f10e1443-846e-4f45-abc8-be07dca17ecf","type":"LinearScale"},{"attributes":{"source":{"id":"8a86b164-76fe-48ee-815c-763cf3947b32","type":"ColumnDataSource"}},"id":"de724fc4-11b2-4c2e-ac2f-69c27d75198f","type":"CDSView"},{"attributes":{"plot":null,"text":"Raphael Semmes (0 - 0 - 1)"},"id":"f5ec3771-9563-4228-8b70-131ae6d83f98","type":"Title"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"b0b60119-10d0-425f-b261-a374174829b0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"b0b60119-10d0-425f-b261-a374174829b0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"11f6e304-eb26-4e4d-9f8f-8b0bd5e646e7","type":"VBar"},{"attributes":{"callback":null,"factors":["Sinking of CSS Alabama"]},"id":"c2decabb-54f8-4005-a02f-dd54862c7872","type":"FactorRange"},{"attributes":{"dimension":1,"plot":{"id":"50950542-7e2a-4ff2-b5c0-a3fd90ccc7a6","subtype":"Figure","type":"Plot"},"ticker":{"id":"0a386c8a-e585-4d0a-8cd4-b9594d4e7d17","type":"BasicTicker"}},"id":"9ffc575c-aacb-46ad-8030-fbf93073167e","type":"Grid"},{"attributes":{"formatter":{"id":"6fd6ceb4-54d3-4989-948a-99d342fbc277","type":"BasicTickFormatter"},"plot":{"id":"50950542-7e2a-4ff2-b5c0-a3fd90ccc7a6","subtype":"Figure","type":"Plot"},"ticker":{"id":"0a386c8a-e585-4d0a-8cd4-b9594d4e7d17","type":"BasicTicker"}},"id":"0b50c9a8-0eb1-4e7e-b585-62e0c8ab2cf0","type":"LinearAxis"},{"attributes":{"callback":null},"id":"d47e43db-2c5e-4499-832c-4eae7d26dcaa","type":"DataRange1d"},{"attributes":{"data_source":{"id":"8a86b164-76fe-48ee-815c-763cf3947b32","type":"ColumnDataSource"},"glyph":{"id":"81990256-50d1-4b49-9be2-3ac3636c4d35","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"66d5b3f9-2d6e-4604-92e8-9dabb2048685","type":"Line"},"selection_glyph":null,"view":{"id":"de724fc4-11b2-4c2e-ac2f-69c27d75198f","type":"CDSView"}},"id":"e1c067cd-2055-40eb-9d92-39d0db462003","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"8a86b164-76fe-48ee-815c-763cf3947b32","type":"ColumnDataSource"},"glyph":{"id":"11f6e304-eb26-4e4d-9f8f-8b0bd5e646e7","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6afb771d-10f1-44cf-ad09-120f030d1ec5","type":"VBar"},"selection_glyph":null,"view":{"id":"2379a621-1b27-4847-8982-53ccccf6759a","type":"CDSView"}},"id":"f6c84c63-9af6-4984-94ef-c88c63f7e9bc","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"70ccf5dc-bce0-44f1-9705-3468fdb728f4","type":"CategoricalAxis"}],"left":[{"id":"0b50c9a8-0eb1-4e7e-b585-62e0c8ab2cf0","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"70ccf5dc-bce0-44f1-9705-3468fdb728f4","type":"CategoricalAxis"},{"id":"ee81b9a5-ba0c-4124-9af8-54735232bb72","type":"Grid"},{"id":"0b50c9a8-0eb1-4e7e-b585-62e0c8ab2cf0","type":"LinearAxis"},{"id":"9ffc575c-aacb-46ad-8030-fbf93073167e","type":"Grid"},{"id":"e1c067cd-2055-40eb-9d92-39d0db462003","type":"GlyphRenderer"},{"id":"f6c84c63-9af6-4984-94ef-c88c63f7e9bc","type":"GlyphRenderer"}],"title":{"id":"f5ec3771-9563-4228-8b70-131ae6d83f98","type":"Title"},"toolbar":{"id":"a172be7b-1164-4963-9f44-f0b17f754879","type":"Toolbar"},"x_range":{"id":"c2decabb-54f8-4005-a02f-dd54862c7872","type":"FactorRange"},"x_scale":{"id":"b79c4682-9a36-43f9-b5e2-990ea70701c7","type":"CategoricalScale"},"y_range":{"id":"d47e43db-2c5e-4499-832c-4eae7d26dcaa","type":"DataRange1d"},"y_scale":{"id":"f10e1443-846e-4f45-abc8-be07dca17ecf","type":"LinearScale"}},"id":"50950542-7e2a-4ff2-b5c0-a3fd90ccc7a6","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1dead03f-eac6-45b0-996b-28698daad9ff","type":"CategoricalTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"81990256-50d1-4b49-9be2-3ac3636c4d35","type":"Line"},{"attributes":{"source":{"id":"8a86b164-76fe-48ee-815c-763cf3947b32","type":"ColumnDataSource"}},"id":"2379a621-1b27-4847-8982-53ccccf6759a","type":"CDSView"}],"root_ids":["50950542-7e2a-4ff2-b5c0-a3fd90ccc7a6"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"8eb25541-3dab-4c79-9661-2d7e2f773c96","elementid":"0b2089ca-a4de-4a5b-8c8a-396a71c920c2","modelid":"50950542-7e2a-4ff2-b5c0-a3fd90ccc7a6"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

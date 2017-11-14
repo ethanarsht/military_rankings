@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="685e192f-1cab-4400-afaa-36617bd38f0c"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"1622be24-8da9-4c35-a34b-693f430ab208":{"roots":{"references":[{"attributes":{"source":{"id":"b9a6134d-903c-4f39-b29a-850d750a7b4b","type":"ColumnDataSource"}},"id":"eae6e3c9-41d5-49e6-a5c9-39c4a7498543","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Beersheba (1917)","First Battle of Inonu","Second Battle of Inonu","Battle of Dumlupinar"],"cumulative":{"__ndarray__":"smt0Neyy2r/kIpBR7f/BP3JePzEgi+U/6DqySr278j8=","dtype":"float64","shape":[4]},"general":["\u0130smet \u0130n\u00f6n\u00fc","\u0130smet \u0130n\u00f6n\u00fc","\u0130smet \u0130n\u00f6n\u00fc","\u0130smet \u0130n\u00f6n\u00fc"],"outcome":["D","V","V","V"],"value":{"__ndarray__":"smt0Neyy2r+SPh5vcdnhP7lV29wkC+E/vi5KyLTY3z8=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAAD0nUAAAAAAAASeQAAAAAAABJ5AAAAAAAAInkA=","dtype":"float64","shape":[4]}}},"id":"b9a6134d-903c-4f39-b29a-850d750a7b4b","type":"ColumnDataSource"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f81dd850-89ea-481b-92d1-82931a7f9866","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"355349de-2463-40df-aec2-6352650fe14a","type":"CategoricalColorMapper"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e293c64d-ad56-4995-89ed-0bb2a75c60f0","type":"HoverTool"}]},"id":"1f812efd-6855-4df3-a8c2-42885de0dfcf","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"355349de-2463-40df-aec2-6352650fe14a","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"355349de-2463-40df-aec2-6352650fe14a","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c2add81b-aa02-43c6-84d7-d4a72e30db31","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"e293c64d-ad56-4995-89ed-0bb2a75c60f0","type":"HoverTool"},{"attributes":{"data_source":{"id":"b9a6134d-903c-4f39-b29a-850d750a7b4b","type":"ColumnDataSource"},"glyph":{"id":"f81dd850-89ea-481b-92d1-82931a7f9866","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"940c4e74-965c-4bc4-9586-e97b15abd546","type":"Line"},"selection_glyph":null,"view":{"id":"7e613413-4b54-457b-8641-96fef1f22d63","type":"CDSView"}},"id":"b75d826c-41d4-41e8-b93e-2e02181b64ff","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"f9c3bc91-df92-4892-ac54-1619940455a3","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"4ae41caa-2ff9-4c31-a6d1-b5a3a15a825e","subtype":"Figure","type":"Plot"},"ticker":{"id":"fb4222c3-1c46-4f86-bafb-4f0bb305a569","type":"CategoricalTicker"}},"id":"b4188dbc-e973-4b3c-9a34-83fb96e45baf","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"4ae41caa-2ff9-4c31-a6d1-b5a3a15a825e","subtype":"Figure","type":"Plot"},"ticker":{"id":"fb4222c3-1c46-4f86-bafb-4f0bb305a569","type":"CategoricalTicker"}},"id":"1f68f569-9f3c-4021-a3fe-f748d38140b5","type":"Grid"},{"attributes":{},"id":"dd20fd6a-8438-41b6-a637-56f0cd35c0b8","type":"LinearScale"},{"attributes":{},"id":"5f99c386-78d2-425b-822e-56b2b6bd1658","type":"BasicTicker"},{"attributes":{"below":[{"id":"b4188dbc-e973-4b3c-9a34-83fb96e45baf","type":"CategoricalAxis"}],"left":[{"id":"b2d62772-2318-4f38-90d4-a2b2a2309de0","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"b4188dbc-e973-4b3c-9a34-83fb96e45baf","type":"CategoricalAxis"},{"id":"1f68f569-9f3c-4021-a3fe-f748d38140b5","type":"Grid"},{"id":"b2d62772-2318-4f38-90d4-a2b2a2309de0","type":"LinearAxis"},{"id":"9271f6f4-4082-4410-8564-3ed0841d1cf3","type":"Grid"},{"id":"b75d826c-41d4-41e8-b93e-2e02181b64ff","type":"GlyphRenderer"},{"id":"9de53ca5-edd0-46f8-aa5f-e64f07c92bbd","type":"GlyphRenderer"}],"title":{"id":"fb5b6281-022f-4c54-8444-f1ae63dcc8c1","type":"Title"},"toolbar":{"id":"1f812efd-6855-4df3-a8c2-42885de0dfcf","type":"Toolbar"},"x_range":{"id":"9f3b4744-c208-4600-b9d7-c15528dbe366","type":"FactorRange"},"x_scale":{"id":"f4a6cba2-b8cc-4e1b-a65d-bc5f296dfab8","type":"CategoricalScale"},"y_range":{"id":"40e68360-0b1b-4f23-b0a3-6f7080405ef9","type":"DataRange1d"},"y_scale":{"id":"dd20fd6a-8438-41b6-a637-56f0cd35c0b8","type":"LinearScale"}},"id":"4ae41caa-2ff9-4c31-a6d1-b5a3a15a825e","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":1,"plot":{"id":"4ae41caa-2ff9-4c31-a6d1-b5a3a15a825e","subtype":"Figure","type":"Plot"},"ticker":{"id":"5f99c386-78d2-425b-822e-56b2b6bd1658","type":"BasicTicker"}},"id":"9271f6f4-4082-4410-8564-3ed0841d1cf3","type":"Grid"},{"attributes":{},"id":"f4a6cba2-b8cc-4e1b-a65d-bc5f296dfab8","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"49560e77-9a8a-41ea-8ed2-645f2ec0a628","type":"VBar"},{"attributes":{},"id":"9a34d52a-77f3-4fcd-aedf-253ff05a9a0f","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"9a34d52a-77f3-4fcd-aedf-253ff05a9a0f","type":"BasicTickFormatter"},"plot":{"id":"4ae41caa-2ff9-4c31-a6d1-b5a3a15a825e","subtype":"Figure","type":"Plot"},"ticker":{"id":"5f99c386-78d2-425b-822e-56b2b6bd1658","type":"BasicTicker"}},"id":"b2d62772-2318-4f38-90d4-a2b2a2309de0","type":"LinearAxis"},{"attributes":{"source":{"id":"b9a6134d-903c-4f39-b29a-850d750a7b4b","type":"ColumnDataSource"}},"id":"7e613413-4b54-457b-8641-96fef1f22d63","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Beersheba (1917)","First Battle of Inonu","Second Battle of Inonu","Battle of Dumlupinar"]},"id":"9f3b4744-c208-4600-b9d7-c15528dbe366","type":"FactorRange"},{"attributes":{"callback":null},"id":"40e68360-0b1b-4f23-b0a3-6f7080405ef9","type":"DataRange1d"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"940c4e74-965c-4bc4-9586-e97b15abd546","type":"Line"},{"attributes":{},"id":"fb4222c3-1c46-4f86-bafb-4f0bb305a569","type":"CategoricalTicker"},{"attributes":{"plot":null,"text":"\u0130smet \u0130n\u00f6n\u00fc (3 - 0 - 1)"},"id":"fb5b6281-022f-4c54-8444-f1ae63dcc8c1","type":"Title"},{"attributes":{},"id":"f9c3bc91-df92-4892-ac54-1619940455a3","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"b9a6134d-903c-4f39-b29a-850d750a7b4b","type":"ColumnDataSource"},"glyph":{"id":"c2add81b-aa02-43c6-84d7-d4a72e30db31","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"49560e77-9a8a-41ea-8ed2-645f2ec0a628","type":"VBar"},"selection_glyph":null,"view":{"id":"eae6e3c9-41d5-49e6-a5c9-39c4a7498543","type":"CDSView"}},"id":"9de53ca5-edd0-46f8-aa5f-e64f07c92bbd","type":"GlyphRenderer"}],"root_ids":["4ae41caa-2ff9-4c31-a6d1-b5a3a15a825e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"1622be24-8da9-4c35-a34b-693f430ab208","elementid":"685e192f-1cab-4400-afaa-36617bd38f0c","modelid":"4ae41caa-2ff9-4c31-a6d1-b5a3a15a825e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

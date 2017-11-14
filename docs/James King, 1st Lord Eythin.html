@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="20aec32e-1ffa-4049-b986-60b264951b9e"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"2983466d-6e87-4ef0-adfc-d287f5e54410":{"roots":{"references":[{"attributes":{"dimension":1,"plot":{"id":"62ccc9c3-747f-4ce4-9459-804af126470e","subtype":"Figure","type":"Plot"},"ticker":{"id":"82143dff-0f03-4d01-a5c4-e2b41792bbc2","type":"BasicTicker"}},"id":"45940b2d-9d14-4a7e-8ddf-0813eb54b601","type":"Grid"},{"attributes":{},"id":"be034cb0-2c70-435f-8b17-a40954388b4d","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"21573bcc-9710-4523-b15a-26938d78fc7b","type":"ColumnDataSource"}},"id":"b04058ff-edd3-41e3-91c9-75cc33dca287","type":"CDSView"},{"attributes":{"below":[{"id":"19dc79bd-4aea-444b-add2-71df6aabee2e","type":"CategoricalAxis"}],"left":[{"id":"89a41cc8-5625-4bbc-b7ff-e2d8b7c197dd","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"19dc79bd-4aea-444b-add2-71df6aabee2e","type":"CategoricalAxis"},{"id":"b96d0f29-0307-49c2-9587-c43e89379561","type":"Grid"},{"id":"89a41cc8-5625-4bbc-b7ff-e2d8b7c197dd","type":"LinearAxis"},{"id":"45940b2d-9d14-4a7e-8ddf-0813eb54b601","type":"Grid"},{"id":"659db864-a826-406c-a739-7197bbeae069","type":"GlyphRenderer"},{"id":"6e5d3ad3-b8e4-4f0a-9ed1-ad8f5f4f4cdb","type":"GlyphRenderer"}],"title":{"id":"e81bb2bd-3aaf-4df2-ace6-fb330ad19e0f","type":"Title"},"toolbar":{"id":"3d08f563-044e-4dac-a827-35eef4c3759f","type":"Toolbar"},"x_range":{"id":"96fa0279-af9f-413a-99d9-afa84ce1def8","type":"FactorRange"},"x_scale":{"id":"a9f06305-4370-4b33-b763-e030889c21f3","type":"CategoricalScale"},"y_range":{"id":"d3b1c1d1-fa52-4e4c-836f-cbd3c0870432","type":"DataRange1d"},"y_scale":{"id":"d2644f38-4696-4722-979b-618607590f3a","type":"LinearScale"}},"id":"62ccc9c3-747f-4ce4-9459-804af126470e","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"069c3194-5c93-4862-a596-699670669d10","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"b66bf9fb-b0c7-4e24-bce5-bd0162f441c0","type":"CategoricalColorMapper"},{"attributes":{"plot":null,"text":"James King, 1st Lord Eythin (1 - 0 - 1)"},"id":"e81bb2bd-3aaf-4df2-ace6-fb330ad19e0f","type":"Title"},{"attributes":{"callback":null},"id":"d3b1c1d1-fa52-4e4c-836f-cbd3c0870432","type":"DataRange1d"},{"attributes":{"callback":null,"factors":["Battle of Wittstock","Battle of Marston Moor"]},"id":"96fa0279-af9f-413a-99d9-afa84ce1def8","type":"FactorRange"},{"attributes":{"plot":{"id":"62ccc9c3-747f-4ce4-9459-804af126470e","subtype":"Figure","type":"Plot"},"ticker":{"id":"e5dcfc5f-7735-4815-a206-af1264f98d1e","type":"CategoricalTicker"}},"id":"b96d0f29-0307-49c2-9587-c43e89379561","type":"Grid"},{"attributes":{},"id":"e5dcfc5f-7735-4815-a206-af1264f98d1e","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"b66bf9fb-b0c7-4e24-bce5-bd0162f441c0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"b66bf9fb-b0c7-4e24-bce5-bd0162f441c0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f1f16b29-4089-4410-b6da-bb6cd7a89521","type":"VBar"},{"attributes":{},"id":"a9f06305-4370-4b33-b763-e030889c21f3","type":"CategoricalScale"},{"attributes":{},"id":"82143dff-0f03-4d01-a5c4-e2b41792bbc2","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"4b6818f5-d42b-4812-b340-195fa4874707","type":"VBar"},{"attributes":{"data_source":{"id":"21573bcc-9710-4523-b15a-26938d78fc7b","type":"ColumnDataSource"},"glyph":{"id":"4f2f5cce-5803-4543-bc23-aa66250cca7f","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7bf860e6-1c92-4e1d-81ee-622fa1c7dae2","type":"Line"},"selection_glyph":null,"view":{"id":"b04058ff-edd3-41e3-91c9-75cc33dca287","type":"CDSView"}},"id":"659db864-a826-406c-a739-7197bbeae069","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"be034cb0-2c70-435f-8b17-a40954388b4d","type":"BasicTickFormatter"},"plot":{"id":"62ccc9c3-747f-4ce4-9459-804af126470e","subtype":"Figure","type":"Plot"},"ticker":{"id":"82143dff-0f03-4d01-a5c4-e2b41792bbc2","type":"BasicTicker"}},"id":"89a41cc8-5625-4bbc-b7ff-e2d8b7c197dd","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Wittstock","Battle of Marston Moor"],"cumulative":{"__ndarray__":"SVSU1fEY4D+gqtDGI9uZPw==","dtype":"float64","shape":[2]},"general":["James King, 1st Lord Eythin","James King, 1st Lord Eythin"],"outcome":["V","D"],"value":{"__ndarray__":"SVSU1fEY4D/onbtuMZTevw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAACQmUAAAAAAALCZQA==","dtype":"float64","shape":[2]}}},"id":"21573bcc-9710-4523-b15a-26938d78fc7b","type":"ColumnDataSource"},{"attributes":{"source":{"id":"21573bcc-9710-4523-b15a-26938d78fc7b","type":"ColumnDataSource"}},"id":"7aa124b9-e6f7-43b8-aff6-f25ac9c16afc","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7bf860e6-1c92-4e1d-81ee-622fa1c7dae2","type":"Line"},{"attributes":{"data_source":{"id":"21573bcc-9710-4523-b15a-26938d78fc7b","type":"ColumnDataSource"},"glyph":{"id":"f1f16b29-4089-4410-b6da-bb6cd7a89521","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4b6818f5-d42b-4812-b340-195fa4874707","type":"VBar"},"selection_glyph":null,"view":{"id":"7aa124b9-e6f7-43b8-aff6-f25ac9c16afc","type":"CDSView"}},"id":"6e5d3ad3-b8e4-4f0a-9ed1-ad8f5f4f4cdb","type":"GlyphRenderer"},{"attributes":{},"id":"a459c285-4430-46f3-a8a8-48f7042ea666","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"069c3194-5c93-4862-a596-699670669d10","type":"HoverTool"}]},"id":"3d08f563-044e-4dac-a827-35eef4c3759f","type":"Toolbar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4f2f5cce-5803-4543-bc23-aa66250cca7f","type":"Line"},{"attributes":{"formatter":{"id":"a459c285-4430-46f3-a8a8-48f7042ea666","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"62ccc9c3-747f-4ce4-9459-804af126470e","subtype":"Figure","type":"Plot"},"ticker":{"id":"e5dcfc5f-7735-4815-a206-af1264f98d1e","type":"CategoricalTicker"}},"id":"19dc79bd-4aea-444b-add2-71df6aabee2e","type":"CategoricalAxis"},{"attributes":{},"id":"d2644f38-4696-4722-979b-618607590f3a","type":"LinearScale"}],"root_ids":["62ccc9c3-747f-4ce4-9459-804af126470e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"2983466d-6e87-4ef0-adfc-d287f5e54410","elementid":"20aec32e-1ffa-4049-b986-60b264951b9e","modelid":"62ccc9c3-747f-4ce4-9459-804af126470e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

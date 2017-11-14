@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="8e024b42-8309-4fb9-b9cd-a2711f9845ef"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"df992fc1-bb14-4179-8036-c4eb5708a099":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"168a30fe-7c9e-439c-90f8-47259c48d13f","type":"HoverTool"}]},"id":"e5d6f8fd-dec6-490c-87aa-a67b11d4233d","type":"Toolbar"},{"attributes":{},"id":"049e3143-4015-4821-8421-e3ef580579fc","type":"CategoricalTickFormatter"},{"attributes":{},"id":"945a3990-f302-411a-bc55-92a8c5a738d9","type":"CategoricalTicker"},{"attributes":{"plot":{"id":"c1cac04c-fdbc-41a8-b8e1-79ca2923f428","subtype":"Figure","type":"Plot"},"ticker":{"id":"945a3990-f302-411a-bc55-92a8c5a738d9","type":"CategoricalTicker"}},"id":"b87705db-cec5-44f2-89bd-ca0217dcfc88","type":"Grid"},{"attributes":{"data_source":{"id":"a9aad282-1061-4fe8-b1fd-3d4d8127c676","type":"ColumnDataSource"},"glyph":{"id":"a3a2777f-e1a5-42c8-8707-ed0d677357d4","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9e6d5c17-72ff-4764-be1a-2d14cd21f024","type":"VBar"},"selection_glyph":null,"view":{"id":"c8854b4d-2b3b-43c0-be49-6bb15ce8408d","type":"CDSView"}},"id":"9f08aff8-7596-4496-b7f7-58be1048472e","type":"GlyphRenderer"},{"attributes":{},"id":"03608e04-cc68-420f-8aff-37d40c5e4859","type":"LinearScale"},{"attributes":{"callback":null},"id":"ce45e132-38cf-4d60-a3ff-7489c7cc8e70","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Franz von Hipper (0 - 0 - 3)"},"id":"4319f245-ed6f-4d2e-8dff-cc73146f2687","type":"Title"},{"attributes":{"data_source":{"id":"a9aad282-1061-4fe8-b1fd-3d4d8127c676","type":"ColumnDataSource"},"glyph":{"id":"44fed85a-17f3-4eb1-816f-f77cdd99c826","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"46a1a49c-f2c3-4ea5-b7d1-fbacb91181ea","type":"Line"},"selection_glyph":null,"view":{"id":"8ed3bda9-07e8-475e-8849-c22494841a38","type":"CDSView"}},"id":"9abd8412-84de-411e-87a2-1fc5b5778d55","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4ade6d01-ebb7-49da-b230-9874be72bc5c","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"a9aad282-1061-4fe8-b1fd-3d4d8127c676","type":"ColumnDataSource"}},"id":"8ed3bda9-07e8-475e-8849-c22494841a38","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Heligoland (1914)","Battle of Dogger Bank (1915)","Battle of Jutland"]},"id":"661fe263-db69-4901-8c99-ea0852ca7986","type":"FactorRange"},{"attributes":{"dimension":1,"plot":{"id":"c1cac04c-fdbc-41a8-b8e1-79ca2923f428","subtype":"Figure","type":"Plot"},"ticker":{"id":"5f00224b-3a8f-4ef1-82fa-04df9ee8fd5d","type":"BasicTicker"}},"id":"438403d0-f4fc-4c50-adf3-a81caa621219","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4ade6d01-ebb7-49da-b230-9874be72bc5c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4ade6d01-ebb7-49da-b230-9874be72bc5c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a3a2777f-e1a5-42c8-8707-ed0d677357d4","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9e6d5c17-72ff-4764-be1a-2d14cd21f024","type":"VBar"},{"attributes":{"below":[{"id":"f33e80e4-c360-4a1d-9802-27b5cbf5a83e","type":"CategoricalAxis"}],"left":[{"id":"1230d3f2-754a-4f77-9b90-80f7b4f9b039","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"f33e80e4-c360-4a1d-9802-27b5cbf5a83e","type":"CategoricalAxis"},{"id":"b87705db-cec5-44f2-89bd-ca0217dcfc88","type":"Grid"},{"id":"1230d3f2-754a-4f77-9b90-80f7b4f9b039","type":"LinearAxis"},{"id":"438403d0-f4fc-4c50-adf3-a81caa621219","type":"Grid"},{"id":"9abd8412-84de-411e-87a2-1fc5b5778d55","type":"GlyphRenderer"},{"id":"9f08aff8-7596-4496-b7f7-58be1048472e","type":"GlyphRenderer"}],"title":{"id":"4319f245-ed6f-4d2e-8dff-cc73146f2687","type":"Title"},"toolbar":{"id":"e5d6f8fd-dec6-490c-87aa-a67b11d4233d","type":"Toolbar"},"x_range":{"id":"661fe263-db69-4901-8c99-ea0852ca7986","type":"FactorRange"},"x_scale":{"id":"04d08b4b-3549-42f7-ab75-0798be5306cc","type":"CategoricalScale"},"y_range":{"id":"ce45e132-38cf-4d60-a3ff-7489c7cc8e70","type":"DataRange1d"},"y_scale":{"id":"03608e04-cc68-420f-8aff-37d40c5e4859","type":"LinearScale"}},"id":"c1cac04c-fdbc-41a8-b8e1-79ca2923f428","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"66d30428-70be-4ea4-b1fc-3bb8b548c6aa","type":"BasicTickFormatter"},"plot":{"id":"c1cac04c-fdbc-41a8-b8e1-79ca2923f428","subtype":"Figure","type":"Plot"},"ticker":{"id":"5f00224b-3a8f-4ef1-82fa-04df9ee8fd5d","type":"BasicTicker"}},"id":"1230d3f2-754a-4f77-9b90-80f7b4f9b039","type":"LinearAxis"},{"attributes":{"formatter":{"id":"049e3143-4015-4821-8421-e3ef580579fc","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"c1cac04c-fdbc-41a8-b8e1-79ca2923f428","subtype":"Figure","type":"Plot"},"ticker":{"id":"945a3990-f302-411a-bc55-92a8c5a738d9","type":"CategoricalTicker"}},"id":"f33e80e4-c360-4a1d-9802-27b5cbf5a83e","type":"CategoricalAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"44fed85a-17f3-4eb1-816f-f77cdd99c826","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Heligoland (1914)","Battle of Dogger Bank (1915)","Battle of Jutland"],"cumulative":{"__ndarray__":"lYhonWBi3r/aK6kbkpXtv5fy39f6Vva/","dtype":"float64","shape":[3]},"general":["Franz von Hipper","Franz von Hipper","Franz von Hipper"],"outcome":["D","D","D"],"value":{"__ndarray__":"lYhonWBi3r8fz+mZw8jcv6hyLSjHMN6/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAADonUAAAAAAAOydQAAAAAAA8J1A","dtype":"float64","shape":[3]}}},"id":"a9aad282-1061-4fe8-b1fd-3d4d8127c676","type":"ColumnDataSource"},{"attributes":{"source":{"id":"a9aad282-1061-4fe8-b1fd-3d4d8127c676","type":"ColumnDataSource"}},"id":"c8854b4d-2b3b-43c0-be49-6bb15ce8408d","type":"CDSView"},{"attributes":{},"id":"5f00224b-3a8f-4ef1-82fa-04df9ee8fd5d","type":"BasicTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"46a1a49c-f2c3-4ea5-b7d1-fbacb91181ea","type":"Line"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"168a30fe-7c9e-439c-90f8-47259c48d13f","type":"HoverTool"},{"attributes":{},"id":"04d08b4b-3549-42f7-ab75-0798be5306cc","type":"CategoricalScale"},{"attributes":{},"id":"66d30428-70be-4ea4-b1fc-3bb8b548c6aa","type":"BasicTickFormatter"}],"root_ids":["c1cac04c-fdbc-41a8-b8e1-79ca2923f428"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"df992fc1-bb14-4179-8036-c4eb5708a099","elementid":"8e024b42-8309-4fb9-b9cd-a2711f9845ef","modelid":"c1cac04c-fdbc-41a8-b8e1-79ca2923f428"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

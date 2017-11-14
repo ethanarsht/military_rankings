@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="4e5ef879-4811-4a8c-a505-35be45396166"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"474e9125-ef6a-4d8e-ba3a-3e4ad1ad3920":{"roots":{"references":[{"attributes":{},"id":"6e72b746-c1f5-4bac-b361-b6dbbe24d069","type":"BasicTicker"},{"attributes":{},"id":"d0f66772-013a-43df-b59a-213b29f6c96d","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e9686e94-f930-49e0-8f3b-99c8de6b269b","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f7ab38d4-dbc6-4876-8923-f1cf5eb9689e","type":"CategoricalColorMapper"},{"attributes":{},"id":"56436bcb-6e96-4a12-b803-3dc6bda6c026","type":"CategoricalTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3527f20c-204a-4d1b-8981-ac2fd8d9eddd","type":"Line"},{"attributes":{},"id":"55b7adf1-a22d-47e7-924e-564928e3a759","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"579ad58a-b213-40a2-81ff-82d9535c75cd","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f7ab38d4-dbc6-4876-8923-f1cf5eb9689e","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f7ab38d4-dbc6-4876-8923-f1cf5eb9689e","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"212eed27-49e6-4dad-a817-fe34a43e70a1","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Bitonto"]},"id":"c93373b0-ce35-4339-ba09-fdc7f3d084e2","type":"FactorRange"},{"attributes":{"plot":null,"text":"Jos\u00e9 Carrillo de Albornoz, 1st Duke of Montemar (1 - 0 - 0)"},"id":"13e6e07a-e2f5-47e9-a1ef-5b7aea0bd590","type":"Title"},{"attributes":{"plot":{"id":"d0b5f59f-7faa-4b5c-bb24-95684799fcc8","subtype":"Figure","type":"Plot"},"ticker":{"id":"56436bcb-6e96-4a12-b803-3dc6bda6c026","type":"CategoricalTicker"}},"id":"71599e8a-fa88-4496-976f-2b0b558ae2ed","type":"Grid"},{"attributes":{"data_source":{"id":"85d38b0e-8fb5-42e4-aa53-efb9fe069e9e","type":"ColumnDataSource"},"glyph":{"id":"3527f20c-204a-4d1b-8981-ac2fd8d9eddd","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1e08b743-f346-4717-9a6f-416b980a7753","type":"Line"},"selection_glyph":null,"view":{"id":"da3b3f07-5efa-47c3-93ee-a3fac438988b","type":"CDSView"}},"id":"a2f9878c-1c7c-496b-a5a9-790d2ee81961","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"e7dca62b-4e6d-48d8-ac9c-2a1e062fe90a","type":"DataRange1d"},{"attributes":{"below":[{"id":"ab7ea24e-84a7-46eb-ac7a-7e2e71fa1eab","type":"CategoricalAxis"}],"left":[{"id":"4f2a7f7e-c92a-4dd8-968f-67f8c05f59ef","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"ab7ea24e-84a7-46eb-ac7a-7e2e71fa1eab","type":"CategoricalAxis"},{"id":"71599e8a-fa88-4496-976f-2b0b558ae2ed","type":"Grid"},{"id":"4f2a7f7e-c92a-4dd8-968f-67f8c05f59ef","type":"LinearAxis"},{"id":"87f478cc-33b9-4688-b7f4-978bfb946f2e","type":"Grid"},{"id":"a2f9878c-1c7c-496b-a5a9-790d2ee81961","type":"GlyphRenderer"},{"id":"22da9302-2085-4663-b419-252f94e251dd","type":"GlyphRenderer"}],"title":{"id":"13e6e07a-e2f5-47e9-a1ef-5b7aea0bd590","type":"Title"},"toolbar":{"id":"ba7ef5d6-ade6-4b62-b3ac-69ab0188d855","type":"Toolbar"},"x_range":{"id":"c93373b0-ce35-4339-ba09-fdc7f3d084e2","type":"FactorRange"},"x_scale":{"id":"d0f66772-013a-43df-b59a-213b29f6c96d","type":"CategoricalScale"},"y_range":{"id":"e7dca62b-4e6d-48d8-ac9c-2a1e062fe90a","type":"DataRange1d"},"y_scale":{"id":"f0710f42-4b58-4e45-b0b6-a4eb97a2546c","type":"LinearScale"}},"id":"d0b5f59f-7faa-4b5c-bb24-95684799fcc8","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"df3644e6-e05f-45b2-a950-ef6e3282c75a","type":"BasicTickFormatter"},"plot":{"id":"d0b5f59f-7faa-4b5c-bb24-95684799fcc8","subtype":"Figure","type":"Plot"},"ticker":{"id":"6e72b746-c1f5-4bac-b361-b6dbbe24d069","type":"BasicTicker"}},"id":"4f2a7f7e-c92a-4dd8-968f-67f8c05f59ef","type":"LinearAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1e08b743-f346-4717-9a6f-416b980a7753","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"579ad58a-b213-40a2-81ff-82d9535c75cd","type":"HoverTool"}]},"id":"ba7ef5d6-ade6-4b62-b3ac-69ab0188d855","type":"Toolbar"},{"attributes":{},"id":"f0710f42-4b58-4e45-b0b6-a4eb97a2546c","type":"LinearScale"},{"attributes":{"dimension":1,"plot":{"id":"d0b5f59f-7faa-4b5c-bb24-95684799fcc8","subtype":"Figure","type":"Plot"},"ticker":{"id":"6e72b746-c1f5-4bac-b361-b6dbbe24d069","type":"BasicTicker"}},"id":"87f478cc-33b9-4688-b7f4-978bfb946f2e","type":"Grid"},{"attributes":{"formatter":{"id":"55b7adf1-a22d-47e7-924e-564928e3a759","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"d0b5f59f-7faa-4b5c-bb24-95684799fcc8","subtype":"Figure","type":"Plot"},"ticker":{"id":"56436bcb-6e96-4a12-b803-3dc6bda6c026","type":"CategoricalTicker"}},"id":"ab7ea24e-84a7-46eb-ac7a-7e2e71fa1eab","type":"CategoricalAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Bitonto"],"cumulative":{"__ndarray__":"UP/J5AUe3j8=","dtype":"float64","shape":[1]},"general":["Jos\u00e9 Carrillo de Albornoz, 1st Duke of Montemar"],"outcome":["V"],"value":{"__ndarray__":"UP/J5AUe3j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAYm0A=","dtype":"float64","shape":[1]}}},"id":"85d38b0e-8fb5-42e4-aa53-efb9fe069e9e","type":"ColumnDataSource"},{"attributes":{"source":{"id":"85d38b0e-8fb5-42e4-aa53-efb9fe069e9e","type":"ColumnDataSource"}},"id":"165d8d59-96a2-46e6-94ec-8df8e2578e24","type":"CDSView"},{"attributes":{},"id":"df3644e6-e05f-45b2-a950-ef6e3282c75a","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"85d38b0e-8fb5-42e4-aa53-efb9fe069e9e","type":"ColumnDataSource"},"glyph":{"id":"212eed27-49e6-4dad-a817-fe34a43e70a1","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e9686e94-f930-49e0-8f3b-99c8de6b269b","type":"VBar"},"selection_glyph":null,"view":{"id":"165d8d59-96a2-46e6-94ec-8df8e2578e24","type":"CDSView"}},"id":"22da9302-2085-4663-b419-252f94e251dd","type":"GlyphRenderer"},{"attributes":{"source":{"id":"85d38b0e-8fb5-42e4-aa53-efb9fe069e9e","type":"ColumnDataSource"}},"id":"da3b3f07-5efa-47c3-93ee-a3fac438988b","type":"CDSView"}],"root_ids":["d0b5f59f-7faa-4b5c-bb24-95684799fcc8"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"474e9125-ef6a-4d8e-ba3a-3e4ad1ad3920","elementid":"4e5ef879-4811-4a8c-a505-35be45396166","modelid":"d0b5f59f-7faa-4b5c-bb24-95684799fcc8"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="44f7e93b-415a-4486-9236-b8e998fa27b9"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"76c52fb7-3fb6-46ed-bcbf-69507bbd2333":{"roots":{"references":[{"attributes":{"source":{"id":"c076d655-f1ec-4a88-90d6-9e4e7a320470","type":"ColumnDataSource"}},"id":"20fd9188-97e7-40c7-9464-ddd62a7c7507","type":"CDSView"},{"attributes":{"callback":null},"id":"337d7d7e-42d0-4f5d-9438-40e16de85cb3","type":"DataRange1d"},{"attributes":{},"id":"d5238611-6d65-485e-a654-9175ddc5e36f","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"46f53801-40cc-47b9-9df9-53c9eba9d0f6","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"46f53801-40cc-47b9-9df9-53c9eba9d0f6","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7c9d3d31-ccc1-4b88-ab9e-d3d99eb9d9bf","type":"VBar"},{"attributes":{},"id":"b2f5e628-8cc8-435a-9997-54122993a8d9","type":"LinearScale"},{"attributes":{"formatter":{"id":"292bc242-1ace-467b-b60f-5f4fae56c9da","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"36915966-81ee-4dc0-9152-c1c220d038fe","subtype":"Figure","type":"Plot"},"ticker":{"id":"b574d381-1a2e-49e5-8f68-726575840911","type":"CategoricalTicker"}},"id":"43e8e597-73d7-4ecb-bdb8-217238dafe66","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"3339b68a-566d-48a7-b366-95062c424c7c","type":"HoverTool"}]},"id":"8bdf487b-375a-4788-8587-1d5d68a2e3a7","type":"Toolbar"},{"attributes":{"data_source":{"id":"c076d655-f1ec-4a88-90d6-9e4e7a320470","type":"ColumnDataSource"},"glyph":{"id":"e143cb43-b3ed-4136-a71c-7676b472d1c1","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a48f00e3-074b-4d22-a276-74584916835e","type":"Line"},"selection_glyph":null,"view":{"id":"8d4cdaea-c369-488f-a551-6591cbb2af42","type":"CDSView"}},"id":"8c001386-dc4b-4567-af67-86a9849d4771","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of Torroella"]},"id":"135cca64-9b23-4356-8ed9-76d91466f022","type":"FactorRange"},{"attributes":{},"id":"292bc242-1ace-467b-b60f-5f4fae56c9da","type":"CategoricalTickFormatter"},{"attributes":{},"id":"b574d381-1a2e-49e5-8f68-726575840911","type":"CategoricalTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a48f00e3-074b-4d22-a276-74584916835e","type":"Line"},{"attributes":{},"id":"4e29d38d-36c3-4e54-8199-49fc17a9ca34","type":"CategoricalScale"},{"attributes":{"below":[{"id":"43e8e597-73d7-4ecb-bdb8-217238dafe66","type":"CategoricalAxis"}],"left":[{"id":"b27fe7f3-16fa-4334-b36e-874bc377b7c3","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"43e8e597-73d7-4ecb-bdb8-217238dafe66","type":"CategoricalAxis"},{"id":"44f06e84-6f1a-457e-8828-6a1ab5e44993","type":"Grid"},{"id":"b27fe7f3-16fa-4334-b36e-874bc377b7c3","type":"LinearAxis"},{"id":"4400ac76-4b10-453f-99b5-60af1a9fe448","type":"Grid"},{"id":"8c001386-dc4b-4567-af67-86a9849d4771","type":"GlyphRenderer"},{"id":"fb968017-bdb8-44eb-9449-970176ccee29","type":"GlyphRenderer"}],"title":{"id":"bd10087b-c6c2-4d34-a5f7-eaa035956b24","type":"Title"},"toolbar":{"id":"8bdf487b-375a-4788-8587-1d5d68a2e3a7","type":"Toolbar"},"x_range":{"id":"135cca64-9b23-4356-8ed9-76d91466f022","type":"FactorRange"},"x_scale":{"id":"4e29d38d-36c3-4e54-8199-49fc17a9ca34","type":"CategoricalScale"},"y_range":{"id":"337d7d7e-42d0-4f5d-9438-40e16de85cb3","type":"DataRange1d"},"y_scale":{"id":"b2f5e628-8cc8-435a-9997-54122993a8d9","type":"LinearScale"}},"id":"36915966-81ee-4dc0-9152-c1c220d038fe","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"c076d655-f1ec-4a88-90d6-9e4e7a320470","type":"ColumnDataSource"}},"id":"8d4cdaea-c369-488f-a551-6591cbb2af42","type":"CDSView"},{"attributes":{"formatter":{"id":"32e3668d-4bc9-4443-a235-88d63ad34012","type":"BasicTickFormatter"},"plot":{"id":"36915966-81ee-4dc0-9152-c1c220d038fe","subtype":"Figure","type":"Plot"},"ticker":{"id":"d5238611-6d65-485e-a654-9175ddc5e36f","type":"BasicTicker"}},"id":"b27fe7f3-16fa-4334-b36e-874bc377b7c3","type":"LinearAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"46f53801-40cc-47b9-9df9-53c9eba9d0f6","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Torroella"],"cumulative":{"__ndarray__":"smQ54f5/378=","dtype":"float64","shape":[1]},"general":["Juan Manuel Fern\u00e1ndez Pacheco, 8th Duke of Escalona"],"outcome":["D"],"value":{"__ndarray__":"smQ54f5/378=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAB4mkA=","dtype":"float64","shape":[1]}}},"id":"c076d655-f1ec-4a88-90d6-9e4e7a320470","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"c076d655-f1ec-4a88-90d6-9e4e7a320470","type":"ColumnDataSource"},"glyph":{"id":"7c9d3d31-ccc1-4b88-ab9e-d3d99eb9d9bf","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"df272a13-1ef8-463e-83de-b8dbc1b552e3","type":"VBar"},"selection_glyph":null,"view":{"id":"20fd9188-97e7-40c7-9464-ddd62a7c7507","type":"CDSView"}},"id":"fb968017-bdb8-44eb-9449-970176ccee29","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e143cb43-b3ed-4136-a71c-7676b472d1c1","type":"Line"},{"attributes":{},"id":"32e3668d-4bc9-4443-a235-88d63ad34012","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"3339b68a-566d-48a7-b366-95062c424c7c","type":"HoverTool"},{"attributes":{"plot":{"id":"36915966-81ee-4dc0-9152-c1c220d038fe","subtype":"Figure","type":"Plot"},"ticker":{"id":"b574d381-1a2e-49e5-8f68-726575840911","type":"CategoricalTicker"}},"id":"44f06e84-6f1a-457e-8828-6a1ab5e44993","type":"Grid"},{"attributes":{"plot":null,"text":"Juan Manuel Fern\u00e1ndez Pacheco, 8th Duke of Escalona (0 - 0 - 1)"},"id":"bd10087b-c6c2-4d34-a5f7-eaa035956b24","type":"Title"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"df272a13-1ef8-463e-83de-b8dbc1b552e3","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"36915966-81ee-4dc0-9152-c1c220d038fe","subtype":"Figure","type":"Plot"},"ticker":{"id":"d5238611-6d65-485e-a654-9175ddc5e36f","type":"BasicTicker"}},"id":"4400ac76-4b10-453f-99b5-60af1a9fe448","type":"Grid"}],"root_ids":["36915966-81ee-4dc0-9152-c1c220d038fe"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"76c52fb7-3fb6-46ed-bcbf-69507bbd2333","elementid":"44f7e93b-415a-4486-9236-b8e998fa27b9","modelid":"36915966-81ee-4dc0-9152-c1c220d038fe"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="7de36409-9373-46a2-bd0b-eab461b78023"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"fd2e6925-3231-4425-80ee-51ad40faff8b":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"19d054d8-6ba6-4e59-88e5-af4aab1a0f7d","type":"HoverTool"}]},"id":"3953e7b7-133a-4ddc-9713-b31975ed0ab5","type":"Toolbar"},{"attributes":{},"id":"86462ffb-747e-44f8-ac7d-90c97f3dc876","type":"CategoricalTicker"},{"attributes":{"callback":null},"id":"3fbc6bd1-680c-4429-9bb4-8439d3e7cea0","type":"DataRange1d"},{"attributes":{},"id":"f27dd600-2631-48e3-a36b-f03ee606d994","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"19d054d8-6ba6-4e59-88e5-af4aab1a0f7d","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"25d7c892-e045-462a-aaad-8817772899ad","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"25d7c892-e045-462a-aaad-8817772899ad","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"285a4a8e-2195-4328-b8e0-73e06c3875cb","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"24b4b386-370e-4883-86cd-df904437114d","subtype":"Figure","type":"Plot"},"ticker":{"id":"63869a5a-238f-4022-bbbe-b425a39471b9","type":"BasicTicker"}},"id":"de4a5a9e-3b46-4ec1-ad36-41959ef1daf8","type":"Grid"},{"attributes":{"data_source":{"id":"52511f97-0041-4e91-9165-7816add57e2a","type":"ColumnDataSource"},"glyph":{"id":"930c7d8a-6113-4157-b750-ffb2410ea941","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"85cefb2e-f7bf-41cd-8e14-23701a4447e7","type":"Line"},"selection_glyph":null,"view":{"id":"bc4c2605-6fa1-422f-a8cd-73b9071f27cf","type":"CDSView"}},"id":"174a89d2-98e7-4107-ab76-5f8d8d10d85e","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"135c0547-f0d8-46a0-b5f2-752a5ca99a3c","type":"BasicTickFormatter"},"plot":{"id":"24b4b386-370e-4883-86cd-df904437114d","subtype":"Figure","type":"Plot"},"ticker":{"id":"63869a5a-238f-4022-bbbe-b425a39471b9","type":"BasicTicker"}},"id":"55d4328e-326f-463a-977b-098afac4eba0","type":"LinearAxis"},{"attributes":{"formatter":{"id":"f27dd600-2631-48e3-a36b-f03ee606d994","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"24b4b386-370e-4883-86cd-df904437114d","subtype":"Figure","type":"Plot"},"ticker":{"id":"86462ffb-747e-44f8-ac7d-90c97f3dc876","type":"CategoricalTicker"}},"id":"592f61ca-928c-4096-ba1f-8f5d4b5587be","type":"CategoricalAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"930c7d8a-6113-4157-b750-ffb2410ea941","type":"Line"},{"attributes":{},"id":"63869a5a-238f-4022-bbbe-b425a39471b9","type":"BasicTicker"},{"attributes":{"data_source":{"id":"52511f97-0041-4e91-9165-7816add57e2a","type":"ColumnDataSource"},"glyph":{"id":"285a4a8e-2195-4328-b8e0-73e06c3875cb","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6ac65a4a-ce8c-4335-89ed-31f42b825764","type":"VBar"},"selection_glyph":null,"view":{"id":"9a115396-e3f0-4455-a4de-c1ae51bb7d6e","type":"CDSView"}},"id":"eb5f4926-eb01-4ec0-95a7-0c7f72fe9c32","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Chickasaw Bayou","Battle of Ezra Church","Battle of Tupelo"],"cumulative":{"__ndarray__":"ABsofGEy4T8AQf0VY52TP2o47y7Yydq/","dtype":"float64","shape":[3]},"general":["Stephen D. Lee","Stephen D. Lee","Stephen D. Lee"],"outcome":["V","D","D"],"value":{"__ndarray__":"ABsofGEy4T/4MHhjdpXgv3oMT2CuA9y/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAAYnUAAAAAAACCdQAAAAAAAIJ1A","dtype":"float64","shape":[3]}}},"id":"52511f97-0041-4e91-9165-7816add57e2a","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"592f61ca-928c-4096-ba1f-8f5d4b5587be","type":"CategoricalAxis"}],"left":[{"id":"55d4328e-326f-463a-977b-098afac4eba0","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"592f61ca-928c-4096-ba1f-8f5d4b5587be","type":"CategoricalAxis"},{"id":"45b176f2-222c-490c-a971-16daf54e308a","type":"Grid"},{"id":"55d4328e-326f-463a-977b-098afac4eba0","type":"LinearAxis"},{"id":"de4a5a9e-3b46-4ec1-ad36-41959ef1daf8","type":"Grid"},{"id":"174a89d2-98e7-4107-ab76-5f8d8d10d85e","type":"GlyphRenderer"},{"id":"eb5f4926-eb01-4ec0-95a7-0c7f72fe9c32","type":"GlyphRenderer"}],"title":{"id":"0db52765-2765-4883-86dd-02e1c6187d4a","type":"Title"},"toolbar":{"id":"3953e7b7-133a-4ddc-9713-b31975ed0ab5","type":"Toolbar"},"x_range":{"id":"5e502fc1-0429-471d-bc7b-8ca814d0162f","type":"FactorRange"},"x_scale":{"id":"4dfaee98-f08e-4380-b599-ebfb516ad8c9","type":"CategoricalScale"},"y_range":{"id":"3fbc6bd1-680c-4429-9bb4-8439d3e7cea0","type":"DataRange1d"},"y_scale":{"id":"8889cb9d-2d0c-4bf4-a520-3775d834fdbd","type":"LinearScale"}},"id":"24b4b386-370e-4883-86cd-df904437114d","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Chickasaw Bayou","Battle of Ezra Church","Battle of Tupelo"]},"id":"5e502fc1-0429-471d-bc7b-8ca814d0162f","type":"FactorRange"},{"attributes":{"plot":null,"text":"Stephen D. Lee (1 - 0 - 2)"},"id":"0db52765-2765-4883-86dd-02e1c6187d4a","type":"Title"},{"attributes":{"source":{"id":"52511f97-0041-4e91-9165-7816add57e2a","type":"ColumnDataSource"}},"id":"bc4c2605-6fa1-422f-a8cd-73b9071f27cf","type":"CDSView"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"25d7c892-e045-462a-aaad-8817772899ad","type":"CategoricalColorMapper"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"85cefb2e-f7bf-41cd-8e14-23701a4447e7","type":"Line"},{"attributes":{"source":{"id":"52511f97-0041-4e91-9165-7816add57e2a","type":"ColumnDataSource"}},"id":"9a115396-e3f0-4455-a4de-c1ae51bb7d6e","type":"CDSView"},{"attributes":{},"id":"8889cb9d-2d0c-4bf4-a520-3775d834fdbd","type":"LinearScale"},{"attributes":{"plot":{"id":"24b4b386-370e-4883-86cd-df904437114d","subtype":"Figure","type":"Plot"},"ticker":{"id":"86462ffb-747e-44f8-ac7d-90c97f3dc876","type":"CategoricalTicker"}},"id":"45b176f2-222c-490c-a971-16daf54e308a","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6ac65a4a-ce8c-4335-89ed-31f42b825764","type":"VBar"},{"attributes":{},"id":"135c0547-f0d8-46a0-b5f2-752a5ca99a3c","type":"BasicTickFormatter"},{"attributes":{},"id":"4dfaee98-f08e-4380-b599-ebfb516ad8c9","type":"CategoricalScale"}],"root_ids":["24b4b386-370e-4883-86cd-df904437114d"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"fd2e6925-3231-4425-80ee-51ad40faff8b","elementid":"7de36409-9373-46a2-bd0b-eab461b78023","modelid":"24b4b386-370e-4883-86cd-df904437114d"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

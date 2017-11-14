@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="b83d5884-f529-4eb1-a250-c34fdedccee6"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"125c1161-c4b3-4870-b4b3-df0b56916352":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"597f6999-e4bf-4723-b937-f3f42a56d646","type":"Line"},{"attributes":{},"id":"29b28d29-bc8e-466b-a0eb-eb1ea82c921a","type":"CategoricalTicker"},{"attributes":{},"id":"79386238-6111-45e1-b235-7344204b1066","type":"CategoricalTickFormatter"},{"attributes":{},"id":"e77b48f9-e1de-434a-8fbc-ef437f64a283","type":"CategoricalScale"},{"attributes":{"callback":null},"id":"25e86b2a-3a78-4e16-bfe2-5660fb88ade9","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Wei Kang (0 - 0 - 1)"},"id":"fb9ef06e-1af4-4003-b731-5a917456d557","type":"Title"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"a3ad6a4e-575d-4f6a-8ca4-00016e1011fa","type":"HoverTool"},{"attributes":{"below":[{"id":"d4a2f6c2-7feb-4699-a2b4-ed352b3d5e1d","type":"CategoricalAxis"}],"left":[{"id":"4fb2883a-7fe4-464d-b611-1fb5ef029bd7","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"d4a2f6c2-7feb-4699-a2b4-ed352b3d5e1d","type":"CategoricalAxis"},{"id":"b85afd37-e968-4bb0-a758-f97ea8274982","type":"Grid"},{"id":"4fb2883a-7fe4-464d-b611-1fb5ef029bd7","type":"LinearAxis"},{"id":"ed977577-2aa2-412f-949d-c1e2d2a25347","type":"Grid"},{"id":"a44ed973-17ac-4d7d-8ecb-dc82273c2ab4","type":"GlyphRenderer"},{"id":"9a65134b-900d-4a3e-906b-a6e03ecd2ce7","type":"GlyphRenderer"}],"title":{"id":"fb9ef06e-1af4-4003-b731-5a917456d557","type":"Title"},"toolbar":{"id":"c6982ef8-91ca-47c8-a638-b347b52f3a70","type":"Toolbar"},"x_range":{"id":"243ff012-6329-4598-be32-d5055c76879e","type":"FactorRange"},"x_scale":{"id":"e77b48f9-e1de-434a-8fbc-ef437f64a283","type":"CategoricalScale"},"y_range":{"id":"25e86b2a-3a78-4e16-bfe2-5660fb88ade9","type":"DataRange1d"},"y_scale":{"id":"753e31a6-cbd1-44c6-bdcb-d3fac78b9450","type":"LinearScale"}},"id":"fb3bc43f-70a2-43b8-8c79-fb60c2e93350","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"b00aca83-1779-4447-ab5a-7a140e525d9b","type":"BasicTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"72ea53f7-cced-4895-900e-9c81e36565ac","type":"Line"},{"attributes":{},"id":"575d88be-b345-4252-86d2-5c51ae1c0ad5","type":"BasicTickFormatter"},{"attributes":{"callback":null,"factors":["Siege of Jicheng"]},"id":"243ff012-6329-4598-be32-d5055c76879e","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bd0221de-e8d4-4a0c-a7d1-5ccd03fff6e7","type":"VBar"},{"attributes":{"formatter":{"id":"575d88be-b345-4252-86d2-5c51ae1c0ad5","type":"BasicTickFormatter"},"plot":{"id":"fb3bc43f-70a2-43b8-8c79-fb60c2e93350","subtype":"Figure","type":"Plot"},"ticker":{"id":"b00aca83-1779-4447-ab5a-7a140e525d9b","type":"BasicTicker"}},"id":"4fb2883a-7fe4-464d-b611-1fb5ef029bd7","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"227f2542-7b9f-4878-8ccf-dc263319512c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"227f2542-7b9f-4878-8ccf-dc263319512c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"87f8ea87-33f3-4006-b779-132df66e9628","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Jicheng"],"cumulative":{"__ndarray__":"lJq+8/PG2r8=","dtype":"float64","shape":[1]},"general":["Wei Kang"],"outcome":["D"],"value":{"__ndarray__":"lJq+8/PG2r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAACgakA=","dtype":"float64","shape":[1]}}},"id":"38ef76d3-6d30-46ec-bb6a-72de13e199e1","type":"ColumnDataSource"},{"attributes":{"source":{"id":"38ef76d3-6d30-46ec-bb6a-72de13e199e1","type":"ColumnDataSource"}},"id":"24283b75-32f7-4201-a52c-09dee77b343d","type":"CDSView"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"227f2542-7b9f-4878-8ccf-dc263319512c","type":"CategoricalColorMapper"},{"attributes":{},"id":"753e31a6-cbd1-44c6-bdcb-d3fac78b9450","type":"LinearScale"},{"attributes":{"plot":{"id":"fb3bc43f-70a2-43b8-8c79-fb60c2e93350","subtype":"Figure","type":"Plot"},"ticker":{"id":"29b28d29-bc8e-466b-a0eb-eb1ea82c921a","type":"CategoricalTicker"}},"id":"b85afd37-e968-4bb0-a758-f97ea8274982","type":"Grid"},{"attributes":{"data_source":{"id":"38ef76d3-6d30-46ec-bb6a-72de13e199e1","type":"ColumnDataSource"},"glyph":{"id":"72ea53f7-cced-4895-900e-9c81e36565ac","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"597f6999-e4bf-4723-b937-f3f42a56d646","type":"Line"},"selection_glyph":null,"view":{"id":"24283b75-32f7-4201-a52c-09dee77b343d","type":"CDSView"}},"id":"a44ed973-17ac-4d7d-8ecb-dc82273c2ab4","type":"GlyphRenderer"},{"attributes":{"source":{"id":"38ef76d3-6d30-46ec-bb6a-72de13e199e1","type":"ColumnDataSource"}},"id":"2e5abcb9-afc1-4717-975c-5567db8629b8","type":"CDSView"},{"attributes":{"data_source":{"id":"38ef76d3-6d30-46ec-bb6a-72de13e199e1","type":"ColumnDataSource"},"glyph":{"id":"87f8ea87-33f3-4006-b779-132df66e9628","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bd0221de-e8d4-4a0c-a7d1-5ccd03fff6e7","type":"VBar"},"selection_glyph":null,"view":{"id":"2e5abcb9-afc1-4717-975c-5567db8629b8","type":"CDSView"}},"id":"9a65134b-900d-4a3e-906b-a6e03ecd2ce7","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"fb3bc43f-70a2-43b8-8c79-fb60c2e93350","subtype":"Figure","type":"Plot"},"ticker":{"id":"b00aca83-1779-4447-ab5a-7a140e525d9b","type":"BasicTicker"}},"id":"ed977577-2aa2-412f-949d-c1e2d2a25347","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"a3ad6a4e-575d-4f6a-8ca4-00016e1011fa","type":"HoverTool"}]},"id":"c6982ef8-91ca-47c8-a638-b347b52f3a70","type":"Toolbar"},{"attributes":{"formatter":{"id":"79386238-6111-45e1-b235-7344204b1066","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"fb3bc43f-70a2-43b8-8c79-fb60c2e93350","subtype":"Figure","type":"Plot"},"ticker":{"id":"29b28d29-bc8e-466b-a0eb-eb1ea82c921a","type":"CategoricalTicker"}},"id":"d4a2f6c2-7feb-4699-a2b4-ed352b3d5e1d","type":"CategoricalAxis"}],"root_ids":["fb3bc43f-70a2-43b8-8c79-fb60c2e93350"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"125c1161-c4b3-4870-b4b3-df0b56916352","elementid":"b83d5884-f529-4eb1-a250-c34fdedccee6","modelid":"fb3bc43f-70a2-43b8-8c79-fb60c2e93350"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

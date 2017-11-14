@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="eb29351d-22b8-4ab2-9905-ab453720cb39"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"896353f2-a5dd-48d9-8aac-f1c09a0007ac":{"roots":{"references":[{"attributes":{},"id":"cf747b35-7573-4788-847d-76a99769ede1","type":"BasicTickFormatter"},{"attributes":{},"id":"567ae088-891b-4f72-af17-2fc153685c61","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["First Battle of Tembien","Second Battle of Tembien"]},"id":"1771a993-5daf-4030-ab65-c76b1b4d20d7","type":"FactorRange"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e652d4cb-e53f-4063-994f-33fdf51998d0","type":"HoverTool"}]},"id":"7d1a7005-8074-47f8-8280-7af06fd2a32a","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6f496ccf-7e0b-44f6-997e-f99b210ca69c","type":"VBar"},{"attributes":{"formatter":{"id":"165e2204-bb8c-4646-b473-68225b04d16f","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"77fe4e41-39a9-4023-982d-1d891c8f7421","subtype":"Figure","type":"Plot"},"ticker":{"id":"8b6aae6e-e9fd-49d2-aa10-1e8e1bd4cbda","type":"CategoricalTicker"}},"id":"88cc4541-ca69-4a09-92d2-07cdcdd609d5","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4c3204b9-52e7-4a24-b4f8-5eafe3c7af82","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4c3204b9-52e7-4a24-b4f8-5eafe3c7af82","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"33b0b4f6-7e1c-49c4-a22e-a1a93910d585","type":"VBar"},{"attributes":{"plot":null,"text":"Kassa Haile Darge (0 - 0 - 2)"},"id":"883dc845-ba88-4554-ad45-9f769d141dd1","type":"Title"},{"attributes":{"data_source":{"id":"e5ae99e7-b22e-4192-9d12-9eee63608364","type":"ColumnDataSource"},"glyph":{"id":"7c694cce-7169-424c-a3d6-236516ddfbe5","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"91ffd56e-eba3-4222-a1a3-d7fd9c4196c1","type":"Line"},"selection_glyph":null,"view":{"id":"d6f098f7-3657-4a97-b159-79ac2d10b98a","type":"CDSView"}},"id":"02826f46-c88d-455c-b5b9-6f7e53640ad8","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"e5ae99e7-b22e-4192-9d12-9eee63608364","type":"ColumnDataSource"},"glyph":{"id":"33b0b4f6-7e1c-49c4-a22e-a1a93910d585","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6f496ccf-7e0b-44f6-997e-f99b210ca69c","type":"VBar"},"selection_glyph":null,"view":{"id":"f8c096f0-de65-4f6f-bde5-4c5b42cb7c9f","type":"CDSView"}},"id":"3eb88148-4e6c-4ecb-af4d-2b047c39df75","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4c3204b9-52e7-4a24-b4f8-5eafe3c7af82","type":"CategoricalColorMapper"},{"attributes":{"plot":{"id":"77fe4e41-39a9-4023-982d-1d891c8f7421","subtype":"Figure","type":"Plot"},"ticker":{"id":"8b6aae6e-e9fd-49d2-aa10-1e8e1bd4cbda","type":"CategoricalTicker"}},"id":"183ac3ed-c314-411f-857d-2d6e1774bceb","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"e652d4cb-e53f-4063-994f-33fdf51998d0","type":"HoverTool"},{"attributes":{"source":{"id":"e5ae99e7-b22e-4192-9d12-9eee63608364","type":"ColumnDataSource"}},"id":"d6f098f7-3657-4a97-b159-79ac2d10b98a","type":"CDSView"},{"attributes":{"callback":null},"id":"ae639978-13c3-4f6e-bed7-81809499c1a2","type":"DataRange1d"},{"attributes":{},"id":"3fddd8cd-ac35-4679-972b-4e473005cd4e","type":"BasicTicker"},{"attributes":{},"id":"8b6aae6e-e9fd-49d2-aa10-1e8e1bd4cbda","type":"CategoricalTicker"},{"attributes":{},"id":"db0e32a2-72af-418d-bb4f-1d71b1fd36be","type":"LinearScale"},{"attributes":{"formatter":{"id":"cf747b35-7573-4788-847d-76a99769ede1","type":"BasicTickFormatter"},"plot":{"id":"77fe4e41-39a9-4023-982d-1d891c8f7421","subtype":"Figure","type":"Plot"},"ticker":{"id":"3fddd8cd-ac35-4679-972b-4e473005cd4e","type":"BasicTicker"}},"id":"8b591d9d-b383-4702-bdc2-4cc12048af2a","type":"LinearAxis"},{"attributes":{"below":[{"id":"88cc4541-ca69-4a09-92d2-07cdcdd609d5","type":"CategoricalAxis"}],"left":[{"id":"8b591d9d-b383-4702-bdc2-4cc12048af2a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"88cc4541-ca69-4a09-92d2-07cdcdd609d5","type":"CategoricalAxis"},{"id":"183ac3ed-c314-411f-857d-2d6e1774bceb","type":"Grid"},{"id":"8b591d9d-b383-4702-bdc2-4cc12048af2a","type":"LinearAxis"},{"id":"eed8a63e-d046-48b8-b6dd-59a141271a42","type":"Grid"},{"id":"02826f46-c88d-455c-b5b9-6f7e53640ad8","type":"GlyphRenderer"},{"id":"3eb88148-4e6c-4ecb-af4d-2b047c39df75","type":"GlyphRenderer"}],"title":{"id":"883dc845-ba88-4554-ad45-9f769d141dd1","type":"Title"},"toolbar":{"id":"7d1a7005-8074-47f8-8280-7af06fd2a32a","type":"Toolbar"},"x_range":{"id":"1771a993-5daf-4030-ab65-c76b1b4d20d7","type":"FactorRange"},"x_scale":{"id":"567ae088-891b-4f72-af17-2fc153685c61","type":"CategoricalScale"},"y_range":{"id":"ae639978-13c3-4f6e-bed7-81809499c1a2","type":"DataRange1d"},"y_scale":{"id":"db0e32a2-72af-418d-bb4f-1d71b1fd36be","type":"LinearScale"}},"id":"77fe4e41-39a9-4023-982d-1d891c8f7421","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"e5ae99e7-b22e-4192-9d12-9eee63608364","type":"ColumnDataSource"}},"id":"f8c096f0-de65-4f6f-bde5-4c5b42cb7c9f","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7c694cce-7169-424c-a3d6-236516ddfbe5","type":"Line"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"91ffd56e-eba3-4222-a1a3-d7fd9c4196c1","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["First Battle of Tembien","Second Battle of Tembien"],"cumulative":{"__ndarray__":"gDuvqk8M4L9SyLJZxl3uvw==","dtype":"float64","shape":[2]},"general":["Kassa Haile Darge","Kassa Haile Darge"],"outcome":["D","D"],"value":{"__ndarray__":"gDuvqk8M4L+jGQde7aLcvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABAnkAAAAAAAECeQA==","dtype":"float64","shape":[2]}}},"id":"e5ae99e7-b22e-4192-9d12-9eee63608364","type":"ColumnDataSource"},{"attributes":{},"id":"165e2204-bb8c-4646-b473-68225b04d16f","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"77fe4e41-39a9-4023-982d-1d891c8f7421","subtype":"Figure","type":"Plot"},"ticker":{"id":"3fddd8cd-ac35-4679-972b-4e473005cd4e","type":"BasicTicker"}},"id":"eed8a63e-d046-48b8-b6dd-59a141271a42","type":"Grid"}],"root_ids":["77fe4e41-39a9-4023-982d-1d891c8f7421"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"896353f2-a5dd-48d9-8aac-f1c09a0007ac","elementid":"eb29351d-22b8-4ab2-9905-ab453720cb39","modelid":"77fe4e41-39a9-4023-982d-1d891c8f7421"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

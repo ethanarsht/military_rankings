@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="6caa30e0-216f-41f6-b127-d630b8bbf255"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"9479d960-9094-4699-9855-10d55e5135f8":{"roots":{"references":[{"attributes":{},"id":"efc29d45-f904-4155-91f9-1bc46ac2360f","type":"BasicTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"e9a7da91-de3a-4606-87a3-9abe1d3cc571","type":"CategoricalColorMapper"},{"attributes":{"below":[{"id":"e706f414-7bbf-4ebd-8ae7-ed8736b24ff4","type":"CategoricalAxis"}],"left":[{"id":"8201ad87-68d8-47a1-9764-a9c5f3686c40","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"e706f414-7bbf-4ebd-8ae7-ed8736b24ff4","type":"CategoricalAxis"},{"id":"dbcffe4b-2af3-4cd7-a460-c1f06ba221e4","type":"Grid"},{"id":"8201ad87-68d8-47a1-9764-a9c5f3686c40","type":"LinearAxis"},{"id":"2d2fbfaa-931d-4837-a74f-a84f96ab76d4","type":"Grid"},{"id":"4337859b-a0d7-4ba3-a9ca-b6438f703559","type":"GlyphRenderer"},{"id":"2d59c039-f56c-42bc-a6f1-1ca6e05be4e3","type":"GlyphRenderer"}],"title":{"id":"e3eb86b5-1f55-4f22-a625-0919467b291c","type":"Title"},"toolbar":{"id":"267d1ecd-1b6d-415a-90da-6773db6828c7","type":"Toolbar"},"x_range":{"id":"f32c882b-8f01-465e-a080-454f3ac54e9c","type":"FactorRange"},"x_scale":{"id":"96f65386-9082-407d-ab09-a3ad04f0f4d3","type":"CategoricalScale"},"y_range":{"id":"e4faa351-aeca-47eb-9c65-1fc91c30e291","type":"DataRange1d"},"y_scale":{"id":"90dd1757-4906-48f5-af84-4787262b24ca","type":"LinearScale"}},"id":"f5bfbde4-8c99-4c70-8c9a-0df334a5bc1f","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"90dd1757-4906-48f5-af84-4787262b24ca","type":"LinearScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"220d3e13-6eda-41cb-b19d-9311ca76b8fc","type":"HoverTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"220d3e13-6eda-41cb-b19d-9311ca76b8fc","type":"HoverTool"}]},"id":"267d1ecd-1b6d-415a-90da-6773db6828c7","type":"Toolbar"},{"attributes":{"data_source":{"id":"88cdc72d-ee5f-4391-a28a-68fd864238cc","type":"ColumnDataSource"},"glyph":{"id":"95b1b7c6-0ff7-49d4-ada4-f10d86041010","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"aabf8d0d-6d62-4fa4-9bc0-658dce50c3ed","type":"Line"},"selection_glyph":null,"view":{"id":"e6898994-5e7c-4c8b-91f1-eab4f71e58b3","type":"CDSView"}},"id":"4337859b-a0d7-4ba3-a9ca-b6438f703559","type":"GlyphRenderer"},{"attributes":{},"id":"96f65386-9082-407d-ab09-a3ad04f0f4d3","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"88cdc72d-ee5f-4391-a28a-68fd864238cc","type":"ColumnDataSource"},"glyph":{"id":"da977778-c6c4-4449-a7d4-c1bd50d5c4e2","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"145c8daa-b86a-49f2-bd12-12c0a536b8f9","type":"VBar"},"selection_glyph":null,"view":{"id":"9d1edb76-f76f-4dc1-90c3-d0a3409c592d","type":"CDSView"}},"id":"2d59c039-f56c-42bc-a6f1-1ca6e05be4e3","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"e9a7da91-de3a-4606-87a3-9abe1d3cc571","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"e9a7da91-de3a-4606-87a3-9abe1d3cc571","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"da977778-c6c4-4449-a7d4-c1bd50d5c4e2","type":"VBar"},{"attributes":{"formatter":{"id":"4935db63-8674-4841-a784-b5f68accb73c","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"f5bfbde4-8c99-4c70-8c9a-0df334a5bc1f","subtype":"Figure","type":"Plot"},"ticker":{"id":"74e76bb0-7324-410c-8326-dc41b92de4ad","type":"CategoricalTicker"}},"id":"e706f414-7bbf-4ebd-8ae7-ed8736b24ff4","type":"CategoricalAxis"},{"attributes":{},"id":"27b1756c-cc35-4a8d-a6ba-9bb26ecef448","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"145c8daa-b86a-49f2-bd12-12c0a536b8f9","type":"VBar"},{"attributes":{},"id":"4935db63-8674-4841-a784-b5f68accb73c","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"12th Infantry Division (Pakistan) (0 - 1 - 0)"},"id":"e3eb86b5-1f55-4f22-a625-0919467b291c","type":"Title"},{"attributes":{"plot":{"id":"f5bfbde4-8c99-4c70-8c9a-0df334a5bc1f","subtype":"Figure","type":"Plot"},"ticker":{"id":"74e76bb0-7324-410c-8326-dc41b92de4ad","type":"CategoricalTicker"}},"id":"dbcffe4b-2af3-4cd7-a460-c1f06ba221e4","type":"Grid"},{"attributes":{},"id":"74e76bb0-7324-410c-8326-dc41b92de4ad","type":"CategoricalTicker"},{"attributes":{"source":{"id":"88cdc72d-ee5f-4391-a28a-68fd864238cc","type":"ColumnDataSource"}},"id":"e6898994-5e7c-4c8b-91f1-eab4f71e58b3","type":"CDSView"},{"attributes":{"source":{"id":"88cdc72d-ee5f-4391-a28a-68fd864238cc","type":"ColumnDataSource"}},"id":"9d1edb76-f76f-4dc1-90c3-d0a3409c592d","type":"CDSView"},{"attributes":{"callback":null},"id":"e4faa351-aeca-47eb-9c65-1fc91c30e291","type":"DataRange1d"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"aabf8d0d-6d62-4fa4-9bc0-658dce50c3ed","type":"Line"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"95b1b7c6-0ff7-49d4-ada4-f10d86041010","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Second Kashmir War"],"cumulative":{"__ndarray__":"8GnLpcPopj8=","dtype":"float64","shape":[1]},"general":["12th Infantry Division (Pakistan)"],"outcome":["I"],"value":{"__ndarray__":"8GnLpcPopj8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAC0nkA=","dtype":"float64","shape":[1]}}},"id":"88cdc72d-ee5f-4391-a28a-68fd864238cc","type":"ColumnDataSource"},{"attributes":{"callback":null,"factors":["Second Kashmir War"]},"id":"f32c882b-8f01-465e-a080-454f3ac54e9c","type":"FactorRange"},{"attributes":{"formatter":{"id":"efc29d45-f904-4155-91f9-1bc46ac2360f","type":"BasicTickFormatter"},"plot":{"id":"f5bfbde4-8c99-4c70-8c9a-0df334a5bc1f","subtype":"Figure","type":"Plot"},"ticker":{"id":"27b1756c-cc35-4a8d-a6ba-9bb26ecef448","type":"BasicTicker"}},"id":"8201ad87-68d8-47a1-9764-a9c5f3686c40","type":"LinearAxis"},{"attributes":{"dimension":1,"plot":{"id":"f5bfbde4-8c99-4c70-8c9a-0df334a5bc1f","subtype":"Figure","type":"Plot"},"ticker":{"id":"27b1756c-cc35-4a8d-a6ba-9bb26ecef448","type":"BasicTicker"}},"id":"2d2fbfaa-931d-4837-a74f-a84f96ab76d4","type":"Grid"}],"root_ids":["f5bfbde4-8c99-4c70-8c9a-0df334a5bc1f"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"9479d960-9094-4699-9855-10d55e5135f8","elementid":"6caa30e0-216f-41f6-b127-d630b8bbf255","modelid":"f5bfbde4-8c99-4c70-8c9a-0df334a5bc1f"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

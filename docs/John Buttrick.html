@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="b0b6cd6f-6482-4052-a4f0-4cf01e108cc2"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"438e952d-93ac-41e5-91b9-46e168095933":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e3549c70-398e-4ad0-b58b-331602a85bf3","type":"Line"},{"attributes":{},"id":"f1609d0d-9e2b-4360-8a48-b3e52585e6ef","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"21ab926e-89e4-4c60-96c6-42397d0a11a3","type":"CategoricalAxis"}],"left":[{"id":"7c15ab85-628b-4f44-a54e-a5f99b49c468","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"21ab926e-89e4-4c60-96c6-42397d0a11a3","type":"CategoricalAxis"},{"id":"09724fa3-1849-4be0-ac1b-f8a28bba3b3d","type":"Grid"},{"id":"7c15ab85-628b-4f44-a54e-a5f99b49c468","type":"LinearAxis"},{"id":"0becea14-4b23-438b-8ab6-ffb41af47aad","type":"Grid"},{"id":"d662a822-592a-4293-86bf-d2a3acab9db2","type":"GlyphRenderer"},{"id":"43c9a405-383b-491c-b253-86c3f76e88e1","type":"GlyphRenderer"}],"title":{"id":"d9ed489e-a83b-40d8-97fa-b67e977c2f38","type":"Title"},"toolbar":{"id":"daf70215-4ce5-41d7-bfea-873c59936e49","type":"Toolbar"},"x_range":{"id":"67c9bfb5-5bf3-47fb-a691-58f630767162","type":"FactorRange"},"x_scale":{"id":"08554b5c-de4c-482e-94bf-46217d545c75","type":"CategoricalScale"},"y_range":{"id":"b1462791-06c7-4bf6-9d4d-6ad5e25e861c","type":"DataRange1d"},"y_scale":{"id":"56f5debc-eef1-4cac-a3df-54e221891f25","type":"LinearScale"}},"id":"f8bab13d-b1f5-460c-a9b2-4e2fdf089aed","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"d632678c-343a-43de-b193-3c1cd1b33a91","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"8616031c-c384-448c-a1cc-b5883cf46101","type":"HoverTool"},{"attributes":{"data_source":{"id":"8f4fa4bf-4644-41ca-a2a9-3aa036cf5666","type":"ColumnDataSource"},"glyph":{"id":"1e600ca2-7849-4954-b577-abfd79b2bb12","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"cb1ad324-8083-4ae3-a99b-51ffac6f2284","type":"VBar"},"selection_glyph":null,"view":{"id":"21627da9-6506-42b0-8ed8-5dbbdb3e9f7d","type":"CDSView"}},"id":"43c9a405-383b-491c-b253-86c3f76e88e1","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"f8bab13d-b1f5-460c-a9b2-4e2fdf089aed","subtype":"Figure","type":"Plot"},"ticker":{"id":"f1609d0d-9e2b-4360-8a48-b3e52585e6ef","type":"CategoricalTicker"}},"id":"09724fa3-1849-4be0-ac1b-f8a28bba3b3d","type":"Grid"},{"attributes":{},"id":"08554b5c-de4c-482e-94bf-46217d545c75","type":"CategoricalScale"},{"attributes":{},"id":"56f5debc-eef1-4cac-a3df-54e221891f25","type":"LinearScale"},{"attributes":{"source":{"id":"8f4fa4bf-4644-41ca-a2a9-3aa036cf5666","type":"ColumnDataSource"}},"id":"21627da9-6506-42b0-8ed8-5dbbdb3e9f7d","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"cb1ad324-8083-4ae3-a99b-51ffac6f2284","type":"VBar"},{"attributes":{"data_source":{"id":"8f4fa4bf-4644-41ca-a2a9-3aa036cf5666","type":"ColumnDataSource"},"glyph":{"id":"52bacafd-d68c-4293-9352-b870ab7edfcc","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e3549c70-398e-4ad0-b58b-331602a85bf3","type":"Line"},"selection_glyph":null,"view":{"id":"e05a9c08-7daf-4299-967f-32b492cb1a83","type":"CDSView"}},"id":"d662a822-592a-4293-86bf-d2a3acab9db2","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"f8bab13d-b1f5-460c-a9b2-4e2fdf089aed","subtype":"Figure","type":"Plot"},"ticker":{"id":"d632678c-343a-43de-b193-3c1cd1b33a91","type":"BasicTicker"}},"id":"0becea14-4b23-438b-8ab6-ffb41af47aad","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"da580a2e-a0a9-447a-b9b9-eb862494889c","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"factors":["Battle of Lexington and Concord"]},"id":"67c9bfb5-5bf3-47fb-a691-58f630767162","type":"FactorRange"},{"attributes":{"formatter":{"id":"2c0a21c5-3d09-402f-bee9-dadf56246e48","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"f8bab13d-b1f5-460c-a9b2-4e2fdf089aed","subtype":"Figure","type":"Plot"},"ticker":{"id":"f1609d0d-9e2b-4360-8a48-b3e52585e6ef","type":"CategoricalTicker"}},"id":"21ab926e-89e4-4c60-96c6-42397d0a11a3","type":"CategoricalAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"52bacafd-d68c-4293-9352-b870ab7edfcc","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"8616031c-c384-448c-a1cc-b5883cf46101","type":"HoverTool"}]},"id":"daf70215-4ce5-41d7-bfea-873c59936e49","type":"Toolbar"},{"attributes":{"source":{"id":"8f4fa4bf-4644-41ca-a2a9-3aa036cf5666","type":"ColumnDataSource"}},"id":"e05a9c08-7daf-4299-967f-32b492cb1a83","type":"CDSView"},{"attributes":{"plot":null,"text":"John Buttrick (1 - 0 - 0)"},"id":"d9ed489e-a83b-40d8-97fa-b67e977c2f38","type":"Title"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Lexington and Concord"],"cumulative":{"__ndarray__":"KFjjUUL13D8=","dtype":"float64","shape":[1]},"general":["John Buttrick"],"outcome":["V"],"value":{"__ndarray__":"KFjjUUL13D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAC8m0A=","dtype":"float64","shape":[1]}}},"id":"8f4fa4bf-4644-41ca-a2a9-3aa036cf5666","type":"ColumnDataSource"},{"attributes":{},"id":"2c0a21c5-3d09-402f-bee9-dadf56246e48","type":"CategoricalTickFormatter"},{"attributes":{"callback":null},"id":"b1462791-06c7-4bf6-9d4d-6ad5e25e861c","type":"DataRange1d"},{"attributes":{"formatter":{"id":"7f68533e-5131-4f55-b6a5-646b7c2e229b","type":"BasicTickFormatter"},"plot":{"id":"f8bab13d-b1f5-460c-a9b2-4e2fdf089aed","subtype":"Figure","type":"Plot"},"ticker":{"id":"d632678c-343a-43de-b193-3c1cd1b33a91","type":"BasicTicker"}},"id":"7c15ab85-628b-4f44-a54e-a5f99b49c468","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"da580a2e-a0a9-447a-b9b9-eb862494889c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"da580a2e-a0a9-447a-b9b9-eb862494889c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"1e600ca2-7849-4954-b577-abfd79b2bb12","type":"VBar"},{"attributes":{},"id":"7f68533e-5131-4f55-b6a5-646b7c2e229b","type":"BasicTickFormatter"}],"root_ids":["f8bab13d-b1f5-460c-a9b2-4e2fdf089aed"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"438e952d-93ac-41e5-91b9-46e168095933","elementid":"b0b6cd6f-6482-4052-a4f0-4cf01e108cc2","modelid":"f8bab13d-b1f5-460c-a9b2-4e2fdf089aed"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

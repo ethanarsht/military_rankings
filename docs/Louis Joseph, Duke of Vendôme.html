@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c094cb57-deb4-4a9e-a9c9-b2206c15f158"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"5a6fc453-8654-4ec7-a970-be2b7ba07333":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"5ea3a984-3f04-4939-af3c-b484057cd426","type":"CategoricalColorMapper"},{"attributes":{},"id":"4864bf4a-87ca-483b-8c81-2d36fb658f06","type":"LinearScale"},{"attributes":{},"id":"01368107-dfcf-4b9c-8ce1-d2f03398beb0","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"5ea3a984-3f04-4939-af3c-b484057cd426","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"5ea3a984-3f04-4939-af3c-b484057cd426","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ea34a719-ded1-4a2e-8dfe-d4dda7600c3f","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"e92fa83a-8bdc-4acf-a744-1ca0d74203bb","type":"HoverTool"},{"attributes":{},"id":"3d44cb0d-4024-4b04-95dc-3c885b13b9fd","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7ec16e4c-606e-4f88-89cd-c3a100d7e727","type":"VBar"},{"attributes":{"data_source":{"id":"e2d8a3d3-2ba9-42b7-a5af-144aee9f28c5","type":"ColumnDataSource"},"glyph":{"id":"dd075dd9-4d3a-4f64-a185-452c0917113d","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d438d4cb-ae8f-40bc-be7d-a4293486f471","type":"Line"},"selection_glyph":null,"view":{"id":"d104da33-70fc-4b81-8b95-e90162cb6631","type":"CDSView"}},"id":"cbfa2d77-eb56-4eaf-9837-ae3fb9cb01cd","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"e2d8a3d3-2ba9-42b7-a5af-144aee9f28c5","type":"ColumnDataSource"},"glyph":{"id":"ea34a719-ded1-4a2e-8dfe-d4dda7600c3f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7ec16e4c-606e-4f88-89cd-c3a100d7e727","type":"VBar"},"selection_glyph":null,"view":{"id":"cca26b44-46d8-4c8d-98c4-86cfe5eab75c","type":"CDSView"}},"id":"91c9e1a4-28fa-47b2-ab1f-5c18c36c3d47","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"8e1de8d8-b479-48a4-bf59-86788d4949e7","type":"DataRange1d"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"dd075dd9-4d3a-4f64-a185-452c0917113d","type":"Line"},{"attributes":{},"id":"fbc74ffc-26d0-4206-ac98-7fb51e0ac34c","type":"BasicTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d438d4cb-ae8f-40bc-be7d-a4293486f471","type":"Line"},{"attributes":{"below":[{"id":"db05aa7c-ea5c-4b7e-a26f-7a2c876d6305","type":"CategoricalAxis"}],"left":[{"id":"623a672d-c427-4857-9167-a1ab48e60db9","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"db05aa7c-ea5c-4b7e-a26f-7a2c876d6305","type":"CategoricalAxis"},{"id":"ddfda4df-5fee-4cb1-ae73-b708efc12947","type":"Grid"},{"id":"623a672d-c427-4857-9167-a1ab48e60db9","type":"LinearAxis"},{"id":"50200f03-cde5-46dc-b3da-7af38a60753c","type":"Grid"},{"id":"cbfa2d77-eb56-4eaf-9837-ae3fb9cb01cd","type":"GlyphRenderer"},{"id":"91c9e1a4-28fa-47b2-ab1f-5c18c36c3d47","type":"GlyphRenderer"}],"title":{"id":"b418924f-b926-4a3b-b36a-bb4c59f97429","type":"Title"},"toolbar":{"id":"ed368c56-8905-43ab-b09b-8712ecc5d619","type":"Toolbar"},"x_range":{"id":"a30b6dad-2223-4129-968b-58c8495ca387","type":"FactorRange"},"x_scale":{"id":"3d44cb0d-4024-4b04-95dc-3c885b13b9fd","type":"CategoricalScale"},"y_range":{"id":"8e1de8d8-b479-48a4-bf59-86788d4949e7","type":"DataRange1d"},"y_scale":{"id":"4864bf4a-87ca-483b-8c81-2d36fb658f06","type":"LinearScale"}},"id":"57f5eb2e-5f32-4733-8568-7c546a8b52ff","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Oudenarde","Battle of Brihuega","Battle of Villaviciosa"]},"id":"a30b6dad-2223-4129-968b-58c8495ca387","type":"FactorRange"},{"attributes":{"dimension":1,"plot":{"id":"57f5eb2e-5f32-4733-8568-7c546a8b52ff","subtype":"Figure","type":"Plot"},"ticker":{"id":"01368107-dfcf-4b9c-8ce1-d2f03398beb0","type":"BasicTicker"}},"id":"50200f03-cde5-46dc-b3da-7af38a60753c","type":"Grid"},{"attributes":{"formatter":{"id":"b244d2fc-b71c-4bc9-be19-8d06eb096519","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"57f5eb2e-5f32-4733-8568-7c546a8b52ff","subtype":"Figure","type":"Plot"},"ticker":{"id":"2528d508-1709-4564-80d4-e0413cf8a141","type":"CategoricalTicker"}},"id":"db05aa7c-ea5c-4b7e-a26f-7a2c876d6305","type":"CategoricalAxis"},{"attributes":{"formatter":{"id":"fbc74ffc-26d0-4206-ac98-7fb51e0ac34c","type":"BasicTickFormatter"},"plot":{"id":"57f5eb2e-5f32-4733-8568-7c546a8b52ff","subtype":"Figure","type":"Plot"},"ticker":{"id":"01368107-dfcf-4b9c-8ce1-d2f03398beb0","type":"BasicTicker"}},"id":"623a672d-c427-4857-9167-a1ab48e60db9","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Louis Joseph, Duke of Vend\u00f4me (2 - 0 - 1)"},"id":"b418924f-b926-4a3b-b36a-bb4c59f97429","type":"Title"},{"attributes":{"plot":{"id":"57f5eb2e-5f32-4733-8568-7c546a8b52ff","subtype":"Figure","type":"Plot"},"ticker":{"id":"2528d508-1709-4564-80d4-e0413cf8a141","type":"CategoricalTicker"}},"id":"ddfda4df-5fee-4cb1-ae73-b708efc12947","type":"Grid"},{"attributes":{"source":{"id":"e2d8a3d3-2ba9-42b7-a5af-144aee9f28c5","type":"ColumnDataSource"}},"id":"cca26b44-46d8-4c8d-98c4-86cfe5eab75c","type":"CDSView"},{"attributes":{"source":{"id":"e2d8a3d3-2ba9-42b7-a5af-144aee9f28c5","type":"ColumnDataSource"}},"id":"d104da33-70fc-4b81-8b95-e90162cb6631","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e92fa83a-8bdc-4acf-a744-1ca0d74203bb","type":"HoverTool"}]},"id":"ed368c56-8905-43ab-b09b-8712ecc5d619","type":"Toolbar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Oudenarde","Battle of Brihuega","Battle of Villaviciosa"],"cumulative":{"__ndarray__":"7eMJ7b8l4L8AK0C3QY2pv7pN/LCWjds/","dtype":"float64","shape":[3]},"general":["Louis Joseph, Duke of Vend\u00f4me","Louis Joseph, Duke of Vend\u00f4me","Louis Joseph, Duke of Vend\u00f4me"],"outcome":["D","V","V"],"value":{"__ndarray__":"7eMJ7b8l4L96wiuj1xndPxpT5Oc+v94/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAACwmkAAAAAAALiaQAAAAAAAuJpA","dtype":"float64","shape":[3]}}},"id":"e2d8a3d3-2ba9-42b7-a5af-144aee9f28c5","type":"ColumnDataSource"},{"attributes":{},"id":"2528d508-1709-4564-80d4-e0413cf8a141","type":"CategoricalTicker"},{"attributes":{},"id":"b244d2fc-b71c-4bc9-be19-8d06eb096519","type":"CategoricalTickFormatter"}],"root_ids":["57f5eb2e-5f32-4733-8568-7c546a8b52ff"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"5a6fc453-8654-4ec7-a970-be2b7ba07333","elementid":"c094cb57-deb4-4a9e-a9c9-b2206c15f158","modelid":"57f5eb2e-5f32-4733-8568-7c546a8b52ff"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

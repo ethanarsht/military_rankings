@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="b921d44f-5690-4007-a9ed-11800b123e82"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"2241b44f-1216-418d-91fa-e8b7b2c67ebf":{"roots":{"references":[{"attributes":{},"id":"8955c8b5-c6fc-4e3c-b158-017e5d94a6dd","type":"BasicTicker"},{"attributes":{"plot":{"id":"017e591f-2153-4739-abaf-27764b80c57f","subtype":"Figure","type":"Plot"},"ticker":{"id":"ef8f289a-74e4-41b7-8a86-4ab0227e4cd3","type":"CategoricalTicker"}},"id":"cdb40c59-47e4-4de2-b305-03df45dfab16","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"7b8232d0-7bd3-4bf3-b0b1-f1be720d1c31","type":"CategoricalColorMapper"},{"attributes":{"plot":null,"text":"Jean-Baptiste Girard (soldier) (0 - 1 - 1)"},"id":"545d7ddc-4631-409a-af8a-a8943ad8e85e","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"017e591f-2153-4739-abaf-27764b80c57f","subtype":"Figure","type":"Plot"},"ticker":{"id":"8955c8b5-c6fc-4e3c-b158-017e5d94a6dd","type":"BasicTicker"}},"id":"5da47ed0-be2f-4228-83f5-07613c0863c4","type":"Grid"},{"attributes":{"callback":null},"id":"51edc77b-97d4-4578-b3cd-e12841e8e7cc","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"7b8232d0-7bd3-4bf3-b0b1-f1be720d1c31","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"7b8232d0-7bd3-4bf3-b0b1-f1be720d1c31","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"be5718c7-40ee-4045-8d7b-0a2e2a92cfad","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Albuera","Battle of Arroyo dos Molinos"]},"id":"0ea40f99-3716-410a-ba78-49d517b5d1f2","type":"FactorRange"},{"attributes":{},"id":"77b8ef32-e56b-4a40-bbc5-cef20bbfe32e","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"424fc28c-2189-4f67-a003-01d2b65e964a","type":"CategoricalAxis"}],"left":[{"id":"14bc9f2a-3685-45e9-b829-164e2881c5e6","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"424fc28c-2189-4f67-a003-01d2b65e964a","type":"CategoricalAxis"},{"id":"cdb40c59-47e4-4de2-b305-03df45dfab16","type":"Grid"},{"id":"14bc9f2a-3685-45e9-b829-164e2881c5e6","type":"LinearAxis"},{"id":"5da47ed0-be2f-4228-83f5-07613c0863c4","type":"Grid"},{"id":"14f5ebb7-3c35-4ae8-ba7e-935941ade546","type":"GlyphRenderer"},{"id":"75d5adb4-cc14-4a54-927d-e94d936c2ea5","type":"GlyphRenderer"}],"title":{"id":"545d7ddc-4631-409a-af8a-a8943ad8e85e","type":"Title"},"toolbar":{"id":"2c5ca9d7-8543-4b42-b2d7-0e826089f9c5","type":"Toolbar"},"x_range":{"id":"0ea40f99-3716-410a-ba78-49d517b5d1f2","type":"FactorRange"},"x_scale":{"id":"861b83b5-08d7-40b0-93ff-c5daff52b47f","type":"CategoricalScale"},"y_range":{"id":"51edc77b-97d4-4578-b3cd-e12841e8e7cc","type":"DataRange1d"},"y_scale":{"id":"b91c7596-e1d6-4ad9-aaa3-622b188aae53","type":"LinearScale"}},"id":"017e591f-2153-4739-abaf-27764b80c57f","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"3537331a-095a-405f-ab4b-c2f7e0d0c253","type":"BasicTickFormatter"},"plot":{"id":"017e591f-2153-4739-abaf-27764b80c57f","subtype":"Figure","type":"Plot"},"ticker":{"id":"8955c8b5-c6fc-4e3c-b158-017e5d94a6dd","type":"BasicTicker"}},"id":"14bc9f2a-3685-45e9-b829-164e2881c5e6","type":"LinearAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"a24c2f50-1bff-40ed-b562-7fd9e7d981a6","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"88f407df-e65a-47ce-b5bf-08595d77acb7","type":"Line"},{"attributes":{"formatter":{"id":"77b8ef32-e56b-4a40-bbc5-cef20bbfe32e","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"017e591f-2153-4739-abaf-27764b80c57f","subtype":"Figure","type":"Plot"},"ticker":{"id":"ef8f289a-74e4-41b7-8a86-4ab0227e4cd3","type":"CategoricalTicker"}},"id":"424fc28c-2189-4f67-a003-01d2b65e964a","type":"CategoricalAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Albuera","Battle of Arroyo dos Molinos"],"cumulative":{"__ndarray__":"gNkdSzW5lD+JtLsBZX3dvw==","dtype":"float64","shape":[2]},"general":["Jean-Baptiste Girard (soldier)","Jean-Baptiste Girard (soldier)"],"outcome":["I","D"],"value":{"__ndarray__":"gNkdSzW5lD8hkm1W+Mjevw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABMnEAAAAAAAEycQA==","dtype":"float64","shape":[2]}}},"id":"f0c494b5-bb97-4d8c-9c4b-5940254f0872","type":"ColumnDataSource"},{"attributes":{},"id":"b91c7596-e1d6-4ad9-aaa3-622b188aae53","type":"LinearScale"},{"attributes":{},"id":"3537331a-095a-405f-ab4b-c2f7e0d0c253","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"f0c494b5-bb97-4d8c-9c4b-5940254f0872","type":"ColumnDataSource"},"glyph":{"id":"88f407df-e65a-47ce-b5bf-08595d77acb7","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ecd81474-0459-4710-8a34-b2f1b24f509b","type":"Line"},"selection_glyph":null,"view":{"id":"b01e43dc-d816-4c18-9ca3-46ff5e549fce","type":"CDSView"}},"id":"14f5ebb7-3c35-4ae8-ba7e-935941ade546","type":"GlyphRenderer"},{"attributes":{},"id":"861b83b5-08d7-40b0-93ff-c5daff52b47f","type":"CategoricalScale"},{"attributes":{},"id":"ef8f289a-74e4-41b7-8a86-4ab0227e4cd3","type":"CategoricalTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ecd81474-0459-4710-8a34-b2f1b24f509b","type":"Line"},{"attributes":{"data_source":{"id":"f0c494b5-bb97-4d8c-9c4b-5940254f0872","type":"ColumnDataSource"},"glyph":{"id":"be5718c7-40ee-4045-8d7b-0a2e2a92cfad","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e33d7de0-6f9f-4589-8d25-a3a09eb1e73a","type":"VBar"},"selection_glyph":null,"view":{"id":"907dca6a-2209-4413-aa0a-710f7c616bca","type":"CDSView"}},"id":"75d5adb4-cc14-4a54-927d-e94d936c2ea5","type":"GlyphRenderer"},{"attributes":{"source":{"id":"f0c494b5-bb97-4d8c-9c4b-5940254f0872","type":"ColumnDataSource"}},"id":"907dca6a-2209-4413-aa0a-710f7c616bca","type":"CDSView"},{"attributes":{"source":{"id":"f0c494b5-bb97-4d8c-9c4b-5940254f0872","type":"ColumnDataSource"}},"id":"b01e43dc-d816-4c18-9ca3-46ff5e549fce","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e33d7de0-6f9f-4589-8d25-a3a09eb1e73a","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"a24c2f50-1bff-40ed-b562-7fd9e7d981a6","type":"HoverTool"}]},"id":"2c5ca9d7-8543-4b42-b2d7-0e826089f9c5","type":"Toolbar"}],"root_ids":["017e591f-2153-4739-abaf-27764b80c57f"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"2241b44f-1216-418d-91fa-e8b7b2c67ebf","elementid":"b921d44f-5690-4007-a9ed-11800b123e82","modelid":"017e591f-2153-4739-abaf-27764b80c57f"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

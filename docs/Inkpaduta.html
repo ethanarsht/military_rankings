@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="8b21639a-5c4b-4be4-b130-1fa80a8b81cb"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"691f9e0a-20bd-4d1d-8390-0697a6437604":{"roots":{"references":[{"attributes":{},"id":"ec1ebb2c-70eb-49dc-8e87-b347044cdf58","type":"LinearScale"},{"attributes":{"plot":null,"text":"Inkpaduta (0 - 0 - 5)"},"id":"aa862915-52d8-41ab-961f-86959622e601","type":"Title"},{"attributes":{},"id":"f18a7a42-820a-416d-9dd5-ebce952ab36a","type":"BasicTickFormatter"},{"attributes":{"below":[{"id":"832079b3-78e9-4b16-ab94-bd163209ba7e","type":"CategoricalAxis"}],"left":[{"id":"0ebd6766-6ec0-4be4-82eb-c7ff23fce5ef","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"832079b3-78e9-4b16-ab94-bd163209ba7e","type":"CategoricalAxis"},{"id":"87ba355b-ad0c-41c1-87cc-f0538c949da8","type":"Grid"},{"id":"0ebd6766-6ec0-4be4-82eb-c7ff23fce5ef","type":"LinearAxis"},{"id":"1f63dc7f-a4d9-4f94-a8d4-fe14d78c94a3","type":"Grid"},{"id":"2e1d7121-fb4d-4b75-87b7-f2b793c0e53d","type":"GlyphRenderer"},{"id":"6931d16d-b1d4-47c8-9bcc-4f736a38628a","type":"GlyphRenderer"}],"title":{"id":"aa862915-52d8-41ab-961f-86959622e601","type":"Title"},"toolbar":{"id":"1cbc6237-0678-49fd-897d-4d20654f155d","type":"Toolbar"},"x_range":{"id":"9669d389-c3ad-4cdf-acf9-f8147bf3c9b8","type":"FactorRange"},"x_scale":{"id":"103a9389-714f-4c0f-9103-62ba9ae839fa","type":"CategoricalScale"},"y_range":{"id":"32312248-7666-45c1-bfe2-3c5d35efef34","type":"DataRange1d"},"y_scale":{"id":"ec1ebb2c-70eb-49dc-8e87-b347044cdf58","type":"LinearScale"}},"id":"3fb9eb8a-2646-4553-8cd0-3d4f0c443a51","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":1,"plot":{"id":"3fb9eb8a-2646-4553-8cd0-3d4f0c443a51","subtype":"Figure","type":"Plot"},"ticker":{"id":"0fe90928-405d-499d-b67f-a34c86c0aab8","type":"BasicTicker"}},"id":"1f63dc7f-a4d9-4f94-a8d4-fe14d78c94a3","type":"Grid"},{"attributes":{"source":{"id":"65bd11d2-391a-4734-9805-18fd45e4e9a5","type":"ColumnDataSource"}},"id":"31b30b80-2be4-4264-ad86-a693a8d11328","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f611f772-770a-4153-9b98-c5144a2081d9","type":"HoverTool"}]},"id":"1cbc6237-0678-49fd-897d-4d20654f155d","type":"Toolbar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Big Mound","Battle of Dead Buffalo Lake","Battle of Stony Lake","Battle of Whitestone Hill","Battle of Killdeer Mountain"],"cumulative":{"__ndarray__":"M7jlWJB/3r/Y5nN8ZuPuv6BtzA0+d/e/tP3yU2ph/78CLdLfp5IDwA==","dtype":"float64","shape":[5]},"general":["Inkpaduta","Inkpaduta","Inkpaduta","Inkpaduta","Inkpaduta"],"outcome":["D","D","D","D","D"],"value":{"__ndarray__":"M7jlWJB/3r99FQKgPEffv2f0JJ8VC+C/UUCaGLGo378/ccWulQ/fvw==","dtype":"float64","shape":[5]},"year":{"__ndarray__":"AAAAAAAcnUAAAAAAABydQAAAAAAAHJ1AAAAAAAAcnUAAAAAAACCdQA==","dtype":"float64","shape":[5]}}},"id":"65bd11d2-391a-4734-9805-18fd45e4e9a5","type":"ColumnDataSource"},{"attributes":{"callback":null,"factors":["Battle of Big Mound","Battle of Dead Buffalo Lake","Battle of Stony Lake","Battle of Whitestone Hill","Battle of Killdeer Mountain"]},"id":"9669d389-c3ad-4cdf-acf9-f8147bf3c9b8","type":"FactorRange"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"aa3db039-c237-41c5-9c7a-a534433c5f2a","type":"CategoricalColorMapper"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5f7a9290-12ae-4ffc-8594-26d24db1758a","type":"Line"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f611f772-770a-4153-9b98-c5144a2081d9","type":"HoverTool"},{"attributes":{"callback":null},"id":"32312248-7666-45c1-bfe2-3c5d35efef34","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"4791aabb-ec57-4e1b-9d85-d1ac4c640cff","type":"VBar"},{"attributes":{"plot":{"id":"3fb9eb8a-2646-4553-8cd0-3d4f0c443a51","subtype":"Figure","type":"Plot"},"ticker":{"id":"52fbb439-505c-4643-96cb-6024455d54f2","type":"CategoricalTicker"}},"id":"87ba355b-ad0c-41c1-87cc-f0538c949da8","type":"Grid"},{"attributes":{"data_source":{"id":"65bd11d2-391a-4734-9805-18fd45e4e9a5","type":"ColumnDataSource"},"glyph":{"id":"a1bfd652-b751-4f7a-b0cf-7af10165888a","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4791aabb-ec57-4e1b-9d85-d1ac4c640cff","type":"VBar"},"selection_glyph":null,"view":{"id":"ff7275c7-0382-4e01-9a03-d1676eda8fc3","type":"CDSView"}},"id":"6931d16d-b1d4-47c8-9bcc-4f736a38628a","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"71190fee-7ef3-4f3d-8cc4-4cdd5a4ce20b","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"3fb9eb8a-2646-4553-8cd0-3d4f0c443a51","subtype":"Figure","type":"Plot"},"ticker":{"id":"52fbb439-505c-4643-96cb-6024455d54f2","type":"CategoricalTicker"}},"id":"832079b3-78e9-4b16-ab94-bd163209ba7e","type":"CategoricalAxis"},{"attributes":{},"id":"103a9389-714f-4c0f-9103-62ba9ae839fa","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"65bd11d2-391a-4734-9805-18fd45e4e9a5","type":"ColumnDataSource"},"glyph":{"id":"5f7a9290-12ae-4ffc-8594-26d24db1758a","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4ad92e52-05e5-4d22-b157-e1d8ac7604d5","type":"Line"},"selection_glyph":null,"view":{"id":"31b30b80-2be4-4264-ad86-a693a8d11328","type":"CDSView"}},"id":"2e1d7121-fb4d-4b75-87b7-f2b793c0e53d","type":"GlyphRenderer"},{"attributes":{},"id":"52fbb439-505c-4643-96cb-6024455d54f2","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"aa3db039-c237-41c5-9c7a-a534433c5f2a","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"aa3db039-c237-41c5-9c7a-a534433c5f2a","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a1bfd652-b751-4f7a-b0cf-7af10165888a","type":"VBar"},{"attributes":{},"id":"71190fee-7ef3-4f3d-8cc4-4cdd5a4ce20b","type":"CategoricalTickFormatter"},{"attributes":{},"id":"0fe90928-405d-499d-b67f-a34c86c0aab8","type":"BasicTicker"},{"attributes":{"source":{"id":"65bd11d2-391a-4734-9805-18fd45e4e9a5","type":"ColumnDataSource"}},"id":"ff7275c7-0382-4e01-9a03-d1676eda8fc3","type":"CDSView"},{"attributes":{"formatter":{"id":"f18a7a42-820a-416d-9dd5-ebce952ab36a","type":"BasicTickFormatter"},"plot":{"id":"3fb9eb8a-2646-4553-8cd0-3d4f0c443a51","subtype":"Figure","type":"Plot"},"ticker":{"id":"0fe90928-405d-499d-b67f-a34c86c0aab8","type":"BasicTicker"}},"id":"0ebd6766-6ec0-4be4-82eb-c7ff23fce5ef","type":"LinearAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4ad92e52-05e5-4d22-b157-e1d8ac7604d5","type":"Line"}],"root_ids":["3fb9eb8a-2646-4553-8cd0-3d4f0c443a51"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"691f9e0a-20bd-4d1d-8390-0697a6437604","elementid":"8b21639a-5c4b-4be4-b130-1fa80a8b81cb","modelid":"3fb9eb8a-2646-4553-8cd0-3d4f0c443a51"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

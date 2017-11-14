@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c81debe9-ff67-4db0-8349-2bc35eee34db"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"09a6a555-27af-480f-a0f9-7eef2ee5e5f4":{"roots":{"references":[{"attributes":{"source":{"id":"230c8dc9-e758-4626-8f4a-2f18e7cbc4ec","type":"ColumnDataSource"}},"id":"57476db1-0c47-421a-8592-52e0e20233fc","type":"CDSView"},{"attributes":{"formatter":{"id":"9bdd67e3-9e70-41b9-9c95-0cf0c64539c1","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"48d3d401-8fd6-4a04-a0fe-7295c541524a","subtype":"Figure","type":"Plot"},"ticker":{"id":"7b4cd497-ec42-47be-a212-455a34045fdb","type":"CategoricalTicker"}},"id":"fc1644e0-9b88-46bb-9d65-78fb6cc5c648","type":"CategoricalAxis"},{"attributes":{"callback":null},"id":"fad20bfb-6a49-424d-8559-36e96092e77b","type":"DataRange1d"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of San Lorenzo de la Muga","Battle of Castiglione","Battle of Millesimo"],"cumulative":{"__ndarray__":"uVXb3CQL4T8kiBaUQ1nwP/CDlPyQBfc/","dtype":"float64","shape":[3]},"general":["Pierre Augereau","Pierre Augereau","Pierre Augereau"],"outcome":["V","V","V"],"value":{"__ndarray__":"uVXb3CQL4T8cdaOWxE7fPzDv96E1sdo/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAAInEAAAAAAABCcQAAAAAAAEJxA","dtype":"float64","shape":[3]}}},"id":"230c8dc9-e758-4626-8f4a-2f18e7cbc4ec","type":"ColumnDataSource"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4bcf5d14-0728-4a69-a60f-6911753d2f32","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"2572b40b-9ea7-4cac-a3cb-4ed198e5d97c","type":"HoverTool"}]},"id":"e452a62a-51b4-46b8-8de5-dc719eac854e","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Battle of San Lorenzo de la Muga","Battle of Castiglione","Battle of Millesimo"]},"id":"ed9687d7-0e24-4f8d-8d5d-678d939f52d3","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7633ade8-4901-495b-8c16-393bdbfa3b8d","type":"VBar"},{"attributes":{"plot":null,"text":"Pierre Augereau (3 - 0 - 0)"},"id":"234e36fe-d7ef-4c14-87c2-fd792d8756dd","type":"Title"},{"attributes":{"source":{"id":"230c8dc9-e758-4626-8f4a-2f18e7cbc4ec","type":"ColumnDataSource"}},"id":"300c08ac-1ece-45d9-968c-23354c7c38eb","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d9f6e75b-97fc-43d5-b843-fe4eb41fccb2","type":"Line"},{"attributes":{"plot":{"id":"48d3d401-8fd6-4a04-a0fe-7295c541524a","subtype":"Figure","type":"Plot"},"ticker":{"id":"7b4cd497-ec42-47be-a212-455a34045fdb","type":"CategoricalTicker"}},"id":"5f1f4513-0319-48cd-9981-e0811e69fa2a","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"1828993a-14ed-47c3-b73d-7a03349ad101","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"1828993a-14ed-47c3-b73d-7a03349ad101","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"cfc931ff-6e6e-4af4-9cd7-fe9556fef0a3","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"1828993a-14ed-47c3-b73d-7a03349ad101","type":"CategoricalColorMapper"},{"attributes":{"below":[{"id":"fc1644e0-9b88-46bb-9d65-78fb6cc5c648","type":"CategoricalAxis"}],"left":[{"id":"c979b891-d981-4233-891b-f9b9248adc71","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"fc1644e0-9b88-46bb-9d65-78fb6cc5c648","type":"CategoricalAxis"},{"id":"5f1f4513-0319-48cd-9981-e0811e69fa2a","type":"Grid"},{"id":"c979b891-d981-4233-891b-f9b9248adc71","type":"LinearAxis"},{"id":"5592a271-fa85-4a33-ba97-01dbf96154cb","type":"Grid"},{"id":"b6b27055-3864-4dcd-9d56-48defd8c67f4","type":"GlyphRenderer"},{"id":"87870137-cf8e-4829-9053-fb678adf3afc","type":"GlyphRenderer"}],"title":{"id":"234e36fe-d7ef-4c14-87c2-fd792d8756dd","type":"Title"},"toolbar":{"id":"e452a62a-51b4-46b8-8de5-dc719eac854e","type":"Toolbar"},"x_range":{"id":"ed9687d7-0e24-4f8d-8d5d-678d939f52d3","type":"FactorRange"},"x_scale":{"id":"16daef2e-3873-4381-8c53-e1067bba33a9","type":"CategoricalScale"},"y_range":{"id":"fad20bfb-6a49-424d-8559-36e96092e77b","type":"DataRange1d"},"y_scale":{"id":"105530f6-66e8-491f-8510-d73a3d38afe6","type":"LinearScale"}},"id":"48d3d401-8fd6-4a04-a0fe-7295c541524a","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"7b4cd497-ec42-47be-a212-455a34045fdb","type":"CategoricalTicker"},{"attributes":{},"id":"85bfda8a-d4e7-436b-8382-a932fe32cd08","type":"BasicTicker"},{"attributes":{},"id":"105530f6-66e8-491f-8510-d73a3d38afe6","type":"LinearScale"},{"attributes":{"dimension":1,"plot":{"id":"48d3d401-8fd6-4a04-a0fe-7295c541524a","subtype":"Figure","type":"Plot"},"ticker":{"id":"85bfda8a-d4e7-436b-8382-a932fe32cd08","type":"BasicTicker"}},"id":"5592a271-fa85-4a33-ba97-01dbf96154cb","type":"Grid"},{"attributes":{"formatter":{"id":"5f07ed9c-41f3-4b04-8f4d-82bf61209845","type":"BasicTickFormatter"},"plot":{"id":"48d3d401-8fd6-4a04-a0fe-7295c541524a","subtype":"Figure","type":"Plot"},"ticker":{"id":"85bfda8a-d4e7-436b-8382-a932fe32cd08","type":"BasicTicker"}},"id":"c979b891-d981-4233-891b-f9b9248adc71","type":"LinearAxis"},{"attributes":{"data_source":{"id":"230c8dc9-e758-4626-8f4a-2f18e7cbc4ec","type":"ColumnDataSource"},"glyph":{"id":"4bcf5d14-0728-4a69-a60f-6911753d2f32","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d9f6e75b-97fc-43d5-b843-fe4eb41fccb2","type":"Line"},"selection_glyph":null,"view":{"id":"300c08ac-1ece-45d9-968c-23354c7c38eb","type":"CDSView"}},"id":"b6b27055-3864-4dcd-9d56-48defd8c67f4","type":"GlyphRenderer"},{"attributes":{},"id":"16daef2e-3873-4381-8c53-e1067bba33a9","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"230c8dc9-e758-4626-8f4a-2f18e7cbc4ec","type":"ColumnDataSource"},"glyph":{"id":"cfc931ff-6e6e-4af4-9cd7-fe9556fef0a3","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7633ade8-4901-495b-8c16-393bdbfa3b8d","type":"VBar"},"selection_glyph":null,"view":{"id":"57476db1-0c47-421a-8592-52e0e20233fc","type":"CDSView"}},"id":"87870137-cf8e-4829-9053-fb678adf3afc","type":"GlyphRenderer"},{"attributes":{},"id":"5f07ed9c-41f3-4b04-8f4d-82bf61209845","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"2572b40b-9ea7-4cac-a3cb-4ed198e5d97c","type":"HoverTool"},{"attributes":{},"id":"9bdd67e3-9e70-41b9-9c95-0cf0c64539c1","type":"CategoricalTickFormatter"}],"root_ids":["48d3d401-8fd6-4a04-a0fe-7295c541524a"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"09a6a555-27af-480f-a0f9-7eef2ee5e5f4","elementid":"c81debe9-ff67-4db0-8349-2bc35eee34db","modelid":"48d3d401-8fd6-4a04-a0fe-7295c541524a"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

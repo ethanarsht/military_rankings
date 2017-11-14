@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="30547d74-dc13-4cf4-97b6-b13981fd1c82"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"e1ab1a82-3894-4517-8c3a-ebad233ffe82":{"roots":{"references":[{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"dddbbf08-7305-4e30-b1c6-676511266626","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"dddbbf08-7305-4e30-b1c6-676511266626","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"cb5c8335-0f1c-4b87-b406-96bf540f125f","type":"VBar"},{"attributes":{},"id":"ec789438-0ecc-42fe-913c-aa2a66132447","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"71476e0e-2229-41c7-bfe9-ded43279d71e","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"dddbbf08-7305-4e30-b1c6-676511266626","type":"CategoricalColorMapper"},{"attributes":{},"id":"4af7dd5b-544a-4fed-a7b9-9cf0ba1b951f","type":"CategoricalTickFormatter"},{"attributes":{"callback":null},"id":"8051a1bb-bc44-4998-88f3-0de32cb46935","type":"DataRange1d"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2b2b43dc-3b2d-4d4f-af84-4508e0eb5192","type":"Line"},{"attributes":{"data_source":{"id":"69cc2260-b5a7-4ab2-af74-4226c377b19c","type":"ColumnDataSource"},"glyph":{"id":"cb5c8335-0f1c-4b87-b406-96bf540f125f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"fd8fdd28-6cb2-403e-8cca-98b83831d438","type":"VBar"},"selection_glyph":null,"view":{"id":"065367f3-7ee3-4edd-a761-e6dc266b1f3b","type":"CDSView"}},"id":"7b358643-45b4-4f64-9228-2996e29859fa","type":"GlyphRenderer"},{"attributes":{"source":{"id":"69cc2260-b5a7-4ab2-af74-4226c377b19c","type":"ColumnDataSource"}},"id":"065367f3-7ee3-4edd-a761-e6dc266b1f3b","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"71476e0e-2229-41c7-bfe9-ded43279d71e","type":"HoverTool"}]},"id":"63acb088-544d-4d49-9708-a93cb2038c2c","type":"Toolbar"},{"attributes":{"dimension":1,"plot":{"id":"1e550724-1a2c-4f5b-8a6b-86947a5b7bff","subtype":"Figure","type":"Plot"},"ticker":{"id":"0b6675df-a8ce-4542-a559-e1476594096d","type":"BasicTicker"}},"id":"66a31741-3b74-4534-8a7a-36ff016741bc","type":"Grid"},{"attributes":{"source":{"id":"69cc2260-b5a7-4ab2-af74-4226c377b19c","type":"ColumnDataSource"}},"id":"81f76c5f-03fb-4d6c-8a2c-6dafe6afa670","type":"CDSView"},{"attributes":{"plot":null,"text":"Nikolay Iudovich Ivanov (2 - 0 - 0)"},"id":"04aac574-8711-417e-a2a4-4a7685e56fae","type":"Title"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Galicia","Battle of the Vistula River"],"cumulative":{"__ndarray__":"cmCWUzIk3z+uZEVZ5w3vPw==","dtype":"float64","shape":[2]},"general":["Nikolay Iudovich Ivanov","Nikolay Iudovich Ivanov"],"outcome":["V","V"],"value":{"__ndarray__":"cmCWUzIk3z/qaPRenPfePw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAADonUAAAAAAAOidQA==","dtype":"float64","shape":[2]}}},"id":"69cc2260-b5a7-4ab2-af74-4226c377b19c","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"fd8fdd28-6cb2-403e-8cca-98b83831d438","type":"VBar"},{"attributes":{"below":[{"id":"23f00472-b15e-4e6b-aeba-5abfaf522cb7","type":"CategoricalAxis"}],"left":[{"id":"90e77b0f-c1ff-40e9-ac55-538075512b14","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"23f00472-b15e-4e6b-aeba-5abfaf522cb7","type":"CategoricalAxis"},{"id":"2095de68-bcfe-4131-8b2d-e008274b52a7","type":"Grid"},{"id":"90e77b0f-c1ff-40e9-ac55-538075512b14","type":"LinearAxis"},{"id":"66a31741-3b74-4534-8a7a-36ff016741bc","type":"Grid"},{"id":"596330e3-23fc-4e1f-a1ff-d2557ec06b06","type":"GlyphRenderer"},{"id":"7b358643-45b4-4f64-9228-2996e29859fa","type":"GlyphRenderer"}],"title":{"id":"04aac574-8711-417e-a2a4-4a7685e56fae","type":"Title"},"toolbar":{"id":"63acb088-544d-4d49-9708-a93cb2038c2c","type":"Toolbar"},"x_range":{"id":"c1f7509b-9f83-4130-b2c6-1512b72f4550","type":"FactorRange"},"x_scale":{"id":"864689c9-f492-4f0b-bcce-c1a8142792fc","type":"CategoricalScale"},"y_range":{"id":"8051a1bb-bc44-4998-88f3-0de32cb46935","type":"DataRange1d"},"y_scale":{"id":"ecfaf635-8298-47a8-b5b2-4b112d103517","type":"LinearScale"}},"id":"1e550724-1a2c-4f5b-8a6b-86947a5b7bff","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"69cc2260-b5a7-4ab2-af74-4226c377b19c","type":"ColumnDataSource"},"glyph":{"id":"2b2b43dc-3b2d-4d4f-af84-4508e0eb5192","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"18358c2e-9e57-4c3b-8fb8-2cb984dec9fc","type":"Line"},"selection_glyph":null,"view":{"id":"81f76c5f-03fb-4d6c-8a2c-6dafe6afa670","type":"CDSView"}},"id":"596330e3-23fc-4e1f-a1ff-d2557ec06b06","type":"GlyphRenderer"},{"attributes":{},"id":"ecfaf635-8298-47a8-b5b2-4b112d103517","type":"LinearScale"},{"attributes":{"plot":{"id":"1e550724-1a2c-4f5b-8a6b-86947a5b7bff","subtype":"Figure","type":"Plot"},"ticker":{"id":"567f08fa-f99f-4283-9f0e-282631beec29","type":"CategoricalTicker"}},"id":"2095de68-bcfe-4131-8b2d-e008274b52a7","type":"Grid"},{"attributes":{},"id":"567f08fa-f99f-4283-9f0e-282631beec29","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"4af7dd5b-544a-4fed-a7b9-9cf0ba1b951f","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"1e550724-1a2c-4f5b-8a6b-86947a5b7bff","subtype":"Figure","type":"Plot"},"ticker":{"id":"567f08fa-f99f-4283-9f0e-282631beec29","type":"CategoricalTicker"}},"id":"23f00472-b15e-4e6b-aeba-5abfaf522cb7","type":"CategoricalAxis"},{"attributes":{},"id":"0b6675df-a8ce-4542-a559-e1476594096d","type":"BasicTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"18358c2e-9e57-4c3b-8fb8-2cb984dec9fc","type":"Line"},{"attributes":{"formatter":{"id":"ec789438-0ecc-42fe-913c-aa2a66132447","type":"BasicTickFormatter"},"plot":{"id":"1e550724-1a2c-4f5b-8a6b-86947a5b7bff","subtype":"Figure","type":"Plot"},"ticker":{"id":"0b6675df-a8ce-4542-a559-e1476594096d","type":"BasicTicker"}},"id":"90e77b0f-c1ff-40e9-ac55-538075512b14","type":"LinearAxis"},{"attributes":{"callback":null,"factors":["Battle of Galicia","Battle of the Vistula River"]},"id":"c1f7509b-9f83-4130-b2c6-1512b72f4550","type":"FactorRange"},{"attributes":{},"id":"864689c9-f492-4f0b-bcce-c1a8142792fc","type":"CategoricalScale"}],"root_ids":["1e550724-1a2c-4f5b-8a6b-86947a5b7bff"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"e1ab1a82-3894-4517-8c3a-ebad233ffe82","elementid":"30547d74-dc13-4cf4-97b6-b13981fd1c82","modelid":"1e550724-1a2c-4f5b-8a6b-86947a5b7bff"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

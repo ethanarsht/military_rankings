@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="14d12c1c-ebfa-4493-8cf1-2604c78fd49e"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"e9cde56d-bb9b-48b0-b5d4-0f8006dc9ed0":{"roots":{"references":[{"attributes":{"data_source":{"id":"3ad35613-6aeb-4492-84d6-ac661309306d","type":"ColumnDataSource"},"glyph":{"id":"a244cb2c-3a20-4148-a13e-558219b6fb85","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"78a98ca1-4199-47e8-b889-1f3a13e654a6","type":"Line"},"selection_glyph":null,"view":{"id":"a58f01c6-9d09-4d88-a125-53a97ffddef3","type":"CDSView"}},"id":"7d8d355c-2aee-4fe7-bd40-b4bfe6d7e1bd","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"08b68d4a-5db7-448c-a50a-95e1456bbc85","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"08b68d4a-5db7-448c-a50a-95e1456bbc85","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ad9eb68b-e1b2-40ed-8a2f-25d8ee8b329c","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2b9bffe3-a62e-48f4-9199-0d9a01829160","type":"VBar"},{"attributes":{"source":{"id":"3ad35613-6aeb-4492-84d6-ac661309306d","type":"ColumnDataSource"}},"id":"26e803a1-e782-47bc-bbb8-85cdee2bf307","type":"CDSView"},{"attributes":{"formatter":{"id":"57bcd91f-2d3f-4e2b-9ce1-8ce6781a1998","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"937b8ec9-562b-4de6-9792-1d7e5010d34b","subtype":"Figure","type":"Plot"},"ticker":{"id":"fc499c67-d587-4296-862a-6b78513a0623","type":"CategoricalTicker"}},"id":"b17f631c-fdd6-40f1-ad4a-12fd503b3b7f","type":"CategoricalAxis"},{"attributes":{},"id":"c4cac154-9ded-4d63-8cef-7f9cd3077124","type":"LinearScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"78a98ca1-4199-47e8-b889-1f3a13e654a6","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"937b8ec9-562b-4de6-9792-1d7e5010d34b","subtype":"Figure","type":"Plot"},"ticker":{"id":"4d2d7be1-2274-49b1-be6c-5f1f54458049","type":"BasicTicker"}},"id":"e4fcf76a-3778-4093-b0f4-7c6ca8e18255","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of the Philippines (1941-42)","Battle of Bataan","Battle of Corregidor"]},"id":"8f371f5f-1039-4d73-91ee-2cb133caa353","type":"FactorRange"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"08b68d4a-5db7-448c-a50a-95e1456bbc85","type":"CategoricalColorMapper"},{"attributes":{"callback":null},"id":"d624a8b5-e023-44bd-90b0-46dbc39aa40a","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Jonathan M. Wainwright (general) (0 - 0 - 3)"},"id":"8e0613d5-258c-4576-80f3-abcc2fd04fff","type":"Title"},{"attributes":{"formatter":{"id":"3df9a456-7b08-4b66-ba1d-f7b8ad302c17","type":"BasicTickFormatter"},"plot":{"id":"937b8ec9-562b-4de6-9792-1d7e5010d34b","subtype":"Figure","type":"Plot"},"ticker":{"id":"4d2d7be1-2274-49b1-be6c-5f1f54458049","type":"BasicTicker"}},"id":"e660de89-35c3-4cf6-a772-e848a31330aa","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of the Philippines (1941-42)","Battle of Bataan","Battle of Corregidor"],"cumulative":{"__ndarray__":"Xa9qVB4Q4L/rTQV3/m7wv4j/j1ZUT/e/","dtype":"float64","shape":[3]},"general":["Jonathan M. Wainwright (general)","Jonathan M. Wainwright (general)","Jonathan M. Wainwright (general)"],"outcome":["D","D","D"],"value":{"__ndarray__":"Xa9qVB4Q4L957J+Z3s3gv3LGKn5Xgdu/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABUnkAAAAAAAFieQAAAAAAAWJ5A","dtype":"float64","shape":[3]}}},"id":"3ad35613-6aeb-4492-84d6-ac661309306d","type":"ColumnDataSource"},{"attributes":{},"id":"57bcd91f-2d3f-4e2b-9ce1-8ce6781a1998","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"1c39bf53-50ee-47df-8154-5cc805266033","type":"HoverTool"},{"attributes":{},"id":"3df9a456-7b08-4b66-ba1d-f7b8ad302c17","type":"BasicTickFormatter"},{"attributes":{},"id":"6b98f4f7-c1f4-4086-8fa7-df7dfd26d24a","type":"CategoricalScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a244cb2c-3a20-4148-a13e-558219b6fb85","type":"Line"},{"attributes":{"source":{"id":"3ad35613-6aeb-4492-84d6-ac661309306d","type":"ColumnDataSource"}},"id":"a58f01c6-9d09-4d88-a125-53a97ffddef3","type":"CDSView"},{"attributes":{},"id":"fc499c67-d587-4296-862a-6b78513a0623","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"3ad35613-6aeb-4492-84d6-ac661309306d","type":"ColumnDataSource"},"glyph":{"id":"ad9eb68b-e1b2-40ed-8a2f-25d8ee8b329c","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2b9bffe3-a62e-48f4-9199-0d9a01829160","type":"VBar"},"selection_glyph":null,"view":{"id":"26e803a1-e782-47bc-bbb8-85cdee2bf307","type":"CDSView"}},"id":"5e2c39ab-d71b-4609-b990-78ccc01d596c","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"937b8ec9-562b-4de6-9792-1d7e5010d34b","subtype":"Figure","type":"Plot"},"ticker":{"id":"fc499c67-d587-4296-862a-6b78513a0623","type":"CategoricalTicker"}},"id":"27658d03-b6d1-4976-8f9d-00dec64c6b86","type":"Grid"},{"attributes":{},"id":"4d2d7be1-2274-49b1-be6c-5f1f54458049","type":"BasicTicker"},{"attributes":{"below":[{"id":"b17f631c-fdd6-40f1-ad4a-12fd503b3b7f","type":"CategoricalAxis"}],"left":[{"id":"e660de89-35c3-4cf6-a772-e848a31330aa","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"b17f631c-fdd6-40f1-ad4a-12fd503b3b7f","type":"CategoricalAxis"},{"id":"27658d03-b6d1-4976-8f9d-00dec64c6b86","type":"Grid"},{"id":"e660de89-35c3-4cf6-a772-e848a31330aa","type":"LinearAxis"},{"id":"e4fcf76a-3778-4093-b0f4-7c6ca8e18255","type":"Grid"},{"id":"7d8d355c-2aee-4fe7-bd40-b4bfe6d7e1bd","type":"GlyphRenderer"},{"id":"5e2c39ab-d71b-4609-b990-78ccc01d596c","type":"GlyphRenderer"}],"title":{"id":"8e0613d5-258c-4576-80f3-abcc2fd04fff","type":"Title"},"toolbar":{"id":"7b4626e3-ab91-4ad8-83ab-67f19f7160d0","type":"Toolbar"},"x_range":{"id":"8f371f5f-1039-4d73-91ee-2cb133caa353","type":"FactorRange"},"x_scale":{"id":"6b98f4f7-c1f4-4086-8fa7-df7dfd26d24a","type":"CategoricalScale"},"y_range":{"id":"d624a8b5-e023-44bd-90b0-46dbc39aa40a","type":"DataRange1d"},"y_scale":{"id":"c4cac154-9ded-4d63-8cef-7f9cd3077124","type":"LinearScale"}},"id":"937b8ec9-562b-4de6-9792-1d7e5010d34b","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"1c39bf53-50ee-47df-8154-5cc805266033","type":"HoverTool"}]},"id":"7b4626e3-ab91-4ad8-83ab-67f19f7160d0","type":"Toolbar"}],"root_ids":["937b8ec9-562b-4de6-9792-1d7e5010d34b"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"e9cde56d-bb9b-48b0-b5d4-0f8006dc9ed0","elementid":"14d12c1c-ebfa-4493-8cf1-2604c78fd49e","modelid":"937b8ec9-562b-4de6-9792-1d7e5010d34b"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

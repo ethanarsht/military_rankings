@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="930f6ff6-3921-49f2-877b-6a73f741af26"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"ce412bc8-e81c-4e1f-b735-9a8fd7b0cc11":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"d7c1eddc-dc50-4832-97d8-2fe99f2a12f9","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"d7c1eddc-dc50-4832-97d8-2fe99f2a12f9","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"d7c1eddc-dc50-4832-97d8-2fe99f2a12f9","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"5a9ebb47-4676-4703-8448-e57b1d7c46da","type":"VBar"},{"attributes":{},"id":"19d0d8b3-53f0-467f-a402-a14d970d5e37","type":"CategoricalScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Marston Moor","Battle of Naseby","Battle of Preston (1648)","Battle of Dunbar (1650)","Battle of Worcester"],"cumulative":{"__ndarray__":"pMbGGQ9j3j8wxRqDzsPtP3rXUX0jD/c/zb/uEXC8/z8ShYq2RJgDQA==","dtype":"float64","shape":[5]},"general":["Oliver Cromwell","Oliver Cromwell","Oliver Cromwell","Oliver Cromwell","Oliver Cromwell"],"outcome":["V","V","V","V","V"],"value":{"__ndarray__":"pMbGGQ9j3j+8w27sjSTdP8TpiHd4WuA/ptA5KZla4T9YKZlsZdDdPw==","dtype":"float64","shape":[5]},"year":{"__ndarray__":"AAAAAACwmUAAAAAAALSZQAAAAAAAwJlAAAAAAADImUAAAAAAAMyZQA==","dtype":"float64","shape":[5]}}},"id":"4bb9e4b3-7cd7-46c9-9f5f-582974db4ab0","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"ca783c96-066b-492c-afab-34f38e6a3eaa","type":"BasicTickFormatter"},"plot":{"id":"9a3b8ada-651d-4007-82cd-4440798fcd64","subtype":"Figure","type":"Plot"},"ticker":{"id":"a2c3edea-18ad-4238-8e64-9a2bd8e673a0","type":"BasicTicker"}},"id":"f0c9d2b0-3aca-408f-92d2-041fcf0ba910","type":"LinearAxis"},{"attributes":{},"id":"9b650131-6a53-44f3-842f-da7faacb7732","type":"CategoricalTicker"},{"attributes":{"callback":null},"id":"ab96b4ae-e9c0-40ac-a9f6-8b96a9d6e6fb","type":"DataRange1d"},{"attributes":{},"id":"8cbb0dd4-a047-4844-af54-cc6badb8f19e","type":"CategoricalTickFormatter"},{"attributes":{},"id":"ca783c96-066b-492c-afab-34f38e6a3eaa","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"83b94536-6974-410b-b477-aa859160d09b","type":"HoverTool"}]},"id":"a39ad494-fdb1-4a7e-91e2-1fa8a216c7da","type":"Toolbar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8ad2e2dd-5d11-4058-a58d-a2d5d670fd29","type":"Line"},{"attributes":{"callback":null,"factors":["Battle of Marston Moor","Battle of Naseby","Battle of Preston (1648)","Battle of Dunbar (1650)","Battle of Worcester"]},"id":"5343d386-47d5-4c9e-b218-115986a55165","type":"FactorRange"},{"attributes":{"formatter":{"id":"8cbb0dd4-a047-4844-af54-cc6badb8f19e","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"9a3b8ada-651d-4007-82cd-4440798fcd64","subtype":"Figure","type":"Plot"},"ticker":{"id":"9b650131-6a53-44f3-842f-da7faacb7732","type":"CategoricalTicker"}},"id":"d395da06-43ba-4c3d-b621-1e13d9e39787","type":"CategoricalAxis"},{"attributes":{"source":{"id":"4bb9e4b3-7cd7-46c9-9f5f-582974db4ab0","type":"ColumnDataSource"}},"id":"ad8f425d-26d6-4f8d-a8f7-c5bc6d8b9ab7","type":"CDSView"},{"attributes":{},"id":"0151d23a-8557-4883-9895-9ef0d463ade4","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"63428fba-8773-4611-b913-655687ef290c","type":"VBar"},{"attributes":{"plot":null,"text":"Oliver Cromwell (5 - 0 - 0)"},"id":"60ec7230-362c-4b74-809b-c8153e0b6192","type":"Title"},{"attributes":{"below":[{"id":"d395da06-43ba-4c3d-b621-1e13d9e39787","type":"CategoricalAxis"}],"left":[{"id":"f0c9d2b0-3aca-408f-92d2-041fcf0ba910","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"d395da06-43ba-4c3d-b621-1e13d9e39787","type":"CategoricalAxis"},{"id":"5f156630-f3dc-4d7f-9148-4696cb63b173","type":"Grid"},{"id":"f0c9d2b0-3aca-408f-92d2-041fcf0ba910","type":"LinearAxis"},{"id":"15f28ade-def3-456c-b223-fa4dab266706","type":"Grid"},{"id":"6febe7c4-fae5-4f11-be76-9cce7a4739d8","type":"GlyphRenderer"},{"id":"845e8363-9da4-4395-838b-8a584da6365b","type":"GlyphRenderer"}],"title":{"id":"60ec7230-362c-4b74-809b-c8153e0b6192","type":"Title"},"toolbar":{"id":"a39ad494-fdb1-4a7e-91e2-1fa8a216c7da","type":"Toolbar"},"x_range":{"id":"5343d386-47d5-4c9e-b218-115986a55165","type":"FactorRange"},"x_scale":{"id":"19d0d8b3-53f0-467f-a402-a14d970d5e37","type":"CategoricalScale"},"y_range":{"id":"ab96b4ae-e9c0-40ac-a9f6-8b96a9d6e6fb","type":"DataRange1d"},"y_scale":{"id":"0151d23a-8557-4883-9895-9ef0d463ade4","type":"LinearScale"}},"id":"9a3b8ada-651d-4007-82cd-4440798fcd64","subtype":"Figure","type":"Plot"},{"attributes":{"plot":{"id":"9a3b8ada-651d-4007-82cd-4440798fcd64","subtype":"Figure","type":"Plot"},"ticker":{"id":"9b650131-6a53-44f3-842f-da7faacb7732","type":"CategoricalTicker"}},"id":"5f156630-f3dc-4d7f-9148-4696cb63b173","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"83b94536-6974-410b-b477-aa859160d09b","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0c369fc8-84ce-4f3b-b7c1-3b23b69bba4b","type":"Line"},{"attributes":{"data_source":{"id":"4bb9e4b3-7cd7-46c9-9f5f-582974db4ab0","type":"ColumnDataSource"},"glyph":{"id":"0c369fc8-84ce-4f3b-b7c1-3b23b69bba4b","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8ad2e2dd-5d11-4058-a58d-a2d5d670fd29","type":"Line"},"selection_glyph":null,"view":{"id":"ad8f425d-26d6-4f8d-a8f7-c5bc6d8b9ab7","type":"CDSView"}},"id":"6febe7c4-fae5-4f11-be76-9cce7a4739d8","type":"GlyphRenderer"},{"attributes":{},"id":"a2c3edea-18ad-4238-8e64-9a2bd8e673a0","type":"BasicTicker"},{"attributes":{"source":{"id":"4bb9e4b3-7cd7-46c9-9f5f-582974db4ab0","type":"ColumnDataSource"}},"id":"61c73941-eb3d-4257-b0d7-16cffef1be27","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"9a3b8ada-651d-4007-82cd-4440798fcd64","subtype":"Figure","type":"Plot"},"ticker":{"id":"a2c3edea-18ad-4238-8e64-9a2bd8e673a0","type":"BasicTicker"}},"id":"15f28ade-def3-456c-b223-fa4dab266706","type":"Grid"},{"attributes":{"data_source":{"id":"4bb9e4b3-7cd7-46c9-9f5f-582974db4ab0","type":"ColumnDataSource"},"glyph":{"id":"5a9ebb47-4676-4703-8448-e57b1d7c46da","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"63428fba-8773-4611-b913-655687ef290c","type":"VBar"},"selection_glyph":null,"view":{"id":"61c73941-eb3d-4257-b0d7-16cffef1be27","type":"CDSView"}},"id":"845e8363-9da4-4395-838b-8a584da6365b","type":"GlyphRenderer"}],"root_ids":["9a3b8ada-651d-4007-82cd-4440798fcd64"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"ce412bc8-e81c-4e1f-b735-9a8fd7b0cc11","elementid":"930f6ff6-3921-49f2-877b-6a73f741af26","modelid":"9a3b8ada-651d-4007-82cd-4440798fcd64"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

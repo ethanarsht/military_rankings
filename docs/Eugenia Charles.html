@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="982a48c7-731d-4f4f-ac2e-b27a51b8fb41"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b51454aa-80a3-4e8b-8117-c1ace3697fb3":{"roots":{"references":[{"attributes":{},"id":"2c060756-83aa-493c-950e-719ce6afd226","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"756156c5-3975-4838-b518-12517d326127","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5e6812a5-5799-4e8a-887a-3c3806917129","type":"Line"},{"attributes":{"data_source":{"id":"bb7f4553-807a-4ecb-a584-224da8487bac","type":"ColumnDataSource"},"glyph":{"id":"f141962b-a93a-46a6-a8f9-481de392a567","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b96207c8-c605-4406-9d46-4f4efa952703","type":"VBar"},"selection_glyph":null,"view":{"id":"68c7a506-e6d0-442a-b9aa-28bd7a6d0e8d","type":"CDSView"}},"id":"df6ccdb2-1404-43b0-9a2c-bc7ac6aa9849","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"fea71343-da0e-452e-a950-edc8ad4630e1","subtype":"Figure","type":"Plot"},"ticker":{"id":"a16a6adc-31ed-4176-86db-d7524775785b","type":"CategoricalTicker"}},"id":"324671ff-e730-4649-a8e9-4f80d8243d8f","type":"Grid"},{"attributes":{},"id":"c920e121-e3ed-4414-b375-224fd374bc4c","type":"LinearScale"},{"attributes":{},"id":"f22a5ea3-e6ed-4a77-b32c-aef94dc25518","type":"CategoricalScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"93989fd2-99b0-44aa-b2e2-35e3b596dbd2","type":"Line"},{"attributes":{"callback":null,"factors":["Invasion of Grenada"]},"id":"c1e1c7ba-6117-437f-9e5c-e3c203766e49","type":"FactorRange"},{"attributes":{"dimension":1,"plot":{"id":"fea71343-da0e-452e-a950-edc8ad4630e1","subtype":"Figure","type":"Plot"},"ticker":{"id":"ee887eec-cece-449e-9514-bc65c7dcc175","type":"BasicTicker"}},"id":"8404f44c-54d4-451b-b99a-d305d5b552fe","type":"Grid"},{"attributes":{"formatter":{"id":"5981b15b-740b-44a4-90c3-4e414f484df6","type":"BasicTickFormatter"},"plot":{"id":"fea71343-da0e-452e-a950-edc8ad4630e1","subtype":"Figure","type":"Plot"},"ticker":{"id":"ee887eec-cece-449e-9514-bc65c7dcc175","type":"BasicTicker"}},"id":"7de00733-0a99-4157-9269-bd223bb9acc7","type":"LinearAxis"},{"attributes":{"source":{"id":"bb7f4553-807a-4ecb-a584-224da8487bac","type":"ColumnDataSource"}},"id":"02ec8504-77de-4eb6-93f5-44a2b95383d2","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"756156c5-3975-4838-b518-12517d326127","type":"HoverTool"}]},"id":"fd9387ab-1688-4eb9-81eb-f665be5bfcf5","type":"Toolbar"},{"attributes":{},"id":"ee887eec-cece-449e-9514-bc65c7dcc175","type":"BasicTicker"},{"attributes":{},"id":"a16a6adc-31ed-4176-86db-d7524775785b","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"6e9cb667-9eab-4fb5-86ae-7bfcec9c3127","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"6e9cb667-9eab-4fb5-86ae-7bfcec9c3127","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f141962b-a93a-46a6-a8f9-481de392a567","type":"VBar"},{"attributes":{},"id":"5981b15b-740b-44a4-90c3-4e414f484df6","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b96207c8-c605-4406-9d46-4f4efa952703","type":"VBar"},{"attributes":{"below":[{"id":"a50c9a55-a358-4b3d-a4ac-62df6ed68881","type":"CategoricalAxis"}],"left":[{"id":"7de00733-0a99-4157-9269-bd223bb9acc7","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"a50c9a55-a358-4b3d-a4ac-62df6ed68881","type":"CategoricalAxis"},{"id":"324671ff-e730-4649-a8e9-4f80d8243d8f","type":"Grid"},{"id":"7de00733-0a99-4157-9269-bd223bb9acc7","type":"LinearAxis"},{"id":"8404f44c-54d4-451b-b99a-d305d5b552fe","type":"Grid"},{"id":"68c648d2-3613-4a92-b24b-b2c8f5101d35","type":"GlyphRenderer"},{"id":"df6ccdb2-1404-43b0-9a2c-bc7ac6aa9849","type":"GlyphRenderer"}],"title":{"id":"66959ae8-bd7f-400d-9fe6-0c0205f4cda9","type":"Title"},"toolbar":{"id":"fd9387ab-1688-4eb9-81eb-f665be5bfcf5","type":"Toolbar"},"x_range":{"id":"c1e1c7ba-6117-437f-9e5c-e3c203766e49","type":"FactorRange"},"x_scale":{"id":"f22a5ea3-e6ed-4a77-b32c-aef94dc25518","type":"CategoricalScale"},"y_range":{"id":"c1e64df7-4bf5-47c3-8873-3b2d902119d4","type":"DataRange1d"},"y_scale":{"id":"c920e121-e3ed-4414-b375-224fd374bc4c","type":"LinearScale"}},"id":"fea71343-da0e-452e-a950-edc8ad4630e1","subtype":"Figure","type":"Plot"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"6e9cb667-9eab-4fb5-86ae-7bfcec9c3127","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"bb7f4553-807a-4ecb-a584-224da8487bac","type":"ColumnDataSource"},"glyph":{"id":"5e6812a5-5799-4e8a-887a-3c3806917129","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"93989fd2-99b0-44aa-b2e2-35e3b596dbd2","type":"Line"},"selection_glyph":null,"view":{"id":"02ec8504-77de-4eb6-93f5-44a2b95383d2","type":"CDSView"}},"id":"68c648d2-3613-4a92-b24b-b2c8f5101d35","type":"GlyphRenderer"},{"attributes":{"source":{"id":"bb7f4553-807a-4ecb-a584-224da8487bac","type":"ColumnDataSource"}},"id":"68c7a506-e6d0-442a-b9aa-28bd7a6d0e8d","type":"CDSView"},{"attributes":{"formatter":{"id":"2c060756-83aa-493c-950e-719ce6afd226","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"fea71343-da0e-452e-a950-edc8ad4630e1","subtype":"Figure","type":"Plot"},"ticker":{"id":"a16a6adc-31ed-4176-86db-d7524775785b","type":"CategoricalTicker"}},"id":"a50c9a55-a358-4b3d-a4ac-62df6ed68881","type":"CategoricalAxis"},{"attributes":{"plot":null,"text":"Eugenia Charles (1 - 0 - 0)"},"id":"66959ae8-bd7f-400d-9fe6-0c0205f4cda9","type":"Title"},{"attributes":{"callback":null},"id":"c1e64df7-4bf5-47c3-8873-3b2d902119d4","type":"DataRange1d"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Invasion of Grenada"],"cumulative":{"__ndarray__":"BKkiUREw3D8=","dtype":"float64","shape":[1]},"general":["Eugenia Charles"],"outcome":["V"],"value":{"__ndarray__":"BKkiUREw3D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAD8nkA=","dtype":"float64","shape":[1]}}},"id":"bb7f4553-807a-4ecb-a584-224da8487bac","type":"ColumnDataSource"}],"root_ids":["fea71343-da0e-452e-a950-edc8ad4630e1"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b51454aa-80a3-4e8b-8117-c1ace3697fb3","elementid":"982a48c7-731d-4f4f-ac2e-b27a51b8fb41","modelid":"fea71343-da0e-452e-a950-edc8ad4630e1"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

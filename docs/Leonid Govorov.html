@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="2425a038-6556-4cc3-a5df-26bca5314eda"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"bc1aa791-c75a-4ace-982a-a4165814af70":{"roots":{"references":[{"attributes":{"data_source":{"id":"bd47c85b-277c-4c49-ad01-25d672123e9b","type":"ColumnDataSource"},"glyph":{"id":"2715111e-002c-4c07-b4f7-97cd501014fa","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b941e5f1-8b92-4520-816b-c85183977378","type":"Line"},"selection_glyph":null,"view":{"id":"8952f72e-9a30-4892-bbe6-d610982f1edd","type":"CDSView"}},"id":"bf2dc847-8ec4-4f6d-8532-933f138ee66f","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"285ba82b-93a6-40e3-a4e4-fdb57cc2ab24","type":"CategoricalColorMapper"},{"attributes":{},"id":"afcb1131-43f6-4522-8c3c-bf57373058fb","type":"BasicTicker"},{"attributes":{},"id":"824e1921-6901-4d7f-99b9-8c28e5a0bca0","type":"CategoricalScale"},{"attributes":{},"id":"2ecda578-bc61-4a30-93a6-7a6484e3c8fe","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"285ba82b-93a6-40e3-a4e4-fdb57cc2ab24","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"285ba82b-93a6-40e3-a4e4-fdb57cc2ab24","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"66bd971c-0d4e-43fd-a363-b0d43fb7e5bb","type":"VBar"},{"attributes":{"callback":null,"factors":["Siege of Leningrad","Battle of Tali-Ihantala"]},"id":"c565ce6d-28ef-4c79-8813-fe3755931e40","type":"FactorRange"},{"attributes":{"below":[{"id":"69e684a5-a097-4b9f-94b3-c3d6fe698373","type":"CategoricalAxis"}],"left":[{"id":"fe4dd123-c851-43ae-a1be-eeb9eb60ac24","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"69e684a5-a097-4b9f-94b3-c3d6fe698373","type":"CategoricalAxis"},{"id":"2d0faf5b-7ebe-4168-a834-d133edfdfcb7","type":"Grid"},{"id":"fe4dd123-c851-43ae-a1be-eeb9eb60ac24","type":"LinearAxis"},{"id":"e07bf65f-6bb3-40be-8b92-34a180f1551b","type":"Grid"},{"id":"bf2dc847-8ec4-4f6d-8532-933f138ee66f","type":"GlyphRenderer"},{"id":"2fca4b38-88b1-43e6-9364-e4f79ecd7bb3","type":"GlyphRenderer"}],"title":{"id":"342b7760-30fb-4ca0-b99d-ba159ce04e7b","type":"Title"},"toolbar":{"id":"6934fb12-7904-4285-809d-c793b6122718","type":"Toolbar"},"x_range":{"id":"c565ce6d-28ef-4c79-8813-fe3755931e40","type":"FactorRange"},"x_scale":{"id":"824e1921-6901-4d7f-99b9-8c28e5a0bca0","type":"CategoricalScale"},"y_range":{"id":"e4268655-9956-4ef1-810e-055a573d3488","type":"DataRange1d"},"y_scale":{"id":"537076d8-fd21-466a-9a48-7dbd7afdff90","type":"LinearScale"}},"id":"f85f1cad-d2f4-4243-82cf-90a60893dcdf","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"84f656c6-2056-498b-8cc4-22f508f408ec","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"f85f1cad-d2f4-4243-82cf-90a60893dcdf","subtype":"Figure","type":"Plot"},"ticker":{"id":"afcb1131-43f6-4522-8c3c-bf57373058fb","type":"BasicTicker"}},"id":"e07bf65f-6bb3-40be-8b92-34a180f1551b","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"94678e64-8dca-4901-a25a-a5e1fab613f5","type":"HoverTool"},{"attributes":{},"id":"537076d8-fd21-466a-9a48-7dbd7afdff90","type":"LinearScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"94678e64-8dca-4901-a25a-a5e1fab613f5","type":"HoverTool"}]},"id":"6934fb12-7904-4285-809d-c793b6122718","type":"Toolbar"},{"attributes":{},"id":"40ad0ba5-8b9b-4ec3-a546-93adafc7b3d8","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"e4268655-9956-4ef1-810e-055a573d3488","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Leonid Govorov (1 - 0 - 1)"},"id":"342b7760-30fb-4ca0-b99d-ba159ce04e7b","type":"Title"},{"attributes":{"plot":{"id":"f85f1cad-d2f4-4243-82cf-90a60893dcdf","subtype":"Figure","type":"Plot"},"ticker":{"id":"e50cbf50-7766-4125-9277-12233d604ee7","type":"CategoricalTicker"}},"id":"2d0faf5b-7ebe-4168-a834-d133edfdfcb7","type":"Grid"},{"attributes":{"formatter":{"id":"40ad0ba5-8b9b-4ec3-a546-93adafc7b3d8","type":"BasicTickFormatter"},"plot":{"id":"f85f1cad-d2f4-4243-82cf-90a60893dcdf","subtype":"Figure","type":"Plot"},"ticker":{"id":"afcb1131-43f6-4522-8c3c-bf57373058fb","type":"BasicTicker"}},"id":"fe4dd123-c851-43ae-a1be-eeb9eb60ac24","type":"LinearAxis"},{"attributes":{"source":{"id":"bd47c85b-277c-4c49-ad01-25d672123e9b","type":"ColumnDataSource"}},"id":"8952f72e-9a30-4892-bbe6-d610982f1edd","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"b941e5f1-8b92-4520-816b-c85183977378","type":"Line"},{"attributes":{},"id":"e50cbf50-7766-4125-9277-12233d604ee7","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"2ecda578-bc61-4a30-93a6-7a6484e3c8fe","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"f85f1cad-d2f4-4243-82cf-90a60893dcdf","subtype":"Figure","type":"Plot"},"ticker":{"id":"e50cbf50-7766-4125-9277-12233d604ee7","type":"CategoricalTicker"}},"id":"69e684a5-a097-4b9f-94b3-c3d6fe698373","type":"CategoricalAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2715111e-002c-4c07-b4f7-97cd501014fa","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Leningrad","Battle of Tali-Ihantala"],"cumulative":{"__ndarray__":"RNYeSncX3z+QDfjr4RWxvw==","dtype":"float64","shape":[2]},"general":["Leonid Govorov","Leonid Govorov"],"outcome":["V","D"],"value":{"__ndarray__":"RNYeSncX3z/UbI7id67hvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABUnkAAAAAAAGCeQA==","dtype":"float64","shape":[2]}}},"id":"bd47c85b-277c-4c49-ad01-25d672123e9b","type":"ColumnDataSource"},{"attributes":{"source":{"id":"bd47c85b-277c-4c49-ad01-25d672123e9b","type":"ColumnDataSource"}},"id":"0a014ce4-7cf2-43fb-9a9e-4699c65a4a11","type":"CDSView"},{"attributes":{"data_source":{"id":"bd47c85b-277c-4c49-ad01-25d672123e9b","type":"ColumnDataSource"},"glyph":{"id":"66bd971c-0d4e-43fd-a363-b0d43fb7e5bb","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"84f656c6-2056-498b-8cc4-22f508f408ec","type":"VBar"},"selection_glyph":null,"view":{"id":"0a014ce4-7cf2-43fb-9a9e-4699c65a4a11","type":"CDSView"}},"id":"2fca4b38-88b1-43e6-9364-e4f79ecd7bb3","type":"GlyphRenderer"}],"root_ids":["f85f1cad-d2f4-4243-82cf-90a60893dcdf"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"bc1aa791-c75a-4ace-982a-a4165814af70","elementid":"2425a038-6556-4cc3-a5df-26bca5314eda","modelid":"f85f1cad-d2f4-4243-82cf-90a60893dcdf"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

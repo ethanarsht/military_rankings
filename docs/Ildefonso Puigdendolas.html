@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="eaed9ce2-4e35-4f4a-a736-fb4bbdc8491c"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"f163c8b3-bde9-46e7-b8a9-b53b84fe37e1":{"roots":{"references":[{"attributes":{"data_source":{"id":"e0f9889a-51b5-44f6-bbce-0625cf5e5329","type":"ColumnDataSource"},"glyph":{"id":"192199ab-fcdb-4c25-a299-5ab305614844","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"16f140f4-a086-4ba9-b7f3-31b0bc087999","type":"VBar"},"selection_glyph":null,"view":{"id":"87be4a43-505d-4eeb-899c-09daa2e91d5b","type":"CDSView"}},"id":"d2b78a8f-ef27-44b6-832f-7c000466d696","type":"GlyphRenderer"},{"attributes":{},"id":"1af1a729-d81a-480a-a386-f4ec88a31357","type":"LinearScale"},{"attributes":{},"id":"5b78f343-cc3b-462b-ab9c-89fc1b27b401","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"40d90380-6853-40c3-8fc4-45bb76d9f7c6","type":"HoverTool"}]},"id":"a2dfc7e5-3669-4b80-aa1f-687f7538ed7f","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"7513f301-1008-4a43-8cd9-a8235f190a3f","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"7513f301-1008-4a43-8cd9-a8235f190a3f","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"192199ab-fcdb-4c25-a299-5ab305614844","type":"VBar"},{"attributes":{"formatter":{"id":"3de79d0b-8636-4c38-b81c-513feb7209b7","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"1feef788-9091-4661-b7f3-cc432eda2800","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b78f343-cc3b-462b-ab9c-89fc1b27b401","type":"CategoricalTicker"}},"id":"def6a563-b9c1-4643-9f6f-3ce2279a7c10","type":"CategoricalAxis"},{"attributes":{},"id":"3de79d0b-8636-4c38-b81c-513feb7209b7","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"1feef788-9091-4661-b7f3-cc432eda2800","subtype":"Figure","type":"Plot"},"ticker":{"id":"5300960f-02cb-435a-8ce8-108ffa02d0a1","type":"BasicTicker"}},"id":"c6fe890f-fa41-4908-bfa0-b014d739e323","type":"Grid"},{"attributes":{"source":{"id":"e0f9889a-51b5-44f6-bbce-0625cf5e5329","type":"ColumnDataSource"}},"id":"ecc11179-c013-495c-8dd0-63cab04cadfc","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"73e48289-59df-4fa0-b990-d200d97f6347","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Badajoz (1936)"],"cumulative":{"__ndarray__":"3Knx3aYj4b8=","dtype":"float64","shape":[1]},"general":["Ildefonso Puigdendolas"],"outcome":["D"],"value":{"__ndarray__":"3Knx3aYj4b8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABAnkA=","dtype":"float64","shape":[1]}}},"id":"e0f9889a-51b5-44f6-bbce-0625cf5e5329","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"16f140f4-a086-4ba9-b7f3-31b0bc087999","type":"VBar"},{"attributes":{"callback":null},"id":"ee15d991-9c93-495a-9fc4-10edc4d80f50","type":"DataRange1d"},{"attributes":{},"id":"5300960f-02cb-435a-8ce8-108ffa02d0a1","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["Battle of Badajoz (1936)"]},"id":"662963d6-6b99-4453-8bc7-bc1d2089f912","type":"FactorRange"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"b76a75ac-6ee0-40cb-9ee6-ec8a2c4a851a","type":"Line"},{"attributes":{"plot":null,"text":"Ildefonso Puigdendolas (0 - 0 - 1)"},"id":"3a2deed5-1744-4663-add4-50d72e55f6f3","type":"Title"},{"attributes":{"plot":{"id":"1feef788-9091-4661-b7f3-cc432eda2800","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b78f343-cc3b-462b-ab9c-89fc1b27b401","type":"CategoricalTicker"}},"id":"2e0bec42-0f66-480b-9c65-1ed56912873e","type":"Grid"},{"attributes":{"below":[{"id":"def6a563-b9c1-4643-9f6f-3ce2279a7c10","type":"CategoricalAxis"}],"left":[{"id":"4e36671c-def9-46cb-b97f-a6552111cb8b","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"def6a563-b9c1-4643-9f6f-3ce2279a7c10","type":"CategoricalAxis"},{"id":"2e0bec42-0f66-480b-9c65-1ed56912873e","type":"Grid"},{"id":"4e36671c-def9-46cb-b97f-a6552111cb8b","type":"LinearAxis"},{"id":"c6fe890f-fa41-4908-bfa0-b014d739e323","type":"Grid"},{"id":"2fb7eb44-c4fc-481a-bd25-69c9d280a7dc","type":"GlyphRenderer"},{"id":"d2b78a8f-ef27-44b6-832f-7c000466d696","type":"GlyphRenderer"}],"title":{"id":"3a2deed5-1744-4663-add4-50d72e55f6f3","type":"Title"},"toolbar":{"id":"a2dfc7e5-3669-4b80-aa1f-687f7538ed7f","type":"Toolbar"},"x_range":{"id":"662963d6-6b99-4453-8bc7-bc1d2089f912","type":"FactorRange"},"x_scale":{"id":"bb152b17-ebb2-471c-8cbb-a7d84eb58692","type":"CategoricalScale"},"y_range":{"id":"ee15d991-9c93-495a-9fc4-10edc4d80f50","type":"DataRange1d"},"y_scale":{"id":"1af1a729-d81a-480a-a386-f4ec88a31357","type":"LinearScale"}},"id":"1feef788-9091-4661-b7f3-cc432eda2800","subtype":"Figure","type":"Plot"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"7513f301-1008-4a43-8cd9-a8235f190a3f","type":"CategoricalColorMapper"},{"attributes":{},"id":"bb152b17-ebb2-471c-8cbb-a7d84eb58692","type":"CategoricalScale"},{"attributes":{"source":{"id":"e0f9889a-51b5-44f6-bbce-0625cf5e5329","type":"ColumnDataSource"}},"id":"87be4a43-505d-4eeb-899c-09daa2e91d5b","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"40d90380-6853-40c3-8fc4-45bb76d9f7c6","type":"HoverTool"},{"attributes":{},"id":"97c950eb-d640-4dd9-a545-b8dad5c2822d","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"97c950eb-d640-4dd9-a545-b8dad5c2822d","type":"BasicTickFormatter"},"plot":{"id":"1feef788-9091-4661-b7f3-cc432eda2800","subtype":"Figure","type":"Plot"},"ticker":{"id":"5300960f-02cb-435a-8ce8-108ffa02d0a1","type":"BasicTicker"}},"id":"4e36671c-def9-46cb-b97f-a6552111cb8b","type":"LinearAxis"},{"attributes":{"data_source":{"id":"e0f9889a-51b5-44f6-bbce-0625cf5e5329","type":"ColumnDataSource"},"glyph":{"id":"73e48289-59df-4fa0-b990-d200d97f6347","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b76a75ac-6ee0-40cb-9ee6-ec8a2c4a851a","type":"Line"},"selection_glyph":null,"view":{"id":"ecc11179-c013-495c-8dd0-63cab04cadfc","type":"CDSView"}},"id":"2fb7eb44-c4fc-481a-bd25-69c9d280a7dc","type":"GlyphRenderer"}],"root_ids":["1feef788-9091-4661-b7f3-cc432eda2800"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"f163c8b3-bde9-46e7-b8a9-b53b84fe37e1","elementid":"eaed9ce2-4e35-4f4a-a736-fb4bbdc8491c","modelid":"1feef788-9091-4661-b7f3-cc432eda2800"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

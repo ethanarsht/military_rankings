@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="904ead17-fcd0-45f1-b03f-262e7b9dd623"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"e73e1d8c-1fc2-4751-bc2e-fb6d1fb00e51":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f0dad43d-303e-4045-8ea0-fe549a585b4e","type":"Line"},{"attributes":{"source":{"id":"1dbfdfa3-cf86-4c00-99a8-600798f0f0d3","type":"ColumnDataSource"}},"id":"68a46673-8443-4b86-aea7-6ddc884c206f","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"a2e6ad07-1d5f-4063-8070-8707b7e7e318","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"a2e6ad07-1d5f-4063-8070-8707b7e7e318","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b17e6a8f-a2ae-44b0-b00e-81b8e0b735a2","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"3eb737cb-2b55-4184-b351-8bf233e5a7ef","subtype":"Figure","type":"Plot"},"ticker":{"id":"7de4f2ad-70b6-49a1-a25a-26a994ab84f7","type":"BasicTicker"}},"id":"672957d8-14af-4edd-9391-f6729d5b2e95","type":"Grid"},{"attributes":{"below":[{"id":"9d6874a4-5a3b-4ca5-9abe-d1553a63e18c","type":"CategoricalAxis"}],"left":[{"id":"ae09e368-4a5a-419e-b096-c8c40b670af7","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"9d6874a4-5a3b-4ca5-9abe-d1553a63e18c","type":"CategoricalAxis"},{"id":"a5685dba-8cb8-4011-98d7-10ddd722008e","type":"Grid"},{"id":"ae09e368-4a5a-419e-b096-c8c40b670af7","type":"LinearAxis"},{"id":"672957d8-14af-4edd-9391-f6729d5b2e95","type":"Grid"},{"id":"af3b5787-9d26-4de4-9afd-5eb51f5d8afc","type":"GlyphRenderer"},{"id":"3167772b-8d21-4f6b-8e2e-dbe78d183b8a","type":"GlyphRenderer"}],"title":{"id":"08b429b8-84e1-4be0-bef1-c33a0e9b788b","type":"Title"},"toolbar":{"id":"82298caa-e9f3-45d5-a1af-e31bca0b31ff","type":"Toolbar"},"x_range":{"id":"3bf75bb0-f7fb-403b-842c-7fb6c032c497","type":"FactorRange"},"x_scale":{"id":"a6913fd4-4eed-4a09-81b1-855fc601833d","type":"CategoricalScale"},"y_range":{"id":"f70fcabf-c08d-4771-8c7f-8d1e4cc9e79d","type":"DataRange1d"},"y_scale":{"id":"de285908-3138-4f3c-8308-e9aa5192c7df","type":"LinearScale"}},"id":"3eb737cb-2b55-4184-b351-8bf233e5a7ef","subtype":"Figure","type":"Plot"},{"attributes":{"plot":{"id":"3eb737cb-2b55-4184-b351-8bf233e5a7ef","subtype":"Figure","type":"Plot"},"ticker":{"id":"6d9510ce-a5da-4b63-97d4-058046f07a15","type":"CategoricalTicker"}},"id":"a5685dba-8cb8-4011-98d7-10ddd722008e","type":"Grid"},{"attributes":{},"id":"a6913fd4-4eed-4a09-81b1-855fc601833d","type":"CategoricalScale"},{"attributes":{"callback":null},"id":"f70fcabf-c08d-4771-8c7f-8d1e4cc9e79d","type":"DataRange1d"},{"attributes":{"formatter":{"id":"877393f2-dbb4-4d52-b8ee-25c8fe25f70d","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"3eb737cb-2b55-4184-b351-8bf233e5a7ef","subtype":"Figure","type":"Plot"},"ticker":{"id":"6d9510ce-a5da-4b63-97d4-058046f07a15","type":"CategoricalTicker"}},"id":"9d6874a4-5a3b-4ca5-9abe-d1553a63e18c","type":"CategoricalAxis"},{"attributes":{},"id":"6d9510ce-a5da-4b63-97d4-058046f07a15","type":"CategoricalTicker"},{"attributes":{},"id":"7de4f2ad-70b6-49a1-a25a-26a994ab84f7","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["Battle of Jena\u2013Auerstedt","Battle of Ratisbon","Battle of Krasnoi","Battle of Maloyaroslavets","Battle of Vyazma"]},"id":"3bf75bb0-f7fb-403b-842c-7fb6c032c497","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"af9bdebf-39f4-42b2-9023-f241423459fb","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"464be109-bd1c-4a73-ad62-1d5ced9298e1","type":"VBar"},{"attributes":{},"id":"de285908-3138-4f3c-8308-e9aa5192c7df","type":"LinearScale"},{"attributes":{"plot":null,"text":"Louis-Nicolas Davout (3 - 0 - 2)"},"id":"08b429b8-84e1-4be0-bef1-c33a0e9b788b","type":"Title"},{"attributes":{"source":{"id":"1dbfdfa3-cf86-4c00-99a8-600798f0f0d3","type":"ColumnDataSource"}},"id":"18522632-2cc0-402e-b31e-352ca08f0c5e","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"af9bdebf-39f4-42b2-9023-f241423459fb","type":"HoverTool"}]},"id":"82298caa-e9f3-45d5-a1af-e31bca0b31ff","type":"Toolbar"},{"attributes":{"formatter":{"id":"0597312d-15f3-4393-a7b6-76501a4c8066","type":"BasicTickFormatter"},"plot":{"id":"3eb737cb-2b55-4184-b351-8bf233e5a7ef","subtype":"Figure","type":"Plot"},"ticker":{"id":"7de4f2ad-70b6-49a1-a25a-26a994ab84f7","type":"BasicTicker"}},"id":"ae09e368-4a5a-419e-b096-c8c40b670af7","type":"LinearAxis"},{"attributes":{"data_source":{"id":"1dbfdfa3-cf86-4c00-99a8-600798f0f0d3","type":"ColumnDataSource"},"glyph":{"id":"b17e6a8f-a2ae-44b0-b00e-81b8e0b735a2","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"464be109-bd1c-4a73-ad62-1d5ced9298e1","type":"VBar"},"selection_glyph":null,"view":{"id":"18522632-2cc0-402e-b31e-352ca08f0c5e","type":"CDSView"}},"id":"3167772b-8d21-4f6b-8e2e-dbe78d183b8a","type":"GlyphRenderer"},{"attributes":{},"id":"877393f2-dbb4-4d52-b8ee-25c8fe25f70d","type":"CategoricalTickFormatter"},{"attributes":{},"id":"0597312d-15f3-4393-a7b6-76501a4c8066","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"1dbfdfa3-cf86-4c00-99a8-600798f0f0d3","type":"ColumnDataSource"},"glyph":{"id":"f0dad43d-303e-4045-8ea0-fe549a585b4e","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2be46dcc-3c75-4bf7-90be-d275cccfea21","type":"Line"},"selection_glyph":null,"view":{"id":"68a46673-8443-4b86-aea7-6ddc884c206f","type":"CDSView"}},"id":"af3b5787-9d26-4de4-9afd-5eb51f5d8afc","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2be46dcc-3c75-4bf7-90be-d275cccfea21","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Jena\u2013Auerstedt","Battle of Ratisbon","Battle of Krasnoi","Battle of Maloyaroslavets","Battle of Vyazma"],"cumulative":{"__ndarray__":"8juypP7i4D/JBtNoFyLwPzKyVkaYCeE/NMRgOqGS8D93voF8M47gPw==","dtype":"float64","shape":[5]},"general":["Louis-Nicolas Davout","Louis-Nicolas Davout","Louis-Nicolas Davout","Louis-Nicolas Davout","Louis-Nicolas Davout"],"outcome":["V","V","D","V","D"],"value":{"__ndarray__":"8juypP7i4D9Ao+dZYMLeP8G2nhYtdd6/NtZqLqob4D/xyT/4Dpfgvw==","dtype":"float64","shape":[5]},"year":{"__ndarray__":"AAAAAAA4nEAAAAAAAEScQAAAAAAAUJxAAAAAAABQnEAAAAAAAFCcQA==","dtype":"float64","shape":[5]}}},"id":"1dbfdfa3-cf86-4c00-99a8-600798f0f0d3","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"a2e6ad07-1d5f-4063-8070-8707b7e7e318","type":"CategoricalColorMapper"}],"root_ids":["3eb737cb-2b55-4184-b351-8bf233e5a7ef"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"e73e1d8c-1fc2-4751-bc2e-fb6d1fb00e51","elementid":"904ead17-fcd0-45f1-b03f-262e7b9dd623","modelid":"3eb737cb-2b55-4184-b351-8bf233e5a7ef"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

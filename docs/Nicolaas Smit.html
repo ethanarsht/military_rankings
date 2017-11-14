@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="3ffc67ff-a39f-441a-a6b6-2350f4093fa3"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"03da2cac-fc43-4c0e-b3dd-5542e37a5d7c":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"884c9467-af60-4a63-a099-b0c8b638b9d2","type":"HoverTool"}]},"id":"cc077049-1942-4c25-b41a-f1af69745dae","type":"Toolbar"},{"attributes":{},"id":"6d617bd7-119b-47e9-8fbb-924c9e2929f7","type":"CategoricalScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"6db8a7d7-6d6c-4d05-b34e-b4071bb3b931","type":"Line"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"884c9467-af60-4a63-a099-b0c8b638b9d2","type":"HoverTool"},{"attributes":{"data_source":{"id":"3b602dc9-3def-437d-8fae-31cb80261d02","type":"ColumnDataSource"},"glyph":{"id":"788b7d46-0c00-4d13-960c-b83ae8a4d358","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6d72b62a-1522-4067-b991-1f5de3e0fec2","type":"VBar"},"selection_glyph":null,"view":{"id":"669f0170-92e7-49fd-92a6-f0de2dbff26a","type":"CDSView"}},"id":"0d447073-2bfa-4d0f-8e45-6b567ea5f554","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"8e575426-45f6-4dde-8046-678a2bf991a5","subtype":"Figure","type":"Plot"},"ticker":{"id":"1a14f9b9-dfeb-43bc-ae43-b9927bb0e37f","type":"CategoricalTicker"}},"id":"3d125e2f-d311-4e11-ac4f-b21d15a3df6a","type":"Grid"},{"attributes":{"below":[{"id":"708568ca-7065-43c5-8eba-19f16c7dd8c9","type":"CategoricalAxis"}],"left":[{"id":"0f4d1bd0-35ce-45f5-92f2-b514df1674d6","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"708568ca-7065-43c5-8eba-19f16c7dd8c9","type":"CategoricalAxis"},{"id":"3d125e2f-d311-4e11-ac4f-b21d15a3df6a","type":"Grid"},{"id":"0f4d1bd0-35ce-45f5-92f2-b514df1674d6","type":"LinearAxis"},{"id":"3dce2d14-839a-4ec4-9ab0-f8ddb12629e4","type":"Grid"},{"id":"206a9233-7be4-4fe8-8d99-f7a5026d9ebb","type":"GlyphRenderer"},{"id":"0d447073-2bfa-4d0f-8e45-6b567ea5f554","type":"GlyphRenderer"}],"title":{"id":"be6d93fb-031e-4a9e-b466-37bcf206173f","type":"Title"},"toolbar":{"id":"cc077049-1942-4c25-b41a-f1af69745dae","type":"Toolbar"},"x_range":{"id":"16f5aa86-5c03-43bb-8122-e8ac3208e00d","type":"FactorRange"},"x_scale":{"id":"6d617bd7-119b-47e9-8fbb-924c9e2929f7","type":"CategoricalScale"},"y_range":{"id":"72273279-b313-4b3f-8e48-3fe0452ffc4c","type":"DataRange1d"},"y_scale":{"id":"68b5610a-2883-44db-9719-4e91899a6a41","type":"LinearScale"}},"id":"8e575426-45f6-4dde-8046-678a2bf991a5","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"6ba7f674-8b66-4f12-b283-edfeba50f695","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"6ba7f674-8b66-4f12-b283-edfeba50f695","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"788b7d46-0c00-4d13-960c-b83ae8a4d358","type":"VBar"},{"attributes":{},"id":"70da5176-f722-42a3-8ca7-9c04cbf3f9f8","type":"BasicTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ad407d57-1334-4280-9bd1-d737ec17380c","type":"Line"},{"attributes":{"formatter":{"id":"70da5176-f722-42a3-8ca7-9c04cbf3f9f8","type":"BasicTickFormatter"},"plot":{"id":"8e575426-45f6-4dde-8046-678a2bf991a5","subtype":"Figure","type":"Plot"},"ticker":{"id":"02942d45-d095-4361-bbb1-f98d651b8ad7","type":"BasicTicker"}},"id":"0f4d1bd0-35ce-45f5-92f2-b514df1674d6","type":"LinearAxis"},{"attributes":{"callback":null,"factors":["Battle of Majuba Hill","Battle of Schuinshoogte"]},"id":"16f5aa86-5c03-43bb-8122-e8ac3208e00d","type":"FactorRange"},{"attributes":{},"id":"c2105a3d-a17d-4a80-94b5-53e6111f1187","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6d72b62a-1522-4067-b991-1f5de3e0fec2","type":"VBar"},{"attributes":{"source":{"id":"3b602dc9-3def-437d-8fae-31cb80261d02","type":"ColumnDataSource"}},"id":"b84a58a1-5413-4937-aae5-93aa13e23cb5","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"8e575426-45f6-4dde-8046-678a2bf991a5","subtype":"Figure","type":"Plot"},"ticker":{"id":"02942d45-d095-4361-bbb1-f98d651b8ad7","type":"BasicTicker"}},"id":"3dce2d14-839a-4ec4-9ab0-f8ddb12629e4","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Majuba Hill","Battle of Schuinshoogte"],"cumulative":{"__ndarray__":"/JdBCASP3z8ToTi/ienuPw==","dtype":"float64","shape":[2]},"general":["Nicolaas Smit","Nicolaas Smit"],"outcome":["V","V"],"value":{"__ndarray__":"/JdBCASP3z8qqi92D0TePw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABknUAAAAAAAGSdQA==","dtype":"float64","shape":[2]}}},"id":"3b602dc9-3def-437d-8fae-31cb80261d02","type":"ColumnDataSource"},{"attributes":{},"id":"1a14f9b9-dfeb-43bc-ae43-b9927bb0e37f","type":"CategoricalTicker"},{"attributes":{},"id":"68b5610a-2883-44db-9719-4e91899a6a41","type":"LinearScale"},{"attributes":{"formatter":{"id":"c2105a3d-a17d-4a80-94b5-53e6111f1187","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"8e575426-45f6-4dde-8046-678a2bf991a5","subtype":"Figure","type":"Plot"},"ticker":{"id":"1a14f9b9-dfeb-43bc-ae43-b9927bb0e37f","type":"CategoricalTicker"}},"id":"708568ca-7065-43c5-8eba-19f16c7dd8c9","type":"CategoricalAxis"},{"attributes":{"plot":null,"text":"Nicolaas Smit (2 - 0 - 0)"},"id":"be6d93fb-031e-4a9e-b466-37bcf206173f","type":"Title"},{"attributes":{},"id":"02942d45-d095-4361-bbb1-f98d651b8ad7","type":"BasicTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"6ba7f674-8b66-4f12-b283-edfeba50f695","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"3b602dc9-3def-437d-8fae-31cb80261d02","type":"ColumnDataSource"}},"id":"669f0170-92e7-49fd-92a6-f0de2dbff26a","type":"CDSView"},{"attributes":{"callback":null},"id":"72273279-b313-4b3f-8e48-3fe0452ffc4c","type":"DataRange1d"},{"attributes":{"data_source":{"id":"3b602dc9-3def-437d-8fae-31cb80261d02","type":"ColumnDataSource"},"glyph":{"id":"6db8a7d7-6d6c-4d05-b34e-b4071bb3b931","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ad407d57-1334-4280-9bd1-d737ec17380c","type":"Line"},"selection_glyph":null,"view":{"id":"b84a58a1-5413-4937-aae5-93aa13e23cb5","type":"CDSView"}},"id":"206a9233-7be4-4fe8-8d99-f7a5026d9ebb","type":"GlyphRenderer"}],"root_ids":["8e575426-45f6-4dde-8046-678a2bf991a5"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"03da2cac-fc43-4c0e-b3dd-5542e37a5d7c","elementid":"3ffc67ff-a39f-441a-a6b6-2350f4093fa3","modelid":"8e575426-45f6-4dde-8046-678a2bf991a5"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

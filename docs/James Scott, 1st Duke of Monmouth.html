@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="4255f1a1-ebd7-4121-9a1c-5294191a4e35"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"d2e941d7-a0b1-43ae-93e3-5ce56beaebfb":{"roots":{"references":[{"attributes":{"source":{"id":"1025c13f-4a7e-4b32-90de-d3cbaaa142b7","type":"ColumnDataSource"}},"id":"b8c4a17a-4e39-4f03-9103-bb3d5facead1","type":"CDSView"},{"attributes":{"plot":{"id":"00ec3241-db78-41dd-91fd-976d6116341e","subtype":"Figure","type":"Plot"},"ticker":{"id":"2dd8e231-7cdd-4a6b-9584-845bd36ee206","type":"CategoricalTicker"}},"id":"4e2fcee2-3c10-4b21-9919-977a92e85806","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4ccb9db4-a4b7-4455-b713-152c734ad664","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4ccb9db4-a4b7-4455-b713-152c734ad664","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bf5d3738-dd1d-449c-9745-26b757c3e3ac","type":"VBar"},{"attributes":{},"id":"a6faa772-1d0b-4091-adcb-d090a549c32a","type":"CategoricalScale"},{"attributes":{},"id":"5d05148b-3013-4fca-8037-b66fe3bd0d4c","type":"LinearScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"ebac47de-df48-496c-9bbe-ee6a28c86f79","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4ccb9db4-a4b7-4455-b713-152c734ad664","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"1025c13f-4a7e-4b32-90de-d3cbaaa142b7","type":"ColumnDataSource"}},"id":"c2b6a6a5-6154-4e24-b0d2-17fd29f572a7","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"00ec3241-db78-41dd-91fd-976d6116341e","subtype":"Figure","type":"Plot"},"ticker":{"id":"dfcf618c-705b-453d-9a9b-b153cb59dc22","type":"BasicTicker"}},"id":"978a0a15-ba30-41d9-ab73-ef76d1fc6739","type":"Grid"},{"attributes":{},"id":"872c2edc-5c9a-40a6-82eb-a178b5441026","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Bothwell Bridge","Battle of Sedgemoor"],"cumulative":{"__ndarray__":"p01jjwBA4D8AeZ9IUAyBvw==","dtype":"float64","shape":[2]},"general":["James Scott, 1st Duke of Monmouth","James Scott, 1st Duke of Monmouth"],"outcome":["V","D"],"value":{"__ndarray__":"p01jjwBA4D+Ly4XQMYTgvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAA8mkAAAAAAAFSaQA==","dtype":"float64","shape":[2]}}},"id":"1025c13f-4a7e-4b32-90de-d3cbaaa142b7","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"44fb3c66-29b4-45ce-8e82-8ff050cdae0a","type":"Line"},{"attributes":{"plot":null,"text":"James Scott, 1st Duke of Monmouth (1 - 0 - 1)"},"id":"b926bf17-1e29-486b-92cc-c8c67163b995","type":"Title"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7e57091d-38ab-4229-ad7f-4547acff93bc","type":"Line"},{"attributes":{"callback":null,"factors":["Battle of Bothwell Bridge","Battle of Sedgemoor"]},"id":"fc3f683c-3fc0-4b5f-8f87-9b0d43d02ca6","type":"FactorRange"},{"attributes":{"callback":null},"id":"99c63830-eae1-44c8-8a00-05c689d544de","type":"DataRange1d"},{"attributes":{},"id":"14bf049e-c7f8-4ad2-af4c-4552274e4393","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"872c2edc-5c9a-40a6-82eb-a178b5441026","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"00ec3241-db78-41dd-91fd-976d6116341e","subtype":"Figure","type":"Plot"},"ticker":{"id":"2dd8e231-7cdd-4a6b-9584-845bd36ee206","type":"CategoricalTicker"}},"id":"5e7b9921-201f-42aa-a339-0d3935b2a699","type":"CategoricalAxis"},{"attributes":{},"id":"2dd8e231-7cdd-4a6b-9584-845bd36ee206","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"1025c13f-4a7e-4b32-90de-d3cbaaa142b7","type":"ColumnDataSource"},"glyph":{"id":"7e57091d-38ab-4229-ad7f-4547acff93bc","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"44fb3c66-29b4-45ce-8e82-8ff050cdae0a","type":"Line"},"selection_glyph":null,"view":{"id":"b8c4a17a-4e39-4f03-9103-bb3d5facead1","type":"CDSView"}},"id":"49321c6d-2fe6-4018-8566-2f250e358e91","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"14bf049e-c7f8-4ad2-af4c-4552274e4393","type":"BasicTickFormatter"},"plot":{"id":"00ec3241-db78-41dd-91fd-976d6116341e","subtype":"Figure","type":"Plot"},"ticker":{"id":"dfcf618c-705b-453d-9a9b-b153cb59dc22","type":"BasicTicker"}},"id":"07df1c31-9dbc-4296-a161-088b7afc66b9","type":"LinearAxis"},{"attributes":{},"id":"dfcf618c-705b-453d-9a9b-b153cb59dc22","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"ebac47de-df48-496c-9bbe-ee6a28c86f79","type":"HoverTool"}]},"id":"83e380a1-e36a-480b-b556-7dfa7a907660","type":"Toolbar"},{"attributes":{"below":[{"id":"5e7b9921-201f-42aa-a339-0d3935b2a699","type":"CategoricalAxis"}],"left":[{"id":"07df1c31-9dbc-4296-a161-088b7afc66b9","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"5e7b9921-201f-42aa-a339-0d3935b2a699","type":"CategoricalAxis"},{"id":"4e2fcee2-3c10-4b21-9919-977a92e85806","type":"Grid"},{"id":"07df1c31-9dbc-4296-a161-088b7afc66b9","type":"LinearAxis"},{"id":"978a0a15-ba30-41d9-ab73-ef76d1fc6739","type":"Grid"},{"id":"49321c6d-2fe6-4018-8566-2f250e358e91","type":"GlyphRenderer"},{"id":"f7b51202-ea22-458e-8b84-d7c62b378377","type":"GlyphRenderer"}],"title":{"id":"b926bf17-1e29-486b-92cc-c8c67163b995","type":"Title"},"toolbar":{"id":"83e380a1-e36a-480b-b556-7dfa7a907660","type":"Toolbar"},"x_range":{"id":"fc3f683c-3fc0-4b5f-8f87-9b0d43d02ca6","type":"FactorRange"},"x_scale":{"id":"a6faa772-1d0b-4091-adcb-d090a549c32a","type":"CategoricalScale"},"y_range":{"id":"99c63830-eae1-44c8-8a00-05c689d544de","type":"DataRange1d"},"y_scale":{"id":"5d05148b-3013-4fca-8037-b66fe3bd0d4c","type":"LinearScale"}},"id":"00ec3241-db78-41dd-91fd-976d6116341e","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"eed68bce-3d4e-488d-b9ae-2fec9f4f61da","type":"VBar"},{"attributes":{"data_source":{"id":"1025c13f-4a7e-4b32-90de-d3cbaaa142b7","type":"ColumnDataSource"},"glyph":{"id":"bf5d3738-dd1d-449c-9745-26b757c3e3ac","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"eed68bce-3d4e-488d-b9ae-2fec9f4f61da","type":"VBar"},"selection_glyph":null,"view":{"id":"c2b6a6a5-6154-4e24-b0d2-17fd29f572a7","type":"CDSView"}},"id":"f7b51202-ea22-458e-8b84-d7c62b378377","type":"GlyphRenderer"}],"root_ids":["00ec3241-db78-41dd-91fd-976d6116341e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"d2e941d7-a0b1-43ae-93e3-5ce56beaebfb","elementid":"4255f1a1-ebd7-4121-9a1c-5294191a4e35","modelid":"00ec3241-db78-41dd-91fd-976d6116341e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

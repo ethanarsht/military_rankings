@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="6c8dd438-07b4-4511-9c88-88f2186025e6"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"6971aea1-0e70-47f6-89cc-badfe7573c48":{"roots":{"references":[{"attributes":{},"id":"bd1e16dd-1457-42ef-8724-08f3f931fe4c","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"d62a8daa-6c3d-41b6-b886-faac0d03a0da","subtype":"Figure","type":"Plot"},"ticker":{"id":"21ffdae9-6499-4574-80b9-69c60cbd63ed","type":"BasicTicker"}},"id":"a05cf4c1-a70c-41a6-9656-0b482d171b0a","type":"Grid"},{"attributes":{"data_source":{"id":"6268553f-bee2-4d97-b92e-1e9f932d05ef","type":"ColumnDataSource"},"glyph":{"id":"d027653b-ca14-4e46-b132-4e415d207e53","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"56c8bfd4-a77d-45e7-a03e-ef7dbee48652","type":"VBar"},"selection_glyph":null,"view":{"id":"79e44e22-a91d-437b-902c-1aa52c344e15","type":"CDSView"}},"id":"53ee7f6c-d011-4e45-bf23-5b96709770af","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"8ca5c072-2fe8-4767-9c71-058faea7247f","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"d62a8daa-6c3d-41b6-b886-faac0d03a0da","subtype":"Figure","type":"Plot"},"ticker":{"id":"d1ca9bc5-b317-4fa9-874a-f77caa8dceb3","type":"CategoricalTicker"}},"id":"8d98fe9f-b67d-480b-b350-119308f6580f","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"6268553f-bee2-4d97-b92e-1e9f932d05ef","type":"ColumnDataSource"},"glyph":{"id":"aabda637-ada0-4f85-8e1e-6a3c9a5a91c1","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b25c112e-2530-4046-89eb-1de6e6a5dd68","type":"Line"},"selection_glyph":null,"view":{"id":"9d803016-9198-4172-93ab-d9937d37964d","type":"CDSView"}},"id":"4c2c6994-c594-4647-b130-110ed28dbf5e","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of Flers-Courcelette","Battle of the Ancre","Battle of Thiepval Ridge","Battle of Passchendaele"]},"id":"c21a4b6b-c98c-4985-b368-169dc4689e31","type":"FactorRange"},{"attributes":{"formatter":{"id":"bd1e16dd-1457-42ef-8724-08f3f931fe4c","type":"BasicTickFormatter"},"plot":{"id":"d62a8daa-6c3d-41b6-b886-faac0d03a0da","subtype":"Figure","type":"Plot"},"ticker":{"id":"21ffdae9-6499-4574-80b9-69c60cbd63ed","type":"BasicTicker"}},"id":"989170ec-61b0-45e9-84ac-7548f5c80fe9","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Hubert Gough (4 - 0 - 0)"},"id":"13fba457-2c0c-488d-bc8c-0869fb526550","type":"Title"},{"attributes":{"source":{"id":"6268553f-bee2-4d97-b92e-1e9f932d05ef","type":"ColumnDataSource"}},"id":"9d803016-9198-4172-93ab-d9937d37964d","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"ebc5f44d-8154-4604-afe6-64cfc5bf0a6f","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"ebc5f44d-8154-4604-afe6-64cfc5bf0a6f","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d027653b-ca14-4e46-b132-4e415d207e53","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"5145870a-38ca-40fc-8ce8-0ff01467255f","type":"HoverTool"}]},"id":"c92004a3-dff4-4572-bd45-679679d693a0","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"56c8bfd4-a77d-45e7-a03e-ef7dbee48652","type":"VBar"},{"attributes":{"callback":null},"id":"f36ef75a-d425-4c5f-a974-0c0a79832729","type":"DataRange1d"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"5145870a-38ca-40fc-8ce8-0ff01467255f","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"aabda637-ada0-4f85-8e1e-6a3c9a5a91c1","type":"Line"},{"attributes":{},"id":"6fee3b7d-1a6d-4de0-a9b1-c35cf54cd550","type":"LinearScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Flers-Courcelette","Battle of the Ancre","Battle of Thiepval Ridge","Battle of Passchendaele"],"cumulative":{"__ndarray__":"AAAAAAAA4D8AAAAAAADwPwAAAAAAAPg//s7yXPIhAEA=","dtype":"float64","shape":[4]},"general":["Hubert Gough","Hubert Gough","Hubert Gough","Hubert Gough"],"outcome":["V","V","V","V"],"value":{"__ndarray__":"AAAAAAAA4D8AAAAAAADgPwAAAAAAAOA/+DvLc8mH4D8=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAADwnUAAAAAAAPCdQAAAAAAA8J1AAAAAAAD0nUA=","dtype":"float64","shape":[4]}}},"id":"6268553f-bee2-4d97-b92e-1e9f932d05ef","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"ebc5f44d-8154-4604-afe6-64cfc5bf0a6f","type":"CategoricalColorMapper"},{"attributes":{},"id":"21ffdae9-6499-4574-80b9-69c60cbd63ed","type":"BasicTicker"},{"attributes":{"below":[{"id":"8d98fe9f-b67d-480b-b350-119308f6580f","type":"CategoricalAxis"}],"left":[{"id":"989170ec-61b0-45e9-84ac-7548f5c80fe9","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"8d98fe9f-b67d-480b-b350-119308f6580f","type":"CategoricalAxis"},{"id":"11d04c3d-e061-4f1d-bb78-36cad6e4c2ff","type":"Grid"},{"id":"989170ec-61b0-45e9-84ac-7548f5c80fe9","type":"LinearAxis"},{"id":"a05cf4c1-a70c-41a6-9656-0b482d171b0a","type":"Grid"},{"id":"4c2c6994-c594-4647-b130-110ed28dbf5e","type":"GlyphRenderer"},{"id":"53ee7f6c-d011-4e45-bf23-5b96709770af","type":"GlyphRenderer"}],"title":{"id":"13fba457-2c0c-488d-bc8c-0869fb526550","type":"Title"},"toolbar":{"id":"c92004a3-dff4-4572-bd45-679679d693a0","type":"Toolbar"},"x_range":{"id":"c21a4b6b-c98c-4985-b368-169dc4689e31","type":"FactorRange"},"x_scale":{"id":"d79995ef-c229-4896-b70f-08779755224e","type":"CategoricalScale"},"y_range":{"id":"f36ef75a-d425-4c5f-a974-0c0a79832729","type":"DataRange1d"},"y_scale":{"id":"6fee3b7d-1a6d-4de0-a9b1-c35cf54cd550","type":"LinearScale"}},"id":"d62a8daa-6c3d-41b6-b886-faac0d03a0da","subtype":"Figure","type":"Plot"},{"attributes":{"plot":{"id":"d62a8daa-6c3d-41b6-b886-faac0d03a0da","subtype":"Figure","type":"Plot"},"ticker":{"id":"d1ca9bc5-b317-4fa9-874a-f77caa8dceb3","type":"CategoricalTicker"}},"id":"11d04c3d-e061-4f1d-bb78-36cad6e4c2ff","type":"Grid"},{"attributes":{},"id":"8ca5c072-2fe8-4767-9c71-058faea7247f","type":"CategoricalTickFormatter"},{"attributes":{},"id":"d1ca9bc5-b317-4fa9-874a-f77caa8dceb3","type":"CategoricalTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"b25c112e-2530-4046-89eb-1de6e6a5dd68","type":"Line"},{"attributes":{"source":{"id":"6268553f-bee2-4d97-b92e-1e9f932d05ef","type":"ColumnDataSource"}},"id":"79e44e22-a91d-437b-902c-1aa52c344e15","type":"CDSView"},{"attributes":{},"id":"d79995ef-c229-4896-b70f-08779755224e","type":"CategoricalScale"}],"root_ids":["d62a8daa-6c3d-41b6-b886-faac0d03a0da"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"6971aea1-0e70-47f6-89cc-badfe7573c48","elementid":"6c8dd438-07b4-4511-9c88-88f2186025e6","modelid":"d62a8daa-6c3d-41b6-b886-faac0d03a0da"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

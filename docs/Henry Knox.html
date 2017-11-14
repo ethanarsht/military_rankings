@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="10c32ecf-4dfb-421b-b0b3-c0b32a797fc9"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b534bebe-81ee-409c-896d-2117d8a73cb4":{"roots":{"references":[{"attributes":{"data_source":{"id":"5e82513d-b422-4a3e-92e4-141c4d0f9110","type":"ColumnDataSource"},"glyph":{"id":"5d387d2e-5889-45ac-876b-a098cba46bdf","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bf90f289-b86f-4b0f-bd60-1c6dc9e37939","type":"VBar"},"selection_glyph":null,"view":{"id":"0ac43df0-6bc8-40e8-9df0-ea25882f9a49","type":"CDSView"}},"id":"bbaca3a3-4973-4462-954c-c47d35a80eb8","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"714c95b6-97ae-4f7e-ba3b-819f4158f757","subtype":"Figure","type":"Plot"},"ticker":{"id":"479a8207-af92-405e-8d58-aaf08314b6e2","type":"BasicTicker"}},"id":"87d88712-77ab-474b-8736-547cadd6004c","type":"Grid"},{"attributes":{},"id":"915396c8-02f8-403b-a2cd-3aa63c1ff1a7","type":"LinearScale"},{"attributes":{"callback":null},"id":"2a2fa3ab-3ebf-431b-b24d-c47d096d0f9b","type":"DataRange1d"},{"attributes":{},"id":"e1ee71bc-950d-44f5-a467-5194e9697e1e","type":"CategoricalScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"479f83b5-a97a-44b6-803a-24d268fea401","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"47099989-3d8c-463e-bb54-8d44e11b34a8","type":"Line"},{"attributes":{"plot":null,"text":"Henry Knox (1 - 1 - 1)"},"id":"e8c9470e-99c9-4f8d-bf83-f2cfa08e134c","type":"Title"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2032bb19-476b-462e-b563-348a67e73234","type":"Line"},{"attributes":{"source":{"id":"5e82513d-b422-4a3e-92e4-141c4d0f9110","type":"ColumnDataSource"}},"id":"51ea245c-56cf-4b95-8940-ab9b6ee73640","type":"CDSView"},{"attributes":{"source":{"id":"5e82513d-b422-4a3e-92e4-141c4d0f9110","type":"ColumnDataSource"}},"id":"0ac43df0-6bc8-40e8-9df0-ea25882f9a49","type":"CDSView"},{"attributes":{"formatter":{"id":"0615408c-a46a-4f4f-82d6-49b38687ebe0","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"714c95b6-97ae-4f7e-ba3b-819f4158f757","subtype":"Figure","type":"Plot"},"ticker":{"id":"3abb925a-066a-40bb-aec3-c4753e62e81a","type":"CategoricalTicker"}},"id":"559a282f-1e40-44f2-b54e-96f743eb5f05","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"479f83b5-a97a-44b6-803a-24d268fea401","type":"HoverTool"}]},"id":"714db5b2-2916-465b-b2fb-02231d2e8c79","type":"Toolbar"},{"attributes":{},"id":"3abb925a-066a-40bb-aec3-c4753e62e81a","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"12924bba-a545-4d87-b365-3f5bc4bfd8da","type":"BasicTickFormatter"},"plot":{"id":"714c95b6-97ae-4f7e-ba3b-819f4158f757","subtype":"Figure","type":"Plot"},"ticker":{"id":"479a8207-af92-405e-8d58-aaf08314b6e2","type":"BasicTicker"}},"id":"d5a4b061-319a-49c9-8c9e-1ca1e10ebd8b","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"1a2bf686-02e5-402c-b0a7-745a0fd27333","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"1a2bf686-02e5-402c-b0a7-745a0fd27333","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"5d387d2e-5889-45ac-876b-a098cba46bdf","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Long Island","Battle of Monmouth","Battle of Yorktown (1781)"],"cumulative":{"__ndarray__":"jlRJRrbp3b9gK7Lp7BvdvwAMlzvlNn4/","dtype":"float64","shape":[3]},"general":["Henry Knox","Henry Knox","Henry Knox"],"outcome":["D","I","V"],"value":{"__ndarray__":"jlRJRrbp3b/AJeWSK7mJP5CHoH7IlN0/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAADAm0AAAAAAAMibQAAAAAAA1JtA","dtype":"float64","shape":[3]}}},"id":"5e82513d-b422-4a3e-92e4-141c4d0f9110","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bf90f289-b86f-4b0f-bd60-1c6dc9e37939","type":"VBar"},{"attributes":{},"id":"0615408c-a46a-4f4f-82d6-49b38687ebe0","type":"CategoricalTickFormatter"},{"attributes":{},"id":"12924bba-a545-4d87-b365-3f5bc4bfd8da","type":"BasicTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"1a2bf686-02e5-402c-b0a7-745a0fd27333","type":"CategoricalColorMapper"},{"attributes":{"below":[{"id":"559a282f-1e40-44f2-b54e-96f743eb5f05","type":"CategoricalAxis"}],"left":[{"id":"d5a4b061-319a-49c9-8c9e-1ca1e10ebd8b","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"559a282f-1e40-44f2-b54e-96f743eb5f05","type":"CategoricalAxis"},{"id":"26a67bb7-2f99-421b-9286-a72d1bf2b807","type":"Grid"},{"id":"d5a4b061-319a-49c9-8c9e-1ca1e10ebd8b","type":"LinearAxis"},{"id":"87d88712-77ab-474b-8736-547cadd6004c","type":"Grid"},{"id":"c1334680-5a9b-477a-bad3-149f852ba57c","type":"GlyphRenderer"},{"id":"bbaca3a3-4973-4462-954c-c47d35a80eb8","type":"GlyphRenderer"}],"title":{"id":"e8c9470e-99c9-4f8d-bf83-f2cfa08e134c","type":"Title"},"toolbar":{"id":"714db5b2-2916-465b-b2fb-02231d2e8c79","type":"Toolbar"},"x_range":{"id":"94693fec-b10a-4a51-baa8-fd88ed02041b","type":"FactorRange"},"x_scale":{"id":"e1ee71bc-950d-44f5-a467-5194e9697e1e","type":"CategoricalScale"},"y_range":{"id":"2a2fa3ab-3ebf-431b-b24d-c47d096d0f9b","type":"DataRange1d"},"y_scale":{"id":"915396c8-02f8-403b-a2cd-3aa63c1ff1a7","type":"LinearScale"}},"id":"714c95b6-97ae-4f7e-ba3b-819f4158f757","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"479a8207-af92-405e-8d58-aaf08314b6e2","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["Battle of Long Island","Battle of Monmouth","Battle of Yorktown (1781)"]},"id":"94693fec-b10a-4a51-baa8-fd88ed02041b","type":"FactorRange"},{"attributes":{"data_source":{"id":"5e82513d-b422-4a3e-92e4-141c4d0f9110","type":"ColumnDataSource"},"glyph":{"id":"47099989-3d8c-463e-bb54-8d44e11b34a8","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2032bb19-476b-462e-b563-348a67e73234","type":"Line"},"selection_glyph":null,"view":{"id":"51ea245c-56cf-4b95-8940-ab9b6ee73640","type":"CDSView"}},"id":"c1334680-5a9b-477a-bad3-149f852ba57c","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"714c95b6-97ae-4f7e-ba3b-819f4158f757","subtype":"Figure","type":"Plot"},"ticker":{"id":"3abb925a-066a-40bb-aec3-c4753e62e81a","type":"CategoricalTicker"}},"id":"26a67bb7-2f99-421b-9286-a72d1bf2b807","type":"Grid"}],"root_ids":["714c95b6-97ae-4f7e-ba3b-819f4158f757"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b534bebe-81ee-409c-896d-2117d8a73cb4","elementid":"10c32ecf-4dfb-421b-b0b3-c0b32a797fc9","modelid":"714c95b6-97ae-4f7e-ba3b-819f4158f757"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

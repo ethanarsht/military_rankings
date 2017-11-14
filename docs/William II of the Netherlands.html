@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="de28e7f4-319b-46bc-9506-13feace47afe"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"4321aa7c-0d54-4b3d-a01e-3d41103c3e52":{"roots":{"references":[{"attributes":{"data_source":{"id":"dd519473-6db1-4d6b-843b-1af851c215e9","type":"ColumnDataSource"},"glyph":{"id":"49aa3861-bbd7-43a2-9ba4-adaf6b85ff7b","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"194f1381-828c-46ef-a25a-6ee1cf6ec5e4","type":"VBar"},"selection_glyph":null,"view":{"id":"4a08f253-f393-48e3-9c4a-0fe4f1d9dab7","type":"CDSView"}},"id":"66066da2-9b78-4aea-8716-72bfacd5bb10","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Quatre Bras","Battle of Hasselt","Ten days campaign"],"cumulative":{"__ndarray__":"SKwcRLK43T/V1Krzn2vtP+l934AUv9w/","dtype":"float64","shape":[3]},"general":["William II of the Netherlands","William II of the Netherlands","William II of the Netherlands"],"outcome":["V","V","D"],"value":{"__ndarray__":"SKwcRLK43T9i/TijjR7dP8ErdmYrGN6/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABcnEAAAAAAAJycQAAAAAAAnJxA","dtype":"float64","shape":[3]}}},"id":"dd519473-6db1-4d6b-843b-1af851c215e9","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"766f51b1-23bb-45d2-85c4-c8581d0d6502","type":"CategoricalColorMapper"},{"attributes":{},"id":"1c16f90d-a30c-4287-953b-28d7d826e05e","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Battle of Quatre Bras","Battle of Hasselt","Ten days campaign"]},"id":"4d558de5-db8d-47a7-8f60-f91f109b9d00","type":"FactorRange"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0d4fd474-12ad-4d0b-98df-787ae158efcc","type":"Line"},{"attributes":{},"id":"114739bc-9bbe-4448-9636-b6d3f7eb4196","type":"BasicTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"09beb41b-c7aa-4e91-b126-e4c9d1c1c97a","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"63610af3-50ac-4e6c-9c4a-1522ad8d2c56","type":"HoverTool"}]},"id":"25a7ee75-4f32-44ba-8b44-dbc5be9b06de","type":"Toolbar"},{"attributes":{"source":{"id":"dd519473-6db1-4d6b-843b-1af851c215e9","type":"ColumnDataSource"}},"id":"4a08f253-f393-48e3-9c4a-0fe4f1d9dab7","type":"CDSView"},{"attributes":{},"id":"87fa5cdc-d80f-4ad7-8ba9-aab09851c064","type":"LinearScale"},{"attributes":{"plot":{"id":"fd67fe95-2e4a-4efb-993c-a79149a7ade7","subtype":"Figure","type":"Plot"},"ticker":{"id":"d4751b5d-f64f-44c2-a2ca-11c4b9f6d576","type":"CategoricalTicker"}},"id":"58ddd514-76fc-4b06-b383-d80822a3255a","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"766f51b1-23bb-45d2-85c4-c8581d0d6502","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"766f51b1-23bb-45d2-85c4-c8581d0d6502","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"49aa3861-bbd7-43a2-9ba4-adaf6b85ff7b","type":"VBar"},{"attributes":{"data_source":{"id":"dd519473-6db1-4d6b-843b-1af851c215e9","type":"ColumnDataSource"},"glyph":{"id":"09beb41b-c7aa-4e91-b126-e4c9d1c1c97a","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0d4fd474-12ad-4d0b-98df-787ae158efcc","type":"Line"},"selection_glyph":null,"view":{"id":"8974944d-34d8-4177-b9e4-a78c26774aca","type":"CDSView"}},"id":"4eff1a8a-3e55-4fb7-9e72-a084fdc27815","type":"GlyphRenderer"},{"attributes":{},"id":"31953157-0a54-4c47-b9fd-a43b03b1ffea","type":"CategoricalTickFormatter"},{"attributes":{},"id":"6f618ae9-6ca4-4e76-a46d-f22becc45138","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"fd67fe95-2e4a-4efb-993c-a79149a7ade7","subtype":"Figure","type":"Plot"},"ticker":{"id":"114739bc-9bbe-4448-9636-b6d3f7eb4196","type":"BasicTicker"}},"id":"8121761e-d970-482d-8cfa-84ce581bf165","type":"Grid"},{"attributes":{"formatter":{"id":"6f618ae9-6ca4-4e76-a46d-f22becc45138","type":"BasicTickFormatter"},"plot":{"id":"fd67fe95-2e4a-4efb-993c-a79149a7ade7","subtype":"Figure","type":"Plot"},"ticker":{"id":"114739bc-9bbe-4448-9636-b6d3f7eb4196","type":"BasicTicker"}},"id":"eb3eeee4-2eb6-4ab1-8e9b-f998b5041ddd","type":"LinearAxis"},{"attributes":{},"id":"d4751b5d-f64f-44c2-a2ca-11c4b9f6d576","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"194f1381-828c-46ef-a25a-6ee1cf6ec5e4","type":"VBar"},{"attributes":{"formatter":{"id":"31953157-0a54-4c47-b9fd-a43b03b1ffea","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"fd67fe95-2e4a-4efb-993c-a79149a7ade7","subtype":"Figure","type":"Plot"},"ticker":{"id":"d4751b5d-f64f-44c2-a2ca-11c4b9f6d576","type":"CategoricalTicker"}},"id":"3ecdf5c9-fdeb-4331-85eb-c6ef7366771b","type":"CategoricalAxis"},{"attributes":{"below":[{"id":"3ecdf5c9-fdeb-4331-85eb-c6ef7366771b","type":"CategoricalAxis"}],"left":[{"id":"eb3eeee4-2eb6-4ab1-8e9b-f998b5041ddd","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"3ecdf5c9-fdeb-4331-85eb-c6ef7366771b","type":"CategoricalAxis"},{"id":"58ddd514-76fc-4b06-b383-d80822a3255a","type":"Grid"},{"id":"eb3eeee4-2eb6-4ab1-8e9b-f998b5041ddd","type":"LinearAxis"},{"id":"8121761e-d970-482d-8cfa-84ce581bf165","type":"Grid"},{"id":"4eff1a8a-3e55-4fb7-9e72-a084fdc27815","type":"GlyphRenderer"},{"id":"66066da2-9b78-4aea-8716-72bfacd5bb10","type":"GlyphRenderer"}],"title":{"id":"a35ea718-f0f0-4958-b492-e8a370d8869f","type":"Title"},"toolbar":{"id":"25a7ee75-4f32-44ba-8b44-dbc5be9b06de","type":"Toolbar"},"x_range":{"id":"4d558de5-db8d-47a7-8f60-f91f109b9d00","type":"FactorRange"},"x_scale":{"id":"1c16f90d-a30c-4287-953b-28d7d826e05e","type":"CategoricalScale"},"y_range":{"id":"d18a2693-25e5-4155-9986-715f2d3abd5c","type":"DataRange1d"},"y_scale":{"id":"87fa5cdc-d80f-4ad7-8ba9-aab09851c064","type":"LinearScale"}},"id":"fd67fe95-2e4a-4efb-993c-a79149a7ade7","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"63610af3-50ac-4e6c-9c4a-1522ad8d2c56","type":"HoverTool"},{"attributes":{"plot":null,"text":"William II of the Netherlands (2 - 0 - 1)"},"id":"a35ea718-f0f0-4958-b492-e8a370d8869f","type":"Title"},{"attributes":{"source":{"id":"dd519473-6db1-4d6b-843b-1af851c215e9","type":"ColumnDataSource"}},"id":"8974944d-34d8-4177-b9e4-a78c26774aca","type":"CDSView"},{"attributes":{"callback":null},"id":"d18a2693-25e5-4155-9986-715f2d3abd5c","type":"DataRange1d"}],"root_ids":["fd67fe95-2e4a-4efb-993c-a79149a7ade7"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"4321aa7c-0d54-4b3d-a01e-3d41103c3e52","elementid":"de28e7f4-319b-46bc-9506-13feace47afe","modelid":"fd67fe95-2e4a-4efb-993c-a79149a7ade7"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

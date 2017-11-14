@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="01bc1527-3a54-4734-a8fb-47a29deddc0f"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"03344cd1-8746-479f-9175-f9963f7b74f8":{"roots":{"references":[{"attributes":{"source":{"id":"21dc4221-fa64-4cbd-bad5-2fdf100bd728","type":"ColumnDataSource"}},"id":"6e802646-68a7-4d19-853a-606332420112","type":"CDSView"},{"attributes":{"source":{"id":"21dc4221-fa64-4cbd-bad5-2fdf100bd728","type":"ColumnDataSource"}},"id":"df785800-01dd-4560-9472-25b57bcbc2d7","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"498494b6-46f4-4cea-9074-a43b25624812","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Pell's Point"],"cumulative":{"__ndarray__":"9pzGvpUu4j8=","dtype":"float64","shape":[1]},"general":["John Glover (general)"],"outcome":["V"],"value":{"__ndarray__":"9pzGvpUu4j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADAm0A=","dtype":"float64","shape":[1]}}},"id":"21dc4221-fa64-4cbd-bad5-2fdf100bd728","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"2be15ffe-a614-4e7e-859f-eec6e928e7d7","subtype":"Figure","type":"Plot"},"ticker":{"id":"8f67f91a-30d6-45a2-a34b-b84d8c9f71e0","type":"CategoricalTicker"}},"id":"2ecd47d3-8dfa-4bf8-8104-90e57a8f70e8","type":"Grid"},{"attributes":{},"id":"9b62493d-e4b3-42b4-a207-f098778d8b2c","type":"LinearScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4450476b-083a-4941-bd2e-807df372257a","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e1123f5c-f880-402c-b80b-036a76ff7b3e","type":"VBar"},{"attributes":{"data_source":{"id":"21dc4221-fa64-4cbd-bad5-2fdf100bd728","type":"ColumnDataSource"},"glyph":{"id":"498494b6-46f4-4cea-9074-a43b25624812","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5012b35c-2ec2-4034-bf30-7362c08e356e","type":"Line"},"selection_glyph":null,"view":{"id":"6e802646-68a7-4d19-853a-606332420112","type":"CDSView"}},"id":"3a5a6d00-d2dc-4ea6-8091-96722e110732","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"2be15ffe-a614-4e7e-859f-eec6e928e7d7","subtype":"Figure","type":"Plot"},"ticker":{"id":"7df8666d-8266-496f-96e0-98411ba1256e","type":"BasicTicker"}},"id":"0576fedf-6078-44c3-8a92-cc3d3b77780b","type":"Grid"},{"attributes":{},"id":"7df8666d-8266-496f-96e0-98411ba1256e","type":"BasicTicker"},{"attributes":{"formatter":{"id":"4a86f0d0-9f06-4725-9a91-9b8784d74d66","type":"BasicTickFormatter"},"plot":{"id":"2be15ffe-a614-4e7e-859f-eec6e928e7d7","subtype":"Figure","type":"Plot"},"ticker":{"id":"7df8666d-8266-496f-96e0-98411ba1256e","type":"BasicTicker"}},"id":"20a21f35-08b2-4923-a241-9f55713584e5","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"9e289f21-596b-40cb-b1bd-ed6bba9b1db6","type":"HoverTool"}]},"id":"0e12e99f-aa6e-4fdb-a912-1ab5aa043a29","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Battle of Pell's Point"]},"id":"183ec2dd-d775-4ef6-ac7d-593e0ca61a90","type":"FactorRange"},{"attributes":{},"id":"a5f842fb-bea8-468f-a5a7-99cf9276aced","type":"CategoricalTickFormatter"},{"attributes":{},"id":"4a86f0d0-9f06-4725-9a91-9b8784d74d66","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"9e289f21-596b-40cb-b1bd-ed6bba9b1db6","type":"HoverTool"},{"attributes":{},"id":"5a2a5e2d-6abf-4f3d-8cad-4aec95176327","type":"CategoricalScale"},{"attributes":{"below":[{"id":"4c2e006d-6f68-407e-a274-73298071ca7d","type":"CategoricalAxis"}],"left":[{"id":"20a21f35-08b2-4923-a241-9f55713584e5","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"4c2e006d-6f68-407e-a274-73298071ca7d","type":"CategoricalAxis"},{"id":"2ecd47d3-8dfa-4bf8-8104-90e57a8f70e8","type":"Grid"},{"id":"20a21f35-08b2-4923-a241-9f55713584e5","type":"LinearAxis"},{"id":"0576fedf-6078-44c3-8a92-cc3d3b77780b","type":"Grid"},{"id":"3a5a6d00-d2dc-4ea6-8091-96722e110732","type":"GlyphRenderer"},{"id":"b0596f29-0137-40d9-bbd5-9043cb948807","type":"GlyphRenderer"}],"title":{"id":"555d68cd-f756-4d78-98b6-a638a3115585","type":"Title"},"toolbar":{"id":"0e12e99f-aa6e-4fdb-a912-1ab5aa043a29","type":"Toolbar"},"x_range":{"id":"183ec2dd-d775-4ef6-ac7d-593e0ca61a90","type":"FactorRange"},"x_scale":{"id":"5a2a5e2d-6abf-4f3d-8cad-4aec95176327","type":"CategoricalScale"},"y_range":{"id":"eb27f14e-fcc4-4c40-a75a-ca1ba9731e29","type":"DataRange1d"},"y_scale":{"id":"9b62493d-e4b3-42b4-a207-f098778d8b2c","type":"LinearScale"}},"id":"2be15ffe-a614-4e7e-859f-eec6e928e7d7","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null},"id":"eb27f14e-fcc4-4c40-a75a-ca1ba9731e29","type":"DataRange1d"},{"attributes":{},"id":"8f67f91a-30d6-45a2-a34b-b84d8c9f71e0","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"a5f842fb-bea8-468f-a5a7-99cf9276aced","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"2be15ffe-a614-4e7e-859f-eec6e928e7d7","subtype":"Figure","type":"Plot"},"ticker":{"id":"8f67f91a-30d6-45a2-a34b-b84d8c9f71e0","type":"CategoricalTicker"}},"id":"4c2e006d-6f68-407e-a274-73298071ca7d","type":"CategoricalAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5012b35c-2ec2-4034-bf30-7362c08e356e","type":"Line"},{"attributes":{"data_source":{"id":"21dc4221-fa64-4cbd-bad5-2fdf100bd728","type":"ColumnDataSource"},"glyph":{"id":"9cd62e55-0fa6-498f-b65b-c029632f2bb2","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e1123f5c-f880-402c-b80b-036a76ff7b3e","type":"VBar"},"selection_glyph":null,"view":{"id":"df785800-01dd-4560-9472-25b57bcbc2d7","type":"CDSView"}},"id":"b0596f29-0137-40d9-bbd5-9043cb948807","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4450476b-083a-4941-bd2e-807df372257a","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4450476b-083a-4941-bd2e-807df372257a","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9cd62e55-0fa6-498f-b65b-c029632f2bb2","type":"VBar"},{"attributes":{"plot":null,"text":"John Glover (general) (1 - 0 - 0)"},"id":"555d68cd-f756-4d78-98b6-a638a3115585","type":"Title"}],"root_ids":["2be15ffe-a614-4e7e-859f-eec6e928e7d7"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"03344cd1-8746-479f-9175-f9963f7b74f8","elementid":"01bc1527-3a54-4734-a8fb-47a29deddc0f","modelid":"2be15ffe-a614-4e7e-859f-eec6e928e7d7"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

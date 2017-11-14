@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="fd542fb1-0a50-4cad-ae36-a0f341fc1cef"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"05a3ae60-aff7-4239-bef9-267313ad708b":{"roots":{"references":[{"attributes":{"formatter":{"id":"7f4d5ac6-ecfd-4489-b45a-e36b4c636163","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"aa1927f7-e9d1-4f2b-add3-fd6731017f28","subtype":"Figure","type":"Plot"},"ticker":{"id":"4c86e7eb-3f59-446b-9319-9b5e7275bccd","type":"CategoricalTicker"}},"id":"26193e3c-6519-4fa3-bf6a-e2518d665113","type":"CategoricalAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Drewry's Bluff"],"cumulative":{"__ndarray__":"AImhqmDn3z8=","dtype":"float64","shape":[1]},"general":["Ebenezer Farrand"],"outcome":["V"],"value":{"__ndarray__":"AImhqmDn3z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAYnUA=","dtype":"float64","shape":[1]}}},"id":"04234239-a291-4d77-a656-29e478f1289d","type":"ColumnDataSource"},{"attributes":{},"id":"1525286d-5455-4a60-8ab7-8388f47fded7","type":"BasicTicker"},{"attributes":{"data_source":{"id":"04234239-a291-4d77-a656-29e478f1289d","type":"ColumnDataSource"},"glyph":{"id":"e64b65d4-49c8-46bc-a9d6-04a9f0387a3a","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"68d02f54-81b8-4b21-af73-afb98f2af2c1","type":"Line"},"selection_glyph":null,"view":{"id":"47f740e3-82c2-40ac-b45f-532243daafd3","type":"CDSView"}},"id":"93135bcc-b91d-45b1-bc1d-2bd7fb56f549","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e64b65d4-49c8-46bc-a9d6-04a9f0387a3a","type":"Line"},{"attributes":{},"id":"7764c189-202f-4e3a-b02d-a979f929d59f","type":"LinearScale"},{"attributes":{"plot":null,"text":"Ebenezer Farrand (1 - 0 - 0)"},"id":"156262ab-6374-4cce-b9a3-aa53162bfb3a","type":"Title"},{"attributes":{"source":{"id":"04234239-a291-4d77-a656-29e478f1289d","type":"ColumnDataSource"}},"id":"d233531f-7e23-4c99-bc4e-42c941a9dead","type":"CDSView"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"0141c1d1-04d5-4f53-b36a-4ed89e22f4f0","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"a3c8f841-6006-4ce9-8515-a93801fe35d6","type":"HoverTool"},{"attributes":{"plot":{"id":"aa1927f7-e9d1-4f2b-add3-fd6731017f28","subtype":"Figure","type":"Plot"},"ticker":{"id":"4c86e7eb-3f59-446b-9319-9b5e7275bccd","type":"CategoricalTicker"}},"id":"ec13b009-5ad5-42db-a5cc-bbbfdf615273","type":"Grid"},{"attributes":{"formatter":{"id":"15193e13-ad46-43d2-b36b-7c3e219150d1","type":"BasicTickFormatter"},"plot":{"id":"aa1927f7-e9d1-4f2b-add3-fd6731017f28","subtype":"Figure","type":"Plot"},"ticker":{"id":"1525286d-5455-4a60-8ab7-8388f47fded7","type":"BasicTicker"}},"id":"ca951d05-4387-4182-9a26-8dc9c7ea3d70","type":"LinearAxis"},{"attributes":{"data_source":{"id":"04234239-a291-4d77-a656-29e478f1289d","type":"ColumnDataSource"},"glyph":{"id":"dd8be5c3-b6cf-4aff-abaf-6207e462cced","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"827f2201-5979-4bcd-a7ba-bdf67d66e32b","type":"VBar"},"selection_glyph":null,"view":{"id":"d233531f-7e23-4c99-bc4e-42c941a9dead","type":"CDSView"}},"id":"372ad30e-2239-4240-a872-047cf84a50d0","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"0141c1d1-04d5-4f53-b36a-4ed89e22f4f0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"0141c1d1-04d5-4f53-b36a-4ed89e22f4f0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"dd8be5c3-b6cf-4aff-abaf-6207e462cced","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"827f2201-5979-4bcd-a7ba-bdf67d66e32b","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Drewry's Bluff"]},"id":"9a8ee4d2-7e22-43cd-8ea6-2f0e85936d3a","type":"FactorRange"},{"attributes":{},"id":"4c86e7eb-3f59-446b-9319-9b5e7275bccd","type":"CategoricalTicker"},{"attributes":{"source":{"id":"04234239-a291-4d77-a656-29e478f1289d","type":"ColumnDataSource"}},"id":"47f740e3-82c2-40ac-b45f-532243daafd3","type":"CDSView"},{"attributes":{},"id":"15193e13-ad46-43d2-b36b-7c3e219150d1","type":"BasicTickFormatter"},{"attributes":{},"id":"7f4d5ac6-ecfd-4489-b45a-e36b4c636163","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"aa1927f7-e9d1-4f2b-add3-fd6731017f28","subtype":"Figure","type":"Plot"},"ticker":{"id":"1525286d-5455-4a60-8ab7-8388f47fded7","type":"BasicTicker"}},"id":"7808c3bb-1428-4915-9093-768c28d7e21d","type":"Grid"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"68d02f54-81b8-4b21-af73-afb98f2af2c1","type":"Line"},{"attributes":{"below":[{"id":"26193e3c-6519-4fa3-bf6a-e2518d665113","type":"CategoricalAxis"}],"left":[{"id":"ca951d05-4387-4182-9a26-8dc9c7ea3d70","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"26193e3c-6519-4fa3-bf6a-e2518d665113","type":"CategoricalAxis"},{"id":"ec13b009-5ad5-42db-a5cc-bbbfdf615273","type":"Grid"},{"id":"ca951d05-4387-4182-9a26-8dc9c7ea3d70","type":"LinearAxis"},{"id":"7808c3bb-1428-4915-9093-768c28d7e21d","type":"Grid"},{"id":"93135bcc-b91d-45b1-bc1d-2bd7fb56f549","type":"GlyphRenderer"},{"id":"372ad30e-2239-4240-a872-047cf84a50d0","type":"GlyphRenderer"}],"title":{"id":"156262ab-6374-4cce-b9a3-aa53162bfb3a","type":"Title"},"toolbar":{"id":"1314e189-e43c-4560-bc77-e8296ae818bd","type":"Toolbar"},"x_range":{"id":"9a8ee4d2-7e22-43cd-8ea6-2f0e85936d3a","type":"FactorRange"},"x_scale":{"id":"1eb74d4f-7d4b-45e0-9e60-f8b4834f397b","type":"CategoricalScale"},"y_range":{"id":"b1998968-6141-4dc7-a34b-3d26caa305a3","type":"DataRange1d"},"y_scale":{"id":"7764c189-202f-4e3a-b02d-a979f929d59f","type":"LinearScale"}},"id":"aa1927f7-e9d1-4f2b-add3-fd6731017f28","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1eb74d4f-7d4b-45e0-9e60-f8b4834f397b","type":"CategoricalScale"},{"attributes":{"callback":null},"id":"b1998968-6141-4dc7-a34b-3d26caa305a3","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"a3c8f841-6006-4ce9-8515-a93801fe35d6","type":"HoverTool"}]},"id":"1314e189-e43c-4560-bc77-e8296ae818bd","type":"Toolbar"}],"root_ids":["aa1927f7-e9d1-4f2b-add3-fd6731017f28"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"05a3ae60-aff7-4239-bef9-267313ad708b","elementid":"fd542fb1-0a50-4cad-ae36-a0f341fc1cef","modelid":"aa1927f7-e9d1-4f2b-add3-fd6731017f28"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

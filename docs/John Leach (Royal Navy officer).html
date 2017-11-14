@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="edc33c49-fadb-47c2-9dad-e0dcc6b6dbff"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"549a13c2-e4bc-43b0-b1da-c72e1bcde70b":{"roots":{"references":[{"attributes":{},"id":"d18989bc-6189-4c90-9b83-558ae90cdac9","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"68ab02c1-8a45-4cd9-8720-bf4750f0d732","subtype":"Figure","type":"Plot"},"ticker":{"id":"55a1c8f0-8e1e-4036-91b5-94a854d05992","type":"BasicTicker"}},"id":"c3b90f8f-f3d8-4ee9-b96e-71cdaae0444a","type":"Grid"},{"attributes":{"data_source":{"id":"14e0259e-d451-440a-b945-ec9232105198","type":"ColumnDataSource"},"glyph":{"id":"9e70c5b3-9cd3-415f-81f2-504d2161aa18","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5edc18ad-d78b-433d-bfc0-21660b747051","type":"Line"},"selection_glyph":null,"view":{"id":"56826403-8e54-44f2-9749-34531a0403e5","type":"CDSView"}},"id":"8e41e933-dad0-48f2-9646-087e73a6921a","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"eab294ba-7672-472a-a7dc-f66a69c4bd2a","type":"CategoricalColorMapper"},{"attributes":{},"id":"138f67d3-b807-4db5-bbff-5993f4afd03d","type":"LinearScale"},{"attributes":{"below":[{"id":"ab4cfc00-858b-4406-8cb0-700081524190","type":"CategoricalAxis"}],"left":[{"id":"652f935f-1176-49cd-94d7-da3e8a14f15f","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"ab4cfc00-858b-4406-8cb0-700081524190","type":"CategoricalAxis"},{"id":"9de3ea95-4673-4469-8a07-b8233f400411","type":"Grid"},{"id":"652f935f-1176-49cd-94d7-da3e8a14f15f","type":"LinearAxis"},{"id":"c3b90f8f-f3d8-4ee9-b96e-71cdaae0444a","type":"Grid"},{"id":"8e41e933-dad0-48f2-9646-087e73a6921a","type":"GlyphRenderer"},{"id":"054ea814-fa4d-4355-ba89-22fa5db4ee84","type":"GlyphRenderer"}],"title":{"id":"ac1a9345-d307-4e68-a957-1d43f59e05cd","type":"Title"},"toolbar":{"id":"3199323b-703a-440e-a88f-25eed62270e3","type":"Toolbar"},"x_range":{"id":"2608fe4e-c2ec-4021-9a18-869fa0d75d5b","type":"FactorRange"},"x_scale":{"id":"56b4e482-2722-4aa3-899f-790e558c311a","type":"CategoricalScale"},"y_range":{"id":"23ff6d50-b884-47b1-ba2e-c567de8f5526","type":"DataRange1d"},"y_scale":{"id":"138f67d3-b807-4db5-bbff-5993f4afd03d","type":"LinearScale"}},"id":"68ab02c1-8a45-4cd9-8720-bf4750f0d732","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"56b4e482-2722-4aa3-899f-790e558c311a","type":"CategoricalScale"},{"attributes":{"callback":null},"id":"23ff6d50-b884-47b1-ba2e-c567de8f5526","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"eab294ba-7672-472a-a7dc-f66a69c4bd2a","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"eab294ba-7672-472a-a7dc-f66a69c4bd2a","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9ff01b94-b6d8-42bb-b666-d59db90744cb","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9c30b003-4c5d-4a97-8212-5e49bc8e0485","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"3900b203-07fe-48ea-a50e-fec72d1e70e7","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9e70c5b3-9cd3-415f-81f2-504d2161aa18","type":"Line"},{"attributes":{"source":{"id":"14e0259e-d451-440a-b945-ec9232105198","type":"ColumnDataSource"}},"id":"56826403-8e54-44f2-9749-34531a0403e5","type":"CDSView"},{"attributes":{},"id":"1556bf26-0e1e-47a2-8887-4d644c242c86","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"f5e99652-ac62-4d5e-834e-6da685d45da1","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"68ab02c1-8a45-4cd9-8720-bf4750f0d732","subtype":"Figure","type":"Plot"},"ticker":{"id":"d18989bc-6189-4c90-9b83-558ae90cdac9","type":"CategoricalTicker"}},"id":"ab4cfc00-858b-4406-8cb0-700081524190","type":"CategoricalAxis"},{"attributes":{"formatter":{"id":"1556bf26-0e1e-47a2-8887-4d644c242c86","type":"BasicTickFormatter"},"plot":{"id":"68ab02c1-8a45-4cd9-8720-bf4750f0d732","subtype":"Figure","type":"Plot"},"ticker":{"id":"55a1c8f0-8e1e-4036-91b5-94a854d05992","type":"BasicTicker"}},"id":"652f935f-1176-49cd-94d7-da3e8a14f15f","type":"LinearAxis"},{"attributes":{"source":{"id":"14e0259e-d451-440a-b945-ec9232105198","type":"ColumnDataSource"}},"id":"a9714503-a2db-4542-877d-90f9586a9dd6","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Denmark Strait","Sinking of Prince of Wales and Repulse"]},"id":"2608fe4e-c2ec-4021-9a18-869fa0d75d5b","type":"FactorRange"},{"attributes":{},"id":"55a1c8f0-8e1e-4036-91b5-94a854d05992","type":"BasicTicker"},{"attributes":{"plot":null,"text":"John Leach (Royal Navy officer) (0 - 0 - 2)"},"id":"ac1a9345-d307-4e68-a957-1d43f59e05cd","type":"Title"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Denmark Strait","Sinking of Prince of Wales and Repulse"],"cumulative":{"__ndarray__":"KOAtsk6S4b/UjW4uT8/wvw==","dtype":"float64","shape":[2]},"general":["John Leach (Royal Navy officer)","John Leach (Royal Navy officer)"],"outcome":["D","D"],"value":{"__ndarray__":"KOAtsk6S4b+AO6+qTwzgvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABUnkAAAAAAAFSeQA==","dtype":"float64","shape":[2]}}},"id":"14e0259e-d451-440a-b945-ec9232105198","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"68ab02c1-8a45-4cd9-8720-bf4750f0d732","subtype":"Figure","type":"Plot"},"ticker":{"id":"d18989bc-6189-4c90-9b83-558ae90cdac9","type":"CategoricalTicker"}},"id":"9de3ea95-4673-4469-8a07-b8233f400411","type":"Grid"},{"attributes":{},"id":"f5e99652-ac62-4d5e-834e-6da685d45da1","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"3900b203-07fe-48ea-a50e-fec72d1e70e7","type":"HoverTool"}]},"id":"3199323b-703a-440e-a88f-25eed62270e3","type":"Toolbar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5edc18ad-d78b-433d-bfc0-21660b747051","type":"Line"},{"attributes":{"data_source":{"id":"14e0259e-d451-440a-b945-ec9232105198","type":"ColumnDataSource"},"glyph":{"id":"9ff01b94-b6d8-42bb-b666-d59db90744cb","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9c30b003-4c5d-4a97-8212-5e49bc8e0485","type":"VBar"},"selection_glyph":null,"view":{"id":"a9714503-a2db-4542-877d-90f9586a9dd6","type":"CDSView"}},"id":"054ea814-fa4d-4355-ba89-22fa5db4ee84","type":"GlyphRenderer"}],"root_ids":["68ab02c1-8a45-4cd9-8720-bf4750f0d732"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"549a13c2-e4bc-43b0-b1da-c72e1bcde70b","elementid":"edc33c49-fadb-47c2-9dad-e0dcc6b6dbff","modelid":"68ab02c1-8a45-4cd9-8720-bf4750f0d732"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

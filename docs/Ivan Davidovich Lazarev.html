@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="230fb45a-6458-4f79-884c-1be68dca9226"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"1172f248-ea58-404c-b6a4-3fbd0ba3cefb":{"roots":{"references":[{"attributes":{},"id":"035609be-b3cb-42f4-acde-7f26c56c24cc","type":"CategoricalTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ee5443d2-6b90-4dab-bccb-b3a339be43e7","type":"Line"},{"attributes":{"source":{"id":"ed230ea9-2f0b-40a3-a958-40fa6fcee9d5","type":"ColumnDataSource"}},"id":"16f7d209-739b-4303-86ed-c0f7b27b8ed7","type":"CDSView"},{"attributes":{"data_source":{"id":"ed230ea9-2f0b-40a3-a958-40fa6fcee9d5","type":"ColumnDataSource"},"glyph":{"id":"a6f7b9c5-9749-447c-a89a-ae12981a4768","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ee5443d2-6b90-4dab-bccb-b3a339be43e7","type":"Line"},"selection_glyph":null,"view":{"id":"f34dbe1d-5ebc-4e44-9aec-5ce96af4f669","type":"CDSView"}},"id":"bea519eb-e53e-4e8e-9e2c-b4088b757822","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"1071bd13-597a-4287-b259-c9a2357c717f","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"553da0e2-f28f-480b-8c9c-89bd45d5ca12","subtype":"Figure","type":"Plot"},"ticker":{"id":"4fb51691-8151-43b1-b3bd-e4ff40c0f381","type":"BasicTicker"}},"id":"d7410470-6172-4ba5-b09c-a99d405db2c9","type":"Grid"},{"attributes":{"formatter":{"id":"1704cfd8-0e9d-4a54-9f04-e6ffa129fdf6","type":"BasicTickFormatter"},"plot":{"id":"553da0e2-f28f-480b-8c9c-89bd45d5ca12","subtype":"Figure","type":"Plot"},"ticker":{"id":"4fb51691-8151-43b1-b3bd-e4ff40c0f381","type":"BasicTicker"}},"id":"bdc59243-0cd7-465d-9444-3b13185caa53","type":"LinearAxis"},{"attributes":{},"id":"4fb51691-8151-43b1-b3bd-e4ff40c0f381","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["Battle of Kars"]},"id":"de0e5a6e-ca65-4d03-ac5e-a1e6a34c2ad8","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"5fa19d83-08ce-4f46-a010-33ac09c993c3","type":"VBar"},{"attributes":{"below":[{"id":"dbb8da03-cc95-47fc-b741-22d66fccc81a","type":"CategoricalAxis"}],"left":[{"id":"bdc59243-0cd7-465d-9444-3b13185caa53","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"dbb8da03-cc95-47fc-b741-22d66fccc81a","type":"CategoricalAxis"},{"id":"d4d2bf62-7019-4bdb-b4fd-a8b9de3b3b78","type":"Grid"},{"id":"bdc59243-0cd7-465d-9444-3b13185caa53","type":"LinearAxis"},{"id":"d7410470-6172-4ba5-b09c-a99d405db2c9","type":"Grid"},{"id":"bea519eb-e53e-4e8e-9e2c-b4088b757822","type":"GlyphRenderer"},{"id":"c3b70731-0ce8-4573-af5f-10ed0018b8a5","type":"GlyphRenderer"}],"title":{"id":"38803b5c-18fe-4fe6-87c9-efcef673d2ff","type":"Title"},"toolbar":{"id":"5cc251ac-e76b-472c-9772-8d97620203ec","type":"Toolbar"},"x_range":{"id":"de0e5a6e-ca65-4d03-ac5e-a1e6a34c2ad8","type":"FactorRange"},"x_scale":{"id":"b3fd02a0-7bd9-4249-be39-cb203c74592b","type":"CategoricalScale"},"y_range":{"id":"1071bd13-597a-4287-b259-c9a2357c717f","type":"DataRange1d"},"y_scale":{"id":"1076225d-0a0b-4043-8cbe-5ed85c4da5e1","type":"LinearScale"}},"id":"553da0e2-f28f-480b-8c9c-89bd45d5ca12","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"178ba81c-8829-4d4f-8a59-57aee809a00f","type":"HoverTool"},{"attributes":{},"id":"1076225d-0a0b-4043-8cbe-5ed85c4da5e1","type":"LinearScale"},{"attributes":{},"id":"1704cfd8-0e9d-4a54-9f04-e6ffa129fdf6","type":"BasicTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a6f7b9c5-9749-447c-a89a-ae12981a4768","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"5a30609e-ad7a-4d52-931c-d0726537bbd0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"5a30609e-ad7a-4d52-931c-d0726537bbd0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"074f1ec6-6075-4f4b-b740-d90288cc63b2","type":"VBar"},{"attributes":{},"id":"b3fd02a0-7bd9-4249-be39-cb203c74592b","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"ed230ea9-2f0b-40a3-a958-40fa6fcee9d5","type":"ColumnDataSource"},"glyph":{"id":"074f1ec6-6075-4f4b-b740-d90288cc63b2","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5fa19d83-08ce-4f46-a010-33ac09c993c3","type":"VBar"},"selection_glyph":null,"view":{"id":"16f7d209-739b-4303-86ed-c0f7b27b8ed7","type":"CDSView"}},"id":"c3b70731-0ce8-4573-af5f-10ed0018b8a5","type":"GlyphRenderer"},{"attributes":{"source":{"id":"ed230ea9-2f0b-40a3-a958-40fa6fcee9d5","type":"ColumnDataSource"}},"id":"f34dbe1d-5ebc-4e44-9aec-5ce96af4f669","type":"CDSView"},{"attributes":{"plot":null,"text":"Ivan Davidovich Lazarev (1 - 0 - 0)"},"id":"38803b5c-18fe-4fe6-87c9-efcef673d2ff","type":"Title"},{"attributes":{"formatter":{"id":"035609be-b3cb-42f4-acde-7f26c56c24cc","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"553da0e2-f28f-480b-8c9c-89bd45d5ca12","subtype":"Figure","type":"Plot"},"ticker":{"id":"81015e21-69e8-472b-935a-e24a61cde464","type":"CategoricalTicker"}},"id":"dbb8da03-cc95-47fc-b741-22d66fccc81a","type":"CategoricalAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Kars"],"cumulative":{"__ndarray__":"ap+aBVmI3z8=","dtype":"float64","shape":[1]},"general":["Ivan Davidovich Lazarev"],"outcome":["V"],"value":{"__ndarray__":"ap+aBVmI3z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABUnUA=","dtype":"float64","shape":[1]}}},"id":"ed230ea9-2f0b-40a3-a958-40fa6fcee9d5","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"553da0e2-f28f-480b-8c9c-89bd45d5ca12","subtype":"Figure","type":"Plot"},"ticker":{"id":"81015e21-69e8-472b-935a-e24a61cde464","type":"CategoricalTicker"}},"id":"d4d2bf62-7019-4bdb-b4fd-a8b9de3b3b78","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"178ba81c-8829-4d4f-8a59-57aee809a00f","type":"HoverTool"}]},"id":"5cc251ac-e76b-472c-9772-8d97620203ec","type":"Toolbar"},{"attributes":{},"id":"81015e21-69e8-472b-935a-e24a61cde464","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"5a30609e-ad7a-4d52-931c-d0726537bbd0","type":"CategoricalColorMapper"}],"root_ids":["553da0e2-f28f-480b-8c9c-89bd45d5ca12"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"1172f248-ea58-404c-b6a4-3fbd0ba3cefb","elementid":"230fb45a-6458-4f79-884c-1be68dca9226","modelid":"553da0e2-f28f-480b-8c9c-89bd45d5ca12"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

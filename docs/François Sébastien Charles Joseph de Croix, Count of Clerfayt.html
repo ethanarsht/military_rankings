@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="e50eec5b-dcbd-4098-a911-e08b1380df4f"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"e2d4a4ba-f1a7-46a8-92d3-3f2fd676ae8e":{"roots":{"references":[{"attributes":{"formatter":{"id":"288028e1-24b0-4d84-8afe-8c7fc9eb7d0f","type":"BasicTickFormatter"},"plot":{"id":"2e17e9d8-9a89-4176-be79-31b19e566f69","subtype":"Figure","type":"Plot"},"ticker":{"id":"11cb3104-236b-40c3-8c4b-ce436dd1eddb","type":"BasicTicker"}},"id":"e3e67fbb-7db7-4526-9fe8-1a16a58a3242","type":"LinearAxis"},{"attributes":{},"id":"7e9d7dbd-7ccc-4820-b247-c0b1465253f2","type":"LinearScale"},{"attributes":{"data_source":{"id":"6a3d8692-a466-419b-b5a6-2ad21fa0123c","type":"ColumnDataSource"},"glyph":{"id":"dedf98a6-a7b7-4899-8be1-d9959f0a3f1b","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0ad34be4-66df-4a75-881f-406a079294cd","type":"VBar"},"selection_glyph":null,"view":{"id":"fab5d13f-3934-4647-a2ae-a15e9a924322","type":"CDSView"}},"id":"75f612af-e867-42e6-8f36-3c631c784852","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"25f16c8b-0e28-4790-ac94-4a44ded031a0","type":"Line"},{"attributes":{"data_source":{"id":"6a3d8692-a466-419b-b5a6-2ad21fa0123c","type":"ColumnDataSource"},"glyph":{"id":"b047b4d8-53a3-432b-bedc-2b9449bb43ce","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"25f16c8b-0e28-4790-ac94-4a44ded031a0","type":"Line"},"selection_glyph":null,"view":{"id":"20c6ad1e-f7a4-4104-8f5e-52c65bdb5d40","type":"CDSView"}},"id":"425a7746-700c-49dc-8daf-eb51cba424d4","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"d82161c1-a496-4fd1-a662-5dac5cfb0d7c","type":"DataRange1d"},{"attributes":{"callback":null,"factors":["Battle of Jemappes","Battle of Valmy","Battle of Wattignies","Battle of Aldenhoven (1794)","Battle of Sprimont"]},"id":"224e526a-adad-4a90-b199-c5ef29fa2857","type":"FactorRange"},{"attributes":{"formatter":{"id":"18892080-8637-4dc0-890b-b575e78b3884","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"2e17e9d8-9a89-4176-be79-31b19e566f69","subtype":"Figure","type":"Plot"},"ticker":{"id":"9a600aef-c05b-411a-9cc9-af53c5ac33c5","type":"CategoricalTicker"}},"id":"35c4fa03-4a5f-43e6-bbdd-bf2474a0d52e","type":"CategoricalAxis"},{"attributes":{"source":{"id":"6a3d8692-a466-419b-b5a6-2ad21fa0123c","type":"ColumnDataSource"}},"id":"20c6ad1e-f7a4-4104-8f5e-52c65bdb5d40","type":"CDSView"},{"attributes":{"plot":{"id":"2e17e9d8-9a89-4176-be79-31b19e566f69","subtype":"Figure","type":"Plot"},"ticker":{"id":"9a600aef-c05b-411a-9cc9-af53c5ac33c5","type":"CategoricalTicker"}},"id":"76ec3794-9b82-49b5-a3f4-a07e8f99a02f","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"0ad34be4-66df-4a75-881f-406a079294cd","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"d04c5a78-d2d4-4e4c-b848-e6d767974d77","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"d04c5a78-d2d4-4e4c-b848-e6d767974d77","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"dedf98a6-a7b7-4899-8be1-d9959f0a3f1b","type":"VBar"},{"attributes":{},"id":"18892080-8637-4dc0-890b-b575e78b3884","type":"CategoricalTickFormatter"},{"attributes":{},"id":"7f381d8e-164c-4e57-92e6-1a1e47f74818","type":"CategoricalScale"},{"attributes":{"source":{"id":"6a3d8692-a466-419b-b5a6-2ad21fa0123c","type":"ColumnDataSource"}},"id":"fab5d13f-3934-4647-a2ae-a15e9a924322","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Jemappes","Battle of Valmy","Battle of Wattignies","Battle of Aldenhoven (1794)","Battle of Sprimont"],"cumulative":{"__ndarray__":"FUA8ahzS3L/4Aygizo7uv/t2YvgAwfa/SvbCVACQ/r8nyhj2SCgDwA==","dtype":"float64","shape":[5]},"general":["Fran\u00e7ois S\u00e9bastien Charles Joseph de Croix, Count of Clerfayt","Fran\u00e7ois S\u00e9bastien Charles Joseph de Croix, Count of Clerfayt","Fran\u00e7ois S\u00e9bastien Charles Joseph de Croix, Count of Clerfayt","Fran\u00e7ois S\u00e9bastien Charles Joseph de Croix, Count of Clerfayt","Fran\u00e7ois S\u00e9bastien Charles Joseph de Croix, Count of Clerfayt"],"outcome":["D","D","D","D","D"],"value":{"__ndarray__":"FUA8ahzS3L/t4wntvyXgv/3TOZ1n5t2/Ov2Bcf07378NeLpdRgLfvw==","dtype":"float64","shape":[5]},"year":{"__ndarray__":"AAAAAAAAnEAAAAAAAACcQAAAAAAABJxAAAAAAAAInEAAAAAAAAicQA==","dtype":"float64","shape":[5]}}},"id":"6a3d8692-a466-419b-b5a6-2ad21fa0123c","type":"ColumnDataSource"},{"attributes":{"plot":null,"text":"Fran\u00e7ois S\u00e9bastien Charles Joseph de Croix, Count of Clerfayt (0 - 0 - 5)"},"id":"662f2f09-60aa-4f61-9e58-5dcab5e06f70","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"2e17e9d8-9a89-4176-be79-31b19e566f69","subtype":"Figure","type":"Plot"},"ticker":{"id":"11cb3104-236b-40c3-8c4b-ce436dd1eddb","type":"BasicTicker"}},"id":"107f7962-5bcc-4f0c-a1ee-1bc2f534f605","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"90f85505-619d-44b5-a929-788096e9d36a","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"b047b4d8-53a3-432b-bedc-2b9449bb43ce","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"90f85505-619d-44b5-a929-788096e9d36a","type":"HoverTool"}]},"id":"4b6cb2e8-b3cb-4fd5-822a-58509464d097","type":"Toolbar"},{"attributes":{},"id":"11cb3104-236b-40c3-8c4b-ce436dd1eddb","type":"BasicTicker"},{"attributes":{},"id":"9a600aef-c05b-411a-9cc9-af53c5ac33c5","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"d04c5a78-d2d4-4e4c-b848-e6d767974d77","type":"CategoricalColorMapper"},{"attributes":{},"id":"288028e1-24b0-4d84-8afe-8c7fc9eb7d0f","type":"BasicTickFormatter"},{"attributes":{"below":[{"id":"35c4fa03-4a5f-43e6-bbdd-bf2474a0d52e","type":"CategoricalAxis"}],"left":[{"id":"e3e67fbb-7db7-4526-9fe8-1a16a58a3242","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"35c4fa03-4a5f-43e6-bbdd-bf2474a0d52e","type":"CategoricalAxis"},{"id":"76ec3794-9b82-49b5-a3f4-a07e8f99a02f","type":"Grid"},{"id":"e3e67fbb-7db7-4526-9fe8-1a16a58a3242","type":"LinearAxis"},{"id":"107f7962-5bcc-4f0c-a1ee-1bc2f534f605","type":"Grid"},{"id":"425a7746-700c-49dc-8daf-eb51cba424d4","type":"GlyphRenderer"},{"id":"75f612af-e867-42e6-8f36-3c631c784852","type":"GlyphRenderer"}],"title":{"id":"662f2f09-60aa-4f61-9e58-5dcab5e06f70","type":"Title"},"toolbar":{"id":"4b6cb2e8-b3cb-4fd5-822a-58509464d097","type":"Toolbar"},"x_range":{"id":"224e526a-adad-4a90-b199-c5ef29fa2857","type":"FactorRange"},"x_scale":{"id":"7f381d8e-164c-4e57-92e6-1a1e47f74818","type":"CategoricalScale"},"y_range":{"id":"d82161c1-a496-4fd1-a662-5dac5cfb0d7c","type":"DataRange1d"},"y_scale":{"id":"7e9d7dbd-7ccc-4820-b247-c0b1465253f2","type":"LinearScale"}},"id":"2e17e9d8-9a89-4176-be79-31b19e566f69","subtype":"Figure","type":"Plot"}],"root_ids":["2e17e9d8-9a89-4176-be79-31b19e566f69"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"e2d4a4ba-f1a7-46a8-92d3-3f2fd676ae8e","elementid":"e50eec5b-dcbd-4098-a911-e08b1380df4f","modelid":"2e17e9d8-9a89-4176-be79-31b19e566f69"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

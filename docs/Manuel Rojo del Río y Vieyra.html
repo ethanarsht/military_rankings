@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="87f85ddc-dddd-45c8-b039-ecd22cabb756"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"0fc2d9c6-b53d-4d3b-a5ad-6ea2b11f27c2":{"roots":{"references":[{"attributes":{},"id":"c3402e91-1c65-419b-9f3a-17483e341c26","type":"BasicTicker"},{"attributes":{"source":{"id":"21b35483-450b-45c3-b6ae-51f4bb875a75","type":"ColumnDataSource"}},"id":"6814f9d5-b533-42f9-9b74-9e317c7607d4","type":"CDSView"},{"attributes":{},"id":"6ff438f9-90c9-4569-961a-e4fb7218e8cb","type":"LinearScale"},{"attributes":{"callback":null},"id":"8875c20b-e4e6-4732-9878-7c684faee932","type":"DataRange1d"},{"attributes":{"formatter":{"id":"80c8a146-c872-4ec4-ae36-63a2a8f4189d","type":"BasicTickFormatter"},"plot":{"id":"7fc09393-fab2-4775-a712-b2f821d56493","subtype":"Figure","type":"Plot"},"ticker":{"id":"c3402e91-1c65-419b-9f3a-17483e341c26","type":"BasicTicker"}},"id":"20285459-1d18-4b28-9548-8f57faa0f525","type":"LinearAxis"},{"attributes":{"callback":null,"factors":["Battle of Manila (1762)"]},"id":"ea2f9274-100f-452f-91f2-4307a9f83ae9","type":"FactorRange"},{"attributes":{"below":[{"id":"8afcdd64-f8ea-4eb4-bc39-d10d3f36f5ac","type":"CategoricalAxis"}],"left":[{"id":"20285459-1d18-4b28-9548-8f57faa0f525","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"8afcdd64-f8ea-4eb4-bc39-d10d3f36f5ac","type":"CategoricalAxis"},{"id":"22a3ecb6-f74f-4cf0-afd3-0b462e793106","type":"Grid"},{"id":"20285459-1d18-4b28-9548-8f57faa0f525","type":"LinearAxis"},{"id":"27a73e72-6f2f-44e8-929a-acf5b2740f5a","type":"Grid"},{"id":"d0b1effc-17cb-4396-9e91-b305600ccfa4","type":"GlyphRenderer"},{"id":"58024cfe-4a52-4459-be38-e34725c0d8f3","type":"GlyphRenderer"}],"title":{"id":"76c60e1a-e04d-45fc-bb86-a10f9a8f2433","type":"Title"},"toolbar":{"id":"4e8cb3cb-e6ec-4319-9edb-f8dd543a7c02","type":"Toolbar"},"x_range":{"id":"ea2f9274-100f-452f-91f2-4307a9f83ae9","type":"FactorRange"},"x_scale":{"id":"26b665b2-26a3-49c2-bc8e-f408315aaeb7","type":"CategoricalScale"},"y_range":{"id":"8875c20b-e4e6-4732-9878-7c684faee932","type":"DataRange1d"},"y_scale":{"id":"6ff438f9-90c9-4569-961a-e4fb7218e8cb","type":"LinearScale"}},"id":"7fc09393-fab2-4775-a712-b2f821d56493","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Manila (1762)"],"cumulative":{"__ndarray__":"TLaztPzH378=","dtype":"float64","shape":[1]},"general":["Manuel Rojo del R\u00edo y Vieyra"],"outcome":["D"],"value":{"__ndarray__":"TLaztPzH378=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAACIm0A=","dtype":"float64","shape":[1]}}},"id":"21b35483-450b-45c3-b6ae-51f4bb875a75","type":"ColumnDataSource"},{"attributes":{"dimension":1,"plot":{"id":"7fc09393-fab2-4775-a712-b2f821d56493","subtype":"Figure","type":"Plot"},"ticker":{"id":"c3402e91-1c65-419b-9f3a-17483e341c26","type":"BasicTicker"}},"id":"27a73e72-6f2f-44e8-929a-acf5b2740f5a","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c207b802-148a-46cb-8701-d682befb6e36","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"ba4c5338-2ce8-4b1d-8ad8-dfb20093d817","type":"CategoricalColorMapper"},{"attributes":{},"id":"80c8a146-c872-4ec4-ae36-63a2a8f4189d","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"99c4d936-65ec-46a7-9a16-7fc8d64358f4","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"ba4c5338-2ce8-4b1d-8ad8-dfb20093d817","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"ba4c5338-2ce8-4b1d-8ad8-dfb20093d817","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6a08c1fa-f6cd-4fe0-92e9-b61c1498813c","type":"VBar"},{"attributes":{"plot":null,"text":"Manuel Rojo del R\u00edo y Vieyra (0 - 0 - 1)"},"id":"76c60e1a-e04d-45fc-bb86-a10f9a8f2433","type":"Title"},{"attributes":{"data_source":{"id":"21b35483-450b-45c3-b6ae-51f4bb875a75","type":"ColumnDataSource"},"glyph":{"id":"6a08c1fa-f6cd-4fe0-92e9-b61c1498813c","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c207b802-148a-46cb-8701-d682befb6e36","type":"VBar"},"selection_glyph":null,"view":{"id":"aae477fb-9e38-4898-8901-de3f486de59c","type":"CDSView"}},"id":"58024cfe-4a52-4459-be38-e34725c0d8f3","type":"GlyphRenderer"},{"attributes":{"source":{"id":"21b35483-450b-45c3-b6ae-51f4bb875a75","type":"ColumnDataSource"}},"id":"aae477fb-9e38-4898-8901-de3f486de59c","type":"CDSView"},{"attributes":{"formatter":{"id":"ffa10a0f-a68e-4fa2-93d7-1772f4b6e20a","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"7fc09393-fab2-4775-a712-b2f821d56493","subtype":"Figure","type":"Plot"},"ticker":{"id":"b5d9f6a9-b833-4ba1-9a57-a4cb44bb1d11","type":"CategoricalTicker"}},"id":"8afcdd64-f8ea-4eb4-bc39-d10d3f36f5ac","type":"CategoricalAxis"},{"attributes":{},"id":"26b665b2-26a3-49c2-bc8e-f408315aaeb7","type":"CategoricalScale"},{"attributes":{},"id":"ffa10a0f-a68e-4fa2-93d7-1772f4b6e20a","type":"CategoricalTickFormatter"},{"attributes":{},"id":"b5d9f6a9-b833-4ba1-9a57-a4cb44bb1d11","type":"CategoricalTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8dd434db-5bd0-452a-b005-e536919f09cc","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"99c4d936-65ec-46a7-9a16-7fc8d64358f4","type":"HoverTool"}]},"id":"4e8cb3cb-e6ec-4319-9edb-f8dd543a7c02","type":"Toolbar"},{"attributes":{"plot":{"id":"7fc09393-fab2-4775-a712-b2f821d56493","subtype":"Figure","type":"Plot"},"ticker":{"id":"b5d9f6a9-b833-4ba1-9a57-a4cb44bb1d11","type":"CategoricalTicker"}},"id":"22a3ecb6-f74f-4cf0-afd3-0b462e793106","type":"Grid"},{"attributes":{"data_source":{"id":"21b35483-450b-45c3-b6ae-51f4bb875a75","type":"ColumnDataSource"},"glyph":{"id":"8dd434db-5bd0-452a-b005-e536919f09cc","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"743df01a-a6c3-4bd2-8725-8006d0cad268","type":"Line"},"selection_glyph":null,"view":{"id":"6814f9d5-b533-42f9-9b74-9e317c7607d4","type":"CDSView"}},"id":"d0b1effc-17cb-4396-9e91-b305600ccfa4","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"743df01a-a6c3-4bd2-8725-8006d0cad268","type":"Line"}],"root_ids":["7fc09393-fab2-4775-a712-b2f821d56493"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"0fc2d9c6-b53d-4d3b-a5ad-6ea2b11f27c2","elementid":"87f85ddc-dddd-45c8-b039-ecd22cabb756","modelid":"7fc09393-fab2-4775-a712-b2f821d56493"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

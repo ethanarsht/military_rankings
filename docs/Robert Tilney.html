@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="2c0db089-8763-45c4-b1ba-04f2b32cd318"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"faf3778c-7a31-44f0-a69d-013e4908102b":{"roots":{"references":[{"attributes":{},"id":"96dfbdce-cf56-4f22-b445-478bdd3533ce","type":"BasicTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"fa1584d4-1aa8-45ef-9639-b3f374889d12","type":"Line"},{"attributes":{"callback":null,"factors":["Battle of Leros"]},"id":"4455fdcf-2b61-456f-9145-104a3b8a8eb9","type":"FactorRange"},{"attributes":{},"id":"72a711d3-0e57-4df9-8711-21ebdba8ede3","type":"CategoricalScale"},{"attributes":{"source":{"id":"64c3cfd1-e8ca-4386-8a2c-676c524e3d04","type":"ColumnDataSource"}},"id":"2c8bc75a-048a-4a95-a62c-3af38fb18b68","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c4089e87-5200-4048-9d3d-a0974c37d75c","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Leros"],"cumulative":{"__ndarray__":"1lZ19E8P4r8=","dtype":"float64","shape":[1]},"general":["Robert Tilney"],"outcome":["D"],"value":{"__ndarray__":"1lZ19E8P4r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABcnkA=","dtype":"float64","shape":[1]}}},"id":"64c3cfd1-e8ca-4386-8a2c-676c524e3d04","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"bcc98b30-5b1b-4b5e-aaf4-2d3b47b463cb","type":"CategoricalAxis"}],"left":[{"id":"16e125c0-9284-49ce-82d5-24ea56d1425a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"bcc98b30-5b1b-4b5e-aaf4-2d3b47b463cb","type":"CategoricalAxis"},{"id":"bf3f4d26-aef7-4ed7-87b7-99f71d1101ad","type":"Grid"},{"id":"16e125c0-9284-49ce-82d5-24ea56d1425a","type":"LinearAxis"},{"id":"52bd3033-9c80-442e-84cf-0c3ae59d6b74","type":"Grid"},{"id":"5189b85e-249d-4247-ba88-e04bb502f939","type":"GlyphRenderer"},{"id":"be30c53e-b332-412c-90b4-6228f8353f67","type":"GlyphRenderer"}],"title":{"id":"9935bb2a-472a-4773-9b18-957e3b9c8285","type":"Title"},"toolbar":{"id":"8c8b8011-fa0a-44dd-bf05-fc5df313f246","type":"Toolbar"},"x_range":{"id":"4455fdcf-2b61-456f-9145-104a3b8a8eb9","type":"FactorRange"},"x_scale":{"id":"72a711d3-0e57-4df9-8711-21ebdba8ede3","type":"CategoricalScale"},"y_range":{"id":"1e551140-8636-462e-89e1-78e2420618f4","type":"DataRange1d"},"y_scale":{"id":"2a27b16f-5ab0-4f4d-a366-a3fbcb461d97","type":"LinearScale"}},"id":"cca28943-17fe-4037-b60a-baf8f46e71ed","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"64c3cfd1-e8ca-4386-8a2c-676c524e3d04","type":"ColumnDataSource"},"glyph":{"id":"fa1584d4-1aa8-45ef-9639-b3f374889d12","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d99d1e56-97e2-4e05-8c36-5a93379fb8c5","type":"Line"},"selection_glyph":null,"view":{"id":"2c8bc75a-048a-4a95-a62c-3af38fb18b68","type":"CDSView"}},"id":"5189b85e-249d-4247-ba88-e04bb502f939","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"3dcba5ea-ea17-415f-a9e5-69fbb938720d","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"3dcba5ea-ea17-415f-a9e5-69fbb938720d","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"3d3bff98-7b19-4a08-97fa-51a61d916b61","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"3dcba5ea-ea17-415f-a9e5-69fbb938720d","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"96dfbdce-cf56-4f22-b445-478bdd3533ce","type":"BasicTickFormatter"},"plot":{"id":"cca28943-17fe-4037-b60a-baf8f46e71ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"e93f4f72-454f-4915-aab5-6d6851b83596","type":"BasicTicker"}},"id":"16e125c0-9284-49ce-82d5-24ea56d1425a","type":"LinearAxis"},{"attributes":{},"id":"12ba05e2-31a1-4a94-b7d4-6c5ce9c9ab53","type":"CategoricalTicker"},{"attributes":{"plot":{"id":"cca28943-17fe-4037-b60a-baf8f46e71ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"12ba05e2-31a1-4a94-b7d4-6c5ce9c9ab53","type":"CategoricalTicker"}},"id":"bf3f4d26-aef7-4ed7-87b7-99f71d1101ad","type":"Grid"},{"attributes":{"data_source":{"id":"64c3cfd1-e8ca-4386-8a2c-676c524e3d04","type":"ColumnDataSource"},"glyph":{"id":"3d3bff98-7b19-4a08-97fa-51a61d916b61","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c4089e87-5200-4048-9d3d-a0974c37d75c","type":"VBar"},"selection_glyph":null,"view":{"id":"6b799c7a-aeeb-46ec-bbe0-bb405c4ff73f","type":"CDSView"}},"id":"be30c53e-b332-412c-90b4-6228f8353f67","type":"GlyphRenderer"},{"attributes":{},"id":"e93f4f72-454f-4915-aab5-6d6851b83596","type":"BasicTicker"},{"attributes":{"callback":null},"id":"1e551140-8636-462e-89e1-78e2420618f4","type":"DataRange1d"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"adcbb66d-8b12-44ab-95c9-2f700cc98090","type":"HoverTool"},{"attributes":{},"id":"96315294-66a5-44dd-b3ad-bb660178b9ff","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"96315294-66a5-44dd-b3ad-bb660178b9ff","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"cca28943-17fe-4037-b60a-baf8f46e71ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"12ba05e2-31a1-4a94-b7d4-6c5ce9c9ab53","type":"CategoricalTicker"}},"id":"bcc98b30-5b1b-4b5e-aaf4-2d3b47b463cb","type":"CategoricalAxis"},{"attributes":{"source":{"id":"64c3cfd1-e8ca-4386-8a2c-676c524e3d04","type":"ColumnDataSource"}},"id":"6b799c7a-aeeb-46ec-bbe0-bb405c4ff73f","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"adcbb66d-8b12-44ab-95c9-2f700cc98090","type":"HoverTool"}]},"id":"8c8b8011-fa0a-44dd-bf05-fc5df313f246","type":"Toolbar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d99d1e56-97e2-4e05-8c36-5a93379fb8c5","type":"Line"},{"attributes":{"plot":null,"text":"Robert Tilney (0 - 0 - 1)"},"id":"9935bb2a-472a-4773-9b18-957e3b9c8285","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"cca28943-17fe-4037-b60a-baf8f46e71ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"e93f4f72-454f-4915-aab5-6d6851b83596","type":"BasicTicker"}},"id":"52bd3033-9c80-442e-84cf-0c3ae59d6b74","type":"Grid"},{"attributes":{},"id":"2a27b16f-5ab0-4f4d-a366-a3fbcb461d97","type":"LinearScale"}],"root_ids":["cca28943-17fe-4037-b60a-baf8f46e71ed"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"faf3778c-7a31-44f0-a69d-013e4908102b","elementid":"2c0db089-8763-45c4-b1ba-04f2b32cd318","modelid":"cca28943-17fe-4037-b60a-baf8f46e71ed"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

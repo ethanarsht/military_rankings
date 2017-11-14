@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="9bf60bf0-c714-4458-b112-a30826f2a041"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"d313ffd0-d29f-4279-844b-e4616aff7bc6":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4d46d695-03a1-4f9a-8735-2dccaef44a61","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f7bc4f79-0c64-40cf-8cef-11ec8e5dc78b","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f7bc4f79-0c64-40cf-8cef-11ec8e5dc78b","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2b331dca-8811-46a2-bcde-36fe6977b710","type":"VBar"},{"attributes":{"formatter":{"id":"d95b23ff-2952-49e5-9ddd-72b0b9071253","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"2072ebb2-300f-4579-b7d9-0155ccdde0cc","subtype":"Figure","type":"Plot"},"ticker":{"id":"58664c5d-8ef8-4464-803f-1fa115eb63bb","type":"CategoricalTicker"}},"id":"2f8828ff-d163-4691-9218-0c4c49f5e10d","type":"CategoricalAxis"},{"attributes":{},"id":"d95b23ff-2952-49e5-9ddd-72b0b9071253","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"7cd6309a-95e5-45ee-a367-46f262a585b2","type":"BasicTickFormatter"},"plot":{"id":"2072ebb2-300f-4579-b7d9-0155ccdde0cc","subtype":"Figure","type":"Plot"},"ticker":{"id":"e3424561-8b10-4c2a-a0be-a8774d87bdbe","type":"BasicTicker"}},"id":"5193ff20-b441-4a02-9b6a-2b3952f632dd","type":"LinearAxis"},{"attributes":{"callback":null,"factors":["Battle of Big Bethel","Battle of South Mountain","Battle of Fort Anderson","Battle of Washington"]},"id":"83590de5-43a4-42ca-839d-0e99ed4b7e70","type":"FactorRange"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"667583a7-3679-46f9-a510-718e26ba9710","type":"Line"},{"attributes":{"plot":null,"text":"Daniel Harvey Hill (1 - 1 - 2)"},"id":"dd1d6b94-4fe5-4544-8c0c-2e44b98b99fe","type":"Title"},{"attributes":{"callback":null},"id":"dd3a6b99-d9b7-415e-9ce9-3f321d710aac","type":"DataRange1d"},{"attributes":{"data_source":{"id":"e88b1dcf-2f3e-4062-9d46-d6d3b94899f5","type":"ColumnDataSource"},"glyph":{"id":"2b331dca-8811-46a2-bcde-36fe6977b710","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"cbc2bf1f-2acd-418f-a0bb-ee16d63f45d3","type":"VBar"},"selection_glyph":null,"view":{"id":"2441d723-fde1-4999-b4f0-6da3ebc071d1","type":"CDSView"}},"id":"c5171a20-0241-4fb7-bf02-88743db2023b","type":"GlyphRenderer"},{"attributes":{},"id":"58664c5d-8ef8-4464-803f-1fa115eb63bb","type":"CategoricalTicker"},{"attributes":{},"id":"e3424561-8b10-4c2a-a0be-a8774d87bdbe","type":"BasicTicker"},{"attributes":{"below":[{"id":"2f8828ff-d163-4691-9218-0c4c49f5e10d","type":"CategoricalAxis"}],"left":[{"id":"5193ff20-b441-4a02-9b6a-2b3952f632dd","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"2f8828ff-d163-4691-9218-0c4c49f5e10d","type":"CategoricalAxis"},{"id":"5a737681-faf0-45b4-a78c-15f294deffd7","type":"Grid"},{"id":"5193ff20-b441-4a02-9b6a-2b3952f632dd","type":"LinearAxis"},{"id":"3d94a39e-df10-4965-a65c-e25c810718b4","type":"Grid"},{"id":"e6317c56-dccc-4462-9c0c-0dca8e157c78","type":"GlyphRenderer"},{"id":"c5171a20-0241-4fb7-bf02-88743db2023b","type":"GlyphRenderer"}],"title":{"id":"dd1d6b94-4fe5-4544-8c0c-2e44b98b99fe","type":"Title"},"toolbar":{"id":"33722880-5641-4d05-8714-a1f8f788530c","type":"Toolbar"},"x_range":{"id":"83590de5-43a4-42ca-839d-0e99ed4b7e70","type":"FactorRange"},"x_scale":{"id":"f9916ec4-86f8-498f-8317-53f6eed22a14","type":"CategoricalScale"},"y_range":{"id":"dd3a6b99-d9b7-415e-9ce9-3f321d710aac","type":"DataRange1d"},"y_scale":{"id":"1a53360d-2399-4e89-aed8-e16ada4e12e8","type":"LinearScale"}},"id":"2072ebb2-300f-4579-b7d9-0155ccdde0cc","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"e88b1dcf-2f3e-4062-9d46-d6d3b94899f5","type":"ColumnDataSource"},"glyph":{"id":"4d46d695-03a1-4f9a-8735-2dccaef44a61","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"667583a7-3679-46f9-a510-718e26ba9710","type":"Line"},"selection_glyph":null,"view":{"id":"e46536d4-9c2f-4738-89f9-5f655835efd4","type":"CDSView"}},"id":"e6317c56-dccc-4462-9c0c-0dca8e157c78","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Big Bethel","Battle of South Mountain","Battle of Fort Anderson","Battle of Washington"],"cumulative":{"__ndarray__":"Y1mSO6Va4T+kW8035iWwP5doAoFKR9i/l2gCgUpH2L8=","dtype":"float64","shape":[4]},"general":["Daniel Harvey Hill","Daniel Harvey Hill","Daniel Harvey Hill","Daniel Harvey Hill"],"outcome":["V","D","D","I"],"value":{"__ndarray__":"Y1mSO6Va4T/dWzHp0Kvev4C/9Q7EUNy/AAAAAAAAAAA=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAAAUnUAAAAAAABidQAAAAAAAHJ1AAAAAAAAcnUA=","dtype":"float64","shape":[4]}}},"id":"e88b1dcf-2f3e-4062-9d46-d6d3b94899f5","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f7bc4f79-0c64-40cf-8cef-11ec8e5dc78b","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"cbc2bf1f-2acd-418f-a0bb-ee16d63f45d3","type":"VBar"},{"attributes":{"source":{"id":"e88b1dcf-2f3e-4062-9d46-d6d3b94899f5","type":"ColumnDataSource"}},"id":"2441d723-fde1-4999-b4f0-6da3ebc071d1","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"2072ebb2-300f-4579-b7d9-0155ccdde0cc","subtype":"Figure","type":"Plot"},"ticker":{"id":"e3424561-8b10-4c2a-a0be-a8774d87bdbe","type":"BasicTicker"}},"id":"3d94a39e-df10-4965-a65c-e25c810718b4","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f7541162-3c81-4b9e-8479-5d8567ea2cb0","type":"HoverTool"},{"attributes":{},"id":"7cd6309a-95e5-45ee-a367-46f262a585b2","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f7541162-3c81-4b9e-8479-5d8567ea2cb0","type":"HoverTool"}]},"id":"33722880-5641-4d05-8714-a1f8f788530c","type":"Toolbar"},{"attributes":{},"id":"1a53360d-2399-4e89-aed8-e16ada4e12e8","type":"LinearScale"},{"attributes":{"source":{"id":"e88b1dcf-2f3e-4062-9d46-d6d3b94899f5","type":"ColumnDataSource"}},"id":"e46536d4-9c2f-4738-89f9-5f655835efd4","type":"CDSView"},{"attributes":{"plot":{"id":"2072ebb2-300f-4579-b7d9-0155ccdde0cc","subtype":"Figure","type":"Plot"},"ticker":{"id":"58664c5d-8ef8-4464-803f-1fa115eb63bb","type":"CategoricalTicker"}},"id":"5a737681-faf0-45b4-a78c-15f294deffd7","type":"Grid"},{"attributes":{},"id":"f9916ec4-86f8-498f-8317-53f6eed22a14","type":"CategoricalScale"}],"root_ids":["2072ebb2-300f-4579-b7d9-0155ccdde0cc"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"d313ffd0-d29f-4279-844b-e4616aff7bc6","elementid":"9bf60bf0-c714-4458-b112-a30826f2a041","modelid":"2072ebb2-300f-4579-b7d9-0155ccdde0cc"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

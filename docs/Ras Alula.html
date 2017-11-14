@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="37aa2e91-aaef-41e1-8e60-c63e5f03721c"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"0adc9326-415c-4287-9f7a-28c34deb836e":{"roots":{"references":[{"attributes":{"source":{"id":"79a23566-3e8d-4540-97d0-71e13c2a5124","type":"ColumnDataSource"}},"id":"fa5cb2b4-2dbc-49f3-811f-6cfc2622e635","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"578bebcd-c63b-47a9-95b7-0ec10dff78af","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"578bebcd-c63b-47a9-95b7-0ec10dff78af","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"27ff2091-2a65-4342-b828-882677a2061d","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e88f4596-ebd9-45f6-b674-0cd62c03cbc3","type":"VBar"},{"attributes":{"formatter":{"id":"4d6e88e3-b23c-4097-8661-7837bfdca22f","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"7c5ce8e2-098a-4858-8e19-412368d3aba2","subtype":"Figure","type":"Plot"},"ticker":{"id":"a6106d29-2ba6-4041-b4b0-8218153e5ac8","type":"CategoricalTicker"}},"id":"ee621619-2b79-41ba-b48f-812f1390e3b5","type":"CategoricalAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"91b6b68e-abe3-44ce-9956-ac93389d8d54","type":"HoverTool"},{"attributes":{"callback":null},"id":"8aa227e0-49f7-4aa3-a283-e82af86e9dde","type":"DataRange1d"},{"attributes":{},"id":"97209f68-1062-474c-9fe9-4de7f5f3c0ca","type":"BasicTicker"},{"attributes":{"data_source":{"id":"79a23566-3e8d-4540-97d0-71e13c2a5124","type":"ColumnDataSource"},"glyph":{"id":"98963ff3-9664-4c46-b4e0-23b9339a902d","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"095cdcc9-5b01-4d1c-8edb-cdd343a53f40","type":"Line"},"selection_glyph":null,"view":{"id":"6b4f1f57-5cd0-4a1d-b8fd-bae989898993","type":"CDSView"}},"id":"be127f55-a31a-41f8-a46c-69943d96812c","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Gura","Battle of Dogali","Battle of Adowa"],"cumulative":{"__ndarray__":"3Knx3aYj4b9ANrTyp0WpPw41afmKgt4/","dtype":"float64","shape":[3]},"general":["Ras Alula","Ras Alula","Ras Alula"],"outcome":["D","V","V"],"value":{"__ndarray__":"3Knx3aYj4b9A7RxdAbjiP0auEvvVWds/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABQnUAAAAAAAHydQAAAAAAAoJ1A","dtype":"float64","shape":[3]}}},"id":"79a23566-3e8d-4540-97d0-71e13c2a5124","type":"ColumnDataSource"},{"attributes":{},"id":"d127ac6b-58bd-47d2-b702-2421bb947635","type":"LinearScale"},{"attributes":{"formatter":{"id":"4b166148-1486-47ae-a776-d90208d24216","type":"BasicTickFormatter"},"plot":{"id":"7c5ce8e2-098a-4858-8e19-412368d3aba2","subtype":"Figure","type":"Plot"},"ticker":{"id":"97209f68-1062-474c-9fe9-4de7f5f3c0ca","type":"BasicTicker"}},"id":"babfcbba-90a0-4749-8820-da3255281752","type":"LinearAxis"},{"attributes":{"below":[{"id":"ee621619-2b79-41ba-b48f-812f1390e3b5","type":"CategoricalAxis"}],"left":[{"id":"babfcbba-90a0-4749-8820-da3255281752","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"ee621619-2b79-41ba-b48f-812f1390e3b5","type":"CategoricalAxis"},{"id":"8c013b3d-bc31-4943-9438-f33becd215d1","type":"Grid"},{"id":"babfcbba-90a0-4749-8820-da3255281752","type":"LinearAxis"},{"id":"5b17bf8e-d57a-49b0-b6f8-c8f91cb17952","type":"Grid"},{"id":"be127f55-a31a-41f8-a46c-69943d96812c","type":"GlyphRenderer"},{"id":"74a43bad-0227-46ca-8774-e93632ebb6c5","type":"GlyphRenderer"}],"title":{"id":"aebc340b-f487-4fd2-b12f-f47a20bb3a4b","type":"Title"},"toolbar":{"id":"1e793a40-99cb-41ff-8069-c93d04fdf178","type":"Toolbar"},"x_range":{"id":"812dd19f-d5a9-4b47-bada-89be0dcdae9a","type":"FactorRange"},"x_scale":{"id":"bbfa8526-3457-4a1c-805e-f70593f4b2c1","type":"CategoricalScale"},"y_range":{"id":"8aa227e0-49f7-4aa3-a283-e82af86e9dde","type":"DataRange1d"},"y_scale":{"id":"d127ac6b-58bd-47d2-b702-2421bb947635","type":"LinearScale"}},"id":"7c5ce8e2-098a-4858-8e19-412368d3aba2","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Gura","Battle of Dogali","Battle of Adowa"]},"id":"812dd19f-d5a9-4b47-bada-89be0dcdae9a","type":"FactorRange"},{"attributes":{"data_source":{"id":"79a23566-3e8d-4540-97d0-71e13c2a5124","type":"ColumnDataSource"},"glyph":{"id":"27ff2091-2a65-4342-b828-882677a2061d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e88f4596-ebd9-45f6-b674-0cd62c03cbc3","type":"VBar"},"selection_glyph":null,"view":{"id":"fa5cb2b4-2dbc-49f3-811f-6cfc2622e635","type":"CDSView"}},"id":"74a43bad-0227-46ca-8774-e93632ebb6c5","type":"GlyphRenderer"},{"attributes":{},"id":"bbfa8526-3457-4a1c-805e-f70593f4b2c1","type":"CategoricalScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"578bebcd-c63b-47a9-95b7-0ec10dff78af","type":"CategoricalColorMapper"},{"attributes":{"dimension":1,"plot":{"id":"7c5ce8e2-098a-4858-8e19-412368d3aba2","subtype":"Figure","type":"Plot"},"ticker":{"id":"97209f68-1062-474c-9fe9-4de7f5f3c0ca","type":"BasicTicker"}},"id":"5b17bf8e-d57a-49b0-b6f8-c8f91cb17952","type":"Grid"},{"attributes":{},"id":"a6106d29-2ba6-4041-b4b0-8218153e5ac8","type":"CategoricalTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"095cdcc9-5b01-4d1c-8edb-cdd343a53f40","type":"Line"},{"attributes":{"source":{"id":"79a23566-3e8d-4540-97d0-71e13c2a5124","type":"ColumnDataSource"}},"id":"6b4f1f57-5cd0-4a1d-b8fd-bae989898993","type":"CDSView"},{"attributes":{"plot":null,"text":"Ras Alula (2 - 0 - 1)"},"id":"aebc340b-f487-4fd2-b12f-f47a20bb3a4b","type":"Title"},{"attributes":{},"id":"4d6e88e3-b23c-4097-8661-7837bfdca22f","type":"CategoricalTickFormatter"},{"attributes":{},"id":"4b166148-1486-47ae-a776-d90208d24216","type":"BasicTickFormatter"},{"attributes":{"plot":{"id":"7c5ce8e2-098a-4858-8e19-412368d3aba2","subtype":"Figure","type":"Plot"},"ticker":{"id":"a6106d29-2ba6-4041-b4b0-8218153e5ac8","type":"CategoricalTicker"}},"id":"8c013b3d-bc31-4943-9438-f33becd215d1","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"91b6b68e-abe3-44ce-9956-ac93389d8d54","type":"HoverTool"}]},"id":"1e793a40-99cb-41ff-8069-c93d04fdf178","type":"Toolbar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"98963ff3-9664-4c46-b4e0-23b9339a902d","type":"Line"}],"root_ids":["7c5ce8e2-098a-4858-8e19-412368d3aba2"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"0adc9326-415c-4287-9f7a-28c34deb836e","elementid":"37aa2e91-aaef-41e1-8e60-c63e5f03721c","modelid":"7c5ce8e2-098a-4858-8e19-412368d3aba2"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

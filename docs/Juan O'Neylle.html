@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="bba20562-8f21-4cff-9f54-36db15071240"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"7b6f0593-a986-4fc3-9234-2f5477ba7d30":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"e04c59b7-9453-43a1-8f9a-9fa7dccfda23","type":"HoverTool"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"13c96962-6a00-4cf7-b690-da7bf32c04bf","type":"Line"},{"attributes":{"callback":null,"factors":["Battle of Tudela","First Siege of Zaragoza"]},"id":"4386b10f-efda-404b-839b-3be57a942da8","type":"FactorRange"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"e0669940-6cab-4582-94fc-811fcaaac5db","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"acaa8486-6ca9-4af5-b863-a90381d277c7","type":"BasicTickFormatter"},"plot":{"id":"839d70da-1f39-4073-a891-fb07a5e3d4d0","subtype":"Figure","type":"Plot"},"ticker":{"id":"2b68c35e-c080-4484-9be5-cc2e9c729de4","type":"BasicTicker"}},"id":"1b495438-0b64-4580-af03-61b70b8ced20","type":"LinearAxis"},{"attributes":{},"id":"7dfe5f5c-4b38-4994-9702-9000246c91c0","type":"LinearScale"},{"attributes":{"below":[{"id":"0c12fe26-067b-4b3f-b5f0-1371602f25d2","type":"CategoricalAxis"}],"left":[{"id":"1b495438-0b64-4580-af03-61b70b8ced20","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"0c12fe26-067b-4b3f-b5f0-1371602f25d2","type":"CategoricalAxis"},{"id":"3076cc5f-3011-42c6-8ca0-d88317ba4475","type":"Grid"},{"id":"1b495438-0b64-4580-af03-61b70b8ced20","type":"LinearAxis"},{"id":"c5f245c2-60ed-4b9c-8af8-814e02bcbbc5","type":"Grid"},{"id":"c48ee9e2-2583-486b-9129-03ddd2f0437f","type":"GlyphRenderer"},{"id":"5ed1b987-d868-42d1-b725-37e0765eb4bb","type":"GlyphRenderer"}],"title":{"id":"1c738f4b-88bc-44dd-b954-f4ac99fc93d3","type":"Title"},"toolbar":{"id":"bc454801-4b8b-4ab5-a4ce-e3a586abaf9f","type":"Toolbar"},"x_range":{"id":"4386b10f-efda-404b-839b-3be57a942da8","type":"FactorRange"},"x_scale":{"id":"5306c3d4-64e3-4bac-aedc-27e2afbedc96","type":"CategoricalScale"},"y_range":{"id":"76007600-6184-4842-850a-976efa5dadc0","type":"DataRange1d"},"y_scale":{"id":"7dfe5f5c-4b38-4994-9702-9000246c91c0","type":"LinearScale"}},"id":"839d70da-1f39-4073-a891-fb07a5e3d4d0","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e04c59b7-9453-43a1-8f9a-9fa7dccfda23","type":"HoverTool"}]},"id":"bc454801-4b8b-4ab5-a4ce-e3a586abaf9f","type":"Toolbar"},{"attributes":{"source":{"id":"8a0e2459-1e24-4c60-8471-2875358c8e4e","type":"ColumnDataSource"}},"id":"c531e599-a4f6-4c4a-bcd0-a54b12a3f048","type":"CDSView"},{"attributes":{"formatter":{"id":"24bde300-29ce-4411-80ec-6b45bd255841","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"839d70da-1f39-4073-a891-fb07a5e3d4d0","subtype":"Figure","type":"Plot"},"ticker":{"id":"f321a574-605b-4894-aea6-8f0ad978691c","type":"CategoricalTicker"}},"id":"0c12fe26-067b-4b3f-b5f0-1371602f25d2","type":"CategoricalAxis"},{"attributes":{},"id":"acaa8486-6ca9-4af5-b863-a90381d277c7","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"e0669940-6cab-4582-94fc-811fcaaac5db","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"e0669940-6cab-4582-94fc-811fcaaac5db","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"cc6ef3e0-4024-4f55-9f15-a1723650beaf","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5762aed2-4e5c-4acf-a55f-a656e097fcd8","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"839d70da-1f39-4073-a891-fb07a5e3d4d0","subtype":"Figure","type":"Plot"},"ticker":{"id":"2b68c35e-c080-4484-9be5-cc2e9c729de4","type":"BasicTicker"}},"id":"c5f245c2-60ed-4b9c-8af8-814e02bcbbc5","type":"Grid"},{"attributes":{},"id":"5306c3d4-64e3-4bac-aedc-27e2afbedc96","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"8a0e2459-1e24-4c60-8471-2875358c8e4e","type":"ColumnDataSource"},"glyph":{"id":"5762aed2-4e5c-4acf-a55f-a656e097fcd8","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"13c96962-6a00-4cf7-b690-da7bf32c04bf","type":"Line"},"selection_glyph":null,"view":{"id":"1197b26e-9be3-4cbb-bcdf-4aa586480f11","type":"CDSView"}},"id":"c48ee9e2-2583-486b-9129-03ddd2f0437f","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"fcaf3911-7835-4e62-bd95-aa39e64ef86e","type":"VBar"},{"attributes":{},"id":"24bde300-29ce-4411-80ec-6b45bd255841","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"Juan O'Neylle (1 - 0 - 1)"},"id":"1c738f4b-88bc-44dd-b954-f4ac99fc93d3","type":"Title"},{"attributes":{"plot":{"id":"839d70da-1f39-4073-a891-fb07a5e3d4d0","subtype":"Figure","type":"Plot"},"ticker":{"id":"f321a574-605b-4894-aea6-8f0ad978691c","type":"CategoricalTicker"}},"id":"3076cc5f-3011-42c6-8ca0-d88317ba4475","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Tudela","First Siege of Zaragoza"],"cumulative":{"__ndarray__":"jMS0bIsm4L8Ay/nrZp+KPw==","dtype":"float64","shape":[2]},"general":["Juan O'Neylle","Juan O'Neylle"],"outcome":["D","V"],"value":{"__ndarray__":"jMS0bIsm4L+4q2QICZHgPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABAnEAAAAAAAECcQA==","dtype":"float64","shape":[2]}}},"id":"8a0e2459-1e24-4c60-8471-2875358c8e4e","type":"ColumnDataSource"},{"attributes":{},"id":"f321a574-605b-4894-aea6-8f0ad978691c","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"8a0e2459-1e24-4c60-8471-2875358c8e4e","type":"ColumnDataSource"},"glyph":{"id":"cc6ef3e0-4024-4f55-9f15-a1723650beaf","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"fcaf3911-7835-4e62-bd95-aa39e64ef86e","type":"VBar"},"selection_glyph":null,"view":{"id":"c531e599-a4f6-4c4a-bcd0-a54b12a3f048","type":"CDSView"}},"id":"5ed1b987-d868-42d1-b725-37e0765eb4bb","type":"GlyphRenderer"},{"attributes":{},"id":"2b68c35e-c080-4484-9be5-cc2e9c729de4","type":"BasicTicker"},{"attributes":{"callback":null},"id":"76007600-6184-4842-850a-976efa5dadc0","type":"DataRange1d"},{"attributes":{"source":{"id":"8a0e2459-1e24-4c60-8471-2875358c8e4e","type":"ColumnDataSource"}},"id":"1197b26e-9be3-4cbb-bcdf-4aa586480f11","type":"CDSView"}],"root_ids":["839d70da-1f39-4073-a891-fb07a5e3d4d0"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"7b6f0593-a986-4fc3-9234-2f5477ba7d30","elementid":"bba20562-8f21-4cff-9f54-36db15071240","modelid":"839d70da-1f39-4073-a891-fb07a5e3d4d0"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

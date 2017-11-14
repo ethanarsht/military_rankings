@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c8f97513-54bf-4041-913c-564b516c4f5e"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"cab22fc7-7e4f-4a07-b588-a4ee6c6486e1":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"fc6a7ede-81b7-42db-a4df-42ad607c439b","type":"HoverTool"},{"attributes":{"callback":null,"factors":["Bay of Pigs Invasion","Invasion of Grenada"]},"id":"6ab7351b-b6ca-4a0f-bc11-a0fc278759c1","type":"FactorRange"},{"attributes":{},"id":"8fdab84f-5636-4df0-8c5f-c88cd2738c2a","type":"LinearScale"},{"attributes":{"plot":null,"text":"Fidel Castro (1 - 0 - 1)"},"id":"3086ba59-2dc6-4104-9d46-361b7f683b95","type":"Title"},{"attributes":{},"id":"101db066-6c27-4387-b9eb-a268af50e59b","type":"CategoricalTicker"},{"attributes":{},"id":"a60a6700-235d-42e3-9451-be215c6fe4bb","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"fc6a7ede-81b7-42db-a4df-42ad607c439b","type":"HoverTool"}]},"id":"b858be23-d77d-4d23-ad33-a407d88323ee","type":"Toolbar"},{"attributes":{"dimension":1,"plot":{"id":"98a4ae2d-71ca-4bcf-be1c-2dfd827c60be","subtype":"Figure","type":"Plot"},"ticker":{"id":"d7591a62-a9a0-4c3a-b265-1b3d0e1a5ff2","type":"BasicTicker"}},"id":"e9867bfb-227a-4289-9edf-12753104d82f","type":"Grid"},{"attributes":{},"id":"bbdc1fc6-4892-4531-b272-5f5a3ff8d7de","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"bbdc1fc6-4892-4531-b272-5f5a3ff8d7de","type":"BasicTickFormatter"},"plot":{"id":"98a4ae2d-71ca-4bcf-be1c-2dfd827c60be","subtype":"Figure","type":"Plot"},"ticker":{"id":"d7591a62-a9a0-4c3a-b265-1b3d0e1a5ff2","type":"BasicTicker"}},"id":"0f2711bf-1623-4d72-a883-9da6c393a290","type":"LinearAxis"},{"attributes":{},"id":"d7591a62-a9a0-4c3a-b265-1b3d0e1a5ff2","type":"BasicTicker"},{"attributes":{"data_source":{"id":"51387e7a-3fff-480f-9021-f4b940347114","type":"ColumnDataSource"},"glyph":{"id":"6063811e-0f12-4bc1-b82f-f0369abb9d3e","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f0b29680-e7a5-4086-a8f4-25391edfd4b5","type":"VBar"},"selection_glyph":null,"view":{"id":"f128c691-78d7-499a-a9d0-9680ed21f38b","type":"CDSView"}},"id":"e1beab70-1c12-4bdd-959c-f58fea4c1b1d","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"fd6decbd-fa7f-406b-b0ef-923040d281e3","type":"Line"},{"attributes":{"source":{"id":"51387e7a-3fff-480f-9021-f4b940347114","type":"ColumnDataSource"}},"id":"a97f5e13-eed7-42d5-b42f-cdd2a4f6f81f","type":"CDSView"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"98e883cd-d60c-4d3d-ba7c-65558b0c522c","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"51387e7a-3fff-480f-9021-f4b940347114","type":"ColumnDataSource"}},"id":"f128c691-78d7-499a-a9d0-9680ed21f38b","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Bay of Pigs Invasion","Invasion of Grenada"],"cumulative":{"__ndarray__":"UpUvsgKF2T+YWahKGd2mvw==","dtype":"float64","shape":[2]},"general":["Fidel Castro","Fidel Castro"],"outcome":["V","D"],"value":{"__ndarray__":"UpUvsgKF2T+FoITbpWDcvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAACknkAAAAAAAPyeQA==","dtype":"float64","shape":[2]}}},"id":"51387e7a-3fff-480f-9021-f4b940347114","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"98e883cd-d60c-4d3d-ba7c-65558b0c522c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"98e883cd-d60c-4d3d-ba7c-65558b0c522c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6063811e-0f12-4bc1-b82f-f0369abb9d3e","type":"VBar"},{"attributes":{"callback":null},"id":"842b7279-c356-494f-8eec-b06c1ab51a38","type":"DataRange1d"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8dcf269b-ad7f-487a-8dee-098032045cf6","type":"Line"},{"attributes":{"data_source":{"id":"51387e7a-3fff-480f-9021-f4b940347114","type":"ColumnDataSource"},"glyph":{"id":"8dcf269b-ad7f-487a-8dee-098032045cf6","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"fd6decbd-fa7f-406b-b0ef-923040d281e3","type":"Line"},"selection_glyph":null,"view":{"id":"a97f5e13-eed7-42d5-b42f-cdd2a4f6f81f","type":"CDSView"}},"id":"4e3a2639-f163-4dc7-9108-fa378065e757","type":"GlyphRenderer"},{"attributes":{},"id":"206f4715-8dd5-490f-b12d-a3645cb4ca40","type":"CategoricalScale"},{"attributes":{"below":[{"id":"bfe2104f-5028-48fe-bb99-e6968987b742","type":"CategoricalAxis"}],"left":[{"id":"0f2711bf-1623-4d72-a883-9da6c393a290","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"bfe2104f-5028-48fe-bb99-e6968987b742","type":"CategoricalAxis"},{"id":"b51cfcb2-620d-4661-a6c5-d7ffc18e5d55","type":"Grid"},{"id":"0f2711bf-1623-4d72-a883-9da6c393a290","type":"LinearAxis"},{"id":"e9867bfb-227a-4289-9edf-12753104d82f","type":"Grid"},{"id":"4e3a2639-f163-4dc7-9108-fa378065e757","type":"GlyphRenderer"},{"id":"e1beab70-1c12-4bdd-959c-f58fea4c1b1d","type":"GlyphRenderer"}],"title":{"id":"3086ba59-2dc6-4104-9d46-361b7f683b95","type":"Title"},"toolbar":{"id":"b858be23-d77d-4d23-ad33-a407d88323ee","type":"Toolbar"},"x_range":{"id":"6ab7351b-b6ca-4a0f-bc11-a0fc278759c1","type":"FactorRange"},"x_scale":{"id":"206f4715-8dd5-490f-b12d-a3645cb4ca40","type":"CategoricalScale"},"y_range":{"id":"842b7279-c356-494f-8eec-b06c1ab51a38","type":"DataRange1d"},"y_scale":{"id":"8fdab84f-5636-4df0-8c5f-c88cd2738c2a","type":"LinearScale"}},"id":"98a4ae2d-71ca-4bcf-be1c-2dfd827c60be","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f0b29680-e7a5-4086-a8f4-25391edfd4b5","type":"VBar"},{"attributes":{"plot":{"id":"98a4ae2d-71ca-4bcf-be1c-2dfd827c60be","subtype":"Figure","type":"Plot"},"ticker":{"id":"101db066-6c27-4387-b9eb-a268af50e59b","type":"CategoricalTicker"}},"id":"b51cfcb2-620d-4661-a6c5-d7ffc18e5d55","type":"Grid"},{"attributes":{"formatter":{"id":"a60a6700-235d-42e3-9451-be215c6fe4bb","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"98a4ae2d-71ca-4bcf-be1c-2dfd827c60be","subtype":"Figure","type":"Plot"},"ticker":{"id":"101db066-6c27-4387-b9eb-a268af50e59b","type":"CategoricalTicker"}},"id":"bfe2104f-5028-48fe-bb99-e6968987b742","type":"CategoricalAxis"}],"root_ids":["98a4ae2d-71ca-4bcf-be1c-2dfd827c60be"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"cab22fc7-7e4f-4a07-b588-a4ee6c6486e1","elementid":"c8f97513-54bf-4041-913c-564b516c4f5e","modelid":"98a4ae2d-71ca-4bcf-be1c-2dfd827c60be"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

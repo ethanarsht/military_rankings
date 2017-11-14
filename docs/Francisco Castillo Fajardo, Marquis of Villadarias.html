@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="e48ea357-972e-4654-8083-84496168a47d"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"dfadd81a-bdd1-4805-862e-ca1cc2b8913c":{"roots":{"references":[{"attributes":{"source":{"id":"0325c692-ad5b-47ee-b1c1-18c73f48cee8","type":"ColumnDataSource"}},"id":"5340bcc4-2d5c-4e50-92e7-2d31c1dbdbe7","type":"CDSView"},{"attributes":{},"id":"2e35c3dc-9fec-48a7-8173-0261cacd032c","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Battle of Almenar"]},"id":"affd5ebc-ac5c-4f09-8513-5a14d1b3a02c","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4c56e6f8-a30c-4448-a640-9b0c155aac7f","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4c56e6f8-a30c-4448-a640-9b0c155aac7f","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"405e7f51-6450-438e-94d8-8eef275282a7","type":"VBar"},{"attributes":{"formatter":{"id":"839328de-26a9-4a9a-85b8-3c32bad18119","type":"BasicTickFormatter"},"plot":{"id":"25f07f37-39ee-4076-bc2e-8ab696665e14","subtype":"Figure","type":"Plot"},"ticker":{"id":"69f19a35-e1b2-4561-98ac-775b4461d4be","type":"BasicTicker"}},"id":"d3a42934-5f3c-444e-a34e-1d0f1e14d970","type":"LinearAxis"},{"attributes":{"data_source":{"id":"0325c692-ad5b-47ee-b1c1-18c73f48cee8","type":"ColumnDataSource"},"glyph":{"id":"405e7f51-6450-438e-94d8-8eef275282a7","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ccb4ec3c-da72-4a79-898a-dcb67ef1c587","type":"VBar"},"selection_glyph":null,"view":{"id":"e00f1daa-4936-4da4-a6a5-a7f657388af7","type":"CDSView"}},"id":"ae9645c2-90d2-43b3-a4a8-e49615c8d750","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"19658d93-1ec4-4bce-bc04-439948194d4c","type":"HoverTool"},{"attributes":{"source":{"id":"0325c692-ad5b-47ee-b1c1-18c73f48cee8","type":"ColumnDataSource"}},"id":"e00f1daa-4936-4da4-a6a5-a7f657388af7","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"572aeb38-9777-42fa-b269-d8b252b2a0e0","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"25f07f37-39ee-4076-bc2e-8ab696665e14","subtype":"Figure","type":"Plot"},"ticker":{"id":"69f19a35-e1b2-4561-98ac-775b4461d4be","type":"BasicTicker"}},"id":"6958e52c-ffcd-4904-bf9f-a0957cee9341","type":"Grid"},{"attributes":{"formatter":{"id":"35fba5df-185a-4c5c-9e11-3c6bc19cf5e6","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"25f07f37-39ee-4076-bc2e-8ab696665e14","subtype":"Figure","type":"Plot"},"ticker":{"id":"339f7e26-58c7-498d-956c-d21ee3552a62","type":"CategoricalTicker"}},"id":"339e59ce-ac0d-45f0-9a80-db143b9752a6","type":"CategoricalAxis"},{"attributes":{},"id":"35fba5df-185a-4c5c-9e11-3c6bc19cf5e6","type":"CategoricalTickFormatter"},{"attributes":{"plot":{"id":"25f07f37-39ee-4076-bc2e-8ab696665e14","subtype":"Figure","type":"Plot"},"ticker":{"id":"339f7e26-58c7-498d-956c-d21ee3552a62","type":"CategoricalTicker"}},"id":"8e171e3d-0705-48db-bb96-c186856c733d","type":"Grid"},{"attributes":{},"id":"69f19a35-e1b2-4561-98ac-775b4461d4be","type":"BasicTicker"},{"attributes":{},"id":"666a71b3-eb59-4168-8d93-a53b34daf5b4","type":"LinearScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Almenar"],"cumulative":{"__ndarray__":"OS7QYp/P378=","dtype":"float64","shape":[1]},"general":["Francisco Castillo Fajardo, Marquis of Villadarias"],"outcome":["D"],"value":{"__ndarray__":"OS7QYp/P378=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAC4mkA=","dtype":"float64","shape":[1]}}},"id":"0325c692-ad5b-47ee-b1c1-18c73f48cee8","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4c56e6f8-a30c-4448-a640-9b0c155aac7f","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ccb4ec3c-da72-4a79-898a-dcb67ef1c587","type":"VBar"},{"attributes":{},"id":"339f7e26-58c7-498d-956c-d21ee3552a62","type":"CategoricalTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9059787b-23f8-475e-9ab8-2a7896f3dba1","type":"Line"},{"attributes":{"data_source":{"id":"0325c692-ad5b-47ee-b1c1-18c73f48cee8","type":"ColumnDataSource"},"glyph":{"id":"572aeb38-9777-42fa-b269-d8b252b2a0e0","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9059787b-23f8-475e-9ab8-2a7896f3dba1","type":"Line"},"selection_glyph":null,"view":{"id":"5340bcc4-2d5c-4e50-92e7-2d31c1dbdbe7","type":"CDSView"}},"id":"71b2dca3-f54e-4e90-9a1b-cd8b8a1730ec","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Francisco Castillo Fajardo, Marquis of Villadarias (0 - 0 - 1)"},"id":"1c8d2f39-195b-4d39-ab46-4d5f8bd631e7","type":"Title"},{"attributes":{"below":[{"id":"339e59ce-ac0d-45f0-9a80-db143b9752a6","type":"CategoricalAxis"}],"left":[{"id":"d3a42934-5f3c-444e-a34e-1d0f1e14d970","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"339e59ce-ac0d-45f0-9a80-db143b9752a6","type":"CategoricalAxis"},{"id":"8e171e3d-0705-48db-bb96-c186856c733d","type":"Grid"},{"id":"d3a42934-5f3c-444e-a34e-1d0f1e14d970","type":"LinearAxis"},{"id":"6958e52c-ffcd-4904-bf9f-a0957cee9341","type":"Grid"},{"id":"71b2dca3-f54e-4e90-9a1b-cd8b8a1730ec","type":"GlyphRenderer"},{"id":"ae9645c2-90d2-43b3-a4a8-e49615c8d750","type":"GlyphRenderer"}],"title":{"id":"1c8d2f39-195b-4d39-ab46-4d5f8bd631e7","type":"Title"},"toolbar":{"id":"1c1ed9ac-0b63-4965-8757-666fac92caf0","type":"Toolbar"},"x_range":{"id":"affd5ebc-ac5c-4f09-8513-5a14d1b3a02c","type":"FactorRange"},"x_scale":{"id":"2e35c3dc-9fec-48a7-8173-0261cacd032c","type":"CategoricalScale"},"y_range":{"id":"8d60d8b0-9e3c-49c6-af10-b7ad7636748f","type":"DataRange1d"},"y_scale":{"id":"666a71b3-eb59-4168-8d93-a53b34daf5b4","type":"LinearScale"}},"id":"25f07f37-39ee-4076-bc2e-8ab696665e14","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"839328de-26a9-4a9a-85b8-3c32bad18119","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"19658d93-1ec4-4bce-bc04-439948194d4c","type":"HoverTool"}]},"id":"1c1ed9ac-0b63-4965-8757-666fac92caf0","type":"Toolbar"},{"attributes":{"callback":null},"id":"8d60d8b0-9e3c-49c6-af10-b7ad7636748f","type":"DataRange1d"}],"root_ids":["25f07f37-39ee-4076-bc2e-8ab696665e14"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"dfadd81a-bdd1-4805-862e-ca1cc2b8913c","elementid":"e48ea357-972e-4654-8083-84496168a47d","modelid":"25f07f37-39ee-4076-bc2e-8ab696665e14"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

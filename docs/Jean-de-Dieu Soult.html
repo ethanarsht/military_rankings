@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f5fe01f6-b685-4009-9b63-7cb4a194d2c5"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"2eca56d2-dcdd-46e2-b115-8ad45112445f":{"roots":{"references":[{"attributes":{"dimension":1,"plot":{"id":"df053a2d-fff7-43ce-8e2a-2dd6e3cb4280","subtype":"Figure","type":"Plot"},"ticker":{"id":"fa87eace-9359-4df8-803b-b45b2d88bb9f","type":"BasicTicker"}},"id":"91d98d75-ad06-4ac5-bafc-4218b807beb6","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Corunna","First Battle of Porto","Second Battle of Porto","Battle of Albuera","Battle of Nivelle","Battle of San Marcial","Battle of Sorauren","Battle of the Nive","Battle of the Pyrenees","Battle of Orthez","Battle of Toulouse (1814)"]},"id":"ea9c8660-180a-4bd6-afb6-b32c6a192f51","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"e9b3c83b-d992-40be-b209-23e182574952","type":"HoverTool"},{"attributes":{},"id":"d3605d75-7c66-48db-a18e-50c431af9e61","type":"CategoricalTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Corunna","First Battle of Porto","Second Battle of Porto","Battle of Albuera","Battle of Nivelle","Battle of San Marcial","Battle of Sorauren","Battle of the Nive","Battle of the Pyrenees","Battle of Orthez","Battle of Toulouse (1814)"],"cumulative":{"__ndarray__":"Cv8lPxZe37/AV3U2W7GMP/IYrerzmt2/Wjv7lWBP3L/YEENpGLztv6bC1Gzk/Pa/FKNy5awx/78VOGmJlZgDwLz8YXr1tAfAk8RmCA2jC8Dw0Pg6GpYLwA==","dtype":"float64","shape":[11]},"general":["Jean-de-Dieu Soult","Jean-de-Dieu Soult","Jean-de-Dieu Soult","Jean-de-Dieu Soult","Jean-de-Dieu Soult","Jean-de-Dieu Soult","Jean-de-Dieu Soult","Jean-de-Dieu Soult","Jean-de-Dieu Soult","Jean-de-Dieu Soult","Jean-de-Dieu Soult"],"outcome":["D","V","D","I","D","D","D","D","D","D","I"],"value":{"__ndarray__":"Cv8lPxZe37/k1GyM0CHgP7DDYMR+gN6/gNkdSzW5lD9X5oo80Cjfv3N0ZnCwPeC/3MA78ZBp4L9bNH+1+P3fv5wS48N/ceC/tj4mcLxw378ARefbmuV5Pw==","dtype":"float64","shape":[11]},"year":{"__ndarray__":"AAAAAABEnEAAAAAAAEScQAAAAAAARJxAAAAAAABMnEAAAAAAAFScQAAAAAAAVJxAAAAAAABUnEAAAAAAAFScQAAAAAAAVJxAAAAAAABYnEAAAAAAAFicQA==","dtype":"float64","shape":[11]}}},"id":"0f478d54-2d06-4ede-8292-ae323c889568","type":"ColumnDataSource"},{"attributes":{},"id":"f6a79635-083f-472c-afa2-d1fa799025ac","type":"BasicTickFormatter"},{"attributes":{"plot":{"id":"df053a2d-fff7-43ce-8e2a-2dd6e3cb4280","subtype":"Figure","type":"Plot"},"ticker":{"id":"d3605d75-7c66-48db-a18e-50c431af9e61","type":"CategoricalTicker"}},"id":"bec28b5b-3802-4a72-9aaf-024cf91c1c4e","type":"Grid"},{"attributes":{"formatter":{"id":"f6a79635-083f-472c-afa2-d1fa799025ac","type":"BasicTickFormatter"},"plot":{"id":"df053a2d-fff7-43ce-8e2a-2dd6e3cb4280","subtype":"Figure","type":"Plot"},"ticker":{"id":"fa87eace-9359-4df8-803b-b45b2d88bb9f","type":"BasicTicker"}},"id":"a77dfd72-e91d-4d12-a864-8889c403ab85","type":"LinearAxis"},{"attributes":{"source":{"id":"0f478d54-2d06-4ede-8292-ae323c889568","type":"ColumnDataSource"}},"id":"70b26447-3d43-4331-a0c1-7b7c1cea5ec5","type":"CDSView"},{"attributes":{},"id":"fa87eace-9359-4df8-803b-b45b2d88bb9f","type":"BasicTicker"},{"attributes":{},"id":"0060ef01-e8bb-4576-bba1-ca195523bee0","type":"CategoricalTickFormatter"},{"attributes":{},"id":"228144d5-808e-4070-9344-c79be88cb3ea","type":"LinearScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"575cb075-11fa-4bad-a9ba-ea139313df93","type":"Line"},{"attributes":{"formatter":{"id":"0060ef01-e8bb-4576-bba1-ca195523bee0","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"df053a2d-fff7-43ce-8e2a-2dd6e3cb4280","subtype":"Figure","type":"Plot"},"ticker":{"id":"d3605d75-7c66-48db-a18e-50c431af9e61","type":"CategoricalTicker"}},"id":"b89cab95-85b6-4313-a263-af65f01e9cd5","type":"CategoricalAxis"},{"attributes":{"callback":null},"id":"e4cb9308-f283-4a4f-8245-e8c3b289146f","type":"DataRange1d"},{"attributes":{"source":{"id":"0f478d54-2d06-4ede-8292-ae323c889568","type":"ColumnDataSource"}},"id":"9ae4a1be-fb48-4656-96e7-38310cd6e6df","type":"CDSView"},{"attributes":{"below":[{"id":"b89cab95-85b6-4313-a263-af65f01e9cd5","type":"CategoricalAxis"}],"left":[{"id":"a77dfd72-e91d-4d12-a864-8889c403ab85","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"b89cab95-85b6-4313-a263-af65f01e9cd5","type":"CategoricalAxis"},{"id":"bec28b5b-3802-4a72-9aaf-024cf91c1c4e","type":"Grid"},{"id":"a77dfd72-e91d-4d12-a864-8889c403ab85","type":"LinearAxis"},{"id":"91d98d75-ad06-4ac5-bafc-4218b807beb6","type":"Grid"},{"id":"80717cb6-d1f7-405b-992c-c115729348ce","type":"GlyphRenderer"},{"id":"60468da3-adf6-4163-8bdc-0522425da2d1","type":"GlyphRenderer"}],"title":{"id":"e7c1d29f-a5b4-4130-9c25-3bf59cd701bf","type":"Title"},"toolbar":{"id":"4990b18d-9b11-498b-8a2f-e9a7c19db09c","type":"Toolbar"},"x_range":{"id":"ea9c8660-180a-4bd6-afb6-b32c6a192f51","type":"FactorRange"},"x_scale":{"id":"4abb51df-b1d3-4203-8235-2fc2d0a70ee6","type":"CategoricalScale"},"y_range":{"id":"e4cb9308-f283-4a4f-8245-e8c3b289146f","type":"DataRange1d"},"y_scale":{"id":"228144d5-808e-4070-9344-c79be88cb3ea","type":"LinearScale"}},"id":"df053a2d-fff7-43ce-8e2a-2dd6e3cb4280","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"07bdd234-b933-4f17-9b73-f11f3059625d","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"303f3f79-4406-446c-ac2a-58bde7ce4f87","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"303f3f79-4406-446c-ac2a-58bde7ce4f87","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"21295488-e035-40fe-9eb7-4d293ee4f9e3","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e9b3c83b-d992-40be-b209-23e182574952","type":"HoverTool"}]},"id":"4990b18d-9b11-498b-8a2f-e9a7c19db09c","type":"Toolbar"},{"attributes":{"data_source":{"id":"0f478d54-2d06-4ede-8292-ae323c889568","type":"ColumnDataSource"},"glyph":{"id":"21295488-e035-40fe-9eb7-4d293ee4f9e3","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"07bdd234-b933-4f17-9b73-f11f3059625d","type":"VBar"},"selection_glyph":null,"view":{"id":"9ae4a1be-fb48-4656-96e7-38310cd6e6df","type":"CDSView"}},"id":"60468da3-adf6-4163-8bdc-0522425da2d1","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Jean-de-Dieu Soult (1 - 2 - 8)"},"id":"e7c1d29f-a5b4-4130-9c25-3bf59cd701bf","type":"Title"},{"attributes":{},"id":"4abb51df-b1d3-4203-8235-2fc2d0a70ee6","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"0f478d54-2d06-4ede-8292-ae323c889568","type":"ColumnDataSource"},"glyph":{"id":"88d20c41-2f36-4e58-aa00-c58081ae7839","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"575cb075-11fa-4bad-a9ba-ea139313df93","type":"Line"},"selection_glyph":null,"view":{"id":"70b26447-3d43-4331-a0c1-7b7c1cea5ec5","type":"CDSView"}},"id":"80717cb6-d1f7-405b-992c-c115729348ce","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"303f3f79-4406-446c-ac2a-58bde7ce4f87","type":"CategoricalColorMapper"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"88d20c41-2f36-4e58-aa00-c58081ae7839","type":"Line"}],"root_ids":["df053a2d-fff7-43ce-8e2a-2dd6e3cb4280"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"2eca56d2-dcdd-46e2-b115-8ad45112445f","elementid":"f5fe01f6-b685-4009-9b63-7cb4a194d2c5","modelid":"df053a2d-fff7-43ce-8e2a-2dd6e3cb4280"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

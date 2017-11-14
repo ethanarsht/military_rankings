@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d92e1689-ed55-4465-ba0e-9768971263ef"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"d8069296-03ab-47a9-9b41-38f1ae410622":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4bcf5da1-4bb9-42aa-bceb-6391c4acca89","type":"Line"},{"attributes":{},"id":"3be2bbc3-4bd4-452a-8fa4-322a7d8f545c","type":"LinearScale"},{"attributes":{"plot":null,"text":"1st Infantry Division (United States) (1 - 0 - 0)"},"id":"e2985415-e55e-407c-a920-dc8645763f93","type":"Title"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b9ec45a6-736c-49c0-b394-6c23d877c3e6","type":"VBar"},{"attributes":{"source":{"id":"f83bcbcf-d37f-4ced-bd21-f1fa969cb06b","type":"ColumnDataSource"}},"id":"0a861e77-d881-4a69-aa59-1d6383eba599","type":"CDSView"},{"attributes":{"formatter":{"id":"610d5e77-c8ef-440d-b9bc-1705d31cfaf6","type":"BasicTickFormatter"},"plot":{"id":"0c20e608-bd8c-420c-bd57-eff222c9ce0f","subtype":"Figure","type":"Plot"},"ticker":{"id":"b9769ccf-5114-4fde-97db-6b6004e4f25a","type":"BasicTicker"}},"id":"74f7343f-9322-4f0d-8449-60e8745772e6","type":"LinearAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7104eca0-a04d-458c-8000-15e8a5a78a1e","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"0c20e608-bd8c-420c-bd57-eff222c9ce0f","subtype":"Figure","type":"Plot"},"ticker":{"id":"b9769ccf-5114-4fde-97db-6b6004e4f25a","type":"BasicTicker"}},"id":"a03db648-fbfa-40fa-a291-daea68faea8c","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Aachen"]},"id":"917b4ae8-bd0b-4fb4-8ae1-a3bc01f5a6bc","type":"FactorRange"},{"attributes":{"formatter":{"id":"f3be4a6f-79ac-4b3d-b9ee-8ef45a206bce","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"0c20e608-bd8c-420c-bd57-eff222c9ce0f","subtype":"Figure","type":"Plot"},"ticker":{"id":"c71da79e-c86a-4049-b776-6021d43b35a4","type":"CategoricalTicker"}},"id":"33856b8c-db6c-40aa-8ab6-1b06b01699e0","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"bc0e4b3e-cc57-4ab0-b4db-ccd9448c7ac7","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"bc0e4b3e-cc57-4ab0-b4db-ccd9448c7ac7","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b083418b-7b51-4d89-b65a-f5132ee86931","type":"VBar"},{"attributes":{},"id":"b9769ccf-5114-4fde-97db-6b6004e4f25a","type":"BasicTicker"},{"attributes":{"data_source":{"id":"f83bcbcf-d37f-4ced-bd21-f1fa969cb06b","type":"ColumnDataSource"},"glyph":{"id":"b083418b-7b51-4d89-b65a-f5132ee86931","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b9ec45a6-736c-49c0-b394-6c23d877c3e6","type":"VBar"},"selection_glyph":null,"view":{"id":"0a861e77-d881-4a69-aa59-1d6383eba599","type":"CDSView"}},"id":"e79b1f77-7171-407e-92c3-b30cebd50dbc","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f6ebf36b-b8f7-44d0-956e-b943f19e28a8","type":"HoverTool"},{"attributes":{"source":{"id":"f83bcbcf-d37f-4ced-bd21-f1fa969cb06b","type":"ColumnDataSource"}},"id":"73a90c2e-b984-41f5-99aa-a55c8e4fb3ba","type":"CDSView"},{"attributes":{},"id":"c71da79e-c86a-4049-b776-6021d43b35a4","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"33856b8c-db6c-40aa-8ab6-1b06b01699e0","type":"CategoricalAxis"}],"left":[{"id":"74f7343f-9322-4f0d-8449-60e8745772e6","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"33856b8c-db6c-40aa-8ab6-1b06b01699e0","type":"CategoricalAxis"},{"id":"ac5883db-0197-450f-9ba9-f69bbb2823bd","type":"Grid"},{"id":"74f7343f-9322-4f0d-8449-60e8745772e6","type":"LinearAxis"},{"id":"a03db648-fbfa-40fa-a291-daea68faea8c","type":"Grid"},{"id":"83aec1cc-3fdb-49fc-b9d5-8edf12b87173","type":"GlyphRenderer"},{"id":"e79b1f77-7171-407e-92c3-b30cebd50dbc","type":"GlyphRenderer"}],"title":{"id":"e2985415-e55e-407c-a920-dc8645763f93","type":"Title"},"toolbar":{"id":"7741f970-a687-406e-9cd7-f9de5263a93d","type":"Toolbar"},"x_range":{"id":"917b4ae8-bd0b-4fb4-8ae1-a3bc01f5a6bc","type":"FactorRange"},"x_scale":{"id":"7b9964ab-88b9-4c88-bc16-9bb7714dbe10","type":"CategoricalScale"},"y_range":{"id":"61397dd9-fe05-4fda-ba2d-b0b0e4316181","type":"DataRange1d"},"y_scale":{"id":"3be2bbc3-4bd4-452a-8fa4-322a7d8f545c","type":"LinearScale"}},"id":"0c20e608-bd8c-420c-bd57-eff222c9ce0f","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Aachen"],"cumulative":{"__ndarray__":"JrbN6O9g2z8=","dtype":"float64","shape":[1]},"general":["1st Infantry Division (United States)"],"outcome":["V"],"value":{"__ndarray__":"JrbN6O9g2z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABgnkA=","dtype":"float64","shape":[1]}}},"id":"f83bcbcf-d37f-4ced-bd21-f1fa969cb06b","type":"ColumnDataSource"},{"attributes":{},"id":"610d5e77-c8ef-440d-b9bc-1705d31cfaf6","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f6ebf36b-b8f7-44d0-956e-b943f19e28a8","type":"HoverTool"}]},"id":"7741f970-a687-406e-9cd7-f9de5263a93d","type":"Toolbar"},{"attributes":{"callback":null},"id":"61397dd9-fe05-4fda-ba2d-b0b0e4316181","type":"DataRange1d"},{"attributes":{},"id":"7b9964ab-88b9-4c88-bc16-9bb7714dbe10","type":"CategoricalScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"bc0e4b3e-cc57-4ab0-b4db-ccd9448c7ac7","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"f83bcbcf-d37f-4ced-bd21-f1fa969cb06b","type":"ColumnDataSource"},"glyph":{"id":"7104eca0-a04d-458c-8000-15e8a5a78a1e","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4bcf5da1-4bb9-42aa-bceb-6391c4acca89","type":"Line"},"selection_glyph":null,"view":{"id":"73a90c2e-b984-41f5-99aa-a55c8e4fb3ba","type":"CDSView"}},"id":"83aec1cc-3fdb-49fc-b9d5-8edf12b87173","type":"GlyphRenderer"},{"attributes":{},"id":"f3be4a6f-79ac-4b3d-b9ee-8ef45a206bce","type":"CategoricalTickFormatter"},{"attributes":{"plot":{"id":"0c20e608-bd8c-420c-bd57-eff222c9ce0f","subtype":"Figure","type":"Plot"},"ticker":{"id":"c71da79e-c86a-4049-b776-6021d43b35a4","type":"CategoricalTicker"}},"id":"ac5883db-0197-450f-9ba9-f69bbb2823bd","type":"Grid"}],"root_ids":["0c20e608-bd8c-420c-bd57-eff222c9ce0f"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"d8069296-03ab-47a9-9b41-38f1ae410622","elementid":"d92e1689-ed55-4465-ba0e-9768971263ef","modelid":"0c20e608-bd8c-420c-bd57-eff222c9ce0f"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

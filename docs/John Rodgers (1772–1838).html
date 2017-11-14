@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="7b769b17-8d29-4b7b-9dbd-613b1f118af1"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"cc552e2e-2689-4863-9c72-2e6ab1ec2a12":{"roots":{"references":[{"attributes":{},"id":"903bb131-53e1-4894-8213-f3b62501a34a","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e2b549d6-64e6-4fff-9bff-1bd466d3a8eb","type":"Line"},{"attributes":{"data_source":{"id":"f180df84-22be-4cb1-b9fa-d915eb8a1a9c","type":"ColumnDataSource"},"glyph":{"id":"a5921c1d-bf31-44c2-98cc-20657e4cb358","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"be410255-9b19-4f95-ae97-52d41ea4e347","type":"VBar"},"selection_glyph":null,"view":{"id":"ed7d7765-b1c9-4f58-b3a9-7dcfd47a7347","type":"CDSView"}},"id":"3f2dfc97-ec36-479a-8d7a-a6d2a9d51646","type":"GlyphRenderer"},{"attributes":{},"id":"e794a6f8-e0a6-4d0c-8427-a96c9918ce2c","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["Battle of North Point"]},"id":"c5be40da-2e39-4bc8-9412-0741e394bea3","type":"FactorRange"},{"attributes":{},"id":"fbd1ee42-e2c9-4699-aa42-cc1faad049bc","type":"CategoricalTicker"},{"attributes":{"source":{"id":"f180df84-22be-4cb1-b9fa-d915eb8a1a9c","type":"ColumnDataSource"}},"id":"ed7d7765-b1c9-4f58-b3a9-7dcfd47a7347","type":"CDSView"},{"attributes":{"formatter":{"id":"bddbb479-d1c3-4d2f-9582-437fd84a931f","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"2766a4ab-8daf-4b4d-90b5-4ed45a229f9a","subtype":"Figure","type":"Plot"},"ticker":{"id":"fbd1ee42-e2c9-4699-aa42-cc1faad049bc","type":"CategoricalTicker"}},"id":"96eca492-ac46-491e-b324-61f7b31af904","type":"CategoricalAxis"},{"attributes":{"source":{"id":"f180df84-22be-4cb1-b9fa-d915eb8a1a9c","type":"ColumnDataSource"}},"id":"2a574723-4a65-4003-902b-5d16aaf9600d","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of North Point"],"cumulative":{"__ndarray__":"Cv8lPxZe378=","dtype":"float64","shape":[1]},"general":["John Rodgers (1772\u20131838)"],"outcome":["D"],"value":{"__ndarray__":"Cv8lPxZe378=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABYnEA=","dtype":"float64","shape":[1]}}},"id":"f180df84-22be-4cb1-b9fa-d915eb8a1a9c","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d3b493c4-c0ef-42f1-a565-76a0456cc9ad","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"213ef254-4549-4b45-a18f-bf5a14f99329","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"213ef254-4549-4b45-a18f-bf5a14f99329","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a5921c1d-bf31-44c2-98cc-20657e4cb358","type":"VBar"},{"attributes":{"callback":null},"id":"3d1b6cfd-ab51-470d-8d0a-8245ff84160d","type":"DataRange1d"},{"attributes":{"plot":{"id":"2766a4ab-8daf-4b4d-90b5-4ed45a229f9a","subtype":"Figure","type":"Plot"},"ticker":{"id":"fbd1ee42-e2c9-4699-aa42-cc1faad049bc","type":"CategoricalTicker"}},"id":"1f5348c4-aa56-4b28-9853-b5756d0ed6ba","type":"Grid"},{"attributes":{"plot":null,"text":"John Rodgers (1772\u20131838) (0 - 0 - 1)"},"id":"65be71ac-a104-4a98-ada7-9c78bf1cf7a4","type":"Title"},{"attributes":{"formatter":{"id":"b0b0ab32-f1b1-4557-ab1c-c91302726e5e","type":"BasicTickFormatter"},"plot":{"id":"2766a4ab-8daf-4b4d-90b5-4ed45a229f9a","subtype":"Figure","type":"Plot"},"ticker":{"id":"e794a6f8-e0a6-4d0c-8427-a96c9918ce2c","type":"BasicTicker"}},"id":"761f595a-0621-4812-957c-ecaa81cd5216","type":"LinearAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"213ef254-4549-4b45-a18f-bf5a14f99329","type":"CategoricalColorMapper"},{"attributes":{"dimension":1,"plot":{"id":"2766a4ab-8daf-4b4d-90b5-4ed45a229f9a","subtype":"Figure","type":"Plot"},"ticker":{"id":"e794a6f8-e0a6-4d0c-8427-a96c9918ce2c","type":"BasicTicker"}},"id":"0a40028f-6870-4c45-948f-0be1b24ae13a","type":"Grid"},{"attributes":{},"id":"bddbb479-d1c3-4d2f-9582-437fd84a931f","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"be410255-9b19-4f95-ae97-52d41ea4e347","type":"VBar"},{"attributes":{"below":[{"id":"96eca492-ac46-491e-b324-61f7b31af904","type":"CategoricalAxis"}],"left":[{"id":"761f595a-0621-4812-957c-ecaa81cd5216","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"96eca492-ac46-491e-b324-61f7b31af904","type":"CategoricalAxis"},{"id":"1f5348c4-aa56-4b28-9853-b5756d0ed6ba","type":"Grid"},{"id":"761f595a-0621-4812-957c-ecaa81cd5216","type":"LinearAxis"},{"id":"0a40028f-6870-4c45-948f-0be1b24ae13a","type":"Grid"},{"id":"6082843e-ae01-4dda-a524-474d68f1347c","type":"GlyphRenderer"},{"id":"3f2dfc97-ec36-479a-8d7a-a6d2a9d51646","type":"GlyphRenderer"}],"title":{"id":"65be71ac-a104-4a98-ada7-9c78bf1cf7a4","type":"Title"},"toolbar":{"id":"19ceb6ff-c2d5-4f06-b044-48c020cc6192","type":"Toolbar"},"x_range":{"id":"c5be40da-2e39-4bc8-9412-0741e394bea3","type":"FactorRange"},"x_scale":{"id":"cf9203d1-e1b6-45e9-9680-6c56c5000774","type":"CategoricalScale"},"y_range":{"id":"3d1b6cfd-ab51-470d-8d0a-8245ff84160d","type":"DataRange1d"},"y_scale":{"id":"903bb131-53e1-4894-8213-f3b62501a34a","type":"LinearScale"}},"id":"2766a4ab-8daf-4b4d-90b5-4ed45a229f9a","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"cf9203d1-e1b6-45e9-9680-6c56c5000774","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"f180df84-22be-4cb1-b9fa-d915eb8a1a9c","type":"ColumnDataSource"},"glyph":{"id":"e2b549d6-64e6-4fff-9bff-1bd466d3a8eb","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d3b493c4-c0ef-42f1-a565-76a0456cc9ad","type":"Line"},"selection_glyph":null,"view":{"id":"2a574723-4a65-4003-902b-5d16aaf9600d","type":"CDSView"}},"id":"6082843e-ae01-4dda-a524-474d68f1347c","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e6d160cd-0a97-460a-8f83-d93a8c673dc7","type":"HoverTool"}]},"id":"19ceb6ff-c2d5-4f06-b044-48c020cc6192","type":"Toolbar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"e6d160cd-0a97-460a-8f83-d93a8c673dc7","type":"HoverTool"},{"attributes":{},"id":"b0b0ab32-f1b1-4557-ab1c-c91302726e5e","type":"BasicTickFormatter"}],"root_ids":["2766a4ab-8daf-4b4d-90b5-4ed45a229f9a"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"cc552e2e-2689-4863-9c72-2e6ab1ec2a12","elementid":"7b769b17-8d29-4b7b-9dbd-613b1f118af1","modelid":"2766a4ab-8daf-4b4d-90b5-4ed45a229f9a"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

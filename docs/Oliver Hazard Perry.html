@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c6a4fa2f-03ce-4f14-9aa8-49b734929070"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"689818dc-1b24-44d4-b0e5-10e94847dbd9":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"fb11ca07-1f99-4681-8157-b94a2a918d09","type":"HoverTool"},{"attributes":{"below":[{"id":"ac8230f6-1be5-4d05-8f42-93f175262ab1","type":"CategoricalAxis"}],"left":[{"id":"7d874f3f-0641-4b51-9718-761646fb7eb9","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"ac8230f6-1be5-4d05-8f42-93f175262ab1","type":"CategoricalAxis"},{"id":"7876cb19-e6c0-457c-8422-2ab0bd1a6af7","type":"Grid"},{"id":"7d874f3f-0641-4b51-9718-761646fb7eb9","type":"LinearAxis"},{"id":"9db47c82-03e2-45c1-85c4-256c7469007f","type":"Grid"},{"id":"001591ac-009c-4442-bf8e-0eb86cc9e405","type":"GlyphRenderer"},{"id":"5cbcc8a0-6bdf-46c3-81dd-1b729563a035","type":"GlyphRenderer"}],"title":{"id":"28274a1e-0e50-45c3-89b4-144cbc6c8f16","type":"Title"},"toolbar":{"id":"495f20ce-1187-4f0d-9aaa-9b98bcf7e173","type":"Toolbar"},"x_range":{"id":"e83209f8-9534-4c47-b6c1-ab1d35479aa0","type":"FactorRange"},"x_scale":{"id":"387c23ee-77d1-479b-a2da-ddb9092c6d8e","type":"CategoricalScale"},"y_range":{"id":"048e5dcb-9fd5-4a6e-9eaa-dd3d359119ca","type":"DataRange1d"},"y_scale":{"id":"d9477ea1-8be8-417d-bc50-10e1d7aec60a","type":"LinearScale"}},"id":"ebe30dbe-ed85-4096-a150-e513540c8f2d","subtype":"Figure","type":"Plot"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7a319acb-94fa-41be-a6c0-54c49ab729e3","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"d09135de-adad-4272-8dc0-537e54de0929","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"d09135de-adad-4272-8dc0-537e54de0929","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"fec83fab-a4d5-422e-a5db-00af83044397","type":"VBar"},{"attributes":{},"id":"ce2b9886-6cfe-40ef-8ee8-6938f0104e6c","type":"BasicTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7e8e427b-9b6c-45d6-a447-603004ccec87","type":"Line"},{"attributes":{"source":{"id":"8b528f03-45c5-4dc2-946e-990bb8bc0994","type":"ColumnDataSource"}},"id":"5a6dc01e-780b-4f76-b26a-7272e8c670bb","type":"CDSView"},{"attributes":{},"id":"c09cbaa0-479c-4c69-b8d4-0867838e9fc8","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"fb11ca07-1f99-4681-8157-b94a2a918d09","type":"HoverTool"}]},"id":"495f20ce-1187-4f0d-9aaa-9b98bcf7e173","type":"Toolbar"},{"attributes":{},"id":"4df3a56b-2594-4e84-b312-0fb90071c0dc","type":"BasicTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Derne","Battle of Fort George","Battle of Lake Erie"]},"id":"e83209f8-9534-4c47-b6c1-ab1d35479aa0","type":"FactorRange"},{"attributes":{"plot":{"id":"ebe30dbe-ed85-4096-a150-e513540c8f2d","subtype":"Figure","type":"Plot"},"ticker":{"id":"c09cbaa0-479c-4c69-b8d4-0867838e9fc8","type":"CategoricalTicker"}},"id":"7876cb19-e6c0-457c-8422-2ab0bd1a6af7","type":"Grid"},{"attributes":{"data_source":{"id":"8b528f03-45c5-4dc2-946e-990bb8bc0994","type":"ColumnDataSource"},"glyph":{"id":"fec83fab-a4d5-422e-a5db-00af83044397","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"414cfa73-2982-4af5-8aaa-9cb81fb71007","type":"VBar"},"selection_glyph":null,"view":{"id":"5a6dc01e-780b-4f76-b26a-7272e8c670bb","type":"CDSView"}},"id":"5cbcc8a0-6bdf-46c3-81dd-1b729563a035","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"8b528f03-45c5-4dc2-946e-990bb8bc0994","type":"ColumnDataSource"},"glyph":{"id":"7a319acb-94fa-41be-a6c0-54c49ab729e3","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7e8e427b-9b6c-45d6-a447-603004ccec87","type":"Line"},"selection_glyph":null,"view":{"id":"265a0262-3b44-4b03-858d-9f54d75eac13","type":"CDSView"}},"id":"001591ac-009c-4442-bf8e-0eb86cc9e405","type":"GlyphRenderer"},{"attributes":{},"id":"d9477ea1-8be8-417d-bc50-10e1d7aec60a","type":"LinearScale"},{"attributes":{},"id":"387c23ee-77d1-479b-a2da-ddb9092c6d8e","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"414cfa73-2982-4af5-8aaa-9cb81fb71007","type":"VBar"},{"attributes":{"formatter":{"id":"0e2a60f4-8f98-483c-b703-6048b896ad0b","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"ebe30dbe-ed85-4096-a150-e513540c8f2d","subtype":"Figure","type":"Plot"},"ticker":{"id":"c09cbaa0-479c-4c69-b8d4-0867838e9fc8","type":"CategoricalTicker"}},"id":"ac8230f6-1be5-4d05-8f42-93f175262ab1","type":"CategoricalAxis"},{"attributes":{"callback":null},"id":"048e5dcb-9fd5-4a6e-9eaa-dd3d359119ca","type":"DataRange1d"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"d09135de-adad-4272-8dc0-537e54de0929","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"4df3a56b-2594-4e84-b312-0fb90071c0dc","type":"BasicTickFormatter"},"plot":{"id":"ebe30dbe-ed85-4096-a150-e513540c8f2d","subtype":"Figure","type":"Plot"},"ticker":{"id":"ce2b9886-6cfe-40ef-8ee8-6938f0104e6c","type":"BasicTicker"}},"id":"7d874f3f-0641-4b51-9718-761646fb7eb9","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Oliver Hazard Perry (3 - 0 - 0)"},"id":"28274a1e-0e50-45c3-89b4-144cbc6c8f16","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"ebe30dbe-ed85-4096-a150-e513540c8f2d","subtype":"Figure","type":"Plot"},"ticker":{"id":"ce2b9886-6cfe-40ef-8ee8-6938f0104e6c","type":"BasicTicker"}},"id":"9db47c82-03e2-45c1-85c4-256c7469007f","type":"Grid"},{"attributes":{},"id":"0e2a60f4-8f98-483c-b703-6048b896ad0b","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Derne","Battle of Fort George","Battle of Lake Erie"],"cumulative":{"__ndarray__":"BEIjntGL4j+uaAWBnXDwP2IUd1U49fc/","dtype":"float64","shape":[3]},"general":["Oliver Hazard Perry","Oliver Hazard Perry","Oliver Hazard Perry"],"outcome":["V","V","V"],"value":{"__ndarray__":"BEIjntGL4j+yHs/H0qrcP86uxlFrEt4/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAA0nEAAAAAAAFScQAAAAAAAVJxA","dtype":"float64","shape":[3]}}},"id":"8b528f03-45c5-4dc2-946e-990bb8bc0994","type":"ColumnDataSource"},{"attributes":{"source":{"id":"8b528f03-45c5-4dc2-946e-990bb8bc0994","type":"ColumnDataSource"}},"id":"265a0262-3b44-4b03-858d-9f54d75eac13","type":"CDSView"}],"root_ids":["ebe30dbe-ed85-4096-a150-e513540c8f2d"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"689818dc-1b24-44d4-b0e5-10e94847dbd9","elementid":"c6a4fa2f-03ce-4f14-9aa8-49b734929070","modelid":"ebe30dbe-ed85-4096-a150-e513540c8f2d"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

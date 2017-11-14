@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="442f4d1f-792b-4965-91b6-0b62efb0dcc3"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"ccd84fbb-e802-4114-92e5-639196f2d020":{"roots":{"references":[{"attributes":{"callback":null},"id":"56bff0de-3004-499b-8bae-064f869046a4","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"5394e3d4-5db8-4c05-a100-c239e8dab39c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"5394e3d4-5db8-4c05-a100-c239e8dab39c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2e98b6c5-286a-49b8-83b5-59b655ea4035","type":"VBar"},{"attributes":{},"id":"c264ba7d-87d3-4270-8d73-e9fd450b85a9","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"c264ba7d-87d3-4270-8d73-e9fd450b85a9","type":"BasicTickFormatter"},"plot":{"id":"915a77bc-7807-4b2e-9760-e9e2100658d9","subtype":"Figure","type":"Plot"},"ticker":{"id":"5c03abb7-9ff6-4391-9376-57e3fce13caa","type":"BasicTicker"}},"id":"eadab2bb-9f53-4972-941a-6c30a1aa6a50","type":"LinearAxis"},{"attributes":{"plot":{"id":"915a77bc-7807-4b2e-9760-e9e2100658d9","subtype":"Figure","type":"Plot"},"ticker":{"id":"255f1044-c26e-4eba-8b3f-793a34b984ea","type":"CategoricalTicker"}},"id":"d2cab845-8816-49d7-9bbf-3fda42fd7e96","type":"Grid"},{"attributes":{"below":[{"id":"50f65059-2ba9-43db-a729-3f23e5bbe638","type":"CategoricalAxis"}],"left":[{"id":"eadab2bb-9f53-4972-941a-6c30a1aa6a50","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"50f65059-2ba9-43db-a729-3f23e5bbe638","type":"CategoricalAxis"},{"id":"d2cab845-8816-49d7-9bbf-3fda42fd7e96","type":"Grid"},{"id":"eadab2bb-9f53-4972-941a-6c30a1aa6a50","type":"LinearAxis"},{"id":"2b1c7553-617d-4247-9936-c0f0e078b499","type":"Grid"},{"id":"dbc43a37-79de-4574-ab96-59bb9e4a300c","type":"GlyphRenderer"},{"id":"67717200-1079-4bf5-a030-141b3e3c34ff","type":"GlyphRenderer"}],"title":{"id":"9bc20b7a-1e7a-4195-a209-5a95005d7b2c","type":"Title"},"toolbar":{"id":"7f7803b5-4ef2-4c44-80ba-9066166b6893","type":"Toolbar"},"x_range":{"id":"27c13d83-6b6b-4eb1-98fd-b8de043bd26f","type":"FactorRange"},"x_scale":{"id":"b2720fc7-8e1f-49fb-9016-232dee0ab94a","type":"CategoricalScale"},"y_range":{"id":"56bff0de-3004-499b-8bae-064f869046a4","type":"DataRange1d"},"y_scale":{"id":"abf9a52e-1bc4-4164-adf3-bc6098a783d7","type":"LinearScale"}},"id":"915a77bc-7807-4b2e-9760-e9e2100658d9","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"7ae9eeb2-5541-48d5-aaf6-bb3c532446e7","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"915a77bc-7807-4b2e-9760-e9e2100658d9","subtype":"Figure","type":"Plot"},"ticker":{"id":"255f1044-c26e-4eba-8b3f-793a34b984ea","type":"CategoricalTicker"}},"id":"50f65059-2ba9-43db-a729-3f23e5bbe638","type":"CategoricalAxis"},{"attributes":{"dimension":1,"plot":{"id":"915a77bc-7807-4b2e-9760-e9e2100658d9","subtype":"Figure","type":"Plot"},"ticker":{"id":"5c03abb7-9ff6-4391-9376-57e3fce13caa","type":"BasicTicker"}},"id":"2b1c7553-617d-4247-9936-c0f0e078b499","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"ca057b20-b95a-4b9d-a514-8eac93e89724","type":"HoverTool"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"34f05526-3d9b-4df3-a427-039e25103c20","type":"Line"},{"attributes":{"data_source":{"id":"72c48e08-817a-4003-9e65-2825c374354e","type":"ColumnDataSource"},"glyph":{"id":"09cda39f-7ba6-45c4-b335-daf09a575163","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"34f05526-3d9b-4df3-a427-039e25103c20","type":"Line"},"selection_glyph":null,"view":{"id":"d671a748-3bcc-4bab-9556-6e1eef0d7706","type":"CDSView"}},"id":"dbc43a37-79de-4574-ab96-59bb9e4a300c","type":"GlyphRenderer"},{"attributes":{},"id":"5c03abb7-9ff6-4391-9376-57e3fce13caa","type":"BasicTicker"},{"attributes":{"data_source":{"id":"72c48e08-817a-4003-9e65-2825c374354e","type":"ColumnDataSource"},"glyph":{"id":"2e98b6c5-286a-49b8-83b5-59b655ea4035","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8627e758-9cc3-4b14-b71e-217279dcf067","type":"VBar"},"selection_glyph":null,"view":{"id":"5c62f83c-0033-4d40-8962-37cc750b32c8","type":"CDSView"}},"id":"67717200-1079-4bf5-a030-141b3e3c34ff","type":"GlyphRenderer"},{"attributes":{},"id":"b2720fc7-8e1f-49fb-9016-232dee0ab94a","type":"CategoricalScale"},{"attributes":{},"id":"255f1044-c26e-4eba-8b3f-793a34b984ea","type":"CategoricalTicker"},{"attributes":{"source":{"id":"72c48e08-817a-4003-9e65-2825c374354e","type":"ColumnDataSource"}},"id":"d671a748-3bcc-4bab-9556-6e1eef0d7706","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Kirksville","Battle of Cape Girardeau","Battle of Marmiton River"]},"id":"27c13d83-6b6b-4eb1-98fd-b8de043bd26f","type":"FactorRange"},{"attributes":{"source":{"id":"72c48e08-817a-4003-9e65-2825c374354e","type":"ColumnDataSource"}},"id":"5c62f83c-0033-4d40-8962-37cc750b32c8","type":"CDSView"},{"attributes":{"plot":null,"text":"John McNeil (3 - 0 - 0)"},"id":"9bc20b7a-1e7a-4195-a209-5a95005d7b2c","type":"Title"},{"attributes":{},"id":"7ae9eeb2-5541-48d5-aaf6-bb3c532446e7","type":"CategoricalTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"09cda39f-7ba6-45c4-b335-daf09a575163","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"ca057b20-b95a-4b9d-a514-8eac93e89724","type":"HoverTool"}]},"id":"7f7803b5-4ef2-4c44-80ba-9066166b6893","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"8627e758-9cc3-4b14-b71e-217279dcf067","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Kirksville","Battle of Cape Girardeau","Battle of Marmiton River"],"cumulative":{"__ndarray__":"Y1mSO6Va4T/vrP8NzdXwP++s/w3N1fg/","dtype":"float64","shape":[3]},"general":["John McNeil","John McNeil","John McNeil"],"outcome":["V","V","V"],"value":{"__ndarray__":"Y1mSO6Va4T97AG3g9FDgPwAAAAAAAOA/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAAYnUAAAAAAABydQAAAAAAAIJ1A","dtype":"float64","shape":[3]}}},"id":"72c48e08-817a-4003-9e65-2825c374354e","type":"ColumnDataSource"},{"attributes":{},"id":"abf9a52e-1bc4-4164-adf3-bc6098a783d7","type":"LinearScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"5394e3d4-5db8-4c05-a100-c239e8dab39c","type":"CategoricalColorMapper"}],"root_ids":["915a77bc-7807-4b2e-9760-e9e2100658d9"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"ccd84fbb-e802-4114-92e5-639196f2d020","elementid":"442f4d1f-792b-4965-91b6-0b62efb0dcc3","modelid":"915a77bc-7807-4b2e-9760-e9e2100658d9"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="1adccb7c-c651-4f00-99b0-fc38c0e61d13"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"6dd6e5ad-aa40-4d1e-b8d4-8c5ddadc31cd":{"roots":{"references":[{"attributes":{"formatter":{"id":"5021ff8f-c8ab-4c0f-844a-88ab5aa307a7","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"63c2a401-3561-43f8-aee1-63c5cfa77a35","subtype":"Figure","type":"Plot"},"ticker":{"id":"d2a97d4a-3bdc-4293-b8e8-c543ea180615","type":"CategoricalTicker"}},"id":"de6952ef-860e-4133-8477-6dc88f94d03b","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"509a6332-a42a-4270-9968-2b03b9bd0409","type":"HoverTool"}]},"id":"52e86b84-d73f-49b3-938f-ba9b872d492f","type":"Toolbar"},{"attributes":{},"id":"eb8eb31e-691d-4022-91eb-9d0f7c1e96d2","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"Amalric, Lord of Tyre (0 - 0 - 1)"},"id":"cfb42843-07ff-4b1e-8815-c9522da4485a","type":"Title"},{"attributes":{"data_source":{"id":"f88d9149-0d19-4db7-9ef3-490793f5d66e","type":"ColumnDataSource"},"glyph":{"id":"0951362c-53a8-4e08-8578-c2d483021a39","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5c818646-b246-4bcf-b1e4-b9cf7ebde68a","type":"Line"},"selection_glyph":null,"view":{"id":"256fc2f1-52f6-4a7d-a597-058e11a5e4c3","type":"CDSView"}},"id":"e2d72cba-aa1f-430c-8ec1-0dadb9e2d08a","type":"GlyphRenderer"},{"attributes":{},"id":"43ae9ac5-15b7-416d-a162-5bd7a21710db","type":"BasicTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Acre (1291)"],"cumulative":{"__ndarray__":"4H6ApliI2r8=","dtype":"float64","shape":[1]},"general":["Amalric, Lord of Tyre"],"outcome":["D"],"value":{"__ndarray__":"4H6ApliI2r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAslEA=","dtype":"float64","shape":[1]}}},"id":"f88d9149-0d19-4db7-9ef3-490793f5d66e","type":"ColumnDataSource"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0951362c-53a8-4e08-8578-c2d483021a39","type":"Line"},{"attributes":{"formatter":{"id":"5a275a0d-8432-4ed0-99a0-6e6bb91d83fb","type":"BasicTickFormatter"},"plot":{"id":"63c2a401-3561-43f8-aee1-63c5cfa77a35","subtype":"Figure","type":"Plot"},"ticker":{"id":"43ae9ac5-15b7-416d-a162-5bd7a21710db","type":"BasicTicker"}},"id":"38d1057a-faa9-4b17-92cf-adc834976fac","type":"LinearAxis"},{"attributes":{},"id":"5a275a0d-8432-4ed0-99a0-6e6bb91d83fb","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"f88d9149-0d19-4db7-9ef3-490793f5d66e","type":"ColumnDataSource"}},"id":"90694a9b-2e39-4b8c-93f0-d8d62d8cfe5e","type":"CDSView"},{"attributes":{"callback":null,"factors":["Siege of Acre (1291)"]},"id":"3781d1a3-623c-47c3-abe3-b42cae94bc26","type":"FactorRange"},{"attributes":{},"id":"d2a97d4a-3bdc-4293-b8e8-c543ea180615","type":"CategoricalTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5c818646-b246-4bcf-b1e4-b9cf7ebde68a","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"980a0423-bffb-42db-ab64-5887dd618432","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"980a0423-bffb-42db-ab64-5887dd618432","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"980a0423-bffb-42db-ab64-5887dd618432","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bd014ee9-a848-4941-a10b-19f3b361159b","type":"VBar"},{"attributes":{"data_source":{"id":"f88d9149-0d19-4db7-9ef3-490793f5d66e","type":"ColumnDataSource"},"glyph":{"id":"bd014ee9-a848-4941-a10b-19f3b361159b","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5a69bef1-28e9-40b8-bc81-5e18482efbe8","type":"VBar"},"selection_glyph":null,"view":{"id":"90694a9b-2e39-4b8c-93f0-d8d62d8cfe5e","type":"CDSView"}},"id":"251899a4-1925-4371-94e9-589c3ff2ee11","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"509a6332-a42a-4270-9968-2b03b9bd0409","type":"HoverTool"},{"attributes":{},"id":"fb823e8a-567b-4153-b0d5-3d528990c3c0","type":"LinearScale"},{"attributes":{"dimension":1,"plot":{"id":"63c2a401-3561-43f8-aee1-63c5cfa77a35","subtype":"Figure","type":"Plot"},"ticker":{"id":"43ae9ac5-15b7-416d-a162-5bd7a21710db","type":"BasicTicker"}},"id":"6afc147a-7e00-4130-848c-d6dd91b154d9","type":"Grid"},{"attributes":{"plot":{"id":"63c2a401-3561-43f8-aee1-63c5cfa77a35","subtype":"Figure","type":"Plot"},"ticker":{"id":"d2a97d4a-3bdc-4293-b8e8-c543ea180615","type":"CategoricalTicker"}},"id":"f570cff5-2909-42a3-a5f5-47aa0ccfaecb","type":"Grid"},{"attributes":{"below":[{"id":"de6952ef-860e-4133-8477-6dc88f94d03b","type":"CategoricalAxis"}],"left":[{"id":"38d1057a-faa9-4b17-92cf-adc834976fac","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"de6952ef-860e-4133-8477-6dc88f94d03b","type":"CategoricalAxis"},{"id":"f570cff5-2909-42a3-a5f5-47aa0ccfaecb","type":"Grid"},{"id":"38d1057a-faa9-4b17-92cf-adc834976fac","type":"LinearAxis"},{"id":"6afc147a-7e00-4130-848c-d6dd91b154d9","type":"Grid"},{"id":"e2d72cba-aa1f-430c-8ec1-0dadb9e2d08a","type":"GlyphRenderer"},{"id":"251899a4-1925-4371-94e9-589c3ff2ee11","type":"GlyphRenderer"}],"title":{"id":"cfb42843-07ff-4b1e-8815-c9522da4485a","type":"Title"},"toolbar":{"id":"52e86b84-d73f-49b3-938f-ba9b872d492f","type":"Toolbar"},"x_range":{"id":"3781d1a3-623c-47c3-abe3-b42cae94bc26","type":"FactorRange"},"x_scale":{"id":"eb8eb31e-691d-4022-91eb-9d0f7c1e96d2","type":"CategoricalScale"},"y_range":{"id":"d979c3f2-1eb8-482b-98fb-fc827399f63a","type":"DataRange1d"},"y_scale":{"id":"fb823e8a-567b-4153-b0d5-3d528990c3c0","type":"LinearScale"}},"id":"63c2a401-3561-43f8-aee1-63c5cfa77a35","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"5021ff8f-c8ab-4c0f-844a-88ab5aa307a7","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"5a69bef1-28e9-40b8-bc81-5e18482efbe8","type":"VBar"},{"attributes":{"source":{"id":"f88d9149-0d19-4db7-9ef3-490793f5d66e","type":"ColumnDataSource"}},"id":"256fc2f1-52f6-4a7d-a597-058e11a5e4c3","type":"CDSView"},{"attributes":{"callback":null},"id":"d979c3f2-1eb8-482b-98fb-fc827399f63a","type":"DataRange1d"}],"root_ids":["63c2a401-3561-43f8-aee1-63c5cfa77a35"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"6dd6e5ad-aa40-4d1e-b8d4-8c5ddadc31cd","elementid":"1adccb7c-c651-4f00-99b0-fc38c0e61d13","modelid":"63c2a401-3561-43f8-aee1-63c5cfa77a35"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

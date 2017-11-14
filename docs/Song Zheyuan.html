@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="90405ae0-bbf3-4bc0-bd00-8d0efd8dbf55"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"59513587-9c36-47b6-9e3f-50808c938d22":{"roots":{"references":[{"attributes":{},"id":"23496f50-6161-4ee7-9995-c025c3823dfa","type":"CategoricalScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"1e90ba1d-828d-44a8-b59a-653214d83ffe","type":"CategoricalColorMapper"},{"attributes":{},"id":"37d53184-59e3-4640-ac45-c22d1b8cc516","type":"LinearScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"675e39a3-73e3-4178-8d7d-28f7efb8da3b","type":"HoverTool"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Defense of the Great Wall","Battle of Beiping-Tianjin","Battle of Lugou Bridge"],"cumulative":{"__ndarray__":"NtKBFIko3r/OmcpiFDHtv3AlTFCOOtS/","dtype":"float64","shape":[3]},"general":["Song Zheyuan","Song Zheyuan","Song Zheyuan"],"outcome":["D","D","V"],"value":{"__ndarray__":"NtKBFIko3r9nYROxnzncvxaHpDrNE+M/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAA0nkAAAAAAAESeQAAAAAAARJ5A","dtype":"float64","shape":[3]}}},"id":"1b52ef6e-a29f-4cba-8e10-747677668859","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"4ad99e1f-66c3-4936-8950-b387cc7d70a4","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"b3e627ee-73d0-4807-9269-2c168cf980c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"6bee1c68-9046-4a33-9f81-f908378149e4","type":"CategoricalTicker"}},"id":"d573661a-0df6-4d81-8c06-dd74247c10d4","type":"CategoricalAxis"},{"attributes":{"source":{"id":"1b52ef6e-a29f-4cba-8e10-747677668859","type":"ColumnDataSource"}},"id":"330d4873-df4e-4362-b13c-66bfe41c0723","type":"CDSView"},{"attributes":{"plot":{"id":"b3e627ee-73d0-4807-9269-2c168cf980c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"6bee1c68-9046-4a33-9f81-f908378149e4","type":"CategoricalTicker"}},"id":"fef09b20-cdb4-40f6-9294-f729e9493379","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2eeea3fe-ae14-4d9a-abee-5f34492be946","type":"VBar"},{"attributes":{},"id":"7468de29-b14c-4740-a157-2bdfe937bfcb","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"675e39a3-73e3-4178-8d7d-28f7efb8da3b","type":"HoverTool"}]},"id":"1f1478c8-7011-4aee-86ba-cc5d49aba1e1","type":"Toolbar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"30c9149a-e11b-4f76-88b1-8da3db982b14","type":"Line"},{"attributes":{},"id":"6bee1c68-9046-4a33-9f81-f908378149e4","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"d573661a-0df6-4d81-8c06-dd74247c10d4","type":"CategoricalAxis"}],"left":[{"id":"1bcdb41e-0e61-4f26-8a92-31a70f6b4290","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"d573661a-0df6-4d81-8c06-dd74247c10d4","type":"CategoricalAxis"},{"id":"fef09b20-cdb4-40f6-9294-f729e9493379","type":"Grid"},{"id":"1bcdb41e-0e61-4f26-8a92-31a70f6b4290","type":"LinearAxis"},{"id":"2653d9c9-3ed8-44c6-aa2b-35e02da8ae64","type":"Grid"},{"id":"6a2d8094-6c0b-4c94-98d6-aee8b2036b53","type":"GlyphRenderer"},{"id":"0902a5d7-75e1-4ffa-a4b1-08dea1f1ae20","type":"GlyphRenderer"}],"title":{"id":"ffbb9dfd-cf11-4c3b-97be-bfe9ff5384b5","type":"Title"},"toolbar":{"id":"1f1478c8-7011-4aee-86ba-cc5d49aba1e1","type":"Toolbar"},"x_range":{"id":"d47e3c78-a3c7-4239-86fb-c274e7f96ed9","type":"FactorRange"},"x_scale":{"id":"23496f50-6161-4ee7-9995-c025c3823dfa","type":"CategoricalScale"},"y_range":{"id":"6c23c5ba-5e33-4e86-b21e-7fa65189b2d7","type":"DataRange1d"},"y_scale":{"id":"37d53184-59e3-4640-ac45-c22d1b8cc516","type":"LinearScale"}},"id":"b3e627ee-73d0-4807-9269-2c168cf980c5","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"62d672a0-76af-4913-8822-8a3af4672880","type":"BasicTickFormatter"},"plot":{"id":"b3e627ee-73d0-4807-9269-2c168cf980c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"7468de29-b14c-4740-a157-2bdfe937bfcb","type":"BasicTicker"}},"id":"1bcdb41e-0e61-4f26-8a92-31a70f6b4290","type":"LinearAxis"},{"attributes":{"callback":null,"factors":["Defense of the Great Wall","Battle of Beiping-Tianjin","Battle of Lugou Bridge"]},"id":"d47e3c78-a3c7-4239-86fb-c274e7f96ed9","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"1e90ba1d-828d-44a8-b59a-653214d83ffe","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"1e90ba1d-828d-44a8-b59a-653214d83ffe","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"138cb545-aa79-4ed2-9f18-f77a85fb21a6","type":"VBar"},{"attributes":{},"id":"4ad99e1f-66c3-4936-8950-b387cc7d70a4","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"1b52ef6e-a29f-4cba-8e10-747677668859","type":"ColumnDataSource"}},"id":"aacbd204-d828-44a5-b31b-96d8e1eb5b6d","type":"CDSView"},{"attributes":{"data_source":{"id":"1b52ef6e-a29f-4cba-8e10-747677668859","type":"ColumnDataSource"},"glyph":{"id":"ef6bc89b-1e9d-4ebf-8cf4-2e030d23400f","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"30c9149a-e11b-4f76-88b1-8da3db982b14","type":"Line"},"selection_glyph":null,"view":{"id":"330d4873-df4e-4362-b13c-66bfe41c0723","type":"CDSView"}},"id":"6a2d8094-6c0b-4c94-98d6-aee8b2036b53","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"1b52ef6e-a29f-4cba-8e10-747677668859","type":"ColumnDataSource"},"glyph":{"id":"138cb545-aa79-4ed2-9f18-f77a85fb21a6","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2eeea3fe-ae14-4d9a-abee-5f34492be946","type":"VBar"},"selection_glyph":null,"view":{"id":"aacbd204-d828-44a5-b31b-96d8e1eb5b6d","type":"CDSView"}},"id":"0902a5d7-75e1-4ffa-a4b1-08dea1f1ae20","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Song Zheyuan (1 - 0 - 2)"},"id":"ffbb9dfd-cf11-4c3b-97be-bfe9ff5384b5","type":"Title"},{"attributes":{},"id":"62d672a0-76af-4913-8822-8a3af4672880","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"b3e627ee-73d0-4807-9269-2c168cf980c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"7468de29-b14c-4740-a157-2bdfe937bfcb","type":"BasicTicker"}},"id":"2653d9c9-3ed8-44c6-aa2b-35e02da8ae64","type":"Grid"},{"attributes":{"callback":null},"id":"6c23c5ba-5e33-4e86-b21e-7fa65189b2d7","type":"DataRange1d"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ef6bc89b-1e9d-4ebf-8cf4-2e030d23400f","type":"Line"}],"root_ids":["b3e627ee-73d0-4807-9269-2c168cf980c5"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"59513587-9c36-47b6-9e3f-50808c938d22","elementid":"90405ae0-bbf3-4bc0-bd00-8d0efd8dbf55","modelid":"b3e627ee-73d0-4807-9269-2c168cf980c5"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

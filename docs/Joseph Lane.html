@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="efd8fc47-c602-4fbb-8140-0f1697cf31ff"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"8111a463-4745-4419-bcc9-387f8dcb42fb":{"roots":{"references":[{"attributes":{"below":[{"id":"010b558a-527d-4d6b-a813-59791b236ba3","type":"CategoricalAxis"}],"left":[{"id":"b70df3ef-5253-475e-ba04-b323be45d659","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"010b558a-527d-4d6b-a813-59791b236ba3","type":"CategoricalAxis"},{"id":"21f927f8-057a-4335-8d63-c102adf68b76","type":"Grid"},{"id":"b70df3ef-5253-475e-ba04-b323be45d659","type":"LinearAxis"},{"id":"7467216d-2eb2-4690-8552-8df0548939ee","type":"Grid"},{"id":"e1c2f062-1460-4bc9-8efc-31a9b70339b7","type":"GlyphRenderer"},{"id":"acdb4b2b-e23d-4424-975c-73db4652d30a","type":"GlyphRenderer"}],"title":{"id":"1a8dc4de-26c4-48cd-978c-fbeedb38780b","type":"Title"},"toolbar":{"id":"7f91a1d5-3257-485c-980a-0f6979aa67d6","type":"Toolbar"},"x_range":{"id":"45028bf9-829c-41c7-9715-0af563e6cc19","type":"FactorRange"},"x_scale":{"id":"6c4e11a8-b4d6-4a20-98f5-4311a1265260","type":"CategoricalScale"},"y_range":{"id":"baf56fa6-c960-40f1-b2b5-1541abb677ba","type":"DataRange1d"},"y_scale":{"id":"390a363f-43c5-4b48-96ec-35c60aa4f831","type":"LinearScale"}},"id":"c8defd81-aa26-49eb-b221-f9db442705a0","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"f5d3c801-8287-46ac-bb96-2efb31ca0e3f","type":"ColumnDataSource"},"glyph":{"id":"2de06786-8fb8-41b7-aac5-5a3b275b664f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5f9e5365-496e-433f-9922-e69a6bd36b74","type":"VBar"},"selection_glyph":null,"view":{"id":"a6806fec-0cde-4066-b6e4-5b65301ebc9a","type":"CDSView"}},"id":"acdb4b2b-e23d-4424-975c-73db4652d30a","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Joseph Lane (2 - 0 - 0)"},"id":"1a8dc4de-26c4-48cd-978c-fbeedb38780b","type":"Title"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"aa04820c-e004-4d75-9e13-30d3bfb7ce1a","type":"Line"},{"attributes":{"callback":null},"id":"baf56fa6-c960-40f1-b2b5-1541abb677ba","type":"DataRange1d"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"2cfdf5cc-211f-432a-8167-9c629f52b958","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"f5d3c801-8287-46ac-bb96-2efb31ca0e3f","type":"ColumnDataSource"}},"id":"4d72d4bd-fa84-4528-8165-56db708f27c0","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Huamantla","Siege of Puebla (1847)"]},"id":"45028bf9-829c-41c7-9715-0af563e6cc19","type":"FactorRange"},{"attributes":{},"id":"b58a86d4-a0e5-4bc4-8994-a7d7e4dbe7c5","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"2cfdf5cc-211f-432a-8167-9c629f52b958","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"2cfdf5cc-211f-432a-8167-9c629f52b958","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2de06786-8fb8-41b7-aac5-5a3b275b664f","type":"VBar"},{"attributes":{},"id":"6c4e11a8-b4d6-4a20-98f5-4311a1265260","type":"CategoricalScale"},{"attributes":{},"id":"390a363f-43c5-4b48-96ec-35c60aa4f831","type":"LinearScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Huamantla","Siege of Puebla (1847)"],"cumulative":{"__ndarray__":"yDWHRWrt3j+8enaWXKLvPw==","dtype":"float64","shape":[2]},"general":["Joseph Lane","Joseph Lane"],"outcome":["V","V"],"value":{"__ndarray__":"yDWHRWrt3j/Y37JzpyvgPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAADcnEAAAAAAANycQA==","dtype":"float64","shape":[2]}}},"id":"f5d3c801-8287-46ac-bb96-2efb31ca0e3f","type":"ColumnDataSource"},{"attributes":{},"id":"febb8154-3cb9-41ab-bd55-da046b7242ca","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"c8defd81-aa26-49eb-b221-f9db442705a0","subtype":"Figure","type":"Plot"},"ticker":{"id":"035bbc4a-e5b5-4a7c-8c4b-1b43eaacc68a","type":"BasicTicker"}},"id":"7467216d-2eb2-4690-8552-8df0548939ee","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"5f9e5365-496e-433f-9922-e69a6bd36b74","type":"VBar"},{"attributes":{"plot":{"id":"c8defd81-aa26-49eb-b221-f9db442705a0","subtype":"Figure","type":"Plot"},"ticker":{"id":"b58a86d4-a0e5-4bc4-8994-a7d7e4dbe7c5","type":"CategoricalTicker"}},"id":"21f927f8-057a-4335-8d63-c102adf68b76","type":"Grid"},{"attributes":{"formatter":{"id":"febb8154-3cb9-41ab-bd55-da046b7242ca","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"c8defd81-aa26-49eb-b221-f9db442705a0","subtype":"Figure","type":"Plot"},"ticker":{"id":"b58a86d4-a0e5-4bc4-8994-a7d7e4dbe7c5","type":"CategoricalTicker"}},"id":"010b558a-527d-4d6b-a813-59791b236ba3","type":"CategoricalAxis"},{"attributes":{},"id":"035bbc4a-e5b5-4a7c-8c4b-1b43eaacc68a","type":"BasicTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"30d2be44-3555-4771-b10d-67c9f4ee6ee8","type":"Line"},{"attributes":{"formatter":{"id":"12ed1b07-0c7d-434c-a164-29cb2b111c9f","type":"BasicTickFormatter"},"plot":{"id":"c8defd81-aa26-49eb-b221-f9db442705a0","subtype":"Figure","type":"Plot"},"ticker":{"id":"035bbc4a-e5b5-4a7c-8c4b-1b43eaacc68a","type":"BasicTicker"}},"id":"b70df3ef-5253-475e-ba04-b323be45d659","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"0c11b103-8a3f-4c5c-9751-5e66b8e9e81f","type":"HoverTool"}]},"id":"7f91a1d5-3257-485c-980a-0f6979aa67d6","type":"Toolbar"},{"attributes":{"source":{"id":"f5d3c801-8287-46ac-bb96-2efb31ca0e3f","type":"ColumnDataSource"}},"id":"a6806fec-0cde-4066-b6e4-5b65301ebc9a","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"0c11b103-8a3f-4c5c-9751-5e66b8e9e81f","type":"HoverTool"},{"attributes":{"data_source":{"id":"f5d3c801-8287-46ac-bb96-2efb31ca0e3f","type":"ColumnDataSource"},"glyph":{"id":"30d2be44-3555-4771-b10d-67c9f4ee6ee8","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"aa04820c-e004-4d75-9e13-30d3bfb7ce1a","type":"Line"},"selection_glyph":null,"view":{"id":"4d72d4bd-fa84-4528-8165-56db708f27c0","type":"CDSView"}},"id":"e1c2f062-1460-4bc9-8efc-31a9b70339b7","type":"GlyphRenderer"},{"attributes":{},"id":"12ed1b07-0c7d-434c-a164-29cb2b111c9f","type":"BasicTickFormatter"}],"root_ids":["c8defd81-aa26-49eb-b221-f9db442705a0"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"8111a463-4745-4419-bcc9-387f8dcb42fb","elementid":"efd8fc47-c602-4fbb-8140-0f1697cf31ff","modelid":"c8defd81-aa26-49eb-b221-f9db442705a0"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

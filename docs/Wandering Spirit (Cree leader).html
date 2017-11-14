@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="0c12d4a4-f14d-4948-9f53-7202cad62e53"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"ce2ee5cb-9290-444e-b3e0-dca0e79db1a8":{"roots":{"references":[{"attributes":{"source":{"id":"691326cc-e164-4a2e-bd23-b91563cd8d28","type":"ColumnDataSource"}},"id":"bfa30aa3-7fa8-4a46-b162-42f0ca30ed47","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d93b3342-b46c-4515-8822-b1ef53a27f85","type":"HoverTool"}]},"id":"7aff3343-9a60-4124-903f-4334859cf4a1","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Battle of Frenchman's Butte","Battle of Loon Lake"]},"id":"0617bd2d-1592-4d58-ace5-3a3bad895013","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f508fbe8-9dbc-4eed-8529-a4c9595afe02","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f508fbe8-9dbc-4eed-8529-a4c9595afe02","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"02060594-1580-4b04-b224-e706070d9bc7","type":"VBar"},{"attributes":{"below":[{"id":"ecae98a2-e7dc-42c5-8580-8fd9299ae522","type":"CategoricalAxis"}],"left":[{"id":"64ad4b95-d845-480d-b317-abdbfd90f0fa","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"ecae98a2-e7dc-42c5-8580-8fd9299ae522","type":"CategoricalAxis"},{"id":"e8a8c8c4-6223-4bc3-90c0-e321277964d3","type":"Grid"},{"id":"64ad4b95-d845-480d-b317-abdbfd90f0fa","type":"LinearAxis"},{"id":"9b1ccc97-e381-4b2a-8b35-fee262a6cf39","type":"Grid"},{"id":"f3fee22b-2ae7-463e-8a1c-465eae971f3c","type":"GlyphRenderer"},{"id":"59d9a060-6582-403f-89f1-e7ba040cb0ff","type":"GlyphRenderer"}],"title":{"id":"86bd0d3c-3a0c-4555-becf-941d310efcd4","type":"Title"},"toolbar":{"id":"7aff3343-9a60-4124-903f-4334859cf4a1","type":"Toolbar"},"x_range":{"id":"0617bd2d-1592-4d58-ace5-3a3bad895013","type":"FactorRange"},"x_scale":{"id":"52909680-c108-4a2f-8f38-11685102c8b2","type":"CategoricalScale"},"y_range":{"id":"986c39b3-8bdf-4d30-a0d8-0fa72786cadf","type":"DataRange1d"},"y_scale":{"id":"91185d23-052d-404e-832a-288fea1c3408","type":"LinearScale"}},"id":"de2414f9-eaa4-46ac-b012-d764b69728b2","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Frenchman's Butte","Battle of Loon Lake"],"cumulative":{"__ndarray__":"fDFWe2qP2z/ibrlfDqTsPw==","dtype":"float64","shape":[2]},"general":["Wandering Spirit (Cree leader)","Wandering Spirit (Cree leader)"],"outcome":["V","V"],"value":{"__ndarray__":"fDFWe2qP2z9IrBxEsrjdPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAB0nUAAAAAAAHSdQA==","dtype":"float64","shape":[2]}}},"id":"691326cc-e164-4a2e-bd23-b91563cd8d28","type":"ColumnDataSource"},{"attributes":{"callback":null},"id":"986c39b3-8bdf-4d30-a0d8-0fa72786cadf","type":"DataRange1d"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d2209e0a-1329-4fda-a326-e2276e6d1a5e","type":"Line"},{"attributes":{},"id":"52909680-c108-4a2f-8f38-11685102c8b2","type":"CategoricalScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f508fbe8-9dbc-4eed-8529-a4c9595afe02","type":"CategoricalColorMapper"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"95c5be00-98a8-49cf-9e99-af7fc2f822d8","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f3560022-e731-4648-9e81-a9c295548854","type":"VBar"},{"attributes":{},"id":"9cae32c6-e645-4187-a514-3d1caffd13b4","type":"BasicTicker"},{"attributes":{"source":{"id":"691326cc-e164-4a2e-bd23-b91563cd8d28","type":"ColumnDataSource"}},"id":"130daab7-96ae-4453-a734-cb670d3e46f2","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"de2414f9-eaa4-46ac-b012-d764b69728b2","subtype":"Figure","type":"Plot"},"ticker":{"id":"9cae32c6-e645-4187-a514-3d1caffd13b4","type":"BasicTicker"}},"id":"9b1ccc97-e381-4b2a-8b35-fee262a6cf39","type":"Grid"},{"attributes":{"formatter":{"id":"85a761e3-428d-4f10-94c8-4ab095e34081","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"de2414f9-eaa4-46ac-b012-d764b69728b2","subtype":"Figure","type":"Plot"},"ticker":{"id":"6287dff8-031a-4885-9a4a-2227ef397a99","type":"CategoricalTicker"}},"id":"ecae98a2-e7dc-42c5-8580-8fd9299ae522","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"de2414f9-eaa4-46ac-b012-d764b69728b2","subtype":"Figure","type":"Plot"},"ticker":{"id":"6287dff8-031a-4885-9a4a-2227ef397a99","type":"CategoricalTicker"}},"id":"e8a8c8c4-6223-4bc3-90c0-e321277964d3","type":"Grid"},{"attributes":{"data_source":{"id":"691326cc-e164-4a2e-bd23-b91563cd8d28","type":"ColumnDataSource"},"glyph":{"id":"d2209e0a-1329-4fda-a326-e2276e6d1a5e","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"95c5be00-98a8-49cf-9e99-af7fc2f822d8","type":"Line"},"selection_glyph":null,"view":{"id":"bfa30aa3-7fa8-4a46-b162-42f0ca30ed47","type":"CDSView"}},"id":"f3fee22b-2ae7-463e-8a1c-465eae971f3c","type":"GlyphRenderer"},{"attributes":{},"id":"91185d23-052d-404e-832a-288fea1c3408","type":"LinearScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"d93b3342-b46c-4515-8822-b1ef53a27f85","type":"HoverTool"},{"attributes":{},"id":"85a761e3-428d-4f10-94c8-4ab095e34081","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"Wandering Spirit (Cree leader) (2 - 0 - 0)"},"id":"86bd0d3c-3a0c-4555-becf-941d310efcd4","type":"Title"},{"attributes":{"data_source":{"id":"691326cc-e164-4a2e-bd23-b91563cd8d28","type":"ColumnDataSource"},"glyph":{"id":"02060594-1580-4b04-b224-e706070d9bc7","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f3560022-e731-4648-9e81-a9c295548854","type":"VBar"},"selection_glyph":null,"view":{"id":"130daab7-96ae-4453-a734-cb670d3e46f2","type":"CDSView"}},"id":"59d9a060-6582-403f-89f1-e7ba040cb0ff","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"b6bccb03-f0e5-4b45-a374-5f705a5cad27","type":"BasicTickFormatter"},"plot":{"id":"de2414f9-eaa4-46ac-b012-d764b69728b2","subtype":"Figure","type":"Plot"},"ticker":{"id":"9cae32c6-e645-4187-a514-3d1caffd13b4","type":"BasicTicker"}},"id":"64ad4b95-d845-480d-b317-abdbfd90f0fa","type":"LinearAxis"},{"attributes":{},"id":"6287dff8-031a-4885-9a4a-2227ef397a99","type":"CategoricalTicker"},{"attributes":{},"id":"b6bccb03-f0e5-4b45-a374-5f705a5cad27","type":"BasicTickFormatter"}],"root_ids":["de2414f9-eaa4-46ac-b012-d764b69728b2"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"ce2ee5cb-9290-444e-b3e0-dca0e79db1a8","elementid":"0c12d4a4-f14d-4948-9f53-7202cad62e53","modelid":"de2414f9-eaa4-46ac-b012-d764b69728b2"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

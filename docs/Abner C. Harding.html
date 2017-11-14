@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="ef179390-4bdc-49ec-88cf-30d3206dcf88"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"c3efdaa3-afb2-4ba4-98e6-700252bdc793":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"a39d0bf6-5ec5-49ec-820c-4031c7d4e1a4","type":"HoverTool"},{"attributes":{},"id":"64f8c698-b7a6-49a1-bc9d-96401aacef13","type":"LinearScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"a39d0bf6-5ec5-49ec-820c-4031c7d4e1a4","type":"HoverTool"}]},"id":"cad3ee1b-d229-461d-b2c9-ebe5fde4b35f","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"180d7c48-4e48-40c5-82f9-1f1c5a3386c6","type":"VBar"},{"attributes":{"data_source":{"id":"a7230af3-62c0-4292-8bf8-4f64721dcba1","type":"ColumnDataSource"},"glyph":{"id":"00ea453d-3dc8-44d4-a082-6f1def00337f","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c2cf6aaf-4f00-4bf0-a29c-e0bd70f56b97","type":"Line"},"selection_glyph":null,"view":{"id":"3f9291a6-e615-4206-baba-b1587cfe1b0f","type":"CDSView"}},"id":"c6af662a-2110-455f-a382-3fa861a65d40","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Dover (1863)"],"cumulative":{"__ndarray__":"MidnTgL+4j8=","dtype":"float64","shape":[1]},"general":["Abner C. Harding"],"outcome":["V"],"value":{"__ndarray__":"MidnTgL+4j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAcnUA=","dtype":"float64","shape":[1]}}},"id":"a7230af3-62c0-4292-8bf8-4f64721dcba1","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"a4e5548d-6030-46d6-8c5e-f1c335510eda","subtype":"Figure","type":"Plot"},"ticker":{"id":"c21bb391-ea28-4cd1-899f-364980db9591","type":"CategoricalTicker"}},"id":"c1d20ead-ca44-4160-b516-de49708641c9","type":"Grid"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"c2cf6aaf-4f00-4bf0-a29c-e0bd70f56b97","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"a4e5548d-6030-46d6-8c5e-f1c335510eda","subtype":"Figure","type":"Plot"},"ticker":{"id":"e2f1db30-26a3-483d-b5a4-fb6b5df45e58","type":"BasicTicker"}},"id":"eea48772-436e-49a7-954c-42ead0d3ceb8","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"5bf36e39-a5ac-4c70-af49-a2066cfe4c80","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"5bf36e39-a5ac-4c70-af49-a2066cfe4c80","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"8f509d1c-1032-4e7b-955d-fbdeaca111e9","type":"VBar"},{"attributes":{},"id":"e3f5a9c2-e25b-4cf4-a49b-aaf934412740","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Dover (1863)"]},"id":"d0db2731-c476-4cd2-b574-baeb5fc54218","type":"FactorRange"},{"attributes":{"below":[{"id":"dfd7fea3-dff5-4587-a6e2-6988b7c406c4","type":"CategoricalAxis"}],"left":[{"id":"b5a8b460-bb94-4cc2-a236-0f3cd8fa9f71","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"dfd7fea3-dff5-4587-a6e2-6988b7c406c4","type":"CategoricalAxis"},{"id":"c1d20ead-ca44-4160-b516-de49708641c9","type":"Grid"},{"id":"b5a8b460-bb94-4cc2-a236-0f3cd8fa9f71","type":"LinearAxis"},{"id":"eea48772-436e-49a7-954c-42ead0d3ceb8","type":"Grid"},{"id":"c6af662a-2110-455f-a382-3fa861a65d40","type":"GlyphRenderer"},{"id":"9b51504f-ffe4-4e5b-b968-5f4300b9f3f2","type":"GlyphRenderer"}],"title":{"id":"fe08718c-5545-4c37-9781-bb8aa5cc4613","type":"Title"},"toolbar":{"id":"cad3ee1b-d229-461d-b2c9-ebe5fde4b35f","type":"Toolbar"},"x_range":{"id":"d0db2731-c476-4cd2-b574-baeb5fc54218","type":"FactorRange"},"x_scale":{"id":"50a13d99-52e6-483c-a133-7ce2475bad36","type":"CategoricalScale"},"y_range":{"id":"67b07a11-cb2a-4fcb-9cad-65e73ef7634e","type":"DataRange1d"},"y_scale":{"id":"64f8c698-b7a6-49a1-bc9d-96401aacef13","type":"LinearScale"}},"id":"a4e5548d-6030-46d6-8c5e-f1c335510eda","subtype":"Figure","type":"Plot"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"5bf36e39-a5ac-4c70-af49-a2066cfe4c80","type":"CategoricalColorMapper"},{"attributes":{},"id":"e4b2756b-3015-4a79-b205-80760279d304","type":"BasicTickFormatter"},{"attributes":{"plot":null,"text":"Abner C. Harding (1 - 0 - 0)"},"id":"fe08718c-5545-4c37-9781-bb8aa5cc4613","type":"Title"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"00ea453d-3dc8-44d4-a082-6f1def00337f","type":"Line"},{"attributes":{},"id":"e2f1db30-26a3-483d-b5a4-fb6b5df45e58","type":"BasicTicker"},{"attributes":{"data_source":{"id":"a7230af3-62c0-4292-8bf8-4f64721dcba1","type":"ColumnDataSource"},"glyph":{"id":"8f509d1c-1032-4e7b-955d-fbdeaca111e9","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"180d7c48-4e48-40c5-82f9-1f1c5a3386c6","type":"VBar"},"selection_glyph":null,"view":{"id":"8b6abd10-94f2-4e57-acde-fc122e09e38f","type":"CDSView"}},"id":"9b51504f-ffe4-4e5b-b968-5f4300b9f3f2","type":"GlyphRenderer"},{"attributes":{},"id":"50a13d99-52e6-483c-a133-7ce2475bad36","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"e4b2756b-3015-4a79-b205-80760279d304","type":"BasicTickFormatter"},"plot":{"id":"a4e5548d-6030-46d6-8c5e-f1c335510eda","subtype":"Figure","type":"Plot"},"ticker":{"id":"e2f1db30-26a3-483d-b5a4-fb6b5df45e58","type":"BasicTicker"}},"id":"b5a8b460-bb94-4cc2-a236-0f3cd8fa9f71","type":"LinearAxis"},{"attributes":{"callback":null},"id":"67b07a11-cb2a-4fcb-9cad-65e73ef7634e","type":"DataRange1d"},{"attributes":{},"id":"c21bb391-ea28-4cd1-899f-364980db9591","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"e3f5a9c2-e25b-4cf4-a49b-aaf934412740","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"a4e5548d-6030-46d6-8c5e-f1c335510eda","subtype":"Figure","type":"Plot"},"ticker":{"id":"c21bb391-ea28-4cd1-899f-364980db9591","type":"CategoricalTicker"}},"id":"dfd7fea3-dff5-4587-a6e2-6988b7c406c4","type":"CategoricalAxis"},{"attributes":{"source":{"id":"a7230af3-62c0-4292-8bf8-4f64721dcba1","type":"ColumnDataSource"}},"id":"3f9291a6-e615-4206-baba-b1587cfe1b0f","type":"CDSView"},{"attributes":{"source":{"id":"a7230af3-62c0-4292-8bf8-4f64721dcba1","type":"ColumnDataSource"}},"id":"8b6abd10-94f2-4e57-acde-fc122e09e38f","type":"CDSView"}],"root_ids":["a4e5548d-6030-46d6-8c5e-f1c335510eda"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"c3efdaa3-afb2-4ba4-98e6-700252bdc793","elementid":"ef179390-4bdc-49ec-88cf-30d3206dcf88","modelid":"a4e5548d-6030-46d6-8c5e-f1c335510eda"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c2df9434-58b3-454d-b468-7e9eebcfe49e"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"62ef7fe9-3a65-4d1e-a356-fca38def5590":{"roots":{"references":[{"attributes":{"plot":{"id":"122fa0fd-2cce-42a2-a4e0-98e56652dbd3","subtype":"Figure","type":"Plot"},"ticker":{"id":"49d6cb6a-7b91-4c7d-b5fd-3fd67a67e614","type":"CategoricalTicker"}},"id":"ee397411-5dd2-446a-a510-e975c2426bfc","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"33c6c3dc-2bd1-478a-a509-a08d3f5494ce","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"6f77b2bf-740c-4f87-a58f-45372dc59f5c","type":"ColumnDataSource"}},"id":"f7c56091-fa20-415c-a772-86065bd9f9ab","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"122fa0fd-2cce-42a2-a4e0-98e56652dbd3","subtype":"Figure","type":"Plot"},"ticker":{"id":"19855431-7fc5-420d-9d6b-2531755c71b6","type":"BasicTicker"}},"id":"e8e0be07-dd9e-4457-a633-8a9d4685dd76","type":"Grid"},{"attributes":{},"id":"4421afad-dca6-4524-8ca3-5bcd6aac20b6","type":"LinearScale"},{"attributes":{"data_source":{"id":"6f77b2bf-740c-4f87-a58f-45372dc59f5c","type":"ColumnDataSource"},"glyph":{"id":"d9832450-d471-4326-adf8-6650f0759071","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e801aa82-a8ca-48d1-9dfe-70fc356fd02a","type":"Line"},"selection_glyph":null,"view":{"id":"65fa8d0d-284d-4c84-8f8c-f97f63106bc6","type":"CDSView"}},"id":"ee64f924-4a45-4eb6-bcdb-72efca7aa2cd","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"d47be4b7-f66e-4c36-b505-f59cdc609317","type":"HoverTool"},{"attributes":{"data_source":{"id":"6f77b2bf-740c-4f87-a58f-45372dc59f5c","type":"ColumnDataSource"},"glyph":{"id":"d7c15533-d320-4726-9be1-cd377c223d87","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"94b06301-84a2-476c-b0ca-5fefa5e65562","type":"VBar"},"selection_glyph":null,"view":{"id":"f7c56091-fa20-415c-a772-86065bd9f9ab","type":"CDSView"}},"id":"8ff4ec39-a2d6-445a-9c30-73a28bb1c0a2","type":"GlyphRenderer"},{"attributes":{},"id":"b606620e-06d4-4125-aab9-4ea4b50d56dc","type":"BasicTickFormatter"},{"attributes":{},"id":"19f345de-8fc8-48f9-9101-9bc7a9a4f950","type":"CategoricalTickFormatter"},{"attributes":{"callback":null},"id":"9d1949a2-d39c-471e-9af2-49b08c877c60","type":"DataRange1d"},{"attributes":{},"id":"d7310744-0193-4941-aba7-7f028e4a94b1","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Battle of Hartsville","Battle of Corydon","Battle of Salineville","Battle of Vaught's Hill"]},"id":"14e5636a-ea2b-466c-ba71-f6f7a19e292f","type":"FactorRange"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d9832450-d471-4326-adf8-6650f0759071","type":"Line"},{"attributes":{},"id":"19855431-7fc5-420d-9d6b-2531755c71b6","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d47be4b7-f66e-4c36-b505-f59cdc609317","type":"HoverTool"}]},"id":"82c9f19b-dd74-42a6-98b2-e19a95881317","type":"Toolbar"},{"attributes":{"formatter":{"id":"19f345de-8fc8-48f9-9101-9bc7a9a4f950","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"122fa0fd-2cce-42a2-a4e0-98e56652dbd3","subtype":"Figure","type":"Plot"},"ticker":{"id":"49d6cb6a-7b91-4c7d-b5fd-3fd67a67e614","type":"CategoricalTicker"}},"id":"1f997ecc-e8df-4597-9078-779f351f41e7","type":"CategoricalAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Hartsville","Battle of Corydon","Battle of Salineville","Battle of Vaught's Hill"],"cumulative":{"__ndarray__":"lkyWmwHt4D8gZ4wMCSWjv4emmH+OB9+/RFPMP8eD778=","dtype":"float64","shape":[4]},"general":["John Hunt Morgan","John Hunt Morgan","John Hunt Morgan","John Hunt Morgan"],"outcome":["V","D","D","D"],"value":{"__ndarray__":"lkyWmwHt4D8IE18sUh/iv6MZB17toty/AAAAAAAA4L8=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAAAYnUAAAAAAABydQAAAAAAAHJ1AAAAAAAAcnUA=","dtype":"float64","shape":[4]}}},"id":"6f77b2bf-740c-4f87-a58f-45372dc59f5c","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e801aa82-a8ca-48d1-9dfe-70fc356fd02a","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"94b06301-84a2-476c-b0ca-5fefa5e65562","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"33c6c3dc-2bd1-478a-a509-a08d3f5494ce","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"33c6c3dc-2bd1-478a-a509-a08d3f5494ce","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d7c15533-d320-4726-9be1-cd377c223d87","type":"VBar"},{"attributes":{},"id":"49d6cb6a-7b91-4c7d-b5fd-3fd67a67e614","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"1f997ecc-e8df-4597-9078-779f351f41e7","type":"CategoricalAxis"}],"left":[{"id":"411144e8-0f2a-4d9d-87d6-525d886d61c0","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"1f997ecc-e8df-4597-9078-779f351f41e7","type":"CategoricalAxis"},{"id":"ee397411-5dd2-446a-a510-e975c2426bfc","type":"Grid"},{"id":"411144e8-0f2a-4d9d-87d6-525d886d61c0","type":"LinearAxis"},{"id":"e8e0be07-dd9e-4457-a633-8a9d4685dd76","type":"Grid"},{"id":"ee64f924-4a45-4eb6-bcdb-72efca7aa2cd","type":"GlyphRenderer"},{"id":"8ff4ec39-a2d6-445a-9c30-73a28bb1c0a2","type":"GlyphRenderer"}],"title":{"id":"6f9d80ce-83f5-4748-9ea2-6b022630b845","type":"Title"},"toolbar":{"id":"82c9f19b-dd74-42a6-98b2-e19a95881317","type":"Toolbar"},"x_range":{"id":"14e5636a-ea2b-466c-ba71-f6f7a19e292f","type":"FactorRange"},"x_scale":{"id":"d7310744-0193-4941-aba7-7f028e4a94b1","type":"CategoricalScale"},"y_range":{"id":"9d1949a2-d39c-471e-9af2-49b08c877c60","type":"DataRange1d"},"y_scale":{"id":"4421afad-dca6-4524-8ca3-5bcd6aac20b6","type":"LinearScale"}},"id":"122fa0fd-2cce-42a2-a4e0-98e56652dbd3","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"b606620e-06d4-4125-aab9-4ea4b50d56dc","type":"BasicTickFormatter"},"plot":{"id":"122fa0fd-2cce-42a2-a4e0-98e56652dbd3","subtype":"Figure","type":"Plot"},"ticker":{"id":"19855431-7fc5-420d-9d6b-2531755c71b6","type":"BasicTicker"}},"id":"411144e8-0f2a-4d9d-87d6-525d886d61c0","type":"LinearAxis"},{"attributes":{"source":{"id":"6f77b2bf-740c-4f87-a58f-45372dc59f5c","type":"ColumnDataSource"}},"id":"65fa8d0d-284d-4c84-8f8c-f97f63106bc6","type":"CDSView"},{"attributes":{"plot":null,"text":"John Hunt Morgan (1 - 0 - 3)"},"id":"6f9d80ce-83f5-4748-9ea2-6b022630b845","type":"Title"}],"root_ids":["122fa0fd-2cce-42a2-a4e0-98e56652dbd3"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"62ef7fe9-3a65-4d1e-a356-fca38def5590","elementid":"c2df9434-58b3-454d-b468-7e9eebcfe49e","modelid":"122fa0fd-2cce-42a2-a4e0-98e56652dbd3"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f6318ee1-ce94-422f-96b3-4ff7fe0d3866"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"380a3f25-c747-4994-9682-eaf1d4b9c6ee":{"roots":{"references":[{"attributes":{"source":{"id":"9fad5ae0-c86b-41a8-b57e-aae94319413f","type":"ColumnDataSource"}},"id":"d5140b94-363c-40d7-bfcc-0bba5f349beb","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e8812179-603a-4418-9cdc-750e94b771e1","type":"HoverTool"}]},"id":"36b35132-f15c-4ebd-80ce-7991bd7d2e05","type":"Toolbar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"e8812179-603a-4418-9cdc-750e94b771e1","type":"HoverTool"},{"attributes":{"dimension":1,"plot":{"id":"a0fccfb2-029c-424e-8a41-cd7b235d3f05","subtype":"Figure","type":"Plot"},"ticker":{"id":"3f866a51-6fba-430c-a12f-ea44bf1cc4b3","type":"BasicTicker"}},"id":"3fec28b4-1672-4ee7-9655-8e5f77f75836","type":"Grid"},{"attributes":{},"id":"3f866a51-6fba-430c-a12f-ea44bf1cc4b3","type":"BasicTicker"},{"attributes":{"source":{"id":"9fad5ae0-c86b-41a8-b57e-aae94319413f","type":"ColumnDataSource"}},"id":"a65615c1-1408-455d-a0d3-7ac1e1d84ee3","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Guadalajara","Battle of Neretva"]},"id":"6b4020d4-9420-4dd4-8e17-22d89ee027a6","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"83d60bca-292e-4d98-aaea-9558a8ca8f61","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"b70f07bd-b630-47b3-8034-29f93a540b84","type":"Line"},{"attributes":{"below":[{"id":"fad69240-b481-4e29-aec0-17ea3565efc1","type":"CategoricalAxis"}],"left":[{"id":"f1010f13-a5e9-4120-a11f-3be90c09b940","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"fad69240-b481-4e29-aec0-17ea3565efc1","type":"CategoricalAxis"},{"id":"2e721196-e3ea-4933-a444-ae72c859d58f","type":"Grid"},{"id":"f1010f13-a5e9-4120-a11f-3be90c09b940","type":"LinearAxis"},{"id":"3fec28b4-1672-4ee7-9655-8e5f77f75836","type":"Grid"},{"id":"6ac2bd4c-68fb-4bb7-9105-e8546cda6549","type":"GlyphRenderer"},{"id":"b632aa6d-36ad-4e9e-84c6-26a42efc3219","type":"GlyphRenderer"}],"title":{"id":"17eb6006-b6be-450c-9ad9-c4c91626c100","type":"Title"},"toolbar":{"id":"36b35132-f15c-4ebd-80ce-7991bd7d2e05","type":"Toolbar"},"x_range":{"id":"6b4020d4-9420-4dd4-8e17-22d89ee027a6","type":"FactorRange"},"x_scale":{"id":"b495794e-da89-4c15-96f4-b6c9b2289895","type":"CategoricalScale"},"y_range":{"id":"1c1654fb-bef5-4e8f-8b1b-1ba219833390","type":"DataRange1d"},"y_scale":{"id":"750b4e76-89ff-4266-ad63-b8a41db817ab","type":"LinearScale"}},"id":"a0fccfb2-029c-424e-8a41-cd7b235d3f05","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"9fad5ae0-c86b-41a8-b57e-aae94319413f","type":"ColumnDataSource"},"glyph":{"id":"47217acf-b600-42ac-8a5a-4c032c55a572","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"83d60bca-292e-4d98-aaea-9558a8ca8f61","type":"VBar"},"selection_glyph":null,"view":{"id":"a65615c1-1408-455d-a0d3-7ac1e1d84ee3","type":"CDSView"}},"id":"b632aa6d-36ad-4e9e-84c6-26a42efc3219","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Guadalajara","Battle of Neretva"],"cumulative":{"__ndarray__":"c/BoqA+X4b9z8GioD5fhvw==","dtype":"float64","shape":[2]},"general":["Mario Roatta","Mario Roatta"],"outcome":["D","I"],"value":{"__ndarray__":"c/BoqA+X4b8AAAAAAAAAAA==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABEnkAAAAAAAFyeQA==","dtype":"float64","shape":[2]}}},"id":"9fad5ae0-c86b-41a8-b57e-aae94319413f","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"b7e38f6a-9c00-4c07-b778-0c5177ff6ef6","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"b7e38f6a-9c00-4c07-b778-0c5177ff6ef6","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"47217acf-b600-42ac-8a5a-4c032c55a572","type":"VBar"},{"attributes":{"formatter":{"id":"b249e055-d667-418d-a6bf-d3c4fca6ba55","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"a0fccfb2-029c-424e-8a41-cd7b235d3f05","subtype":"Figure","type":"Plot"},"ticker":{"id":"739dccf7-69ef-420c-b2e4-95e90dec82ea","type":"CategoricalTicker"}},"id":"fad69240-b481-4e29-aec0-17ea3565efc1","type":"CategoricalAxis"},{"attributes":{"plot":null,"text":"Mario Roatta (0 - 1 - 1)"},"id":"17eb6006-b6be-450c-9ad9-c4c91626c100","type":"Title"},{"attributes":{"data_source":{"id":"9fad5ae0-c86b-41a8-b57e-aae94319413f","type":"ColumnDataSource"},"glyph":{"id":"b70f07bd-b630-47b3-8034-29f93a540b84","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4d74b5a5-36c8-4062-83a7-73e92d8e88ed","type":"Line"},"selection_glyph":null,"view":{"id":"d5140b94-363c-40d7-bfcc-0bba5f349beb","type":"CDSView"}},"id":"6ac2bd4c-68fb-4bb7-9105-e8546cda6549","type":"GlyphRenderer"},{"attributes":{},"id":"750b4e76-89ff-4266-ad63-b8a41db817ab","type":"LinearScale"},{"attributes":{},"id":"739dccf7-69ef-420c-b2e4-95e90dec82ea","type":"CategoricalTicker"},{"attributes":{"callback":null},"id":"1c1654fb-bef5-4e8f-8b1b-1ba219833390","type":"DataRange1d"},{"attributes":{},"id":"10679c94-f484-463e-9743-848d2e4963ef","type":"BasicTickFormatter"},{"attributes":{"plot":{"id":"a0fccfb2-029c-424e-8a41-cd7b235d3f05","subtype":"Figure","type":"Plot"},"ticker":{"id":"739dccf7-69ef-420c-b2e4-95e90dec82ea","type":"CategoricalTicker"}},"id":"2e721196-e3ea-4933-a444-ae72c859d58f","type":"Grid"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4d74b5a5-36c8-4062-83a7-73e92d8e88ed","type":"Line"},{"attributes":{},"id":"b495794e-da89-4c15-96f4-b6c9b2289895","type":"CategoricalScale"},{"attributes":{},"id":"b249e055-d667-418d-a6bf-d3c4fca6ba55","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"10679c94-f484-463e-9743-848d2e4963ef","type":"BasicTickFormatter"},"plot":{"id":"a0fccfb2-029c-424e-8a41-cd7b235d3f05","subtype":"Figure","type":"Plot"},"ticker":{"id":"3f866a51-6fba-430c-a12f-ea44bf1cc4b3","type":"BasicTicker"}},"id":"f1010f13-a5e9-4120-a11f-3be90c09b940","type":"LinearAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"b7e38f6a-9c00-4c07-b778-0c5177ff6ef6","type":"CategoricalColorMapper"}],"root_ids":["a0fccfb2-029c-424e-8a41-cd7b235d3f05"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"380a3f25-c747-4994-9682-eaf1d4b9c6ee","elementid":"f6318ee1-ce94-422f-96b3-4ff7fe0d3866","modelid":"a0fccfb2-029c-424e-8a41-cd7b235d3f05"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

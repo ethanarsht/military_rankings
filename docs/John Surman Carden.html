@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="06a551f9-212a-457b-a13f-facba5cd1d37"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"9a9d145f-414b-4aa4-8b4b-e6e644182fd7":{"roots":{"references":[{"attributes":{"plot":null,"text":"John Surman Carden (0 - 0 - 1)"},"id":"ca5a884b-7a38-4504-80d9-4d3e2e1213a9","type":"Title"},{"attributes":{},"id":"e9a3a8ef-70c2-4508-93d6-d5632c792763","type":"LinearScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"865edb5f-5744-4016-bc25-b19451d72915","type":"HoverTool"}]},"id":"74bf6ae1-ea71-4fcc-ae80-1aed2588d18a","type":"Toolbar"},{"attributes":{"formatter":{"id":"821141e2-5779-41bc-9694-b37071ab74af","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"28d4a394-2486-4b7c-85da-62e822e26da3","subtype":"Figure","type":"Plot"},"ticker":{"id":"5f3d1fdd-c766-42eb-95e5-e1de5b1b1a65","type":"CategoricalTicker"}},"id":"3a6c2857-beae-4b42-93a9-513e89c80f0f","type":"CategoricalAxis"},{"attributes":{"source":{"id":"8bf5f0d5-6284-4dbb-9099-2f33d068761f","type":"ColumnDataSource"}},"id":"f0f2c9da-434e-4f74-8558-c355ba634ab6","type":"CDSView"},{"attributes":{},"id":"0dfb85f7-189f-427b-80cc-8c9bae184523","type":"CategoricalScale"},{"attributes":{"callback":null},"id":"4177917c-e99c-41ab-a05d-278c340b30ec","type":"DataRange1d"},{"attributes":{"source":{"id":"8bf5f0d5-6284-4dbb-9099-2f33d068761f","type":"ColumnDataSource"}},"id":"0885223d-818d-45eb-8e1d-961dee2d95ee","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"27e3b481-1e2a-4178-8d7e-45a4a75e6296","type":"VBar"},{"attributes":{"plot":{"id":"28d4a394-2486-4b7c-85da-62e822e26da3","subtype":"Figure","type":"Plot"},"ticker":{"id":"5f3d1fdd-c766-42eb-95e5-e1de5b1b1a65","type":"CategoricalTicker"}},"id":"0c476266-983a-4704-88b4-bc812e640553","type":"Grid"},{"attributes":{"data_source":{"id":"8bf5f0d5-6284-4dbb-9099-2f33d068761f","type":"ColumnDataSource"},"glyph":{"id":"81187fe8-308f-4e73-a24f-377acde52da6","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"27e3b481-1e2a-4178-8d7e-45a4a75e6296","type":"VBar"},"selection_glyph":null,"view":{"id":"0885223d-818d-45eb-8e1d-961dee2d95ee","type":"CDSView"}},"id":"299e3b25-cffd-4fa0-870e-a0bed36d27fe","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0a79db13-b60f-441a-84ba-6c8710fc276b","type":"Line"},{"attributes":{},"id":"821141e2-5779-41bc-9694-b37071ab74af","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"865edb5f-5744-4016-bc25-b19451d72915","type":"HoverTool"},{"attributes":{"formatter":{"id":"4a0b9310-53d7-4ee9-b68d-7bfe28873a07","type":"BasicTickFormatter"},"plot":{"id":"28d4a394-2486-4b7c-85da-62e822e26da3","subtype":"Figure","type":"Plot"},"ticker":{"id":"0934ea3b-0abb-4b88-90b2-d1bac5d27bd1","type":"BasicTicker"}},"id":"a03d6d16-a65f-49dc-91a0-85d810d9371f","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"cc0169da-b0a5-49e8-8951-88dbe1093e50","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"cc0169da-b0a5-49e8-8951-88dbe1093e50","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"81187fe8-308f-4e73-a24f-377acde52da6","type":"VBar"},{"attributes":{"data_source":{"id":"8bf5f0d5-6284-4dbb-9099-2f33d068761f","type":"ColumnDataSource"},"glyph":{"id":"957a95bf-f58f-4624-a5ca-52b3d8f46d30","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0a79db13-b60f-441a-84ba-6c8710fc276b","type":"Line"},"selection_glyph":null,"view":{"id":"f0f2c9da-434e-4f74-8558-c355ba634ab6","type":"CDSView"}},"id":"6bd01c2b-a248-47bc-990d-aca5f46f6bd7","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"cc0169da-b0a5-49e8-8951-88dbe1093e50","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["USS United States vs HMS Macedonian"],"cumulative":{"__ndarray__":"gDuvqk8M4L8=","dtype":"float64","shape":[1]},"general":["John Surman Carden"],"outcome":["D"],"value":{"__ndarray__":"gDuvqk8M4L8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABQnEA=","dtype":"float64","shape":[1]}}},"id":"8bf5f0d5-6284-4dbb-9099-2f33d068761f","type":"ColumnDataSource"},{"attributes":{},"id":"0934ea3b-0abb-4b88-90b2-d1bac5d27bd1","type":"BasicTicker"},{"attributes":{"below":[{"id":"3a6c2857-beae-4b42-93a9-513e89c80f0f","type":"CategoricalAxis"}],"left":[{"id":"a03d6d16-a65f-49dc-91a0-85d810d9371f","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"3a6c2857-beae-4b42-93a9-513e89c80f0f","type":"CategoricalAxis"},{"id":"0c476266-983a-4704-88b4-bc812e640553","type":"Grid"},{"id":"a03d6d16-a65f-49dc-91a0-85d810d9371f","type":"LinearAxis"},{"id":"d65df6cc-0346-4303-80a9-64fa7398c483","type":"Grid"},{"id":"6bd01c2b-a248-47bc-990d-aca5f46f6bd7","type":"GlyphRenderer"},{"id":"299e3b25-cffd-4fa0-870e-a0bed36d27fe","type":"GlyphRenderer"}],"title":{"id":"ca5a884b-7a38-4504-80d9-4d3e2e1213a9","type":"Title"},"toolbar":{"id":"74bf6ae1-ea71-4fcc-ae80-1aed2588d18a","type":"Toolbar"},"x_range":{"id":"d0c500d7-35dd-4595-ab1b-9d3d6f4c7e9e","type":"FactorRange"},"x_scale":{"id":"0dfb85f7-189f-427b-80cc-8c9bae184523","type":"CategoricalScale"},"y_range":{"id":"4177917c-e99c-41ab-a05d-278c340b30ec","type":"DataRange1d"},"y_scale":{"id":"e9a3a8ef-70c2-4508-93d6-d5632c792763","type":"LinearScale"}},"id":"28d4a394-2486-4b7c-85da-62e822e26da3","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":1,"plot":{"id":"28d4a394-2486-4b7c-85da-62e822e26da3","subtype":"Figure","type":"Plot"},"ticker":{"id":"0934ea3b-0abb-4b88-90b2-d1bac5d27bd1","type":"BasicTicker"}},"id":"d65df6cc-0346-4303-80a9-64fa7398c483","type":"Grid"},{"attributes":{},"id":"4a0b9310-53d7-4ee9-b68d-7bfe28873a07","type":"BasicTickFormatter"},{"attributes":{},"id":"5f3d1fdd-c766-42eb-95e5-e1de5b1b1a65","type":"CategoricalTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"957a95bf-f58f-4624-a5ca-52b3d8f46d30","type":"Line"},{"attributes":{"callback":null,"factors":["USS United States vs HMS Macedonian"]},"id":"d0c500d7-35dd-4595-ab1b-9d3d6f4c7e9e","type":"FactorRange"}],"root_ids":["28d4a394-2486-4b7c-85da-62e822e26da3"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"9a9d145f-414b-4aa4-8b4b-e6e644182fd7","elementid":"06a551f9-212a-457b-a13f-facba5cd1d37","modelid":"28d4a394-2486-4b7c-85da-62e822e26da3"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="3c838dcf-c6c5-4166-8c88-ad43d619b92f"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"3245fb33-730f-42e5-948f-ba2f7a432428":{"roots":{"references":[{"attributes":{"data_source":{"id":"71c88e65-cb96-46a8-b616-4e93310dab20","type":"ColumnDataSource"},"glyph":{"id":"e574d661-16e1-40b3-9466-6bafc7a1d6df","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"60e7dbd6-64bf-426d-bc14-17ed6b4516d4","type":"Line"},"selection_glyph":null,"view":{"id":"57421791-f417-41d3-91d7-e57e629325d1","type":"CDSView"}},"id":"fd3006a6-4056-4ebe-a261-9cbcd04cb1be","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"71c88e65-cb96-46a8-b616-4e93310dab20","type":"ColumnDataSource"},"glyph":{"id":"170f2874-3f2b-4190-803c-fe542be068da","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"00304444-e2cf-4688-94c1-0d72999724d2","type":"VBar"},"selection_glyph":null,"view":{"id":"dca7434b-42d4-4228-b88f-8666ef87bc7c","type":"CDSView"}},"id":"b021444b-7cc6-42be-a253-c6bd8a88bdb8","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"00304444-e2cf-4688-94c1-0d72999724d2","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"308835f1-e20e-4882-8e89-1c228cbcfb55","type":"HoverTool"}]},"id":"22d8455a-24cc-49d6-b0d6-89a8629ff685","type":"Toolbar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"60e7dbd6-64bf-426d-bc14-17ed6b4516d4","type":"Line"},{"attributes":{"plot":null,"text":"Stefan Czarniecki (3 - 0 - 0)"},"id":"5c7d6ab4-d4ec-4b1b-8101-59fb9f46bfcf","type":"Title"},{"attributes":{"source":{"id":"71c88e65-cb96-46a8-b616-4e93310dab20","type":"ColumnDataSource"}},"id":"dca7434b-42d4-4228-b88f-8666ef87bc7c","type":"CDSView"},{"attributes":{},"id":"13f692b9-3f86-4bf0-84d2-cef175751da1","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"308835f1-e20e-4882-8e89-1c228cbcfb55","type":"HoverTool"},{"attributes":{},"id":"a81a6d84-b086-40a7-8960-8d740e0a8a8b","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["Battle of Berestechko","Battle of Kolding (1658)","Battle of Polonka"]},"id":"37d5a1ac-df01-4264-b6b6-71f5f36d8d7e","type":"FactorRange"},{"attributes":{"source":{"id":"71c88e65-cb96-46a8-b616-4e93310dab20","type":"ColumnDataSource"}},"id":"57421791-f417-41d3-91d7-e57e629325d1","type":"CDSView"},{"attributes":{"formatter":{"id":"15ab85f8-2909-42b5-82c3-942faaf6d1c8","type":"BasicTickFormatter"},"plot":{"id":"8084afac-4ecb-478e-8f43-6d08dbf1ba00","subtype":"Figure","type":"Plot"},"ticker":{"id":"a81a6d84-b086-40a7-8960-8d740e0a8a8b","type":"BasicTicker"}},"id":"0ab4b2ec-958f-4136-bf3e-93b4572c98db","type":"LinearAxis"},{"attributes":{},"id":"9a2ee55d-c018-46e2-955e-c6a00dfe345d","type":"LinearScale"},{"attributes":{"plot":{"id":"8084afac-4ecb-478e-8f43-6d08dbf1ba00","subtype":"Figure","type":"Plot"},"ticker":{"id":"35275db1-9f95-4943-b3e4-4ddbb50954dc","type":"CategoricalTicker"}},"id":"c26e28a1-e4e1-4785-bd2e-c542e02fbb36","type":"Grid"},{"attributes":{},"id":"d86f1eea-1cb2-428f-bdbd-4bb4ed0a8710","type":"CategoricalScale"},{"attributes":{},"id":"35275db1-9f95-4943-b3e4-4ddbb50954dc","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"327d8d44-4942-4d13-b50f-7d06f9f1355e","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"327d8d44-4942-4d13-b50f-7d06f9f1355e","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"170f2874-3f2b-4190-803c-fe542be068da","type":"VBar"},{"attributes":{"below":[{"id":"c35a34de-c9de-49fc-b8b2-f6e04ef878ed","type":"CategoricalAxis"}],"left":[{"id":"0ab4b2ec-958f-4136-bf3e-93b4572c98db","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"c35a34de-c9de-49fc-b8b2-f6e04ef878ed","type":"CategoricalAxis"},{"id":"c26e28a1-e4e1-4785-bd2e-c542e02fbb36","type":"Grid"},{"id":"0ab4b2ec-958f-4136-bf3e-93b4572c98db","type":"LinearAxis"},{"id":"b770749f-bc3a-4a4f-976f-1a1865582b42","type":"Grid"},{"id":"fd3006a6-4056-4ebe-a261-9cbcd04cb1be","type":"GlyphRenderer"},{"id":"b021444b-7cc6-42be-a253-c6bd8a88bdb8","type":"GlyphRenderer"}],"title":{"id":"5c7d6ab4-d4ec-4b1b-8101-59fb9f46bfcf","type":"Title"},"toolbar":{"id":"22d8455a-24cc-49d6-b0d6-89a8629ff685","type":"Toolbar"},"x_range":{"id":"37d5a1ac-df01-4264-b6b6-71f5f36d8d7e","type":"FactorRange"},"x_scale":{"id":"d86f1eea-1cb2-428f-bdbd-4bb4ed0a8710","type":"CategoricalScale"},"y_range":{"id":"802a711c-69cc-4085-8770-38d28031ae5d","type":"DataRange1d"},"y_scale":{"id":"9a2ee55d-c018-46e2-955e-c6a00dfe345d","type":"LinearScale"}},"id":"8084afac-4ecb-478e-8f43-6d08dbf1ba00","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":1,"plot":{"id":"8084afac-4ecb-478e-8f43-6d08dbf1ba00","subtype":"Figure","type":"Plot"},"ticker":{"id":"a81a6d84-b086-40a7-8960-8d740e0a8a8b","type":"BasicTicker"}},"id":"b770749f-bc3a-4a4f-976f-1a1865582b42","type":"Grid"},{"attributes":{"callback":null},"id":"802a711c-69cc-4085-8770-38d28031ae5d","type":"DataRange1d"},{"attributes":{},"id":"15ab85f8-2909-42b5-82c3-942faaf6d1c8","type":"BasicTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"327d8d44-4942-4d13-b50f-7d06f9f1355e","type":"CategoricalColorMapper"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e574d661-16e1-40b3-9466-6bafc7a1d6df","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Berestechko","Battle of Kolding (1658)","Battle of Polonka"],"cumulative":{"__ndarray__":"19viknqn4T/sbXFJvdPwP95t8VnM//k/","dtype":"float64","shape":[3]},"general":["Stefan Czarniecki","Stefan Czarniecki","Stefan Czarniecki"],"outcome":["V","V","V"],"value":{"__ndarray__":"19viknqn4T8AAAAAAADgP+P//yAeWOI/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAADMmUAAAAAAAOiZQAAAAAAA8JlA","dtype":"float64","shape":[3]}}},"id":"71c88e65-cb96-46a8-b616-4e93310dab20","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"13f692b9-3f86-4bf0-84d2-cef175751da1","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"8084afac-4ecb-478e-8f43-6d08dbf1ba00","subtype":"Figure","type":"Plot"},"ticker":{"id":"35275db1-9f95-4943-b3e4-4ddbb50954dc","type":"CategoricalTicker"}},"id":"c35a34de-c9de-49fc-b8b2-f6e04ef878ed","type":"CategoricalAxis"}],"root_ids":["8084afac-4ecb-478e-8f43-6d08dbf1ba00"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"3245fb33-730f-42e5-948f-ba2f7a432428","elementid":"3c838dcf-c6c5-4166-8c88-ad43d619b92f","modelid":"8084afac-4ecb-478e-8f43-6d08dbf1ba00"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

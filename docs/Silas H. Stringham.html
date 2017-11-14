@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="ccfdb374-38c4-49bb-b85d-b8a0872779c1"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"f4f20123-263f-4bb5-8592-854e09399d52":{"roots":{"references":[{"attributes":{"plot":{"id":"d1635a53-efc6-4b45-8a07-1e8f9cbe69d7","subtype":"Figure","type":"Plot"},"ticker":{"id":"8ac115b7-9c1e-4a4c-bbcc-960e63b01dfc","type":"CategoricalTicker"}},"id":"95565752-8343-4aad-a996-81f337d080b6","type":"Grid"},{"attributes":{"callback":null},"id":"c1851228-9a77-4062-b2fa-5ca369903cf1","type":"DataRange1d"},{"attributes":{"formatter":{"id":"4e9b5489-2bf5-4120-887d-8351170ca51a","type":"BasicTickFormatter"},"plot":{"id":"d1635a53-efc6-4b45-8a07-1e8f9cbe69d7","subtype":"Figure","type":"Plot"},"ticker":{"id":"3f99e868-4210-483a-9902-20240ead93b3","type":"BasicTicker"}},"id":"66982ec8-ce98-4dc0-b759-98831259a984","type":"LinearAxis"},{"attributes":{"data_source":{"id":"0bd9610e-9550-413b-888a-692f135d157a","type":"ColumnDataSource"},"glyph":{"id":"91f61f28-6221-4931-b92c-c377921cbc98","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f6b8ced4-c0a3-4c28-b33b-b5094f978f01","type":"VBar"},"selection_glyph":null,"view":{"id":"8175f852-fcc4-48e8-8bfe-13c1d1dcd934","type":"CDSView"}},"id":"c49e886b-d9db-4e64-9ef0-ab5a54ed450f","type":"GlyphRenderer"},{"attributes":{},"id":"4e9b5489-2bf5-4120-887d-8351170ca51a","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"0bd9610e-9550-413b-888a-692f135d157a","type":"ColumnDataSource"}},"id":"8175f852-fcc4-48e8-8bfe-13c1d1dcd934","type":"CDSView"},{"attributes":{"formatter":{"id":"218d24b6-600c-488c-933a-c9ad3c29560b","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"d1635a53-efc6-4b45-8a07-1e8f9cbe69d7","subtype":"Figure","type":"Plot"},"ticker":{"id":"8ac115b7-9c1e-4a4c-bbcc-960e63b01dfc","type":"CategoricalTicker"}},"id":"902d4848-e8b6-45dd-9163-cf153697f23e","type":"CategoricalAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"e6e3550d-a611-4aa9-bd6d-ed568e2fdae4","type":"HoverTool"},{"attributes":{"source":{"id":"0bd9610e-9550-413b-888a-692f135d157a","type":"ColumnDataSource"}},"id":"0c4804ac-2a98-4e51-8220-21a03fd60906","type":"CDSView"},{"attributes":{},"id":"218d24b6-600c-488c-933a-c9ad3c29560b","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f6b8ced4-c0a3-4c28-b33b-b5094f978f01","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ccd2303e-a93e-4299-a478-ff28070e398c","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"92e17c50-33e0-4ed5-99c6-de99ed07bb9b","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"92e17c50-33e0-4ed5-99c6-de99ed07bb9b","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"91f61f28-6221-4931-b92c-c377921cbc98","type":"VBar"},{"attributes":{"below":[{"id":"902d4848-e8b6-45dd-9163-cf153697f23e","type":"CategoricalAxis"}],"left":[{"id":"66982ec8-ce98-4dc0-b759-98831259a984","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"902d4848-e8b6-45dd-9163-cf153697f23e","type":"CategoricalAxis"},{"id":"95565752-8343-4aad-a996-81f337d080b6","type":"Grid"},{"id":"66982ec8-ce98-4dc0-b759-98831259a984","type":"LinearAxis"},{"id":"972d2c78-ec67-4282-aa13-775913a19b46","type":"Grid"},{"id":"db1826f9-104f-4c15-80f0-f5c290cd74ca","type":"GlyphRenderer"},{"id":"c49e886b-d9db-4e64-9ef0-ab5a54ed450f","type":"GlyphRenderer"}],"title":{"id":"56c8b822-aeae-4eb2-9076-cb25a8052c57","type":"Title"},"toolbar":{"id":"4334f74b-5940-4e31-a145-0f740e2ef009","type":"Toolbar"},"x_range":{"id":"97e68d4b-2028-47e3-9609-720d766a4a35","type":"FactorRange"},"x_scale":{"id":"a0ad76d5-793a-40ac-a361-97c9c2782aba","type":"CategoricalScale"},"y_range":{"id":"c1851228-9a77-4062-b2fa-5ca369903cf1","type":"DataRange1d"},"y_scale":{"id":"684014f8-4e0b-4111-81da-0d42bafc0f68","type":"LinearScale"}},"id":"d1635a53-efc6-4b45-8a07-1e8f9cbe69d7","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e6e3550d-a611-4aa9-bd6d-ed568e2fdae4","type":"HoverTool"}]},"id":"4334f74b-5940-4e31-a145-0f740e2ef009","type":"Toolbar"},{"attributes":{},"id":"a0ad76d5-793a-40ac-a361-97c9c2782aba","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Battle of Hatteras Inlet Batteries"]},"id":"97e68d4b-2028-47e3-9609-720d766a4a35","type":"FactorRange"},{"attributes":{},"id":"3f99e868-4210-483a-9902-20240ead93b3","type":"BasicTicker"},{"attributes":{},"id":"8ac115b7-9c1e-4a4c-bbcc-960e63b01dfc","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"92e17c50-33e0-4ed5-99c6-de99ed07bb9b","type":"CategoricalColorMapper"},{"attributes":{},"id":"684014f8-4e0b-4111-81da-0d42bafc0f68","type":"LinearScale"},{"attributes":{"data_source":{"id":"0bd9610e-9550-413b-888a-692f135d157a","type":"ColumnDataSource"},"glyph":{"id":"ccd2303e-a93e-4299-a478-ff28070e398c","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f9b954c2-0f01-4f04-a7aa-8b4eb3fc7169","type":"Line"},"selection_glyph":null,"view":{"id":"0c4804ac-2a98-4e51-8220-21a03fd60906","type":"CDSView"}},"id":"db1826f9-104f-4c15-80f0-f5c290cd74ca","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Hatteras Inlet Batteries"],"cumulative":{"__ndarray__":"AImhqmDn3z8=","dtype":"float64","shape":[1]},"general":["Silas H. Stringham"],"outcome":["V"],"value":{"__ndarray__":"AImhqmDn3z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAUnUA=","dtype":"float64","shape":[1]}}},"id":"0bd9610e-9550-413b-888a-692f135d157a","type":"ColumnDataSource"},{"attributes":{"dimension":1,"plot":{"id":"d1635a53-efc6-4b45-8a07-1e8f9cbe69d7","subtype":"Figure","type":"Plot"},"ticker":{"id":"3f99e868-4210-483a-9902-20240ead93b3","type":"BasicTicker"}},"id":"972d2c78-ec67-4282-aa13-775913a19b46","type":"Grid"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f9b954c2-0f01-4f04-a7aa-8b4eb3fc7169","type":"Line"},{"attributes":{"plot":null,"text":"Silas H. Stringham (1 - 0 - 0)"},"id":"56c8b822-aeae-4eb2-9076-cb25a8052c57","type":"Title"}],"root_ids":["d1635a53-efc6-4b45-8a07-1e8f9cbe69d7"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"f4f20123-263f-4bb5-8592-854e09399d52","elementid":"ccfdb374-38c4-49bb-b85d-b8a0872779c1","modelid":"d1635a53-efc6-4b45-8a07-1e8f9cbe69d7"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

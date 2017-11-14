@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="bead3604-2bf0-491e-a4d5-626bf3686d94"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"31af89a9-bc91-430b-991c-9576989af03f":{"roots":{"references":[{"attributes":{},"id":"fd3a986b-1b72-4ab1-8f1d-3551694ffe19","type":"CategoricalScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"c72dc64d-4913-4f5f-a94a-1c9bbf2f2793","type":"HoverTool"},{"attributes":{},"id":"c62056da-5689-4069-8f34-293e761237cf","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"dc4b4f4d-d643-4571-ab58-5e211d5f351b","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"dc4b4f4d-d643-4571-ab58-5e211d5f351b","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"70a34117-07d2-429f-b1a9-830941692dea","type":"VBar"},{"attributes":{"source":{"id":"67390a24-9d02-4c29-8081-ad996770c3d0","type":"ColumnDataSource"}},"id":"dbecd636-4d74-452c-8691-4e499fb46171","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Marston Moor","Battle of Alford","Battle of Kilsyth","Battle of Preston (1648)"]},"id":"82ab6a83-4bbb-4e4f-8bc9-16d71a0e3385","type":"FactorRange"},{"attributes":{"dimension":1,"plot":{"id":"bb169c9c-31a5-4cc4-b64f-d6eed0bef9b4","subtype":"Figure","type":"Plot"},"ticker":{"id":"3809ea5a-9cd1-419d-b587-e12062209938","type":"BasicTicker"}},"id":"4e889073-e337-4186-927e-18d07276421a","type":"Grid"},{"attributes":{"below":[{"id":"2e6fafca-7a1c-46c4-a299-bfe4256181c4","type":"CategoricalAxis"}],"left":[{"id":"5a25b7d6-8d54-48f6-845c-2595d8fcf615","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"2e6fafca-7a1c-46c4-a299-bfe4256181c4","type":"CategoricalAxis"},{"id":"2e3a755d-25a1-4e8a-b333-1ff0694fcb8a","type":"Grid"},{"id":"5a25b7d6-8d54-48f6-845c-2595d8fcf615","type":"LinearAxis"},{"id":"4e889073-e337-4186-927e-18d07276421a","type":"Grid"},{"id":"988661dd-84f0-4a1a-aec4-08605721c3bb","type":"GlyphRenderer"},{"id":"082e88a4-6036-4ae0-b712-68cb0e91526b","type":"GlyphRenderer"}],"title":{"id":"9479db6a-d40c-4049-bc50-6a62a1a49300","type":"Title"},"toolbar":{"id":"7b9187b9-d47c-4de3-a3c2-6c805e699678","type":"Toolbar"},"x_range":{"id":"82ab6a83-4bbb-4e4f-8bc9-16d71a0e3385","type":"FactorRange"},"x_scale":{"id":"fd3a986b-1b72-4ab1-8f1d-3551694ffe19","type":"CategoricalScale"},"y_range":{"id":"44e9b260-6c91-41de-be6a-503379dd8e6b","type":"DataRange1d"},"y_scale":{"id":"c62056da-5689-4069-8f34-293e761237cf","type":"LinearScale"}},"id":"bb169c9c-31a5-4cc4-b64f-d6eed0bef9b4","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"67390a24-9d02-4c29-8081-ad996770c3d0","type":"ColumnDataSource"},"glyph":{"id":"70a34117-07d2-429f-b1a9-830941692dea","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e2fa40e4-a694-4e84-b579-bf61adb0ebdf","type":"VBar"},"selection_glyph":null,"view":{"id":"bf03ecb6-af0b-4c3a-98b6-f8c8b75bcc4a","type":"CDSView"}},"id":"082e88a4-6036-4ae0-b712-68cb0e91526b","type":"GlyphRenderer"},{"attributes":{},"id":"3630e628-7602-438e-a8d4-7821316f3ea2","type":"BasicTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Marston Moor","Battle of Alford","Battle of Kilsyth","Battle of Preston (1648)"],"cumulative":{"__ndarray__":"pMbGGQ9j3j9gPngSkuKhv7mJu8K1p+K/iELby2SN8b8=","dtype":"float64","shape":[4]},"general":["William Baillie (soldier)","William Baillie (soldier)","William Baillie (soldier)","William Baillie (soldier)"],"outcome":["V","D","D","D"],"value":{"__ndarray__":"pMbGGQ9j3j845wqusE/gv9MFlKGMieG/WPv61BNz4L8=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAACwmUAAAAAAALSZQAAAAAAAtJlAAAAAAADAmUA=","dtype":"float64","shape":[4]}}},"id":"67390a24-9d02-4c29-8081-ad996770c3d0","type":"ColumnDataSource"},{"attributes":{},"id":"3809ea5a-9cd1-419d-b587-e12062209938","type":"BasicTicker"},{"attributes":{"callback":null},"id":"44e9b260-6c91-41de-be6a-503379dd8e6b","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"c72dc64d-4913-4f5f-a94a-1c9bbf2f2793","type":"HoverTool"}]},"id":"7b9187b9-d47c-4de3-a3c2-6c805e699678","type":"Toolbar"},{"attributes":{"plot":{"id":"bb169c9c-31a5-4cc4-b64f-d6eed0bef9b4","subtype":"Figure","type":"Plot"},"ticker":{"id":"1d2fc62e-b994-4aec-9427-09d228d37944","type":"CategoricalTicker"}},"id":"2e3a755d-25a1-4e8a-b333-1ff0694fcb8a","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e2fa40e4-a694-4e84-b579-bf61adb0ebdf","type":"VBar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"fffd9a39-ec8e-4072-a54c-7c4c225b9187","type":"Line"},{"attributes":{"formatter":{"id":"3630e628-7602-438e-a8d4-7821316f3ea2","type":"BasicTickFormatter"},"plot":{"id":"bb169c9c-31a5-4cc4-b64f-d6eed0bef9b4","subtype":"Figure","type":"Plot"},"ticker":{"id":"3809ea5a-9cd1-419d-b587-e12062209938","type":"BasicTicker"}},"id":"5a25b7d6-8d54-48f6-845c-2595d8fcf615","type":"LinearAxis"},{"attributes":{"data_source":{"id":"67390a24-9d02-4c29-8081-ad996770c3d0","type":"ColumnDataSource"},"glyph":{"id":"6e7fec4a-a33d-4084-b839-adf9236b2e58","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"fffd9a39-ec8e-4072-a54c-7c4c225b9187","type":"Line"},"selection_glyph":null,"view":{"id":"dbecd636-4d74-452c-8691-4e499fb46171","type":"CDSView"}},"id":"988661dd-84f0-4a1a-aec4-08605721c3bb","type":"GlyphRenderer"},{"attributes":{"source":{"id":"67390a24-9d02-4c29-8081-ad996770c3d0","type":"ColumnDataSource"}},"id":"bf03ecb6-af0b-4c3a-98b6-f8c8b75bcc4a","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"6e7fec4a-a33d-4084-b839-adf9236b2e58","type":"Line"},{"attributes":{"formatter":{"id":"28857f10-dfeb-4574-980d-c237b21d8671","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"bb169c9c-31a5-4cc4-b64f-d6eed0bef9b4","subtype":"Figure","type":"Plot"},"ticker":{"id":"1d2fc62e-b994-4aec-9427-09d228d37944","type":"CategoricalTicker"}},"id":"2e6fafca-7a1c-46c4-a299-bfe4256181c4","type":"CategoricalAxis"},{"attributes":{},"id":"28857f10-dfeb-4574-980d-c237b21d8671","type":"CategoricalTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"dc4b4f4d-d643-4571-ab58-5e211d5f351b","type":"CategoricalColorMapper"},{"attributes":{"plot":null,"text":"William Baillie (soldier) (1 - 0 - 3)"},"id":"9479db6a-d40c-4049-bc50-6a62a1a49300","type":"Title"},{"attributes":{},"id":"1d2fc62e-b994-4aec-9427-09d228d37944","type":"CategoricalTicker"}],"root_ids":["bb169c9c-31a5-4cc4-b64f-d6eed0bef9b4"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"31af89a9-bc91-430b-991c-9576989af03f","elementid":"bead3604-2bf0-491e-a4d5-626bf3686d94","modelid":"bb169c9c-31a5-4cc4-b64f-d6eed0bef9b4"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

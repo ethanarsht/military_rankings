@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="1f8a0b13-8ff5-459d-8353-461436929af3"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"7fefb6aa-8fb7-448e-8eb0-8a76a8e1b2aa":{"roots":{"references":[{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Guadalcanal","Battle of Savo Island","Battle of Makin","Battle of New Georgia","Battle of Tarawa","Battle of Guam (1944)","Battle of Kwajalein","Battle of Saipan","Battle of Tinian"],"cumulative":{"__ndarray__":"HAvlOWlI3j+Ar45I8Oazv+zyZAXT29U/Hk1BjY866T8p8bOlqB/zP+CiAf1OP/o/Gp6QWjiJAEDj2Slb2jYEQIvRiSIopwdA","dtype":"float64","shape":[9]},"general":["Richmond K. Turner","Richmond K. Turner","Richmond K. Turner","Richmond K. Turner","Richmond K. Turner","Richmond K. Turner","Richmond K. Turner","Richmond K. Turner","Richmond K. Turner"],"outcome":["V","D","V","V","V","V","V","V","V"],"value":{"__ndarray__":"HAvlOWlI3j9+WwSmEqHhv8yeiBeP1do/UKcdFUyZ3D9oKk18gwnaP97GNl2Zftw/TmV+4IZM2z9G3skEEG3dP0C9/zpugts/","dtype":"float64","shape":[9]},"year":{"__ndarray__":"AAAAAABYnkAAAAAAAFieQAAAAAAAXJ5AAAAAAABcnkAAAAAAAFyeQAAAAAAAYJ5AAAAAAABgnkAAAAAAAGCeQAAAAAAAYJ5A","dtype":"float64","shape":[9]}}},"id":"2374ec15-a6df-4265-ba35-311932b3e589","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"75a5d89f-c0e8-41df-88a3-9b432824c0f6","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"5909357e-c2f6-442f-8723-22d0c4dc2797","subtype":"Figure","type":"Plot"},"ticker":{"id":"fdf0b9b7-85ce-4d43-9f36-2cc0e89e23d8","type":"CategoricalTicker"}},"id":"c5153607-2298-4d10-b973-4b6352090325","type":"CategoricalAxis"},{"attributes":{},"id":"ffbe3387-d8a7-4235-8cc4-b260b503900b","type":"CategoricalScale"},{"attributes":{},"id":"6b8b4cbe-c59c-474d-a3fb-bb871aec5b36","type":"BasicTicker"},{"attributes":{},"id":"fdf0b9b7-85ce-4d43-9f36-2cc0e89e23d8","type":"CategoricalTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"722f42d0-8099-447e-b216-20014435384d","type":"Line"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"d336ebac-df65-4bb3-a918-9f82f6b4dab5","type":"HoverTool"},{"attributes":{"callback":null,"factors":["Battle of Guadalcanal","Battle of Savo Island","Battle of Makin","Battle of New Georgia","Battle of Tarawa","Battle of Guam (1944)","Battle of Kwajalein","Battle of Saipan","Battle of Tinian"]},"id":"4eb62a89-c51c-4173-ab1d-2ffc21b22294","type":"FactorRange"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"24d71ad9-1f6d-4f09-b30d-04f9bf5643f9","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"5909357e-c2f6-442f-8723-22d0c4dc2797","subtype":"Figure","type":"Plot"},"ticker":{"id":"6b8b4cbe-c59c-474d-a3fb-bb871aec5b36","type":"BasicTicker"}},"id":"a6478806-a1aa-4985-9682-e0e293d90238","type":"Grid"},{"attributes":{"source":{"id":"2374ec15-a6df-4265-ba35-311932b3e589","type":"ColumnDataSource"}},"id":"977c191c-5673-4b0b-b973-663d8ae99e92","type":"CDSView"},{"attributes":{"source":{"id":"2374ec15-a6df-4265-ba35-311932b3e589","type":"ColumnDataSource"}},"id":"52d7003a-d817-44d1-8098-3ce20560cdc9","type":"CDSView"},{"attributes":{"plot":{"id":"5909357e-c2f6-442f-8723-22d0c4dc2797","subtype":"Figure","type":"Plot"},"ticker":{"id":"fdf0b9b7-85ce-4d43-9f36-2cc0e89e23d8","type":"CategoricalTicker"}},"id":"973d1866-e767-4c07-8c4c-3bd5891f9bd1","type":"Grid"},{"attributes":{"data_source":{"id":"2374ec15-a6df-4265-ba35-311932b3e589","type":"ColumnDataSource"},"glyph":{"id":"345620d9-1332-45da-a6bf-013ac9292ba7","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"434712cc-71f4-4ba8-a3c3-5b4e59288eca","type":"VBar"},"selection_glyph":null,"view":{"id":"977c191c-5673-4b0b-b973-663d8ae99e92","type":"CDSView"}},"id":"a5af6d7e-3cd9-4c4c-8167-d054927b469e","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d336ebac-df65-4bb3-a918-9f82f6b4dab5","type":"HoverTool"}]},"id":"6a981aa9-7f37-48de-9aaf-8ec7aa5bc058","type":"Toolbar"},{"attributes":{"formatter":{"id":"aff2cd57-c47d-48d8-a281-d1aa7a6bf01a","type":"BasicTickFormatter"},"plot":{"id":"5909357e-c2f6-442f-8723-22d0c4dc2797","subtype":"Figure","type":"Plot"},"ticker":{"id":"6b8b4cbe-c59c-474d-a3fb-bb871aec5b36","type":"BasicTicker"}},"id":"85adada0-72c4-4985-8d9c-5bd4c17cd279","type":"LinearAxis"},{"attributes":{"callback":null},"id":"b6d7ea7c-ee8c-46ab-ac38-c5583441d3d2","type":"DataRange1d"},{"attributes":{},"id":"aff2cd57-c47d-48d8-a281-d1aa7a6bf01a","type":"BasicTickFormatter"},{"attributes":{},"id":"a7780d4c-34d4-4f05-82e3-71cd7e36e9fd","type":"LinearScale"},{"attributes":{"plot":null,"text":"Richmond K. Turner (8 - 0 - 1)"},"id":"a4b8d7c4-4cda-4eb8-8ffa-afae8027ea05","type":"Title"},{"attributes":{},"id":"75a5d89f-c0e8-41df-88a3-9b432824c0f6","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"c5153607-2298-4d10-b973-4b6352090325","type":"CategoricalAxis"}],"left":[{"id":"85adada0-72c4-4985-8d9c-5bd4c17cd279","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"c5153607-2298-4d10-b973-4b6352090325","type":"CategoricalAxis"},{"id":"973d1866-e767-4c07-8c4c-3bd5891f9bd1","type":"Grid"},{"id":"85adada0-72c4-4985-8d9c-5bd4c17cd279","type":"LinearAxis"},{"id":"a6478806-a1aa-4985-9682-e0e293d90238","type":"Grid"},{"id":"2b0e8eb5-72ea-4b7f-9d12-ad8d3ad67655","type":"GlyphRenderer"},{"id":"a5af6d7e-3cd9-4c4c-8167-d054927b469e","type":"GlyphRenderer"}],"title":{"id":"a4b8d7c4-4cda-4eb8-8ffa-afae8027ea05","type":"Title"},"toolbar":{"id":"6a981aa9-7f37-48de-9aaf-8ec7aa5bc058","type":"Toolbar"},"x_range":{"id":"4eb62a89-c51c-4173-ab1d-2ffc21b22294","type":"FactorRange"},"x_scale":{"id":"ffbe3387-d8a7-4235-8cc4-b260b503900b","type":"CategoricalScale"},"y_range":{"id":"b6d7ea7c-ee8c-46ab-ac38-c5583441d3d2","type":"DataRange1d"},"y_scale":{"id":"a7780d4c-34d4-4f05-82e3-71cd7e36e9fd","type":"LinearScale"}},"id":"5909357e-c2f6-442f-8723-22d0c4dc2797","subtype":"Figure","type":"Plot"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"3859ac12-3379-4a30-b90d-e36ef6a6b5d6","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"434712cc-71f4-4ba8-a3c3-5b4e59288eca","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"3859ac12-3379-4a30-b90d-e36ef6a6b5d6","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"3859ac12-3379-4a30-b90d-e36ef6a6b5d6","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"345620d9-1332-45da-a6bf-013ac9292ba7","type":"VBar"},{"attributes":{"data_source":{"id":"2374ec15-a6df-4265-ba35-311932b3e589","type":"ColumnDataSource"},"glyph":{"id":"722f42d0-8099-447e-b216-20014435384d","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"24d71ad9-1f6d-4f09-b30d-04f9bf5643f9","type":"Line"},"selection_glyph":null,"view":{"id":"52d7003a-d817-44d1-8098-3ce20560cdc9","type":"CDSView"}},"id":"2b0e8eb5-72ea-4b7f-9d12-ad8d3ad67655","type":"GlyphRenderer"}],"root_ids":["5909357e-c2f6-442f-8723-22d0c4dc2797"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"7fefb6aa-8fb7-448e-8eb0-8a76a8e1b2aa","elementid":"1f8a0b13-8ff5-459d-8353-461436929af3","modelid":"5909357e-c2f6-442f-8723-22d0c4dc2797"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

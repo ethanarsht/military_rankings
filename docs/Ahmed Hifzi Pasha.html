@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="3c5a650e-c4ab-49de-9566-51070358fe09"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"dd676e6d-6e38-4253-a4f5-a811f4d6b33b":{"roots":{"references":[{"attributes":{"formatter":{"id":"e09985ec-6b6f-4cf5-8866-31e21332f821","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"ff4c6903-6d71-443a-9360-96bf149595ab","subtype":"Figure","type":"Plot"},"ticker":{"id":"2a6f91a9-53d8-449c-b8d3-e1e1301a7af2","type":"CategoricalTicker"}},"id":"071229c5-fa60-486a-987b-352f5fdd89d1","type":"CategoricalAxis"},{"attributes":{},"id":"9c980f90-5267-4e09-ae58-ad187bf60219","type":"BasicTicker"},{"attributes":{"source":{"id":"700afd3f-6891-4e3a-a3d7-e6232a7baa0d","type":"ColumnDataSource"}},"id":"82c0596a-9a0e-46e3-9cd9-88403c233505","type":"CDSView"},{"attributes":{"source":{"id":"700afd3f-6891-4e3a-a3d7-e6232a7baa0d","type":"ColumnDataSource"}},"id":"541aa59a-5a07-43c6-aca5-574a7451f50b","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"cdcc6cbd-8004-4bd5-b6f8-d6441f593fd9","type":"HoverTool"},{"attributes":{},"id":"503d8bd2-18f6-421b-a017-404231b0e886","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"9389aa68-3e39-4bc4-bf20-48a1819dd2b0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"9389aa68-3e39-4bc4-bf20-48a1819dd2b0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"8dac784c-7f42-4578-8484-99b36e2d39ea","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"97288010-82a3-47c6-a57b-4cb8a3e9b8fd","type":"VBar"},{"attributes":{},"id":"e09985ec-6b6f-4cf5-8866-31e21332f821","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Gorni-Dubnik","Greco-Turkish War (1897)"]},"id":"36750bd7-cbbc-4ac7-b90e-422e729e4134","type":"FactorRange"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2bbc1a72-920b-459f-81de-e5acc1b18545","type":"Line"},{"attributes":{"data_source":{"id":"700afd3f-6891-4e3a-a3d7-e6232a7baa0d","type":"ColumnDataSource"},"glyph":{"id":"8dac784c-7f42-4578-8484-99b36e2d39ea","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"97288010-82a3-47c6-a57b-4cb8a3e9b8fd","type":"VBar"},"selection_glyph":null,"view":{"id":"541aa59a-5a07-43c6-aca5-574a7451f50b","type":"CDSView"}},"id":"78e9ed58-2b19-4789-8c10-9abf3db10de8","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"ff4c6903-6d71-443a-9360-96bf149595ab","subtype":"Figure","type":"Plot"},"ticker":{"id":"9c980f90-5267-4e09-ae58-ad187bf60219","type":"BasicTicker"}},"id":"fc8ecb0c-e4b8-46e4-8d22-1a5ecb269548","type":"Grid"},{"attributes":{},"id":"7ce543bd-afc1-4ffc-97ec-b92608b5f3ba","type":"BasicTickFormatter"},{"attributes":{"plot":{"id":"ff4c6903-6d71-443a-9360-96bf149595ab","subtype":"Figure","type":"Plot"},"ticker":{"id":"2a6f91a9-53d8-449c-b8d3-e1e1301a7af2","type":"CategoricalTicker"}},"id":"3761d2ce-9ab9-4c17-82cf-7bbd1685d135","type":"Grid"},{"attributes":{"plot":null,"text":"Ahmed Hifzi Pasha (1 - 0 - 1)"},"id":"65de0cae-de6d-4879-becc-d6453863c4b3","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"9389aa68-3e39-4bc4-bf20-48a1819dd2b0","type":"CategoricalColorMapper"},{"attributes":{},"id":"2a6f91a9-53d8-449c-b8d3-e1e1301a7af2","type":"CategoricalTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Gorni-Dubnik","Greco-Turkish War (1897)"],"cumulative":{"__ndarray__":"kFh8Rsbx27/gPn2XZvebPw==","dtype":"float64","shape":[2]},"general":["Ahmed Hifzi Pasha","Ahmed Hifzi Pasha"],"outcome":["D","V"],"value":{"__ndarray__":"kFh8Rsbx279+LPSvPLHdPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABUnUAAAAAAAKSdQA==","dtype":"float64","shape":[2]}}},"id":"700afd3f-6891-4e3a-a3d7-e6232a7baa0d","type":"ColumnDataSource"},{"attributes":{},"id":"4fa7a9ee-25f9-4026-9710-110965003559","type":"CategoricalScale"},{"attributes":{"callback":null},"id":"7f9306d2-73a2-4a41-80cd-1f153e5765a5","type":"DataRange1d"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d6d38c5c-a94e-4b56-8475-8c56a41afd11","type":"Line"},{"attributes":{"formatter":{"id":"7ce543bd-afc1-4ffc-97ec-b92608b5f3ba","type":"BasicTickFormatter"},"plot":{"id":"ff4c6903-6d71-443a-9360-96bf149595ab","subtype":"Figure","type":"Plot"},"ticker":{"id":"9c980f90-5267-4e09-ae58-ad187bf60219","type":"BasicTicker"}},"id":"07043467-6c4e-468c-bbe5-1ef6dc04b9c8","type":"LinearAxis"},{"attributes":{"below":[{"id":"071229c5-fa60-486a-987b-352f5fdd89d1","type":"CategoricalAxis"}],"left":[{"id":"07043467-6c4e-468c-bbe5-1ef6dc04b9c8","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"071229c5-fa60-486a-987b-352f5fdd89d1","type":"CategoricalAxis"},{"id":"3761d2ce-9ab9-4c17-82cf-7bbd1685d135","type":"Grid"},{"id":"07043467-6c4e-468c-bbe5-1ef6dc04b9c8","type":"LinearAxis"},{"id":"fc8ecb0c-e4b8-46e4-8d22-1a5ecb269548","type":"Grid"},{"id":"f3ef3845-f950-48cf-acee-c7c92b2a5bea","type":"GlyphRenderer"},{"id":"78e9ed58-2b19-4789-8c10-9abf3db10de8","type":"GlyphRenderer"}],"title":{"id":"65de0cae-de6d-4879-becc-d6453863c4b3","type":"Title"},"toolbar":{"id":"1ea72fa3-0f27-4e28-afea-1c8f32ba9960","type":"Toolbar"},"x_range":{"id":"36750bd7-cbbc-4ac7-b90e-422e729e4134","type":"FactorRange"},"x_scale":{"id":"4fa7a9ee-25f9-4026-9710-110965003559","type":"CategoricalScale"},"y_range":{"id":"7f9306d2-73a2-4a41-80cd-1f153e5765a5","type":"DataRange1d"},"y_scale":{"id":"503d8bd2-18f6-421b-a017-404231b0e886","type":"LinearScale"}},"id":"ff4c6903-6d71-443a-9360-96bf149595ab","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"cdcc6cbd-8004-4bd5-b6f8-d6441f593fd9","type":"HoverTool"}]},"id":"1ea72fa3-0f27-4e28-afea-1c8f32ba9960","type":"Toolbar"},{"attributes":{"data_source":{"id":"700afd3f-6891-4e3a-a3d7-e6232a7baa0d","type":"ColumnDataSource"},"glyph":{"id":"2bbc1a72-920b-459f-81de-e5acc1b18545","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d6d38c5c-a94e-4b56-8475-8c56a41afd11","type":"Line"},"selection_glyph":null,"view":{"id":"82c0596a-9a0e-46e3-9cd9-88403c233505","type":"CDSView"}},"id":"f3ef3845-f950-48cf-acee-c7c92b2a5bea","type":"GlyphRenderer"}],"root_ids":["ff4c6903-6d71-443a-9360-96bf149595ab"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"dd676e6d-6e38-4253-a4f5-a811f4d6b33b","elementid":"3c5a650e-c4ab-49de-9566-51070358fe09","modelid":"ff4c6903-6d71-443a-9360-96bf149595ab"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

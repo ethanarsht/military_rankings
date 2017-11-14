@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="678941a4-4906-4feb-945c-085ca02a3972"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"67f0a8ac-fe98-4aab-a62a-adaae59d6163":{"roots":{"references":[{"attributes":{},"id":"7a638d20-2d6f-429b-9b14-cd704ddd3d08","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"366db790-eb09-4fe2-8061-73161c43451f","type":"ColumnDataSource"},"glyph":{"id":"860e3bf8-75e1-4d06-b0f5-32254f08aebf","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"daedcf89-caa8-4193-a920-bbf472767084","type":"Line"},"selection_glyph":null,"view":{"id":"4982076b-2e24-45ce-a46e-40063951c583","type":"CDSView"}},"id":"0e3cc798-619c-4a72-870b-b6fb556b115d","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Seven Oaks"],"cumulative":{"__ndarray__":"Gl2b4/J93b8=","dtype":"float64","shape":[1]},"general":["Robert Semple (Canada)"],"outcome":["D"],"value":{"__ndarray__":"Gl2b4/J93b8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABgnEA=","dtype":"float64","shape":[1]}}},"id":"366db790-eb09-4fe2-8061-73161c43451f","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"daedcf89-caa8-4193-a920-bbf472767084","type":"Line"},{"attributes":{"below":[{"id":"3ff7efc9-5100-496f-81a4-3e6228209d08","type":"CategoricalAxis"}],"left":[{"id":"aaaefe39-739b-42af-a970-7836f4e27a05","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"3ff7efc9-5100-496f-81a4-3e6228209d08","type":"CategoricalAxis"},{"id":"ae0e9ea7-4237-4e73-ad6e-6680c057262c","type":"Grid"},{"id":"aaaefe39-739b-42af-a970-7836f4e27a05","type":"LinearAxis"},{"id":"d0985bda-3046-4398-8cc2-5e85389c0fbf","type":"Grid"},{"id":"0e3cc798-619c-4a72-870b-b6fb556b115d","type":"GlyphRenderer"},{"id":"bfdc1101-6b97-4607-9710-5ace1e987634","type":"GlyphRenderer"}],"title":{"id":"3865ab3e-357b-4918-8d32-2e6cc22cbdfe","type":"Title"},"toolbar":{"id":"0e93ce4c-5d5e-40f8-bfb9-a4cf2a0ae8f6","type":"Toolbar"},"x_range":{"id":"68dd3ce2-8806-4be3-948f-46dc7443cf68","type":"FactorRange"},"x_scale":{"id":"3e7490b3-1ccf-4239-b54b-bd9a2ea6c2f5","type":"CategoricalScale"},"y_range":{"id":"df159293-0e3b-483e-a972-695af9962582","type":"DataRange1d"},"y_scale":{"id":"6902c8b7-ddaa-4de6-8e75-6b1aa5719205","type":"LinearScale"}},"id":"c0afe9a3-bb17-4e58-a41a-2e46052b45bd","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"757f3e90-644f-44de-91f4-a5f773483e08","type":"CategoricalTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"878848c4-1266-4a6a-9199-1cff7ba60d81","type":"HoverTool"},{"attributes":{"callback":null},"id":"df159293-0e3b-483e-a972-695af9962582","type":"DataRange1d"},{"attributes":{"data_source":{"id":"366db790-eb09-4fe2-8061-73161c43451f","type":"ColumnDataSource"},"glyph":{"id":"f95e794d-d716-42e2-92af-e74b3b2b8a69","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0cf15403-0296-4baf-99dd-f6e03bb3d47f","type":"VBar"},"selection_glyph":null,"view":{"id":"7a5736b8-76bb-4f8d-9e00-1ade860d540b","type":"CDSView"}},"id":"bfdc1101-6b97-4607-9710-5ace1e987634","type":"GlyphRenderer"},{"attributes":{},"id":"488315b1-fb6f-46dc-b95f-67448e209483","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"c0afe9a3-bb17-4e58-a41a-2e46052b45bd","subtype":"Figure","type":"Plot"},"ticker":{"id":"488315b1-fb6f-46dc-b95f-67448e209483","type":"BasicTicker"}},"id":"d0985bda-3046-4398-8cc2-5e85389c0fbf","type":"Grid"},{"attributes":{},"id":"6a87c5fa-4a80-4404-82ab-dfb0677638d1","type":"CategoricalTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"7df63a5a-8cd8-43dc-bf67-2cdc931e9936","type":"CategoricalColorMapper"},{"attributes":{"plot":{"id":"c0afe9a3-bb17-4e58-a41a-2e46052b45bd","subtype":"Figure","type":"Plot"},"ticker":{"id":"757f3e90-644f-44de-91f4-a5f773483e08","type":"CategoricalTicker"}},"id":"ae0e9ea7-4237-4e73-ad6e-6680c057262c","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"0cf15403-0296-4baf-99dd-f6e03bb3d47f","type":"VBar"},{"attributes":{"formatter":{"id":"6a87c5fa-4a80-4404-82ab-dfb0677638d1","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"c0afe9a3-bb17-4e58-a41a-2e46052b45bd","subtype":"Figure","type":"Plot"},"ticker":{"id":"757f3e90-644f-44de-91f4-a5f773483e08","type":"CategoricalTicker"}},"id":"3ff7efc9-5100-496f-81a4-3e6228209d08","type":"CategoricalAxis"},{"attributes":{},"id":"6902c8b7-ddaa-4de6-8e75-6b1aa5719205","type":"LinearScale"},{"attributes":{"formatter":{"id":"7a638d20-2d6f-429b-9b14-cd704ddd3d08","type":"BasicTickFormatter"},"plot":{"id":"c0afe9a3-bb17-4e58-a41a-2e46052b45bd","subtype":"Figure","type":"Plot"},"ticker":{"id":"488315b1-fb6f-46dc-b95f-67448e209483","type":"BasicTicker"}},"id":"aaaefe39-739b-42af-a970-7836f4e27a05","type":"LinearAxis"},{"attributes":{"source":{"id":"366db790-eb09-4fe2-8061-73161c43451f","type":"ColumnDataSource"}},"id":"4982076b-2e24-45ce-a46e-40063951c583","type":"CDSView"},{"attributes":{"source":{"id":"366db790-eb09-4fe2-8061-73161c43451f","type":"ColumnDataSource"}},"id":"7a5736b8-76bb-4f8d-9e00-1ade860d540b","type":"CDSView"},{"attributes":{},"id":"3e7490b3-1ccf-4239-b54b-bd9a2ea6c2f5","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"Robert Semple (Canada) (0 - 0 - 1)"},"id":"3865ab3e-357b-4918-8d32-2e6cc22cbdfe","type":"Title"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"878848c4-1266-4a6a-9199-1cff7ba60d81","type":"HoverTool"}]},"id":"0e93ce4c-5d5e-40f8-bfb9-a4cf2a0ae8f6","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Battle of Seven Oaks"]},"id":"68dd3ce2-8806-4be3-948f-46dc7443cf68","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"7df63a5a-8cd8-43dc-bf67-2cdc931e9936","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"7df63a5a-8cd8-43dc-bf67-2cdc931e9936","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f95e794d-d716-42e2-92af-e74b3b2b8a69","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"860e3bf8-75e1-4d06-b0f5-32254f08aebf","type":"Line"}],"root_ids":["c0afe9a3-bb17-4e58-a41a-2e46052b45bd"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"67f0a8ac-fe98-4aab-a62a-adaae59d6163","elementid":"678941a4-4906-4feb-945c-085ca02a3972","modelid":"c0afe9a3-bb17-4e58-a41a-2e46052b45bd"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

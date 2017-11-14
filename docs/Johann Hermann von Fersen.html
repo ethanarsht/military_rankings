@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="779dae2b-f11f-4b33-bce8-f6504c6ba808"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"3b37d356-af93-475d-ad73-68b01489bf85":{"roots":{"references":[{"attributes":{"below":[{"id":"9780a2ec-b373-4f8d-83c2-da30587eb8b3","type":"CategoricalAxis"}],"left":[{"id":"1496f1ae-62fe-48de-a506-78a65b4cce01","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"9780a2ec-b373-4f8d-83c2-da30587eb8b3","type":"CategoricalAxis"},{"id":"cb852776-c095-4747-b598-4ebbc4a85b18","type":"Grid"},{"id":"1496f1ae-62fe-48de-a506-78a65b4cce01","type":"LinearAxis"},{"id":"db14fddc-6bc3-45d3-b542-a87ca89168e6","type":"Grid"},{"id":"2b283bb2-6b59-4afe-96c6-e64ed30aa7de","type":"GlyphRenderer"},{"id":"f0e61a7e-210f-41ba-a48c-32dc9ccb0536","type":"GlyphRenderer"}],"title":{"id":"0a4c1a33-601c-4abd-9988-e4c03ebc96da","type":"Title"},"toolbar":{"id":"bf05405e-88c0-4162-827f-1ad3900a218c","type":"Toolbar"},"x_range":{"id":"cc03b372-b676-48aa-a12c-957e170a9065","type":"FactorRange"},"x_scale":{"id":"00776aba-d962-480c-8479-0bfc6b96b07d","type":"CategoricalScale"},"y_range":{"id":"75fccbbb-420d-49d6-a5fb-2a1b177fd450","type":"DataRange1d"},"y_scale":{"id":"7b5786d1-0ca2-4d4b-a1ff-adcf99892631","type":"LinearScale"}},"id":"a942532e-885e-4594-adca-af08137b759e","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"00e2842d-4161-4509-82e4-a094c1c9c258","type":"ColumnDataSource"},"glyph":{"id":"c1f808ff-62d4-451e-aae1-b9ef2a377fcd","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1dac88c0-2e6f-463d-b2fc-665ac382687a","type":"VBar"},"selection_glyph":null,"view":{"id":"3fb3bbca-2081-467c-bd46-1353516bb319","type":"CDSView"}},"id":"f0e61a7e-210f-41ba-a48c-32dc9ccb0536","type":"GlyphRenderer"},{"attributes":{},"id":"56858b70-8c95-4bb4-a596-a575ce5266df","type":"BasicTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Bergen (1799)"],"cumulative":{"__ndarray__":"poPxRS7l3j8=","dtype":"float64","shape":[1]},"general":["Johann Hermann von Fersen"],"outcome":["V"],"value":{"__ndarray__":"poPxRS7l3j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAcnEA=","dtype":"float64","shape":[1]}}},"id":"00e2842d-4161-4509-82e4-a094c1c9c258","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"7d91a62f-4a7e-43dd-bda5-080414bf3bd5","type":"HoverTool"}]},"id":"bf05405e-88c0-4162-827f-1ad3900a218c","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"1dac88c0-2e6f-463d-b2fc-665ac382687a","type":"VBar"},{"attributes":{},"id":"7b5786d1-0ca2-4d4b-a1ff-adcf99892631","type":"LinearScale"},{"attributes":{"source":{"id":"00e2842d-4161-4509-82e4-a094c1c9c258","type":"ColumnDataSource"}},"id":"b01e6a48-4a08-4f0d-89db-959f8b6d030e","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Bergen (1799)"]},"id":"cc03b372-b676-48aa-a12c-957e170a9065","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"3c1f2e80-2da0-4804-bd99-407c6cfa35d4","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"3c1f2e80-2da0-4804-bd99-407c6cfa35d4","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c1f808ff-62d4-451e-aae1-b9ef2a377fcd","type":"VBar"},{"attributes":{"plot":null,"text":"Johann Hermann von Fersen (1 - 0 - 0)"},"id":"0a4c1a33-601c-4abd-9988-e4c03ebc96da","type":"Title"},{"attributes":{},"id":"00776aba-d962-480c-8479-0bfc6b96b07d","type":"CategoricalScale"},{"attributes":{"plot":{"id":"a942532e-885e-4594-adca-af08137b759e","subtype":"Figure","type":"Plot"},"ticker":{"id":"1e29b85a-b722-4c5d-b92d-6ea43309b881","type":"CategoricalTicker"}},"id":"cb852776-c095-4747-b598-4ebbc4a85b18","type":"Grid"},{"attributes":{"formatter":{"id":"35ae1032-bd6c-4bcc-83fe-78fd0feee3c3","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"a942532e-885e-4594-adca-af08137b759e","subtype":"Figure","type":"Plot"},"ticker":{"id":"1e29b85a-b722-4c5d-b92d-6ea43309b881","type":"CategoricalTicker"}},"id":"9780a2ec-b373-4f8d-83c2-da30587eb8b3","type":"CategoricalAxis"},{"attributes":{"dimension":1,"plot":{"id":"a942532e-885e-4594-adca-af08137b759e","subtype":"Figure","type":"Plot"},"ticker":{"id":"56858b70-8c95-4bb4-a596-a575ce5266df","type":"BasicTicker"}},"id":"db14fddc-6bc3-45d3-b542-a87ca89168e6","type":"Grid"},{"attributes":{"source":{"id":"00e2842d-4161-4509-82e4-a094c1c9c258","type":"ColumnDataSource"}},"id":"3fb3bbca-2081-467c-bd46-1353516bb319","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"81ba7080-0bbd-480a-90b1-01e2ea4f070e","type":"Line"},{"attributes":{},"id":"1e29b85a-b722-4c5d-b92d-6ea43309b881","type":"CategoricalTicker"},{"attributes":{},"id":"77aa9ff2-2813-471a-bc34-9b88ca984f97","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"77aa9ff2-2813-471a-bc34-9b88ca984f97","type":"BasicTickFormatter"},"plot":{"id":"a942532e-885e-4594-adca-af08137b759e","subtype":"Figure","type":"Plot"},"ticker":{"id":"56858b70-8c95-4bb4-a596-a575ce5266df","type":"BasicTicker"}},"id":"1496f1ae-62fe-48de-a506-78a65b4cce01","type":"LinearAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"3c1f2e80-2da0-4804-bd99-407c6cfa35d4","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"00e2842d-4161-4509-82e4-a094c1c9c258","type":"ColumnDataSource"},"glyph":{"id":"cae4132c-7781-480e-9f9a-dfcdb23b3b56","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"81ba7080-0bbd-480a-90b1-01e2ea4f070e","type":"Line"},"selection_glyph":null,"view":{"id":"b01e6a48-4a08-4f0d-89db-959f8b6d030e","type":"CDSView"}},"id":"2b283bb2-6b59-4afe-96c6-e64ed30aa7de","type":"GlyphRenderer"},{"attributes":{},"id":"35ae1032-bd6c-4bcc-83fe-78fd0feee3c3","type":"CategoricalTickFormatter"},{"attributes":{"callback":null},"id":"75fccbbb-420d-49d6-a5fb-2a1b177fd450","type":"DataRange1d"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"7d91a62f-4a7e-43dd-bda5-080414bf3bd5","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"cae4132c-7781-480e-9f9a-dfcdb23b3b56","type":"Line"}],"root_ids":["a942532e-885e-4594-adca-af08137b759e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"3b37d356-af93-475d-ad73-68b01489bf85","elementid":"779dae2b-f11f-4b33-bce8-f6504c6ba808","modelid":"a942532e-885e-4594-adca-af08137b759e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

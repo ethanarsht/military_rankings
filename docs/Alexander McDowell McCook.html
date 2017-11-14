@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="896b6468-c69b-4dd9-b192-a8657c32cf94"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"a66b3bc3-c074-4035-bbd6-01b5b5fe280f":{"roots":{"references":[{"attributes":{},"id":"9a5ab04c-17bf-49fc-b2b6-1d6892f84ba7","type":"CategoricalTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5c124eee-9f88-4bce-b50d-ab221a6ae00b","type":"Line"},{"attributes":{},"id":"66dd0500-2a15-4dad-8b9d-a60c79daa17f","type":"BasicTicker"},{"attributes":{"formatter":{"id":"eab792c0-c26c-41ac-be2b-b11d8f43df57","type":"BasicTickFormatter"},"plot":{"id":"c0c2a9db-c972-416d-ba45-102869059361","subtype":"Figure","type":"Plot"},"ticker":{"id":"66dd0500-2a15-4dad-8b9d-a60c79daa17f","type":"BasicTicker"}},"id":"2c99f00f-8c8e-454c-ac51-9759993d1e0c","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"238a977d-a307-497d-9a42-806a2f789ab0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"238a977d-a307-497d-9a42-806a2f789ab0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"8f4f0431-e4a2-4441-8815-ec3b9dbb1853","type":"VBar"},{"attributes":{},"id":"018fca5c-0f0e-44bf-a231-d785a44d362f","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"abe054e1-0ae6-4905-998f-c9d3e6a08f98","type":"VBar"},{"attributes":{"source":{"id":"24785a0d-5e00-4a4c-bd52-1e74fc8ceaab","type":"ColumnDataSource"}},"id":"82de1acc-4844-408c-92d1-72ddcfadca90","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"e0ffa360-a7b6-4aa0-9d47-d741fe3908a4","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"238a977d-a307-497d-9a42-806a2f789ab0","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"24785a0d-5e00-4a4c-bd52-1e74fc8ceaab","type":"ColumnDataSource"},"glyph":{"id":"dea22caa-3e9d-41ae-9cf7-a81f6c058d5d","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5c124eee-9f88-4bce-b50d-ab221a6ae00b","type":"Line"},"selection_glyph":null,"view":{"id":"c4f34b31-f5ce-495b-a6fa-e76ef1e1edd2","type":"CDSView"}},"id":"5aa4b28d-0a1a-4d9c-81ae-d63b2a064b92","type":"GlyphRenderer"},{"attributes":{},"id":"57ef7fac-b0d7-487a-ad02-422ccb9ab2cf","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Battle of Fort Stevens"]},"id":"92758d5f-75c9-42ce-9d60-8de91e448170","type":"FactorRange"},{"attributes":{"callback":null},"id":"ff215f66-ed2d-4d98-89b1-8696f46be428","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Alexander McDowell McCook (1 - 0 - 0)"},"id":"88b603c1-d070-4967-9057-06291e6d525a","type":"Title"},{"attributes":{"source":{"id":"24785a0d-5e00-4a4c-bd52-1e74fc8ceaab","type":"ColumnDataSource"}},"id":"c4f34b31-f5ce-495b-a6fa-e76ef1e1edd2","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Fort Stevens"],"cumulative":{"__ndarray__":"jhbtTtIE4D8=","dtype":"float64","shape":[1]},"general":["Alexander McDowell McCook"],"outcome":["V"],"value":{"__ndarray__":"jhbtTtIE4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAgnUA=","dtype":"float64","shape":[1]}}},"id":"24785a0d-5e00-4a4c-bd52-1e74fc8ceaab","type":"ColumnDataSource"},{"attributes":{},"id":"73c50b9d-6d9c-4d15-94a3-f790fd720457","type":"CategoricalTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"dea22caa-3e9d-41ae-9cf7-a81f6c058d5d","type":"Line"},{"attributes":{"data_source":{"id":"24785a0d-5e00-4a4c-bd52-1e74fc8ceaab","type":"ColumnDataSource"},"glyph":{"id":"8f4f0431-e4a2-4441-8815-ec3b9dbb1853","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"abe054e1-0ae6-4905-998f-c9d3e6a08f98","type":"VBar"},"selection_glyph":null,"view":{"id":"82de1acc-4844-408c-92d1-72ddcfadca90","type":"CDSView"}},"id":"74346e95-375e-416c-a9bc-5dbeaad7b4a6","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e0ffa360-a7b6-4aa0-9d47-d741fe3908a4","type":"HoverTool"}]},"id":"fce20071-cac5-44fe-90e7-05ae21bbc44c","type":"Toolbar"},{"attributes":{},"id":"eab792c0-c26c-41ac-be2b-b11d8f43df57","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"73c50b9d-6d9c-4d15-94a3-f790fd720457","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"c0c2a9db-c972-416d-ba45-102869059361","subtype":"Figure","type":"Plot"},"ticker":{"id":"9a5ab04c-17bf-49fc-b2b6-1d6892f84ba7","type":"CategoricalTicker"}},"id":"a643748a-e799-4d4a-bece-6a16d1532936","type":"CategoricalAxis"},{"attributes":{"dimension":1,"plot":{"id":"c0c2a9db-c972-416d-ba45-102869059361","subtype":"Figure","type":"Plot"},"ticker":{"id":"66dd0500-2a15-4dad-8b9d-a60c79daa17f","type":"BasicTicker"}},"id":"0bfafc7f-60b4-41bf-892d-1757ef2b88ac","type":"Grid"},{"attributes":{"plot":{"id":"c0c2a9db-c972-416d-ba45-102869059361","subtype":"Figure","type":"Plot"},"ticker":{"id":"9a5ab04c-17bf-49fc-b2b6-1d6892f84ba7","type":"CategoricalTicker"}},"id":"72e2d05d-e5bb-452d-87e6-593a0ca9fd3d","type":"Grid"},{"attributes":{"below":[{"id":"a643748a-e799-4d4a-bece-6a16d1532936","type":"CategoricalAxis"}],"left":[{"id":"2c99f00f-8c8e-454c-ac51-9759993d1e0c","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"a643748a-e799-4d4a-bece-6a16d1532936","type":"CategoricalAxis"},{"id":"72e2d05d-e5bb-452d-87e6-593a0ca9fd3d","type":"Grid"},{"id":"2c99f00f-8c8e-454c-ac51-9759993d1e0c","type":"LinearAxis"},{"id":"0bfafc7f-60b4-41bf-892d-1757ef2b88ac","type":"Grid"},{"id":"5aa4b28d-0a1a-4d9c-81ae-d63b2a064b92","type":"GlyphRenderer"},{"id":"74346e95-375e-416c-a9bc-5dbeaad7b4a6","type":"GlyphRenderer"}],"title":{"id":"88b603c1-d070-4967-9057-06291e6d525a","type":"Title"},"toolbar":{"id":"fce20071-cac5-44fe-90e7-05ae21bbc44c","type":"Toolbar"},"x_range":{"id":"92758d5f-75c9-42ce-9d60-8de91e448170","type":"FactorRange"},"x_scale":{"id":"57ef7fac-b0d7-487a-ad02-422ccb9ab2cf","type":"CategoricalScale"},"y_range":{"id":"ff215f66-ed2d-4d98-89b1-8696f46be428","type":"DataRange1d"},"y_scale":{"id":"018fca5c-0f0e-44bf-a231-d785a44d362f","type":"LinearScale"}},"id":"c0c2a9db-c972-416d-ba45-102869059361","subtype":"Figure","type":"Plot"}],"root_ids":["c0c2a9db-c972-416d-ba45-102869059361"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"a66b3bc3-c074-4035-bbd6-01b5b5fe280f","elementid":"896b6468-c69b-4dd9-b192-a8657c32cf94","modelid":"c0c2a9db-c972-416d-ba45-102869059361"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

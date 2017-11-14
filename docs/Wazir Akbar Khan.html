@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f161ed1a-6b04-493b-a004-1adfaff6546f"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"c2726fdc-8ef3-4ec7-b967-d962f3d764da":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1d788a1c-9551-4e0c-ae74-9dd929dacd27","type":"Line"},{"attributes":{},"id":"2580b678-c70a-42f8-b0b0-fdd24f3f0fd1","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b7df702d-2f75-4851-b578-bc8fa5903b07","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Kabul (1842)"],"cumulative":{"__ndarray__":"jx04tERI4L8=","dtype":"float64","shape":[1]},"general":["Wazir Akbar Khan"],"outcome":["D"],"value":{"__ndarray__":"jx04tERI4L8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADInEA=","dtype":"float64","shape":[1]}}},"id":"d56fd953-f6ac-4587-8420-addda172cf5e","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"450ef3a8-6651-40c0-98b0-4303981fd179","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"4887477f-d9a0-4023-aeb2-fd16ee310399","subtype":"Figure","type":"Plot"},"ticker":{"id":"2580b678-c70a-42f8-b0b0-fdd24f3f0fd1","type":"CategoricalTicker"}},"id":"ac8a9080-8ade-4124-b850-6a0079006089","type":"CategoricalAxis"},{"attributes":{"dimension":1,"plot":{"id":"4887477f-d9a0-4023-aeb2-fd16ee310399","subtype":"Figure","type":"Plot"},"ticker":{"id":"af089503-0e09-448c-ac4d-5aecc841c225","type":"BasicTicker"}},"id":"93c7a0ba-d743-4c6f-bd39-bba2d0833b85","type":"Grid"},{"attributes":{},"id":"10ed3c06-3938-496f-b536-d7988eb45fc4","type":"LinearScale"},{"attributes":{"below":[{"id":"ac8a9080-8ade-4124-b850-6a0079006089","type":"CategoricalAxis"}],"left":[{"id":"85bfcd26-75db-42b7-96c8-360450cdb2b4","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"ac8a9080-8ade-4124-b850-6a0079006089","type":"CategoricalAxis"},{"id":"cc193d27-765a-43ee-be0c-c21ec0e5c34e","type":"Grid"},{"id":"85bfcd26-75db-42b7-96c8-360450cdb2b4","type":"LinearAxis"},{"id":"93c7a0ba-d743-4c6f-bd39-bba2d0833b85","type":"Grid"},{"id":"22368fde-d7ee-4a8e-b6ca-8bc6d601e713","type":"GlyphRenderer"},{"id":"22ad18eb-3a1e-4362-8d28-97ad15cabe00","type":"GlyphRenderer"}],"title":{"id":"2edca7f2-9af8-4361-8b53-68b71be25c23","type":"Title"},"toolbar":{"id":"f1d9884a-0200-41be-8336-f16c8d5a25a6","type":"Toolbar"},"x_range":{"id":"11ba46e5-04ae-4023-b5d4-aad8cfaf20e6","type":"FactorRange"},"x_scale":{"id":"74890bde-fd14-4ec0-a11d-575b35861bbd","type":"CategoricalScale"},"y_range":{"id":"509bb2f3-dabf-4c93-8729-9be464d72fb6","type":"DataRange1d"},"y_scale":{"id":"10ed3c06-3938-496f-b536-d7988eb45fc4","type":"LinearScale"}},"id":"4887477f-d9a0-4023-aeb2-fd16ee310399","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Kabul (1842)"]},"id":"11ba46e5-04ae-4023-b5d4-aad8cfaf20e6","type":"FactorRange"},{"attributes":{"source":{"id":"d56fd953-f6ac-4587-8420-addda172cf5e","type":"ColumnDataSource"}},"id":"45211ea0-03ac-43fc-9108-8af3c25396bc","type":"CDSView"},{"attributes":{"plot":null,"text":"Wazir Akbar Khan (0 - 0 - 1)"},"id":"2edca7f2-9af8-4361-8b53-68b71be25c23","type":"Title"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"1d220f32-66a7-4551-b097-abd5b33db27f","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"56b012a3-339a-4a45-a019-afe1aaa1d7ef","type":"CategoricalColorMapper"},{"attributes":{},"id":"74890bde-fd14-4ec0-a11d-575b35861bbd","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"d56fd953-f6ac-4587-8420-addda172cf5e","type":"ColumnDataSource"},"glyph":{"id":"7183407c-11b2-44ae-9e71-b4aaa575585a","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b7df702d-2f75-4851-b578-bc8fa5903b07","type":"VBar"},"selection_glyph":null,"view":{"id":"33e1ad93-8c9b-4b13-a234-800546af5a94","type":"CDSView"}},"id":"22ad18eb-3a1e-4362-8d28-97ad15cabe00","type":"GlyphRenderer"},{"attributes":{"source":{"id":"d56fd953-f6ac-4587-8420-addda172cf5e","type":"ColumnDataSource"}},"id":"33e1ad93-8c9b-4b13-a234-800546af5a94","type":"CDSView"},{"attributes":{"data_source":{"id":"d56fd953-f6ac-4587-8420-addda172cf5e","type":"ColumnDataSource"},"glyph":{"id":"1d788a1c-9551-4e0c-ae74-9dd929dacd27","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c4966291-3cc2-4ade-8c90-a10421cc025b","type":"Line"},"selection_glyph":null,"view":{"id":"45211ea0-03ac-43fc-9108-8af3c25396bc","type":"CDSView"}},"id":"22368fde-d7ee-4a8e-b6ca-8bc6d601e713","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"e5429a3d-6d2b-4d9b-af14-360be8dfe59b","type":"BasicTickFormatter"},"plot":{"id":"4887477f-d9a0-4023-aeb2-fd16ee310399","subtype":"Figure","type":"Plot"},"ticker":{"id":"af089503-0e09-448c-ac4d-5aecc841c225","type":"BasicTicker"}},"id":"85bfcd26-75db-42b7-96c8-360450cdb2b4","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"1d220f32-66a7-4551-b097-abd5b33db27f","type":"HoverTool"}]},"id":"f1d9884a-0200-41be-8336-f16c8d5a25a6","type":"Toolbar"},{"attributes":{},"id":"e5429a3d-6d2b-4d9b-af14-360be8dfe59b","type":"BasicTickFormatter"},{"attributes":{},"id":"af089503-0e09-448c-ac4d-5aecc841c225","type":"BasicTicker"},{"attributes":{},"id":"450ef3a8-6651-40c0-98b0-4303981fd179","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"56b012a3-339a-4a45-a019-afe1aaa1d7ef","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"56b012a3-339a-4a45-a019-afe1aaa1d7ef","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7183407c-11b2-44ae-9e71-b4aaa575585a","type":"VBar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"c4966291-3cc2-4ade-8c90-a10421cc025b","type":"Line"},{"attributes":{"plot":{"id":"4887477f-d9a0-4023-aeb2-fd16ee310399","subtype":"Figure","type":"Plot"},"ticker":{"id":"2580b678-c70a-42f8-b0b0-fdd24f3f0fd1","type":"CategoricalTicker"}},"id":"cc193d27-765a-43ee-be0c-c21ec0e5c34e","type":"Grid"},{"attributes":{"callback":null},"id":"509bb2f3-dabf-4c93-8729-9be464d72fb6","type":"DataRange1d"}],"root_ids":["4887477f-d9a0-4023-aeb2-fd16ee310399"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"c2726fdc-8ef3-4ec7-b967-d962f3d764da","elementid":"f161ed1a-6b04-493b-a004-1adfaff6546f","modelid":"4887477f-d9a0-4023-aeb2-fd16ee310399"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

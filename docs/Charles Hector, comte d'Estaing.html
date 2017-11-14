@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="9fffc7c4-ffbf-4dab-8f72-414620ddcc84"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"a192419a-cb9d-4666-ad78-7f2b3a6a5b69":{"roots":{"references":[{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"9d6316a6-a1c3-4d85-9eb2-996a74b54ce4","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"9d6316a6-a1c3-4d85-9eb2-996a74b54ce4","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ba71a38e-0af7-42e2-a825-cc4f422ca3a2","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"668d3393-f606-44d2-9c75-869a1c2be134","type":"VBar"},{"attributes":{"formatter":{"id":"a4cc7be1-6d3a-4e16-af98-449c0432de57","type":"BasicTickFormatter"},"plot":{"id":"5f717444-4573-4ecf-a3d4-dca3080d0704","subtype":"Figure","type":"Plot"},"ticker":{"id":"9b4ad85b-9e8b-41f1-8421-90ddc8652341","type":"BasicTicker"}},"id":"6eb8ab7b-8d9d-4457-8509-2a79e19965e8","type":"LinearAxis"},{"attributes":{"plot":{"id":"5f717444-4573-4ecf-a3d4-dca3080d0704","subtype":"Figure","type":"Plot"},"ticker":{"id":"6f572a2f-4309-4e68-a063-d3ef3146e8fc","type":"CategoricalTicker"}},"id":"5e15e8e6-c093-4596-acec-03a25edddcad","type":"Grid"},{"attributes":{"callback":null},"id":"8a928134-1910-45e7-a956-fc80b0c01959","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"5f717444-4573-4ecf-a3d4-dca3080d0704","subtype":"Figure","type":"Plot"},"ticker":{"id":"9b4ad85b-9e8b-41f1-8421-90ddc8652341","type":"BasicTicker"}},"id":"8b6721a9-e74a-41d9-81e2-0960bc9f6ed2","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"9d627161-b445-4daa-8757-8482190042b4","type":"HoverTool"},{"attributes":{},"id":"9b4ad85b-9e8b-41f1-8421-90ddc8652341","type":"BasicTicker"},{"attributes":{"source":{"id":"ae2170c8-db6a-4275-a48c-bcc05c144ca6","type":"ColumnDataSource"}},"id":"b2f2c243-af9d-4496-8d4c-14f6e73fb864","type":"CDSView"},{"attributes":{},"id":"6ae26121-d16d-46ec-ac2e-8017f4e6b2a5","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"ae2170c8-db6a-4275-a48c-bcc05c144ca6","type":"ColumnDataSource"},"glyph":{"id":"32ba772f-3b08-4f30-8d9c-8f6b996d70c4","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"14533a23-e3bd-4ea6-b9d3-0ab5ef366485","type":"Line"},"selection_glyph":null,"view":{"id":"b2f2c243-af9d-4496-8d4c-14f6e73fb864","type":"CDSView"}},"id":"9730ec7a-e471-45f1-bf6c-9673d43e9071","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"6ae26121-d16d-46ec-ac2e-8017f4e6b2a5","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"5f717444-4573-4ecf-a3d4-dca3080d0704","subtype":"Figure","type":"Plot"},"ticker":{"id":"6f572a2f-4309-4e68-a063-d3ef3146e8fc","type":"CategoricalTicker"}},"id":"75fc9cd6-bb24-4d68-bd94-09ec0915d0c5","type":"CategoricalAxis"},{"attributes":{"plot":null,"text":"Charles Hector, comte d'Estaing (1 - 0 - 2)"},"id":"3b5f1e42-e173-4bb8-bb94-2a05d4ae0657","type":"Title"},{"attributes":{},"id":"6f572a2f-4309-4e68-a063-d3ef3146e8fc","type":"CategoricalTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of St. Lucia","Battle of Grenada","Siege of Savannah"],"cumulative":{"__ndarray__":"YuRxwpJA4b9Aihf+6i6rv35O38VnhuW/","dtype":"float64","shape":[3]},"general":["Charles Hector, comte d'Estaing","Charles Hector, comte d'Estaing","Charles Hector, comte d'Estaing"],"outcome":["D","V","D"],"value":{"__ndarray__":"YuRxwpJA4b981yAlSBvfP9rV/RV50+O/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAADIm0AAAAAAAMybQAAAAAAAzJtA","dtype":"float64","shape":[3]}}},"id":"ae2170c8-db6a-4275-a48c-bcc05c144ca6","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"9d6316a6-a1c3-4d85-9eb2-996a74b54ce4","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"ae2170c8-db6a-4275-a48c-bcc05c144ca6","type":"ColumnDataSource"}},"id":"0c020b56-ca87-40a1-8c80-b9a5fcb5bd6d","type":"CDSView"},{"attributes":{},"id":"a4cc7be1-6d3a-4e16-af98-449c0432de57","type":"BasicTickFormatter"},{"attributes":{"below":[{"id":"75fc9cd6-bb24-4d68-bd94-09ec0915d0c5","type":"CategoricalAxis"}],"left":[{"id":"6eb8ab7b-8d9d-4457-8509-2a79e19965e8","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"75fc9cd6-bb24-4d68-bd94-09ec0915d0c5","type":"CategoricalAxis"},{"id":"5e15e8e6-c093-4596-acec-03a25edddcad","type":"Grid"},{"id":"6eb8ab7b-8d9d-4457-8509-2a79e19965e8","type":"LinearAxis"},{"id":"8b6721a9-e74a-41d9-81e2-0960bc9f6ed2","type":"Grid"},{"id":"9730ec7a-e471-45f1-bf6c-9673d43e9071","type":"GlyphRenderer"},{"id":"d9bc2b47-201f-45f7-80ac-19b3bb0d6352","type":"GlyphRenderer"}],"title":{"id":"3b5f1e42-e173-4bb8-bb94-2a05d4ae0657","type":"Title"},"toolbar":{"id":"7d9754ee-c543-4c63-b7fe-d00c85220a3e","type":"Toolbar"},"x_range":{"id":"30b4423f-eb1c-4df3-b76b-885b7f642910","type":"FactorRange"},"x_scale":{"id":"9b26e309-3f9e-4868-94f6-27fea2ea660e","type":"CategoricalScale"},"y_range":{"id":"8a928134-1910-45e7-a956-fc80b0c01959","type":"DataRange1d"},"y_scale":{"id":"8e78c946-7186-4fb2-bc9e-f4d9d823439f","type":"LinearScale"}},"id":"5f717444-4573-4ecf-a3d4-dca3080d0704","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"14533a23-e3bd-4ea6-b9d3-0ab5ef366485","type":"Line"},{"attributes":{"data_source":{"id":"ae2170c8-db6a-4275-a48c-bcc05c144ca6","type":"ColumnDataSource"},"glyph":{"id":"ba71a38e-0af7-42e2-a825-cc4f422ca3a2","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"668d3393-f606-44d2-9c75-869a1c2be134","type":"VBar"},"selection_glyph":null,"view":{"id":"0c020b56-ca87-40a1-8c80-b9a5fcb5bd6d","type":"CDSView"}},"id":"d9bc2b47-201f-45f7-80ac-19b3bb0d6352","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of St. Lucia","Battle of Grenada","Siege of Savannah"]},"id":"30b4423f-eb1c-4df3-b76b-885b7f642910","type":"FactorRange"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"9d627161-b445-4daa-8757-8482190042b4","type":"HoverTool"}]},"id":"7d9754ee-c543-4c63-b7fe-d00c85220a3e","type":"Toolbar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"32ba772f-3b08-4f30-8d9c-8f6b996d70c4","type":"Line"},{"attributes":{},"id":"9b26e309-3f9e-4868-94f6-27fea2ea660e","type":"CategoricalScale"},{"attributes":{},"id":"8e78c946-7186-4fb2-bc9e-f4d9d823439f","type":"LinearScale"}],"root_ids":["5f717444-4573-4ecf-a3d4-dca3080d0704"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"a192419a-cb9d-4666-ad78-7f2b3a6a5b69","elementid":"9fffc7c4-ffbf-4dab-8f72-414620ddcc84","modelid":"5f717444-4573-4ecf-a3d4-dca3080d0704"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

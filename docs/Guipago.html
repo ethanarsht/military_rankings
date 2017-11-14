@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="75fd6435-6ed6-4d0c-b257-8bef3c96a703"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"2029d184-6252-4722-bd99-a650605cb9a1":{"roots":{"references":[{"attributes":{"formatter":{"id":"6338cad5-a938-479b-b35b-848b1210e989","type":"BasicTickFormatter"},"plot":{"id":"dcf86514-c3e3-4099-9942-b933da471d84","subtype":"Figure","type":"Plot"},"ticker":{"id":"dde3c179-4750-4649-aa6f-6d1d26b3ff6d","type":"BasicTicker"}},"id":"37d492f2-ca3c-43b3-bcbb-c55b2521d9a8","type":"LinearAxis"},{"attributes":{"callback":null},"id":"b9ec11b9-87ab-49c9-85dd-59fd99fb5e72","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"55820159-d774-46f6-ab99-d294dea1ebfc","type":"HoverTool"}]},"id":"365423cc-ee0d-4615-9911-6615ae437a52","type":"Toolbar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"5503609c-b655-4816-93e0-da1e07921f38","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"529ef4b9-c053-4465-afba-d6b5d3fcc489","type":"ColumnDataSource"}},"id":"5a73f502-a600-44a8-aeeb-bf90b88534fa","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a5929457-72e8-47c8-ae36-c0704fec5193","type":"Line"},{"attributes":{"callback":null,"factors":["First Battle of Adobe Walls","Battle of Palo Duro Canyon","Second Battle of Adobe Walls"]},"id":"72696a25-af36-4f62-a6d9-500089cc6050","type":"FactorRange"},{"attributes":{},"id":"9ffcd267-96de-4d68-b830-3471f3e6360d","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d5ea3aaa-9f1b-4b7d-9df4-4c7547e13201","type":"VBar"},{"attributes":{"below":[{"id":"4ca6c990-7776-45c9-8f48-078f04c1e5a8","type":"CategoricalAxis"}],"left":[{"id":"37d492f2-ca3c-43b3-bcbb-c55b2521d9a8","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"4ca6c990-7776-45c9-8f48-078f04c1e5a8","type":"CategoricalAxis"},{"id":"ee4d9e02-2b3e-4cc2-90f8-d4efc98295f9","type":"Grid"},{"id":"37d492f2-ca3c-43b3-bcbb-c55b2521d9a8","type":"LinearAxis"},{"id":"1bfee23d-a3f8-4a6c-b9ad-3e7fc93ab11d","type":"Grid"},{"id":"e60cdab4-a715-447f-a951-32a4ef2fb5a1","type":"GlyphRenderer"},{"id":"9412cbe7-f006-4b1a-ab18-1b2812874b91","type":"GlyphRenderer"}],"title":{"id":"4e72ec60-5191-4ea7-bf11-8098d68f2ec4","type":"Title"},"toolbar":{"id":"365423cc-ee0d-4615-9911-6615ae437a52","type":"Toolbar"},"x_range":{"id":"72696a25-af36-4f62-a6d9-500089cc6050","type":"FactorRange"},"x_scale":{"id":"892a4dcc-369c-4f18-8081-c65c48976801","type":"CategoricalScale"},"y_range":{"id":"b9ec11b9-87ab-49c9-85dd-59fd99fb5e72","type":"DataRange1d"},"y_scale":{"id":"9ffcd267-96de-4d68-b830-3471f3e6360d","type":"LinearScale"}},"id":"dcf86514-c3e3-4099-9942-b933da471d84","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"55820159-d774-46f6-ab99-d294dea1ebfc","type":"HoverTool"},{"attributes":{},"id":"63820b4c-9bad-40ad-92a6-ddaa63a36dd1","type":"CategoricalTicker"},{"attributes":{},"id":"dde3c179-4750-4649-aa6f-6d1d26b3ff6d","type":"BasicTicker"},{"attributes":{"plot":null,"text":"Guipago (0 - 1 - 2)"},"id":"4e72ec60-5191-4ea7-bf11-8098d68f2ec4","type":"Title"},{"attributes":{"data_source":{"id":"529ef4b9-c053-4465-afba-d6b5d3fcc489","type":"ColumnDataSource"},"glyph":{"id":"ad83d0ec-9ece-4cd0-b05e-1c647be8b773","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d5ea3aaa-9f1b-4b7d-9df4-4c7547e13201","type":"VBar"},"selection_glyph":null,"view":{"id":"5a73f502-a600-44a8-aeeb-bf90b88534fa","type":"CDSView"}},"id":"9412cbe7-f006-4b1a-ab18-1b2812874b91","type":"GlyphRenderer"},{"attributes":{},"id":"2ec566c5-42b3-4556-bebe-bd179e519a5c","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"dcf86514-c3e3-4099-9942-b933da471d84","subtype":"Figure","type":"Plot"},"ticker":{"id":"dde3c179-4750-4649-aa6f-6d1d26b3ff6d","type":"BasicTicker"}},"id":"1bfee23d-a3f8-4a6c-b9ad-3e7fc93ab11d","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["First Battle of Adobe Walls","Battle of Palo Duro Canyon","Second Battle of Adobe Walls"],"cumulative":{"__ndarray__":"0BMi6LR4rb+9XDH52uPhv16umHzt8fC/","dtype":"float64","shape":[3]},"general":["Guipago","Guipago","Guipago"],"outcome":["I","D","D"],"value":{"__ndarray__":"0BMi6LR4rb+AO6+qTwzgvwAAAAAAAOC/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAAgnUAAAAAAAEidQAAAAAAASJ1A","dtype":"float64","shape":[3]}}},"id":"529ef4b9-c053-4465-afba-d6b5d3fcc489","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"529ef4b9-c053-4465-afba-d6b5d3fcc489","type":"ColumnDataSource"},"glyph":{"id":"c6a36303-5f13-45f2-9edd-1e6bda6ff5ac","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a5929457-72e8-47c8-ae36-c0704fec5193","type":"Line"},"selection_glyph":null,"view":{"id":"6ff868ad-71d6-460b-beed-f0ab57a8b4be","type":"CDSView"}},"id":"e60cdab4-a715-447f-a951-32a4ef2fb5a1","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"2ec566c5-42b3-4556-bebe-bd179e519a5c","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"dcf86514-c3e3-4099-9942-b933da471d84","subtype":"Figure","type":"Plot"},"ticker":{"id":"63820b4c-9bad-40ad-92a6-ddaa63a36dd1","type":"CategoricalTicker"}},"id":"4ca6c990-7776-45c9-8f48-078f04c1e5a8","type":"CategoricalAxis"},{"attributes":{"source":{"id":"529ef4b9-c053-4465-afba-d6b5d3fcc489","type":"ColumnDataSource"}},"id":"6ff868ad-71d6-460b-beed-f0ab57a8b4be","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"c6a36303-5f13-45f2-9edd-1e6bda6ff5ac","type":"Line"},{"attributes":{},"id":"6338cad5-a938-479b-b35b-848b1210e989","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"5503609c-b655-4816-93e0-da1e07921f38","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"5503609c-b655-4816-93e0-da1e07921f38","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ad83d0ec-9ece-4cd0-b05e-1c647be8b773","type":"VBar"},{"attributes":{},"id":"892a4dcc-369c-4f18-8081-c65c48976801","type":"CategoricalScale"},{"attributes":{"plot":{"id":"dcf86514-c3e3-4099-9942-b933da471d84","subtype":"Figure","type":"Plot"},"ticker":{"id":"63820b4c-9bad-40ad-92a6-ddaa63a36dd1","type":"CategoricalTicker"}},"id":"ee4d9e02-2b3e-4cc2-90f8-d4efc98295f9","type":"Grid"}],"root_ids":["dcf86514-c3e3-4099-9942-b933da471d84"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"2029d184-6252-4722-bd99-a650605cb9a1","elementid":"75fd6435-6ed6-4d0c-b257-8bef3c96a703","modelid":"dcf86514-c3e3-4099-9942-b933da471d84"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

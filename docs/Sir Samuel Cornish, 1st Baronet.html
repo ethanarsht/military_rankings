@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="3b06fa98-e1e8-4de1-a613-9b43f4369ca6"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"32c6aad9-c622-4453-8f67-39dae60cf4ed":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"cd4049fa-a32b-4f5b-911c-6fdc300e2ef1","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Manila (1762)"],"cumulative":{"__ndarray__":"cL6iQr+W3z8=","dtype":"float64","shape":[1]},"general":["Sir Samuel Cornish, 1st Baronet"],"outcome":["V"],"value":{"__ndarray__":"cL6iQr+W3z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAACIm0A=","dtype":"float64","shape":[1]}}},"id":"842bec80-4fe0-4ba5-8034-d31f5a40db35","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"af212e2d-9e9c-4e36-a085-7999210f5d2c","type":"HoverTool"}]},"id":"1923d522-46f8-4ef8-bcd6-c4c4026d6527","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Battle of Manila (1762)"]},"id":"4934e866-9128-4e85-817c-bd2663660b89","type":"FactorRange"},{"attributes":{},"id":"49255b8a-db2a-43b8-ad8b-80082a74adfa","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"49255b8a-db2a-43b8-ad8b-80082a74adfa","type":"BasicTickFormatter"},"plot":{"id":"5d9567f0-05f7-43c6-9b20-1c4935f09442","subtype":"Figure","type":"Plot"},"ticker":{"id":"c544631f-78d9-4976-a481-df7db20bc45c","type":"BasicTicker"}},"id":"c2e14a83-167c-457d-acb3-4164204ad6b1","type":"LinearAxis"},{"attributes":{},"id":"dd30d34e-7520-4525-9c5f-a6533b99c6e9","type":"LinearScale"},{"attributes":{"data_source":{"id":"842bec80-4fe0-4ba5-8034-d31f5a40db35","type":"ColumnDataSource"},"glyph":{"id":"52353adb-fb03-4207-b79d-3fb30f120963","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"cd4049fa-a32b-4f5b-911c-6fdc300e2ef1","type":"Line"},"selection_glyph":null,"view":{"id":"ed896d6d-e32d-45f5-81a1-84428ce9911c","type":"CDSView"}},"id":"6f10c0e9-ac24-4997-b9f0-5fa6ef0201fe","type":"GlyphRenderer"},{"attributes":{},"id":"c544631f-78d9-4976-a481-df7db20bc45c","type":"BasicTicker"},{"attributes":{},"id":"80364f23-b09b-41f3-9e0c-f06c1d8b80c5","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"3f309029-7076-47ae-888e-d64e33292b0c","type":"VBar"},{"attributes":{"plot":null,"text":"Sir Samuel Cornish, 1st Baronet (1 - 0 - 0)"},"id":"ea94791a-b6be-42ed-bc8f-849919574301","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"5d9567f0-05f7-43c6-9b20-1c4935f09442","subtype":"Figure","type":"Plot"},"ticker":{"id":"c544631f-78d9-4976-a481-df7db20bc45c","type":"BasicTicker"}},"id":"bf43254f-fed5-4e28-8781-eb4fba545f8a","type":"Grid"},{"attributes":{},"id":"0e90fd12-d5e4-425d-adb3-2a6162e41c69","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"1b8750dd-44e4-4712-8338-b25e29751905","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"5d9567f0-05f7-43c6-9b20-1c4935f09442","subtype":"Figure","type":"Plot"},"ticker":{"id":"80364f23-b09b-41f3-9e0c-f06c1d8b80c5","type":"CategoricalTicker"}},"id":"034091ac-a36a-4a97-a49b-21b4fb19b47e","type":"CategoricalAxis"},{"attributes":{"source":{"id":"842bec80-4fe0-4ba5-8034-d31f5a40db35","type":"ColumnDataSource"}},"id":"d84592fc-0b46-4082-bc30-8e063feec9b1","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"af212e2d-9e9c-4e36-a085-7999210f5d2c","type":"HoverTool"},{"attributes":{"callback":null},"id":"c7c56d03-4fcc-437a-939a-3a8f030c20b3","type":"DataRange1d"},{"attributes":{"source":{"id":"842bec80-4fe0-4ba5-8034-d31f5a40db35","type":"ColumnDataSource"}},"id":"ed896d6d-e32d-45f5-81a1-84428ce9911c","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"8704002e-e80c-4a19-ab4c-3a9e6cdf1644","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"8704002e-e80c-4a19-ab4c-3a9e6cdf1644","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"57d04f06-8662-41de-b9c5-757e9fb90cf3","type":"VBar"},{"attributes":{"below":[{"id":"034091ac-a36a-4a97-a49b-21b4fb19b47e","type":"CategoricalAxis"}],"left":[{"id":"c2e14a83-167c-457d-acb3-4164204ad6b1","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"034091ac-a36a-4a97-a49b-21b4fb19b47e","type":"CategoricalAxis"},{"id":"5dfad2cf-57e7-4ccb-810e-808e778b5ece","type":"Grid"},{"id":"c2e14a83-167c-457d-acb3-4164204ad6b1","type":"LinearAxis"},{"id":"bf43254f-fed5-4e28-8781-eb4fba545f8a","type":"Grid"},{"id":"6f10c0e9-ac24-4997-b9f0-5fa6ef0201fe","type":"GlyphRenderer"},{"id":"a9b8c792-2a28-40d6-b779-9c47de05e007","type":"GlyphRenderer"}],"title":{"id":"ea94791a-b6be-42ed-bc8f-849919574301","type":"Title"},"toolbar":{"id":"1923d522-46f8-4ef8-bcd6-c4c4026d6527","type":"Toolbar"},"x_range":{"id":"4934e866-9128-4e85-817c-bd2663660b89","type":"FactorRange"},"x_scale":{"id":"0e90fd12-d5e4-425d-adb3-2a6162e41c69","type":"CategoricalScale"},"y_range":{"id":"c7c56d03-4fcc-437a-939a-3a8f030c20b3","type":"DataRange1d"},"y_scale":{"id":"dd30d34e-7520-4525-9c5f-a6533b99c6e9","type":"LinearScale"}},"id":"5d9567f0-05f7-43c6-9b20-1c4935f09442","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"842bec80-4fe0-4ba5-8034-d31f5a40db35","type":"ColumnDataSource"},"glyph":{"id":"57d04f06-8662-41de-b9c5-757e9fb90cf3","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3f309029-7076-47ae-888e-d64e33292b0c","type":"VBar"},"selection_glyph":null,"view":{"id":"d84592fc-0b46-4082-bc30-8e063feec9b1","type":"CDSView"}},"id":"a9b8c792-2a28-40d6-b779-9c47de05e007","type":"GlyphRenderer"},{"attributes":{},"id":"1b8750dd-44e4-4712-8338-b25e29751905","type":"CategoricalTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"52353adb-fb03-4207-b79d-3fb30f120963","type":"Line"},{"attributes":{"plot":{"id":"5d9567f0-05f7-43c6-9b20-1c4935f09442","subtype":"Figure","type":"Plot"},"ticker":{"id":"80364f23-b09b-41f3-9e0c-f06c1d8b80c5","type":"CategoricalTicker"}},"id":"5dfad2cf-57e7-4ccb-810e-808e778b5ece","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"8704002e-e80c-4a19-ab4c-3a9e6cdf1644","type":"CategoricalColorMapper"}],"root_ids":["5d9567f0-05f7-43c6-9b20-1c4935f09442"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"32c6aad9-c622-4453-8f67-39dae60cf4ed","elementid":"3b06fa98-e1e8-4de1-a613-9b43f4369ca6","modelid":"5d9567f0-05f7-43c6-9b20-1c4935f09442"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

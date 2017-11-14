@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c0da9b83-60c6-45ac-bab9-520974448ca2"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"0ee48514-198a-4b9f-b058-0b49b2c564c0":{"roots":{"references":[{"attributes":{},"id":"afdb4d88-4928-4446-beee-e8acf0c5049c","type":"BasicTicker"},{"attributes":{"source":{"id":"a46b57fe-0a87-4316-958f-62abb1faa87f","type":"ColumnDataSource"}},"id":"06bfe252-852b-40f4-a750-55eb969259ea","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Lone Jack"]},"id":"b660e6ec-4492-4e36-8a6f-f8ad8a4a9082","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4479ca5c-2e00-48f8-a41d-220b2fda59b4","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4479ca5c-2e00-48f8-a41d-220b2fda59b4","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bf4bd80b-49eb-470e-abbe-ab84e23f692e","type":"VBar"},{"attributes":{},"id":"2f2bb8cc-9039-457b-bbd0-8c06964d6e5e","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"a46b57fe-0a87-4316-958f-62abb1faa87f","type":"ColumnDataSource"}},"id":"f155292d-bf4e-4461-b9d4-ec966a8175c2","type":"CDSView"},{"attributes":{},"id":"1843f768-f7dd-4a7e-bf3b-3c8cf10f443a","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"4cdcb055-147a-4f2d-9a31-889c728dbabb","type":"HoverTool"}]},"id":"48e98c9e-e6ba-4892-b3ae-a04e7765dcfb","type":"Toolbar"},{"attributes":{"data_source":{"id":"a46b57fe-0a87-4316-958f-62abb1faa87f","type":"ColumnDataSource"},"glyph":{"id":"7109ad84-3d65-4899-89ab-e0cfab8abc12","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c2b9657d-264f-406f-b4d5-6836567d4027","type":"Line"},"selection_glyph":null,"view":{"id":"f155292d-bf4e-4461-b9d4-ec966a8175c2","type":"CDSView"}},"id":"d32f75d7-c2d9-4b46-bf84-0d10304f6931","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"56e165a5-06b8-4f86-820f-1b68e7bc5482","subtype":"Figure","type":"Plot"},"ticker":{"id":"88bada05-1ed6-4630-968b-3dd08b1d2b82","type":"CategoricalTicker"}},"id":"475cdeaf-50c0-4b4c-bd70-ad35f0c706bf","type":"Grid"},{"attributes":{},"id":"88bada05-1ed6-4630-968b-3dd08b1d2b82","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"56e165a5-06b8-4f86-820f-1b68e7bc5482","subtype":"Figure","type":"Plot"},"ticker":{"id":"afdb4d88-4928-4446-beee-e8acf0c5049c","type":"BasicTicker"}},"id":"fa861524-adbe-46df-b404-4b36116c805a","type":"Grid"},{"attributes":{"data_source":{"id":"a46b57fe-0a87-4316-958f-62abb1faa87f","type":"ColumnDataSource"},"glyph":{"id":"bf4bd80b-49eb-470e-abbe-ab84e23f692e","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e4a2f6ce-ba68-40a3-a6ac-e79d4ed62bbe","type":"VBar"},"selection_glyph":null,"view":{"id":"06bfe252-852b-40f4-a750-55eb969259ea","type":"CDSView"}},"id":"6f3957e0-1236-405b-bfb7-c89cf01432a6","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4479ca5c-2e00-48f8-a41d-220b2fda59b4","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"4cdcb055-147a-4f2d-9a31-889c728dbabb","type":"HoverTool"},{"attributes":{"below":[{"id":"88ce89e1-4c22-4a3c-b15f-c330d1413995","type":"CategoricalAxis"}],"left":[{"id":"5cbac9f1-6352-4dfd-97d9-23af8ebc6f2b","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"88ce89e1-4c22-4a3c-b15f-c330d1413995","type":"CategoricalAxis"},{"id":"475cdeaf-50c0-4b4c-bd70-ad35f0c706bf","type":"Grid"},{"id":"5cbac9f1-6352-4dfd-97d9-23af8ebc6f2b","type":"LinearAxis"},{"id":"fa861524-adbe-46df-b404-4b36116c805a","type":"Grid"},{"id":"d32f75d7-c2d9-4b46-bf84-0d10304f6931","type":"GlyphRenderer"},{"id":"6f3957e0-1236-405b-bfb7-c89cf01432a6","type":"GlyphRenderer"}],"title":{"id":"a487511b-4f30-43b9-b554-ae16e6eaad11","type":"Title"},"toolbar":{"id":"48e98c9e-e6ba-4892-b3ae-a04e7765dcfb","type":"Toolbar"},"x_range":{"id":"b660e6ec-4492-4e36-8a6f-f8ad8a4a9082","type":"FactorRange"},"x_scale":{"id":"3ce07fb0-7129-4f15-a91f-b0207c62ae6b","type":"CategoricalScale"},"y_range":{"id":"bcd98f75-fc06-43e4-b446-e48e668fc41f","type":"DataRange1d"},"y_scale":{"id":"097383fc-476e-4142-b0bf-b36c699f8648","type":"LinearScale"}},"id":"56e165a5-06b8-4f86-820f-1b68e7bc5482","subtype":"Figure","type":"Plot"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7109ad84-3d65-4899-89ab-e0cfab8abc12","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Lone Jack"],"cumulative":{"__ndarray__":"NFUaI8QO2r8=","dtype":"float64","shape":[1]},"general":["Emory S. Foster"],"outcome":["D"],"value":{"__ndarray__":"NFUaI8QO2r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAYnUA=","dtype":"float64","shape":[1]}}},"id":"a46b57fe-0a87-4316-958f-62abb1faa87f","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"1843f768-f7dd-4a7e-bf3b-3c8cf10f443a","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"56e165a5-06b8-4f86-820f-1b68e7bc5482","subtype":"Figure","type":"Plot"},"ticker":{"id":"88bada05-1ed6-4630-968b-3dd08b1d2b82","type":"CategoricalTicker"}},"id":"88ce89e1-4c22-4a3c-b15f-c330d1413995","type":"CategoricalAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"c2b9657d-264f-406f-b4d5-6836567d4027","type":"Line"},{"attributes":{"formatter":{"id":"2f2bb8cc-9039-457b-bbd0-8c06964d6e5e","type":"BasicTickFormatter"},"plot":{"id":"56e165a5-06b8-4f86-820f-1b68e7bc5482","subtype":"Figure","type":"Plot"},"ticker":{"id":"afdb4d88-4928-4446-beee-e8acf0c5049c","type":"BasicTicker"}},"id":"5cbac9f1-6352-4dfd-97d9-23af8ebc6f2b","type":"LinearAxis"},{"attributes":{},"id":"3ce07fb0-7129-4f15-a91f-b0207c62ae6b","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"Emory S. Foster (0 - 0 - 1)"},"id":"a487511b-4f30-43b9-b554-ae16e6eaad11","type":"Title"},{"attributes":{},"id":"097383fc-476e-4142-b0bf-b36c699f8648","type":"LinearScale"},{"attributes":{"callback":null},"id":"bcd98f75-fc06-43e4-b446-e48e668fc41f","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e4a2f6ce-ba68-40a3-a6ac-e79d4ed62bbe","type":"VBar"}],"root_ids":["56e165a5-06b8-4f86-820f-1b68e7bc5482"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"0ee48514-198a-4b9f-b058-0b49b2c564c0","elementid":"c0da9b83-60c6-45ac-bab9-520974448ca2","modelid":"56e165a5-06b8-4f86-820f-1b68e7bc5482"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

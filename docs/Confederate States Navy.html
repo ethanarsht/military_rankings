@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c424d37e-ae62-4452-80d0-3c3701c81d4e"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"90f199ef-7cd5-4be3-9cfd-57fdb97fbf76":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"d94b0934-ce04-4685-9d33-da6c95cc2d59","type":"HoverTool"},{"attributes":{"callback":null},"id":"acca5adb-0dca-49b6-a41a-34d184fa122f","type":"DataRange1d"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"371b288c-bd07-483f-ae10-6009f289e3a2","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"8ccfdeff-759b-4def-ac8b-00e3d6dbd4b7","type":"CategoricalColorMapper"},{"attributes":{},"id":"26fc8de1-440a-4cca-b89a-94663669dcfe","type":"BasicTicker"},{"attributes":{"source":{"id":"db34e489-3b50-4ba4-93e4-47a9e2ab88e7","type":"ColumnDataSource"}},"id":"d5920f9e-3e5c-43a5-888d-a83946183210","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"93f116df-43b4-4743-a1ef-94e2a6d2e3b9","subtype":"Figure","type":"Plot"},"ticker":{"id":"26fc8de1-440a-4cca-b89a-94663669dcfe","type":"BasicTicker"}},"id":"19a01cbb-3d97-4e4e-b031-c6017fd48d46","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"8ccfdeff-759b-4def-ac8b-00e3d6dbd4b7","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"8ccfdeff-759b-4def-ac8b-00e3d6dbd4b7","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"52fa7dce-2c7b-4716-b479-da340564169a","type":"VBar"},{"attributes":{"source":{"id":"db34e489-3b50-4ba4-93e4-47a9e2ab88e7","type":"ColumnDataSource"}},"id":"5592e7da-2515-4f0f-aaab-ca190360c0f5","type":"CDSView"},{"attributes":{},"id":"ea84c992-2df4-43e3-ac73-e26c6af53398","type":"CategoricalScale"},{"attributes":{"below":[{"id":"b78c2010-cd08-435f-ab94-905180ece20b","type":"CategoricalAxis"}],"left":[{"id":"85cd727b-4f83-40d6-9ae3-66871a9d40ad","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"b78c2010-cd08-435f-ab94-905180ece20b","type":"CategoricalAxis"},{"id":"e8d2f13d-b204-42d0-83d8-ac49f044ce39","type":"Grid"},{"id":"85cd727b-4f83-40d6-9ae3-66871a9d40ad","type":"LinearAxis"},{"id":"19a01cbb-3d97-4e4e-b031-c6017fd48d46","type":"Grid"},{"id":"1936c762-71cc-4a73-a8af-0019903f2627","type":"GlyphRenderer"},{"id":"6b61e1db-598f-49f2-8408-22971ecfda50","type":"GlyphRenderer"}],"title":{"id":"b9c7c96f-1505-4c2e-b276-31def65878cd","type":"Title"},"toolbar":{"id":"82a0d49b-dab6-4108-9ced-5819bd4ff12e","type":"Toolbar"},"x_range":{"id":"88eaf6a0-b79f-4945-b02d-c95543a33ebe","type":"FactorRange"},"x_scale":{"id":"ea84c992-2df4-43e3-ac73-e26c6af53398","type":"CategoricalScale"},"y_range":{"id":"acca5adb-0dca-49b6-a41a-34d184fa122f","type":"DataRange1d"},"y_scale":{"id":"8ad7de2c-bbce-47ed-a429-d60218983031","type":"LinearScale"}},"id":"93f116df-43b4-4743-a1ef-94e2a6d2e3b9","subtype":"Figure","type":"Plot"},{"attributes":{"plot":{"id":"93f116df-43b4-4743-a1ef-94e2a6d2e3b9","subtype":"Figure","type":"Plot"},"ticker":{"id":"733622a2-2d0e-4b20-ba0d-01c035204335","type":"CategoricalTicker"}},"id":"e8d2f13d-b204-42d0-83d8-ac49f044ce39","type":"Grid"},{"attributes":{"data_source":{"id":"db34e489-3b50-4ba4-93e4-47a9e2ab88e7","type":"ColumnDataSource"},"glyph":{"id":"a43b7179-65e8-457b-9086-f60275feb0e7","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"371b288c-bd07-483f-ae10-6009f289e3a2","type":"Line"},"selection_glyph":null,"view":{"id":"5592e7da-2515-4f0f-aaab-ca190360c0f5","type":"CDSView"}},"id":"1936c762-71cc-4a73-a8af-0019903f2627","type":"GlyphRenderer"},{"attributes":{},"id":"8ad7de2c-bbce-47ed-a429-d60218983031","type":"LinearScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Mobile Bay"],"cumulative":{"__ndarray__":"GGL87+XH1r8=","dtype":"float64","shape":[1]},"general":["Confederate States Navy"],"outcome":["D"],"value":{"__ndarray__":"GGL87+XH1r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAgnUA=","dtype":"float64","shape":[1]}}},"id":"db34e489-3b50-4ba4-93e4-47a9e2ab88e7","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"b11ff1e8-1663-4b2c-9c4e-9a31a2987f9a","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"93f116df-43b4-4743-a1ef-94e2a6d2e3b9","subtype":"Figure","type":"Plot"},"ticker":{"id":"733622a2-2d0e-4b20-ba0d-01c035204335","type":"CategoricalTicker"}},"id":"b78c2010-cd08-435f-ab94-905180ece20b","type":"CategoricalAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a43b7179-65e8-457b-9086-f60275feb0e7","type":"Line"},{"attributes":{},"id":"314d132b-3fa7-4418-bed3-79825c8c77e7","type":"BasicTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Mobile Bay"]},"id":"88eaf6a0-b79f-4945-b02d-c95543a33ebe","type":"FactorRange"},{"attributes":{"plot":null,"text":"Confederate States Navy (0 - 0 - 1)"},"id":"b9c7c96f-1505-4c2e-b276-31def65878cd","type":"Title"},{"attributes":{},"id":"b11ff1e8-1663-4b2c-9c4e-9a31a2987f9a","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"314d132b-3fa7-4418-bed3-79825c8c77e7","type":"BasicTickFormatter"},"plot":{"id":"93f116df-43b4-4743-a1ef-94e2a6d2e3b9","subtype":"Figure","type":"Plot"},"ticker":{"id":"26fc8de1-440a-4cca-b89a-94663669dcfe","type":"BasicTicker"}},"id":"85cd727b-4f83-40d6-9ae3-66871a9d40ad","type":"LinearAxis"},{"attributes":{"data_source":{"id":"db34e489-3b50-4ba4-93e4-47a9e2ab88e7","type":"ColumnDataSource"},"glyph":{"id":"52fa7dce-2c7b-4716-b479-da340564169a","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"eb15e058-97c3-4182-88f8-69ea9f64bdb6","type":"VBar"},"selection_glyph":null,"view":{"id":"d5920f9e-3e5c-43a5-888d-a83946183210","type":"CDSView"}},"id":"6b61e1db-598f-49f2-8408-22971ecfda50","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"eb15e058-97c3-4182-88f8-69ea9f64bdb6","type":"VBar"},{"attributes":{},"id":"733622a2-2d0e-4b20-ba0d-01c035204335","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d94b0934-ce04-4685-9d33-da6c95cc2d59","type":"HoverTool"}]},"id":"82a0d49b-dab6-4108-9ced-5819bd4ff12e","type":"Toolbar"}],"root_ids":["93f116df-43b4-4743-a1ef-94e2a6d2e3b9"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"90f199ef-7cd5-4be3-9cfd-57fdb97fbf76","elementid":"c424d37e-ae62-4452-80d0-3c3701c81d4e","modelid":"93f116df-43b4-4743-a1ef-94e2a6d2e3b9"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

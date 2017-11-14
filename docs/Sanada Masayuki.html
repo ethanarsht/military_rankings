@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="a6894527-3471-4783-abea-d714e3283272"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"260a64e5-3276-4b78-a935-5a786da49f4f":{"roots":{"references":[{"attributes":{},"id":"e202ab45-ad6c-49b3-af22-0f408bb9a9f0","type":"LinearScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"93fb978e-c3f2-4e95-80c8-7420048e9889","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e9cd9365-d4bc-4815-b62b-0743428dd1fb","type":"VBar"},{"attributes":{"below":[{"id":"8e340d31-6e3d-476a-a9cb-6afd302613be","type":"CategoricalAxis"}],"left":[{"id":"ffaf172e-bb0d-4398-9785-b47b3242776a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"8e340d31-6e3d-476a-a9cb-6afd302613be","type":"CategoricalAxis"},{"id":"fdf0b5b7-bba5-4dfc-b1d6-7e84e50f9b02","type":"Grid"},{"id":"ffaf172e-bb0d-4398-9785-b47b3242776a","type":"LinearAxis"},{"id":"f55fe8ad-2076-46bb-895b-06579a63fe5f","type":"Grid"},{"id":"8c1d9231-a652-42a0-9590-18aea092c4b4","type":"GlyphRenderer"},{"id":"ed07e9cc-4882-45ff-935e-3f379fbdcfb6","type":"GlyphRenderer"}],"title":{"id":"346d4317-4658-4905-96f3-43b8547f1593","type":"Title"},"toolbar":{"id":"be10d43b-c11e-4d52-ba23-89032b15d375","type":"Toolbar"},"x_range":{"id":"bcc72d07-bda4-4ad1-9e9c-ac2f88d5a4c2","type":"FactorRange"},"x_scale":{"id":"e8a90854-59d6-4aca-947c-eccf13a870b8","type":"CategoricalScale"},"y_range":{"id":"c0d35e1a-8626-4475-bbf2-8b3547b266d3","type":"DataRange1d"},"y_scale":{"id":"e202ab45-ad6c-49b3-af22-0f408bb9a9f0","type":"LinearScale"}},"id":"b8984de7-9c66-4f22-bded-190da8cd44c9","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"e8a90854-59d6-4aca-947c-eccf13a870b8","type":"CategoricalScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f527b44f-b970-4b8c-ac28-c3ddd7be1d66","type":"HoverTool"},{"attributes":{},"id":"0d1954e3-834a-44b1-b9fd-2f966c31b5f9","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["Siege of Odawara (1590)"]},"id":"bcc72d07-bda4-4ad1-9e9c-ac2f88d5a4c2","type":"FactorRange"},{"attributes":{"data_source":{"id":"31554dde-636d-4173-94f0-85cbf3f80e91","type":"ColumnDataSource"},"glyph":{"id":"ea0b1c5b-337e-44d8-b4fc-6b7b75d82e63","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e9cd9365-d4bc-4815-b62b-0743428dd1fb","type":"VBar"},"selection_glyph":null,"view":{"id":"05a6ce1f-7e67-46a6-874c-9d9d9fda0e34","type":"CDSView"}},"id":"ed07e9cc-4882-45ff-935e-3f379fbdcfb6","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"b8984de7-9c66-4f22-bded-190da8cd44c9","subtype":"Figure","type":"Plot"},"ticker":{"id":"3790c627-bff9-4c40-be73-733b635138c5","type":"CategoricalTicker"}},"id":"fdf0b5b7-bba5-4dfc-b1d6-7e84e50f9b02","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"b8984de7-9c66-4f22-bded-190da8cd44c9","subtype":"Figure","type":"Plot"},"ticker":{"id":"0d1954e3-834a-44b1-b9fd-2f966c31b5f9","type":"BasicTicker"}},"id":"f55fe8ad-2076-46bb-895b-06579a63fe5f","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"cb81ed2a-96cd-4a4e-a403-be3fd205d656","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"cb81ed2a-96cd-4a4e-a403-be3fd205d656","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ea0b1c5b-337e-44d8-b4fc-6b7b75d82e63","type":"VBar"},{"attributes":{"formatter":{"id":"ec23a89a-225a-47d4-b6ce-0e4887bcaf21","type":"BasicTickFormatter"},"plot":{"id":"b8984de7-9c66-4f22-bded-190da8cd44c9","subtype":"Figure","type":"Plot"},"ticker":{"id":"0d1954e3-834a-44b1-b9fd-2f966c31b5f9","type":"BasicTicker"}},"id":"ffaf172e-bb0d-4398-9785-b47b3242776a","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Sanada Masayuki (1 - 0 - 0)"},"id":"346d4317-4658-4905-96f3-43b8547f1593","type":"Title"},{"attributes":{"data_source":{"id":"31554dde-636d-4173-94f0-85cbf3f80e91","type":"ColumnDataSource"},"glyph":{"id":"783e9bf3-1203-4849-932e-f3b437eb2462","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"93fb978e-c3f2-4e95-80c8-7420048e9889","type":"Line"},"selection_glyph":null,"view":{"id":"e08a3c7b-dbfc-4c22-ad65-14759c9925a2","type":"CDSView"}},"id":"8c1d9231-a652-42a0-9590-18aea092c4b4","type":"GlyphRenderer"},{"attributes":{"source":{"id":"31554dde-636d-4173-94f0-85cbf3f80e91","type":"ColumnDataSource"}},"id":"e08a3c7b-dbfc-4c22-ad65-14759c9925a2","type":"CDSView"},{"attributes":{"source":{"id":"31554dde-636d-4173-94f0-85cbf3f80e91","type":"ColumnDataSource"}},"id":"05a6ce1f-7e67-46a6-874c-9d9d9fda0e34","type":"CDSView"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"cb81ed2a-96cd-4a4e-a403-be3fd205d656","type":"CategoricalColorMapper"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"783e9bf3-1203-4849-932e-f3b437eb2462","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Odawara (1590)"],"cumulative":{"__ndarray__":"eMVd2Jrq3D8=","dtype":"float64","shape":[1]},"general":["Sanada Masayuki"],"outcome":["V"],"value":{"__ndarray__":"eMVd2Jrq3D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADYmEA=","dtype":"float64","shape":[1]}}},"id":"31554dde-636d-4173-94f0-85cbf3f80e91","type":"ColumnDataSource"},{"attributes":{},"id":"3790c627-bff9-4c40-be73-733b635138c5","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f527b44f-b970-4b8c-ac28-c3ddd7be1d66","type":"HoverTool"}]},"id":"be10d43b-c11e-4d52-ba23-89032b15d375","type":"Toolbar"},{"attributes":{},"id":"ec23a89a-225a-47d4-b6ce-0e4887bcaf21","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"c0d35e1a-8626-4475-bbf2-8b3547b266d3","type":"DataRange1d"},{"attributes":{},"id":"a45aaae3-92c9-4eb2-b45c-7b61be0f2413","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"a45aaae3-92c9-4eb2-b45c-7b61be0f2413","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"b8984de7-9c66-4f22-bded-190da8cd44c9","subtype":"Figure","type":"Plot"},"ticker":{"id":"3790c627-bff9-4c40-be73-733b635138c5","type":"CategoricalTicker"}},"id":"8e340d31-6e3d-476a-a9cb-6afd302613be","type":"CategoricalAxis"}],"root_ids":["b8984de7-9c66-4f22-bded-190da8cd44c9"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"260a64e5-3276-4b78-a935-5a786da49f4f","elementid":"a6894527-3471-4783-abea-d714e3283272","modelid":"b8984de7-9c66-4f22-bded-190da8cd44c9"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

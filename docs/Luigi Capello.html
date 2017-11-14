@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="ac7718f1-55ec-4ab8-906e-bcabf2236046"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"1c5b0ec4-b972-4b74-8387-1442900b5fae":{"roots":{"references":[{"attributes":{},"id":"e2d4e27d-e1f3-4d60-9679-9385343a56d1","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Sixth Battle of the Isonzo","Battle of Caporetto"]},"id":"cea791d3-08b6-43b4-9944-eedbb13cd607","type":"FactorRange"},{"attributes":{},"id":"4f0a8a5f-16f5-4385-9c3d-f90e1b1a4c05","type":"LinearScale"},{"attributes":{"data_source":{"id":"74305f17-1aa5-43b1-9b69-68844a202665","type":"ColumnDataSource"},"glyph":{"id":"cb673695-380f-4dd0-9629-3b1c50e42a60","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ba3cf673-f041-438f-b242-2566450b48cb","type":"VBar"},"selection_glyph":null,"view":{"id":"b5612a7e-0a3d-435e-a158-b7674e05da80","type":"CDSView"}},"id":"660121b5-ce03-4e05-860a-c9b366bfcfe5","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"297dbd49-6dd9-4519-a801-6b7fde4b0ead","type":"HoverTool"},{"attributes":{},"id":"86d8f854-a9b4-4f25-ad74-3dac4fe25164","type":"CategoricalTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2ee45aae-cefd-49ba-9dca-212e0185c92f","type":"Line"},{"attributes":{"callback":null},"id":"9e543da0-38ad-45d5-85a6-1e514ef6eea4","type":"DataRange1d"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"32660e20-b694-4e75-a465-539ab42f1e99","type":"CategoricalColorMapper"},{"attributes":{"plot":null,"text":"Luigi Capello (2 - 0 - 0)"},"id":"5e126787-1b40-4ac1-97ed-f114bd074a2c","type":"Title"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"32660e20-b694-4e75-a465-539ab42f1e99","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"32660e20-b694-4e75-a465-539ab42f1e99","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"cb673695-380f-4dd0-9629-3b1c50e42a60","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Sixth Battle of the Isonzo","Battle of Caporetto"],"cumulative":{"__ndarray__":"AAAAAAAA4D9DaT1UT43uPw==","dtype":"float64","shape":[2]},"general":["Luigi Capello","Luigi Capello"],"outcome":["V","V"],"value":{"__ndarray__":"AAAAAAAA4D+G0nqonhrdPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAADwnUAAAAAAAPSdQA==","dtype":"float64","shape":[2]}}},"id":"74305f17-1aa5-43b1-9b69-68844a202665","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"86d8f854-a9b4-4f25-ad74-3dac4fe25164","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"4bea1448-8623-40d2-811e-3e2eca72a479","subtype":"Figure","type":"Plot"},"ticker":{"id":"e2d4e27d-e1f3-4d60-9679-9385343a56d1","type":"CategoricalTicker"}},"id":"008b3c78-b36f-4617-93ce-507ac02f5a30","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"4bea1448-8623-40d2-811e-3e2eca72a479","subtype":"Figure","type":"Plot"},"ticker":{"id":"e2d4e27d-e1f3-4d60-9679-9385343a56d1","type":"CategoricalTicker"}},"id":"422e2265-cf97-469b-93ab-6f25a2808fb0","type":"Grid"},{"attributes":{},"id":"b440b78f-7732-4409-af12-f16aec807f18","type":"CategoricalScale"},{"attributes":{},"id":"780f1472-e91c-4095-9de7-8922ba765c08","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ba3cf673-f041-438f-b242-2566450b48cb","type":"VBar"},{"attributes":{},"id":"1b5e72da-b246-4a03-b969-329f3d0800b8","type":"BasicTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"abc68895-bc10-4c3c-91ab-ad35ec6e921e","type":"Line"},{"attributes":{"source":{"id":"74305f17-1aa5-43b1-9b69-68844a202665","type":"ColumnDataSource"}},"id":"fdef1ca9-3158-4b2b-9fba-e67b0fcf9255","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"4bea1448-8623-40d2-811e-3e2eca72a479","subtype":"Figure","type":"Plot"},"ticker":{"id":"1b5e72da-b246-4a03-b969-329f3d0800b8","type":"BasicTicker"}},"id":"3e237328-edf0-499f-9917-a3a2e30b08ba","type":"Grid"},{"attributes":{"source":{"id":"74305f17-1aa5-43b1-9b69-68844a202665","type":"ColumnDataSource"}},"id":"b5612a7e-0a3d-435e-a158-b7674e05da80","type":"CDSView"},{"attributes":{"data_source":{"id":"74305f17-1aa5-43b1-9b69-68844a202665","type":"ColumnDataSource"},"glyph":{"id":"abc68895-bc10-4c3c-91ab-ad35ec6e921e","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2ee45aae-cefd-49ba-9dca-212e0185c92f","type":"Line"},"selection_glyph":null,"view":{"id":"fdef1ca9-3158-4b2b-9fba-e67b0fcf9255","type":"CDSView"}},"id":"ec372b56-e5bf-49ab-944c-0c44f641ee49","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"008b3c78-b36f-4617-93ce-507ac02f5a30","type":"CategoricalAxis"}],"left":[{"id":"2c31333d-144b-472e-b1bd-23b183f4337b","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"008b3c78-b36f-4617-93ce-507ac02f5a30","type":"CategoricalAxis"},{"id":"422e2265-cf97-469b-93ab-6f25a2808fb0","type":"Grid"},{"id":"2c31333d-144b-472e-b1bd-23b183f4337b","type":"LinearAxis"},{"id":"3e237328-edf0-499f-9917-a3a2e30b08ba","type":"Grid"},{"id":"ec372b56-e5bf-49ab-944c-0c44f641ee49","type":"GlyphRenderer"},{"id":"660121b5-ce03-4e05-860a-c9b366bfcfe5","type":"GlyphRenderer"}],"title":{"id":"5e126787-1b40-4ac1-97ed-f114bd074a2c","type":"Title"},"toolbar":{"id":"6afdb1f8-2c37-494f-8c3f-d7371675bfa8","type":"Toolbar"},"x_range":{"id":"cea791d3-08b6-43b4-9944-eedbb13cd607","type":"FactorRange"},"x_scale":{"id":"b440b78f-7732-4409-af12-f16aec807f18","type":"CategoricalScale"},"y_range":{"id":"9e543da0-38ad-45d5-85a6-1e514ef6eea4","type":"DataRange1d"},"y_scale":{"id":"4f0a8a5f-16f5-4385-9c3d-f90e1b1a4c05","type":"LinearScale"}},"id":"4bea1448-8623-40d2-811e-3e2eca72a479","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"780f1472-e91c-4095-9de7-8922ba765c08","type":"BasicTickFormatter"},"plot":{"id":"4bea1448-8623-40d2-811e-3e2eca72a479","subtype":"Figure","type":"Plot"},"ticker":{"id":"1b5e72da-b246-4a03-b969-329f3d0800b8","type":"BasicTicker"}},"id":"2c31333d-144b-472e-b1bd-23b183f4337b","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"297dbd49-6dd9-4519-a801-6b7fde4b0ead","type":"HoverTool"}]},"id":"6afdb1f8-2c37-494f-8c3f-d7371675bfa8","type":"Toolbar"}],"root_ids":["4bea1448-8623-40d2-811e-3e2eca72a479"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"1c5b0ec4-b972-4b74-8387-1442900b5fae","elementid":"ac7718f1-55ec-4ab8-906e-bcabf2236046","modelid":"4bea1448-8623-40d2-811e-3e2eca72a479"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

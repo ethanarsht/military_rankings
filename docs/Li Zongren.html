@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="8bbfad8f-0bd4-406a-9733-cd17b8953254"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"feeba504-708c-41ea-a131-7267420c8d06":{"roots":{"references":[{"attributes":{"plot":{"id":"689e0fee-93fd-4cb5-9882-b07aafbca6e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"c9e8dcfa-2382-4eec-9890-58f2d543c2ce","type":"CategoricalTicker"}},"id":"60071cf0-ccc4-442a-96d4-58c57e658764","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"689e0fee-93fd-4cb5-9882-b07aafbca6e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"bfa4bc09-aeda-4e07-bfd1-48ccedcf24eb","type":"BasicTicker"}},"id":"dd68f4f1-71b6-4401-b59b-a877ede91f86","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"cc709996-c511-46fa-aad7-82167bba3d41","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"cc709996-c511-46fa-aad7-82167bba3d41","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"58f73c94-ea61-4e17-90ed-a51f39f20a5d","type":"VBar"},{"attributes":{"formatter":{"id":"3a1e08f9-cd4e-4b09-ba8f-caa52768514f","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"689e0fee-93fd-4cb5-9882-b07aafbca6e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"c9e8dcfa-2382-4eec-9890-58f2d543c2ce","type":"CategoricalTicker"}},"id":"2c929aed-4ba7-4b6e-916d-a9bef50fd254","type":"CategoricalAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"15ff7933-9b67-429b-8842-58b74f7be9a0","type":"HoverTool"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"c3ee7520-3533-4ce5-923d-bdbfd1abf4df","type":"Line"},{"attributes":{"plot":null,"text":"Li Zongren (3 - 0 - 2)"},"id":"fc1f2186-835d-4cb7-bc8c-e2d884357d8d","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"cc709996-c511-46fa-aad7-82167bba3d41","type":"CategoricalColorMapper"},{"attributes":{},"id":"623e469b-93de-4d6a-aeb6-cf74bb17cf91","type":"LinearScale"},{"attributes":{},"id":"af1681d2-bf71-440e-8d00-1d953f75eeb7","type":"BasicTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Tai er zhuang","Battle of Wuhan","Battle of Xuzhou","Battle of Suixian-Zaoyang","Battle of South Henan"]},"id":"d685ca19-2abb-41c0-8fef-40038f8d19b4","type":"FactorRange"},{"attributes":{},"id":"bfa4bc09-aeda-4e07-bfd1-48ccedcf24eb","type":"BasicTicker"},{"attributes":{"callback":null},"id":"2170c81f-4b5f-4fb3-8565-fcc85797756a","type":"DataRange1d"},{"attributes":{},"id":"3a1e08f9-cd4e-4b09-ba8f-caa52768514f","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"15ff7933-9b67-429b-8842-58b74f7be9a0","type":"HoverTool"}]},"id":"b5154ca2-cd77-4a79-991d-2716b4be6989","type":"Toolbar"},{"attributes":{"below":[{"id":"2c929aed-4ba7-4b6e-916d-a9bef50fd254","type":"CategoricalAxis"}],"left":[{"id":"751e7b87-3e2b-4864-a791-9bc52fc4dcf2","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"2c929aed-4ba7-4b6e-916d-a9bef50fd254","type":"CategoricalAxis"},{"id":"60071cf0-ccc4-442a-96d4-58c57e658764","type":"Grid"},{"id":"751e7b87-3e2b-4864-a791-9bc52fc4dcf2","type":"LinearAxis"},{"id":"dd68f4f1-71b6-4401-b59b-a877ede91f86","type":"Grid"},{"id":"bc617afc-a530-49cd-b0a6-188e0d770f1e","type":"GlyphRenderer"},{"id":"08c0e2d4-4351-47ee-b661-a051ea23682a","type":"GlyphRenderer"}],"title":{"id":"fc1f2186-835d-4cb7-bc8c-e2d884357d8d","type":"Title"},"toolbar":{"id":"b5154ca2-cd77-4a79-991d-2716b4be6989","type":"Toolbar"},"x_range":{"id":"d685ca19-2abb-41c0-8fef-40038f8d19b4","type":"FactorRange"},"x_scale":{"id":"f9e55ebf-75a3-4742-af2d-e0376feb5722","type":"CategoricalScale"},"y_range":{"id":"2170c81f-4b5f-4fb3-8565-fcc85797756a","type":"DataRange1d"},"y_scale":{"id":"623e469b-93de-4d6a-aeb6-cf74bb17cf91","type":"LinearScale"}},"id":"689e0fee-93fd-4cb5-9882-b07aafbca6e8","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"c9e8dcfa-2382-4eec-9890-58f2d543c2ce","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"c10af2f9-561e-4fe7-9663-05c33ee73d14","type":"ColumnDataSource"},"glyph":{"id":"2aa1b626-e7fe-4373-9b29-4bd682dce617","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c3ee7520-3533-4ce5-923d-bdbfd1abf4df","type":"Line"},"selection_glyph":null,"view":{"id":"72a2722a-ceca-4eee-84b9-436bd74eef64","type":"CDSView"}},"id":"bc617afc-a530-49cd-b0a6-188e0d770f1e","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"af1681d2-bf71-440e-8d00-1d953f75eeb7","type":"BasicTickFormatter"},"plot":{"id":"689e0fee-93fd-4cb5-9882-b07aafbca6e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"bfa4bc09-aeda-4e07-bfd1-48ccedcf24eb","type":"BasicTicker"}},"id":"751e7b87-3e2b-4864-a791-9bc52fc4dcf2","type":"LinearAxis"},{"attributes":{"data_source":{"id":"c10af2f9-561e-4fe7-9663-05c33ee73d14","type":"ColumnDataSource"},"glyph":{"id":"58f73c94-ea61-4e17-90ed-a51f39f20a5d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"656a0efc-179e-4ae2-97e9-22fcb7ec1bb4","type":"VBar"},"selection_glyph":null,"view":{"id":"14a56642-6359-4dc4-9d30-2d4fc9385c40","type":"CDSView"}},"id":"08c0e2d4-4351-47ee-b661-a051ea23682a","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Tai er zhuang","Battle of Wuhan","Battle of Xuzhou","Battle of Suixian-Zaoyang","Battle of South Henan"],"cumulative":{"__ndarray__":"Uo46JXG82z9oB93oyPqrvzrv97zAMuO/RASm1Hoxwb/e/ayVQmfXPw==","dtype":"float64","shape":[5]},"general":["Li Zongren","Li Zongren","Li Zongren","Li Zongren","Li Zongren"],"outcome":["V","D","D","V","V"],"value":{"__ndarray__":"Uo46JXG82z8/L1ZCyjvfv8Meai4Uc+G/UtycD8TM3T8AAAAAAADgPw==","dtype":"float64","shape":[5]},"year":{"__ndarray__":"AAAAAABInkAAAAAAAEieQAAAAAAASJ5AAAAAAABMnkAAAAAAAFSeQA==","dtype":"float64","shape":[5]}}},"id":"c10af2f9-561e-4fe7-9663-05c33ee73d14","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"656a0efc-179e-4ae2-97e9-22fcb7ec1bb4","type":"VBar"},{"attributes":{"source":{"id":"c10af2f9-561e-4fe7-9663-05c33ee73d14","type":"ColumnDataSource"}},"id":"14a56642-6359-4dc4-9d30-2d4fc9385c40","type":"CDSView"},{"attributes":{"source":{"id":"c10af2f9-561e-4fe7-9663-05c33ee73d14","type":"ColumnDataSource"}},"id":"72a2722a-ceca-4eee-84b9-436bd74eef64","type":"CDSView"},{"attributes":{},"id":"f9e55ebf-75a3-4742-af2d-e0376feb5722","type":"CategoricalScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2aa1b626-e7fe-4373-9b29-4bd682dce617","type":"Line"}],"root_ids":["689e0fee-93fd-4cb5-9882-b07aafbca6e8"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"feeba504-708c-41ea-a131-7267420c8d06","elementid":"8bbfad8f-0bd4-406a-9733-cd17b8953254","modelid":"689e0fee-93fd-4cb5-9882-b07aafbca6e8"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

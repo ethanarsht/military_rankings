@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="51430c95-cb80-42ca-9add-649e3387f382"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"5f056278-e6e1-4b6c-996f-2b5df861a9da":{"roots":{"references":[{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"97d1551a-958d-498d-ba8b-e18af2bf5c5f","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"97d1551a-958d-498d-ba8b-e18af2bf5c5f","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"eb0be520-72a1-437c-9836-9b9404b9cdf5","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Kaiserslautern","Battle of Neuwied (1797)"]},"id":"b4febc70-105f-48c3-aa10-b230179c0136","type":"FactorRange"},{"attributes":{"source":{"id":"a6527444-538c-4d44-8b71-f5e366a29565","type":"ColumnDataSource"}},"id":"24101443-e561-4dc8-b620-e109039a28c9","type":"CDSView"},{"attributes":{},"id":"3ca663f2-dd96-4214-8e8d-e5fbd905d049","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"a6527444-538c-4d44-8b71-f5e366a29565","type":"ColumnDataSource"},"glyph":{"id":"4600bbb3-bc34-4b6e-918b-c9e79978abfb","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a482cb08-944c-45b2-abae-c3dadddc4c0b","type":"Line"},"selection_glyph":null,"view":{"id":"014ab564-b39e-43bd-9d21-ed423a314f93","type":"CDSView"}},"id":"be0ce01c-3956-435f-a522-87fe22ada537","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"97d1551a-958d-498d-ba8b-e18af2bf5c5f","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Kaiserslautern","Battle of Neuwied (1797)"],"cumulative":{"__ndarray__":"L2HGuKaT4L+wruaK6B+ovw==","dtype":"float64","shape":[2]},"general":["Lazare Hoche","Lazare Hoche"],"outcome":["D","V"],"value":{"__ndarray__":"L2HGuKaT4L+I7C9gUCPePw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAAEnEAAAAAAABScQA==","dtype":"float64","shape":[2]}}},"id":"a6527444-538c-4d44-8b71-f5e366a29565","type":"ColumnDataSource"},{"attributes":{"dimension":1,"plot":{"id":"81a6b2d4-e5d2-4a7a-a542-eb8f03791fd6","subtype":"Figure","type":"Plot"},"ticker":{"id":"24cf894e-ed2b-4b49-8b89-14f188151f89","type":"BasicTicker"}},"id":"19594ed3-ede8-46eb-a17e-293a152c1916","type":"Grid"},{"attributes":{"below":[{"id":"07486aa9-b27d-4545-830f-db5558b6fcb1","type":"CategoricalAxis"}],"left":[{"id":"6ff7390b-bb6f-458a-991a-a77ee08de32f","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"07486aa9-b27d-4545-830f-db5558b6fcb1","type":"CategoricalAxis"},{"id":"36ef5f54-9cae-4910-bcc9-bac9b171ace7","type":"Grid"},{"id":"6ff7390b-bb6f-458a-991a-a77ee08de32f","type":"LinearAxis"},{"id":"19594ed3-ede8-46eb-a17e-293a152c1916","type":"Grid"},{"id":"be0ce01c-3956-435f-a522-87fe22ada537","type":"GlyphRenderer"},{"id":"57020656-76bc-429d-ad6e-d1558c7b7d06","type":"GlyphRenderer"}],"title":{"id":"6b7e7293-7004-4fdd-8823-4bf241230b39","type":"Title"},"toolbar":{"id":"60beca96-28a0-4b18-80e0-1e888317889c","type":"Toolbar"},"x_range":{"id":"b4febc70-105f-48c3-aa10-b230179c0136","type":"FactorRange"},"x_scale":{"id":"95761f17-320d-42a5-8757-e73715c8a877","type":"CategoricalScale"},"y_range":{"id":"b32d4090-303f-488f-a4e3-473712cfb981","type":"DataRange1d"},"y_scale":{"id":"da727705-75d4-4d88-b0a8-a47951b9e25f","type":"LinearScale"}},"id":"81a6b2d4-e5d2-4a7a-a542-eb8f03791fd6","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"cd8a08fd-399f-4f66-b371-780223bd537a","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"2085b635-b4d8-405c-92bb-c4947929fad7","type":"HoverTool"},{"attributes":{"data_source":{"id":"a6527444-538c-4d44-8b71-f5e366a29565","type":"ColumnDataSource"},"glyph":{"id":"eb0be520-72a1-437c-9836-9b9404b9cdf5","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2c92a636-0826-4a27-9638-2ef18b6a060a","type":"VBar"},"selection_glyph":null,"view":{"id":"24101443-e561-4dc8-b620-e109039a28c9","type":"CDSView"}},"id":"57020656-76bc-429d-ad6e-d1558c7b7d06","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Lazare Hoche (1 - 0 - 1)"},"id":"6b7e7293-7004-4fdd-8823-4bf241230b39","type":"Title"},{"attributes":{"source":{"id":"a6527444-538c-4d44-8b71-f5e366a29565","type":"ColumnDataSource"}},"id":"014ab564-b39e-43bd-9d21-ed423a314f93","type":"CDSView"},{"attributes":{},"id":"727e98d7-cceb-4b94-a2a9-7d45925f1619","type":"BasicTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a482cb08-944c-45b2-abae-c3dadddc4c0b","type":"Line"},{"attributes":{"callback":null},"id":"b32d4090-303f-488f-a4e3-473712cfb981","type":"DataRange1d"},{"attributes":{"plot":{"id":"81a6b2d4-e5d2-4a7a-a542-eb8f03791fd6","subtype":"Figure","type":"Plot"},"ticker":{"id":"3ca663f2-dd96-4214-8e8d-e5fbd905d049","type":"CategoricalTicker"}},"id":"36ef5f54-9cae-4910-bcc9-bac9b171ace7","type":"Grid"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4600bbb3-bc34-4b6e-918b-c9e79978abfb","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2c92a636-0826-4a27-9638-2ef18b6a060a","type":"VBar"},{"attributes":{},"id":"24cf894e-ed2b-4b49-8b89-14f188151f89","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"2085b635-b4d8-405c-92bb-c4947929fad7","type":"HoverTool"}]},"id":"60beca96-28a0-4b18-80e0-1e888317889c","type":"Toolbar"},{"attributes":{"formatter":{"id":"cd8a08fd-399f-4f66-b371-780223bd537a","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"81a6b2d4-e5d2-4a7a-a542-eb8f03791fd6","subtype":"Figure","type":"Plot"},"ticker":{"id":"3ca663f2-dd96-4214-8e8d-e5fbd905d049","type":"CategoricalTicker"}},"id":"07486aa9-b27d-4545-830f-db5558b6fcb1","type":"CategoricalAxis"},{"attributes":{"formatter":{"id":"727e98d7-cceb-4b94-a2a9-7d45925f1619","type":"BasicTickFormatter"},"plot":{"id":"81a6b2d4-e5d2-4a7a-a542-eb8f03791fd6","subtype":"Figure","type":"Plot"},"ticker":{"id":"24cf894e-ed2b-4b49-8b89-14f188151f89","type":"BasicTicker"}},"id":"6ff7390b-bb6f-458a-991a-a77ee08de32f","type":"LinearAxis"},{"attributes":{},"id":"da727705-75d4-4d88-b0a8-a47951b9e25f","type":"LinearScale"},{"attributes":{},"id":"95761f17-320d-42a5-8757-e73715c8a877","type":"CategoricalScale"}],"root_ids":["81a6b2d4-e5d2-4a7a-a542-eb8f03791fd6"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"5f056278-e6e1-4b6c-996f-2b5df861a9da","elementid":"51430c95-cb80-42ca-9add-649e3387f382","modelid":"81a6b2d4-e5d2-4a7a-a542-eb8f03791fd6"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

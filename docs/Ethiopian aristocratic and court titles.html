@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="bf5f3138-f849-4f14-a772-ea0a0e5caaa5"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"45694a34-ede5-47b2-a9a3-ba5d9e7419be":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3e728de9-395f-4d37-80f9-6d70292a01c8","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"031d907b-6afb-4d7e-a48d-024f6e620631","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"031d907b-6afb-4d7e-a48d-024f6e620631","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"854a4797-6e88-4cdf-a691-edcfcf4f8002","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"031d907b-6afb-4d7e-a48d-024f6e620631","type":"CategoricalColorMapper"},{"attributes":{},"id":"e8fd2963-3ea5-4ec3-b9fb-e036afde79d5","type":"LinearScale"},{"attributes":{"dimension":1,"plot":{"id":"d229dcf5-d2d4-4497-92eb-cdaa5f9f8edd","subtype":"Figure","type":"Plot"},"ticker":{"id":"02f824ee-85d0-4b70-8b4f-d73b97c877dd","type":"BasicTicker"}},"id":"101448e7-f259-4d88-90c2-417fa1349509","type":"Grid"},{"attributes":{"plot":{"id":"d229dcf5-d2d4-4497-92eb-cdaa5f9f8edd","subtype":"Figure","type":"Plot"},"ticker":{"id":"390eb721-e062-499d-8f7e-4872c10a410c","type":"CategoricalTicker"}},"id":"b50499a4-4afe-4df3-8792-52aa1c0f2dbd","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Dogali"]},"id":"248c0559-9027-478d-96fe-f7bd7ca44d9d","type":"FactorRange"},{"attributes":{"source":{"id":"bef4e514-c125-46af-9297-b8c6357b7dac","type":"ColumnDataSource"}},"id":"61000c68-861a-4d9a-9aac-adb27315b833","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6926546f-a7c9-434f-a3ef-2f42c8e76f7f","type":"VBar"},{"attributes":{"source":{"id":"bef4e514-c125-46af-9297-b8c6357b7dac","type":"ColumnDataSource"}},"id":"89c8f594-2324-4324-b0f9-06303a3635b5","type":"CDSView"},{"attributes":{},"id":"4eec85bb-6b50-42af-b770-e2fd6bf77a77","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Dogali"],"cumulative":{"__ndarray__":"QO0cXQG44j8=","dtype":"float64","shape":[1]},"general":["Ethiopian aristocratic and court titles"],"outcome":["V"],"value":{"__ndarray__":"QO0cXQG44j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAB8nUA=","dtype":"float64","shape":[1]}}},"id":"bef4e514-c125-46af-9297-b8c6357b7dac","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"abbd3754-580b-4b1d-a6a4-dc24a56a6dab","type":"HoverTool"}]},"id":"868a3301-70cc-4891-a622-2a0680488241","type":"Toolbar"},{"attributes":{"callback":null},"id":"889e6b5e-39d5-42b6-aed0-aaf8fb8ff990","type":"DataRange1d"},{"attributes":{"data_source":{"id":"bef4e514-c125-46af-9297-b8c6357b7dac","type":"ColumnDataSource"},"glyph":{"id":"854a4797-6e88-4cdf-a691-edcfcf4f8002","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6926546f-a7c9-434f-a3ef-2f42c8e76f7f","type":"VBar"},"selection_glyph":null,"view":{"id":"61000c68-861a-4d9a-9aac-adb27315b833","type":"CDSView"}},"id":"2108cadd-2aed-47f7-a5d7-4b4a90099012","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"abbd3754-580b-4b1d-a6a4-dc24a56a6dab","type":"HoverTool"},{"attributes":{"data_source":{"id":"bef4e514-c125-46af-9297-b8c6357b7dac","type":"ColumnDataSource"},"glyph":{"id":"3e728de9-395f-4d37-80f9-6d70292a01c8","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8d06d96c-3509-4e8b-9ee5-9fa5743fadc6","type":"Line"},"selection_glyph":null,"view":{"id":"89c8f594-2324-4324-b0f9-06303a3635b5","type":"CDSView"}},"id":"2dbaa48f-41fc-4a2b-be6b-4c8ff74b5fff","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"4eec85bb-6b50-42af-b770-e2fd6bf77a77","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"d229dcf5-d2d4-4497-92eb-cdaa5f9f8edd","subtype":"Figure","type":"Plot"},"ticker":{"id":"390eb721-e062-499d-8f7e-4872c10a410c","type":"CategoricalTicker"}},"id":"5733ecf3-4dd2-44b9-9ce7-67f64d0ac5bf","type":"CategoricalAxis"},{"attributes":{"formatter":{"id":"3fd956fa-4a89-4280-9bd2-7a33b53e5c67","type":"BasicTickFormatter"},"plot":{"id":"d229dcf5-d2d4-4497-92eb-cdaa5f9f8edd","subtype":"Figure","type":"Plot"},"ticker":{"id":"02f824ee-85d0-4b70-8b4f-d73b97c877dd","type":"BasicTicker"}},"id":"4603db7d-f3cb-409f-9f53-7989039e3d66","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Ethiopian aristocratic and court titles (1 - 0 - 0)"},"id":"68d07934-3294-4d31-9c9c-ee96d384f40a","type":"Title"},{"attributes":{},"id":"02f824ee-85d0-4b70-8b4f-d73b97c877dd","type":"BasicTicker"},{"attributes":{},"id":"3ba9bfbe-b8ce-46b9-a73f-5f158e74b8d2","type":"CategoricalScale"},{"attributes":{"below":[{"id":"5733ecf3-4dd2-44b9-9ce7-67f64d0ac5bf","type":"CategoricalAxis"}],"left":[{"id":"4603db7d-f3cb-409f-9f53-7989039e3d66","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"5733ecf3-4dd2-44b9-9ce7-67f64d0ac5bf","type":"CategoricalAxis"},{"id":"b50499a4-4afe-4df3-8792-52aa1c0f2dbd","type":"Grid"},{"id":"4603db7d-f3cb-409f-9f53-7989039e3d66","type":"LinearAxis"},{"id":"101448e7-f259-4d88-90c2-417fa1349509","type":"Grid"},{"id":"2dbaa48f-41fc-4a2b-be6b-4c8ff74b5fff","type":"GlyphRenderer"},{"id":"2108cadd-2aed-47f7-a5d7-4b4a90099012","type":"GlyphRenderer"}],"title":{"id":"68d07934-3294-4d31-9c9c-ee96d384f40a","type":"Title"},"toolbar":{"id":"868a3301-70cc-4891-a622-2a0680488241","type":"Toolbar"},"x_range":{"id":"248c0559-9027-478d-96fe-f7bd7ca44d9d","type":"FactorRange"},"x_scale":{"id":"3ba9bfbe-b8ce-46b9-a73f-5f158e74b8d2","type":"CategoricalScale"},"y_range":{"id":"889e6b5e-39d5-42b6-aed0-aaf8fb8ff990","type":"DataRange1d"},"y_scale":{"id":"e8fd2963-3ea5-4ec3-b9fb-e036afde79d5","type":"LinearScale"}},"id":"d229dcf5-d2d4-4497-92eb-cdaa5f9f8edd","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"3fd956fa-4a89-4280-9bd2-7a33b53e5c67","type":"BasicTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8d06d96c-3509-4e8b-9ee5-9fa5743fadc6","type":"Line"},{"attributes":{},"id":"390eb721-e062-499d-8f7e-4872c10a410c","type":"CategoricalTicker"}],"root_ids":["d229dcf5-d2d4-4497-92eb-cdaa5f9f8edd"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"45694a34-ede5-47b2-a9a3-ba5d9e7419be","elementid":"bf5f3138-f849-4f14-a772-ea0a0e5caaa5","modelid":"d229dcf5-d2d4-4497-92eb-cdaa5f9f8edd"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

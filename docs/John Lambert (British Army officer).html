@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="fcc9181c-c2db-4ae2-83b0-2863b497eb1a"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b57adc0c-6209-46b3-8f65-3663cbaff04c":{"roots":{"references":[{"attributes":{"plot":null,"text":"John Lambert (British Army officer) (0 - 0 - 1)"},"id":"3524a0df-e30c-48c0-9b3e-52b2e6b9645a","type":"Title"},{"attributes":{"data_source":{"id":"f7ccd5c2-6b35-4aff-b243-95a16286f7a4","type":"ColumnDataSource"},"glyph":{"id":"470fa182-9e64-43f6-b4e5-b85ae41068e3","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"91221329-9962-481c-8cfa-88cf419fcef5","type":"Line"},"selection_glyph":null,"view":{"id":"e06fca7c-0b53-4b5a-9401-568314f128e2","type":"CDSView"}},"id":"4f22405b-ed48-4945-acb1-b8453908f08d","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"91221329-9962-481c-8cfa-88cf419fcef5","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4e5616b0-fe44-4738-a391-e265a2eebc09","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of New Orleans"],"cumulative":{"__ndarray__":"nxcI3faz4b8=","dtype":"float64","shape":[1]},"general":["John Lambert (British Army officer)"],"outcome":["D"],"value":{"__ndarray__":"nxcI3faz4b8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABcnEA=","dtype":"float64","shape":[1]}}},"id":"f7ccd5c2-6b35-4aff-b243-95a16286f7a4","type":"ColumnDataSource"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"470fa182-9e64-43f6-b4e5-b85ae41068e3","type":"Line"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"8d1a04a8-35d8-4aee-acc5-8d32f387da4d","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bbcf3ad1-ac39-41b7-8e6c-0c01701e31f7","type":"VBar"},{"attributes":{"formatter":{"id":"eee24511-ec75-4f2e-8198-db9ee6920ef6","type":"BasicTickFormatter"},"plot":{"id":"cc3e7ec7-6796-4575-957c-83881cb9275c","subtype":"Figure","type":"Plot"},"ticker":{"id":"5c08a718-efd3-442e-b37d-475fad1ba004","type":"BasicTicker"}},"id":"19726248-7dad-46a3-9493-8ad4f590bfec","type":"LinearAxis"},{"attributes":{},"id":"9c006375-29f8-4c94-83e2-be671691179b","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Battle of New Orleans"]},"id":"55d40e0a-c45b-45c6-8795-eb7e3c5016fa","type":"FactorRange"},{"attributes":{},"id":"eee24511-ec75-4f2e-8198-db9ee6920ef6","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"8d1a04a8-35d8-4aee-acc5-8d32f387da4d","type":"HoverTool"}]},"id":"41ba2ef4-9acc-4c85-a311-5afcee736088","type":"Toolbar"},{"attributes":{"formatter":{"id":"95796d97-95c9-4c44-89ee-badbc119083a","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"cc3e7ec7-6796-4575-957c-83881cb9275c","subtype":"Figure","type":"Plot"},"ticker":{"id":"735eb276-3520-46b8-99eb-dd009fda8b8c","type":"CategoricalTicker"}},"id":"944ab5fa-a38c-4b89-a000-81203aeadc59","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4e5616b0-fe44-4738-a391-e265a2eebc09","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4e5616b0-fe44-4738-a391-e265a2eebc09","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d4458f29-39ba-4c98-a63d-4d416db669b1","type":"VBar"},{"attributes":{},"id":"95796d97-95c9-4c44-89ee-badbc119083a","type":"CategoricalTickFormatter"},{"attributes":{},"id":"5d8bb84a-1145-4d71-86f7-bdcb8c3307d6","type":"LinearScale"},{"attributes":{"callback":null},"id":"4a5af007-2b9f-4ef3-b519-3ec1f78c2f76","type":"DataRange1d"},{"attributes":{"plot":{"id":"cc3e7ec7-6796-4575-957c-83881cb9275c","subtype":"Figure","type":"Plot"},"ticker":{"id":"735eb276-3520-46b8-99eb-dd009fda8b8c","type":"CategoricalTicker"}},"id":"0e5013d3-f12f-416f-9fd7-0f17a6689fe0","type":"Grid"},{"attributes":{"below":[{"id":"944ab5fa-a38c-4b89-a000-81203aeadc59","type":"CategoricalAxis"}],"left":[{"id":"19726248-7dad-46a3-9493-8ad4f590bfec","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"944ab5fa-a38c-4b89-a000-81203aeadc59","type":"CategoricalAxis"},{"id":"0e5013d3-f12f-416f-9fd7-0f17a6689fe0","type":"Grid"},{"id":"19726248-7dad-46a3-9493-8ad4f590bfec","type":"LinearAxis"},{"id":"d8f38e0e-3187-4285-b951-8c0cbde99a00","type":"Grid"},{"id":"4f22405b-ed48-4945-acb1-b8453908f08d","type":"GlyphRenderer"},{"id":"a180e0fb-117c-4095-972e-58db82b6dfac","type":"GlyphRenderer"}],"title":{"id":"3524a0df-e30c-48c0-9b3e-52b2e6b9645a","type":"Title"},"toolbar":{"id":"41ba2ef4-9acc-4c85-a311-5afcee736088","type":"Toolbar"},"x_range":{"id":"55d40e0a-c45b-45c6-8795-eb7e3c5016fa","type":"FactorRange"},"x_scale":{"id":"9c006375-29f8-4c94-83e2-be671691179b","type":"CategoricalScale"},"y_range":{"id":"4a5af007-2b9f-4ef3-b519-3ec1f78c2f76","type":"DataRange1d"},"y_scale":{"id":"5d8bb84a-1145-4d71-86f7-bdcb8c3307d6","type":"LinearScale"}},"id":"cc3e7ec7-6796-4575-957c-83881cb9275c","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":1,"plot":{"id":"cc3e7ec7-6796-4575-957c-83881cb9275c","subtype":"Figure","type":"Plot"},"ticker":{"id":"5c08a718-efd3-442e-b37d-475fad1ba004","type":"BasicTicker"}},"id":"d8f38e0e-3187-4285-b951-8c0cbde99a00","type":"Grid"},{"attributes":{},"id":"735eb276-3520-46b8-99eb-dd009fda8b8c","type":"CategoricalTicker"},{"attributes":{"source":{"id":"f7ccd5c2-6b35-4aff-b243-95a16286f7a4","type":"ColumnDataSource"}},"id":"e06fca7c-0b53-4b5a-9401-568314f128e2","type":"CDSView"},{"attributes":{"source":{"id":"f7ccd5c2-6b35-4aff-b243-95a16286f7a4","type":"ColumnDataSource"}},"id":"36ad0564-66a2-4ea3-845c-34131f997872","type":"CDSView"},{"attributes":{},"id":"5c08a718-efd3-442e-b37d-475fad1ba004","type":"BasicTicker"},{"attributes":{"data_source":{"id":"f7ccd5c2-6b35-4aff-b243-95a16286f7a4","type":"ColumnDataSource"},"glyph":{"id":"d4458f29-39ba-4c98-a63d-4d416db669b1","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bbcf3ad1-ac39-41b7-8e6c-0c01701e31f7","type":"VBar"},"selection_glyph":null,"view":{"id":"36ad0564-66a2-4ea3-845c-34131f997872","type":"CDSView"}},"id":"a180e0fb-117c-4095-972e-58db82b6dfac","type":"GlyphRenderer"}],"root_ids":["cc3e7ec7-6796-4575-957c-83881cb9275c"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b57adc0c-6209-46b3-8f65-3663cbaff04c","elementid":"fcc9181c-c2db-4ae2-83b0-2863b497eb1a","modelid":"cc3e7ec7-6796-4575-957c-83881cb9275c"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

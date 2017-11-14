@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="6ee237b0-c7c7-4068-81d3-84b66c277dd4"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"c85b2ddd-ffe5-4ebc-a619-83a3c6f15a99":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"abfe57ad-1924-4bac-9ef4-f02e006d527b","type":"CategoricalColorMapper"},{"attributes":{},"id":"f6e1be1e-e25d-4e49-93b9-05ace159b557","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"a4852f7c-0dc5-4134-862f-e9662c762ef4","subtype":"Figure","type":"Plot"},"ticker":{"id":"1280207a-1b49-4850-94d2-3c7374111a3c","type":"BasicTicker"}},"id":"9d264ca1-b20f-45b3-9b3e-2c1b4e37baf9","type":"Grid"},{"attributes":{},"id":"df8537b2-d2b0-4f1f-8f0d-294591f6b4f4","type":"CategoricalTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"faa0e7a5-fe8e-40db-bb5f-c8a9813ad5f4","type":"HoverTool"},{"attributes":{"data_source":{"id":"4734a84e-fc7e-40cc-b042-7ce647769d74","type":"ColumnDataSource"},"glyph":{"id":"b54a542d-c520-4ede-b0e3-944142ba89b5","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"aca504d6-6c28-4930-9aec-bc912e09bda9","type":"VBar"},"selection_glyph":null,"view":{"id":"8ff63f2e-43bc-4433-b9e8-12910ce20a39","type":"CDSView"}},"id":"ec015e97-396a-418d-9d6d-a8ff548e4e52","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"aca504d6-6c28-4930-9aec-bc912e09bda9","type":"VBar"},{"attributes":{"formatter":{"id":"5c23c2c2-90c4-452f-8473-d9eb502cc018","type":"BasicTickFormatter"},"plot":{"id":"a4852f7c-0dc5-4134-862f-e9662c762ef4","subtype":"Figure","type":"Plot"},"ticker":{"id":"1280207a-1b49-4850-94d2-3c7374111a3c","type":"BasicTicker"}},"id":"699fbf9e-8051-4ad0-b80a-05ac986c64b3","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"abfe57ad-1924-4bac-9ef4-f02e006d527b","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"abfe57ad-1924-4bac-9ef4-f02e006d527b","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b54a542d-c520-4ede-b0e3-944142ba89b5","type":"VBar"},{"attributes":{"callback":null},"id":"c0c0353b-59a8-455a-9a54-61a591e74e8c","type":"DataRange1d"},{"attributes":{},"id":"1280207a-1b49-4850-94d2-3c7374111a3c","type":"BasicTicker"},{"attributes":{"source":{"id":"4734a84e-fc7e-40cc-b042-7ce647769d74","type":"ColumnDataSource"}},"id":"8ff63f2e-43bc-4433-b9e8-12910ce20a39","type":"CDSView"},{"attributes":{"data_source":{"id":"4734a84e-fc7e-40cc-b042-7ce647769d74","type":"ColumnDataSource"},"glyph":{"id":"0a3f5062-b84d-4c7f-a85d-6c365a72d1ed","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e3b9dd2c-08fe-4a6f-ad76-8887698ab75c","type":"Line"},"selection_glyph":null,"view":{"id":"3fab05b3-7d38-4eb1-9cbe-3e9b33cdb9b1","type":"CDSView"}},"id":"89d7c461-9105-4a7e-8385-0ddfe4ad90ee","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Peter the Great (1 - 1 - 1)"},"id":"2fafdc70-a4e4-446f-9365-bc43c591d51c","type":"Title"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Lesnaya","Battle of Poltava","Russo-Turkish War (1710\u20131711)"],"cumulative":{"__ndarray__":"wNb1KIO4n78OZZxwTx7bP+CxbfPEbIi/","dtype":"float64","shape":[3]},"general":["Peter the Great","Peter the Great","Peter the Great"],"outcome":["I","V","D"],"value":{"__ndarray__":"wNb1KIO4n796wiuj1xndP53SN5i14du/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAACwmkAAAAAAALSaQAAAAAAAuJpA","dtype":"float64","shape":[3]}}},"id":"4734a84e-fc7e-40cc-b042-7ce647769d74","type":"ColumnDataSource"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0a3f5062-b84d-4c7f-a85d-6c365a72d1ed","type":"Line"},{"attributes":{"plot":{"id":"a4852f7c-0dc5-4134-862f-e9662c762ef4","subtype":"Figure","type":"Plot"},"ticker":{"id":"df8537b2-d2b0-4f1f-8f0d-294591f6b4f4","type":"CategoricalTicker"}},"id":"48f00545-40cf-4ed5-bb12-a0193d14118c","type":"Grid"},{"attributes":{},"id":"84b6d834-9941-46f6-8f6c-3420f16496be","type":"LinearScale"},{"attributes":{},"id":"5c23c2c2-90c4-452f-8473-d9eb502cc018","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"4734a84e-fc7e-40cc-b042-7ce647769d74","type":"ColumnDataSource"}},"id":"3fab05b3-7d38-4eb1-9cbe-3e9b33cdb9b1","type":"CDSView"},{"attributes":{"below":[{"id":"fa11cf53-08ac-4a52-83e8-34ac3f167137","type":"CategoricalAxis"}],"left":[{"id":"699fbf9e-8051-4ad0-b80a-05ac986c64b3","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"fa11cf53-08ac-4a52-83e8-34ac3f167137","type":"CategoricalAxis"},{"id":"48f00545-40cf-4ed5-bb12-a0193d14118c","type":"Grid"},{"id":"699fbf9e-8051-4ad0-b80a-05ac986c64b3","type":"LinearAxis"},{"id":"9d264ca1-b20f-45b3-9b3e-2c1b4e37baf9","type":"Grid"},{"id":"89d7c461-9105-4a7e-8385-0ddfe4ad90ee","type":"GlyphRenderer"},{"id":"ec015e97-396a-418d-9d6d-a8ff548e4e52","type":"GlyphRenderer"}],"title":{"id":"2fafdc70-a4e4-446f-9365-bc43c591d51c","type":"Title"},"toolbar":{"id":"ade73cb2-599e-4a0a-be04-4306da1d5e9b","type":"Toolbar"},"x_range":{"id":"6a83a7ed-c59c-4e95-8956-a892d120cbb6","type":"FactorRange"},"x_scale":{"id":"a61c5519-fcb8-41d1-9504-c0fa4828aefd","type":"CategoricalScale"},"y_range":{"id":"c0c0353b-59a8-455a-9a54-61a591e74e8c","type":"DataRange1d"},"y_scale":{"id":"84b6d834-9941-46f6-8f6c-3420f16496be","type":"LinearScale"}},"id":"a4852f7c-0dc5-4134-862f-e9662c762ef4","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e3b9dd2c-08fe-4a6f-ad76-8887698ab75c","type":"Line"},{"attributes":{"formatter":{"id":"f6e1be1e-e25d-4e49-93b9-05ace159b557","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"a4852f7c-0dc5-4134-862f-e9662c762ef4","subtype":"Figure","type":"Plot"},"ticker":{"id":"df8537b2-d2b0-4f1f-8f0d-294591f6b4f4","type":"CategoricalTicker"}},"id":"fa11cf53-08ac-4a52-83e8-34ac3f167137","type":"CategoricalAxis"},{"attributes":{"callback":null,"factors":["Battle of Lesnaya","Battle of Poltava","Russo-Turkish War (1710\u20131711)"]},"id":"6a83a7ed-c59c-4e95-8956-a892d120cbb6","type":"FactorRange"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"faa0e7a5-fe8e-40db-bb5f-c8a9813ad5f4","type":"HoverTool"}]},"id":"ade73cb2-599e-4a0a-be04-4306da1d5e9b","type":"Toolbar"},{"attributes":{},"id":"a61c5519-fcb8-41d1-9504-c0fa4828aefd","type":"CategoricalScale"}],"root_ids":["a4852f7c-0dc5-4134-862f-e9662c762ef4"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"c85b2ddd-ffe5-4ebc-a619-83a3c6f15a99","elementid":"6ee237b0-c7c7-4068-81d3-84b66c277dd4","modelid":"a4852f7c-0dc5-4134-862f-e9662c762ef4"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

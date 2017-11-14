@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="0da05829-3b99-4722-ac38-0e5931649cef"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b8fdded7-e486-40f4-9e24-26d2d210230e":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"8aa35fb3-d5ee-4ac2-b84c-65cc2441a5e3","type":"CategoricalColorMapper"},{"attributes":{"plot":null,"text":"Paul Ludwig Ewald von Kleist (2 - 0 - 1)"},"id":"b9f0f5c0-4c72-4d8a-8dd3-c02ddcddec67","type":"Title"},{"attributes":{"below":[{"id":"3b362324-70bb-4856-abd4-a779f93bc030","type":"CategoricalAxis"}],"left":[{"id":"4a538cc9-aadc-44a3-a730-fda239eb1b3a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"3b362324-70bb-4856-abd4-a779f93bc030","type":"CategoricalAxis"},{"id":"44430918-cae4-44de-b0ad-651ef1e56d1d","type":"Grid"},{"id":"4a538cc9-aadc-44a3-a730-fda239eb1b3a","type":"LinearAxis"},{"id":"1a82a93d-cdf1-45a9-9abd-a95254e8949a","type":"Grid"},{"id":"bfb3a813-7759-4e38-9a49-1e09ec40bf5e","type":"GlyphRenderer"},{"id":"a066380c-c8ca-46be-b6e1-f032d7aea555","type":"GlyphRenderer"}],"title":{"id":"b9f0f5c0-4c72-4d8a-8dd3-c02ddcddec67","type":"Title"},"toolbar":{"id":"72f0f862-7ac2-4e9e-a2d0-f327aaf6bdcb","type":"Toolbar"},"x_range":{"id":"8e3ff87a-3907-4532-893a-b1d5b0a9c57f","type":"FactorRange"},"x_scale":{"id":"1eaf6b8a-700a-437a-b507-c64f8acf3499","type":"CategoricalScale"},"y_range":{"id":"4070707a-ac36-4dd6-aa36-e42b0cc0eba4","type":"DataRange1d"},"y_scale":{"id":"85f676a7-4cac-4e9e-86a4-ab60aad4e939","type":"LinearScale"}},"id":"648af0a0-d60a-4580-899a-062098c7b22b","subtype":"Figure","type":"Plot"},{"attributes":{"plot":{"id":"648af0a0-d60a-4580-899a-062098c7b22b","subtype":"Figure","type":"Plot"},"ticker":{"id":"30b2cd3a-68be-47a1-957b-53f805fb1c79","type":"CategoricalTicker"}},"id":"44430918-cae4-44de-b0ad-651ef1e56d1d","type":"Grid"},{"attributes":{"data_source":{"id":"a72d0ebd-ba9f-43fa-8c04-c84ff2acdc3c","type":"ColumnDataSource"},"glyph":{"id":"4233b912-a177-4176-b84d-ab59711d05ae","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bcdb9f48-904b-40f2-bf5a-a7f21094fc20","type":"Line"},"selection_glyph":null,"view":{"id":"d7b66498-4367-49c3-b2e1-638a7f631ee7","type":"CDSView"}},"id":"bfb3a813-7759-4e38-9a49-1e09ec40bf5e","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"831bc710-12ae-417e-bedd-05b8d169387e","type":"HoverTool"}]},"id":"72f0f862-7ac2-4e9e-a2d0-f327aaf6bdcb","type":"Toolbar"},{"attributes":{"callback":null},"id":"4070707a-ac36-4dd6-aa36-e42b0cc0eba4","type":"DataRange1d"},{"attributes":{},"id":"3f0dc7ab-ab21-4657-90ff-fc86d7e2207d","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"648af0a0-d60a-4580-899a-062098c7b22b","subtype":"Figure","type":"Plot"},"ticker":{"id":"b0cd7652-0d3e-4ad3-93c9-d0942b0fc280","type":"BasicTicker"}},"id":"1a82a93d-cdf1-45a9-9abd-a95254e8949a","type":"Grid"},{"attributes":{"data_source":{"id":"a72d0ebd-ba9f-43fa-8c04-c84ff2acdc3c","type":"ColumnDataSource"},"glyph":{"id":"a9649708-6e65-440f-b7bc-21806b9de819","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c3d1a665-b19c-446f-a662-06a2a1d03853","type":"VBar"},"selection_glyph":null,"view":{"id":"f8394b6e-c0c0-4aa2-b899-6564159a4718","type":"CDSView"}},"id":"a066380c-c8ca-46be-b6e1-f032d7aea555","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Dunkirk","Battle of Brody (1941)","Battle of Rostov (1941)"],"cumulative":{"__ndarray__":"SKwcRLK43T/WSW5a0VLvP6yT3LSipd4/","dtype":"float64","shape":[3]},"general":["Paul Ludwig Ewald von Kleist","Paul Ludwig Ewald von Kleist","Paul Ludwig Ewald von Kleist"],"outcome":["V","V","D"],"value":{"__ndarray__":"SKwcRLK43T+y8184eHbgPwAAAAAAAOC/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABQnkAAAAAAAFSeQAAAAAAAVJ5A","dtype":"float64","shape":[3]}}},"id":"a72d0ebd-ba9f-43fa-8c04-c84ff2acdc3c","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"8aa35fb3-d5ee-4ac2-b84c-65cc2441a5e3","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"8aa35fb3-d5ee-4ac2-b84c-65cc2441a5e3","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a9649708-6e65-440f-b7bc-21806b9de819","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Dunkirk","Battle of Brody (1941)","Battle of Rostov (1941)"]},"id":"8e3ff87a-3907-4532-893a-b1d5b0a9c57f","type":"FactorRange"},{"attributes":{"source":{"id":"a72d0ebd-ba9f-43fa-8c04-c84ff2acdc3c","type":"ColumnDataSource"}},"id":"f8394b6e-c0c0-4aa2-b899-6564159a4718","type":"CDSView"},{"attributes":{},"id":"30b2cd3a-68be-47a1-957b-53f805fb1c79","type":"CategoricalTicker"},{"attributes":{},"id":"b0cd7652-0d3e-4ad3-93c9-d0942b0fc280","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"831bc710-12ae-417e-bedd-05b8d169387e","type":"HoverTool"},{"attributes":{},"id":"85f676a7-4cac-4e9e-86a4-ab60aad4e939","type":"LinearScale"},{"attributes":{"formatter":{"id":"08c615ab-226c-4fe6-b710-bdb7118a1175","type":"BasicTickFormatter"},"plot":{"id":"648af0a0-d60a-4580-899a-062098c7b22b","subtype":"Figure","type":"Plot"},"ticker":{"id":"b0cd7652-0d3e-4ad3-93c9-d0942b0fc280","type":"BasicTicker"}},"id":"4a538cc9-aadc-44a3-a730-fda239eb1b3a","type":"LinearAxis"},{"attributes":{},"id":"08c615ab-226c-4fe6-b710-bdb7118a1175","type":"BasicTickFormatter"},{"attributes":{},"id":"1eaf6b8a-700a-437a-b507-c64f8acf3499","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"3f0dc7ab-ab21-4657-90ff-fc86d7e2207d","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"648af0a0-d60a-4580-899a-062098c7b22b","subtype":"Figure","type":"Plot"},"ticker":{"id":"30b2cd3a-68be-47a1-957b-53f805fb1c79","type":"CategoricalTicker"}},"id":"3b362324-70bb-4856-abd4-a779f93bc030","type":"CategoricalAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"bcdb9f48-904b-40f2-bf5a-a7f21094fc20","type":"Line"},{"attributes":{"source":{"id":"a72d0ebd-ba9f-43fa-8c04-c84ff2acdc3c","type":"ColumnDataSource"}},"id":"d7b66498-4367-49c3-b2e1-638a7f631ee7","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c3d1a665-b19c-446f-a662-06a2a1d03853","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4233b912-a177-4176-b84d-ab59711d05ae","type":"Line"}],"root_ids":["648af0a0-d60a-4580-899a-062098c7b22b"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b8fdded7-e486-40f4-9e24-26d2d210230e","elementid":"0da05829-3b99-4722-ac38-0e5931649cef","modelid":"648af0a0-d60a-4580-899a-062098c7b22b"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d356ca9c-69a0-40d7-a6d2-7d0c49fa3a0a"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"616077ba-236b-4e12-979c-959e8d337f4f":{"roots":{"references":[{"attributes":{"data_source":{"id":"818520b5-8e77-4996-a1b7-bb0208ed319b","type":"ColumnDataSource"},"glyph":{"id":"a69c15d1-a0e7-4210-8fca-f1acc509e70a","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"053b57c7-2be6-42db-96f7-d6155c40dc70","type":"VBar"},"selection_glyph":null,"view":{"id":"ada1fbcd-c4f2-4bb2-9a28-b0e410b83e93","type":"CDSView"}},"id":"9088eae9-67a3-451b-93c1-7382cdb1bf04","type":"GlyphRenderer"},{"attributes":{},"id":"2500688f-86e2-4b8f-a564-2514bb07aa29","type":"CategoricalScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Klissow"],"cumulative":{"__ndarray__":"ZYOnp8lz4D8=","dtype":"float64","shape":[1]},"general":["Frederick IV, Duke of Holstein-Gottorp"],"outcome":["V"],"value":{"__ndarray__":"ZYOnp8lz4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAACYmkA=","dtype":"float64","shape":[1]}}},"id":"818520b5-8e77-4996-a1b7-bb0208ed319b","type":"ColumnDataSource"},{"attributes":{},"id":"1802c926-e771-4b6b-a754-47214f3a12af","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"631fdd04-c180-4b68-93db-a48fc6eaea3f","type":"BasicTickFormatter"},"plot":{"id":"544d5dff-da6a-45b4-9d53-19d042fd778e","subtype":"Figure","type":"Plot"},"ticker":{"id":"37f7a3ef-fbb2-4349-932c-4aba8a4ef5ed","type":"BasicTicker"}},"id":"4a88084b-ff3b-47a2-ae2f-df07b028ef76","type":"LinearAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f0758a29-ec32-4da9-9470-9a8345e51b3e","type":"HoverTool"},{"attributes":{"plot":{"id":"544d5dff-da6a-45b4-9d53-19d042fd778e","subtype":"Figure","type":"Plot"},"ticker":{"id":"ec80f040-ac0c-4b93-8426-0bd1f87c0c82","type":"CategoricalTicker"}},"id":"ea88949c-703f-4336-8cac-e793632d64e6","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"2b8c352c-3ec7-4b62-b4a1-c58369ba023c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"2b8c352c-3ec7-4b62-b4a1-c58369ba023c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a69c15d1-a0e7-4210-8fca-f1acc509e70a","type":"VBar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9ef3b356-6b94-4ad8-91c9-d41b8ef68f98","type":"Line"},{"attributes":{"below":[{"id":"3e535419-3642-40a5-ae09-6bc4f849e5c8","type":"CategoricalAxis"}],"left":[{"id":"4a88084b-ff3b-47a2-ae2f-df07b028ef76","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"3e535419-3642-40a5-ae09-6bc4f849e5c8","type":"CategoricalAxis"},{"id":"ea88949c-703f-4336-8cac-e793632d64e6","type":"Grid"},{"id":"4a88084b-ff3b-47a2-ae2f-df07b028ef76","type":"LinearAxis"},{"id":"29cb5937-ccf0-45ab-a428-b63c3a4d22c1","type":"Grid"},{"id":"a0ef3bee-e387-4183-80b0-a088d792068a","type":"GlyphRenderer"},{"id":"9088eae9-67a3-451b-93c1-7382cdb1bf04","type":"GlyphRenderer"}],"title":{"id":"5c19f4d9-e5db-4c9c-98ea-8250d6bd4b16","type":"Title"},"toolbar":{"id":"4908902a-5c80-40f9-88ca-d62e0e4eaa5e","type":"Toolbar"},"x_range":{"id":"6e012433-71ff-4a50-9bdc-159d9f1c1647","type":"FactorRange"},"x_scale":{"id":"2500688f-86e2-4b8f-a564-2514bb07aa29","type":"CategoricalScale"},"y_range":{"id":"63e102a3-ebe8-4784-90ca-322915abf357","type":"DataRange1d"},"y_scale":{"id":"32ed2a93-bef2-4ce2-99f4-61abfa009a62","type":"LinearScale"}},"id":"544d5dff-da6a-45b4-9d53-19d042fd778e","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"37f7a3ef-fbb2-4349-932c-4aba8a4ef5ed","type":"BasicTicker"},{"attributes":{},"id":"ec80f040-ac0c-4b93-8426-0bd1f87c0c82","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"2b8c352c-3ec7-4b62-b4a1-c58369ba023c","type":"CategoricalColorMapper"},{"attributes":{},"id":"631fdd04-c180-4b68-93db-a48fc6eaea3f","type":"BasicTickFormatter"},{"attributes":{},"id":"32ed2a93-bef2-4ce2-99f4-61abfa009a62","type":"LinearScale"},{"attributes":{"source":{"id":"818520b5-8e77-4996-a1b7-bb0208ed319b","type":"ColumnDataSource"}},"id":"ada1fbcd-c4f2-4bb2-9a28-b0e410b83e93","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"cf05c545-f0eb-4138-974d-1ef227b6e5ad","type":"Line"},{"attributes":{"data_source":{"id":"818520b5-8e77-4996-a1b7-bb0208ed319b","type":"ColumnDataSource"},"glyph":{"id":"cf05c545-f0eb-4138-974d-1ef227b6e5ad","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9ef3b356-6b94-4ad8-91c9-d41b8ef68f98","type":"Line"},"selection_glyph":null,"view":{"id":"9ad1cdda-9c41-4ca9-abc5-216cd2c05cf5","type":"CDSView"}},"id":"a0ef3bee-e387-4183-80b0-a088d792068a","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Frederick IV, Duke of Holstein-Gottorp (1 - 0 - 0)"},"id":"5c19f4d9-e5db-4c9c-98ea-8250d6bd4b16","type":"Title"},{"attributes":{"callback":null},"id":"63e102a3-ebe8-4784-90ca-322915abf357","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f0758a29-ec32-4da9-9470-9a8345e51b3e","type":"HoverTool"}]},"id":"4908902a-5c80-40f9-88ca-d62e0e4eaa5e","type":"Toolbar"},{"attributes":{"dimension":1,"plot":{"id":"544d5dff-da6a-45b4-9d53-19d042fd778e","subtype":"Figure","type":"Plot"},"ticker":{"id":"37f7a3ef-fbb2-4349-932c-4aba8a4ef5ed","type":"BasicTicker"}},"id":"29cb5937-ccf0-45ab-a428-b63c3a4d22c1","type":"Grid"},{"attributes":{"source":{"id":"818520b5-8e77-4996-a1b7-bb0208ed319b","type":"ColumnDataSource"}},"id":"9ad1cdda-9c41-4ca9-abc5-216cd2c05cf5","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Klissow"]},"id":"6e012433-71ff-4a50-9bdc-159d9f1c1647","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"053b57c7-2be6-42db-96f7-d6155c40dc70","type":"VBar"},{"attributes":{"formatter":{"id":"1802c926-e771-4b6b-a754-47214f3a12af","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"544d5dff-da6a-45b4-9d53-19d042fd778e","subtype":"Figure","type":"Plot"},"ticker":{"id":"ec80f040-ac0c-4b93-8426-0bd1f87c0c82","type":"CategoricalTicker"}},"id":"3e535419-3642-40a5-ae09-6bc4f849e5c8","type":"CategoricalAxis"}],"root_ids":["544d5dff-da6a-45b4-9d53-19d042fd778e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"616077ba-236b-4e12-979c-959e8d337f4f","elementid":"d356ca9c-69a0-40d7-a6d2-7d0c49fa3a0a","modelid":"544d5dff-da6a-45b4-9d53-19d042fd778e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

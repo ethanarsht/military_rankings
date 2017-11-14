@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="079ffa0a-91de-42e8-b6de-2d9014424c0a"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"0d858beb-af1a-4eb6-a2c3-925427995cfd":{"roots":{"references":[{"attributes":{"callback":null},"id":"bfc36c6b-5b6d-4950-905b-ead0c2629497","type":"DataRange1d"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"599782f2-39ec-42e2-8d8f-e2c1d431d7df","type":"CategoricalColorMapper"},{"attributes":{},"id":"4a8708f0-dfe1-4a9a-a9e0-0058dc292bfa","type":"CategoricalScale"},{"attributes":{},"id":"d294205d-5cdb-4e66-afb6-6029ad1c5b3d","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7a033228-9cb5-42b6-a147-2de5f957e669","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"7eabecdc-bd63-43bf-af05-565ea94e30b6","type":"HoverTool"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"58762448-cd1d-48d5-b67f-6d6c429b30fe","type":"Line"},{"attributes":{"plot":null,"text":"John S. Marmaduke (3 - 1 - 9)"},"id":"eb5689e1-ab35-462c-bb45-18bde46994f3","type":"Title"},{"attributes":{"source":{"id":"3f53180e-53b8-47bf-87ed-11a829eefbf4","type":"ColumnDataSource"}},"id":"eb25fed5-86ee-4792-a670-72b7b5f1b76c","type":"CDSView"},{"attributes":{},"id":"d446db08-bc84-45f4-b835-f11a18055038","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5d485d8c-2356-4d17-b946-b605f9b139c1","type":"Line"},{"attributes":{},"id":"d43eb50c-a91b-4d1f-ba5d-6f3cab58d216","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"014ceae2-de44-41a2-9e99-8d5bfd0b65c4","subtype":"Figure","type":"Plot"},"ticker":{"id":"d294205d-5cdb-4e66-afb6-6029ad1c5b3d","type":"BasicTicker"}},"id":"4f0221e1-e915-4e5e-afe3-e6fec5b4b22f","type":"Grid"},{"attributes":{"source":{"id":"3f53180e-53b8-47bf-87ed-11a829eefbf4","type":"ColumnDataSource"}},"id":"cfcebc9a-69f8-452c-8fb9-8111ae732f94","type":"CDSView"},{"attributes":{"plot":{"id":"014ceae2-de44-41a2-9e99-8d5bfd0b65c4","subtype":"Figure","type":"Plot"},"ticker":{"id":"6c50b3e4-6cd7-4ea6-886a-ae7216773204","type":"CategoricalTicker"}},"id":"b601691a-729d-41e7-a6ac-b4d98e792677","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"7eabecdc-bd63-43bf-af05-565ea94e30b6","type":"HoverTool"}]},"id":"b848f446-eb5d-4664-86a6-3c53d60af37c","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"599782f2-39ec-42e2-8d8f-e2c1d431d7df","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"599782f2-39ec-42e2-8d8f-e2c1d431d7df","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9fa1b1d7-75ed-4cb9-a3f1-9863946cf961","type":"VBar"},{"attributes":{"formatter":{"id":"23b822f2-2fe7-4400-a703-0cc3127c4f5f","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"014ceae2-de44-41a2-9e99-8d5bfd0b65c4","subtype":"Figure","type":"Plot"},"ticker":{"id":"6c50b3e4-6cd7-4ea6-886a-ae7216773204","type":"CategoricalTicker"}},"id":"2d0e3ef2-b21b-45f8-b03c-6ca143579f25","type":"CategoricalAxis"},{"attributes":{},"id":"23b822f2-2fe7-4400-a703-0cc3127c4f5f","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Boonville","Battle of Cane Hill","Battle of Bayou Fourche","Battle of Cape Girardeau","Battle of Chalk Bluff","Battle of Hartville","Battle of Pine Bluff","Battle of Springfield II","Battle of Byram's Ford","Battle of Elkin's Ferry","Battle of Marais des Cygnes","Battle of Mine Creek","Battle of Poison Spring"],"cumulative":{"__ndarray__":"/n862q+v379AllHn1CyoPzsR1NKKbNy/esmlWtaf7r84fzVkbf/Yvzj2k7kMGNm/SoGvPNr/7r/jTnci3W33v+NOdyLdbf+/cfeCjOSsA8B6e6Gh2g8IwIP/v7bQcgzALuaG/FiaCMA=","dtype":"float64","shape":[13]},"general":["John S. Marmaduke","John S. Marmaduke","John S. Marmaduke","John S. Marmaduke","John S. Marmaduke","John S. Marmaduke","John S. Marmaduke","John S. Marmaduke","John S. Marmaduke","John S. Marmaduke","John S. Marmaduke","John S. Marmaduke","John S. Marmaduke"],"outcome":["D","V","D","D","V","I","D","D","D","D","D","D","V"],"value":{"__ndarray__":"/n862q+v379jWZI7pVrhPwNEvm8lct+/3MA78ZBp4L/eCYuoHyDiPwAAd15Vn1i/Lobl39Nz4r/5OH4QwLffvwAAAAAAAOC//n862q+v378kEHpU2IvhvyQQelTYi+G/qsrI0b3D3j8=","dtype":"float64","shape":[13]},"year":{"__ndarray__":"AAAAAAAUnUAAAAAAABidQAAAAAAAHJ1AAAAAAAAcnUAAAAAAABydQAAAAAAAHJ1AAAAAAAAcnUAAAAAAABydQAAAAAAAIJ1AAAAAAAAgnUAAAAAAACCdQAAAAAAAIJ1AAAAAAAAgnUA=","dtype":"float64","shape":[13]}}},"id":"3f53180e-53b8-47bf-87ed-11a829eefbf4","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"3f53180e-53b8-47bf-87ed-11a829eefbf4","type":"ColumnDataSource"},"glyph":{"id":"9fa1b1d7-75ed-4cb9-a3f1-9863946cf961","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7a033228-9cb5-42b6-a147-2de5f957e669","type":"VBar"},"selection_glyph":null,"view":{"id":"cfcebc9a-69f8-452c-8fb9-8111ae732f94","type":"CDSView"}},"id":"e9c108a9-b8ad-425d-97ae-13a03e0faedc","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"3f53180e-53b8-47bf-87ed-11a829eefbf4","type":"ColumnDataSource"},"glyph":{"id":"5d485d8c-2356-4d17-b946-b605f9b139c1","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"58762448-cd1d-48d5-b67f-6d6c429b30fe","type":"Line"},"selection_glyph":null,"view":{"id":"eb25fed5-86ee-4792-a670-72b7b5f1b76c","type":"CDSView"}},"id":"42cdab06-3dfc-4eab-ab4a-96542a38e4a1","type":"GlyphRenderer"},{"attributes":{},"id":"6c50b3e4-6cd7-4ea6-886a-ae7216773204","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"d43eb50c-a91b-4d1f-ba5d-6f3cab58d216","type":"BasicTickFormatter"},"plot":{"id":"014ceae2-de44-41a2-9e99-8d5bfd0b65c4","subtype":"Figure","type":"Plot"},"ticker":{"id":"d294205d-5cdb-4e66-afb6-6029ad1c5b3d","type":"BasicTicker"}},"id":"f39aa335-a2f3-434d-876e-d6f1cba179de","type":"LinearAxis"},{"attributes":{"below":[{"id":"2d0e3ef2-b21b-45f8-b03c-6ca143579f25","type":"CategoricalAxis"}],"left":[{"id":"f39aa335-a2f3-434d-876e-d6f1cba179de","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"2d0e3ef2-b21b-45f8-b03c-6ca143579f25","type":"CategoricalAxis"},{"id":"b601691a-729d-41e7-a6ac-b4d98e792677","type":"Grid"},{"id":"f39aa335-a2f3-434d-876e-d6f1cba179de","type":"LinearAxis"},{"id":"4f0221e1-e915-4e5e-afe3-e6fec5b4b22f","type":"Grid"},{"id":"42cdab06-3dfc-4eab-ab4a-96542a38e4a1","type":"GlyphRenderer"},{"id":"e9c108a9-b8ad-425d-97ae-13a03e0faedc","type":"GlyphRenderer"}],"title":{"id":"eb5689e1-ab35-462c-bb45-18bde46994f3","type":"Title"},"toolbar":{"id":"b848f446-eb5d-4664-86a6-3c53d60af37c","type":"Toolbar"},"x_range":{"id":"34d98ddf-6c27-436a-aa21-56f72cf6a508","type":"FactorRange"},"x_scale":{"id":"4a8708f0-dfe1-4a9a-a9e0-0058dc292bfa","type":"CategoricalScale"},"y_range":{"id":"bfc36c6b-5b6d-4950-905b-ead0c2629497","type":"DataRange1d"},"y_scale":{"id":"d446db08-bc84-45f4-b835-f11a18055038","type":"LinearScale"}},"id":"014ceae2-de44-41a2-9e99-8d5bfd0b65c4","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Boonville","Battle of Cane Hill","Battle of Bayou Fourche","Battle of Cape Girardeau","Battle of Chalk Bluff","Battle of Hartville","Battle of Pine Bluff","Battle of Springfield II","Battle of Byram's Ford","Battle of Elkin's Ferry","Battle of Marais des Cygnes","Battle of Mine Creek","Battle of Poison Spring"]},"id":"34d98ddf-6c27-436a-aa21-56f72cf6a508","type":"FactorRange"}],"root_ids":["014ceae2-de44-41a2-9e99-8d5bfd0b65c4"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"0d858beb-af1a-4eb6-a2c3-925427995cfd","elementid":"079ffa0a-91de-42e8-b6de-2d9014424c0a","modelid":"014ceae2-de44-41a2-9e99-8d5bfd0b65c4"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

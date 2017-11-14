@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="bf15817c-7876-42d2-937f-9284b6467448"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"fc6fc5f7-a5cf-4e68-a32f-e7cbfdb7671c":{"roots":{"references":[{"attributes":{"plot":{"id":"d3da63e1-22fd-4fe2-af6b-0fd7395e4f25","subtype":"Figure","type":"Plot"},"ticker":{"id":"4901efee-2406-41be-841c-650d5ac7491c","type":"CategoricalTicker"}},"id":"fb9a2c1b-f33d-4f83-8ec1-0edf8785e466","type":"Grid"},{"attributes":{},"id":"4901efee-2406-41be-841c-650d5ac7491c","type":"CategoricalTicker"},{"attributes":{"source":{"id":"7edc8db8-4d5b-482e-8e42-7e391b5dbf49","type":"ColumnDataSource"}},"id":"921a66e4-1f31-4b29-9fc8-2a37b86219fb","type":"CDSView"},{"attributes":{"below":[{"id":"e0a35da7-4ec9-474c-af4a-d2a2868cdee3","type":"CategoricalAxis"}],"left":[{"id":"677dccc3-f7fa-49e0-995b-323ce7ddd964","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"e0a35da7-4ec9-474c-af4a-d2a2868cdee3","type":"CategoricalAxis"},{"id":"fb9a2c1b-f33d-4f83-8ec1-0edf8785e466","type":"Grid"},{"id":"677dccc3-f7fa-49e0-995b-323ce7ddd964","type":"LinearAxis"},{"id":"e4d93635-288c-44e7-925e-179c1b7144ca","type":"Grid"},{"id":"ff7448d8-47ad-4eff-8533-cf7ff5d0eedc","type":"GlyphRenderer"},{"id":"f7294bd4-b447-416e-bd5e-0aa04d4db98d","type":"GlyphRenderer"}],"title":{"id":"7c395e55-37c7-4a66-bdda-ba1dd3099a0a","type":"Title"},"toolbar":{"id":"24fa1ce4-845c-4b6d-b13c-4925b63422cb","type":"Toolbar"},"x_range":{"id":"c1060512-ca5f-473a-ab34-5aabc8b18b0a","type":"FactorRange"},"x_scale":{"id":"a36d62db-6c49-4ba0-9d2f-94b60588544a","type":"CategoricalScale"},"y_range":{"id":"b734ab2c-ba94-48bc-97c9-450f80c0a8aa","type":"DataRange1d"},"y_scale":{"id":"a46e3c44-9439-42ef-a5a5-3c03494d3fc2","type":"LinearScale"}},"id":"d3da63e1-22fd-4fe2-af6b-0fd7395e4f25","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"a36d62db-6c49-4ba0-9d2f-94b60588544a","type":"CategoricalScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"3b767bb0-0a95-4c5f-85f6-4421a98a4fd5","type":"HoverTool"}]},"id":"24fa1ce4-845c-4b6d-b13c-4925b63422cb","type":"Toolbar"},{"attributes":{"data_source":{"id":"7edc8db8-4d5b-482e-8e42-7e391b5dbf49","type":"ColumnDataSource"},"glyph":{"id":"1b317398-ab0e-4511-9e63-bc033e0bccc3","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"50e5e5a7-97fa-4cc8-893a-b795defd4cfa","type":"Line"},"selection_glyph":null,"view":{"id":"921a66e4-1f31-4b29-9fc8-2a37b86219fb","type":"CDSView"}},"id":"ff7448d8-47ad-4eff-8533-cf7ff5d0eedc","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"7edc8db8-4d5b-482e-8e42-7e391b5dbf49","type":"ColumnDataSource"},"glyph":{"id":"083c8683-c010-41b0-89d4-b0a32dc1c513","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9e0d2dcb-1ad7-4f72-b3fa-8ad686bbbea6","type":"VBar"},"selection_glyph":null,"view":{"id":"1ff4fb3f-7aff-4e67-b033-feea4ba0146f","type":"CDSView"}},"id":"f7294bd4-b447-416e-bd5e-0aa04d4db98d","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"3b767bb0-0a95-4c5f-85f6-4421a98a4fd5","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9e0d2dcb-1ad7-4f72-b3fa-8ad686bbbea6","type":"VBar"},{"attributes":{"plot":null,"text":"Luc Urbain de Bou\u00ebxic, comte de Guichen (0 - 2 - 1)"},"id":"7c395e55-37c7-4a66-bdda-ba1dd3099a0a","type":"Title"},{"attributes":{},"id":"a46e3c44-9439-42ef-a5a5-3c03494d3fc2","type":"LinearScale"},{"attributes":{"source":{"id":"7edc8db8-4d5b-482e-8e42-7e391b5dbf49","type":"ColumnDataSource"}},"id":"1ff4fb3f-7aff-4e67-b033-feea4ba0146f","type":"CDSView"},{"attributes":{"formatter":{"id":"ad27f4cb-7ec4-498e-92cb-2c17333f354d","type":"BasicTickFormatter"},"plot":{"id":"d3da63e1-22fd-4fe2-af6b-0fd7395e4f25","subtype":"Figure","type":"Plot"},"ticker":{"id":"ee2a229c-45a8-4373-918c-16289fee4c24","type":"BasicTicker"}},"id":"677dccc3-f7fa-49e0-995b-323ce7ddd964","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Ushant (1778)","Battle of Martinique (1780)","Battle of Ushant (1781)"],"cumulative":{"__ndarray__":"wHueJVuCgb8gbpmAY4eUv3QizvkwueG/","dtype":"float64","shape":[3]},"general":["Luc Urbain de Bou\u00ebxic, comte de Guichen","Luc Urbain de Bou\u00ebxic, comte de Guichen","Luc Urbain de Bou\u00ebxic, comte de Guichen"],"outcome":["I","I","D"],"value":{"__ndarray__":"wHueJVuCgb+AYJTba4yHvwNXyd31FOG/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAADIm0AAAAAAANCbQAAAAAAA1JtA","dtype":"float64","shape":[3]}}},"id":"7edc8db8-4d5b-482e-8e42-7e391b5dbf49","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"a1e14c54-5937-410e-a3e6-1a3622297b03","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"d3da63e1-22fd-4fe2-af6b-0fd7395e4f25","subtype":"Figure","type":"Plot"},"ticker":{"id":"4901efee-2406-41be-841c-650d5ac7491c","type":"CategoricalTicker"}},"id":"e0a35da7-4ec9-474c-af4a-d2a2868cdee3","type":"CategoricalAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"50e5e5a7-97fa-4cc8-893a-b795defd4cfa","type":"Line"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1b317398-ab0e-4511-9e63-bc033e0bccc3","type":"Line"},{"attributes":{},"id":"a1e14c54-5937-410e-a3e6-1a3622297b03","type":"CategoricalTickFormatter"},{"attributes":{},"id":"ee2a229c-45a8-4373-918c-16289fee4c24","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"d3da63e1-22fd-4fe2-af6b-0fd7395e4f25","subtype":"Figure","type":"Plot"},"ticker":{"id":"ee2a229c-45a8-4373-918c-16289fee4c24","type":"BasicTicker"}},"id":"e4d93635-288c-44e7-925e-179c1b7144ca","type":"Grid"},{"attributes":{},"id":"ad27f4cb-7ec4-498e-92cb-2c17333f354d","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"b734ab2c-ba94-48bc-97c9-450f80c0a8aa","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"fbccec28-52e4-471b-b051-c91c7f6fa6c3","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"fbccec28-52e4-471b-b051-c91c7f6fa6c3","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"083c8683-c010-41b0-89d4-b0a32dc1c513","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"fbccec28-52e4-471b-b051-c91c7f6fa6c3","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"factors":["Battle of Ushant (1778)","Battle of Martinique (1780)","Battle of Ushant (1781)"]},"id":"c1060512-ca5f-473a-ab34-5aabc8b18b0a","type":"FactorRange"}],"root_ids":["d3da63e1-22fd-4fe2-af6b-0fd7395e4f25"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"fc6fc5f7-a5cf-4e68-a32f-e7cbfdb7671c","elementid":"bf15817c-7876-42d2-937f-9284b6467448","modelid":"d3da63e1-22fd-4fe2-af6b-0fd7395e4f25"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

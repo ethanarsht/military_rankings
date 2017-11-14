@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="2c2b7d7f-6f47-4d14-8cf8-a24b4baa25cc"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"80128ea7-1d92-47f9-a77e-f00af85d4acb":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2d5c0684-1a90-425f-8b32-f3d26cbeee94","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2329aef6-afdc-42b8-ae69-a4726fc607f4","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Breitenfeld (1631)"],"cumulative":{"__ndarray__":"mo0s6sNc3z8=","dtype":"float64","shape":[1]},"general":["Robert Munro, 18th Baron of Foulis"],"outcome":["V"],"value":{"__ndarray__":"mo0s6sNc3z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAB8mUA=","dtype":"float64","shape":[1]}}},"id":"08fcb015-bd93-465e-86a1-3f604a0a2011","type":"ColumnDataSource"},{"attributes":{"callback":null,"factors":["Battle of Breitenfeld (1631)"]},"id":"fec71751-a43f-4456-ae8b-8bc819c22e9e","type":"FactorRange"},{"attributes":{"formatter":{"id":"2c2c3bac-335e-462d-bbdc-03bb499282c1","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"15e7687b-5ad6-4842-a753-e270b2a6e620","subtype":"Figure","type":"Plot"},"ticker":{"id":"93c75ac5-5a18-4254-bc3e-e7acb5899ed2","type":"CategoricalTicker"}},"id":"e3a7bd71-414b-4d41-adf8-c41cfa117a38","type":"CategoricalAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3885e3b6-2d09-467b-85df-1700efbdf679","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"c8e83742-144a-4840-9f31-e0b343590cdd","type":"HoverTool"}]},"id":"259e207c-4131-4239-b139-0b2bb6c6d7be","type":"Toolbar"},{"attributes":{"below":[{"id":"e3a7bd71-414b-4d41-adf8-c41cfa117a38","type":"CategoricalAxis"}],"left":[{"id":"ea4413d2-0c0a-4b57-8c77-0355e95d13c9","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"e3a7bd71-414b-4d41-adf8-c41cfa117a38","type":"CategoricalAxis"},{"id":"6c5f8cee-22f2-4b63-be7f-d9ef2309d1c9","type":"Grid"},{"id":"ea4413d2-0c0a-4b57-8c77-0355e95d13c9","type":"LinearAxis"},{"id":"04a5343c-6693-4f0e-9942-bbba7e5ab3a4","type":"Grid"},{"id":"be6646bc-0f10-4474-86b2-fd0e5229da97","type":"GlyphRenderer"},{"id":"79dd093d-053a-4379-9a5c-7c236aa5b0cb","type":"GlyphRenderer"}],"title":{"id":"789c299a-897b-4539-b5d4-36e6356939f2","type":"Title"},"toolbar":{"id":"259e207c-4131-4239-b139-0b2bb6c6d7be","type":"Toolbar"},"x_range":{"id":"fec71751-a43f-4456-ae8b-8bc819c22e9e","type":"FactorRange"},"x_scale":{"id":"4f4e1864-6204-48d9-b62d-618dacdfc599","type":"CategoricalScale"},"y_range":{"id":"ac6cdd88-22c4-4c43-8a3d-b67fc440fd58","type":"DataRange1d"},"y_scale":{"id":"33d13d87-aef5-4190-802e-3ec2ebd2c9bd","type":"LinearScale"}},"id":"15e7687b-5ad6-4842-a753-e270b2a6e620","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"08fcb015-bd93-465e-86a1-3f604a0a2011","type":"ColumnDataSource"}},"id":"86b024de-3864-486d-b41c-046eee9decd3","type":"CDSView"},{"attributes":{},"id":"93c75ac5-5a18-4254-bc3e-e7acb5899ed2","type":"CategoricalTicker"},{"attributes":{},"id":"2c2c3bac-335e-462d-bbdc-03bb499282c1","type":"CategoricalTickFormatter"},{"attributes":{},"id":"4d47fdf7-8d43-4107-b39b-c419e50864f4","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"c8e83742-144a-4840-9f31-e0b343590cdd","type":"HoverTool"},{"attributes":{"data_source":{"id":"08fcb015-bd93-465e-86a1-3f604a0a2011","type":"ColumnDataSource"},"glyph":{"id":"bb571ee9-b5ff-4aee-bcb8-2cc9a8eda7a5","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2329aef6-afdc-42b8-ae69-a4726fc607f4","type":"VBar"},"selection_glyph":null,"view":{"id":"86b024de-3864-486d-b41c-046eee9decd3","type":"CDSView"}},"id":"79dd093d-053a-4379-9a5c-7c236aa5b0cb","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"15e7687b-5ad6-4842-a753-e270b2a6e620","subtype":"Figure","type":"Plot"},"ticker":{"id":"93c75ac5-5a18-4254-bc3e-e7acb5899ed2","type":"CategoricalTicker"}},"id":"6c5f8cee-22f2-4b63-be7f-d9ef2309d1c9","type":"Grid"},{"attributes":{"plot":null,"text":"Robert Munro, 18th Baron of Foulis (1 - 0 - 0)"},"id":"789c299a-897b-4539-b5d4-36e6356939f2","type":"Title"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"1d722d74-447b-4b7c-8ebf-1a338f74b792","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"1d722d74-447b-4b7c-8ebf-1a338f74b792","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bb571ee9-b5ff-4aee-bcb8-2cc9a8eda7a5","type":"VBar"},{"attributes":{"callback":null},"id":"ac6cdd88-22c4-4c43-8a3d-b67fc440fd58","type":"DataRange1d"},{"attributes":{"source":{"id":"08fcb015-bd93-465e-86a1-3f604a0a2011","type":"ColumnDataSource"}},"id":"8aa4ca0e-af34-40fd-b00f-8d4a5388ec27","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"15e7687b-5ad6-4842-a753-e270b2a6e620","subtype":"Figure","type":"Plot"},"ticker":{"id":"5e588d13-4afb-43e4-bd42-b09b3754b737","type":"BasicTicker"}},"id":"04a5343c-6693-4f0e-9942-bbba7e5ab3a4","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"1d722d74-447b-4b7c-8ebf-1a338f74b792","type":"CategoricalColorMapper"},{"attributes":{},"id":"33d13d87-aef5-4190-802e-3ec2ebd2c9bd","type":"LinearScale"},{"attributes":{"formatter":{"id":"4d47fdf7-8d43-4107-b39b-c419e50864f4","type":"BasicTickFormatter"},"plot":{"id":"15e7687b-5ad6-4842-a753-e270b2a6e620","subtype":"Figure","type":"Plot"},"ticker":{"id":"5e588d13-4afb-43e4-bd42-b09b3754b737","type":"BasicTicker"}},"id":"ea4413d2-0c0a-4b57-8c77-0355e95d13c9","type":"LinearAxis"},{"attributes":{},"id":"5e588d13-4afb-43e4-bd42-b09b3754b737","type":"BasicTicker"},{"attributes":{},"id":"4f4e1864-6204-48d9-b62d-618dacdfc599","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"08fcb015-bd93-465e-86a1-3f604a0a2011","type":"ColumnDataSource"},"glyph":{"id":"2d5c0684-1a90-425f-8b32-f3d26cbeee94","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3885e3b6-2d09-467b-85df-1700efbdf679","type":"Line"},"selection_glyph":null,"view":{"id":"8aa4ca0e-af34-40fd-b00f-8d4a5388ec27","type":"CDSView"}},"id":"be6646bc-0f10-4474-86b2-fd0e5229da97","type":"GlyphRenderer"}],"root_ids":["15e7687b-5ad6-4842-a753-e270b2a6e620"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"80128ea7-1d92-47f9-a77e-f00af85d4acb","elementid":"2c2b7d7f-6f47-4d14-8cf8-a24b4baa25cc","modelid":"15e7687b-5ad6-4842-a753-e270b2a6e620"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

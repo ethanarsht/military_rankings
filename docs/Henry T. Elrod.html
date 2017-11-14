@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="8f4e7d7d-d043-4997-aae9-2e5cef7d9700"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"0cbb06d2-7712-4e84-9314-72f502ab706e":{"roots":{"references":[{"attributes":{"formatter":{"id":"d0d26005-5a99-4192-bfdc-86807e140895","type":"BasicTickFormatter"},"plot":{"id":"1c2a513e-e6d9-4e99-9214-f0b26cae3870","subtype":"Figure","type":"Plot"},"ticker":{"id":"101b98c9-5e69-4623-a1a6-7c81ccf997d7","type":"BasicTicker"}},"id":"c88df6aa-2a1e-48eb-8e68-1d4cb0e54bfb","type":"LinearAxis"},{"attributes":{"source":{"id":"f7c6a44d-2f72-4b47-97ce-886d32d437c0","type":"ColumnDataSource"}},"id":"b937a35d-1993-4279-b396-ed6e498ae1e7","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7f745d8b-e2ff-413b-8f5e-ad06081c0350","type":"Line"},{"attributes":{},"id":"9ddcb83c-ef2d-446a-8094-d8a7d4792c55","type":"CategoricalScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4a44a1ba-6e23-4702-a23c-bd9afd2a48c2","type":"Line"},{"attributes":{"data_source":{"id":"f7c6a44d-2f72-4b47-97ce-886d32d437c0","type":"ColumnDataSource"},"glyph":{"id":"d00c9bd3-f077-4852-b0f8-da12c74133e2","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4b1dd25a-4e85-4d76-b58a-368cd983e91c","type":"VBar"},"selection_glyph":null,"view":{"id":"f9139f19-80a4-43d1-85e0-ef6a355c124e","type":"CDSView"}},"id":"2ad8c3fd-4fa5-46ab-a2e8-b00c1327eb1a","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"06513606-6808-4b5b-85be-c919e9491131","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"06513606-6808-4b5b-85be-c919e9491131","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d00c9bd3-f077-4852-b0f8-da12c74133e2","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"793413a4-be58-496c-949e-7039bd7b5f44","type":"HoverTool"}]},"id":"dd431d33-703e-4e37-99f1-05d9c62e9781","type":"Toolbar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"06513606-6808-4b5b-85be-c919e9491131","type":"CategoricalColorMapper"},{"attributes":{},"id":"70752267-8273-4eb6-97db-b0c24b16ad56","type":"CategoricalTicker"},{"attributes":{"plot":null,"text":"Henry T. Elrod (0 - 0 - 1)"},"id":"1ed5cdee-2765-4291-acdb-ea0f72c94c99","type":"Title"},{"attributes":{},"id":"d0d26005-5a99-4192-bfdc-86807e140895","type":"BasicTickFormatter"},{"attributes":{"plot":{"id":"1c2a513e-e6d9-4e99-9214-f0b26cae3870","subtype":"Figure","type":"Plot"},"ticker":{"id":"70752267-8273-4eb6-97db-b0c24b16ad56","type":"CategoricalTicker"}},"id":"9893cb01-ac99-4127-844d-77fed3ad4636","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"1c2a513e-e6d9-4e99-9214-f0b26cae3870","subtype":"Figure","type":"Plot"},"ticker":{"id":"101b98c9-5e69-4623-a1a6-7c81ccf997d7","type":"BasicTicker"}},"id":"b6f91f97-6cb1-4136-a644-55b1c3db6530","type":"Grid"},{"attributes":{},"id":"78e06be5-b6d5-495c-bd17-a0ff0244954f","type":"LinearScale"},{"attributes":{"callback":null},"id":"6f958140-9bf8-45d1-be62-c345dbf377e4","type":"DataRange1d"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"793413a4-be58-496c-949e-7039bd7b5f44","type":"HoverTool"},{"attributes":{},"id":"d07f0621-1e6e-4139-ab43-a70177232ee1","type":"CategoricalTickFormatter"},{"attributes":{},"id":"101b98c9-5e69-4623-a1a6-7c81ccf997d7","type":"BasicTicker"},{"attributes":{"source":{"id":"f7c6a44d-2f72-4b47-97ce-886d32d437c0","type":"ColumnDataSource"}},"id":"f9139f19-80a4-43d1-85e0-ef6a355c124e","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Wake Island"],"cumulative":{"__ndarray__":"qXt/rCJg278=","dtype":"float64","shape":[1]},"general":["Henry T. Elrod"],"outcome":["D"],"value":{"__ndarray__":"qXt/rCJg278=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABUnkA=","dtype":"float64","shape":[1]}}},"id":"f7c6a44d-2f72-4b47-97ce-886d32d437c0","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"6086185a-19c5-4c40-bb26-0dd460121e0d","type":"CategoricalAxis"}],"left":[{"id":"c88df6aa-2a1e-48eb-8e68-1d4cb0e54bfb","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"6086185a-19c5-4c40-bb26-0dd460121e0d","type":"CategoricalAxis"},{"id":"9893cb01-ac99-4127-844d-77fed3ad4636","type":"Grid"},{"id":"c88df6aa-2a1e-48eb-8e68-1d4cb0e54bfb","type":"LinearAxis"},{"id":"b6f91f97-6cb1-4136-a644-55b1c3db6530","type":"Grid"},{"id":"88ea338a-a5c9-4c7b-a857-c1570107fa28","type":"GlyphRenderer"},{"id":"2ad8c3fd-4fa5-46ab-a2e8-b00c1327eb1a","type":"GlyphRenderer"}],"title":{"id":"1ed5cdee-2765-4291-acdb-ea0f72c94c99","type":"Title"},"toolbar":{"id":"dd431d33-703e-4e37-99f1-05d9c62e9781","type":"Toolbar"},"x_range":{"id":"381a77b1-32d3-4a00-afaa-934b6f23b14c","type":"FactorRange"},"x_scale":{"id":"9ddcb83c-ef2d-446a-8094-d8a7d4792c55","type":"CategoricalScale"},"y_range":{"id":"6f958140-9bf8-45d1-be62-c345dbf377e4","type":"DataRange1d"},"y_scale":{"id":"78e06be5-b6d5-495c-bd17-a0ff0244954f","type":"LinearScale"}},"id":"1c2a513e-e6d9-4e99-9214-f0b26cae3870","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"f7c6a44d-2f72-4b47-97ce-886d32d437c0","type":"ColumnDataSource"},"glyph":{"id":"4a44a1ba-6e23-4702-a23c-bd9afd2a48c2","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7f745d8b-e2ff-413b-8f5e-ad06081c0350","type":"Line"},"selection_glyph":null,"view":{"id":"b937a35d-1993-4279-b396-ed6e498ae1e7","type":"CDSView"}},"id":"88ea338a-a5c9-4c7b-a857-c1570107fa28","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"d07f0621-1e6e-4139-ab43-a70177232ee1","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"1c2a513e-e6d9-4e99-9214-f0b26cae3870","subtype":"Figure","type":"Plot"},"ticker":{"id":"70752267-8273-4eb6-97db-b0c24b16ad56","type":"CategoricalTicker"}},"id":"6086185a-19c5-4c40-bb26-0dd460121e0d","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"4b1dd25a-4e85-4d76-b58a-368cd983e91c","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Wake Island"]},"id":"381a77b1-32d3-4a00-afaa-934b6f23b14c","type":"FactorRange"}],"root_ids":["1c2a513e-e6d9-4e99-9214-f0b26cae3870"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"0cbb06d2-7712-4e84-9314-72f502ab706e","elementid":"8f4e7d7d-d043-4997-aae9-2e5cef7d9700","modelid":"1c2a513e-e6d9-4e99-9214-f0b26cae3870"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

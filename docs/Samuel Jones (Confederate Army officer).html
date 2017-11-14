@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="78c69a04-30ea-4879-8979-8e05a0ccfb09"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"373e5a51-119d-4e8e-9448-894f73563e31":{"roots":{"references":[{"attributes":{"source":{"id":"bd1e7049-7f2c-447e-9752-2c09598589dc","type":"ColumnDataSource"}},"id":"8d627bab-5bd5-4d8f-8c70-7d708e7b0839","type":"CDSView"},{"attributes":{},"id":"98d4e726-3529-4091-b90a-944aab289fda","type":"CategoricalTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"9656ea17-9f46-4442-9b9a-293264e536ca","type":"CategoricalColorMapper"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ea4fcb52-d981-49e4-be0f-e7d3db7d3426","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"9656ea17-9f46-4442-9b9a-293264e536ca","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"9656ea17-9f46-4442-9b9a-293264e536ca","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"0644a750-3cca-4327-bd92-19c8299edffe","type":"VBar"},{"attributes":{"below":[{"id":"f1c72155-f998-4efc-b3c9-a65454d3e634","type":"CategoricalAxis"}],"left":[{"id":"f376d2da-40ac-4a17-8c5a-69de318e8a0a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"f1c72155-f998-4efc-b3c9-a65454d3e634","type":"CategoricalAxis"},{"id":"6c0b3340-697b-4bc3-ab16-a7eeaaae3c70","type":"Grid"},{"id":"f376d2da-40ac-4a17-8c5a-69de318e8a0a","type":"LinearAxis"},{"id":"7eecba20-1678-4427-a6d4-dc4be9024a72","type":"Grid"},{"id":"22fd50a2-715a-4097-8a7f-5d8e0e9e2a4b","type":"GlyphRenderer"},{"id":"5426a310-7298-45b5-857d-2907cce99a29","type":"GlyphRenderer"}],"title":{"id":"72cbb563-974a-42fd-b2c1-7b2cc36f412d","type":"Title"},"toolbar":{"id":"e22bfd3f-6ac4-4321-998c-425fa7dc0c56","type":"Toolbar"},"x_range":{"id":"9dcdddc9-552e-415a-81ea-14f240a841fe","type":"FactorRange"},"x_scale":{"id":"89805702-906e-4c09-9c58-a646018bfd46","type":"CategoricalScale"},"y_range":{"id":"92ae43a9-8ca9-4ab7-a57a-3bdb1a144b0f","type":"DataRange1d"},"y_scale":{"id":"3d26708d-684f-4749-b6d8-763642c0ef33","type":"LinearScale"}},"id":"3cef2cbf-1d41-4b17-a67c-cb5ef613bfc8","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"bd1e7049-7f2c-447e-9752-2c09598589dc","type":"ColumnDataSource"}},"id":"249b797a-ad41-4a7a-b4fb-a578d30fcb42","type":"CDSView"},{"attributes":{},"id":"48b67c81-27ab-40cb-b04d-73e3f32ba50a","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"85487cff-9d57-4cfa-b3be-2b6a36066f3d","type":"HoverTool"}]},"id":"e22bfd3f-6ac4-4321-998c-425fa7dc0c56","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Battle of Natural Bridge"]},"id":"9dcdddc9-552e-415a-81ea-14f240a841fe","type":"FactorRange"},{"attributes":{"dimension":1,"plot":{"id":"3cef2cbf-1d41-4b17-a67c-cb5ef613bfc8","subtype":"Figure","type":"Plot"},"ticker":{"id":"48b67c81-27ab-40cb-b04d-73e3f32ba50a","type":"BasicTicker"}},"id":"7eecba20-1678-4427-a6d4-dc4be9024a72","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"85487cff-9d57-4cfa-b3be-2b6a36066f3d","type":"HoverTool"},{"attributes":{},"id":"3d26708d-684f-4749-b6d8-763642c0ef33","type":"LinearScale"},{"attributes":{"plot":null,"text":"Samuel Jones (Confederate Army officer) (1 - 0 - 0)"},"id":"72cbb563-974a-42fd-b2c1-7b2cc36f412d","type":"Title"},{"attributes":{"callback":null},"id":"92ae43a9-8ca9-4ab7-a57a-3bdb1a144b0f","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"855a3735-11c7-4ea5-ad75-5267fe4074a8","type":"VBar"},{"attributes":{"plot":{"id":"3cef2cbf-1d41-4b17-a67c-cb5ef613bfc8","subtype":"Figure","type":"Plot"},"ticker":{"id":"149c6593-3e7f-4f5f-bcd2-c7fe6f31d415","type":"CategoricalTicker"}},"id":"6c0b3340-697b-4bc3-ab16-a7eeaaae3c70","type":"Grid"},{"attributes":{},"id":"89805702-906e-4c09-9c58-a646018bfd46","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"56d9ac95-d0c5-4d33-a062-de919ba5aa02","type":"BasicTickFormatter"},"plot":{"id":"3cef2cbf-1d41-4b17-a67c-cb5ef613bfc8","subtype":"Figure","type":"Plot"},"ticker":{"id":"48b67c81-27ab-40cb-b04d-73e3f32ba50a","type":"BasicTicker"}},"id":"f376d2da-40ac-4a17-8c5a-69de318e8a0a","type":"LinearAxis"},{"attributes":{},"id":"56d9ac95-d0c5-4d33-a062-de919ba5aa02","type":"BasicTickFormatter"},{"attributes":{},"id":"149c6593-3e7f-4f5f-bcd2-c7fe6f31d415","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"bd1e7049-7f2c-447e-9752-2c09598589dc","type":"ColumnDataSource"},"glyph":{"id":"0644a750-3cca-4327-bd92-19c8299edffe","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"855a3735-11c7-4ea5-ad75-5267fe4074a8","type":"VBar"},"selection_glyph":null,"view":{"id":"8d627bab-5bd5-4d8f-8c70-7d708e7b0839","type":"CDSView"}},"id":"5426a310-7298-45b5-857d-2907cce99a29","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8bad884e-47c3-4f65-907e-22d32425bad3","type":"Line"},{"attributes":{"formatter":{"id":"98d4e726-3529-4091-b90a-944aab289fda","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"3cef2cbf-1d41-4b17-a67c-cb5ef613bfc8","subtype":"Figure","type":"Plot"},"ticker":{"id":"149c6593-3e7f-4f5f-bcd2-c7fe6f31d415","type":"CategoricalTicker"}},"id":"f1c72155-f998-4efc-b3c9-a65454d3e634","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"bd1e7049-7f2c-447e-9752-2c09598589dc","type":"ColumnDataSource"},"glyph":{"id":"8bad884e-47c3-4f65-907e-22d32425bad3","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ea4fcb52-d981-49e4-be0f-e7d3db7d3426","type":"Line"},"selection_glyph":null,"view":{"id":"249b797a-ad41-4a7a-b4fb-a578d30fcb42","type":"CDSView"}},"id":"22fd50a2-715a-4097-8a7f-5d8e0e9e2a4b","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Natural Bridge"],"cumulative":{"__ndarray__":"kvoggRJE2j8=","dtype":"float64","shape":[1]},"general":["Samuel Jones (Confederate Army officer)"],"outcome":["V"],"value":{"__ndarray__":"kvoggRJE2j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAknUA=","dtype":"float64","shape":[1]}}},"id":"bd1e7049-7f2c-447e-9752-2c09598589dc","type":"ColumnDataSource"}],"root_ids":["3cef2cbf-1d41-4b17-a67c-cb5ef613bfc8"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"373e5a51-119d-4e8e-9448-894f73563e31","elementid":"78c69a04-30ea-4879-8979-8e05a0ccfb09","modelid":"3cef2cbf-1d41-4b17-a67c-cb5ef613bfc8"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f9f1fec5-7d1c-4804-8195-9301c294b34b"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"2de7fa66-d8e2-413b-8353-c56d7adaa82f":{"roots":{"references":[{"attributes":{},"id":"91646278-a0e9-4a73-90d0-e91b906bcbe8","type":"CategoricalTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"604c3d9d-1327-479b-baf7-45e60e11b31e","type":"Line"},{"attributes":{"below":[{"id":"20946abd-31c7-40e0-8c57-9c1d1607caba","type":"CategoricalAxis"}],"left":[{"id":"921c9741-32db-41dc-b92a-a9ab7fa7cd77","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"20946abd-31c7-40e0-8c57-9c1d1607caba","type":"CategoricalAxis"},{"id":"96953e45-b861-4516-b02c-5fa928a16e5d","type":"Grid"},{"id":"921c9741-32db-41dc-b92a-a9ab7fa7cd77","type":"LinearAxis"},{"id":"95f5bd7d-0b42-4a6c-8a09-ac76ea7cedd8","type":"Grid"},{"id":"532e8afa-0105-4361-bb29-fe77a169d3a4","type":"GlyphRenderer"},{"id":"e74237ef-f478-475f-a950-d0ad6e7f3056","type":"GlyphRenderer"}],"title":{"id":"3b2be1ae-3c07-4a86-bb35-8550b0c9d3ee","type":"Title"},"toolbar":{"id":"53ad9a11-6c46-442c-89b3-e4403b8e5fb5","type":"Toolbar"},"x_range":{"id":"23e46065-ac82-4aa7-9646-4f9d1c379fb4","type":"FactorRange"},"x_scale":{"id":"7fee0aff-997d-4140-bd7e-041775f439c7","type":"CategoricalScale"},"y_range":{"id":"209ba9c3-8167-43fa-9a64-d39563256474","type":"DataRange1d"},"y_scale":{"id":"30b8b7dd-172a-44cf-a823-4b0407f6decf","type":"LinearScale"}},"id":"9a3ca654-8ad6-46eb-bf07-37803c60f050","subtype":"Figure","type":"Plot"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"cdfe1090-e3df-40ff-97a1-f9469e1ee75d","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"60d91b2f-3367-4365-bae1-06e5245c6737","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"b0d48aeb-014d-48a8-9dea-bf8f3cba149f","type":"ColumnDataSource"}},"id":"0a50ed3c-06da-4984-87dd-a927514287b6","type":"CDSView"},{"attributes":{},"id":"e384c6f6-61a8-46c6-ae2b-3ff7223fb27d","type":"BasicTickFormatter"},{"attributes":{"plot":{"id":"9a3ca654-8ad6-46eb-bf07-37803c60f050","subtype":"Figure","type":"Plot"},"ticker":{"id":"f7afae6d-78c4-4147-a373-caac50956cc5","type":"CategoricalTicker"}},"id":"96953e45-b861-4516-b02c-5fa928a16e5d","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"06f7fa64-7cfa-437a-b28f-702ecce85824","type":"HoverTool"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Adrianople (1913)"],"cumulative":{"__ndarray__":"AzXHiO9x3b8=","dtype":"float64","shape":[1]},"general":["Mehmed \u015e\u00fckr\u00fc Pasha"],"outcome":["D"],"value":{"__ndarray__":"AzXHiO9x3b8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADgnUA=","dtype":"float64","shape":[1]}}},"id":"b0d48aeb-014d-48a8-9dea-bf8f3cba149f","type":"ColumnDataSource"},{"attributes":{"callback":null},"id":"209ba9c3-8167-43fa-9a64-d39563256474","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"79d33c7b-9f2e-4ddb-b12c-5729ff007cda","type":"VBar"},{"attributes":{"data_source":{"id":"b0d48aeb-014d-48a8-9dea-bf8f3cba149f","type":"ColumnDataSource"},"glyph":{"id":"cdfe1090-e3df-40ff-97a1-f9469e1ee75d","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"604c3d9d-1327-479b-baf7-45e60e11b31e","type":"Line"},"selection_glyph":null,"view":{"id":"0a50ed3c-06da-4984-87dd-a927514287b6","type":"CDSView"}},"id":"532e8afa-0105-4361-bb29-fe77a169d3a4","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"e384c6f6-61a8-46c6-ae2b-3ff7223fb27d","type":"BasicTickFormatter"},"plot":{"id":"9a3ca654-8ad6-46eb-bf07-37803c60f050","subtype":"Figure","type":"Plot"},"ticker":{"id":"e378e3ec-eb62-448f-8925-89c98de1a267","type":"BasicTicker"}},"id":"921c9741-32db-41dc-b92a-a9ab7fa7cd77","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"06f7fa64-7cfa-437a-b28f-702ecce85824","type":"HoverTool"}]},"id":"53ad9a11-6c46-442c-89b3-e4403b8e5fb5","type":"Toolbar"},{"attributes":{},"id":"30b8b7dd-172a-44cf-a823-4b0407f6decf","type":"LinearScale"},{"attributes":{"formatter":{"id":"91646278-a0e9-4a73-90d0-e91b906bcbe8","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"9a3ca654-8ad6-46eb-bf07-37803c60f050","subtype":"Figure","type":"Plot"},"ticker":{"id":"f7afae6d-78c4-4147-a373-caac50956cc5","type":"CategoricalTicker"}},"id":"20946abd-31c7-40e0-8c57-9c1d1607caba","type":"CategoricalAxis"},{"attributes":{},"id":"7fee0aff-997d-4140-bd7e-041775f439c7","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"Mehmed \u015e\u00fckr\u00fc Pasha (0 - 0 - 1)"},"id":"3b2be1ae-3c07-4a86-bb35-8550b0c9d3ee","type":"Title"},{"attributes":{"source":{"id":"b0d48aeb-014d-48a8-9dea-bf8f3cba149f","type":"ColumnDataSource"}},"id":"9bf32519-14bc-4218-869a-97ef57ec70dd","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"9a3ca654-8ad6-46eb-bf07-37803c60f050","subtype":"Figure","type":"Plot"},"ticker":{"id":"e378e3ec-eb62-448f-8925-89c98de1a267","type":"BasicTicker"}},"id":"95f5bd7d-0b42-4a6c-8a09-ac76ea7cedd8","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"60d91b2f-3367-4365-bae1-06e5245c6737","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"60d91b2f-3367-4365-bae1-06e5245c6737","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b12ae965-ed73-47a7-a566-d1b542de7bff","type":"VBar"},{"attributes":{},"id":"e378e3ec-eb62-448f-8925-89c98de1a267","type":"BasicTicker"},{"attributes":{},"id":"f7afae6d-78c4-4147-a373-caac50956cc5","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"b0d48aeb-014d-48a8-9dea-bf8f3cba149f","type":"ColumnDataSource"},"glyph":{"id":"b12ae965-ed73-47a7-a566-d1b542de7bff","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"79d33c7b-9f2e-4ddb-b12c-5729ff007cda","type":"VBar"},"selection_glyph":null,"view":{"id":"9bf32519-14bc-4218-869a-97ef57ec70dd","type":"CDSView"}},"id":"e74237ef-f478-475f-a950-d0ad6e7f3056","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of Adrianople (1913)"]},"id":"23e46065-ac82-4aa7-9646-4f9d1c379fb4","type":"FactorRange"}],"root_ids":["9a3ca654-8ad6-46eb-bf07-37803c60f050"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"2de7fa66-d8e2-413b-8353-c56d7adaa82f","elementid":"f9f1fec5-7d1c-4804-8195-9301c294b34b","modelid":"9a3ca654-8ad6-46eb-bf07-37803c60f050"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

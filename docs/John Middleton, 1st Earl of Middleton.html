@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c2dec2de-9599-4587-a326-a70e8c90fffd"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"4134dc44-8cc0-4024-bcca-d57b311774c0":{"roots":{"references":[{"attributes":{"source":{"id":"54ecdc9b-696d-4e0e-96f8-9c93ab6d8d56","type":"ColumnDataSource"}},"id":"e337cdab-e67a-4a5a-8d3d-1343141c4514","type":"CDSView"},{"attributes":{"formatter":{"id":"daad886f-d3c4-426c-a4a6-ada72098cded","type":"BasicTickFormatter"},"plot":{"id":"59794def-1cf6-4470-a8a6-531afca21cfc","subtype":"Figure","type":"Plot"},"ticker":{"id":"c69b5954-977a-418c-bf05-e7550827b168","type":"BasicTicker"}},"id":"1d785b5a-c5e7-4097-8a18-964bf7eabb5a","type":"LinearAxis"},{"attributes":{},"id":"49544168-bdf0-44e4-8613-342975e3b2d0","type":"LinearScale"},{"attributes":{"data_source":{"id":"54ecdc9b-696d-4e0e-96f8-9c93ab6d8d56","type":"ColumnDataSource"},"glyph":{"id":"889fc335-e689-4961-96bb-fb9c72122cbb","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0c7fb22a-6b16-43ad-836d-0bd0f9432c0a","type":"VBar"},"selection_glyph":null,"view":{"id":"fc559ae0-e05a-40ad-a673-a3cd59120cae","type":"CDSView"}},"id":"81a7915f-8385-4c69-8b28-cb44a0aa103a","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"John Middleton, 1st Earl of Middleton (0 - 0 - 1)"},"id":"29515d01-79dd-436a-a6d4-0dc4e4871861","type":"Title"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"03f5b7b9-aa57-4d9f-8333-a33340ce7ba8","type":"HoverTool"}]},"id":"9d4c7fb0-7453-485c-8469-66abcee20049","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Battle of Preston (1648)"]},"id":"07214397-c22f-4b58-b576-1e6081357a3b","type":"FactorRange"},{"attributes":{"data_source":{"id":"54ecdc9b-696d-4e0e-96f8-9c93ab6d8d56","type":"ColumnDataSource"},"glyph":{"id":"a021b367-64f5-4ba9-b67e-61ad91747d3c","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"28b97a0d-335d-4909-872c-9b01ca81b2e8","type":"Line"},"selection_glyph":null,"view":{"id":"e337cdab-e67a-4a5a-8d3d-1343141c4514","type":"CDSView"}},"id":"ef3afd56-bca9-4290-a465-1e53ac473e36","type":"GlyphRenderer"},{"attributes":{"source":{"id":"54ecdc9b-696d-4e0e-96f8-9c93ab6d8d56","type":"ColumnDataSource"}},"id":"fc559ae0-e05a-40ad-a673-a3cd59120cae","type":"CDSView"},{"attributes":{"formatter":{"id":"99b4b767-a7cc-4296-a74b-f599343148ed","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"59794def-1cf6-4470-a8a6-531afca21cfc","subtype":"Figure","type":"Plot"},"ticker":{"id":"351e9004-2139-4f09-badd-f29a8c7dfeaa","type":"CategoricalTicker"}},"id":"c15bc944-590c-400b-a992-8ec2f1c02c13","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"46f09455-f4da-4803-b5be-8fe9f745ce84","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"46f09455-f4da-4803-b5be-8fe9f745ce84","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"889fc335-e689-4961-96bb-fb9c72122cbb","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"03f5b7b9-aa57-4d9f-8333-a33340ce7ba8","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a021b367-64f5-4ba9-b67e-61ad91747d3c","type":"Line"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"28b97a0d-335d-4909-872c-9b01ca81b2e8","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Preston (1648)"],"cumulative":{"__ndarray__":"WPv61BNz4L8=","dtype":"float64","shape":[1]},"general":["John Middleton, 1st Earl of Middleton"],"outcome":["D"],"value":{"__ndarray__":"WPv61BNz4L8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADAmUA=","dtype":"float64","shape":[1]}}},"id":"54ecdc9b-696d-4e0e-96f8-9c93ab6d8d56","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"c15bc944-590c-400b-a992-8ec2f1c02c13","type":"CategoricalAxis"}],"left":[{"id":"1d785b5a-c5e7-4097-8a18-964bf7eabb5a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"c15bc944-590c-400b-a992-8ec2f1c02c13","type":"CategoricalAxis"},{"id":"bd125082-6945-46b4-b6e8-1460304712e7","type":"Grid"},{"id":"1d785b5a-c5e7-4097-8a18-964bf7eabb5a","type":"LinearAxis"},{"id":"657a7c5f-f375-4492-abc3-dc3a2441f7e1","type":"Grid"},{"id":"ef3afd56-bca9-4290-a465-1e53ac473e36","type":"GlyphRenderer"},{"id":"81a7915f-8385-4c69-8b28-cb44a0aa103a","type":"GlyphRenderer"}],"title":{"id":"29515d01-79dd-436a-a6d4-0dc4e4871861","type":"Title"},"toolbar":{"id":"9d4c7fb0-7453-485c-8469-66abcee20049","type":"Toolbar"},"x_range":{"id":"07214397-c22f-4b58-b576-1e6081357a3b","type":"FactorRange"},"x_scale":{"id":"890e437e-1f96-46c5-8fd4-fbdd01b900ed","type":"CategoricalScale"},"y_range":{"id":"7cd0747a-4a5b-4003-972e-18c388c72a5b","type":"DataRange1d"},"y_scale":{"id":"49544168-bdf0-44e4-8613-342975e3b2d0","type":"LinearScale"}},"id":"59794def-1cf6-4470-a8a6-531afca21cfc","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"c69b5954-977a-418c-bf05-e7550827b168","type":"BasicTicker"},{"attributes":{"plot":{"id":"59794def-1cf6-4470-a8a6-531afca21cfc","subtype":"Figure","type":"Plot"},"ticker":{"id":"351e9004-2139-4f09-badd-f29a8c7dfeaa","type":"CategoricalTicker"}},"id":"bd125082-6945-46b4-b6e8-1460304712e7","type":"Grid"},{"attributes":{},"id":"351e9004-2139-4f09-badd-f29a8c7dfeaa","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"46f09455-f4da-4803-b5be-8fe9f745ce84","type":"CategoricalColorMapper"},{"attributes":{"dimension":1,"plot":{"id":"59794def-1cf6-4470-a8a6-531afca21cfc","subtype":"Figure","type":"Plot"},"ticker":{"id":"c69b5954-977a-418c-bf05-e7550827b168","type":"BasicTicker"}},"id":"657a7c5f-f375-4492-abc3-dc3a2441f7e1","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"0c7fb22a-6b16-43ad-836d-0bd0f9432c0a","type":"VBar"},{"attributes":{},"id":"99b4b767-a7cc-4296-a74b-f599343148ed","type":"CategoricalTickFormatter"},{"attributes":{},"id":"daad886f-d3c4-426c-a4a6-ada72098cded","type":"BasicTickFormatter"},{"attributes":{},"id":"890e437e-1f96-46c5-8fd4-fbdd01b900ed","type":"CategoricalScale"},{"attributes":{"callback":null},"id":"7cd0747a-4a5b-4003-972e-18c388c72a5b","type":"DataRange1d"}],"root_ids":["59794def-1cf6-4470-a8a6-531afca21cfc"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"4134dc44-8cc0-4024-bcca-d57b311774c0","elementid":"c2dec2de-9599-4587-a326-a70e8c90fffd","modelid":"59794def-1cf6-4470-a8a6-531afca21cfc"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

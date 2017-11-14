@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="1f754d6a-5067-4f6f-9a52-64ebcb2f86b7"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"26d0b58b-d52e-4dec-8ccc-1e53ec4f8968":{"roots":{"references":[{"attributes":{"callback":null,"factors":["Battle of Gadebusch"]},"id":"8507efa6-1dde-443e-a44e-72f7422f08e0","type":"FactorRange"},{"attributes":{},"id":"bc6d696d-196b-4476-b172-381d6f4ec1f4","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"7138028d-4da6-4230-be55-490b43ecedb3","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"7138028d-4da6-4230-be55-490b43ecedb3","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b62d7e9b-d2da-4fd8-8d6f-ce720b8660f9","type":"VBar"},{"attributes":{},"id":"afb596bc-2bc6-4465-bb2f-ab2d8f96fa30","type":"BasicTicker"},{"attributes":{"source":{"id":"6a46f14a-655f-45e9-9c13-5254a65292a4","type":"ColumnDataSource"}},"id":"79b18455-2ec7-43ed-97c8-55dea5d369a6","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"d8dbac58-1e98-44e1-b36e-112e92e8740b","type":"HoverTool"},{"attributes":{"formatter":{"id":"61ce4a59-e15d-4fcd-8dbb-5baba3e30917","type":"BasicTickFormatter"},"plot":{"id":"8411cb88-6c00-4ac4-b2ad-58587390eb57","subtype":"Figure","type":"Plot"},"ticker":{"id":"afb596bc-2bc6-4465-bb2f-ab2d8f96fa30","type":"BasicTicker"}},"id":"9d91c0b1-aacf-44e2-8ccf-da8f0529d23c","type":"LinearAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7ef150fa-1dfe-4ffa-a38c-cc6cffec6776","type":"Line"},{"attributes":{},"id":"0014c3ac-e5c8-4694-9356-e5a31286c9f4","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"6a46f14a-655f-45e9-9c13-5254a65292a4","type":"ColumnDataSource"},"glyph":{"id":"b62d7e9b-d2da-4fd8-8d6f-ce720b8660f9","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a5acfba4-c979-4b64-949b-17ca2cb4e008","type":"VBar"},"selection_glyph":null,"view":{"id":"48077c56-243d-43cf-a479-003da6f547ed","type":"CDSView"}},"id":"59b23873-7697-4f9f-81d2-d7c42b8858f6","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e1c79732-0fb8-46ac-8957-1e1abde37a86","type":"Line"},{"attributes":{"plot":null,"text":"Frederick IV of Denmark (0 - 0 - 1)"},"id":"aece80be-a268-42d0-b090-6120a6bb13b5","type":"Title"},{"attributes":{"formatter":{"id":"0014c3ac-e5c8-4694-9356-e5a31286c9f4","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"8411cb88-6c00-4ac4-b2ad-58587390eb57","subtype":"Figure","type":"Plot"},"ticker":{"id":"15c11701-ef2a-4d8d-b298-af21bfb60e3f","type":"CategoricalTicker"}},"id":"9c7f6187-b551-4393-ab76-097e37ade2a2","type":"CategoricalAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"7138028d-4da6-4230-be55-490b43ecedb3","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a5acfba4-c979-4b64-949b-17ca2cb4e008","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d8dbac58-1e98-44e1-b36e-112e92e8740b","type":"HoverTool"}]},"id":"103540a2-53eb-40e2-a06a-a31ca6c1a9a3","type":"Toolbar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Gadebusch"],"cumulative":{"__ndarray__":"RUc+DnqX4L8=","dtype":"float64","shape":[1]},"general":["Frederick IV of Denmark"],"outcome":["D"],"value":{"__ndarray__":"RUc+DnqX4L8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADAmkA=","dtype":"float64","shape":[1]}}},"id":"6a46f14a-655f-45e9-9c13-5254a65292a4","type":"ColumnDataSource"},{"attributes":{"dimension":1,"plot":{"id":"8411cb88-6c00-4ac4-b2ad-58587390eb57","subtype":"Figure","type":"Plot"},"ticker":{"id":"afb596bc-2bc6-4465-bb2f-ab2d8f96fa30","type":"BasicTicker"}},"id":"c01d034a-0dc1-4134-8d8b-331efe1703fb","type":"Grid"},{"attributes":{"below":[{"id":"9c7f6187-b551-4393-ab76-097e37ade2a2","type":"CategoricalAxis"}],"left":[{"id":"9d91c0b1-aacf-44e2-8ccf-da8f0529d23c","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"9c7f6187-b551-4393-ab76-097e37ade2a2","type":"CategoricalAxis"},{"id":"79b112b6-a9a1-43ab-aa99-9ac36ea0956f","type":"Grid"},{"id":"9d91c0b1-aacf-44e2-8ccf-da8f0529d23c","type":"LinearAxis"},{"id":"c01d034a-0dc1-4134-8d8b-331efe1703fb","type":"Grid"},{"id":"d0587b85-f186-4b83-b2cf-0073334f5df0","type":"GlyphRenderer"},{"id":"59b23873-7697-4f9f-81d2-d7c42b8858f6","type":"GlyphRenderer"}],"title":{"id":"aece80be-a268-42d0-b090-6120a6bb13b5","type":"Title"},"toolbar":{"id":"103540a2-53eb-40e2-a06a-a31ca6c1a9a3","type":"Toolbar"},"x_range":{"id":"8507efa6-1dde-443e-a44e-72f7422f08e0","type":"FactorRange"},"x_scale":{"id":"bc6d696d-196b-4476-b172-381d6f4ec1f4","type":"CategoricalScale"},"y_range":{"id":"bfe130d3-97bc-4b15-80cf-f860fd050856","type":"DataRange1d"},"y_scale":{"id":"c61411f9-b92b-4294-b749-f3e4c9cf9491","type":"LinearScale"}},"id":"8411cb88-6c00-4ac4-b2ad-58587390eb57","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"61ce4a59-e15d-4fcd-8dbb-5baba3e30917","type":"BasicTickFormatter"},{"attributes":{},"id":"c61411f9-b92b-4294-b749-f3e4c9cf9491","type":"LinearScale"},{"attributes":{},"id":"15c11701-ef2a-4d8d-b298-af21bfb60e3f","type":"CategoricalTicker"},{"attributes":{"callback":null},"id":"bfe130d3-97bc-4b15-80cf-f860fd050856","type":"DataRange1d"},{"attributes":{"data_source":{"id":"6a46f14a-655f-45e9-9c13-5254a65292a4","type":"ColumnDataSource"},"glyph":{"id":"7ef150fa-1dfe-4ffa-a38c-cc6cffec6776","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e1c79732-0fb8-46ac-8957-1e1abde37a86","type":"Line"},"selection_glyph":null,"view":{"id":"79b18455-2ec7-43ed-97c8-55dea5d369a6","type":"CDSView"}},"id":"d0587b85-f186-4b83-b2cf-0073334f5df0","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"8411cb88-6c00-4ac4-b2ad-58587390eb57","subtype":"Figure","type":"Plot"},"ticker":{"id":"15c11701-ef2a-4d8d-b298-af21bfb60e3f","type":"CategoricalTicker"}},"id":"79b112b6-a9a1-43ab-aa99-9ac36ea0956f","type":"Grid"},{"attributes":{"source":{"id":"6a46f14a-655f-45e9-9c13-5254a65292a4","type":"ColumnDataSource"}},"id":"48077c56-243d-43cf-a479-003da6f547ed","type":"CDSView"}],"root_ids":["8411cb88-6c00-4ac4-b2ad-58587390eb57"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"26d0b58b-d52e-4dec-8ccc-1e53ec4f8968","elementid":"1f754d6a-5067-4f6f-9a52-64ebcb2f86b7","modelid":"8411cb88-6c00-4ac4-b2ad-58587390eb57"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

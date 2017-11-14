@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="bf391719-6aa0-49d7-a16d-31880fbf669a"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"94762d15-f5ec-47f5-87d7-02d0c9f39dc5":{"roots":{"references":[{"attributes":{"plot":{"id":"71ceeb4a-99f0-4724-830e-e52feb28699a","subtype":"Figure","type":"Plot"},"ticker":{"id":"c9e2e3e1-7347-4272-b537-aad9ec5c3dcb","type":"CategoricalTicker"}},"id":"19827455-ae2f-425d-9c35-c3055ae13fc8","type":"Grid"},{"attributes":{"source":{"id":"3d206a6e-153b-4510-85ed-ec3b2cd2df2d","type":"ColumnDataSource"}},"id":"784516c7-cb5b-489d-bbd5-0c0841d59990","type":"CDSView"},{"attributes":{"data_source":{"id":"3d206a6e-153b-4510-85ed-ec3b2cd2df2d","type":"ColumnDataSource"},"glyph":{"id":"6251a118-e0d5-4548-8ea3-35064dcdfffd","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8ec3b525-3340-4d5f-af9f-ab6031772247","type":"VBar"},"selection_glyph":null,"view":{"id":"784516c7-cb5b-489d-bbd5-0c0841d59990","type":"CDSView"}},"id":"7a9e2b6d-778a-43aa-beab-9379bd9a9b76","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"8ec3b525-3340-4d5f-af9f-ab6031772247","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"08e133bc-e5af-4988-a10b-6e3f88979e66","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"387c59c6-3ed6-4533-8c7b-bb6699aa3887","type":"CategoricalColorMapper"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"08e133bc-e5af-4988-a10b-6e3f88979e66","type":"HoverTool"}]},"id":"6e3cb0d7-5734-49e1-bfca-753304ec3880","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Battle of San Jacinto (1899)"]},"id":"58749508-03d0-4350-8f34-72460b357490","type":"FactorRange"},{"attributes":{"plot":null,"text":"Loyd Wheaton (1 - 0 - 0)"},"id":"0b725a0d-0a72-498b-809e-b58cb172b892","type":"Title"},{"attributes":{"formatter":{"id":"dd4c228c-e01e-4c5b-9dd0-be4a94e895db","type":"BasicTickFormatter"},"plot":{"id":"71ceeb4a-99f0-4724-830e-e52feb28699a","subtype":"Figure","type":"Plot"},"ticker":{"id":"d593e587-9108-4729-babb-748c7a3a3222","type":"BasicTicker"}},"id":"3080f477-4987-4d6c-9603-9b45519687eb","type":"LinearAxis"},{"attributes":{"source":{"id":"3d206a6e-153b-4510-85ed-ec3b2cd2df2d","type":"ColumnDataSource"}},"id":"2e4a6985-db67-4b58-b8d6-1ebd4e3f647c","type":"CDSView"},{"attributes":{},"id":"548b3b7b-b16f-45d7-b1ef-f02f35b7b4fb","type":"CategoricalTickFormatter"},{"attributes":{},"id":"d593e587-9108-4729-babb-748c7a3a3222","type":"BasicTicker"},{"attributes":{},"id":"dd4c228c-e01e-4c5b-9dd0-be4a94e895db","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"71ceeb4a-99f0-4724-830e-e52feb28699a","subtype":"Figure","type":"Plot"},"ticker":{"id":"d593e587-9108-4729-babb-748c7a3a3222","type":"BasicTicker"}},"id":"8eebfd32-398f-4cf7-bf50-6ff7eded6185","type":"Grid"},{"attributes":{"formatter":{"id":"548b3b7b-b16f-45d7-b1ef-f02f35b7b4fb","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"71ceeb4a-99f0-4724-830e-e52feb28699a","subtype":"Figure","type":"Plot"},"ticker":{"id":"c9e2e3e1-7347-4272-b537-aad9ec5c3dcb","type":"CategoricalTicker"}},"id":"26b0bbed-e2be-404a-aee8-a2843fe89156","type":"CategoricalAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3bf23b9e-83f1-472c-9842-d61a4c77bcb3","type":"Line"},{"attributes":{"below":[{"id":"26b0bbed-e2be-404a-aee8-a2843fe89156","type":"CategoricalAxis"}],"left":[{"id":"3080f477-4987-4d6c-9603-9b45519687eb","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"26b0bbed-e2be-404a-aee8-a2843fe89156","type":"CategoricalAxis"},{"id":"19827455-ae2f-425d-9c35-c3055ae13fc8","type":"Grid"},{"id":"3080f477-4987-4d6c-9603-9b45519687eb","type":"LinearAxis"},{"id":"8eebfd32-398f-4cf7-bf50-6ff7eded6185","type":"Grid"},{"id":"db006179-17bc-4fc2-ab47-1fc47d9e23fe","type":"GlyphRenderer"},{"id":"7a9e2b6d-778a-43aa-beab-9379bd9a9b76","type":"GlyphRenderer"}],"title":{"id":"0b725a0d-0a72-498b-809e-b58cb172b892","type":"Title"},"toolbar":{"id":"6e3cb0d7-5734-49e1-bfca-753304ec3880","type":"Toolbar"},"x_range":{"id":"58749508-03d0-4350-8f34-72460b357490","type":"FactorRange"},"x_scale":{"id":"4dd3e3ae-f6fb-44cf-b987-0954bc0ad959","type":"CategoricalScale"},"y_range":{"id":"9810e75d-48f4-4dab-9077-922b0b631e3a","type":"DataRange1d"},"y_scale":{"id":"cf8378ba-151e-424d-9187-4a18c191d5bd","type":"LinearScale"}},"id":"71ceeb4a-99f0-4724-830e-e52feb28699a","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null},"id":"9810e75d-48f4-4dab-9077-922b0b631e3a","type":"DataRange1d"},{"attributes":{},"id":"4dd3e3ae-f6fb-44cf-b987-0954bc0ad959","type":"CategoricalScale"},{"attributes":{},"id":"c9e2e3e1-7347-4272-b537-aad9ec5c3dcb","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"3d206a6e-153b-4510-85ed-ec3b2cd2df2d","type":"ColumnDataSource"},"glyph":{"id":"3bf23b9e-83f1-472c-9842-d61a4c77bcb3","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4a42bf19-981d-4d4d-9c03-09210068fef0","type":"Line"},"selection_glyph":null,"view":{"id":"2e4a6985-db67-4b58-b8d6-1ebd4e3f647c","type":"CDSView"}},"id":"db006179-17bc-4fc2-ab47-1fc47d9e23fe","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4a42bf19-981d-4d4d-9c03-09210068fef0","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"387c59c6-3ed6-4533-8c7b-bb6699aa3887","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"387c59c6-3ed6-4533-8c7b-bb6699aa3887","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6251a118-e0d5-4548-8ea3-35064dcdfffd","type":"VBar"},{"attributes":{},"id":"cf8378ba-151e-424d-9187-4a18c191d5bd","type":"LinearScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of San Jacinto (1899)"],"cumulative":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"general":["Loyd Wheaton"],"outcome":["V"],"value":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAACsnUA=","dtype":"float64","shape":[1]}}},"id":"3d206a6e-153b-4510-85ed-ec3b2cd2df2d","type":"ColumnDataSource"}],"root_ids":["71ceeb4a-99f0-4724-830e-e52feb28699a"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"94762d15-f5ec-47f5-87d7-02d0c9f39dc5","elementid":"bf391719-6aa0-49d7-a16d-31880fbf669a","modelid":"71ceeb4a-99f0-4724-830e-e52feb28699a"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

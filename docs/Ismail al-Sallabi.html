@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="3dfe2d50-eef4-4ea2-8823-c595f887c2ea"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"04993cec-db44-4f96-b5c3-ed39828c6133":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"bdf1cbfd-4ee6-46ee-bcfc-607fce68e921","type":"Line"},{"attributes":{},"id":"8d21ac9f-1ef7-48fe-935f-ffed55296029","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9799d5e8-946a-49cc-9d83-3033f20011c0","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"7b0be7ce-13b1-4283-a90e-43d1461b4970","type":"CategoricalColorMapper"},{"attributes":{"below":[{"id":"42022a5b-21a7-461d-aa00-5aebaeed4edf","type":"CategoricalAxis"}],"left":[{"id":"b7d1abd1-01cf-4736-b7e5-b27ebdec01e7","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"42022a5b-21a7-461d-aa00-5aebaeed4edf","type":"CategoricalAxis"},{"id":"c46ca4ce-0385-426a-b82f-a052e4745d2b","type":"Grid"},{"id":"b7d1abd1-01cf-4736-b7e5-b27ebdec01e7","type":"LinearAxis"},{"id":"95b4050b-1675-4ba0-b8d4-d970748c045c","type":"Grid"},{"id":"933b20c9-3de8-4cdd-a1c5-5af6a532071e","type":"GlyphRenderer"},{"id":"2ee143bf-b9de-437b-b470-4dfed37d9464","type":"GlyphRenderer"}],"title":{"id":"5e86ce4d-640d-4a5d-a480-a9f78d0fe4ef","type":"Title"},"toolbar":{"id":"25e67f06-e896-4075-903d-d9759613763e","type":"Toolbar"},"x_range":{"id":"b9b8cd27-5912-41b2-a61e-03f31bdcf4d6","type":"FactorRange"},"x_scale":{"id":"456d9328-6860-4af0-82cc-c28bf05c7de1","type":"CategoricalScale"},"y_range":{"id":"24248c58-d12d-4321-a0ae-0a52948a1632","type":"DataRange1d"},"y_scale":{"id":"8d21ac9f-1ef7-48fe-935f-ffed55296029","type":"LinearScale"}},"id":"c8fad289-9ee3-49f0-855f-73960a5f55c5","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"97ed66ed-7f3e-47b4-829b-09df4fff2d5f","type":"BasicTickFormatter"},{"attributes":{"plot":null,"text":"Ismail al-Sallabi (1 - 0 - 0)"},"id":"5e86ce4d-640d-4a5d-a480-a9f78d0fe4ef","type":"Title"},{"attributes":{"callback":null},"id":"24248c58-d12d-4321-a0ae-0a52948a1632","type":"DataRange1d"},{"attributes":{"formatter":{"id":"870edd58-8f32-41dc-bb8d-eaec9c0a23a7","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"c8fad289-9ee3-49f0-855f-73960a5f55c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"4dd5d887-a08d-495e-aebd-a43c2cf4064e","type":"CategoricalTicker"}},"id":"42022a5b-21a7-461d-aa00-5aebaeed4edf","type":"CategoricalAxis"},{"attributes":{},"id":"870edd58-8f32-41dc-bb8d-eaec9c0a23a7","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"factors":["Second Battle of Zawiya"]},"id":"b9b8cd27-5912-41b2-a61e-03f31bdcf4d6","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c2941880-a834-4018-a78d-dc67d838aa76","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"7b0be7ce-13b1-4283-a90e-43d1461b4970","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"7b0be7ce-13b1-4283-a90e-43d1461b4970","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"900e6aa8-5702-4d45-ab9c-4f5ee73f91af","type":"VBar"},{"attributes":{"data_source":{"id":"92591e1e-a366-46aa-9fd0-a5a79ecf08d6","type":"ColumnDataSource"},"glyph":{"id":"900e6aa8-5702-4d45-ab9c-4f5ee73f91af","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c2941880-a834-4018-a78d-dc67d838aa76","type":"VBar"},"selection_glyph":null,"view":{"id":"7d149337-d1e3-40c8-8f89-74c44b705280","type":"CDSView"}},"id":"2ee143bf-b9de-437b-b470-4dfed37d9464","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"c8fad289-9ee3-49f0-855f-73960a5f55c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"a0c8eb41-3c0d-4275-820f-eaed35ece210","type":"BasicTicker"}},"id":"95b4050b-1675-4ba0-b8d4-d970748c045c","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Second Battle of Zawiya"],"cumulative":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"general":["Ismail al-Sallabi"],"outcome":["V"],"value":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABsn0A=","dtype":"float64","shape":[1]}}},"id":"92591e1e-a366-46aa-9fd0-a5a79ecf08d6","type":"ColumnDataSource"},{"attributes":{},"id":"456d9328-6860-4af0-82cc-c28bf05c7de1","type":"CategoricalScale"},{"attributes":{"plot":{"id":"c8fad289-9ee3-49f0-855f-73960a5f55c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"4dd5d887-a08d-495e-aebd-a43c2cf4064e","type":"CategoricalTicker"}},"id":"c46ca4ce-0385-426a-b82f-a052e4745d2b","type":"Grid"},{"attributes":{"data_source":{"id":"92591e1e-a366-46aa-9fd0-a5a79ecf08d6","type":"ColumnDataSource"},"glyph":{"id":"9799d5e8-946a-49cc-9d83-3033f20011c0","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bdf1cbfd-4ee6-46ee-bcfc-607fce68e921","type":"Line"},"selection_glyph":null,"view":{"id":"2f3d99e0-281c-4fd9-afe6-b18b33ef32e2","type":"CDSView"}},"id":"933b20c9-3de8-4cdd-a1c5-5af6a532071e","type":"GlyphRenderer"},{"attributes":{},"id":"a0c8eb41-3c0d-4275-820f-eaed35ece210","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"02d6d204-d11e-4c09-8603-485e5a479840","type":"HoverTool"}]},"id":"25e67f06-e896-4075-903d-d9759613763e","type":"Toolbar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"02d6d204-d11e-4c09-8603-485e5a479840","type":"HoverTool"},{"attributes":{},"id":"4dd5d887-a08d-495e-aebd-a43c2cf4064e","type":"CategoricalTicker"},{"attributes":{"source":{"id":"92591e1e-a366-46aa-9fd0-a5a79ecf08d6","type":"ColumnDataSource"}},"id":"7d149337-d1e3-40c8-8f89-74c44b705280","type":"CDSView"},{"attributes":{"source":{"id":"92591e1e-a366-46aa-9fd0-a5a79ecf08d6","type":"ColumnDataSource"}},"id":"2f3d99e0-281c-4fd9-afe6-b18b33ef32e2","type":"CDSView"},{"attributes":{"formatter":{"id":"97ed66ed-7f3e-47b4-829b-09df4fff2d5f","type":"BasicTickFormatter"},"plot":{"id":"c8fad289-9ee3-49f0-855f-73960a5f55c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"a0c8eb41-3c0d-4275-820f-eaed35ece210","type":"BasicTicker"}},"id":"b7d1abd1-01cf-4736-b7e5-b27ebdec01e7","type":"LinearAxis"}],"root_ids":["c8fad289-9ee3-49f0-855f-73960a5f55c5"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"04993cec-db44-4f96-b5c3-ed39828c6133","elementid":"3dfe2d50-eef4-4ea2-8823-c595f887c2ea","modelid":"c8fad289-9ee3-49f0-855f-73960a5f55c5"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

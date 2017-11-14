@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="0b8f1812-9d43-496e-9b26-971dfca38e2e"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"1cb0af00-6592-4a97-b568-1bf64e115a64":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"041a548e-ca04-47e7-8944-3e6e26dfb34e","type":"Line"},{"attributes":{},"id":"32794bec-fd09-458d-a8cd-3daa931ddf51","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"e76ae867-075d-45d8-b330-a33fd9611cc0","type":"ColumnDataSource"},"glyph":{"id":"46d0b783-7cdf-4572-97c3-64ca4a501e1d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"257a978e-cacf-4d45-beda-8f400ed2e800","type":"VBar"},"selection_glyph":null,"view":{"id":"dd179964-b5c7-4eb2-8170-aebfd7c17b8f","type":"CDSView"}},"id":"ac478608-950b-4dc2-8eb4-9807fe9897e8","type":"GlyphRenderer"},{"attributes":{},"id":"56a83b32-f7c6-4a9e-8452-706ec8267ac2","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"e76ae867-075d-45d8-b330-a33fd9611cc0","type":"ColumnDataSource"}},"id":"2c34b562-6e4e-47ba-8c47-64755baf6be7","type":"CDSView"},{"attributes":{"formatter":{"id":"56a83b32-f7c6-4a9e-8452-706ec8267ac2","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"f4ddf5a3-8db8-4f1b-8786-812c33f722e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"54560c0f-8edb-4536-9baf-e1b870b4e53b","type":"CategoricalTicker"}},"id":"bd6fff44-d08c-409c-897c-808a97067f35","type":"CategoricalAxis"},{"attributes":{},"id":"cdb28628-f385-4d19-86dd-a36b3fe637dc","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"257a978e-cacf-4d45-beda-8f400ed2e800","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Naval Battle of Guadalcanal"],"cumulative":{"__ndarray__":"1H37yMBs4T8=","dtype":"float64","shape":[1]},"general":["Daniel J. Callaghan"],"outcome":["V"],"value":{"__ndarray__":"1H37yMBs4T8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABYnkA=","dtype":"float64","shape":[1]}}},"id":"e76ae867-075d-45d8-b330-a33fd9611cc0","type":"ColumnDataSource"},{"attributes":{},"id":"54560c0f-8edb-4536-9baf-e1b870b4e53b","type":"CategoricalTicker"},{"attributes":{"plot":{"id":"f4ddf5a3-8db8-4f1b-8786-812c33f722e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"54560c0f-8edb-4536-9baf-e1b870b4e53b","type":"CategoricalTicker"}},"id":"676af928-3f66-4548-8c9a-ef38b35b5a03","type":"Grid"},{"attributes":{"formatter":{"id":"5a6e7617-8f29-4490-96ce-14a404b49c4b","type":"BasicTickFormatter"},"plot":{"id":"f4ddf5a3-8db8-4f1b-8786-812c33f722e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"dde3ea89-55e4-4954-acb8-aef291d7b974","type":"BasicTicker"}},"id":"f418eddb-2dd4-4b18-aa0d-db815f2a173d","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"a0506a9f-3be6-4f98-81b7-cd784e35b0a0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"a0506a9f-3be6-4f98-81b7-cd784e35b0a0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"46d0b783-7cdf-4572-97c3-64ca4a501e1d","type":"VBar"},{"attributes":{"plot":null,"text":"Daniel J. Callaghan (1 - 0 - 0)"},"id":"286ddbe0-f1d6-4ef4-ac86-9e7a2d1b4a9c","type":"Title"},{"attributes":{"callback":null,"factors":["Naval Battle of Guadalcanal"]},"id":"535e5ca8-98a9-4558-a555-d0361c3efd58","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"508ae3cb-86a0-4945-932f-36dd60eec660","type":"HoverTool"},{"attributes":{"below":[{"id":"bd6fff44-d08c-409c-897c-808a97067f35","type":"CategoricalAxis"}],"left":[{"id":"f418eddb-2dd4-4b18-aa0d-db815f2a173d","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"bd6fff44-d08c-409c-897c-808a97067f35","type":"CategoricalAxis"},{"id":"676af928-3f66-4548-8c9a-ef38b35b5a03","type":"Grid"},{"id":"f418eddb-2dd4-4b18-aa0d-db815f2a173d","type":"LinearAxis"},{"id":"27ac43cf-cbd3-48c3-8c35-d2470a420a20","type":"Grid"},{"id":"2065eaa9-c0b4-4254-a0cb-c231f5ca3940","type":"GlyphRenderer"},{"id":"ac478608-950b-4dc2-8eb4-9807fe9897e8","type":"GlyphRenderer"}],"title":{"id":"286ddbe0-f1d6-4ef4-ac86-9e7a2d1b4a9c","type":"Title"},"toolbar":{"id":"f9a4bbbe-4c71-4e1c-b146-d79afad02f6b","type":"Toolbar"},"x_range":{"id":"535e5ca8-98a9-4558-a555-d0361c3efd58","type":"FactorRange"},"x_scale":{"id":"32794bec-fd09-458d-a8cd-3daa931ddf51","type":"CategoricalScale"},"y_range":{"id":"d5ce57c0-3583-49be-9311-06c7aa1f3191","type":"DataRange1d"},"y_scale":{"id":"cdb28628-f385-4d19-86dd-a36b3fe637dc","type":"LinearScale"}},"id":"f4ddf5a3-8db8-4f1b-8786-812c33f722e8","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"5a6e7617-8f29-4490-96ce-14a404b49c4b","type":"BasicTickFormatter"},{"attributes":{},"id":"dde3ea89-55e4-4954-acb8-aef291d7b974","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"f4ddf5a3-8db8-4f1b-8786-812c33f722e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"dde3ea89-55e4-4954-acb8-aef291d7b974","type":"BasicTicker"}},"id":"27ac43cf-cbd3-48c3-8c35-d2470a420a20","type":"Grid"},{"attributes":{"data_source":{"id":"e76ae867-075d-45d8-b330-a33fd9611cc0","type":"ColumnDataSource"},"glyph":{"id":"3d170239-c07a-463e-9ff2-d88336b3409b","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"041a548e-ca04-47e7-8944-3e6e26dfb34e","type":"Line"},"selection_glyph":null,"view":{"id":"2c34b562-6e4e-47ba-8c47-64755baf6be7","type":"CDSView"}},"id":"2065eaa9-c0b4-4254-a0cb-c231f5ca3940","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"d5ce57c0-3583-49be-9311-06c7aa1f3191","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"508ae3cb-86a0-4945-932f-36dd60eec660","type":"HoverTool"}]},"id":"f9a4bbbe-4c71-4e1c-b146-d79afad02f6b","type":"Toolbar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"a0506a9f-3be6-4f98-81b7-cd784e35b0a0","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"e76ae867-075d-45d8-b330-a33fd9611cc0","type":"ColumnDataSource"}},"id":"dd179964-b5c7-4eb2-8170-aebfd7c17b8f","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3d170239-c07a-463e-9ff2-d88336b3409b","type":"Line"}],"root_ids":["f4ddf5a3-8db8-4f1b-8786-812c33f722e8"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"1cb0af00-6592-4a97-b568-1bf64e115a64","elementid":"0b8f1812-9d43-496e-9b26-971dfca38e2e","modelid":"f4ddf5a3-8db8-4f1b-8786-812c33f722e8"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

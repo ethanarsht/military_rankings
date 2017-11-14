@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="ff43132f-9c5b-4466-88af-c686f55fa893"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"f9900f99-863f-4363-803e-e36a43cf5dec":{"roots":{"references":[{"attributes":{},"id":"cd2ba16d-7e64-4b10-ac41-caca120ef117","type":"CategoricalTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Jerusalem (614)"],"cumulative":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"general":["Benjamin of Tiberias"],"outcome":["V"],"value":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAACIs8A=","dtype":"float64","shape":[1]}}},"id":"cffdeee3-9e3f-4d7b-8462-6ea73e653a6d","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4220e7a3-12d3-4ac1-99f6-ba1d320b1bc2","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4220e7a3-12d3-4ac1-99f6-ba1d320b1bc2","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ef04f0d5-a609-425c-8576-ebf7d2cedf1c","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4220e7a3-12d3-4ac1-99f6-ba1d320b1bc2","type":"CategoricalColorMapper"},{"attributes":{"below":[{"id":"c169e0c0-1cfb-4828-9507-dd61e34b5eed","type":"CategoricalAxis"}],"left":[{"id":"27a928b1-8d5d-48ee-ab32-f0a70ce0dc60","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"c169e0c0-1cfb-4828-9507-dd61e34b5eed","type":"CategoricalAxis"},{"id":"4830292f-c1fa-48cf-a50d-2841b5b90605","type":"Grid"},{"id":"27a928b1-8d5d-48ee-ab32-f0a70ce0dc60","type":"LinearAxis"},{"id":"7fd70fee-9fad-4d46-90d5-a4cafec3c1e8","type":"Grid"},{"id":"5e4010dd-da08-43e7-8150-af00bffec1cc","type":"GlyphRenderer"},{"id":"d6517211-35ae-4daa-83f8-243dea38c83c","type":"GlyphRenderer"}],"title":{"id":"d765658c-36ab-421f-ac64-21ab163d04be","type":"Title"},"toolbar":{"id":"cde69465-c8d8-4959-9bcb-86e22cc0ac48","type":"Toolbar"},"x_range":{"id":"e75956e4-e3ae-48b9-b0fb-8564a2e3ec3e","type":"FactorRange"},"x_scale":{"id":"6eb37944-27c0-4caf-81e3-d436f55bea1b","type":"CategoricalScale"},"y_range":{"id":"e55bf36e-33bc-488c-9336-94668c4eec3d","type":"DataRange1d"},"y_scale":{"id":"478ff2f7-5556-42a3-8099-dc0f33af0bab","type":"LinearScale"}},"id":"e3b0adaa-9e37-4fc2-9b97-4e4bc39738b7","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"bd4ea611-cc14-4a74-a4c2-28aa0e232185","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"e3b0adaa-9e37-4fc2-9b97-4e4bc39738b7","subtype":"Figure","type":"Plot"},"ticker":{"id":"cd2ba16d-7e64-4b10-ac41-caca120ef117","type":"CategoricalTicker"}},"id":"c169e0c0-1cfb-4828-9507-dd61e34b5eed","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"cffdeee3-9e3f-4d7b-8462-6ea73e653a6d","type":"ColumnDataSource"},"glyph":{"id":"58c22732-f796-4677-b555-c45e76e19546","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"09740504-26c0-455f-b5e0-ed11c1900f99","type":"Line"},"selection_glyph":null,"view":{"id":"3ecbb659-a5bb-4209-9b2e-82200757f54e","type":"CDSView"}},"id":"5e4010dd-da08-43e7-8150-af00bffec1cc","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"]]},"id":"e190221f-f028-48f0-925d-4fc932f56f93","type":"HoverTool"},{"attributes":{},"id":"ba916159-2c06-4793-98d7-a12faea12fb7","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e190221f-f028-48f0-925d-4fc932f56f93","type":"HoverTool"}]},"id":"cde69465-c8d8-4959-9bcb-86e22cc0ac48","type":"Toolbar"},{"attributes":{},"id":"a040f245-d344-401c-9b8a-42094ff18716","type":"BasicTickFormatter"},{"attributes":{},"id":"478ff2f7-5556-42a3-8099-dc0f33af0bab","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"58c22732-f796-4677-b555-c45e76e19546","type":"Line"},{"attributes":{"source":{"id":"cffdeee3-9e3f-4d7b-8462-6ea73e653a6d","type":"ColumnDataSource"}},"id":"e2c8b7b6-7947-463b-b24d-c16d003e39af","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"e3b0adaa-9e37-4fc2-9b97-4e4bc39738b7","subtype":"Figure","type":"Plot"},"ticker":{"id":"ba916159-2c06-4793-98d7-a12faea12fb7","type":"BasicTicker"}},"id":"7fd70fee-9fad-4d46-90d5-a4cafec3c1e8","type":"Grid"},{"attributes":{"plot":{"id":"e3b0adaa-9e37-4fc2-9b97-4e4bc39738b7","subtype":"Figure","type":"Plot"},"ticker":{"id":"cd2ba16d-7e64-4b10-ac41-caca120ef117","type":"CategoricalTicker"}},"id":"4830292f-c1fa-48cf-a50d-2841b5b90605","type":"Grid"},{"attributes":{"formatter":{"id":"a040f245-d344-401c-9b8a-42094ff18716","type":"BasicTickFormatter"},"plot":{"id":"e3b0adaa-9e37-4fc2-9b97-4e4bc39738b7","subtype":"Figure","type":"Plot"},"ticker":{"id":"ba916159-2c06-4793-98d7-a12faea12fb7","type":"BasicTicker"}},"id":"27a928b1-8d5d-48ee-ab32-f0a70ce0dc60","type":"LinearAxis"},{"attributes":{"data_source":{"id":"cffdeee3-9e3f-4d7b-8462-6ea73e653a6d","type":"ColumnDataSource"},"glyph":{"id":"ef04f0d5-a609-425c-8576-ebf7d2cedf1c","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f2a3f3f5-6ec3-4cb9-8872-1ad22ecde6ab","type":"VBar"},"selection_glyph":null,"view":{"id":"e2c8b7b6-7947-463b-b24d-c16d003e39af","type":"CDSView"}},"id":"d6517211-35ae-4daa-83f8-243dea38c83c","type":"GlyphRenderer"},{"attributes":{},"id":"bd4ea611-cc14-4a74-a4c2-28aa0e232185","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f2a3f3f5-6ec3-4cb9-8872-1ad22ecde6ab","type":"VBar"},{"attributes":{"plot":null,"text":"Benjamin of Tiberias (1 - 0 - 0)"},"id":"d765658c-36ab-421f-ac64-21ab163d04be","type":"Title"},{"attributes":{"source":{"id":"cffdeee3-9e3f-4d7b-8462-6ea73e653a6d","type":"ColumnDataSource"}},"id":"3ecbb659-a5bb-4209-9b2e-82200757f54e","type":"CDSView"},{"attributes":{"callback":null,"factors":["Siege of Jerusalem (614)"]},"id":"e75956e4-e3ae-48b9-b0fb-8564a2e3ec3e","type":"FactorRange"},{"attributes":{},"id":"6eb37944-27c0-4caf-81e3-d436f55bea1b","type":"CategoricalScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"09740504-26c0-455f-b5e0-ed11c1900f99","type":"Line"},{"attributes":{"callback":null},"id":"e55bf36e-33bc-488c-9336-94668c4eec3d","type":"DataRange1d"}],"root_ids":["e3b0adaa-9e37-4fc2-9b97-4e4bc39738b7"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"f9900f99-863f-4363-803e-e36a43cf5dec","elementid":"ff43132f-9c5b-4466-88af-c686f55fa893","modelid":"e3b0adaa-9e37-4fc2-9b97-4e4bc39738b7"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

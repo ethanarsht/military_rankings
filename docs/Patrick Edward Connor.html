@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="6c2c04c3-5a44-40c4-a489-7cc36fd1de79"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"1ee99453-f0d5-4d6e-abdb-d8af19b03272":{"roots":{"references":[{"attributes":{},"id":"48cd5849-dbde-46be-84d4-a5790bf4db46","type":"LinearScale"},{"attributes":{"callback":null},"id":"38251ced-c8df-42f6-9a20-a2669a9a331e","type":"DataRange1d"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"10597ca5-985d-4986-bb0e-3e2d19dc278a","type":"Line"},{"attributes":{"plot":{"id":"86c630ab-68a9-4a2a-a846-189137de65f3","subtype":"Figure","type":"Plot"},"ticker":{"id":"0965566a-3b3f-45d3-b89d-30ba258604f6","type":"CategoricalTicker"}},"id":"c7334bb5-c166-4da6-a5aa-0803857549cc","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"07241ccc-f0eb-438f-918e-9ef8f9f3c32b","type":"HoverTool"},{"attributes":{"data_source":{"id":"2799d2ad-c01f-46d1-ab03-0adf4039859e","type":"ColumnDataSource"},"glyph":{"id":"6c3320d4-66ab-487a-86c3-92af713a0caa","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"88d567c0-7ecb-4724-bcf0-bf95598d7b6d","type":"VBar"},"selection_glyph":null,"view":{"id":"9092ea80-f326-45d4-8f21-34373c5f0f0a","type":"CDSView"}},"id":"d15dbb9f-f4ab-42c2-832f-3a619c5d0a2a","type":"GlyphRenderer"},{"attributes":{"source":{"id":"2799d2ad-c01f-46d1-ab03-0adf4039859e","type":"ColumnDataSource"}},"id":"e9a68a06-b12d-4d0a-b1e3-ef584da9e8bd","type":"CDSView"},{"attributes":{},"id":"156c84a7-83de-4146-aa65-05de1b61729c","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"factors":["Bear River Massacre","Battle of the Tongue River"]},"id":"7cedf373-aa9c-4ce8-b3c0-947ae6cebe2a","type":"FactorRange"},{"attributes":{"data_source":{"id":"2799d2ad-c01f-46d1-ab03-0adf4039859e","type":"ColumnDataSource"},"glyph":{"id":"10597ca5-985d-4986-bb0e-3e2d19dc278a","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"74a2784d-d2f7-4e18-9096-ba3124763d60","type":"Line"},"selection_glyph":null,"view":{"id":"e9a68a06-b12d-4d0a-b1e3-ef584da9e8bd","type":"CDSView"}},"id":"a947b6b7-727d-4883-8e2e-df9176e30cc1","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"86c630ab-68a9-4a2a-a846-189137de65f3","subtype":"Figure","type":"Plot"},"ticker":{"id":"4343d4ce-b447-4326-89e8-d92f46c3196e","type":"BasicTicker"}},"id":"1e6f7928-458b-4cc1-8169-ea1cd50eebd8","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"d2ef463c-1b09-4eb6-907f-9d12a9c3ea44","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"d2ef463c-1b09-4eb6-907f-9d12a9c3ea44","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6c3320d4-66ab-487a-86c3-92af713a0caa","type":"VBar"},{"attributes":{"below":[{"id":"e6e78610-10e2-4e8a-97b9-75e51d6845bd","type":"CategoricalAxis"}],"left":[{"id":"2ea79b81-9eb7-4de7-b2a8-7fa27685bde1","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"e6e78610-10e2-4e8a-97b9-75e51d6845bd","type":"CategoricalAxis"},{"id":"c7334bb5-c166-4da6-a5aa-0803857549cc","type":"Grid"},{"id":"2ea79b81-9eb7-4de7-b2a8-7fa27685bde1","type":"LinearAxis"},{"id":"1e6f7928-458b-4cc1-8169-ea1cd50eebd8","type":"Grid"},{"id":"a947b6b7-727d-4883-8e2e-df9176e30cc1","type":"GlyphRenderer"},{"id":"d15dbb9f-f4ab-42c2-832f-3a619c5d0a2a","type":"GlyphRenderer"}],"title":{"id":"d87e9327-949c-4719-8b68-ce8d1833cbc6","type":"Title"},"toolbar":{"id":"501d67ba-61cd-43e9-892a-22250a0b3218","type":"Toolbar"},"x_range":{"id":"7cedf373-aa9c-4ce8-b3c0-947ae6cebe2a","type":"FactorRange"},"x_scale":{"id":"2a17dc5a-02c3-4b46-81ff-282e30c6274d","type":"CategoricalScale"},"y_range":{"id":"38251ced-c8df-42f6-9a20-a2669a9a331e","type":"DataRange1d"},"y_scale":{"id":"48cd5849-dbde-46be-84d4-a5790bf4db46","type":"LinearScale"}},"id":"86c630ab-68a9-4a2a-a846-189137de65f3","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"2a17dc5a-02c3-4b46-81ff-282e30c6274d","type":"CategoricalScale"},{"attributes":{"source":{"id":"2799d2ad-c01f-46d1-ab03-0adf4039859e","type":"ColumnDataSource"}},"id":"9092ea80-f326-45d4-8f21-34373c5f0f0a","type":"CDSView"},{"attributes":{},"id":"0965566a-3b3f-45d3-b89d-30ba258604f6","type":"CategoricalTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Bear River Massacre","Battle of the Tongue River"],"cumulative":{"__ndarray__":"8DbJ1IOb4D94m2TqwU3wPw==","dtype":"float64","shape":[2]},"general":["Patrick Edward Connor","Patrick Edward Connor"],"outcome":["V","V"],"value":{"__ndarray__":"8DbJ1IOb4D8AAAAAAADgPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAAcnUAAAAAAACSdQA==","dtype":"float64","shape":[2]}}},"id":"2799d2ad-c01f-46d1-ab03-0adf4039859e","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"156c84a7-83de-4146-aa65-05de1b61729c","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"86c630ab-68a9-4a2a-a846-189137de65f3","subtype":"Figure","type":"Plot"},"ticker":{"id":"0965566a-3b3f-45d3-b89d-30ba258604f6","type":"CategoricalTicker"}},"id":"e6e78610-10e2-4e8a-97b9-75e51d6845bd","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"88d567c0-7ecb-4724-bcf0-bf95598d7b6d","type":"VBar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"74a2784d-d2f7-4e18-9096-ba3124763d60","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"07241ccc-f0eb-438f-918e-9ef8f9f3c32b","type":"HoverTool"}]},"id":"501d67ba-61cd-43e9-892a-22250a0b3218","type":"Toolbar"},{"attributes":{},"id":"bc1d6b63-1fd0-43d9-9a3f-44ad4c53cf14","type":"BasicTickFormatter"},{"attributes":{"plot":null,"text":"Patrick Edward Connor (2 - 0 - 0)"},"id":"d87e9327-949c-4719-8b68-ce8d1833cbc6","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"d2ef463c-1b09-4eb6-907f-9d12a9c3ea44","type":"CategoricalColorMapper"},{"attributes":{},"id":"4343d4ce-b447-4326-89e8-d92f46c3196e","type":"BasicTicker"},{"attributes":{"formatter":{"id":"bc1d6b63-1fd0-43d9-9a3f-44ad4c53cf14","type":"BasicTickFormatter"},"plot":{"id":"86c630ab-68a9-4a2a-a846-189137de65f3","subtype":"Figure","type":"Plot"},"ticker":{"id":"4343d4ce-b447-4326-89e8-d92f46c3196e","type":"BasicTicker"}},"id":"2ea79b81-9eb7-4de7-b2a8-7fa27685bde1","type":"LinearAxis"}],"root_ids":["86c630ab-68a9-4a2a-a846-189137de65f3"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"1ee99453-f0d5-4d6e-abdb-d8af19b03272","elementid":"6c2c04c3-5a44-40c4-a489-7cc36fd1de79","modelid":"86c630ab-68a9-4a2a-a846-189137de65f3"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

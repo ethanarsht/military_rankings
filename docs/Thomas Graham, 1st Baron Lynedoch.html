@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="21c25ece-64bf-4edf-990f-a93e18d2208d"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"3e4a5b03-d174-4012-9542-94399635c5b3":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"bc2cf357-0353-459f-89da-05121d15a2ee","type":"HoverTool"},{"attributes":{"callback":null,"factors":["Battle of Barrosa","Battle of Vitoria"]},"id":"da5162bd-7e17-45de-86c6-636b84153869","type":"FactorRange"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Barrosa","Battle of Vitoria"],"cumulative":{"__ndarray__":"srS8J+yZ3j/vqrzhZG3uPw==","dtype":"float64","shape":[2]},"general":["Thomas Graham, 1st Baron Lynedoch","Thomas Graham, 1st Baron Lynedoch"],"outcome":["V","V"],"value":{"__ndarray__":"srS8J+yZ3j8sobyb3UDePw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABMnEAAAAAAAFScQA==","dtype":"float64","shape":[2]}}},"id":"444d4f1a-e57f-4c7d-8456-5c2851c19310","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"22e75f86-f294-4230-91e7-5fe0d53c349c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"22e75f86-f294-4230-91e7-5fe0d53c349c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c1b033a6-5720-4d16-80ec-6273a29136e0","type":"VBar"},{"attributes":{},"id":"4e62b8bf-4bbd-446b-8a56-40a1e1fe4349","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"444d4f1a-e57f-4c7d-8456-5c2851c19310","type":"ColumnDataSource"},"glyph":{"id":"5313b38d-8144-4761-b5e5-7dfcf6b76181","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ac35820d-2e4c-4608-b96f-7553efb2081c","type":"Line"},"selection_glyph":null,"view":{"id":"cd447c27-744a-44d5-bc05-d651e79762c4","type":"CDSView"}},"id":"cfe024d8-95e5-406d-b26a-60cd2b19ae52","type":"GlyphRenderer"},{"attributes":{"source":{"id":"444d4f1a-e57f-4c7d-8456-5c2851c19310","type":"ColumnDataSource"}},"id":"cd447c27-744a-44d5-bc05-d651e79762c4","type":"CDSView"},{"attributes":{},"id":"9a47c04f-58d0-40af-b9c3-5040273856cb","type":"LinearScale"},{"attributes":{},"id":"2de8c8b0-db6b-4d46-b8d1-800870dc606f","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c054de77-f90e-46d8-80bf-f900b1515e20","type":"VBar"},{"attributes":{},"id":"e9d04f9a-4b2f-4df2-b091-a082fa9c695e","type":"CategoricalScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5313b38d-8144-4761-b5e5-7dfcf6b76181","type":"Line"},{"attributes":{"source":{"id":"444d4f1a-e57f-4c7d-8456-5c2851c19310","type":"ColumnDataSource"}},"id":"52352e3a-2cbf-48b4-a022-94c898db1e29","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ac35820d-2e4c-4608-b96f-7553efb2081c","type":"Line"},{"attributes":{},"id":"510f938d-d07a-421a-855e-48494337a871","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"22e75f86-f294-4230-91e7-5fe0d53c349c","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"444d4f1a-e57f-4c7d-8456-5c2851c19310","type":"ColumnDataSource"},"glyph":{"id":"c1b033a6-5720-4d16-80ec-6273a29136e0","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c054de77-f90e-46d8-80bf-f900b1515e20","type":"VBar"},"selection_glyph":null,"view":{"id":"52352e3a-2cbf-48b4-a022-94c898db1e29","type":"CDSView"}},"id":"73d6da2f-1f05-4b07-b1a5-4163abe46599","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"bc2cf357-0353-459f-89da-05121d15a2ee","type":"HoverTool"}]},"id":"2d2b1ff0-5555-41d8-84d7-f4f04cc36cf3","type":"Toolbar"},{"attributes":{"below":[{"id":"8f9a153d-db37-4ce7-884b-5d9f1159e8a3","type":"CategoricalAxis"}],"left":[{"id":"fa030d0f-9a53-4242-8ae3-61dd74161c79","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"8f9a153d-db37-4ce7-884b-5d9f1159e8a3","type":"CategoricalAxis"},{"id":"177c0db0-0007-4db8-b8f3-509aaf27445d","type":"Grid"},{"id":"fa030d0f-9a53-4242-8ae3-61dd74161c79","type":"LinearAxis"},{"id":"6b6d377a-8c30-4f6a-a39b-3831c7848e4a","type":"Grid"},{"id":"cfe024d8-95e5-406d-b26a-60cd2b19ae52","type":"GlyphRenderer"},{"id":"73d6da2f-1f05-4b07-b1a5-4163abe46599","type":"GlyphRenderer"}],"title":{"id":"24b398d1-8817-4fd8-bd03-3bcdc9477dc5","type":"Title"},"toolbar":{"id":"2d2b1ff0-5555-41d8-84d7-f4f04cc36cf3","type":"Toolbar"},"x_range":{"id":"da5162bd-7e17-45de-86c6-636b84153869","type":"FactorRange"},"x_scale":{"id":"e9d04f9a-4b2f-4df2-b091-a082fa9c695e","type":"CategoricalScale"},"y_range":{"id":"4a350ae3-6690-4caf-8359-a1766fa4d7d0","type":"DataRange1d"},"y_scale":{"id":"9a47c04f-58d0-40af-b9c3-5040273856cb","type":"LinearScale"}},"id":"4aa08b53-a631-4ea7-955f-de3516f908ce","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":1,"plot":{"id":"4aa08b53-a631-4ea7-955f-de3516f908ce","subtype":"Figure","type":"Plot"},"ticker":{"id":"9d14a28e-037d-4004-81fc-b4326c4bb487","type":"BasicTicker"}},"id":"6b6d377a-8c30-4f6a-a39b-3831c7848e4a","type":"Grid"},{"attributes":{"formatter":{"id":"2de8c8b0-db6b-4d46-b8d1-800870dc606f","type":"BasicTickFormatter"},"plot":{"id":"4aa08b53-a631-4ea7-955f-de3516f908ce","subtype":"Figure","type":"Plot"},"ticker":{"id":"9d14a28e-037d-4004-81fc-b4326c4bb487","type":"BasicTicker"}},"id":"fa030d0f-9a53-4242-8ae3-61dd74161c79","type":"LinearAxis"},{"attributes":{"formatter":{"id":"4e62b8bf-4bbd-446b-8a56-40a1e1fe4349","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"4aa08b53-a631-4ea7-955f-de3516f908ce","subtype":"Figure","type":"Plot"},"ticker":{"id":"510f938d-d07a-421a-855e-48494337a871","type":"CategoricalTicker"}},"id":"8f9a153d-db37-4ce7-884b-5d9f1159e8a3","type":"CategoricalAxis"},{"attributes":{"plot":null,"text":"Thomas Graham, 1st Baron Lynedoch (2 - 0 - 0)"},"id":"24b398d1-8817-4fd8-bd03-3bcdc9477dc5","type":"Title"},{"attributes":{},"id":"9d14a28e-037d-4004-81fc-b4326c4bb487","type":"BasicTicker"},{"attributes":{"plot":{"id":"4aa08b53-a631-4ea7-955f-de3516f908ce","subtype":"Figure","type":"Plot"},"ticker":{"id":"510f938d-d07a-421a-855e-48494337a871","type":"CategoricalTicker"}},"id":"177c0db0-0007-4db8-b8f3-509aaf27445d","type":"Grid"},{"attributes":{"callback":null},"id":"4a350ae3-6690-4caf-8359-a1766fa4d7d0","type":"DataRange1d"}],"root_ids":["4aa08b53-a631-4ea7-955f-de3516f908ce"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"3e4a5b03-d174-4012-9542-94399635c5b3","elementid":"21c25ece-64bf-4edf-990f-a93e18d2208d","modelid":"4aa08b53-a631-4ea7-955f-de3516f908ce"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

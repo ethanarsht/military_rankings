@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f8bf8d04-6eaa-4220-9a02-c2064799049f"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"5c5a4da1-c747-49e2-a3f0-d289e4dac61a":{"roots":{"references":[{"attributes":{"data_source":{"id":"5693532c-c259-498f-a7dd-2f691579f91d","type":"ColumnDataSource"},"glyph":{"id":"2c8b671f-3e81-49fd-94ea-a3243ce0390d","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"593e2251-74cf-4b34-9f5c-005b1e3dfd0e","type":"Line"},"selection_glyph":null,"view":{"id":"80395fd3-2d91-4a36-86a1-8f3c1110a14a","type":"CDSView"}},"id":"3f58490d-d76e-4adb-9c26-bd5600fb619b","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Bexar","Battle of San Jacinto","Battle of the Alamo","Battle of Tuxpan"],"cumulative":{"__ndarray__":"3Knx3aYj4b/EC/y8Iuvwv83PLhlXbeS/yJVybZ038b8=","dtype":"float64","shape":[4]},"general":["Mart\u00edn Perfecto de Cos","Mart\u00edn Perfecto de Cos","Mart\u00edn Perfecto de Cos","Mart\u00edn Perfecto de Cos"],"outcome":["D","D","V","D"],"value":{"__ndarray__":"3Knx3aYj4b+tbQacnrLgv3aPksHc0do/h7dsg8cD3L8=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAACsnEAAAAAAALCcQAAAAAAAsJxAAAAAAADcnEA=","dtype":"float64","shape":[4]}}},"id":"5693532c-c259-498f-a7dd-2f691579f91d","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"bca2a035-ee0e-4705-850e-c9ac4a7cf703","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"bca2a035-ee0e-4705-850e-c9ac4a7cf703","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"0b85fe28-dda2-4628-918a-466d1e8bf2bb","type":"VBar"},{"attributes":{},"id":"51c69f06-c605-4c8a-b240-39899edadd30","type":"BasicTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"593e2251-74cf-4b34-9f5c-005b1e3dfd0e","type":"Line"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2c8b671f-3e81-49fd-94ea-a3243ce0390d","type":"Line"},{"attributes":{"callback":null,"factors":["Siege of Bexar","Battle of San Jacinto","Battle of the Alamo","Battle of Tuxpan"]},"id":"11d5d23e-a3fa-4d6d-98a7-2499e079b22d","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"834ae73e-b96c-49f7-b0e6-c85b566821e5","type":"HoverTool"},{"attributes":{"formatter":{"id":"3cbf5bc0-0ffd-44a8-9866-f4916cb5dc1e","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"7a497896-c430-471b-b4e7-6188950d8cbf","subtype":"Figure","type":"Plot"},"ticker":{"id":"512691ca-607c-47a6-9659-8c0f449c383b","type":"CategoricalTicker"}},"id":"fc7ee7d8-06c2-49ee-bcbc-60bb0726f5fb","type":"CategoricalAxis"},{"attributes":{},"id":"2764ba49-b0bc-448c-872c-ca34291e6149","type":"LinearScale"},{"attributes":{"dimension":1,"plot":{"id":"7a497896-c430-471b-b4e7-6188950d8cbf","subtype":"Figure","type":"Plot"},"ticker":{"id":"ff0463f1-9c56-4e68-b14e-0d0f3f709086","type":"BasicTicker"}},"id":"63f8b51f-666f-4d81-a9d1-526aa4c5fa79","type":"Grid"},{"attributes":{},"id":"88946768-adcb-4c89-9f99-a70541397c54","type":"CategoricalScale"},{"attributes":{"callback":null},"id":"4059117e-9674-4cc0-8887-b5cc9c9db1f8","type":"DataRange1d"},{"attributes":{"data_source":{"id":"5693532c-c259-498f-a7dd-2f691579f91d","type":"ColumnDataSource"},"glyph":{"id":"0b85fe28-dda2-4628-918a-466d1e8bf2bb","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"25e4f6b5-593b-4f79-9456-70e8f1b1d2ef","type":"VBar"},"selection_glyph":null,"view":{"id":"3fb27d6a-999e-40f9-bbee-c0e55125f3f3","type":"CDSView"}},"id":"6eafc811-cb1c-46f9-b097-4e355bd336f9","type":"GlyphRenderer"},{"attributes":{},"id":"512691ca-607c-47a6-9659-8c0f449c383b","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"fc7ee7d8-06c2-49ee-bcbc-60bb0726f5fb","type":"CategoricalAxis"}],"left":[{"id":"d6158163-ca08-493c-8bd7-183764c37787","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"fc7ee7d8-06c2-49ee-bcbc-60bb0726f5fb","type":"CategoricalAxis"},{"id":"cbe38a21-e5e3-4e7f-88d1-07bfc9703b5d","type":"Grid"},{"id":"d6158163-ca08-493c-8bd7-183764c37787","type":"LinearAxis"},{"id":"63f8b51f-666f-4d81-a9d1-526aa4c5fa79","type":"Grid"},{"id":"3f58490d-d76e-4adb-9c26-bd5600fb619b","type":"GlyphRenderer"},{"id":"6eafc811-cb1c-46f9-b097-4e355bd336f9","type":"GlyphRenderer"}],"title":{"id":"da3c6e8a-32f9-4418-b810-96c170893f31","type":"Title"},"toolbar":{"id":"c4402b9b-e6f1-476d-9616-5ca743477add","type":"Toolbar"},"x_range":{"id":"11d5d23e-a3fa-4d6d-98a7-2499e079b22d","type":"FactorRange"},"x_scale":{"id":"88946768-adcb-4c89-9f99-a70541397c54","type":"CategoricalScale"},"y_range":{"id":"4059117e-9674-4cc0-8887-b5cc9c9db1f8","type":"DataRange1d"},"y_scale":{"id":"2764ba49-b0bc-448c-872c-ca34291e6149","type":"LinearScale"}},"id":"7a497896-c430-471b-b4e7-6188950d8cbf","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"834ae73e-b96c-49f7-b0e6-c85b566821e5","type":"HoverTool"}]},"id":"c4402b9b-e6f1-476d-9616-5ca743477add","type":"Toolbar"},{"attributes":{"source":{"id":"5693532c-c259-498f-a7dd-2f691579f91d","type":"ColumnDataSource"}},"id":"3fb27d6a-999e-40f9-bbee-c0e55125f3f3","type":"CDSView"},{"attributes":{},"id":"ff0463f1-9c56-4e68-b14e-0d0f3f709086","type":"BasicTicker"},{"attributes":{"plot":null,"text":"Mart\u00edn Perfecto de Cos (1 - 0 - 3)"},"id":"da3c6e8a-32f9-4418-b810-96c170893f31","type":"Title"},{"attributes":{"source":{"id":"5693532c-c259-498f-a7dd-2f691579f91d","type":"ColumnDataSource"}},"id":"80395fd3-2d91-4a36-86a1-8f3c1110a14a","type":"CDSView"},{"attributes":{"formatter":{"id":"51c69f06-c605-4c8a-b240-39899edadd30","type":"BasicTickFormatter"},"plot":{"id":"7a497896-c430-471b-b4e7-6188950d8cbf","subtype":"Figure","type":"Plot"},"ticker":{"id":"ff0463f1-9c56-4e68-b14e-0d0f3f709086","type":"BasicTicker"}},"id":"d6158163-ca08-493c-8bd7-183764c37787","type":"LinearAxis"},{"attributes":{"plot":{"id":"7a497896-c430-471b-b4e7-6188950d8cbf","subtype":"Figure","type":"Plot"},"ticker":{"id":"512691ca-607c-47a6-9659-8c0f449c383b","type":"CategoricalTicker"}},"id":"cbe38a21-e5e3-4e7f-88d1-07bfc9703b5d","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"25e4f6b5-593b-4f79-9456-70e8f1b1d2ef","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"bca2a035-ee0e-4705-850e-c9ac4a7cf703","type":"CategoricalColorMapper"},{"attributes":{},"id":"3cbf5bc0-0ffd-44a8-9866-f4916cb5dc1e","type":"CategoricalTickFormatter"}],"root_ids":["7a497896-c430-471b-b4e7-6188950d8cbf"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"5c5a4da1-c747-49e2-a3f0-d289e4dac61a","elementid":"f8bf8d04-6eaa-4220-9a02-c2064799049f","modelid":"7a497896-c430-471b-b4e7-6188950d8cbf"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

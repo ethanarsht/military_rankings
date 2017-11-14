@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f0b5dd9f-9155-4333-80c2-a50c116fc97e"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"c4b97be5-be6e-47e1-a047-37ee7fda1fca":{"roots":{"references":[{"attributes":{"callback":null},"id":"0456199c-d7eb-4757-b822-99406ceb683d","type":"DataRange1d"},{"attributes":{"source":{"id":"216062c8-fe04-4ee2-9cbd-9754a53da842","type":"ColumnDataSource"}},"id":"eab130e7-6f54-447f-b35b-366e4f04162e","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"ea001d08-cf69-46ab-999b-f5af107318db","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"1ecee352-9f20-4f4d-b4d0-d11c228a9f22","type":"CategoricalColorMapper"},{"attributes":{"dimension":1,"plot":{"id":"f1e7bb0e-6d1b-4c3b-b3e0-fbbb8af02c12","subtype":"Figure","type":"Plot"},"ticker":{"id":"b75bd62c-6aa2-440c-bcb2-9f5d0e703d23","type":"BasicTicker"}},"id":"39670416-ed7b-4a12-bfa6-867fb4ca026b","type":"Grid"},{"attributes":{"plot":{"id":"f1e7bb0e-6d1b-4c3b-b3e0-fbbb8af02c12","subtype":"Figure","type":"Plot"},"ticker":{"id":"a1cb1a85-274f-48ff-90f0-fbaf9b2de12a","type":"CategoricalTicker"}},"id":"8fff4aa5-3972-452c-97e2-15b227c42c83","type":"Grid"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ff7a74dd-2f37-4dcd-873f-205bb34bf391","type":"Line"},{"attributes":{},"id":"3a1a6f36-bf14-401b-9b6f-bbdddd6d3662","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"e35df23b-dc28-4918-bb83-7ec70ac74740","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"f1e7bb0e-6d1b-4c3b-b3e0-fbbb8af02c12","subtype":"Figure","type":"Plot"},"ticker":{"id":"a1cb1a85-274f-48ff-90f0-fbaf9b2de12a","type":"CategoricalTicker"}},"id":"2e8515ba-6c6f-489b-ac58-e4f3cf500343","type":"CategoricalAxis"},{"attributes":{},"id":"c79bb7a0-1f24-4a18-9157-6285960a0fd5","type":"BasicTickFormatter"},{"attributes":{"callback":null,"factors":["Battle on Lake Peipus"]},"id":"7c216c8f-f511-4d90-ae5d-717f208cc0c7","type":"FactorRange"},{"attributes":{},"id":"a1cb1a85-274f-48ff-90f0-fbaf9b2de12a","type":"CategoricalTicker"},{"attributes":{},"id":"5ccadd74-d09d-42a1-b9da-b2028922e9f5","type":"LinearScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"ea001d08-cf69-46ab-999b-f5af107318db","type":"HoverTool"}]},"id":"a37780dc-6fb6-4ddb-97c2-b42a3f7b915f","type":"Toolbar"},{"attributes":{},"id":"b75bd62c-6aa2-440c-bcb2-9f5d0e703d23","type":"BasicTicker"},{"attributes":{"below":[{"id":"2e8515ba-6c6f-489b-ac58-e4f3cf500343","type":"CategoricalAxis"}],"left":[{"id":"4e5612a6-3d2c-43a0-8e1f-8a7822c1dc54","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"2e8515ba-6c6f-489b-ac58-e4f3cf500343","type":"CategoricalAxis"},{"id":"8fff4aa5-3972-452c-97e2-15b227c42c83","type":"Grid"},{"id":"4e5612a6-3d2c-43a0-8e1f-8a7822c1dc54","type":"LinearAxis"},{"id":"39670416-ed7b-4a12-bfa6-867fb4ca026b","type":"Grid"},{"id":"28a30472-a65a-4055-b580-2d4da86ea766","type":"GlyphRenderer"},{"id":"a723bf61-5a81-4c1c-9f55-dcb742ee8215","type":"GlyphRenderer"}],"title":{"id":"1144fe8f-c9dd-4546-b0b0-732d14b1591e","type":"Title"},"toolbar":{"id":"a37780dc-6fb6-4ddb-97c2-b42a3f7b915f","type":"Toolbar"},"x_range":{"id":"7c216c8f-f511-4d90-ae5d-717f208cc0c7","type":"FactorRange"},"x_scale":{"id":"3a1a6f36-bf14-401b-9b6f-bbdddd6d3662","type":"CategoricalScale"},"y_range":{"id":"0456199c-d7eb-4757-b822-99406ceb683d","type":"DataRange1d"},"y_scale":{"id":"5ccadd74-d09d-42a1-b9da-b2028922e9f5","type":"LinearScale"}},"id":"f1e7bb0e-6d1b-4c3b-b3e0-fbbb8af02c12","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"1ecee352-9f20-4f4d-b4d0-d11c228a9f22","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"1ecee352-9f20-4f4d-b4d0-d11c228a9f22","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"293de1f8-783c-4240-b112-0d6f8fce849e","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle on Lake Peipus"],"cumulative":{"__ndarray__":"EPKdFRxR2z8=","dtype":"float64","shape":[1]},"general":["Andrey II of Vladimir"],"outcome":["V"],"value":{"__ndarray__":"EPKdFRxR2z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABok0A=","dtype":"float64","shape":[1]}}},"id":"216062c8-fe04-4ee2-9cbd-9754a53da842","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"c79bb7a0-1f24-4a18-9157-6285960a0fd5","type":"BasicTickFormatter"},"plot":{"id":"f1e7bb0e-6d1b-4c3b-b3e0-fbbb8af02c12","subtype":"Figure","type":"Plot"},"ticker":{"id":"b75bd62c-6aa2-440c-bcb2-9f5d0e703d23","type":"BasicTicker"}},"id":"4e5612a6-3d2c-43a0-8e1f-8a7822c1dc54","type":"LinearAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5b7e52c3-e869-4d15-b2e0-d6ff0cb11b94","type":"Line"},{"attributes":{"source":{"id":"216062c8-fe04-4ee2-9cbd-9754a53da842","type":"ColumnDataSource"}},"id":"c22434f8-4949-448f-b4e6-3986a087decd","type":"CDSView"},{"attributes":{"plot":null,"text":"Andrey II of Vladimir (1 - 0 - 0)"},"id":"1144fe8f-c9dd-4546-b0b0-732d14b1591e","type":"Title"},{"attributes":{},"id":"e35df23b-dc28-4918-bb83-7ec70ac74740","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"216062c8-fe04-4ee2-9cbd-9754a53da842","type":"ColumnDataSource"},"glyph":{"id":"293de1f8-783c-4240-b112-0d6f8fce849e","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"02c0e9a2-d1e8-4236-921e-9dcaffcd4c64","type":"VBar"},"selection_glyph":null,"view":{"id":"eab130e7-6f54-447f-b35b-366e4f04162e","type":"CDSView"}},"id":"a723bf61-5a81-4c1c-9f55-dcb742ee8215","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"02c0e9a2-d1e8-4236-921e-9dcaffcd4c64","type":"VBar"},{"attributes":{"data_source":{"id":"216062c8-fe04-4ee2-9cbd-9754a53da842","type":"ColumnDataSource"},"glyph":{"id":"ff7a74dd-2f37-4dcd-873f-205bb34bf391","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5b7e52c3-e869-4d15-b2e0-d6ff0cb11b94","type":"Line"},"selection_glyph":null,"view":{"id":"c22434f8-4949-448f-b4e6-3986a087decd","type":"CDSView"}},"id":"28a30472-a65a-4055-b580-2d4da86ea766","type":"GlyphRenderer"}],"root_ids":["f1e7bb0e-6d1b-4c3b-b3e0-fbbb8af02c12"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"c4b97be5-be6e-47e1-a047-37ee7fda1fca","elementid":"f0b5dd9f-9155-4333-80c2-a50c116fc97e","modelid":"f1e7bb0e-6d1b-4c3b-b3e0-fbbb8af02c12"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

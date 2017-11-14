@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="4dc0044e-1a04-4911-a28e-099b78926ede"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"e14989b6-21d9-4199-a0b8-caa1079bd25a":{"roots":{"references":[{"attributes":{"callback":null},"id":"d0fec6a8-9554-48af-b756-a0702f8dd9f6","type":"DataRange1d"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0da3996f-3a63-4ebc-b1f4-eda4cdaf82c6","type":"Line"},{"attributes":{"formatter":{"id":"77d7722f-d46f-4b8d-9279-353b4ef1302e","type":"BasicTickFormatter"},"plot":{"id":"bdda30d8-1257-4d21-be6c-5888d4b0e7d5","subtype":"Figure","type":"Plot"},"ticker":{"id":"ba3c3f9d-0bac-4954-b9d7-5e2ceb64eb14","type":"BasicTicker"}},"id":"0e5a0da1-1dd1-4825-a9e8-57061f6b3586","type":"LinearAxis"},{"attributes":{},"id":"77d7722f-d46f-4b8d-9279-353b4ef1302e","type":"BasicTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7f4ec62c-556f-4f1b-9c69-97b5e086c768","type":"Line"},{"attributes":{"source":{"id":"ad29e4c7-606e-41cb-b3d9-5698ecd23287","type":"ColumnDataSource"}},"id":"57c3ecd7-5647-44cc-b8a4-293e3508294c","type":"CDSView"},{"attributes":{"below":[{"id":"e845810d-2e71-4529-852d-a98683e85be7","type":"CategoricalAxis"}],"left":[{"id":"0e5a0da1-1dd1-4825-a9e8-57061f6b3586","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"e845810d-2e71-4529-852d-a98683e85be7","type":"CategoricalAxis"},{"id":"430de7a6-c9e2-4b37-b5ca-297704b09094","type":"Grid"},{"id":"0e5a0da1-1dd1-4825-a9e8-57061f6b3586","type":"LinearAxis"},{"id":"e98029b2-b295-42dd-9595-fa4ae4b9e4ef","type":"Grid"},{"id":"932ce7a3-7085-4fc1-9749-7ef70e403210","type":"GlyphRenderer"},{"id":"d8056c3a-5b67-4d94-878c-2edb3c787e2d","type":"GlyphRenderer"}],"title":{"id":"084d137e-1dc3-4338-9444-ec1c7aaa2d83","type":"Title"},"toolbar":{"id":"4bc1be4d-f556-4c32-af6b-9518ff7a6d2a","type":"Toolbar"},"x_range":{"id":"dd5389fa-f52b-47ff-88af-0f6ae116e05f","type":"FactorRange"},"x_scale":{"id":"58fa2169-1259-4da7-92f9-5cf2a0a30aa4","type":"CategoricalScale"},"y_range":{"id":"d0fec6a8-9554-48af-b756-a0702f8dd9f6","type":"DataRange1d"},"y_scale":{"id":"0377be90-baf8-4c8c-9d16-c49ff9fb08e8","type":"LinearScale"}},"id":"bdda30d8-1257-4d21-be6c-5888d4b0e7d5","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"58fa2169-1259-4da7-92f9-5cf2a0a30aa4","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"Henry A. Wise (1 - 0 - 1)"},"id":"084d137e-1dc3-4338-9444-ec1c7aaa2d83","type":"Title"},{"attributes":{},"id":"e368c097-2d1e-4ded-9f99-fffa25f2a89d","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f2918b70-f3a7-4e11-a8f1-dbbf1657844f","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"79ab3c38-030b-4812-8a5d-c5e8fa2e8d21","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"bdda30d8-1257-4d21-be6c-5888d4b0e7d5","subtype":"Figure","type":"Plot"},"ticker":{"id":"e368c097-2d1e-4ded-9f99-fffa25f2a89d","type":"CategoricalTicker"}},"id":"e845810d-2e71-4529-852d-a98683e85be7","type":"CategoricalAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f9aafbad-22d9-486e-9547-2d662983ae2e","type":"HoverTool"},{"attributes":{},"id":"ba3c3f9d-0bac-4954-b9d7-5e2ceb64eb14","type":"BasicTicker"},{"attributes":{},"id":"0377be90-baf8-4c8c-9d16-c49ff9fb08e8","type":"LinearScale"},{"attributes":{"callback":null,"factors":["Battle of Roanoke Island","First Battle of Petersburg"]},"id":"dd5389fa-f52b-47ff-88af-0f6ae116e05f","type":"FactorRange"},{"attributes":{},"id":"79ab3c38-030b-4812-8a5d-c5e8fa2e8d21","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f2918b70-f3a7-4e11-a8f1-dbbf1657844f","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f2918b70-f3a7-4e11-a8f1-dbbf1657844f","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f3c130f7-2ba0-429a-8faf-b4d2a67bd9c5","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"bdda30d8-1257-4d21-be6c-5888d4b0e7d5","subtype":"Figure","type":"Plot"},"ticker":{"id":"ba3c3f9d-0bac-4954-b9d7-5e2ceb64eb14","type":"BasicTicker"}},"id":"e98029b2-b295-42dd-9595-fa4ae4b9e4ef","type":"Grid"},{"attributes":{"source":{"id":"ad29e4c7-606e-41cb-b3d9-5698ecd23287","type":"ColumnDataSource"}},"id":"e4a81d91-8832-492f-9a04-1cb2bb3551b7","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a8becb43-c51c-48f8-895c-637757832dac","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f9aafbad-22d9-486e-9547-2d662983ae2e","type":"HoverTool"}]},"id":"4bc1be4d-f556-4c32-af6b-9518ff7a6d2a","type":"Toolbar"},{"attributes":{"plot":{"id":"bdda30d8-1257-4d21-be6c-5888d4b0e7d5","subtype":"Figure","type":"Plot"},"ticker":{"id":"e368c097-2d1e-4ded-9f99-fffa25f2a89d","type":"CategoricalTicker"}},"id":"430de7a6-c9e2-4b37-b5ca-297704b09094","type":"Grid"},{"attributes":{"data_source":{"id":"ad29e4c7-606e-41cb-b3d9-5698ecd23287","type":"ColumnDataSource"},"glyph":{"id":"7f4ec62c-556f-4f1b-9c69-97b5e086c768","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0da3996f-3a63-4ebc-b1f4-eda4cdaf82c6","type":"Line"},"selection_glyph":null,"view":{"id":"57c3ecd7-5647-44cc-b8a4-293e3508294c","type":"CDSView"}},"id":"932ce7a3-7085-4fc1-9749-7ef70e403210","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"ad29e4c7-606e-41cb-b3d9-5698ecd23287","type":"ColumnDataSource"},"glyph":{"id":"f3c130f7-2ba0-429a-8faf-b4d2a67bd9c5","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a8becb43-c51c-48f8-895c-637757832dac","type":"VBar"},"selection_glyph":null,"view":{"id":"e4a81d91-8832-492f-9a04-1cb2bb3551b7","type":"CDSView"}},"id":"d8056c3a-5b67-4d94-878c-2edb3c787e2d","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Roanoke Island","First Battle of Petersburg"],"cumulative":{"__ndarray__":"C5/cQ+eT3L+0IbkL5cq0Pw==","dtype":"float64","shape":[2]},"general":["Henry A. Wise","Henry A. Wise"],"outcome":["D","V"],"value":{"__ndarray__":"C5/cQ+eT3L+8c2VDUOPgPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAAYnUAAAAAAACCdQA==","dtype":"float64","shape":[2]}}},"id":"ad29e4c7-606e-41cb-b3d9-5698ecd23287","type":"ColumnDataSource"}],"root_ids":["bdda30d8-1257-4d21-be6c-5888d4b0e7d5"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"e14989b6-21d9-4199-a0b8-caa1079bd25a","elementid":"4dc0044e-1a04-4911-a28e-099b78926ede","modelid":"bdda30d8-1257-4d21-be6c-5888d4b0e7d5"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

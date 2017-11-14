@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="87b9f0c2-29f8-4ed1-b4c4-00185cbd5449"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"1610ca45-995c-4ba3-b4ab-bd27434aa11a":{"roots":{"references":[{"attributes":{"formatter":{"id":"c047efb9-730f-42ba-b182-43e696ea7340","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"8b6381d3-2edc-447b-8b44-1cf9a1400d18","subtype":"Figure","type":"Plot"},"ticker":{"id":"18c8c0e0-4b5e-4487-9afd-e5409efb797a","type":"CategoricalTicker"}},"id":"4da2380d-e439-4602-84a9-5a20cfc780c4","type":"CategoricalAxis"},{"attributes":{},"id":"5d0f2368-11e0-4c58-9f27-7aa2b064b5b4","type":"BasicTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Summa","Invasion of Poland (1939)","Battle of Kiev (1941)","Battle of Smolensk (1941)","Operation Barbarossa","Second Battle of Kharkov"],"cumulative":{"__ndarray__":"AAAAAAAA4L/AnRrfbTqiv1QBOJiKjuG/RsQV/qIR8b8btpjK+oziv7QkMK268PG/","dtype":"float64","shape":[6]},"general":["Semyon Timoshenko","Semyon Timoshenko","Semyon Timoshenko","Semyon Timoshenko","Semyon Timoshenko","Semyon Timoshenko"],"outcome":["D","V","D","D","V","D"],"value":{"__ndarray__":"AAAAAAAA4L9IrBxEsrjdP3hXRrrjauC/N4fzY7uU4L/ipCVjlizfP0yTx496VOG/","dtype":"float64","shape":[6]},"year":{"__ndarray__":"AAAAAABMnkAAAAAAAEyeQAAAAAAAVJ5AAAAAAABUnkAAAAAAAFSeQAAAAAAAWJ5A","dtype":"float64","shape":[6]}}},"id":"2ae87dd6-45b3-41b5-ac0f-14e5083ce577","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"2ae87dd6-45b3-41b5-ac0f-14e5083ce577","type":"ColumnDataSource"},"glyph":{"id":"9e3b3bd2-e3ca-4368-8f49-76fd115c35ed","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2d552336-71e5-4a13-a008-8ba8a0c7e121","type":"Line"},"selection_glyph":null,"view":{"id":"29243a5c-f257-44e3-b653-be4d8ee92aaf","type":"CDSView"}},"id":"52a10e74-f5b3-42b4-8d7b-ded7f6e26f7c","type":"GlyphRenderer"},{"attributes":{},"id":"18c8c0e0-4b5e-4487-9afd-e5409efb797a","type":"CategoricalTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2d552336-71e5-4a13-a008-8ba8a0c7e121","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"5d39e040-7ad2-4a42-ae77-ab867a96d19a","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"5d39e040-7ad2-4a42-ae77-ab867a96d19a","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"61fda132-22f7-43ac-93bb-1b0fed61a3db","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"86acb077-7764-4db3-9aa9-31ed60b9729e","type":"HoverTool"},{"attributes":{"callback":null,"factors":["Battle of Summa","Invasion of Poland (1939)","Battle of Kiev (1941)","Battle of Smolensk (1941)","Operation Barbarossa","Second Battle of Kharkov"]},"id":"09bb1a84-a133-4109-8f78-b4d74aa28d0c","type":"FactorRange"},{"attributes":{},"id":"89893610-9e99-48a6-9d01-6c6e272e3c89","type":"LinearScale"},{"attributes":{"data_source":{"id":"2ae87dd6-45b3-41b5-ac0f-14e5083ce577","type":"ColumnDataSource"},"glyph":{"id":"61fda132-22f7-43ac-93bb-1b0fed61a3db","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f9ab7d93-862e-4fdf-8c31-b8a3910ccc64","type":"VBar"},"selection_glyph":null,"view":{"id":"7c220f4e-8f58-4891-bbea-4882fdd63be9","type":"CDSView"}},"id":"9d594ce5-ce56-4c31-bcb2-19038496f2c7","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"8afac2a9-e10f-42ca-b3b2-ff20c07332d0","type":"DataRange1d"},{"attributes":{"source":{"id":"2ae87dd6-45b3-41b5-ac0f-14e5083ce577","type":"ColumnDataSource"}},"id":"29243a5c-f257-44e3-b653-be4d8ee92aaf","type":"CDSView"},{"attributes":{"plot":{"id":"8b6381d3-2edc-447b-8b44-1cf9a1400d18","subtype":"Figure","type":"Plot"},"ticker":{"id":"18c8c0e0-4b5e-4487-9afd-e5409efb797a","type":"CategoricalTicker"}},"id":"997b13ad-7632-4b8e-96ad-542fb2079c96","type":"Grid"},{"attributes":{"below":[{"id":"4da2380d-e439-4602-84a9-5a20cfc780c4","type":"CategoricalAxis"}],"left":[{"id":"83f05224-f852-4ba3-9a3e-f081e71c9e1b","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"4da2380d-e439-4602-84a9-5a20cfc780c4","type":"CategoricalAxis"},{"id":"997b13ad-7632-4b8e-96ad-542fb2079c96","type":"Grid"},{"id":"83f05224-f852-4ba3-9a3e-f081e71c9e1b","type":"LinearAxis"},{"id":"0fcbf433-b684-4c63-97e3-306cb72daece","type":"Grid"},{"id":"52a10e74-f5b3-42b4-8d7b-ded7f6e26f7c","type":"GlyphRenderer"},{"id":"9d594ce5-ce56-4c31-bcb2-19038496f2c7","type":"GlyphRenderer"}],"title":{"id":"3bf763be-4564-438f-8da0-2feb48fcf026","type":"Title"},"toolbar":{"id":"ff22e8e0-c9b3-4e4b-925e-f4856d6459f1","type":"Toolbar"},"x_range":{"id":"09bb1a84-a133-4109-8f78-b4d74aa28d0c","type":"FactorRange"},"x_scale":{"id":"a6d579c1-7e9b-4165-9329-767241fd9c98","type":"CategoricalScale"},"y_range":{"id":"8afac2a9-e10f-42ca-b3b2-ff20c07332d0","type":"DataRange1d"},"y_scale":{"id":"89893610-9e99-48a6-9d01-6c6e272e3c89","type":"LinearScale"}},"id":"8b6381d3-2edc-447b-8b44-1cf9a1400d18","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"2ae87dd6-45b3-41b5-ac0f-14e5083ce577","type":"ColumnDataSource"}},"id":"7c220f4e-8f58-4891-bbea-4882fdd63be9","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9e3b3bd2-e3ca-4368-8f49-76fd115c35ed","type":"Line"},{"attributes":{"plot":null,"text":"Semyon Timoshenko (2 - 0 - 4)"},"id":"3bf763be-4564-438f-8da0-2feb48fcf026","type":"Title"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f9ab7d93-862e-4fdf-8c31-b8a3910ccc64","type":"VBar"},{"attributes":{},"id":"a6d579c1-7e9b-4165-9329-767241fd9c98","type":"CategoricalScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"5d39e040-7ad2-4a42-ae77-ab867a96d19a","type":"CategoricalColorMapper"},{"attributes":{},"id":"c047efb9-730f-42ba-b182-43e696ea7340","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"8b6381d3-2edc-447b-8b44-1cf9a1400d18","subtype":"Figure","type":"Plot"},"ticker":{"id":"92f46877-eac6-4433-8b9e-45397513b475","type":"BasicTicker"}},"id":"0fcbf433-b684-4c63-97e3-306cb72daece","type":"Grid"},{"attributes":{"formatter":{"id":"5d0f2368-11e0-4c58-9f27-7aa2b064b5b4","type":"BasicTickFormatter"},"plot":{"id":"8b6381d3-2edc-447b-8b44-1cf9a1400d18","subtype":"Figure","type":"Plot"},"ticker":{"id":"92f46877-eac6-4433-8b9e-45397513b475","type":"BasicTicker"}},"id":"83f05224-f852-4ba3-9a3e-f081e71c9e1b","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"86acb077-7764-4db3-9aa9-31ed60b9729e","type":"HoverTool"}]},"id":"ff22e8e0-c9b3-4e4b-925e-f4856d6459f1","type":"Toolbar"},{"attributes":{},"id":"92f46877-eac6-4433-8b9e-45397513b475","type":"BasicTicker"}],"root_ids":["8b6381d3-2edc-447b-8b44-1cf9a1400d18"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"1610ca45-995c-4ba3-b4ab-bd27434aa11a","elementid":"87b9f0c2-29f8-4ed1-b4c4-00185cbd5449","modelid":"8b6381d3-2edc-447b-8b44-1cf9a1400d18"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="14b033f8-e867-4676-b548-ae510fda2789"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"1db949e1-2388-4a91-81f7-c921f053eba5":{"roots":{"references":[{"attributes":{},"id":"5fcfb6dd-6547-4483-b13e-ca4b9d424846","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Rich Mountain","Battle of Antietam","Battle of Beaver Dam Creek","Battle of Gaines' Mill","Battle of Glendale","Battle of Malvern Hill","Battle of Oak Grove","Battle of Seven Pines","Battle of South Mountain","Battle of Williamsburg","Battle of Yorktown (1862)"]},"id":"4f9995b1-1c4d-4dd1-a8af-19407ae519c1","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"335550b1-3ceb-4987-8f64-1c43acc61ed8","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f4ca85b6-b5bb-453f-8770-fa194bce7e90","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6245a49b-7bb6-4470-9761-3f63638533c0","type":"VBar"},{"attributes":{},"id":"549c268c-afe7-44b6-8e4e-07523cfb55ee","type":"BasicTicker"},{"attributes":{"formatter":{"id":"5fcfb6dd-6547-4483-b13e-ca4b9d424846","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"fa11c356-5940-47dd-a963-25a63cbde65e","subtype":"Figure","type":"Plot"},"ticker":{"id":"5ddce4bd-dc47-4af3-b720-e9e5bba4202b","type":"CategoricalTicker"}},"id":"40f322bd-d582-42e2-93da-ab7db1dfb689","type":"CategoricalAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7b6de9e0-62e5-407e-84d3-9cc5a7bfa8a9","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"52a6ad60-399f-4234-abda-9ba07fc590c4","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"52a6ad60-399f-4234-abda-9ba07fc590c4","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6f903876-42a3-4f8c-b20f-24211382b48a","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"fa11c356-5940-47dd-a963-25a63cbde65e","subtype":"Figure","type":"Plot"},"ticker":{"id":"549c268c-afe7-44b6-8e4e-07523cfb55ee","type":"BasicTicker"}},"id":"e0dc2ea2-ad3a-4820-a4f8-5a7512cf35fa","type":"Grid"},{"attributes":{},"id":"5ddce4bd-dc47-4af3-b720-e9e5bba4202b","type":"CategoricalTicker"},{"attributes":{"source":{"id":"8ca8af9d-6cdf-4008-ac57-a2aad77b65ce","type":"ColumnDataSource"}},"id":"6d95c169-8c02-48d2-b3b4-db67f25ef400","type":"CDSView"},{"attributes":{"formatter":{"id":"fdc023ba-b519-4ae1-8b16-08c0c6582857","type":"BasicTickFormatter"},"plot":{"id":"fa11c356-5940-47dd-a963-25a63cbde65e","subtype":"Figure","type":"Plot"},"ticker":{"id":"549c268c-afe7-44b6-8e4e-07523cfb55ee","type":"BasicTicker"}},"id":"f296bb72-7740-46af-a747-aeef1b4e3db2","type":"LinearAxis"},{"attributes":{"below":[{"id":"40f322bd-d582-42e2-93da-ab7db1dfb689","type":"CategoricalAxis"}],"left":[{"id":"f296bb72-7740-46af-a747-aeef1b4e3db2","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"40f322bd-d582-42e2-93da-ab7db1dfb689","type":"CategoricalAxis"},{"id":"a36e65e7-7140-410e-a8b7-7fbb9ba7667e","type":"Grid"},{"id":"f296bb72-7740-46af-a747-aeef1b4e3db2","type":"LinearAxis"},{"id":"e0dc2ea2-ad3a-4820-a4f8-5a7512cf35fa","type":"Grid"},{"id":"a8c788ec-38c5-4070-9d17-ac54228ad21c","type":"GlyphRenderer"},{"id":"9cd289d2-158d-472d-b5cf-e44cae085395","type":"GlyphRenderer"}],"title":{"id":"e6a74296-42d1-4d8e-a6ca-a03b63ca2339","type":"Title"},"toolbar":{"id":"0c966afa-5b32-40ca-a00e-7cd74b8d074b","type":"Toolbar"},"x_range":{"id":"4f9995b1-1c4d-4dd1-a8af-19407ae519c1","type":"FactorRange"},"x_scale":{"id":"4fd71472-584d-43e8-9e1b-371bd2ac8688","type":"CategoricalScale"},"y_range":{"id":"4091395d-c32b-49c9-a31b-0f984ee033a2","type":"DataRange1d"},"y_scale":{"id":"024f5553-5a1e-4cf6-a28c-f2a97e0e6653","type":"LinearScale"}},"id":"fa11c356-5940-47dd-a963-25a63cbde65e","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"8ca8af9d-6cdf-4008-ac57-a2aad77b65ce","type":"ColumnDataSource"},"glyph":{"id":"f4ca85b6-b5bb-453f-8770-fa194bce7e90","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7b6de9e0-62e5-407e-84d3-9cc5a7bfa8a9","type":"Line"},"selection_glyph":null,"view":{"id":"0b857279-d75e-4778-ba6f-20d6b6b453a9","type":"CDSView"}},"id":"a8c788ec-38c5-4070-9d17-ac54228ad21c","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"4091395d-c32b-49c9-a31b-0f984ee033a2","type":"DataRange1d"},{"attributes":{"data_source":{"id":"8ca8af9d-6cdf-4008-ac57-a2aad77b65ce","type":"ColumnDataSource"},"glyph":{"id":"6f903876-42a3-4f8c-b20f-24211382b48a","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6245a49b-7bb6-4470-9761-3f63638533c0","type":"VBar"},"selection_glyph":null,"view":{"id":"6d95c169-8c02-48d2-b3b4-db67f25ef400","type":"CDSView"}},"id":"9cd289d2-158d-472d-b5cf-e44cae085395","type":"GlyphRenderer"},{"attributes":{},"id":"024f5553-5a1e-4cf6-a28c-f2a97e0e6653","type":"LinearScale"},{"attributes":{},"id":"fdc023ba-b519-4ae1-8b16-08c0c6582857","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"335550b1-3ceb-4987-8f64-1c43acc61ed8","type":"HoverTool"}]},"id":"0c966afa-5b32-40ca-a00e-7cd74b8d074b","type":"Toolbar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Rich Mountain","Battle of Antietam","Battle of Beaver Dam Creek","Battle of Gaines' Mill","Battle of Glendale","Battle of Malvern Hill","Battle of Oak Grove","Battle of Seven Pines","Battle of South Mountain","Battle of Williamsburg","Battle of Yorktown (1862)"],"cumulative":{"__ndarray__":"LK9Dc15u2z+GJ8ZY6WHsP2TQaWNQNPY/YG/n1AAu7T8FXXbaElPtP2g79G07p/Y/aDv0bTun/j9WgDqz6V4DQM6D1ho/LgdAPQtAgVARB0AMaVbHxJoGQA==","dtype":"float64","shape":[11]},"general":["George B. McClellan","George B. McClellan","George B. McClellan","George B. McClellan","George B. McClellan","George B. McClellan","George B. McClellan","George B. McClellan","George B. McClellan","George B. McClellan","George B. McClellan"],"outcome":["V","V","V","D","I","V","V","V","V","I","I"],"value":{"__ndarray__":"LK9Dc15u2z/gn0g+dFXdP0J5DW63BuA/0GLY4z913r+A0nbHAolyP5gz5ALI9t8/AAAAAAAA4D+KigHxLy3gP8Ib4Dyret4/AJF4lpnujL8wjGh67qKtvw==","dtype":"float64","shape":[11]},"year":{"__ndarray__":"AAAAAAAUnUAAAAAAABidQAAAAAAAGJ1AAAAAAAAYnUAAAAAAABidQAAAAAAAGJ1AAAAAAAAYnUAAAAAAABidQAAAAAAAGJ1AAAAAAAAYnUAAAAAAABidQA==","dtype":"float64","shape":[11]}}},"id":"8ca8af9d-6cdf-4008-ac57-a2aad77b65ce","type":"ColumnDataSource"},{"attributes":{"source":{"id":"8ca8af9d-6cdf-4008-ac57-a2aad77b65ce","type":"ColumnDataSource"}},"id":"0b857279-d75e-4778-ba6f-20d6b6b453a9","type":"CDSView"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"52a6ad60-399f-4234-abda-9ba07fc590c4","type":"CategoricalColorMapper"},{"attributes":{"plot":null,"text":"George B. McClellan (7 - 3 - 1)"},"id":"e6a74296-42d1-4d8e-a6ca-a03b63ca2339","type":"Title"},{"attributes":{"plot":{"id":"fa11c356-5940-47dd-a963-25a63cbde65e","subtype":"Figure","type":"Plot"},"ticker":{"id":"5ddce4bd-dc47-4af3-b720-e9e5bba4202b","type":"CategoricalTicker"}},"id":"a36e65e7-7140-410e-a8b7-7fbb9ba7667e","type":"Grid"},{"attributes":{},"id":"4fd71472-584d-43e8-9e1b-371bd2ac8688","type":"CategoricalScale"}],"root_ids":["fa11c356-5940-47dd-a963-25a63cbde65e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"1db949e1-2388-4a91-81f7-c921f053eba5","elementid":"14b033f8-e867-4676-b548-ae510fda2789","modelid":"fa11c356-5940-47dd-a963-25a63cbde65e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

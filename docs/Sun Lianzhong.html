@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="9f37b9d4-5b13-408e-84a5-ed415d5c9a42"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b93b42c1-79b9-4e16-8a5b-071fcac0d24b":{"roots":{"references":[{"attributes":{"data_source":{"id":"68dd7d74-df27-4029-a463-77d6f8f9ab34","type":"ColumnDataSource"},"glyph":{"id":"7a3f0e9e-cc6e-4189-9f6b-777abd5be56e","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"191f8e34-b379-4100-8cc4-df48bc7f1178","type":"VBar"},"selection_glyph":null,"view":{"id":"a5c150c7-3bed-48ee-8aac-71a2544713ac","type":"CDSView"}},"id":"98fadb76-c8ac-498b-94b1-982b3a7b1020","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"0d2c167c-626d-433b-9061-41146f6928cc","type":"HoverTool"},{"attributes":{"formatter":{"id":"c5fe0abe-93e7-4345-b990-5b4a94032463","type":"BasicTickFormatter"},"plot":{"id":"788f7b0b-ed84-4420-b14b-76de3b57a36b","subtype":"Figure","type":"Plot"},"ticker":{"id":"8f636c79-12ad-4ba5-9c0e-d3ac6b39f82a","type":"BasicTicker"}},"id":"98cfcae3-1401-4747-8468-e3ff9ecc5455","type":"LinearAxis"},{"attributes":{"callback":null},"id":"deb9e689-5774-4a97-bb7c-03ad6166f139","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"0d2c167c-626d-433b-9061-41146f6928cc","type":"HoverTool"}]},"id":"750dec20-e1f9-4572-9553-0e4281e6d83a","type":"Toolbar"},{"attributes":{},"id":"63b42200-6569-4b36-9d9a-c080b7eadab5","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"63b42200-6569-4b36-9d9a-c080b7eadab5","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"788f7b0b-ed84-4420-b14b-76de3b57a36b","subtype":"Figure","type":"Plot"},"ticker":{"id":"2fd06581-2a8e-43c6-b6a1-2ea7f4661594","type":"CategoricalTicker"}},"id":"33b9d24f-947a-4d64-ba58-ea14a842f594","type":"CategoricalAxis"},{"attributes":{"source":{"id":"68dd7d74-df27-4029-a463-77d6f8f9ab34","type":"ColumnDataSource"}},"id":"42dff358-bfd0-419c-8c58-38de1c0d8777","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"16afee42-0dc4-4431-b682-b5595f631d74","type":"Line"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1dee9d04-ff9e-4099-b148-5e1567602421","type":"Line"},{"attributes":{"plot":{"id":"788f7b0b-ed84-4420-b14b-76de3b57a36b","subtype":"Figure","type":"Plot"},"ticker":{"id":"2fd06581-2a8e-43c6-b6a1-2ea7f4661594","type":"CategoricalTicker"}},"id":"8a151e8f-9d98-43c7-9611-683cd7051c72","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"d766bacf-9e95-4252-8521-095a92f2a1bb","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"d766bacf-9e95-4252-8521-095a92f2a1bb","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7a3f0e9e-cc6e-4189-9f6b-777abd5be56e","type":"VBar"},{"attributes":{},"id":"8f636c79-12ad-4ba5-9c0e-d3ac6b39f82a","type":"BasicTicker"},{"attributes":{},"id":"2fd06581-2a8e-43c6-b6a1-2ea7f4661594","type":"CategoricalTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Tai er zhuang","Battle of Wuhan","Battle of Xuzhou","Battle of Changde"],"cumulative":{"__ndarray__":"Uo46JXG82z9oB93oyPqrvzrv97zAMuO/hGAGsCIqxL8=","dtype":"float64","shape":[4]},"general":["Sun Lianzhong","Sun Lianzhong","Sun Lianzhong","Sun Lianzhong"],"outcome":["V","D","D","V"],"value":{"__ndarray__":"Uo46JXG82z8/L1ZCyjvfv8Meai4Uc+G/Mq7sIXBQ3D8=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAABInkAAAAAAAEieQAAAAAAASJ5AAAAAAABcnkA=","dtype":"float64","shape":[4]}}},"id":"68dd7d74-df27-4029-a463-77d6f8f9ab34","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"33b9d24f-947a-4d64-ba58-ea14a842f594","type":"CategoricalAxis"}],"left":[{"id":"98cfcae3-1401-4747-8468-e3ff9ecc5455","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"33b9d24f-947a-4d64-ba58-ea14a842f594","type":"CategoricalAxis"},{"id":"8a151e8f-9d98-43c7-9611-683cd7051c72","type":"Grid"},{"id":"98cfcae3-1401-4747-8468-e3ff9ecc5455","type":"LinearAxis"},{"id":"0562ce97-8177-4a4c-95d3-7cdc732b4498","type":"Grid"},{"id":"2ad211f6-24d3-4119-aca0-a8052c316e45","type":"GlyphRenderer"},{"id":"98fadb76-c8ac-498b-94b1-982b3a7b1020","type":"GlyphRenderer"}],"title":{"id":"4d51cc7d-f1e2-4ceb-ae01-a2879eda2552","type":"Title"},"toolbar":{"id":"750dec20-e1f9-4572-9553-0e4281e6d83a","type":"Toolbar"},"x_range":{"id":"42d1ed68-d3f1-40f8-bde4-5611177f80f3","type":"FactorRange"},"x_scale":{"id":"f2188662-ff1a-49ed-ba7f-7ccd65d4a98d","type":"CategoricalScale"},"y_range":{"id":"deb9e689-5774-4a97-bb7c-03ad6166f139","type":"DataRange1d"},"y_scale":{"id":"fd72d849-5677-460b-b710-888038a277d9","type":"LinearScale"}},"id":"788f7b0b-ed84-4420-b14b-76de3b57a36b","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"68dd7d74-df27-4029-a463-77d6f8f9ab34","type":"ColumnDataSource"}},"id":"a5c150c7-3bed-48ee-8aac-71a2544713ac","type":"CDSView"},{"attributes":{"plot":null,"text":"Sun Lianzhong (2 - 0 - 2)"},"id":"4d51cc7d-f1e2-4ceb-ae01-a2879eda2552","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"d766bacf-9e95-4252-8521-095a92f2a1bb","type":"CategoricalColorMapper"},{"attributes":{"dimension":1,"plot":{"id":"788f7b0b-ed84-4420-b14b-76de3b57a36b","subtype":"Figure","type":"Plot"},"ticker":{"id":"8f636c79-12ad-4ba5-9c0e-d3ac6b39f82a","type":"BasicTicker"}},"id":"0562ce97-8177-4a4c-95d3-7cdc732b4498","type":"Grid"},{"attributes":{},"id":"f2188662-ff1a-49ed-ba7f-7ccd65d4a98d","type":"CategoricalScale"},{"attributes":{},"id":"c5fe0abe-93e7-4345-b990-5b4a94032463","type":"BasicTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Tai er zhuang","Battle of Wuhan","Battle of Xuzhou","Battle of Changde"]},"id":"42d1ed68-d3f1-40f8-bde4-5611177f80f3","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"191f8e34-b379-4100-8cc4-df48bc7f1178","type":"VBar"},{"attributes":{},"id":"fd72d849-5677-460b-b710-888038a277d9","type":"LinearScale"},{"attributes":{"data_source":{"id":"68dd7d74-df27-4029-a463-77d6f8f9ab34","type":"ColumnDataSource"},"glyph":{"id":"16afee42-0dc4-4431-b682-b5595f631d74","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1dee9d04-ff9e-4099-b148-5e1567602421","type":"Line"},"selection_glyph":null,"view":{"id":"42dff358-bfd0-419c-8c58-38de1c0d8777","type":"CDSView"}},"id":"2ad211f6-24d3-4119-aca0-a8052c316e45","type":"GlyphRenderer"}],"root_ids":["788f7b0b-ed84-4420-b14b-76de3b57a36b"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b93b42c1-79b9-4e16-8a5b-071fcac0d24b","elementid":"9f37b9d4-5b13-408e-84a5-ed415d5c9a42","modelid":"788f7b0b-ed84-4420-b14b-76de3b57a36b"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="6ac129a5-5017-4a5d-ad21-f1ac76693f9a"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"f008c2ba-c2a5-4a70-8798-894885e3e8c3":{"roots":{"references":[{"attributes":{"data_source":{"id":"4fde1eb2-bc53-48fe-9f38-cd48d2dca7ff","type":"ColumnDataSource"},"glyph":{"id":"bad918e6-12bf-4fc9-b43f-8719be0fe59d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c06b2630-78e3-4bc6-a90f-bd3b9f0ae39b","type":"VBar"},"selection_glyph":null,"view":{"id":"8249095f-da42-4e43-9a73-df768f8703f7","type":"CDSView"}},"id":"db14f3c3-cc67-4d3e-821c-8e0797a5bcf2","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"1eefdd0c-b6c1-4efa-98b9-15ed28171a14","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"a95cc699-b77f-4595-a35e-123417f04601","subtype":"Figure","type":"Plot"},"ticker":{"id":"35c08167-7260-47b1-a8fc-522de012fc09","type":"CategoricalTicker"}},"id":"8b6ef443-6547-4b96-8b5a-f65232d51d6e","type":"CategoricalAxis"},{"attributes":{},"id":"35c08167-7260-47b1-a8fc-522de012fc09","type":"CategoricalTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"c9a7b120-8a17-474c-96b9-e151415b1afd","type":"Line"},{"attributes":{"callback":null},"id":"23fffeb9-5867-4d1c-96b0-f455ef9f0528","type":"DataRange1d"},{"attributes":{},"id":"9694e026-8296-475f-aa0c-c703e089db76","type":"BasicTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2840459a-ccdd-4e2e-955d-0cd6d6310aba","type":"Line"},{"attributes":{"callback":null,"factors":["Battle of Baton Rouge (1779)"]},"id":"8a03c2ed-681d-4473-862b-5e77dbdbe65f","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"6dea684b-b937-4151-aee6-41426f164d4f","type":"HoverTool"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Baton Rouge (1779)"],"cumulative":{"__ndarray__":"O3AirM/h3r8=","dtype":"float64","shape":[1]},"general":["Alexander Dickson (American War of Independence)"],"outcome":["D"],"value":{"__ndarray__":"O3AirM/h3r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADMm0A=","dtype":"float64","shape":[1]}}},"id":"4fde1eb2-bc53-48fe-9f38-cd48d2dca7ff","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"14dbf8e6-65cb-4840-8a72-6b1b6dcfc24f","type":"CategoricalColorMapper"},{"attributes":{},"id":"1eefdd0c-b6c1-4efa-98b9-15ed28171a14","type":"CategoricalTickFormatter"},{"attributes":{},"id":"3ec5d85d-85c4-4f11-8316-b4a2af045c60","type":"LinearScale"},{"attributes":{"plot":{"id":"a95cc699-b77f-4595-a35e-123417f04601","subtype":"Figure","type":"Plot"},"ticker":{"id":"35c08167-7260-47b1-a8fc-522de012fc09","type":"CategoricalTicker"}},"id":"7772ba31-0c36-43a6-a0fc-7b0680bb9eb2","type":"Grid"},{"attributes":{},"id":"d9b1f806-1c1d-43fc-b633-1bea725fabdc","type":"CategoricalScale"},{"attributes":{"dimension":1,"plot":{"id":"a95cc699-b77f-4595-a35e-123417f04601","subtype":"Figure","type":"Plot"},"ticker":{"id":"9694e026-8296-475f-aa0c-c703e089db76","type":"BasicTicker"}},"id":"61407079-ce71-497e-ac45-353bef607d2b","type":"Grid"},{"attributes":{"below":[{"id":"8b6ef443-6547-4b96-8b5a-f65232d51d6e","type":"CategoricalAxis"}],"left":[{"id":"3da0860a-c27c-400a-995a-fc3b529fb0b0","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"8b6ef443-6547-4b96-8b5a-f65232d51d6e","type":"CategoricalAxis"},{"id":"7772ba31-0c36-43a6-a0fc-7b0680bb9eb2","type":"Grid"},{"id":"3da0860a-c27c-400a-995a-fc3b529fb0b0","type":"LinearAxis"},{"id":"61407079-ce71-497e-ac45-353bef607d2b","type":"Grid"},{"id":"fc92705c-cd08-45f6-a1e8-0ec8cf6c0c0c","type":"GlyphRenderer"},{"id":"db14f3c3-cc67-4d3e-821c-8e0797a5bcf2","type":"GlyphRenderer"}],"title":{"id":"fe72b42b-1e81-428f-afd6-7b4da5c526f6","type":"Title"},"toolbar":{"id":"abef40f0-31b3-4984-a554-da7e7186091c","type":"Toolbar"},"x_range":{"id":"8a03c2ed-681d-4473-862b-5e77dbdbe65f","type":"FactorRange"},"x_scale":{"id":"d9b1f806-1c1d-43fc-b633-1bea725fabdc","type":"CategoricalScale"},"y_range":{"id":"23fffeb9-5867-4d1c-96b0-f455ef9f0528","type":"DataRange1d"},"y_scale":{"id":"3ec5d85d-85c4-4f11-8316-b4a2af045c60","type":"LinearScale"}},"id":"a95cc699-b77f-4595-a35e-123417f04601","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"14dbf8e6-65cb-4840-8a72-6b1b6dcfc24f","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"14dbf8e6-65cb-4840-8a72-6b1b6dcfc24f","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bad918e6-12bf-4fc9-b43f-8719be0fe59d","type":"VBar"},{"attributes":{"source":{"id":"4fde1eb2-bc53-48fe-9f38-cd48d2dca7ff","type":"ColumnDataSource"}},"id":"8249095f-da42-4e43-9a73-df768f8703f7","type":"CDSView"},{"attributes":{"formatter":{"id":"2980e2d6-4157-4390-8e16-37ba59aedcd8","type":"BasicTickFormatter"},"plot":{"id":"a95cc699-b77f-4595-a35e-123417f04601","subtype":"Figure","type":"Plot"},"ticker":{"id":"9694e026-8296-475f-aa0c-c703e089db76","type":"BasicTicker"}},"id":"3da0860a-c27c-400a-995a-fc3b529fb0b0","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"6dea684b-b937-4151-aee6-41426f164d4f","type":"HoverTool"}]},"id":"abef40f0-31b3-4984-a554-da7e7186091c","type":"Toolbar"},{"attributes":{"plot":null,"text":"Alexander Dickson (American War of Independence) (0 - 0 - 1)"},"id":"fe72b42b-1e81-428f-afd6-7b4da5c526f6","type":"Title"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c06b2630-78e3-4bc6-a90f-bd3b9f0ae39b","type":"VBar"},{"attributes":{"data_source":{"id":"4fde1eb2-bc53-48fe-9f38-cd48d2dca7ff","type":"ColumnDataSource"},"glyph":{"id":"c9a7b120-8a17-474c-96b9-e151415b1afd","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2840459a-ccdd-4e2e-955d-0cd6d6310aba","type":"Line"},"selection_glyph":null,"view":{"id":"a2ecafe5-e861-4f8e-b1ea-4c76f4ed5bc6","type":"CDSView"}},"id":"fc92705c-cd08-45f6-a1e8-0ec8cf6c0c0c","type":"GlyphRenderer"},{"attributes":{},"id":"2980e2d6-4157-4390-8e16-37ba59aedcd8","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"4fde1eb2-bc53-48fe-9f38-cd48d2dca7ff","type":"ColumnDataSource"}},"id":"a2ecafe5-e861-4f8e-b1ea-4c76f4ed5bc6","type":"CDSView"}],"root_ids":["a95cc699-b77f-4595-a35e-123417f04601"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"f008c2ba-c2a5-4a70-8798-894885e3e8c3","elementid":"6ac129a5-5017-4a5d-ad21-f1ac76693f9a","modelid":"a95cc699-b77f-4595-a35e-123417f04601"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

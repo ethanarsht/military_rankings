@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="2df001af-dd5e-4ba4-b1d7-d6ba5090c6e8"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"6061860c-9670-41ed-8daa-f1a6acc6c39f":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"fb012e43-02bf-49d0-b9eb-902653265c43","type":"HoverTool"}]},"id":"08392371-6def-423e-91d6-ba3d152272b9","type":"Toolbar"},{"attributes":{},"id":"e4bad2be-92be-41b5-86c9-fcf6478acedf","type":"BasicTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Toulon","Battle of Montenotte","Battle of Castiglione","Battle of Lodi","Battle of Bassano","Battle of the Bridge of Arcole","Battle of Rivoli","Battle of the Pyramids","Siege of El Arish","Siege of Acre (1799)","Battle of Abukir (1799)","Battle of Marengo","Battle of Austerlitz","Battle of Ulm","Battle of Jena\u2013Auerstedt","Battle of Eylau","Battle of Friedland","Battle of Somosierra","Battle of Wagram","Battle of Ratisbon","Battle of Abensberg","Battle of Landshut (1809)","Battle of Aspern-Essling","Battle of Krasnoi","Battle of Maloyaroslavets","Battle of Berezina","Battle of Borodino","Battle of Smolensk (1812)","Battle of Bautzen","Battle of Leipzig","Battle of Dresden","Battle of Hanau","Battle of Reims (1814)","Battle of Laon","Battle of Montmirail","Battle of Brienne","Battle of Montereau","Battle of Vauchamps","Battle of Arcis-sur-Aube","Battle of Craonne","Battle of Champaubert","Battle of Ligny","Battle of Waterloo"],"cumulative":{"__ndarray__":"fvcaJqOw3j/lYkL9OKTuP7oOSqTNJfc/wS0JCQG7/j93jUxdkx0DQOFgJYGTLQdAUitS1KtSC0DEGxHKjXcPQFzKiJXnBRJAiFBsA6lWFEA8gC8GGH8WQIpnNJroihhAkwxsgCSRGkBY162kr2wcQNYeRHkPiR5A1wAbthtEIEBVNC03KjkhQDLc6P1CJCJAvREFvUslI0DXTtS/XhskQJPtRDaSEyVAcWBVvc3/JUBHv3CqVAclQJHJu0GrEyRA9Hai5GUVJUCsIoeflxskQCG2yUVTFyVAacIeS44WJkD/BvnldgknQJ0mw90YGSZACBRRmjIkJ0CQRsJtHDooQAJ2MUgOLClAzF74kSJBKkBUF/Z+AEQrQP0yq6N2PixAozDdWXsuLUA5lfkR1kAuQAR2GhEGVy9AJ8AyVK4xMECospIww58wQCLv43WUIzFAxhPS5aOtMEA=","dtype":"float64","shape":[43]},"general":["Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon","Napoleon"],"outcome":["V","V","V","V","V","V","V","V","V","V","V","V","V","V","V","V","V","V","V","V","V","V","D","D","V","D","V","V","V","D","V","V","V","V","V","V","V","V","V","V","V","V","D"],"value":{"__ndarray__":"fvcaJqOw3j9MzmnUzpfePxx1o5bETt8/HHz8ks1U3j+2tD/GlgDeP6dNY48AQOA/wymzTGGU4D/GwfvWh5PgP87jAYQFUeI/XTEcbwuG4j+cfRkWeEPhP3M6J6CEXuA/Rii9Md8x4D9IrBxEsrjdP/I7sqT+4uA/fC0eL3/y3z+0b0Yi0KHeP6z7dNcYY90/rFjD8YsQ4D9Ao+dZYMLeP4zXE85uBt8/tFsO4nCH3T9JJZRcIg/fv8G2nhYtdd6/NtZqLqob4D8AiWqjyDnfv6RuUsh0d98/AImhqmDn3z+6kkhbE13eP0gMvAbBC96/stbeyJux4D+FKBM3nV7hP0Lu5U07Pt4/n4xunERR4T+IiNvP3i3gPxx1o5bETt8/trQ/xpYA3j9mScaBqyXhP7IMDvL/YuE/oKSwdGnF4D84oPwXN4XbPz2PJ6ooeuA/5NZ2BCR83b8=","dtype":"float64","shape":[43]},"year":{"__ndarray__":"AAAAAAAEnEAAAAAAABCcQAAAAAAAEJxAAAAAAAAQnEAAAAAAABCcQAAAAAAAEJxAAAAAAAAUnEAAAAAAABicQAAAAAAAHJxAAAAAAAAcnEAAAAAAABycQAAAAAAAIJxAAAAAAAA0nEAAAAAAADScQAAAAAAAOJxAAAAAAAA8nEAAAAAAADycQAAAAAAAQJxAAAAAAABEnEAAAAAAAEScQAAAAAAARJxAAAAAAABEnEAAAAAAAEScQAAAAAAAUJxAAAAAAABQnEAAAAAAAFCcQAAAAAAAUJxAAAAAAABQnEAAAAAAAFScQAAAAAAAVJxAAAAAAABUnEAAAAAAAFScQAAAAAAAWJxAAAAAAABYnEAAAAAAAFicQAAAAAAAWJxAAAAAAABYnEAAAAAAAFicQAAAAAAAWJxAAAAAAABYnEAAAAAAAFicQAAAAAAAXJxAAAAAAABcnEA=","dtype":"float64","shape":[43]}}},"id":"e9868842-3409-4f5c-b2d8-ac36f7af3a24","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"e4bad2be-92be-41b5-86c9-fcf6478acedf","type":"BasicTickFormatter"},"plot":{"id":"42fa85e1-f88c-4307-9e14-c6100a859737","subtype":"Figure","type":"Plot"},"ticker":{"id":"4bc2b5d1-3a85-48e5-9611-278cd7a71b67","type":"BasicTicker"}},"id":"1f21e8e3-5680-441b-a7b7-a0fab26ec536","type":"LinearAxis"},{"attributes":{"data_source":{"id":"e9868842-3409-4f5c-b2d8-ac36f7af3a24","type":"ColumnDataSource"},"glyph":{"id":"ff7c8503-4387-4281-856b-ad58ea81375e","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d0de4163-b12a-4667-ae1b-bc99b7ec7b1f","type":"VBar"},"selection_glyph":null,"view":{"id":"96171cc2-f4df-4170-96ae-a6cb094e5b7d","type":"CDSView"}},"id":"51013147-48ab-4805-9231-eff7074c8bdb","type":"GlyphRenderer"},{"attributes":{"source":{"id":"e9868842-3409-4f5c-b2d8-ac36f7af3a24","type":"ColumnDataSource"}},"id":"74d83bf1-a597-459b-8d81-9f31d8bab15f","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5b7ad0b5-5b61-44c0-8ebc-f46c230ebb8d","type":"Line"},{"attributes":{},"id":"2403ea93-3333-4db6-a5a5-e7378e79a2da","type":"LinearScale"},{"attributes":{"below":[{"id":"08e10862-891a-4c89-a0d0-ded2436db696","type":"CategoricalAxis"}],"left":[{"id":"1f21e8e3-5680-441b-a7b7-a0fab26ec536","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"08e10862-891a-4c89-a0d0-ded2436db696","type":"CategoricalAxis"},{"id":"575c2420-1f32-410f-9a55-34832c62329d","type":"Grid"},{"id":"1f21e8e3-5680-441b-a7b7-a0fab26ec536","type":"LinearAxis"},{"id":"22e9876a-ea88-497b-aff6-e37258f6d33c","type":"Grid"},{"id":"f4d95768-25cb-436c-a217-13deacaa7ca1","type":"GlyphRenderer"},{"id":"51013147-48ab-4805-9231-eff7074c8bdb","type":"GlyphRenderer"}],"title":{"id":"a866e918-5374-47d8-b5e5-fcc031b8b339","type":"Title"},"toolbar":{"id":"08392371-6def-423e-91d6-ba3d152272b9","type":"Toolbar"},"x_range":{"id":"010b8e1b-c71d-4c56-9629-5982c8119735","type":"FactorRange"},"x_scale":{"id":"f58aab00-d3ef-4aaa-b610-8652fa57dd9e","type":"CategoricalScale"},"y_range":{"id":"f2edf498-0b05-4af6-acab-edd431a09ea5","type":"DataRange1d"},"y_scale":{"id":"2403ea93-3333-4db6-a5a5-e7378e79a2da","type":"LinearScale"}},"id":"42fa85e1-f88c-4307-9e14-c6100a859737","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null},"id":"f2edf498-0b05-4af6-acab-edd431a09ea5","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"42fa85e1-f88c-4307-9e14-c6100a859737","subtype":"Figure","type":"Plot"},"ticker":{"id":"4bc2b5d1-3a85-48e5-9611-278cd7a71b67","type":"BasicTicker"}},"id":"22e9876a-ea88-497b-aff6-e37258f6d33c","type":"Grid"},{"attributes":{},"id":"fec9e11b-4b7e-48b5-8f55-6880f0cd3611","type":"CategoricalTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"64abfd7b-c781-44a0-8d7a-dc32f999e522","type":"Line"},{"attributes":{"callback":null,"factors":["Siege of Toulon","Battle of Montenotte","Battle of Castiglione","Battle of Lodi","Battle of Bassano","Battle of the Bridge of Arcole","Battle of Rivoli","Battle of the Pyramids","Siege of El Arish","Siege of Acre (1799)","Battle of Abukir (1799)","Battle of Marengo","Battle of Austerlitz","Battle of Ulm","Battle of Jena\u2013Auerstedt","Battle of Eylau","Battle of Friedland","Battle of Somosierra","Battle of Wagram","Battle of Ratisbon","Battle of Abensberg","Battle of Landshut (1809)","Battle of Aspern-Essling","Battle of Krasnoi","Battle of Maloyaroslavets","Battle of Berezina","Battle of Borodino","Battle of Smolensk (1812)","Battle of Bautzen","Battle of Leipzig","Battle of Dresden","Battle of Hanau","Battle of Reims (1814)","Battle of Laon","Battle of Montmirail","Battle of Brienne","Battle of Montereau","Battle of Vauchamps","Battle of Arcis-sur-Aube","Battle of Craonne","Battle of Champaubert","Battle of Ligny","Battle of Waterloo"]},"id":"010b8e1b-c71d-4c56-9629-5982c8119735","type":"FactorRange"},{"attributes":{"data_source":{"id":"e9868842-3409-4f5c-b2d8-ac36f7af3a24","type":"ColumnDataSource"},"glyph":{"id":"5b7ad0b5-5b61-44c0-8ebc-f46c230ebb8d","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"64abfd7b-c781-44a0-8d7a-dc32f999e522","type":"Line"},"selection_glyph":null,"view":{"id":"74d83bf1-a597-459b-8d81-9f31d8bab15f","type":"CDSView"}},"id":"f4d95768-25cb-436c-a217-13deacaa7ca1","type":"GlyphRenderer"},{"attributes":{},"id":"4bc2b5d1-3a85-48e5-9611-278cd7a71b67","type":"BasicTicker"},{"attributes":{"plot":{"id":"42fa85e1-f88c-4307-9e14-c6100a859737","subtype":"Figure","type":"Plot"},"ticker":{"id":"761087a5-c58e-4815-83d7-fab0074fc66b","type":"CategoricalTicker"}},"id":"575c2420-1f32-410f-9a55-34832c62329d","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"fb012e43-02bf-49d0-b9eb-902653265c43","type":"HoverTool"},{"attributes":{"source":{"id":"e9868842-3409-4f5c-b2d8-ac36f7af3a24","type":"ColumnDataSource"}},"id":"96171cc2-f4df-4170-96ae-a6cb094e5b7d","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d0de4163-b12a-4667-ae1b-bc99b7ec7b1f","type":"VBar"},{"attributes":{},"id":"f58aab00-d3ef-4aaa-b610-8652fa57dd9e","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"175d3638-8afd-43a9-9e80-81ffab70325b","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"175d3638-8afd-43a9-9e80-81ffab70325b","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ff7c8503-4387-4281-856b-ad58ea81375e","type":"VBar"},{"attributes":{},"id":"761087a5-c58e-4815-83d7-fab0074fc66b","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"175d3638-8afd-43a9-9e80-81ffab70325b","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"fec9e11b-4b7e-48b5-8f55-6880f0cd3611","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"42fa85e1-f88c-4307-9e14-c6100a859737","subtype":"Figure","type":"Plot"},"ticker":{"id":"761087a5-c58e-4815-83d7-fab0074fc66b","type":"CategoricalTicker"}},"id":"08e10862-891a-4c89-a0d0-ded2436db696","type":"CategoricalAxis"},{"attributes":{"plot":null,"text":"Napoleon (38 - 0 - 5)"},"id":"a866e918-5374-47d8-b5e5-fcc031b8b339","type":"Title"}],"root_ids":["42fa85e1-f88c-4307-9e14-c6100a859737"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"6061860c-9670-41ed-8daa-f1a6acc6c39f","elementid":"2df001af-dd5e-4ba4-b1d7-d6ba5090c6e8","modelid":"42fa85e1-f88c-4307-9e14-c6100a859737"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

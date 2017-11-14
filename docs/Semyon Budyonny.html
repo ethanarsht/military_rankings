@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="b715c58f-8d63-4a99-9149-349d1f1e176a"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"6af41215-69a2-47b7-af42-146086feaef0":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"62ea73a5-0871-4587-b3d5-3891a5182c43","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"c1b7822b-e769-426b-adab-dbd6293778fd","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"c1b7822b-e769-426b-adab-dbd6293778fd","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7e22db21-a884-4f66-8d8a-caed79b042b4","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"c1b7822b-e769-426b-adab-dbd6293778fd","type":"CategoricalColorMapper"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"7ec62130-beaf-44bc-9751-75f04441315c","type":"HoverTool"}]},"id":"945ffd25-5a70-4cf6-853b-05c1eadac127","type":"Toolbar"},{"attributes":{},"id":"8a2a6b8f-fcd8-46e0-af91-70ce8e8e4cd8","type":"BasicTicker"},{"attributes":{"formatter":{"id":"bbfdecc5-708c-4ba2-9bd4-3eaadb075d4e","type":"BasicTickFormatter"},"plot":{"id":"d5e64a0c-24cd-49c4-aa97-d0b0049e4e98","subtype":"Figure","type":"Plot"},"ticker":{"id":"8a2a6b8f-fcd8-46e0-af91-70ce8e8e4cd8","type":"BasicTicker"}},"id":"02320975-9f8b-4485-b56e-887be1195f57","type":"LinearAxis"},{"attributes":{"callback":null,"factors":["Battle of Komarow","Battle of Warsaw (1920)","Battle of Zadworze","Battle of Kiev (1941)","Battle of Uman","Operation Barbarossa"]},"id":"644201fe-e014-4273-8c5f-251a30450b2e","type":"FactorRange"},{"attributes":{},"id":"a00a8ef1-cc38-4a2d-a208-d1e09a842e14","type":"CategoricalTicker"},{"attributes":{},"id":"af895ca0-29ed-49a5-9e48-38e4470ea2d9","type":"LinearScale"},{"attributes":{},"id":"bbfdecc5-708c-4ba2-9bd4-3eaadb075d4e","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"7ec62130-beaf-44bc-9751-75f04441315c","type":"HoverTool"},{"attributes":{"source":{"id":"ca6f714f-c167-4447-80ec-87d54602aaca","type":"ColumnDataSource"}},"id":"51534f92-f38b-4d71-9666-a0c35ac03b19","type":"CDSView"},{"attributes":{},"id":"0967feda-1bde-4a61-9dfc-c5c9225b8c37","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"ca6f714f-c167-4447-80ec-87d54602aaca","type":"ColumnDataSource"},"glyph":{"id":"12df11b1-f19b-4d0c-ab4a-b7bfe065a56b","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"62ea73a5-0871-4587-b3d5-3891a5182c43","type":"Line"},"selection_glyph":null,"view":{"id":"51534f92-f38b-4d71-9666-a0c35ac03b19","type":"CDSView"}},"id":"8bd7a832-0cbd-4681-89f3-bce78219cd51","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Komarow","Battle of Warsaw (1920)","Battle of Zadworze","Battle of Kiev (1941)","Battle of Uman","Operation Barbarossa"],"cumulative":{"__ndarray__":"tE0btlO44r9w52eXUGnxv+DOzy6h0uK/LBOLdMKe8b+lYT+wzUn5v2z4dReofvG/","dtype":"float64","shape":[6]},"general":["Semyon Budyonny","Semyon Budyonny","Semyon Budyonny","Semyon Budyonny","Semyon Budyonny","Semyon Budyonny"],"outcome":["D","D","V","D","D","V"],"value":{"__ndarray__":"tE0btlO44r8sgbR4TRrgvwAAAAAAAOA/eFdGuuNq4L/jOdHuLKzev+KkJWOWLN8/","dtype":"float64","shape":[6]},"year":{"__ndarray__":"AAAAAAAAnkAAAAAAAACeQAAAAAAAAJ5AAAAAAABUnkAAAAAAAFSeQAAAAAAAVJ5A","dtype":"float64","shape":[6]}}},"id":"ca6f714f-c167-4447-80ec-87d54602aaca","type":"ColumnDataSource"},{"attributes":{"dimension":1,"plot":{"id":"d5e64a0c-24cd-49c4-aa97-d0b0049e4e98","subtype":"Figure","type":"Plot"},"ticker":{"id":"8a2a6b8f-fcd8-46e0-af91-70ce8e8e4cd8","type":"BasicTicker"}},"id":"3af0a0b1-0d82-4e99-9300-3bf14993ea42","type":"Grid"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"12df11b1-f19b-4d0c-ab4a-b7bfe065a56b","type":"Line"},{"attributes":{"plot":{"id":"d5e64a0c-24cd-49c4-aa97-d0b0049e4e98","subtype":"Figure","type":"Plot"},"ticker":{"id":"a00a8ef1-cc38-4a2d-a208-d1e09a842e14","type":"CategoricalTicker"}},"id":"a0417d98-830d-4570-9eb3-fc7504834aec","type":"Grid"},{"attributes":{"formatter":{"id":"d197d6e9-744e-4c3e-9e51-7b277e9617f8","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"d5e64a0c-24cd-49c4-aa97-d0b0049e4e98","subtype":"Figure","type":"Plot"},"ticker":{"id":"a00a8ef1-cc38-4a2d-a208-d1e09a842e14","type":"CategoricalTicker"}},"id":"45126cd2-29f1-4b05-b16e-7a9d00ad4010","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a3e77eed-d13b-4d8c-8e13-6bdc337bad7d","type":"VBar"},{"attributes":{"source":{"id":"ca6f714f-c167-4447-80ec-87d54602aaca","type":"ColumnDataSource"}},"id":"e8b3d12e-3521-4e30-9e89-0021a3d7bec3","type":"CDSView"},{"attributes":{},"id":"d197d6e9-744e-4c3e-9e51-7b277e9617f8","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"Semyon Budyonny (2 - 0 - 4)"},"id":"565840ef-d878-44d0-b3ae-f9ac041462b1","type":"Title"},{"attributes":{"callback":null},"id":"c9b620de-2dff-47f8-9f57-ba217d8e8241","type":"DataRange1d"},{"attributes":{"below":[{"id":"45126cd2-29f1-4b05-b16e-7a9d00ad4010","type":"CategoricalAxis"}],"left":[{"id":"02320975-9f8b-4485-b56e-887be1195f57","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"45126cd2-29f1-4b05-b16e-7a9d00ad4010","type":"CategoricalAxis"},{"id":"a0417d98-830d-4570-9eb3-fc7504834aec","type":"Grid"},{"id":"02320975-9f8b-4485-b56e-887be1195f57","type":"LinearAxis"},{"id":"3af0a0b1-0d82-4e99-9300-3bf14993ea42","type":"Grid"},{"id":"8bd7a832-0cbd-4681-89f3-bce78219cd51","type":"GlyphRenderer"},{"id":"1eda717b-1aff-4cc5-b027-b7768b661823","type":"GlyphRenderer"}],"title":{"id":"565840ef-d878-44d0-b3ae-f9ac041462b1","type":"Title"},"toolbar":{"id":"945ffd25-5a70-4cf6-853b-05c1eadac127","type":"Toolbar"},"x_range":{"id":"644201fe-e014-4273-8c5f-251a30450b2e","type":"FactorRange"},"x_scale":{"id":"0967feda-1bde-4a61-9dfc-c5c9225b8c37","type":"CategoricalScale"},"y_range":{"id":"c9b620de-2dff-47f8-9f57-ba217d8e8241","type":"DataRange1d"},"y_scale":{"id":"af895ca0-29ed-49a5-9e48-38e4470ea2d9","type":"LinearScale"}},"id":"d5e64a0c-24cd-49c4-aa97-d0b0049e4e98","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"ca6f714f-c167-4447-80ec-87d54602aaca","type":"ColumnDataSource"},"glyph":{"id":"7e22db21-a884-4f66-8d8a-caed79b042b4","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a3e77eed-d13b-4d8c-8e13-6bdc337bad7d","type":"VBar"},"selection_glyph":null,"view":{"id":"e8b3d12e-3521-4e30-9e89-0021a3d7bec3","type":"CDSView"}},"id":"1eda717b-1aff-4cc5-b027-b7768b661823","type":"GlyphRenderer"}],"root_ids":["d5e64a0c-24cd-49c4-aa97-d0b0049e4e98"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"6af41215-69a2-47b7-af42-146086feaef0","elementid":"b715c58f-8d63-4a99-9149-349d1f1e176a","modelid":"d5e64a0c-24cd-49c4-aa97-d0b0049e4e98"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="8d7c0866-c9a8-4b9c-879f-d76372e34532"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"4dbcb5c6-8dc3-4154-af95-69c67e253a54":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"665734df-5000-4fe7-886b-845fed89d460","type":"Line"},{"attributes":{},"id":"cd70c187-8373-4b93-902b-334d262c9d3d","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"aced4ece-bdeb-4b22-8f42-5f1fa309f953","subtype":"Figure","type":"Plot"},"ticker":{"id":"653afa76-5487-4055-8d13-80dcf40b0bf9","type":"BasicTicker"}},"id":"7a57f335-90bf-44a7-ae92-28d6dc0de4e5","type":"Grid"},{"attributes":{},"id":"eeaec133-caea-426e-868d-488b0aaa1d02","type":"BasicTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Friedlingen","Battle of Malplaquet","Battle of Denain"],"cumulative":{"__ndarray__":"mri+2+xE3z8AEtApGT94v149Ttj09tw/","dtype":"float64","shape":[3]},"general":["Claude Louis Hector de Villars","Claude Louis Hector de Villars","Claude Louis Hector de Villars"],"outcome":["V","D","V"],"value":{"__ndarray__":"mri+2+xE3z/i+GVA6aXfv6Z99TzxV90/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAACYmkAAAAAAALSaQAAAAAAAwJpA","dtype":"float64","shape":[3]}}},"id":"93391074-f09b-438d-a540-a1e9f100fc10","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"4b1caaa2-c5be-4311-a757-52fbe283151b","type":"HoverTool"}]},"id":"e9b2b379-907f-4688-88ac-57fdc1ec607e","type":"Toolbar"},{"attributes":{"plot":{"id":"aced4ece-bdeb-4b22-8f42-5f1fa309f953","subtype":"Figure","type":"Plot"},"ticker":{"id":"bff3fb62-e785-41a8-b4e5-7d7bed3396df","type":"CategoricalTicker"}},"id":"a8eab662-e408-4b00-8b9b-164140f884de","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"9c044872-b1d7-4dea-8a34-3bd82b72097b","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"9c044872-b1d7-4dea-8a34-3bd82b72097b","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"1043bb01-e3a5-43be-b6aa-86eafe246ab0","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"4b1caaa2-c5be-4311-a757-52fbe283151b","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2d5ec31a-e47e-490e-94aa-d8dcccf882d4","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"9c044872-b1d7-4dea-8a34-3bd82b72097b","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"cd70c187-8373-4b93-902b-334d262c9d3d","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"aced4ece-bdeb-4b22-8f42-5f1fa309f953","subtype":"Figure","type":"Plot"},"ticker":{"id":"bff3fb62-e785-41a8-b4e5-7d7bed3396df","type":"CategoricalTicker"}},"id":"9f419734-7f51-43f1-9200-f934afb7a1fb","type":"CategoricalAxis"},{"attributes":{},"id":"bff3fb62-e785-41a8-b4e5-7d7bed3396df","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"9f419734-7f51-43f1-9200-f934afb7a1fb","type":"CategoricalAxis"}],"left":[{"id":"54e1235a-1c40-4dbe-b97f-5c80954564cd","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"9f419734-7f51-43f1-9200-f934afb7a1fb","type":"CategoricalAxis"},{"id":"a8eab662-e408-4b00-8b9b-164140f884de","type":"Grid"},{"id":"54e1235a-1c40-4dbe-b97f-5c80954564cd","type":"LinearAxis"},{"id":"7a57f335-90bf-44a7-ae92-28d6dc0de4e5","type":"Grid"},{"id":"960c9730-0105-4d1e-90c8-1fc0bc8eb124","type":"GlyphRenderer"},{"id":"132bec07-024e-4e1e-9d01-e19a2aa1b068","type":"GlyphRenderer"}],"title":{"id":"efb1b408-efa3-4089-ad93-5daf7a9b2c5f","type":"Title"},"toolbar":{"id":"e9b2b379-907f-4688-88ac-57fdc1ec607e","type":"Toolbar"},"x_range":{"id":"c5fb2329-de0a-4171-966d-b88a60fa575b","type":"FactorRange"},"x_scale":{"id":"635bd06b-721e-40ee-ba54-1e08ff69cb39","type":"CategoricalScale"},"y_range":{"id":"11e5828b-98c2-41dc-bb72-542cffecbf80","type":"DataRange1d"},"y_scale":{"id":"fb84e849-fda2-4cb6-b25e-d30133275a55","type":"LinearScale"}},"id":"aced4ece-bdeb-4b22-8f42-5f1fa309f953","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"93391074-f09b-438d-a540-a1e9f100fc10","type":"ColumnDataSource"}},"id":"8a875dec-d95f-44fe-b586-b6f74a4f975b","type":"CDSView"},{"attributes":{},"id":"653afa76-5487-4055-8d13-80dcf40b0bf9","type":"BasicTicker"},{"attributes":{"callback":null},"id":"11e5828b-98c2-41dc-bb72-542cffecbf80","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bc74bfe1-8d57-4833-9ecf-7926ecb477d3","type":"VBar"},{"attributes":{"source":{"id":"93391074-f09b-438d-a540-a1e9f100fc10","type":"ColumnDataSource"}},"id":"d610a783-837a-4530-ad9c-e37c6191cb3e","type":"CDSView"},{"attributes":{"plot":null,"text":"Claude Louis Hector de Villars (2 - 0 - 1)"},"id":"efb1b408-efa3-4089-ad93-5daf7a9b2c5f","type":"Title"},{"attributes":{"callback":null,"factors":["Battle of Friedlingen","Battle of Malplaquet","Battle of Denain"]},"id":"c5fb2329-de0a-4171-966d-b88a60fa575b","type":"FactorRange"},{"attributes":{},"id":"fb84e849-fda2-4cb6-b25e-d30133275a55","type":"LinearScale"},{"attributes":{"data_source":{"id":"93391074-f09b-438d-a540-a1e9f100fc10","type":"ColumnDataSource"},"glyph":{"id":"1043bb01-e3a5-43be-b6aa-86eafe246ab0","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bc74bfe1-8d57-4833-9ecf-7926ecb477d3","type":"VBar"},"selection_glyph":null,"view":{"id":"d610a783-837a-4530-ad9c-e37c6191cb3e","type":"CDSView"}},"id":"132bec07-024e-4e1e-9d01-e19a2aa1b068","type":"GlyphRenderer"},{"attributes":{},"id":"635bd06b-721e-40ee-ba54-1e08ff69cb39","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"eeaec133-caea-426e-868d-488b0aaa1d02","type":"BasicTickFormatter"},"plot":{"id":"aced4ece-bdeb-4b22-8f42-5f1fa309f953","subtype":"Figure","type":"Plot"},"ticker":{"id":"653afa76-5487-4055-8d13-80dcf40b0bf9","type":"BasicTicker"}},"id":"54e1235a-1c40-4dbe-b97f-5c80954564cd","type":"LinearAxis"},{"attributes":{"data_source":{"id":"93391074-f09b-438d-a540-a1e9f100fc10","type":"ColumnDataSource"},"glyph":{"id":"2d5ec31a-e47e-490e-94aa-d8dcccf882d4","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"665734df-5000-4fe7-886b-845fed89d460","type":"Line"},"selection_glyph":null,"view":{"id":"8a875dec-d95f-44fe-b586-b6f74a4f975b","type":"CDSView"}},"id":"960c9730-0105-4d1e-90c8-1fc0bc8eb124","type":"GlyphRenderer"}],"root_ids":["aced4ece-bdeb-4b22-8f42-5f1fa309f953"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"4dbcb5c6-8dc3-4154-af95-69c67e253a54","elementid":"8d7c0866-c9a8-4b9c-879f-d76372e34532","modelid":"aced4ece-bdeb-4b22-8f42-5f1fa309f953"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

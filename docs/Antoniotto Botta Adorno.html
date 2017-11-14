@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="27b35286-fd9b-40c3-9706-3abae7f3b398"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"2e52e96a-12f8-4724-8127-e76e5aec19d0":{"roots":{"references":[{"attributes":{},"id":"1712f84d-39bb-473b-a7f3-9e5d958c0196","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"5388074f-7b62-421a-89fd-86e2f7a6ed12","type":"CategoricalAxis"}],"left":[{"id":"4eed0fd7-e594-4ea2-a7e4-a6e64a60ffe6","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"5388074f-7b62-421a-89fd-86e2f7a6ed12","type":"CategoricalAxis"},{"id":"bc11db47-50da-4dc9-95ab-de7524e9319b","type":"Grid"},{"id":"4eed0fd7-e594-4ea2-a7e4-a6e64a60ffe6","type":"LinearAxis"},{"id":"06136348-8dff-4424-ba55-9aa7c3765bd2","type":"Grid"},{"id":"35a99381-3cfb-4d5f-b9ae-517155d5d003","type":"GlyphRenderer"},{"id":"f71f0542-75e3-47dc-a532-76449cf0f916","type":"GlyphRenderer"}],"title":{"id":"5ff5aa5f-9a33-40c6-8f7b-c5b02982a28e","type":"Title"},"toolbar":{"id":"6389b499-695a-4e4d-b5a5-848910091171","type":"Toolbar"},"x_range":{"id":"bc87b0ad-b2d9-488f-9754-80649cc9a24d","type":"FactorRange"},"x_scale":{"id":"d033826e-67da-49fc-b35f-3701b472ef5d","type":"CategoricalScale"},"y_range":{"id":"20fbb6cf-afbf-41ba-8d48-5158fdf75ef7","type":"DataRange1d"},"y_scale":{"id":"c4d67cdc-08ca-46f0-abd8-ae899d60f37c","type":"LinearScale"}},"id":"545b6c6b-598c-45d9-9294-ef99b9a53fa9","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"aa6edcc9-63b4-4eea-b8ba-a8813eec26e4","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e3f5fde1-a0e8-4d0e-a603-f927d2bf2472","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Piacenza","Battle of Rottofreddo"],"cumulative":{"__ndarray__":"GhczH5+E3z/AXmC6gfDiPw==","dtype":"float64","shape":[2]},"general":["Antoniotto Botta Adorno","Antoniotto Botta Adorno"],"outcome":["V","I"],"value":{"__ndarray__":"GhczH5+E3z+cmTZWkXG5Pw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABIm0AAAAAAAEibQA==","dtype":"float64","shape":[2]}}},"id":"0c525abc-3c0e-49ad-8fbd-e62935cb04cd","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"22cc1975-45d3-4429-bc06-196c4ac41c38","type":"Line"},{"attributes":{"formatter":{"id":"7e2d7bf1-1670-47d1-88fc-1c84c2a8cfd0","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"545b6c6b-598c-45d9-9294-ef99b9a53fa9","subtype":"Figure","type":"Plot"},"ticker":{"id":"1712f84d-39bb-473b-a7f3-9e5d958c0196","type":"CategoricalTicker"}},"id":"5388074f-7b62-421a-89fd-86e2f7a6ed12","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"ea3ad7b4-3212-46a5-8df7-c292f5b34de9","type":"HoverTool"}]},"id":"6389b499-695a-4e4d-b5a5-848910091171","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"51df9ed0-dbe9-40e6-b60b-2e2943da52f2","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"51df9ed0-dbe9-40e6-b60b-2e2943da52f2","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6aee4e36-7ec7-49e0-9a57-012718399892","type":"VBar"},{"attributes":{},"id":"cc2a1087-40aa-46a1-aea2-1c645cc0cbba","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"ea3ad7b4-3212-46a5-8df7-c292f5b34de9","type":"HoverTool"},{"attributes":{"source":{"id":"0c525abc-3c0e-49ad-8fbd-e62935cb04cd","type":"ColumnDataSource"}},"id":"11ed194f-6407-4271-be97-29b0b8b13555","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"545b6c6b-598c-45d9-9294-ef99b9a53fa9","subtype":"Figure","type":"Plot"},"ticker":{"id":"cc2a1087-40aa-46a1-aea2-1c645cc0cbba","type":"BasicTicker"}},"id":"06136348-8dff-4424-ba55-9aa7c3765bd2","type":"Grid"},{"attributes":{"plot":null,"text":"Antoniotto Botta Adorno (1 - 1 - 0)"},"id":"5ff5aa5f-9a33-40c6-8f7b-c5b02982a28e","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"51df9ed0-dbe9-40e6-b60b-2e2943da52f2","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"0c525abc-3c0e-49ad-8fbd-e62935cb04cd","type":"ColumnDataSource"},"glyph":{"id":"6aee4e36-7ec7-49e0-9a57-012718399892","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e3f5fde1-a0e8-4d0e-a603-f927d2bf2472","type":"VBar"},"selection_glyph":null,"view":{"id":"3deca4ce-4759-4503-b394-ddc301bd8576","type":"CDSView"}},"id":"f71f0542-75e3-47dc-a532-76449cf0f916","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3abd88b8-cdf9-438c-b845-873d21d4ab13","type":"Line"},{"attributes":{"formatter":{"id":"aa6edcc9-63b4-4eea-b8ba-a8813eec26e4","type":"BasicTickFormatter"},"plot":{"id":"545b6c6b-598c-45d9-9294-ef99b9a53fa9","subtype":"Figure","type":"Plot"},"ticker":{"id":"cc2a1087-40aa-46a1-aea2-1c645cc0cbba","type":"BasicTicker"}},"id":"4eed0fd7-e594-4ea2-a7e4-a6e64a60ffe6","type":"LinearAxis"},{"attributes":{},"id":"c4d67cdc-08ca-46f0-abd8-ae899d60f37c","type":"LinearScale"},{"attributes":{"data_source":{"id":"0c525abc-3c0e-49ad-8fbd-e62935cb04cd","type":"ColumnDataSource"},"glyph":{"id":"3abd88b8-cdf9-438c-b845-873d21d4ab13","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"22cc1975-45d3-4429-bc06-196c4ac41c38","type":"Line"},"selection_glyph":null,"view":{"id":"11ed194f-6407-4271-be97-29b0b8b13555","type":"CDSView"}},"id":"35a99381-3cfb-4d5f-b9ae-517155d5d003","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of Piacenza","Battle of Rottofreddo"]},"id":"bc87b0ad-b2d9-488f-9754-80649cc9a24d","type":"FactorRange"},{"attributes":{},"id":"d033826e-67da-49fc-b35f-3701b472ef5d","type":"CategoricalScale"},{"attributes":{"plot":{"id":"545b6c6b-598c-45d9-9294-ef99b9a53fa9","subtype":"Figure","type":"Plot"},"ticker":{"id":"1712f84d-39bb-473b-a7f3-9e5d958c0196","type":"CategoricalTicker"}},"id":"bc11db47-50da-4dc9-95ab-de7524e9319b","type":"Grid"},{"attributes":{"source":{"id":"0c525abc-3c0e-49ad-8fbd-e62935cb04cd","type":"ColumnDataSource"}},"id":"3deca4ce-4759-4503-b394-ddc301bd8576","type":"CDSView"},{"attributes":{"callback":null},"id":"20fbb6cf-afbf-41ba-8d48-5158fdf75ef7","type":"DataRange1d"},{"attributes":{},"id":"7e2d7bf1-1670-47d1-88fc-1c84c2a8cfd0","type":"CategoricalTickFormatter"}],"root_ids":["545b6c6b-598c-45d9-9294-ef99b9a53fa9"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"2e52e96a-12f8-4724-8127-e76e5aec19d0","elementid":"27b35286-fd9b-40c3-9706-3abae7f3b398","modelid":"545b6c6b-598c-45d9-9294-ef99b9a53fa9"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

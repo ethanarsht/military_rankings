@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="be640a0a-e7a4-4176-a39b-f1f790859d9f"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"aae5d545-f8d0-4b28-bf9a-e7bf77ebbfe8":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"7007f56f-df23-4e86-b483-1a13758131f9","type":"CategoricalColorMapper"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"664e91da-b1d9-4886-ad92-22dcd7eb8975","type":"HoverTool"}]},"id":"805f61d7-4fea-4868-85aa-34a029bc7eb6","type":"Toolbar"},{"attributes":{"below":[{"id":"81512ce0-5a22-4c1c-ba83-ff6f7829d72c","type":"CategoricalAxis"}],"left":[{"id":"eb42bc27-d7f5-4ee1-8fbd-bf0b9e995b0d","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"81512ce0-5a22-4c1c-ba83-ff6f7829d72c","type":"CategoricalAxis"},{"id":"da7fb3b3-95bc-4ccd-812c-2005d98b85c9","type":"Grid"},{"id":"eb42bc27-d7f5-4ee1-8fbd-bf0b9e995b0d","type":"LinearAxis"},{"id":"98b16750-310c-4191-bb93-e2978950c554","type":"Grid"},{"id":"936610cb-df5b-46ea-a05e-3d59da6890f3","type":"GlyphRenderer"},{"id":"2a9a20b7-f56d-4fd5-96dd-ebb2b098654f","type":"GlyphRenderer"}],"title":{"id":"cbd1c016-aeaf-4977-955a-4a1081e32d0b","type":"Title"},"toolbar":{"id":"805f61d7-4fea-4868-85aa-34a029bc7eb6","type":"Toolbar"},"x_range":{"id":"1782b96a-6c5b-4265-b6b1-62501706faa8","type":"FactorRange"},"x_scale":{"id":"11603f7c-5143-4409-ab7c-52983f1a8ab0","type":"CategoricalScale"},"y_range":{"id":"c3b15f21-f1ac-49f8-acfc-69f44f7b6577","type":"DataRange1d"},"y_scale":{"id":"9f375e6c-f0b4-447b-aec8-73b29cd65cbe","type":"LinearScale"}},"id":"89b76d0e-0227-4641-a843-05892fb5e384","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"11603f7c-5143-4409-ab7c-52983f1a8ab0","type":"CategoricalScale"},{"attributes":{"plot":{"id":"89b76d0e-0227-4641-a843-05892fb5e384","subtype":"Figure","type":"Plot"},"ticker":{"id":"d431f8ee-af59-4ca3-b6ad-87027339082e","type":"CategoricalTicker"}},"id":"da7fb3b3-95bc-4ccd-812c-2005d98b85c9","type":"Grid"},{"attributes":{},"id":"d431f8ee-af59-4ca3-b6ad-87027339082e","type":"CategoricalTicker"},{"attributes":{},"id":"50ed367a-63b5-4793-a3e0-67b399585668","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"7007f56f-df23-4e86-b483-1a13758131f9","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"7007f56f-df23-4e86-b483-1a13758131f9","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"80755418-364d-4255-8ac8-94ae77664fef","type":"VBar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d80f2a82-2206-4243-8069-0dbfed8dad42","type":"Line"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"664e91da-b1d9-4886-ad92-22dcd7eb8975","type":"HoverTool"},{"attributes":{"source":{"id":"ce485ea9-0d71-4ce0-bb86-1ac7e206c17e","type":"ColumnDataSource"}},"id":"1e26ce75-c0b2-4d00-ae5b-4aa358df6203","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of the Piave River","Battle of Vittorio Veneto"],"cumulative":{"__ndarray__":"AAAAAAAA4D9sA72/EgjwPw==","dtype":"float64","shape":[2]},"general":["Armando Diaz","Armando Diaz"],"outcome":["V","V"],"value":{"__ndarray__":"AAAAAAAA4D/YBnp/JRDgPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAD4nUAAAAAAAPidQA==","dtype":"float64","shape":[2]}}},"id":"ce485ea9-0d71-4ce0-bb86-1ac7e206c17e","type":"ColumnDataSource"},{"attributes":{"source":{"id":"ce485ea9-0d71-4ce0-bb86-1ac7e206c17e","type":"ColumnDataSource"}},"id":"51cb7fe0-ad52-4818-9877-1257367c8ccd","type":"CDSView"},{"attributes":{"formatter":{"id":"50ed367a-63b5-4793-a3e0-67b399585668","type":"BasicTickFormatter"},"plot":{"id":"89b76d0e-0227-4641-a843-05892fb5e384","subtype":"Figure","type":"Plot"},"ticker":{"id":"02f401c1-93b3-4416-8d15-f2088d3e2f01","type":"BasicTicker"}},"id":"eb42bc27-d7f5-4ee1-8fbd-bf0b9e995b0d","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Armando Diaz (2 - 0 - 0)"},"id":"cbd1c016-aeaf-4977-955a-4a1081e32d0b","type":"Title"},{"attributes":{},"id":"9f375e6c-f0b4-447b-aec8-73b29cd65cbe","type":"LinearScale"},{"attributes":{"callback":null},"id":"c3b15f21-f1ac-49f8-acfc-69f44f7b6577","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c89381e4-73ac-4dba-a820-77bb2d10cf67","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"89b76d0e-0227-4641-a843-05892fb5e384","subtype":"Figure","type":"Plot"},"ticker":{"id":"02f401c1-93b3-4416-8d15-f2088d3e2f01","type":"BasicTicker"}},"id":"98b16750-310c-4191-bb93-e2978950c554","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of the Piave River","Battle of Vittorio Veneto"]},"id":"1782b96a-6c5b-4265-b6b1-62501706faa8","type":"FactorRange"},{"attributes":{"formatter":{"id":"98c177b0-6690-4070-964e-f422dcf6fb6a","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"89b76d0e-0227-4641-a843-05892fb5e384","subtype":"Figure","type":"Plot"},"ticker":{"id":"d431f8ee-af59-4ca3-b6ad-87027339082e","type":"CategoricalTicker"}},"id":"81512ce0-5a22-4c1c-ba83-ff6f7829d72c","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"ce485ea9-0d71-4ce0-bb86-1ac7e206c17e","type":"ColumnDataSource"},"glyph":{"id":"80755418-364d-4255-8ac8-94ae77664fef","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c89381e4-73ac-4dba-a820-77bb2d10cf67","type":"VBar"},"selection_glyph":null,"view":{"id":"51cb7fe0-ad52-4818-9877-1257367c8ccd","type":"CDSView"}},"id":"2a9a20b7-f56d-4fd5-96dd-ebb2b098654f","type":"GlyphRenderer"},{"attributes":{},"id":"98c177b0-6690-4070-964e-f422dcf6fb6a","type":"CategoricalTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d4f9478c-a4b0-4c77-b246-8ead7100088d","type":"Line"},{"attributes":{},"id":"02f401c1-93b3-4416-8d15-f2088d3e2f01","type":"BasicTicker"},{"attributes":{"data_source":{"id":"ce485ea9-0d71-4ce0-bb86-1ac7e206c17e","type":"ColumnDataSource"},"glyph":{"id":"d4f9478c-a4b0-4c77-b246-8ead7100088d","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d80f2a82-2206-4243-8069-0dbfed8dad42","type":"Line"},"selection_glyph":null,"view":{"id":"1e26ce75-c0b2-4d00-ae5b-4aa358df6203","type":"CDSView"}},"id":"936610cb-df5b-46ea-a05e-3d59da6890f3","type":"GlyphRenderer"}],"root_ids":["89b76d0e-0227-4641-a843-05892fb5e384"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"aae5d545-f8d0-4b28-bf9a-e7bf77ebbfe8","elementid":"be640a0a-e7a4-4176-a39b-f1f790859d9f","modelid":"89b76d0e-0227-4641-a843-05892fb5e384"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="b0be1887-8ec8-4674-bf22-6f721c86af41"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"3cc5bd3f-2be6-4942-837e-a7e3c7296686":{"roots":{"references":[{"attributes":{"source":{"id":"88b95478-82cd-4c94-abb9-bde15c7f8b93","type":"ColumnDataSource"}},"id":"d19c57d8-68e6-47cd-821f-154f24281025","type":"CDSView"},{"attributes":{},"id":"f9b80053-1c40-45df-bbac-6d735c59fde3","type":"BasicTicker"},{"attributes":{"plot":null,"text":"Rensuke Isogai (2 - 0 - 1)"},"id":"9cebd936-3fee-47fc-bb0b-c9888cf1b073","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"869b8d58-a057-4b94-bc9c-a8c46f3ec356","subtype":"Figure","type":"Plot"},"ticker":{"id":"f9b80053-1c40-45df-bbac-6d735c59fde3","type":"BasicTicker"}},"id":"79463556-0b2d-4c16-938d-802aff923c70","type":"Grid"},{"attributes":{"formatter":{"id":"ed1732c6-f246-4897-9c4b-f7520652a2be","type":"BasicTickFormatter"},"plot":{"id":"869b8d58-a057-4b94-bc9c-a8c46f3ec356","subtype":"Figure","type":"Plot"},"ticker":{"id":"f9b80053-1c40-45df-bbac-6d735c59fde3","type":"BasicTicker"}},"id":"d89d5250-6db2-4b2f-8377-1c4223244f17","type":"LinearAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"bdce92f7-dc3d-4cfb-b775-970b384411bb","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"b0b8facb-b8f1-4799-b0cd-129ea5263844","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"b0b8facb-b8f1-4799-b0cd-129ea5263844","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"74062601-8b8e-4663-94f9-3be8abbb064b","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8b041f9a-5dd6-43db-aabe-5ca88f885244","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Taiyuan","Battle of Tai er zhuang","Battle of Xuzhou"],"cumulative":{"__ndarray__":"3C0ieT3y4T/khuSWhN6/P0Dqbs51VuU/","dtype":"float64","shape":[3]},"general":["Rensuke Isogai","Rensuke Isogai","Rensuke Isogai"],"outcome":["V","D","V"],"value":{"__ndarray__":"3C0ieT3y4T//OYvM2ezbv2NZkjulWuE/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABEnkAAAAAAAEieQAAAAAAASJ5A","dtype":"float64","shape":[3]}}},"id":"88b95478-82cd-4c94-abb9-bde15c7f8b93","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"869b8d58-a057-4b94-bc9c-a8c46f3ec356","subtype":"Figure","type":"Plot"},"ticker":{"id":"fe628520-7255-47b7-bc77-2129c7eb02d0","type":"CategoricalTicker"}},"id":"16f3cec7-071a-4211-b70e-c623edc1c775","type":"Grid"},{"attributes":{"data_source":{"id":"88b95478-82cd-4c94-abb9-bde15c7f8b93","type":"ColumnDataSource"},"glyph":{"id":"8b041f9a-5dd6-43db-aabe-5ca88f885244","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"65f04e8a-19e0-4064-bfd8-e90ab1dd2536","type":"Line"},"selection_glyph":null,"view":{"id":"d19c57d8-68e6-47cd-821f-154f24281025","type":"CDSView"}},"id":"77398c29-73ca-4012-864d-1fbc6008fa2a","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of Taiyuan","Battle of Tai er zhuang","Battle of Xuzhou"]},"id":"aeb1b43c-b88d-44b9-8d80-e4ac143c9496","type":"FactorRange"},{"attributes":{"source":{"id":"88b95478-82cd-4c94-abb9-bde15c7f8b93","type":"ColumnDataSource"}},"id":"e87617d8-f8ed-47a5-ad80-a034dab74069","type":"CDSView"},{"attributes":{"data_source":{"id":"88b95478-82cd-4c94-abb9-bde15c7f8b93","type":"ColumnDataSource"},"glyph":{"id":"74062601-8b8e-4663-94f9-3be8abbb064b","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a9b72e14-8a09-4e6b-95f2-4bb816ca8ebe","type":"VBar"},"selection_glyph":null,"view":{"id":"e87617d8-f8ed-47a5-ad80-a034dab74069","type":"CDSView"}},"id":"6aaddef5-b4d6-40f4-bce6-21720bdf24a2","type":"GlyphRenderer"},{"attributes":{},"id":"97c5b6c2-f301-481a-a7ab-841527d86aac","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"e9eeb0c1-062a-4652-8161-2b1fcaf2e07b","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"869b8d58-a057-4b94-bc9c-a8c46f3ec356","subtype":"Figure","type":"Plot"},"ticker":{"id":"fe628520-7255-47b7-bc77-2129c7eb02d0","type":"CategoricalTicker"}},"id":"94ff56e0-d134-405c-942a-4afb273ac952","type":"CategoricalAxis"},{"attributes":{"callback":null},"id":"2985732b-5324-44a1-9c65-4bc9d3334c2b","type":"DataRange1d"},{"attributes":{"below":[{"id":"94ff56e0-d134-405c-942a-4afb273ac952","type":"CategoricalAxis"}],"left":[{"id":"d89d5250-6db2-4b2f-8377-1c4223244f17","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"94ff56e0-d134-405c-942a-4afb273ac952","type":"CategoricalAxis"},{"id":"16f3cec7-071a-4211-b70e-c623edc1c775","type":"Grid"},{"id":"d89d5250-6db2-4b2f-8377-1c4223244f17","type":"LinearAxis"},{"id":"79463556-0b2d-4c16-938d-802aff923c70","type":"Grid"},{"id":"77398c29-73ca-4012-864d-1fbc6008fa2a","type":"GlyphRenderer"},{"id":"6aaddef5-b4d6-40f4-bce6-21720bdf24a2","type":"GlyphRenderer"}],"title":{"id":"9cebd936-3fee-47fc-bb0b-c9888cf1b073","type":"Title"},"toolbar":{"id":"74fbfc35-7d82-483c-9126-fd6bd9b5a3f0","type":"Toolbar"},"x_range":{"id":"aeb1b43c-b88d-44b9-8d80-e4ac143c9496","type":"FactorRange"},"x_scale":{"id":"97c5b6c2-f301-481a-a7ab-841527d86aac","type":"CategoricalScale"},"y_range":{"id":"2985732b-5324-44a1-9c65-4bc9d3334c2b","type":"DataRange1d"},"y_scale":{"id":"58946d16-1fd4-467a-ac0a-429208f9b33a","type":"LinearScale"}},"id":"869b8d58-a057-4b94-bc9c-a8c46f3ec356","subtype":"Figure","type":"Plot"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"b0b8facb-b8f1-4799-b0cd-129ea5263844","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a9b72e14-8a09-4e6b-95f2-4bb816ca8ebe","type":"VBar"},{"attributes":{},"id":"fe628520-7255-47b7-bc77-2129c7eb02d0","type":"CategoricalTicker"},{"attributes":{},"id":"e9eeb0c1-062a-4652-8161-2b1fcaf2e07b","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"bdce92f7-dc3d-4cfb-b775-970b384411bb","type":"HoverTool"}]},"id":"74fbfc35-7d82-483c-9126-fd6bd9b5a3f0","type":"Toolbar"},{"attributes":{},"id":"ed1732c6-f246-4897-9c4b-f7520652a2be","type":"BasicTickFormatter"},{"attributes":{},"id":"58946d16-1fd4-467a-ac0a-429208f9b33a","type":"LinearScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"65f04e8a-19e0-4064-bfd8-e90ab1dd2536","type":"Line"}],"root_ids":["869b8d58-a057-4b94-bc9c-a8c46f3ec356"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"3cc5bd3f-2be6-4942-837e-a7e3c7296686","elementid":"b0be1887-8ec8-4674-bf22-6f721c86af41","modelid":"869b8d58-a057-4b94-bc9c-a8c46f3ec356"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

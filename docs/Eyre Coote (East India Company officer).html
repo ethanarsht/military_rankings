@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="5c7e8ea1-764e-4774-bd58-8f20bbf59687"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"596f3a73-d1cc-4d94-a645-3794621822c5":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"a279ff2e-b286-4126-a165-e080779b4147","type":"HoverTool"}]},"id":"df7e6e94-45f6-46fb-8316-a769192202d6","type":"Toolbar"},{"attributes":{"dimension":1,"plot":{"id":"cb1603eb-5ba9-406c-ae2e-bdcc0f664acf","subtype":"Figure","type":"Plot"},"ticker":{"id":"cebadb45-1b9c-4d8b-9adb-239ed4e6e34c","type":"BasicTicker"}},"id":"e42940c6-8ec3-4479-a4ce-021e1a7d55ad","type":"Grid"},{"attributes":{},"id":"60f6b5dc-0e49-47dd-b739-c9bf7e83b73c","type":"LinearScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9e1dacfd-2531-4261-a990-b013f121b151","type":"Line"},{"attributes":{"data_source":{"id":"aaa637bb-8edf-4056-ba04-61f85460f4c7","type":"ColumnDataSource"},"glyph":{"id":"e4b0092b-b320-41cd-a6c1-354ba53d06d1","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9e1dacfd-2531-4261-a990-b013f121b151","type":"Line"},"selection_glyph":null,"view":{"id":"54682a32-9a20-478f-b160-a55e151532c9","type":"CDSView"}},"id":"8b7db9d9-1ffc-435d-ab3c-e604ec0c4d0a","type":"GlyphRenderer"},{"attributes":{},"id":"68d6ba07-0c8e-4e87-9d5b-ea58f6cc5eeb","type":"CategoricalTickFormatter"},{"attributes":{},"id":"ec89f354-555a-4502-820a-ea15b6ce04d2","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f87b671a-8ff3-4ad5-b386-acc15d44bcd1","type":"VBar"},{"attributes":{"callback":null},"id":"04fab47e-a3fd-4fac-9672-42c7e6404dbd","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"fe93cf1d-cf1a-4c07-a286-50a2840aad49","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"fe93cf1d-cf1a-4c07-a286-50a2840aad49","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bbcbf485-adc2-442e-881c-b300a937fc0a","type":"VBar"},{"attributes":{"formatter":{"id":"b6b42cd2-2aa9-435a-b7be-3f9c1910f369","type":"BasicTickFormatter"},"plot":{"id":"cb1603eb-5ba9-406c-ae2e-bdcc0f664acf","subtype":"Figure","type":"Plot"},"ticker":{"id":"cebadb45-1b9c-4d8b-9adb-239ed4e6e34c","type":"BasicTicker"}},"id":"67d9417e-25b4-49ba-908c-b087bbebffb1","type":"LinearAxis"},{"attributes":{"below":[{"id":"649447b9-b391-4a9c-b9ae-52cabfb49596","type":"CategoricalAxis"}],"left":[{"id":"67d9417e-25b4-49ba-908c-b087bbebffb1","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"649447b9-b391-4a9c-b9ae-52cabfb49596","type":"CategoricalAxis"},{"id":"1cbefd9b-f781-4590-9a72-2186dd504c96","type":"Grid"},{"id":"67d9417e-25b4-49ba-908c-b087bbebffb1","type":"LinearAxis"},{"id":"e42940c6-8ec3-4479-a4ce-021e1a7d55ad","type":"Grid"},{"id":"8b7db9d9-1ffc-435d-ab3c-e604ec0c4d0a","type":"GlyphRenderer"},{"id":"d4199c53-6ee1-4b70-a04f-7b2a5ccb590b","type":"GlyphRenderer"}],"title":{"id":"370c17b7-601a-4030-b922-14500dca100f","type":"Title"},"toolbar":{"id":"df7e6e94-45f6-46fb-8316-a769192202d6","type":"Toolbar"},"x_range":{"id":"bd93246d-2b7c-46b2-a7b1-7c3dc357ca0c","type":"FactorRange"},"x_scale":{"id":"ec89f354-555a-4502-820a-ea15b6ce04d2","type":"CategoricalScale"},"y_range":{"id":"04fab47e-a3fd-4fac-9672-42c7e6404dbd","type":"DataRange1d"},"y_scale":{"id":"60f6b5dc-0e49-47dd-b739-c9bf7e83b73c","type":"LinearScale"}},"id":"cb1603eb-5ba9-406c-ae2e-bdcc0f664acf","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"b6b42cd2-2aa9-435a-b7be-3f9c1910f369","type":"BasicTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Plassey","Battle of Wandiwash"],"cumulative":{"__ndarray__":"mLHo1m+k2j9+dXW38fjtPw==","dtype":"float64","shape":[2]},"general":["Eyre Coote (East India Company officer)","Eyre Coote (East India Company officer)"],"outcome":["V","V"],"value":{"__ndarray__":"mLHo1m+k2j+yHAHMuabgPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAB0m0AAAAAAAICbQA==","dtype":"float64","shape":[2]}}},"id":"aaa637bb-8edf-4056-ba04-61f85460f4c7","type":"ColumnDataSource"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e4b0092b-b320-41cd-a6c1-354ba53d06d1","type":"Line"},{"attributes":{"source":{"id":"aaa637bb-8edf-4056-ba04-61f85460f4c7","type":"ColumnDataSource"}},"id":"54682a32-9a20-478f-b160-a55e151532c9","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"a279ff2e-b286-4126-a165-e080779b4147","type":"HoverTool"},{"attributes":{},"id":"9370662f-e090-4141-98b8-6d433a762d5d","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"aaa637bb-8edf-4056-ba04-61f85460f4c7","type":"ColumnDataSource"},"glyph":{"id":"bbcbf485-adc2-442e-881c-b300a937fc0a","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f87b671a-8ff3-4ad5-b386-acc15d44bcd1","type":"VBar"},"selection_glyph":null,"view":{"id":"2c77a200-581f-4323-a89b-a80039f043a3","type":"CDSView"}},"id":"d4199c53-6ee1-4b70-a04f-7b2a5ccb590b","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Eyre Coote (East India Company officer) (2 - 0 - 0)"},"id":"370c17b7-601a-4030-b922-14500dca100f","type":"Title"},{"attributes":{"source":{"id":"aaa637bb-8edf-4056-ba04-61f85460f4c7","type":"ColumnDataSource"}},"id":"2c77a200-581f-4323-a89b-a80039f043a3","type":"CDSView"},{"attributes":{"formatter":{"id":"68d6ba07-0c8e-4e87-9d5b-ea58f6cc5eeb","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"cb1603eb-5ba9-406c-ae2e-bdcc0f664acf","subtype":"Figure","type":"Plot"},"ticker":{"id":"9370662f-e090-4141-98b8-6d433a762d5d","type":"CategoricalTicker"}},"id":"649447b9-b391-4a9c-b9ae-52cabfb49596","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"cb1603eb-5ba9-406c-ae2e-bdcc0f664acf","subtype":"Figure","type":"Plot"},"ticker":{"id":"9370662f-e090-4141-98b8-6d433a762d5d","type":"CategoricalTicker"}},"id":"1cbefd9b-f781-4590-9a72-2186dd504c96","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"fe93cf1d-cf1a-4c07-a286-50a2840aad49","type":"CategoricalColorMapper"},{"attributes":{},"id":"cebadb45-1b9c-4d8b-9adb-239ed4e6e34c","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["Battle of Plassey","Battle of Wandiwash"]},"id":"bd93246d-2b7c-46b2-a7b1-7c3dc357ca0c","type":"FactorRange"}],"root_ids":["cb1603eb-5ba9-406c-ae2e-bdcc0f664acf"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"596f3a73-d1cc-4d94-a645-3794621822c5","elementid":"5c7e8ea1-764e-4774-bd58-8f20bbf59687","modelid":"cb1603eb-5ba9-406c-ae2e-bdcc0f664acf"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

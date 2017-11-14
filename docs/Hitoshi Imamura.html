@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d0638ef6-0ebc-4bf4-befc-f0992102cd27"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"49619729-7b24-457f-87cf-764b7b1639a5":{"roots":{"references":[{"attributes":{"formatter":{"id":"f1f4335a-9f30-48f3-8355-d49e640a2dcd","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"f80b9b4c-ed26-4423-9dbf-575ab2faacdf","subtype":"Figure","type":"Plot"},"ticker":{"id":"fb91bd2f-f6f0-45c6-a756-438d247df867","type":"CategoricalTicker"}},"id":"5cef37e5-2abe-45db-9c5a-7ce165c6442e","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"887041ce-ae9d-45c3-8b46-ed6e6518cbfe","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"d4bb4e3a-7d57-464a-97b6-0fc91c651d4a","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"98932eae-e8e3-45b3-9b7c-200ed62640aa","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Guadalcanal","Battle of Java","Battle of New Georgia"],"cumulative":{"__ndarray__":"bJ32iId53r9g11E6+T+XP0Q5vpwEVtu/","dtype":"float64","shape":[3]},"general":["Hitoshi Imamura","Hitoshi Imamura","Hitoshi Imamura"],"outcome":["D","V","D"],"value":{"__ndarray__":"bJ32iId53r/iupsch+3fP7pWYzAEyty/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABYnkAAAAAAAFieQAAAAAAAXJ5A","dtype":"float64","shape":[3]}}},"id":"cca4ff1c-62b8-4342-bbcb-09a3fc13a40b","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d4bb4e3a-7d57-464a-97b6-0fc91c651d4a","type":"HoverTool"}]},"id":"8041aeb8-b5eb-47c1-b14e-4f13830fc124","type":"Toolbar"},{"attributes":{"plot":null,"text":"Hitoshi Imamura (1 - 0 - 2)"},"id":"04dcdf1d-df0a-47d5-bda2-78c9703946ce","type":"Title"},{"attributes":{"callback":null},"id":"fc1032cd-45fc-47c4-8c5f-9abf3ce4ed4d","type":"DataRange1d"},{"attributes":{"plot":{"id":"f80b9b4c-ed26-4423-9dbf-575ab2faacdf","subtype":"Figure","type":"Plot"},"ticker":{"id":"fb91bd2f-f6f0-45c6-a756-438d247df867","type":"CategoricalTicker"}},"id":"b1f116f0-c202-4312-aacc-30a0613bb879","type":"Grid"},{"attributes":{},"id":"f1f4335a-9f30-48f3-8355-d49e640a2dcd","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"62d3c3ba-d354-4721-a68d-bb0033befa18","type":"BasicTickFormatter"},"plot":{"id":"f80b9b4c-ed26-4423-9dbf-575ab2faacdf","subtype":"Figure","type":"Plot"},"ticker":{"id":"ddfe3ada-9cc6-4812-abfd-a610198ed7c5","type":"BasicTicker"}},"id":"02978a45-231e-4919-9552-e43e91899058","type":"LinearAxis"},{"attributes":{"dimension":1,"plot":{"id":"f80b9b4c-ed26-4423-9dbf-575ab2faacdf","subtype":"Figure","type":"Plot"},"ticker":{"id":"ddfe3ada-9cc6-4812-abfd-a610198ed7c5","type":"BasicTicker"}},"id":"60ad84f4-a193-4d6e-9ed4-0ca01ee64938","type":"Grid"},{"attributes":{"source":{"id":"cca4ff1c-62b8-4342-bbcb-09a3fc13a40b","type":"ColumnDataSource"}},"id":"7b791940-5c50-4313-904e-9b39f6ab9049","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4f6bda67-f21d-40e5-829f-76505e465e4c","type":"Line"},{"attributes":{},"id":"fb91bd2f-f6f0-45c6-a756-438d247df867","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"96b27fb6-b5cc-425a-9512-5a5a23312107","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"96b27fb6-b5cc-425a-9512-5a5a23312107","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"dfe52ac1-1962-49d9-8d4c-f08633fdc0e1","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Guadalcanal","Battle of Java","Battle of New Georgia"]},"id":"96776852-a79f-46d3-bf75-a7f45c5e7dfd","type":"FactorRange"},{"attributes":{},"id":"63d3ebb8-e684-4c19-94f1-c35774ec9062","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"cca4ff1c-62b8-4342-bbcb-09a3fc13a40b","type":"ColumnDataSource"},"glyph":{"id":"98932eae-e8e3-45b3-9b7c-200ed62640aa","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4f6bda67-f21d-40e5-829f-76505e465e4c","type":"Line"},"selection_glyph":null,"view":{"id":"7b791940-5c50-4313-904e-9b39f6ab9049","type":"CDSView"}},"id":"bd57dbe6-ec43-4f1f-8172-dc4da740b9fb","type":"GlyphRenderer"},{"attributes":{},"id":"ddfe3ada-9cc6-4812-abfd-a610198ed7c5","type":"BasicTicker"},{"attributes":{"below":[{"id":"5cef37e5-2abe-45db-9c5a-7ce165c6442e","type":"CategoricalAxis"}],"left":[{"id":"02978a45-231e-4919-9552-e43e91899058","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"5cef37e5-2abe-45db-9c5a-7ce165c6442e","type":"CategoricalAxis"},{"id":"b1f116f0-c202-4312-aacc-30a0613bb879","type":"Grid"},{"id":"02978a45-231e-4919-9552-e43e91899058","type":"LinearAxis"},{"id":"60ad84f4-a193-4d6e-9ed4-0ca01ee64938","type":"Grid"},{"id":"bd57dbe6-ec43-4f1f-8172-dc4da740b9fb","type":"GlyphRenderer"},{"id":"759ffdb8-74bd-43ca-ae20-050a10c4cd35","type":"GlyphRenderer"}],"title":{"id":"04dcdf1d-df0a-47d5-bda2-78c9703946ce","type":"Title"},"toolbar":{"id":"8041aeb8-b5eb-47c1-b14e-4f13830fc124","type":"Toolbar"},"x_range":{"id":"96776852-a79f-46d3-bf75-a7f45c5e7dfd","type":"FactorRange"},"x_scale":{"id":"63d3ebb8-e684-4c19-94f1-c35774ec9062","type":"CategoricalScale"},"y_range":{"id":"fc1032cd-45fc-47c4-8c5f-9abf3ce4ed4d","type":"DataRange1d"},"y_scale":{"id":"bb6c28f7-803d-4389-b1fe-d63b0ade8dee","type":"LinearScale"}},"id":"f80b9b4c-ed26-4423-9dbf-575ab2faacdf","subtype":"Figure","type":"Plot"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"96b27fb6-b5cc-425a-9512-5a5a23312107","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"cca4ff1c-62b8-4342-bbcb-09a3fc13a40b","type":"ColumnDataSource"}},"id":"40f5acd6-6bec-4633-a214-719918062e02","type":"CDSView"},{"attributes":{},"id":"bb6c28f7-803d-4389-b1fe-d63b0ade8dee","type":"LinearScale"},{"attributes":{"data_source":{"id":"cca4ff1c-62b8-4342-bbcb-09a3fc13a40b","type":"ColumnDataSource"},"glyph":{"id":"dfe52ac1-1962-49d9-8d4c-f08633fdc0e1","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"887041ce-ae9d-45c3-8b46-ed6e6518cbfe","type":"VBar"},"selection_glyph":null,"view":{"id":"40f5acd6-6bec-4633-a214-719918062e02","type":"CDSView"}},"id":"759ffdb8-74bd-43ca-ae20-050a10c4cd35","type":"GlyphRenderer"},{"attributes":{},"id":"62d3c3ba-d354-4721-a68d-bb0033befa18","type":"BasicTickFormatter"}],"root_ids":["f80b9b4c-ed26-4423-9dbf-575ab2faacdf"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"49619729-7b24-457f-87cf-764b7b1639a5","elementid":"d0638ef6-0ebc-4bf4-befc-f0992102cd27","modelid":"f80b9b4c-ed26-4423-9dbf-575ab2faacdf"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

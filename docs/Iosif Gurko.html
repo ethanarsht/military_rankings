@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d27ff199-9ce3-4f59-a17a-77515c363e0b"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"7be1b239-4dd1-48e2-8c0a-036df91bf2b7":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"209daa9b-4b80-4dc6-91e8-49247da6a327","type":"Line"},{"attributes":{"data_source":{"id":"a8fef3e0-6b9d-4031-911e-d2009380c4a1","type":"ColumnDataSource"},"glyph":{"id":"70c7f0c2-5f11-4eb2-9d44-f3f8ca8b2d49","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bba8aa21-268d-40f1-b456-f2654b386729","type":"VBar"},"selection_glyph":null,"view":{"id":"e9399cdc-edc3-48f5-a022-ea7388a67a60","type":"CDSView"}},"id":"272c5e38-42bf-479c-94c1-d938f3404159","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Gorni-Dubnik","First Battle of Shipka Pass","Fourth Battle of Shipka Pass","Second Battle of Shipka Pass","Third Battle of Shipka Pass","Battle of Philippopolis (1878)"],"cumulative":{"__ndarray__":"8NlBp1vB2z+zc+GdwcLtP/pJM8svzfc/De26Y39cAEAdNdzhZtIEQJXsVQsomAhA","dtype":"float64","shape":[6]},"general":["Iosif Gurko","Iosif Gurko","Iosif Gurko","Iosif Gurko","Iosif Gurko","Iosif Gurko"],"outcome":["V","V","V","V","V","V"],"value":{"__ndarray__":"8NlBp1vB2z92DYGUJ8TfP0Aghfid1+E/QCCF+J3X4T9AIIX4ndfhP8K7zUsJLt4/","dtype":"float64","shape":[6]},"year":{"__ndarray__":"AAAAAABUnUAAAAAAAFSdQAAAAAAAVJ1AAAAAAABUnUAAAAAAAFSdQAAAAAAAWJ1A","dtype":"float64","shape":[6]}}},"id":"a8fef3e0-6b9d-4031-911e-d2009380c4a1","type":"ColumnDataSource"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f552d4a2-bc4d-41f1-bbb1-2a3d69c3baee","type":"HoverTool"},{"attributes":{"source":{"id":"a8fef3e0-6b9d-4031-911e-d2009380c4a1","type":"ColumnDataSource"}},"id":"137a46f9-0838-4700-850a-8353fdfc2c6d","type":"CDSView"},{"attributes":{"callback":null},"id":"22502965-bcee-4852-8c10-20d143ad6309","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bba8aa21-268d-40f1-b456-f2654b386729","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"d5fc0be4-01b1-4906-b96f-94c5b76c5213","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"d5fc0be4-01b1-4906-b96f-94c5b76c5213","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"70c7f0c2-5f11-4eb2-9d44-f3f8ca8b2d49","type":"VBar"},{"attributes":{},"id":"a6a44943-28ad-4493-b4bc-675f69774981","type":"LinearScale"},{"attributes":{},"id":"0e58cc77-6ce7-4516-b1ff-0e49b0a93e25","type":"CategoricalTickFormatter"},{"attributes":{},"id":"97349c7a-24c3-4590-9fe9-9af4a116ac47","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Battle of Gorni-Dubnik","First Battle of Shipka Pass","Fourth Battle of Shipka Pass","Second Battle of Shipka Pass","Third Battle of Shipka Pass","Battle of Philippopolis (1878)"]},"id":"bce0cee3-e435-4764-a743-b1760053d0ac","type":"FactorRange"},{"attributes":{"source":{"id":"a8fef3e0-6b9d-4031-911e-d2009380c4a1","type":"ColumnDataSource"}},"id":"e9399cdc-edc3-48f5-a022-ea7388a67a60","type":"CDSView"},{"attributes":{},"id":"ee7dfafa-2bae-4da2-9cef-dffe5bf37f86","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f552d4a2-bc4d-41f1-bbb1-2a3d69c3baee","type":"HoverTool"}]},"id":"1c16bb74-ac16-47b7-ad61-c98d19fb5f9f","type":"Toolbar"},{"attributes":{"formatter":{"id":"0e58cc77-6ce7-4516-b1ff-0e49b0a93e25","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"dc37fe02-2aa5-4720-abdc-88d896902c53","subtype":"Figure","type":"Plot"},"ticker":{"id":"97349c7a-24c3-4590-9fe9-9af4a116ac47","type":"CategoricalTicker"}},"id":"60323ed0-4194-4975-a6d9-60db0c4b8930","type":"CategoricalAxis"},{"attributes":{"formatter":{"id":"8ccc0888-1d5c-49a1-a420-33e86b6116e4","type":"BasicTickFormatter"},"plot":{"id":"dc37fe02-2aa5-4720-abdc-88d896902c53","subtype":"Figure","type":"Plot"},"ticker":{"id":"ee7dfafa-2bae-4da2-9cef-dffe5bf37f86","type":"BasicTicker"}},"id":"41aafd9b-db43-46bd-8d22-cbf945f8f32a","type":"LinearAxis"},{"attributes":{"data_source":{"id":"a8fef3e0-6b9d-4031-911e-d2009380c4a1","type":"ColumnDataSource"},"glyph":{"id":"209daa9b-4b80-4dc6-91e8-49247da6a327","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"de2b34ff-8950-4845-bd2d-4345bd0e134d","type":"Line"},"selection_glyph":null,"view":{"id":"137a46f9-0838-4700-850a-8353fdfc2c6d","type":"CDSView"}},"id":"e07dfe09-1a9e-45eb-9d58-18f210eec4ff","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"dc37fe02-2aa5-4720-abdc-88d896902c53","subtype":"Figure","type":"Plot"},"ticker":{"id":"ee7dfafa-2bae-4da2-9cef-dffe5bf37f86","type":"BasicTicker"}},"id":"f61aad4b-425d-421c-993a-ff4fed21b1a5","type":"Grid"},{"attributes":{"plot":null,"text":"Iosif Gurko (6 - 0 - 0)"},"id":"7f2a2ba9-8a07-46ef-b30e-75073aee6dc9","type":"Title"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"de2b34ff-8950-4845-bd2d-4345bd0e134d","type":"Line"},{"attributes":{"plot":{"id":"dc37fe02-2aa5-4720-abdc-88d896902c53","subtype":"Figure","type":"Plot"},"ticker":{"id":"97349c7a-24c3-4590-9fe9-9af4a116ac47","type":"CategoricalTicker"}},"id":"6964c168-d5b1-425e-986f-33a4984b82cf","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"d5fc0be4-01b1-4906-b96f-94c5b76c5213","type":"CategoricalColorMapper"},{"attributes":{},"id":"8ccc0888-1d5c-49a1-a420-33e86b6116e4","type":"BasicTickFormatter"},{"attributes":{},"id":"f636bb3e-1044-44d3-87e0-65a15bea3e66","type":"CategoricalScale"},{"attributes":{"below":[{"id":"60323ed0-4194-4975-a6d9-60db0c4b8930","type":"CategoricalAxis"}],"left":[{"id":"41aafd9b-db43-46bd-8d22-cbf945f8f32a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"60323ed0-4194-4975-a6d9-60db0c4b8930","type":"CategoricalAxis"},{"id":"6964c168-d5b1-425e-986f-33a4984b82cf","type":"Grid"},{"id":"41aafd9b-db43-46bd-8d22-cbf945f8f32a","type":"LinearAxis"},{"id":"f61aad4b-425d-421c-993a-ff4fed21b1a5","type":"Grid"},{"id":"e07dfe09-1a9e-45eb-9d58-18f210eec4ff","type":"GlyphRenderer"},{"id":"272c5e38-42bf-479c-94c1-d938f3404159","type":"GlyphRenderer"}],"title":{"id":"7f2a2ba9-8a07-46ef-b30e-75073aee6dc9","type":"Title"},"toolbar":{"id":"1c16bb74-ac16-47b7-ad61-c98d19fb5f9f","type":"Toolbar"},"x_range":{"id":"bce0cee3-e435-4764-a743-b1760053d0ac","type":"FactorRange"},"x_scale":{"id":"f636bb3e-1044-44d3-87e0-65a15bea3e66","type":"CategoricalScale"},"y_range":{"id":"22502965-bcee-4852-8c10-20d143ad6309","type":"DataRange1d"},"y_scale":{"id":"a6a44943-28ad-4493-b4bc-675f69774981","type":"LinearScale"}},"id":"dc37fe02-2aa5-4720-abdc-88d896902c53","subtype":"Figure","type":"Plot"}],"root_ids":["dc37fe02-2aa5-4720-abdc-88d896902c53"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"7be1b239-4dd1-48e2-8c0a-036df91bf2b7","elementid":"d27ff199-9ce3-4f59-a17a-77515c363e0b","modelid":"dc37fe02-2aa5-4720-abdc-88d896902c53"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

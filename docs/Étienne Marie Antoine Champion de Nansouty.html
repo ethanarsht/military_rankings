@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d4e37b5e-4890-4aab-a583-dc9622620b65"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"34417fa5-bf98-40a4-bd6e-fdf899f23242":{"roots":{"references":[{"attributes":{"formatter":{"id":"5028646d-2f8a-43fa-818b-e7566e1dae36","type":"BasicTickFormatter"},"plot":{"id":"0153c1ff-6af2-4875-93d7-aabefc4a5222","subtype":"Figure","type":"Plot"},"ticker":{"id":"21dbc086-451e-455b-b235-1e450d59e6ac","type":"BasicTicker"}},"id":"a73776ba-c4c5-41f4-9987-817bb2730468","type":"LinearAxis"},{"attributes":{},"id":"5028646d-2f8a-43fa-818b-e7566e1dae36","type":"BasicTickFormatter"},{"attributes":{},"id":"21dbc086-451e-455b-b235-1e450d59e6ac","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"0c4fd5a2-26a9-44df-825e-e54101ca5e08","type":"HoverTool"},{"attributes":{"data_source":{"id":"34033be8-bd74-434e-b01b-5692fc82c01b","type":"ColumnDataSource"},"glyph":{"id":"68638f82-a60e-43cf-862d-a398be7b64e1","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"47891f2b-492a-4ce2-a00f-f440abfd7871","type":"Line"},"selection_glyph":null,"view":{"id":"12538238-3a67-40e5-8436-db407d2b032e","type":"CDSView"}},"id":"1bc2ce07-e12c-4929-8d3e-cf3e036a2691","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Ostrovno","Battle of Craonne"],"cumulative":{"__ndarray__":"AAAAAAAA4D9QUli6tGLwPw==","dtype":"float64","shape":[2]},"general":["\u00c9tienne Marie Antoine Champion de Nansouty","\u00c9tienne Marie Antoine Champion de Nansouty"],"outcome":["V","V"],"value":{"__ndarray__":"AAAAAAAA4D+gpLB0acXgPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABQnEAAAAAAAFicQA==","dtype":"float64","shape":[2]}}},"id":"34033be8-bd74-434e-b01b-5692fc82c01b","type":"ColumnDataSource"},{"attributes":{},"id":"5803b3df-e8f3-4efd-9ebf-821b58a33580","type":"CategoricalScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"68638f82-a60e-43cf-862d-a398be7b64e1","type":"Line"},{"attributes":{"source":{"id":"34033be8-bd74-434e-b01b-5692fc82c01b","type":"ColumnDataSource"}},"id":"12538238-3a67-40e5-8436-db407d2b032e","type":"CDSView"},{"attributes":{"data_source":{"id":"34033be8-bd74-434e-b01b-5692fc82c01b","type":"ColumnDataSource"},"glyph":{"id":"fecf1695-c765-4d32-ba54-171982c9c846","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f858a0ef-8634-4e4a-8177-fcf81ba32719","type":"VBar"},"selection_glyph":null,"view":{"id":"c3a4e965-89bf-41b7-b96a-504bd55f0cf3","type":"CDSView"}},"id":"0003d735-893f-449a-b164-8df459dc4e8d","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"47891f2b-492a-4ce2-a00f-f440abfd7871","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"0c4fd5a2-26a9-44df-825e-e54101ca5e08","type":"HoverTool"}]},"id":"0c1db5bd-1bcb-44e1-9612-91d8db7faf46","type":"Toolbar"},{"attributes":{"plot":{"id":"0153c1ff-6af2-4875-93d7-aabefc4a5222","subtype":"Figure","type":"Plot"},"ticker":{"id":"f4d1b023-fa20-4962-a73e-6de6dc91bd61","type":"CategoricalTicker"}},"id":"243afb2e-0e74-41ea-8970-4c0ac4bd2e57","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f858a0ef-8634-4e4a-8177-fcf81ba32719","type":"VBar"},{"attributes":{"formatter":{"id":"878bd1dd-6f06-4412-a8b5-72a1e85e08be","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"0153c1ff-6af2-4875-93d7-aabefc4a5222","subtype":"Figure","type":"Plot"},"ticker":{"id":"f4d1b023-fa20-4962-a73e-6de6dc91bd61","type":"CategoricalTicker"}},"id":"618b052b-92bc-46a3-96fa-b2ab8daf8eaa","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"d75ca60b-9ae7-460b-9524-359e4007115c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"d75ca60b-9ae7-460b-9524-359e4007115c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"fecf1695-c765-4d32-ba54-171982c9c846","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"d75ca60b-9ae7-460b-9524-359e4007115c","type":"CategoricalColorMapper"},{"attributes":{},"id":"f4d1b023-fa20-4962-a73e-6de6dc91bd61","type":"CategoricalTicker"},{"attributes":{"plot":null,"text":"\u00c9tienne Marie Antoine Champion de Nansouty (2 - 0 - 0)"},"id":"0b1db625-4fef-42bf-93ed-421e5e377307","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"0153c1ff-6af2-4875-93d7-aabefc4a5222","subtype":"Figure","type":"Plot"},"ticker":{"id":"21dbc086-451e-455b-b235-1e450d59e6ac","type":"BasicTicker"}},"id":"7c7ba7f0-0d3d-4cc9-8c28-2ea304445c47","type":"Grid"},{"attributes":{"callback":null},"id":"5318c2a4-8d06-41e9-9f64-60ae359c9a8a","type":"DataRange1d"},{"attributes":{"below":[{"id":"618b052b-92bc-46a3-96fa-b2ab8daf8eaa","type":"CategoricalAxis"}],"left":[{"id":"a73776ba-c4c5-41f4-9987-817bb2730468","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"618b052b-92bc-46a3-96fa-b2ab8daf8eaa","type":"CategoricalAxis"},{"id":"243afb2e-0e74-41ea-8970-4c0ac4bd2e57","type":"Grid"},{"id":"a73776ba-c4c5-41f4-9987-817bb2730468","type":"LinearAxis"},{"id":"7c7ba7f0-0d3d-4cc9-8c28-2ea304445c47","type":"Grid"},{"id":"1bc2ce07-e12c-4929-8d3e-cf3e036a2691","type":"GlyphRenderer"},{"id":"0003d735-893f-449a-b164-8df459dc4e8d","type":"GlyphRenderer"}],"title":{"id":"0b1db625-4fef-42bf-93ed-421e5e377307","type":"Title"},"toolbar":{"id":"0c1db5bd-1bcb-44e1-9612-91d8db7faf46","type":"Toolbar"},"x_range":{"id":"78a059eb-4668-426c-920b-1e26e47fffd2","type":"FactorRange"},"x_scale":{"id":"5803b3df-e8f3-4efd-9ebf-821b58a33580","type":"CategoricalScale"},"y_range":{"id":"5318c2a4-8d06-41e9-9f64-60ae359c9a8a","type":"DataRange1d"},"y_scale":{"id":"9dbb2da9-8c55-4886-9ec5-d0983a61eded","type":"LinearScale"}},"id":"0153c1ff-6af2-4875-93d7-aabefc4a5222","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Ostrovno","Battle of Craonne"]},"id":"78a059eb-4668-426c-920b-1e26e47fffd2","type":"FactorRange"},{"attributes":{"source":{"id":"34033be8-bd74-434e-b01b-5692fc82c01b","type":"ColumnDataSource"}},"id":"c3a4e965-89bf-41b7-b96a-504bd55f0cf3","type":"CDSView"},{"attributes":{},"id":"878bd1dd-6f06-4412-a8b5-72a1e85e08be","type":"CategoricalTickFormatter"},{"attributes":{},"id":"9dbb2da9-8c55-4886-9ec5-d0983a61eded","type":"LinearScale"}],"root_ids":["0153c1ff-6af2-4875-93d7-aabefc4a5222"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"34417fa5-bf98-40a4-bd6e-fdf899f23242","elementid":"d4e37b5e-4890-4aab-a583-dc9622620b65","modelid":"0153c1ff-6af2-4875-93d7-aabefc4a5222"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

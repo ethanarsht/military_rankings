@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="cced134a-4cd0-440a-bf45-3ec672c253c0"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"dbaf821a-88ce-4448-bee3-83ca1fc53b83":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"aec2ea92-e762-4412-8eaf-ed82bd70adde","type":"Line"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9e032216-c3e2-42d7-ab72-fa00b77bcdc1","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"2fd73e6a-3c55-4253-b8d4-4298bcc36084","type":"HoverTool"}]},"id":"6303229d-4cbb-4ae1-a571-11c719071a8e","type":"Toolbar"},{"attributes":{"data_source":{"id":"2448c3b4-7bbb-4a68-8b9c-0e387a83f5d9","type":"ColumnDataSource"},"glyph":{"id":"af11b071-13a8-4451-95ad-f3ddc2671e6f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3a106118-75c5-481b-ae6d-a966adf93ba6","type":"VBar"},"selection_glyph":null,"view":{"id":"33704c91-b821-4995-b6cc-75368eb1d657","type":"CDSView"}},"id":"db21dac3-562a-4cba-b274-d2d7b4b6687c","type":"GlyphRenderer"},{"attributes":{},"id":"01acd913-c497-4690-81d3-c2ed6bc89198","type":"BasicTicker"},{"attributes":{},"id":"67a482c8-f0a2-4f65-8c68-aae44c2d9dd8","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"e39ea5b0-d351-4ac8-8871-1328245330db","subtype":"Figure","type":"Plot"},"ticker":{"id":"01acd913-c497-4690-81d3-c2ed6bc89198","type":"BasicTicker"}},"id":"78c6fc76-f153-4a38-8bbd-94f661be24e1","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of King's Mountain"]},"id":"72e73c73-6ea2-479b-a670-79ab2678613f","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"2fd73e6a-3c55-4253-b8d4-4298bcc36084","type":"HoverTool"},{"attributes":{},"id":"0480763e-9d26-4dac-8e05-04f5ac82193a","type":"LinearScale"},{"attributes":{},"id":"bde28ad1-12b1-401a-a269-38632c4ae5b2","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"44cc6d29-0c75-4fd0-be8e-ead20f62def8","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"44cc6d29-0c75-4fd0-be8e-ead20f62def8","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"af11b071-13a8-4451-95ad-f3ddc2671e6f","type":"VBar"},{"attributes":{},"id":"ea7b38ec-75ce-45a4-a43b-047afc81fe4f","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"3a106118-75c5-481b-ae6d-a966adf93ba6","type":"VBar"},{"attributes":{"source":{"id":"2448c3b4-7bbb-4a68-8b9c-0e387a83f5d9","type":"ColumnDataSource"}},"id":"e1be94d9-b2bf-47aa-ae04-d4e0775cff55","type":"CDSView"},{"attributes":{"source":{"id":"2448c3b4-7bbb-4a68-8b9c-0e387a83f5d9","type":"ColumnDataSource"}},"id":"33704c91-b821-4995-b6cc-75368eb1d657","type":"CDSView"},{"attributes":{},"id":"2c14874e-d736-4a9a-ab57-a26ed067e1bf","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"3503d13c-6cf2-4171-b833-591a0eda58e7","type":"CategoricalAxis"}],"left":[{"id":"643a2a2d-74a4-495f-aba6-1d86e904ac14","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"3503d13c-6cf2-4171-b833-591a0eda58e7","type":"CategoricalAxis"},{"id":"3b137394-402b-433d-a97e-d74d8a485ae9","type":"Grid"},{"id":"643a2a2d-74a4-495f-aba6-1d86e904ac14","type":"LinearAxis"},{"id":"78c6fc76-f153-4a38-8bbd-94f661be24e1","type":"Grid"},{"id":"e7c85fbb-5ac4-4c17-925a-6bf5fa61e580","type":"GlyphRenderer"},{"id":"db21dac3-562a-4cba-b274-d2d7b4b6687c","type":"GlyphRenderer"}],"title":{"id":"0f88e4c9-cc0d-4112-a98f-f9e127fad73d","type":"Title"},"toolbar":{"id":"6303229d-4cbb-4ae1-a571-11c719071a8e","type":"Toolbar"},"x_range":{"id":"72e73c73-6ea2-479b-a670-79ab2678613f","type":"FactorRange"},"x_scale":{"id":"ea7b38ec-75ce-45a4-a43b-047afc81fe4f","type":"CategoricalScale"},"y_range":{"id":"ee14de12-2f27-406e-9fb1-63075bcae9d7","type":"DataRange1d"},"y_scale":{"id":"0480763e-9d26-4dac-8e05-04f5ac82193a","type":"LinearScale"}},"id":"e39ea5b0-d351-4ac8-8871-1328245330db","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"2c14874e-d736-4a9a-ab57-a26ed067e1bf","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"e39ea5b0-d351-4ac8-8871-1328245330db","subtype":"Figure","type":"Plot"},"ticker":{"id":"67a482c8-f0a2-4f65-8c68-aae44c2d9dd8","type":"CategoricalTicker"}},"id":"3503d13c-6cf2-4171-b833-591a0eda58e7","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"2448c3b4-7bbb-4a68-8b9c-0e387a83f5d9","type":"ColumnDataSource"},"glyph":{"id":"aec2ea92-e762-4412-8eaf-ed82bd70adde","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9e032216-c3e2-42d7-ab72-fa00b77bcdc1","type":"Line"},"selection_glyph":null,"view":{"id":"e1be94d9-b2bf-47aa-ae04-d4e0775cff55","type":"CDSView"}},"id":"e7c85fbb-5ac4-4c17-925a-6bf5fa61e580","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"bde28ad1-12b1-401a-a269-38632c4ae5b2","type":"BasicTickFormatter"},"plot":{"id":"e39ea5b0-d351-4ac8-8871-1328245330db","subtype":"Figure","type":"Plot"},"ticker":{"id":"01acd913-c497-4690-81d3-c2ed6bc89198","type":"BasicTicker"}},"id":"643a2a2d-74a4-495f-aba6-1d86e904ac14","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Patrick Ferguson (0 - 0 - 1)"},"id":"0f88e4c9-cc0d-4112-a98f-f9e127fad73d","type":"Title"},{"attributes":{"plot":{"id":"e39ea5b0-d351-4ac8-8871-1328245330db","subtype":"Figure","type":"Plot"},"ticker":{"id":"67a482c8-f0a2-4f65-8c68-aae44c2d9dd8","type":"CategoricalTicker"}},"id":"3b137394-402b-433d-a97e-d74d8a485ae9","type":"Grid"},{"attributes":{"callback":null},"id":"ee14de12-2f27-406e-9fb1-63075bcae9d7","type":"DataRange1d"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"44cc6d29-0c75-4fd0-be8e-ead20f62def8","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of King's Mountain"],"cumulative":{"__ndarray__":"6gB1iyBi4L8=","dtype":"float64","shape":[1]},"general":["Patrick Ferguson"],"outcome":["D"],"value":{"__ndarray__":"6gB1iyBi4L8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADQm0A=","dtype":"float64","shape":[1]}}},"id":"2448c3b4-7bbb-4a68-8b9c-0e387a83f5d9","type":"ColumnDataSource"}],"root_ids":["e39ea5b0-d351-4ac8-8871-1328245330db"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"dbaf821a-88ce-4448-bee3-83ca1fc53b83","elementid":"cced134a-4cd0-440a-bf45-3ec672c253c0","modelid":"e39ea5b0-d351-4ac8-8871-1328245330db"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

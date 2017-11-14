@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="6f8b0743-7511-4b5a-98bb-6063345ff3de"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"f54953a4-c9cd-4a41-bd50-d9237847a3f3":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"31e1a0c4-caee-4001-bd5b-c94441dd1ab4","type":"Line"},{"attributes":{"formatter":{"id":"5e3084f1-b798-43a5-81e8-40e64a8c0cf2","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"eaee6490-4021-445f-b286-ae23dffd8af9","subtype":"Figure","type":"Plot"},"ticker":{"id":"bc24ebf1-631c-4b6c-b797-e1bbc4378b6e","type":"CategoricalTicker"}},"id":"80364da1-d06d-4b09-9830-ca0278cf5064","type":"CategoricalAxis"},{"attributes":{"source":{"id":"eedd6b1f-fed7-4f56-9c40-43df871fc8ce","type":"ColumnDataSource"}},"id":"c70f006e-0965-4a42-bc8d-dc9dff85a2ba","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Cumberland Church"],"cumulative":{"__ndarray__":"gDuvqk8M4L8=","dtype":"float64","shape":[1]},"general":["John Irvin Gregg"],"outcome":["D"],"value":{"__ndarray__":"gDuvqk8M4L8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAknUA=","dtype":"float64","shape":[1]}}},"id":"eedd6b1f-fed7-4f56-9c40-43df871fc8ce","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"eaee6490-4021-445f-b286-ae23dffd8af9","subtype":"Figure","type":"Plot"},"ticker":{"id":"bc24ebf1-631c-4b6c-b797-e1bbc4378b6e","type":"CategoricalTicker"}},"id":"e413c022-e075-4180-b718-fd7d9f54c7c0","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"ae7891c6-0265-4b5a-ab5b-0aacc1a25e21","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2096afba-ebf3-4981-b7b6-034ccc766408","type":"VBar"},{"attributes":{"callback":null},"id":"67c8c5f6-1ec1-4601-9293-ee1e069bef3b","type":"DataRange1d"},{"attributes":{"data_source":{"id":"eedd6b1f-fed7-4f56-9c40-43df871fc8ce","type":"ColumnDataSource"},"glyph":{"id":"5dfcb23a-8200-4b47-8a29-0c5fec32fc51","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2096afba-ebf3-4981-b7b6-034ccc766408","type":"VBar"},"selection_glyph":null,"view":{"id":"d4f6fe91-a325-45e3-8ff0-f93839bfbdc1","type":"CDSView"}},"id":"bf43d012-28bc-4aff-879e-3c1762f67cdd","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"590cb2a8-ccf7-48d4-9eea-cb39ccb9d0d3","type":"HoverTool"}]},"id":"9f833a73-39f8-41a6-b46e-d311b127d99b","type":"Toolbar"},{"attributes":{},"id":"bc24ebf1-631c-4b6c-b797-e1bbc4378b6e","type":"CategoricalTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"590cb2a8-ccf7-48d4-9eea-cb39ccb9d0d3","type":"HoverTool"},{"attributes":{"source":{"id":"eedd6b1f-fed7-4f56-9c40-43df871fc8ce","type":"ColumnDataSource"}},"id":"d4f6fe91-a325-45e3-8ff0-f93839bfbdc1","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Cumberland Church"]},"id":"98a54afe-eef7-48e2-92dd-b70ecbac8975","type":"FactorRange"},{"attributes":{},"id":"97b5a909-4c89-4b90-85cb-910628dd44d9","type":"BasicTicker"},{"attributes":{"formatter":{"id":"77dad4b6-5592-4e76-8935-b2b0dcb053ae","type":"BasicTickFormatter"},"plot":{"id":"eaee6490-4021-445f-b286-ae23dffd8af9","subtype":"Figure","type":"Plot"},"ticker":{"id":"97b5a909-4c89-4b90-85cb-910628dd44d9","type":"BasicTicker"}},"id":"5b9e6cb5-89b2-4469-ac9a-be87806a24c0","type":"LinearAxis"},{"attributes":{"plot":null,"text":"John Irvin Gregg (0 - 0 - 1)"},"id":"81422c77-1161-4cca-955d-95167db306b6","type":"Title"},{"attributes":{},"id":"5e3084f1-b798-43a5-81e8-40e64a8c0cf2","type":"CategoricalTickFormatter"},{"attributes":{},"id":"77dad4b6-5592-4e76-8935-b2b0dcb053ae","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"eedd6b1f-fed7-4f56-9c40-43df871fc8ce","type":"ColumnDataSource"},"glyph":{"id":"a9a89b81-fb8f-40ad-a151-9a30d6ac927e","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"31e1a0c4-caee-4001-bd5b-c94441dd1ab4","type":"Line"},"selection_glyph":null,"view":{"id":"c70f006e-0965-4a42-bc8d-dc9dff85a2ba","type":"CDSView"}},"id":"752ed874-8324-45d4-bfab-979eb12a3704","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"ae7891c6-0265-4b5a-ab5b-0aacc1a25e21","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"ae7891c6-0265-4b5a-ab5b-0aacc1a25e21","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"5dfcb23a-8200-4b47-8a29-0c5fec32fc51","type":"VBar"},{"attributes":{},"id":"49ba94e6-58cf-4b47-94d9-60ff05701229","type":"LinearScale"},{"attributes":{"below":[{"id":"80364da1-d06d-4b09-9830-ca0278cf5064","type":"CategoricalAxis"}],"left":[{"id":"5b9e6cb5-89b2-4469-ac9a-be87806a24c0","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"80364da1-d06d-4b09-9830-ca0278cf5064","type":"CategoricalAxis"},{"id":"e413c022-e075-4180-b718-fd7d9f54c7c0","type":"Grid"},{"id":"5b9e6cb5-89b2-4469-ac9a-be87806a24c0","type":"LinearAxis"},{"id":"45fde702-e208-408f-8718-1ca064a5180b","type":"Grid"},{"id":"752ed874-8324-45d4-bfab-979eb12a3704","type":"GlyphRenderer"},{"id":"bf43d012-28bc-4aff-879e-3c1762f67cdd","type":"GlyphRenderer"}],"title":{"id":"81422c77-1161-4cca-955d-95167db306b6","type":"Title"},"toolbar":{"id":"9f833a73-39f8-41a6-b46e-d311b127d99b","type":"Toolbar"},"x_range":{"id":"98a54afe-eef7-48e2-92dd-b70ecbac8975","type":"FactorRange"},"x_scale":{"id":"575c579e-42da-47d1-9ff4-29d09e514e36","type":"CategoricalScale"},"y_range":{"id":"67c8c5f6-1ec1-4601-9293-ee1e069bef3b","type":"DataRange1d"},"y_scale":{"id":"49ba94e6-58cf-4b47-94d9-60ff05701229","type":"LinearScale"}},"id":"eaee6490-4021-445f-b286-ae23dffd8af9","subtype":"Figure","type":"Plot"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a9a89b81-fb8f-40ad-a151-9a30d6ac927e","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"eaee6490-4021-445f-b286-ae23dffd8af9","subtype":"Figure","type":"Plot"},"ticker":{"id":"97b5a909-4c89-4b90-85cb-910628dd44d9","type":"BasicTicker"}},"id":"45fde702-e208-408f-8718-1ca064a5180b","type":"Grid"},{"attributes":{},"id":"575c579e-42da-47d1-9ff4-29d09e514e36","type":"CategoricalScale"}],"root_ids":["eaee6490-4021-445f-b286-ae23dffd8af9"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"f54953a4-c9cd-4a41-bd50-d9237847a3f3","elementid":"6f8b0743-7511-4b5a-98bb-6063345ff3de","modelid":"eaee6490-4021-445f-b286-ae23dffd8af9"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

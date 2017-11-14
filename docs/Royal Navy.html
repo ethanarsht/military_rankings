@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="5c128d3e-782c-4ca3-a012-f82e63fc117e"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"5bcc01ea-cb2f-421c-b0c3-6756ceaeabc3":{"roots":{"references":[{"attributes":{"source":{"id":"4963c9ce-073c-4df3-b6e7-64496e0661bd","type":"ColumnDataSource"}},"id":"440e666d-f233-49e4-a8f9-bde18f20ab61","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Navarino","Battle of Savo Island"],"cumulative":{"__ndarray__":"jQg7Lj1l4j/godUGUYWYPw==","dtype":"float64","shape":[2]},"general":["Royal Navy","Royal Navy"],"outcome":["V","D"],"value":{"__ndarray__":"jQg7Lj1l4j9+WwSmEqHhvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAACMnEAAAAAAAFieQA==","dtype":"float64","shape":[2]}}},"id":"4963c9ce-073c-4df3-b6e7-64496e0661bd","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"4963c9ce-073c-4df3-b6e7-64496e0661bd","type":"ColumnDataSource"},"glyph":{"id":"431d1191-83e3-46f9-b9bd-fb1d5e24dadf","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4b3a80b2-308e-418b-8e05-96ac0bd88c57","type":"Line"},"selection_glyph":null,"view":{"id":"440e666d-f233-49e4-a8f9-bde18f20ab61","type":"CDSView"}},"id":"ecaf8b90-b99f-4a43-8003-6ee9f66558a0","type":"GlyphRenderer"},{"attributes":{},"id":"3a02ea66-484c-4321-befe-52b257f12d06","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"85a22499-c8a6-43c7-a08a-489591f14014","type":"HoverTool"},{"attributes":{"plot":null,"text":"Royal Navy (1 - 0 - 1)"},"id":"2e3b6d77-b902-4ff0-9af7-ba30e1b80863","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"7ca18bc9-d003-4200-bbb4-17824521338d","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bc823193-ddce-408f-8a7a-7ccbe73ca269","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Navarino","Battle of Savo Island"]},"id":"103e4f93-7c92-4178-ae0d-1de4c89e9c72","type":"FactorRange"},{"attributes":{"formatter":{"id":"c6304a49-e002-47c0-8047-b3be69cb03a3","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"8f3f49f9-eb22-48a9-ae8d-668f50a1107c","subtype":"Figure","type":"Plot"},"ticker":{"id":"3d2b5651-2b71-472c-9e19-3879a1b33fdf","type":"CategoricalTicker"}},"id":"a409e54f-6284-4420-8373-0b14fdd8e68f","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"8f3f49f9-eb22-48a9-ae8d-668f50a1107c","subtype":"Figure","type":"Plot"},"ticker":{"id":"3d2b5651-2b71-472c-9e19-3879a1b33fdf","type":"CategoricalTicker"}},"id":"85e12f18-aa26-4200-bbac-69cbe1b8af00","type":"Grid"},{"attributes":{"source":{"id":"4963c9ce-073c-4df3-b6e7-64496e0661bd","type":"ColumnDataSource"}},"id":"1276f74b-4f3f-4b2f-aa5a-532d0b566546","type":"CDSView"},{"attributes":{"callback":null},"id":"f9c1e3de-5d2a-4b03-bced-abbbe9850c69","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"8f3f49f9-eb22-48a9-ae8d-668f50a1107c","subtype":"Figure","type":"Plot"},"ticker":{"id":"80030bb4-7a28-4cf5-971f-596642a80148","type":"BasicTicker"}},"id":"59cd7f1b-bded-4549-83a9-7f06bee8a642","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"85a22499-c8a6-43c7-a08a-489591f14014","type":"HoverTool"}]},"id":"5f4793a9-7a8e-4c41-b1e1-cc21dc28539a","type":"Toolbar"},{"attributes":{"formatter":{"id":"3a02ea66-484c-4321-befe-52b257f12d06","type":"BasicTickFormatter"},"plot":{"id":"8f3f49f9-eb22-48a9-ae8d-668f50a1107c","subtype":"Figure","type":"Plot"},"ticker":{"id":"80030bb4-7a28-4cf5-971f-596642a80148","type":"BasicTicker"}},"id":"73537694-3dfd-484c-a34f-6238dc1b83c7","type":"LinearAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4b3a80b2-308e-418b-8e05-96ac0bd88c57","type":"Line"},{"attributes":{},"id":"b5e8d525-fcd8-4887-9fe2-023d1177271e","type":"CategoricalScale"},{"attributes":{},"id":"c6304a49-e002-47c0-8047-b3be69cb03a3","type":"CategoricalTickFormatter"},{"attributes":{},"id":"80030bb4-7a28-4cf5-971f-596642a80148","type":"BasicTicker"},{"attributes":{},"id":"58e4ab1a-ba45-4d02-9adb-77983febd75d","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"7ca18bc9-d003-4200-bbb4-17824521338d","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"7ca18bc9-d003-4200-bbb4-17824521338d","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"8b423400-5f27-46b5-b176-51cb1a42a932","type":"VBar"},{"attributes":{"below":[{"id":"a409e54f-6284-4420-8373-0b14fdd8e68f","type":"CategoricalAxis"}],"left":[{"id":"73537694-3dfd-484c-a34f-6238dc1b83c7","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"a409e54f-6284-4420-8373-0b14fdd8e68f","type":"CategoricalAxis"},{"id":"85e12f18-aa26-4200-bbac-69cbe1b8af00","type":"Grid"},{"id":"73537694-3dfd-484c-a34f-6238dc1b83c7","type":"LinearAxis"},{"id":"59cd7f1b-bded-4549-83a9-7f06bee8a642","type":"Grid"},{"id":"ecaf8b90-b99f-4a43-8003-6ee9f66558a0","type":"GlyphRenderer"},{"id":"af1e17b4-6574-4bdc-a87b-e4b839fea404","type":"GlyphRenderer"}],"title":{"id":"2e3b6d77-b902-4ff0-9af7-ba30e1b80863","type":"Title"},"toolbar":{"id":"5f4793a9-7a8e-4c41-b1e1-cc21dc28539a","type":"Toolbar"},"x_range":{"id":"103e4f93-7c92-4178-ae0d-1de4c89e9c72","type":"FactorRange"},"x_scale":{"id":"b5e8d525-fcd8-4887-9fe2-023d1177271e","type":"CategoricalScale"},"y_range":{"id":"f9c1e3de-5d2a-4b03-bced-abbbe9850c69","type":"DataRange1d"},"y_scale":{"id":"58e4ab1a-ba45-4d02-9adb-77983febd75d","type":"LinearScale"}},"id":"8f3f49f9-eb22-48a9-ae8d-668f50a1107c","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"4963c9ce-073c-4df3-b6e7-64496e0661bd","type":"ColumnDataSource"},"glyph":{"id":"8b423400-5f27-46b5-b176-51cb1a42a932","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bc823193-ddce-408f-8a7a-7ccbe73ca269","type":"VBar"},"selection_glyph":null,"view":{"id":"1276f74b-4f3f-4b2f-aa5a-532d0b566546","type":"CDSView"}},"id":"af1e17b4-6574-4bdc-a87b-e4b839fea404","type":"GlyphRenderer"},{"attributes":{},"id":"3d2b5651-2b71-472c-9e19-3879a1b33fdf","type":"CategoricalTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"431d1191-83e3-46f9-b9bd-fb1d5e24dadf","type":"Line"}],"root_ids":["8f3f49f9-eb22-48a9-ae8d-668f50a1107c"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"5bcc01ea-cb2f-421c-b0c3-6756ceaeabc3","elementid":"5c128d3e-782c-4ca3-a012-f82e63fc117e","modelid":"8f3f49f9-eb22-48a9-ae8d-668f50a1107c"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

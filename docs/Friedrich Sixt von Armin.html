@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="e9eed5e5-bf58-4bc1-8f41-c2d273c18f99"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"179288a3-1a60-4d23-9ac1-679185c0b2aa":{"roots":{"references":[{"attributes":{"source":{"id":"f487e72e-02f3-499b-a8f9-4dcc95e9458c","type":"ColumnDataSource"}},"id":"363c6aa8-a334-4dfa-995c-d88ea2da7987","type":"CDSView"},{"attributes":{"below":[{"id":"47505a7a-8b00-4838-bf04-89a4e074a369","type":"CategoricalAxis"}],"left":[{"id":"2f9719c7-b407-4f35-b7dd-c2f83205738b","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"47505a7a-8b00-4838-bf04-89a4e074a369","type":"CategoricalAxis"},{"id":"d5e7ac84-accf-41da-b88a-7d290cdb462d","type":"Grid"},{"id":"2f9719c7-b407-4f35-b7dd-c2f83205738b","type":"LinearAxis"},{"id":"7502d574-2cf7-464a-a024-5ac035bc9a7d","type":"Grid"},{"id":"3c9bdcad-1917-45be-9840-333bed7a734a","type":"GlyphRenderer"},{"id":"9d0de1ab-ef60-4628-a751-8d1ddc0f7b9a","type":"GlyphRenderer"}],"title":{"id":"9bc93653-1c81-48a0-911a-81eeac99a9cb","type":"Title"},"toolbar":{"id":"73975ed1-5ff6-412c-9c8a-c92d3a8a75ee","type":"Toolbar"},"x_range":{"id":"70e59239-54c5-4866-aa3e-aca2cdc35bd7","type":"FactorRange"},"x_scale":{"id":"1a3b43e4-60a4-4be9-b94c-30d89307c376","type":"CategoricalScale"},"y_range":{"id":"19b4a6d8-d559-4df8-a707-bdd4014ee356","type":"DataRange1d"},"y_scale":{"id":"779f705c-45a3-4617-90c0-796c16753d9f","type":"LinearScale"}},"id":"a72ef667-7e6e-47c9-b84c-01320d5fedb0","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"89aa73d6-42e8-4407-a53a-76a8b7aa0bf1","type":"BasicTickFormatter"},"plot":{"id":"a72ef667-7e6e-47c9-b84c-01320d5fedb0","subtype":"Figure","type":"Plot"},"ticker":{"id":"41b90194-be9c-49c6-91b6-4b0f39537f02","type":"BasicTicker"}},"id":"2f9719c7-b407-4f35-b7dd-c2f83205738b","type":"LinearAxis"},{"attributes":{"dimension":1,"plot":{"id":"a72ef667-7e6e-47c9-b84c-01320d5fedb0","subtype":"Figure","type":"Plot"},"ticker":{"id":"41b90194-be9c-49c6-91b6-4b0f39537f02","type":"BasicTicker"}},"id":"7502d574-2cf7-464a-a024-5ac035bc9a7d","type":"Grid"},{"attributes":{"data_source":{"id":"f487e72e-02f3-499b-a8f9-4dcc95e9458c","type":"ColumnDataSource"},"glyph":{"id":"effbbc02-c7ab-4327-b9f6-97e24115e168","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"eed6cbd4-71bf-49f5-a8cc-a117bf7a08ed","type":"VBar"},"selection_glyph":null,"view":{"id":"4c933b8f-7e27-4b0e-88cf-3310c2485018","type":"CDSView"}},"id":"9d0de1ab-ef60-4628-a751-8d1ddc0f7b9a","type":"GlyphRenderer"},{"attributes":{},"id":"779f705c-45a3-4617-90c0-796c16753d9f","type":"LinearScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Le Cateau","Battle of Loos","Battle of Passchendaele"],"cumulative":{"__ndarray__":"AAAAAAAA4D8AAAAAAADwPxpT5Oc+v94/","dtype":"float64","shape":[3]},"general":["Friedrich Sixt von Armin","Friedrich Sixt von Armin","Friedrich Sixt von Armin"],"outcome":["V","V","D"],"value":{"__ndarray__":"AAAAAAAA4D8AAAAAAADgP3PWDYxgoOC/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAADonUAAAAAAAOydQAAAAAAA9J1A","dtype":"float64","shape":[3]}}},"id":"f487e72e-02f3-499b-a8f9-4dcc95e9458c","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"eed6cbd4-71bf-49f5-a8cc-a117bf7a08ed","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"9f2f4753-9f85-4ad7-a8a0-5c0d7860d1ee","type":"HoverTool"},{"attributes":{"plot":null,"text":"Friedrich Sixt von Armin (2 - 0 - 1)"},"id":"9bc93653-1c81-48a0-911a-81eeac99a9cb","type":"Title"},{"attributes":{},"id":"89aa73d6-42e8-4407-a53a-76a8b7aa0bf1","type":"BasicTickFormatter"},{"attributes":{},"id":"41b90194-be9c-49c6-91b6-4b0f39537f02","type":"BasicTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"678f5db3-423f-418e-aeaa-d929d1d01004","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"9f2f4753-9f85-4ad7-a8a0-5c0d7860d1ee","type":"HoverTool"}]},"id":"73975ed1-5ff6-412c-9c8a-c92d3a8a75ee","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Battle of Le Cateau","Battle of Loos","Battle of Passchendaele"]},"id":"70e59239-54c5-4866-aa3e-aca2cdc35bd7","type":"FactorRange"},{"attributes":{"plot":{"id":"a72ef667-7e6e-47c9-b84c-01320d5fedb0","subtype":"Figure","type":"Plot"},"ticker":{"id":"7f59fc3c-564b-4050-b047-35153161c393","type":"CategoricalTicker"}},"id":"d5e7ac84-accf-41da-b88a-7d290cdb462d","type":"Grid"},{"attributes":{"source":{"id":"f487e72e-02f3-499b-a8f9-4dcc95e9458c","type":"ColumnDataSource"}},"id":"4c933b8f-7e27-4b0e-88cf-3310c2485018","type":"CDSView"},{"attributes":{},"id":"1a3b43e4-60a4-4be9-b94c-30d89307c376","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"285645c7-d85b-429e-bf16-1f3d2369900c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"285645c7-d85b-429e-bf16-1f3d2369900c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"effbbc02-c7ab-4327-b9f6-97e24115e168","type":"VBar"},{"attributes":{"formatter":{"id":"b13b1478-136f-472e-a0eb-95d63a6f8bb6","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"a72ef667-7e6e-47c9-b84c-01320d5fedb0","subtype":"Figure","type":"Plot"},"ticker":{"id":"7f59fc3c-564b-4050-b047-35153161c393","type":"CategoricalTicker"}},"id":"47505a7a-8b00-4838-bf04-89a4e074a369","type":"CategoricalAxis"},{"attributes":{},"id":"b13b1478-136f-472e-a0eb-95d63a6f8bb6","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"f487e72e-02f3-499b-a8f9-4dcc95e9458c","type":"ColumnDataSource"},"glyph":{"id":"fa093cd4-a6ba-4109-b961-bb1e9c2d665e","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"678f5db3-423f-418e-aeaa-d929d1d01004","type":"Line"},"selection_glyph":null,"view":{"id":"363c6aa8-a334-4dfa-995c-d88ea2da7987","type":"CDSView"}},"id":"3c9bdcad-1917-45be-9840-333bed7a734a","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"fa093cd4-a6ba-4109-b961-bb1e9c2d665e","type":"Line"},{"attributes":{},"id":"7f59fc3c-564b-4050-b047-35153161c393","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"285645c7-d85b-429e-bf16-1f3d2369900c","type":"CategoricalColorMapper"},{"attributes":{"callback":null},"id":"19b4a6d8-d559-4df8-a707-bdd4014ee356","type":"DataRange1d"}],"root_ids":["a72ef667-7e6e-47c9-b84c-01320d5fedb0"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"179288a3-1a60-4d23-9ac1-679185c0b2aa","elementid":"e9eed5e5-bf58-4bc1-8f41-c2d273c18f99","modelid":"a72ef667-7e6e-47c9-b84c-01320d5fedb0"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

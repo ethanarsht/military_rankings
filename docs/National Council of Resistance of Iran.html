@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="6543fb87-60a0-4507-b06b-59dbe98ce662"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"27da25b1-bcf1-47a5-8c24-f7a45280eea7":{"roots":{"references":[{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"eea874bb-fd88-48eb-a897-1264b901d9a2","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"eea874bb-fd88-48eb-a897-1264b901d9a2","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a693eb12-c135-43a5-8a5c-97b733de1bf9","type":"VBar"},{"attributes":{"data_source":{"id":"32347cf4-b614-4eb4-a6a5-83eb69503ee6","type":"ColumnDataSource"},"glyph":{"id":"a693eb12-c135-43a5-8a5c-97b733de1bf9","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b3e4dab9-717a-4af7-93c5-2a00d7f35fd1","type":"VBar"},"selection_glyph":null,"view":{"id":"9e4bb06d-5763-45f4-af18-6714f231f0f9","type":"CDSView"}},"id":"14c9b3e5-c111-46bf-aaed-92d9f8cc775b","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"486cb1a4-147b-4fb3-9663-a5ff33983b26","type":"CategoricalAxis"}],"left":[{"id":"0d4305d1-92d7-40fb-af03-852fdcebb05a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"486cb1a4-147b-4fb3-9663-a5ff33983b26","type":"CategoricalAxis"},{"id":"6598a34d-e9a8-4856-9f6b-af2318f142ac","type":"Grid"},{"id":"0d4305d1-92d7-40fb-af03-852fdcebb05a","type":"LinearAxis"},{"id":"2b856779-f527-46bb-9ff4-07c8186eb4a3","type":"Grid"},{"id":"3cf42d80-eef4-412a-a7f7-89f8cb0df82e","type":"GlyphRenderer"},{"id":"14c9b3e5-c111-46bf-aaed-92d9f8cc775b","type":"GlyphRenderer"}],"title":{"id":"3c3ba862-dfb3-4135-9980-42c478ee2705","type":"Title"},"toolbar":{"id":"8fa05df0-bd5b-498a-9e25-e3473a26150e","type":"Toolbar"},"x_range":{"id":"936c07f7-9b9f-4417-8518-008cf8bea2ee","type":"FactorRange"},"x_scale":{"id":"4aa35c01-782d-4735-a1a4-d75ac6e2b13b","type":"CategoricalScale"},"y_range":{"id":"84525e6b-62cf-4d06-8469-e1b2cec182bc","type":"DataRange1d"},"y_scale":{"id":"675ebfb9-c06f-4753-a559-d5da8f219aa9","type":"LinearScale"}},"id":"fc704dde-560e-431a-9e78-1902cf740205","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"4aa35c01-782d-4735-a1a4-d75ac6e2b13b","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b3e4dab9-717a-4af7-93c5-2a00d7f35fd1","type":"VBar"},{"attributes":{},"id":"972fca8a-c153-4526-92ba-fe6245e0064a","type":"BasicTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"eea874bb-fd88-48eb-a897-1264b901d9a2","type":"CategoricalColorMapper"},{"attributes":{},"id":"58634892-f4d0-42a8-a7a2-a4fdfcec1711","type":"CategoricalTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Iran\u2013Iraq War"],"cumulative":{"__ndarray__":"eLkrBZ7Str8=","dtype":"float64","shape":[1]},"general":["National Council of Resistance of Iran"],"outcome":["I"],"value":{"__ndarray__":"eLkrBZ7Str8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADwnkA=","dtype":"float64","shape":[1]}}},"id":"32347cf4-b614-4eb4-a6a5-83eb69503ee6","type":"ColumnDataSource"},{"attributes":{"dimension":1,"plot":{"id":"fc704dde-560e-431a-9e78-1902cf740205","subtype":"Figure","type":"Plot"},"ticker":{"id":"972fca8a-c153-4526-92ba-fe6245e0064a","type":"BasicTicker"}},"id":"2b856779-f527-46bb-9ff4-07c8186eb4a3","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"1a9b9689-6a4c-4c71-b643-f8964671a5e2","type":"HoverTool"},{"attributes":{},"id":"675ebfb9-c06f-4753-a559-d5da8f219aa9","type":"LinearScale"},{"attributes":{"formatter":{"id":"b563366d-0b56-4c70-80e5-149ba174ab68","type":"BasicTickFormatter"},"plot":{"id":"fc704dde-560e-431a-9e78-1902cf740205","subtype":"Figure","type":"Plot"},"ticker":{"id":"972fca8a-c153-4526-92ba-fe6245e0064a","type":"BasicTicker"}},"id":"0d4305d1-92d7-40fb-af03-852fdcebb05a","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"1a9b9689-6a4c-4c71-b643-f8964671a5e2","type":"HoverTool"}]},"id":"8fa05df0-bd5b-498a-9e25-e3473a26150e","type":"Toolbar"},{"attributes":{"callback":null},"id":"84525e6b-62cf-4d06-8469-e1b2cec182bc","type":"DataRange1d"},{"attributes":{"plot":null,"text":"National Council of Resistance of Iran (0 - 1 - 0)"},"id":"3c3ba862-dfb3-4135-9980-42c478ee2705","type":"Title"},{"attributes":{"data_source":{"id":"32347cf4-b614-4eb4-a6a5-83eb69503ee6","type":"ColumnDataSource"},"glyph":{"id":"5f55fd1c-5cff-41c6-ad77-955997025f1c","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7ed616d4-7924-41ba-9ec3-7595cbcd1f5f","type":"Line"},"selection_glyph":null,"view":{"id":"218e1513-4c5e-4ba2-a706-9231bbfb20d2","type":"CDSView"}},"id":"3cf42d80-eef4-412a-a7f7-89f8cb0df82e","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5f55fd1c-5cff-41c6-ad77-955997025f1c","type":"Line"},{"attributes":{"source":{"id":"32347cf4-b614-4eb4-a6a5-83eb69503ee6","type":"ColumnDataSource"}},"id":"9e4bb06d-5763-45f4-af18-6714f231f0f9","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7ed616d4-7924-41ba-9ec3-7595cbcd1f5f","type":"Line"},{"attributes":{"callback":null,"factors":["Iran\u2013Iraq War"]},"id":"936c07f7-9b9f-4417-8518-008cf8bea2ee","type":"FactorRange"},{"attributes":{},"id":"b563366d-0b56-4c70-80e5-149ba174ab68","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"dde65842-83de-43cf-97f2-16f4b362df15","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"fc704dde-560e-431a-9e78-1902cf740205","subtype":"Figure","type":"Plot"},"ticker":{"id":"58634892-f4d0-42a8-a7a2-a4fdfcec1711","type":"CategoricalTicker"}},"id":"486cb1a4-147b-4fb3-9663-a5ff33983b26","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"fc704dde-560e-431a-9e78-1902cf740205","subtype":"Figure","type":"Plot"},"ticker":{"id":"58634892-f4d0-42a8-a7a2-a4fdfcec1711","type":"CategoricalTicker"}},"id":"6598a34d-e9a8-4856-9f6b-af2318f142ac","type":"Grid"},{"attributes":{},"id":"dde65842-83de-43cf-97f2-16f4b362df15","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"32347cf4-b614-4eb4-a6a5-83eb69503ee6","type":"ColumnDataSource"}},"id":"218e1513-4c5e-4ba2-a706-9231bbfb20d2","type":"CDSView"}],"root_ids":["fc704dde-560e-431a-9e78-1902cf740205"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"27da25b1-bcf1-47a5-8c24-f7a45280eea7","elementid":"6543fb87-60a0-4507-b06b-59dbe98ce662","modelid":"fc704dde-560e-431a-9e78-1902cf740205"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

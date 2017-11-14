@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="a8cf747a-0f55-47ba-870e-0cd1e234e4a0"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"d8df8b28-4a02-40e1-bd97-fcecfd5f4381":{"roots":{"references":[{"attributes":{"dimension":1,"plot":{"id":"5bfb9e27-45e6-462e-82cf-f3ee86dccb80","subtype":"Figure","type":"Plot"},"ticker":{"id":"f714dcd9-0589-457b-8d8e-3250a3c4a9f8","type":"BasicTicker"}},"id":"492089d0-ef89-4f28-9794-abbf05472f52","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"9e8a5ea6-6616-45dd-a690-54db0ac4e5f1","type":"HoverTool"}]},"id":"01d4dcbc-5062-4fa4-965f-257a98c5c36f","type":"Toolbar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"9e8a5ea6-6616-45dd-a690-54db0ac4e5f1","type":"HoverTool"},{"attributes":{},"id":"ed1f2ef6-7623-4f07-9bd5-cbfe9d78a4da","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"Walter Morgan (soldier) (1 - 0 - 0)"},"id":"b9bb0f61-386b-4f98-9617-a3cc03a4270a","type":"Title"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a9c3a813-bf68-44fa-942d-77f974157c89","type":"Line"},{"attributes":{"callback":null},"id":"9883ddde-2857-43ce-8826-cf4e750dcb60","type":"DataRange1d"},{"attributes":{"formatter":{"id":"c288a66b-49d0-43eb-a429-fe38aa2eb36c","type":"BasicTickFormatter"},"plot":{"id":"5bfb9e27-45e6-462e-82cf-f3ee86dccb80","subtype":"Figure","type":"Plot"},"ticker":{"id":"f714dcd9-0589-457b-8d8e-3250a3c4a9f8","type":"BasicTicker"}},"id":"117b922a-e8a5-4135-aa67-a2d261f9b2fd","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Capture of Geertruidenberg (1573)"],"cumulative":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"general":["Walter Morgan (soldier)"],"outcome":["V"],"value":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAACUmEA=","dtype":"float64","shape":[1]}}},"id":"09e61824-e34c-49cd-b025-61c6e1172604","type":"ColumnDataSource"},{"attributes":{},"id":"ca0867bc-ec42-4667-bbb6-7a1a96b647d6","type":"LinearScale"},{"attributes":{},"id":"d94d1f02-5c4a-423b-867a-8cad15f2aa45","type":"CategoricalTickFormatter"},{"attributes":{"plot":{"id":"5bfb9e27-45e6-462e-82cf-f3ee86dccb80","subtype":"Figure","type":"Plot"},"ticker":{"id":"323e6f04-bb2f-4e10-8c13-f8c68999ed6d","type":"CategoricalTicker"}},"id":"7fb87a7c-5f2d-492c-9c0b-7cda1b40bce4","type":"Grid"},{"attributes":{},"id":"f714dcd9-0589-457b-8d8e-3250a3c4a9f8","type":"BasicTicker"},{"attributes":{"source":{"id":"09e61824-e34c-49cd-b025-61c6e1172604","type":"ColumnDataSource"}},"id":"e08ea863-09ec-4918-84f4-e96923b99506","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7768b064-dc10-4e31-8355-9d296051bb29","type":"Line"},{"attributes":{"data_source":{"id":"09e61824-e34c-49cd-b025-61c6e1172604","type":"ColumnDataSource"},"glyph":{"id":"a9c3a813-bf68-44fa-942d-77f974157c89","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7768b064-dc10-4e31-8355-9d296051bb29","type":"Line"},"selection_glyph":null,"view":{"id":"e08ea863-09ec-4918-84f4-e96923b99506","type":"CDSView"}},"id":"10329a84-3948-4e16-8b32-993422aaba6a","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"ed42bfd9-0f0c-4a7d-8bea-2e256c6f0971","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"ed42bfd9-0f0c-4a7d-8bea-2e256c6f0971","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"5016f81f-8360-4add-b79d-6f5d2b654e36","type":"VBar"},{"attributes":{"data_source":{"id":"09e61824-e34c-49cd-b025-61c6e1172604","type":"ColumnDataSource"},"glyph":{"id":"5016f81f-8360-4add-b79d-6f5d2b654e36","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9322744e-2d5e-4e3f-98d1-b56c348ccc71","type":"VBar"},"selection_glyph":null,"view":{"id":"a2043ccb-bcc4-4c86-b004-d834e3cbfdfb","type":"CDSView"}},"id":"f549abf5-62f9-45a8-88a2-81caa4fa6adb","type":"GlyphRenderer"},{"attributes":{},"id":"c288a66b-49d0-43eb-a429-fe38aa2eb36c","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"d94d1f02-5c4a-423b-867a-8cad15f2aa45","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"5bfb9e27-45e6-462e-82cf-f3ee86dccb80","subtype":"Figure","type":"Plot"},"ticker":{"id":"323e6f04-bb2f-4e10-8c13-f8c68999ed6d","type":"CategoricalTicker"}},"id":"abc40d37-d0af-489b-bddf-0cca7e2d6d49","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9322744e-2d5e-4e3f-98d1-b56c348ccc71","type":"VBar"},{"attributes":{"callback":null,"factors":["Capture of Geertruidenberg (1573)"]},"id":"65ae2b64-741c-4dc2-8d04-aaaca42793e8","type":"FactorRange"},{"attributes":{},"id":"323e6f04-bb2f-4e10-8c13-f8c68999ed6d","type":"CategoricalTicker"},{"attributes":{"source":{"id":"09e61824-e34c-49cd-b025-61c6e1172604","type":"ColumnDataSource"}},"id":"a2043ccb-bcc4-4c86-b004-d834e3cbfdfb","type":"CDSView"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"ed42bfd9-0f0c-4a7d-8bea-2e256c6f0971","type":"CategoricalColorMapper"},{"attributes":{"below":[{"id":"abc40d37-d0af-489b-bddf-0cca7e2d6d49","type":"CategoricalAxis"}],"left":[{"id":"117b922a-e8a5-4135-aa67-a2d261f9b2fd","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"abc40d37-d0af-489b-bddf-0cca7e2d6d49","type":"CategoricalAxis"},{"id":"7fb87a7c-5f2d-492c-9c0b-7cda1b40bce4","type":"Grid"},{"id":"117b922a-e8a5-4135-aa67-a2d261f9b2fd","type":"LinearAxis"},{"id":"492089d0-ef89-4f28-9794-abbf05472f52","type":"Grid"},{"id":"10329a84-3948-4e16-8b32-993422aaba6a","type":"GlyphRenderer"},{"id":"f549abf5-62f9-45a8-88a2-81caa4fa6adb","type":"GlyphRenderer"}],"title":{"id":"b9bb0f61-386b-4f98-9617-a3cc03a4270a","type":"Title"},"toolbar":{"id":"01d4dcbc-5062-4fa4-965f-257a98c5c36f","type":"Toolbar"},"x_range":{"id":"65ae2b64-741c-4dc2-8d04-aaaca42793e8","type":"FactorRange"},"x_scale":{"id":"ed1f2ef6-7623-4f07-9bd5-cbfe9d78a4da","type":"CategoricalScale"},"y_range":{"id":"9883ddde-2857-43ce-8826-cf4e750dcb60","type":"DataRange1d"},"y_scale":{"id":"ca0867bc-ec42-4667-bbb6-7a1a96b647d6","type":"LinearScale"}},"id":"5bfb9e27-45e6-462e-82cf-f3ee86dccb80","subtype":"Figure","type":"Plot"}],"root_ids":["5bfb9e27-45e6-462e-82cf-f3ee86dccb80"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"d8df8b28-4a02-40e1-bd97-fcecfd5f4381","elementid":"a8cf747a-0f55-47ba-870e-0cd1e234e4a0","modelid":"5bfb9e27-45e6-462e-82cf-f3ee86dccb80"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

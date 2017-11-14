@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="dec8c334-bffe-49c1-b9df-b716ac8248ba"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"bda469b1-f80b-427e-89b1-af87b8ba3283":{"roots":{"references":[{"attributes":{"below":[{"id":"75ff7a62-d0e1-4881-9785-527f4b87820c","type":"CategoricalAxis"}],"left":[{"id":"75e00e35-6add-4dc0-8e58-4b11cbd6a93c","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"75ff7a62-d0e1-4881-9785-527f4b87820c","type":"CategoricalAxis"},{"id":"a552ccd4-21bb-4bdc-b63c-982ad9f7f09a","type":"Grid"},{"id":"75e00e35-6add-4dc0-8e58-4b11cbd6a93c","type":"LinearAxis"},{"id":"6f5cb41b-d895-4eb6-b6d9-7fd2c3e268e8","type":"Grid"},{"id":"c9657f66-37d7-40d8-a771-22480e5388c7","type":"GlyphRenderer"},{"id":"b915ec7e-8377-4d3b-bc40-1b4104be3b4a","type":"GlyphRenderer"}],"title":{"id":"ef3ed2df-cac0-4bda-b696-08411ec41710","type":"Title"},"toolbar":{"id":"86c67207-0962-4121-9e74-035262ac2c86","type":"Toolbar"},"x_range":{"id":"3265fcae-b11e-4d58-b252-7171874d9045","type":"FactorRange"},"x_scale":{"id":"64508353-cb0e-4719-b0b1-2e3e960716aa","type":"CategoricalScale"},"y_range":{"id":"62ac950c-e960-49ae-9f3f-c44f8c3bf763","type":"DataRange1d"},"y_scale":{"id":"b3c21e14-5a98-42a3-b7ab-0c885a367dd7","type":"LinearScale"}},"id":"6d7a874c-8344-4f9d-b38b-0b1c69214ee4","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"1f63d106-eaec-49f8-b502-55ed9ca6fce5","type":"ColumnDataSource"},"glyph":{"id":"bfc7ba42-a079-4479-92b0-6ea2a9583651","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"00989d27-e5bf-4373-98d4-2e8cd0f572c3","type":"Line"},"selection_glyph":null,"view":{"id":"84a4c351-b7a4-449d-8452-ae474dc6eadc","type":"CDSView"}},"id":"c9657f66-37d7-40d8-a771-22480e5388c7","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"6d7a874c-8344-4f9d-b38b-0b1c69214ee4","subtype":"Figure","type":"Plot"},"ticker":{"id":"19574c22-a46d-48d7-85d7-8c84956edb72","type":"BasicTicker"}},"id":"6f5cb41b-d895-4eb6-b6d9-7fd2c3e268e8","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"cac523ba-4561-49e4-8d5b-7141ff40a571","type":"HoverTool"},{"attributes":{"source":{"id":"1f63d106-eaec-49f8-b502-55ed9ca6fce5","type":"ColumnDataSource"}},"id":"924dc497-7bb1-4f05-8f9f-1f57c426f88b","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Indonesian invasion of East Timor"],"cumulative":{"__ndarray__":"cA0LbB9I2j8=","dtype":"float64","shape":[1]},"general":["Suharto"],"outcome":["V"],"value":{"__ndarray__":"cA0LbB9I2j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADcnkA=","dtype":"float64","shape":[1]}}},"id":"1f63d106-eaec-49f8-b502-55ed9ca6fce5","type":"ColumnDataSource"},{"attributes":{},"id":"b3c21e14-5a98-42a3-b7ab-0c885a367dd7","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"bfc7ba42-a079-4479-92b0-6ea2a9583651","type":"Line"},{"attributes":{"callback":null,"factors":["Indonesian invasion of East Timor"]},"id":"3265fcae-b11e-4d58-b252-7171874d9045","type":"FactorRange"},{"attributes":{"plot":{"id":"6d7a874c-8344-4f9d-b38b-0b1c69214ee4","subtype":"Figure","type":"Plot"},"ticker":{"id":"8d0287ad-b51c-431a-a514-f2a3d63e86e9","type":"CategoricalTicker"}},"id":"a552ccd4-21bb-4bdc-b63c-982ad9f7f09a","type":"Grid"},{"attributes":{},"id":"2801e852-509d-4a84-b4e2-5cc3c7ea6f7f","type":"BasicTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"8bedd1c9-d08d-4c87-9354-8297a9a35ce2","type":"CategoricalColorMapper"},{"attributes":{},"id":"8d0287ad-b51c-431a-a514-f2a3d63e86e9","type":"CategoricalTicker"},{"attributes":{},"id":"3f229528-2dcc-48bc-b3a8-465b681669b5","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"3f229528-2dcc-48bc-b3a8-465b681669b5","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"6d7a874c-8344-4f9d-b38b-0b1c69214ee4","subtype":"Figure","type":"Plot"},"ticker":{"id":"8d0287ad-b51c-431a-a514-f2a3d63e86e9","type":"CategoricalTicker"}},"id":"75ff7a62-d0e1-4881-9785-527f4b87820c","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f6f5007a-9aa2-41dd-a49a-a5f17b41ec5d","type":"VBar"},{"attributes":{"source":{"id":"1f63d106-eaec-49f8-b502-55ed9ca6fce5","type":"ColumnDataSource"}},"id":"84a4c351-b7a4-449d-8452-ae474dc6eadc","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"cac523ba-4561-49e4-8d5b-7141ff40a571","type":"HoverTool"}]},"id":"86c67207-0962-4121-9e74-035262ac2c86","type":"Toolbar"},{"attributes":{},"id":"19574c22-a46d-48d7-85d7-8c84956edb72","type":"BasicTicker"},{"attributes":{"formatter":{"id":"2801e852-509d-4a84-b4e2-5cc3c7ea6f7f","type":"BasicTickFormatter"},"plot":{"id":"6d7a874c-8344-4f9d-b38b-0b1c69214ee4","subtype":"Figure","type":"Plot"},"ticker":{"id":"19574c22-a46d-48d7-85d7-8c84956edb72","type":"BasicTicker"}},"id":"75e00e35-6add-4dc0-8e58-4b11cbd6a93c","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Suharto (1 - 0 - 0)"},"id":"ef3ed2df-cac0-4bda-b696-08411ec41710","type":"Title"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"00989d27-e5bf-4373-98d4-2e8cd0f572c3","type":"Line"},{"attributes":{"callback":null},"id":"62ac950c-e960-49ae-9f3f-c44f8c3bf763","type":"DataRange1d"},{"attributes":{"data_source":{"id":"1f63d106-eaec-49f8-b502-55ed9ca6fce5","type":"ColumnDataSource"},"glyph":{"id":"9824008f-45e5-41cf-82a1-0ad41f558b80","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f6f5007a-9aa2-41dd-a49a-a5f17b41ec5d","type":"VBar"},"selection_glyph":null,"view":{"id":"924dc497-7bb1-4f05-8f9f-1f57c426f88b","type":"CDSView"}},"id":"b915ec7e-8377-4d3b-bc40-1b4104be3b4a","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"8bedd1c9-d08d-4c87-9354-8297a9a35ce2","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"8bedd1c9-d08d-4c87-9354-8297a9a35ce2","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9824008f-45e5-41cf-82a1-0ad41f558b80","type":"VBar"},{"attributes":{},"id":"64508353-cb0e-4719-b0b1-2e3e960716aa","type":"CategoricalScale"}],"root_ids":["6d7a874c-8344-4f9d-b38b-0b1c69214ee4"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"bda469b1-f80b-427e-89b1-af87b8ba3283","elementid":"dec8c334-bffe-49c1-b9df-b716ac8248ba","modelid":"6d7a874c-8344-4f9d-b38b-0b1c69214ee4"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

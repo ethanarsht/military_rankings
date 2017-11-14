@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="4c123228-4d8e-4f31-b76a-e5c96fd74469"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b026d442-2715-4e43-a272-68f546345fc7":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4bd7ba73-d7f1-49ed-b7ee-623412c6efbc","type":"CategoricalColorMapper"},{"attributes":{},"id":"2e4beda7-c300-4b87-9b67-320f2bbbbaa9","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"7cebb4d3-9a55-4f58-b404-4d9ffd4ad291","type":"ColumnDataSource"}},"id":"ad6c518f-92a4-4624-b999-585f5fee57f2","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"6145db24-d712-4a13-bd58-c6d180949bab","subtype":"Figure","type":"Plot"},"ticker":{"id":"9f17a764-3b8f-4120-8164-f0fae58d2e48","type":"BasicTicker"}},"id":"9415d482-890e-4e1c-ba7c-548545534151","type":"Grid"},{"attributes":{"below":[{"id":"352a01a0-d744-4413-a517-fa6fa365f695","type":"CategoricalAxis"}],"left":[{"id":"2f5ef565-e34b-45d4-8863-75bf34cfe539","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"352a01a0-d744-4413-a517-fa6fa365f695","type":"CategoricalAxis"},{"id":"6ec25561-eadf-4acd-91cc-158371b9576b","type":"Grid"},{"id":"2f5ef565-e34b-45d4-8863-75bf34cfe539","type":"LinearAxis"},{"id":"9415d482-890e-4e1c-ba7c-548545534151","type":"Grid"},{"id":"bb92f025-046b-4a7f-b111-ff425b7763cf","type":"GlyphRenderer"},{"id":"0d3e51d0-2d79-48ca-a7af-a744c018fee3","type":"GlyphRenderer"}],"title":{"id":"2bc3031c-363b-4f19-bded-1cd2fc471d06","type":"Title"},"toolbar":{"id":"361e7178-33bd-4cc2-a6e5-d3a9f8863723","type":"Toolbar"},"x_range":{"id":"8c06c8f0-011b-43bd-ab45-ef43b2369990","type":"FactorRange"},"x_scale":{"id":"40e54099-b691-450a-8231-c7065cf45c3c","type":"CategoricalScale"},"y_range":{"id":"0fd95306-7982-49e6-b68b-87e842babab2","type":"DataRange1d"},"y_scale":{"id":"2ef983d7-0c50-415d-9d0d-8358b06f7561","type":"LinearScale"}},"id":"6145db24-d712-4a13-bd58-c6d180949bab","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"2e4beda7-c300-4b87-9b67-320f2bbbbaa9","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"6145db24-d712-4a13-bd58-c6d180949bab","subtype":"Figure","type":"Plot"},"ticker":{"id":"c6a03e22-3670-4272-8c8f-9e42487d329b","type":"CategoricalTicker"}},"id":"352a01a0-d744-4413-a517-fa6fa365f695","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"7e9b54ab-da11-4da1-856c-e96505a4446f","type":"HoverTool"}]},"id":"361e7178-33bd-4cc2-a6e5-d3a9f8863723","type":"Toolbar"},{"attributes":{"plot":{"id":"6145db24-d712-4a13-bd58-c6d180949bab","subtype":"Figure","type":"Plot"},"ticker":{"id":"c6a03e22-3670-4272-8c8f-9e42487d329b","type":"CategoricalTicker"}},"id":"6ec25561-eadf-4acd-91cc-158371b9576b","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Rawdat Muhanna (1906)"]},"id":"8c06c8f0-011b-43bd-ab45-ef43b2369990","type":"FactorRange"},{"attributes":{},"id":"c6a03e22-3670-4272-8c8f-9e42487d329b","type":"CategoricalTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"7e9b54ab-da11-4da1-856c-e96505a4446f","type":"HoverTool"},{"attributes":{},"id":"9f17a764-3b8f-4120-8164-f0fae58d2e48","type":"BasicTicker"},{"attributes":{"source":{"id":"7cebb4d3-9a55-4f58-b404-4d9ffd4ad291","type":"ColumnDataSource"}},"id":"2637b4fe-8a7a-4235-8390-439df0b5e2fb","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Rawdat Muhanna (1906)"],"cumulative":{"__ndarray__":"p01jjwBA4D8=","dtype":"float64","shape":[1]},"general":["Ibrahim bin Aqeel"],"outcome":["V"],"value":{"__ndarray__":"p01jjwBA4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADInUA=","dtype":"float64","shape":[1]}}},"id":"7cebb4d3-9a55-4f58-b404-4d9ffd4ad291","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"d32a1aa4-681b-4646-96e6-f831211a1676","type":"BasicTickFormatter"},"plot":{"id":"6145db24-d712-4a13-bd58-c6d180949bab","subtype":"Figure","type":"Plot"},"ticker":{"id":"9f17a764-3b8f-4120-8164-f0fae58d2e48","type":"BasicTicker"}},"id":"2f5ef565-e34b-45d4-8863-75bf34cfe539","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4bd7ba73-d7f1-49ed-b7ee-623412c6efbc","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4bd7ba73-d7f1-49ed-b7ee-623412c6efbc","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7c991546-330a-4dd2-b110-306a6a742cf5","type":"VBar"},{"attributes":{"data_source":{"id":"7cebb4d3-9a55-4f58-b404-4d9ffd4ad291","type":"ColumnDataSource"},"glyph":{"id":"7c991546-330a-4dd2-b110-306a6a742cf5","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e2e5c082-8276-411b-948f-1635b96e8bcd","type":"VBar"},"selection_glyph":null,"view":{"id":"ad6c518f-92a4-4624-b999-585f5fee57f2","type":"CDSView"}},"id":"0d3e51d0-2d79-48ca-a7af-a744c018fee3","type":"GlyphRenderer"},{"attributes":{},"id":"2ef983d7-0c50-415d-9d0d-8358b06f7561","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1bf1172b-8142-409b-82fc-891090b244e8","type":"Line"},{"attributes":{"data_source":{"id":"7cebb4d3-9a55-4f58-b404-4d9ffd4ad291","type":"ColumnDataSource"},"glyph":{"id":"1bf1172b-8142-409b-82fc-891090b244e8","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"386baefb-c5df-44dd-8910-ca7302c4ba6a","type":"Line"},"selection_glyph":null,"view":{"id":"2637b4fe-8a7a-4235-8390-439df0b5e2fb","type":"CDSView"}},"id":"bb92f025-046b-4a7f-b111-ff425b7763cf","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"0fd95306-7982-49e6-b68b-87e842babab2","type":"DataRange1d"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"386baefb-c5df-44dd-8910-ca7302c4ba6a","type":"Line"},{"attributes":{},"id":"40e54099-b691-450a-8231-c7065cf45c3c","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"Ibrahim bin Aqeel (1 - 0 - 0)"},"id":"2bc3031c-363b-4f19-bded-1cd2fc471d06","type":"Title"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e2e5c082-8276-411b-948f-1635b96e8bcd","type":"VBar"},{"attributes":{},"id":"d32a1aa4-681b-4646-96e6-f831211a1676","type":"BasicTickFormatter"}],"root_ids":["6145db24-d712-4a13-bd58-c6d180949bab"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b026d442-2715-4e43-a272-68f546345fc7","elementid":"4c123228-4d8e-4f31-b76a-e5c96fd74469","modelid":"6145db24-d712-4a13-bd58-c6d180949bab"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

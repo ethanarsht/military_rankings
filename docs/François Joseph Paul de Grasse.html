@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="3167718a-893d-4f8e-9b12-5ded9957a8ce"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"166c58fc-16cc-4f9e-9fff-455fe083af39":{"roots":{"references":[{"attributes":{},"id":"80ad4cd1-fd3e-4cdf-addf-9b2a7c6c0ece","type":"CategoricalTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f8976e9b-5eb7-4d46-92c0-33135da1eb75","type":"Line"},{"attributes":{},"id":"406ed580-42e8-4473-87e0-f2aa26bd3ae0","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"67dc1280-f862-43d4-aaac-50fb6b437a16","type":"HoverTool"},{"attributes":{},"id":"91163aab-0aa8-446d-8fd1-37fcfcc527ff","type":"LinearScale"},{"attributes":{},"id":"87f52651-6722-458a-9065-0463cbb10a5d","type":"CategoricalTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"09428a65-c23a-4408-bc3e-5a5d7dc2cf38","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"09428a65-c23a-4408-bc3e-5a5d7dc2cf38","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"09428a65-c23a-4408-bc3e-5a5d7dc2cf38","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"327d7f00-9709-49c6-b45c-0e21dcd2450c","type":"VBar"},{"attributes":{"plot":null,"text":"Fran\u00e7ois Joseph Paul de Grasse (2 - 0 - 3)"},"id":"4df65c90-4504-4284-bf7a-a50d5e191ac4","type":"Title"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Fort Royal","Battle of the Chesapeake","Battle of Yorktown (1781)","Battle of St. Kitts","Battle of the Saintes"],"cumulative":{"__ndarray__":"yBw8GzaY3j8w2sw7Ooqkv0rsJjeBA9s/+Jdzetpit7/e6r1ZocXivw==","dtype":"float64","shape":[5]},"general":["Fran\u00e7ois Joseph Paul de Grasse","Fran\u00e7ois Joseph Paul de Grasse","Fran\u00e7ois Joseph Paul de Grasse","Fran\u00e7ois Joseph Paul de Grasse","Fran\u00e7ois Joseph Paul de Grasse"],"outcome":["V","D","V","D","D"],"value":{"__ndarray__":"yBw8GzaY3j8H3FqxvpTgv5CHoH7IlN0/JOnh6htu4L+9794UjLLfvw==","dtype":"float64","shape":[5]},"year":{"__ndarray__":"AAAAAADUm0AAAAAAANSbQAAAAAAA1JtAAAAAAADYm0AAAAAAANibQA==","dtype":"float64","shape":[5]}}},"id":"56871e68-d346-4cc0-a89e-0f01ba27fece","type":"ColumnDataSource"},{"attributes":{},"id":"7c5779b7-e150-4ea5-950e-34eaf2af0755","type":"CategoricalScale"},{"attributes":{"plot":{"id":"0c8a9c62-9e19-4376-9229-e4bf3ee159eb","subtype":"Figure","type":"Plot"},"ticker":{"id":"80ad4cd1-fd3e-4cdf-addf-9b2a7c6c0ece","type":"CategoricalTicker"}},"id":"f65f7870-3856-44bb-9f5a-a22f3e66ca5a","type":"Grid"},{"attributes":{"callback":null},"id":"a36e293c-b92f-4dfe-b1d4-d8ec37f382ed","type":"DataRange1d"},{"attributes":{},"id":"e76ff54f-6a42-4bcd-8e79-f68398a7b098","type":"BasicTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a6160bc3-80d3-4f68-9443-8ac224dbddad","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"67dc1280-f862-43d4-aaac-50fb6b437a16","type":"HoverTool"}]},"id":"6a5ab572-2c45-48ca-afe2-b8e4498e30e6","type":"Toolbar"},{"attributes":{"source":{"id":"56871e68-d346-4cc0-a89e-0f01ba27fece","type":"ColumnDataSource"}},"id":"dd6b9db5-7336-41ff-97b4-c771dd103aa5","type":"CDSView"},{"attributes":{"formatter":{"id":"e76ff54f-6a42-4bcd-8e79-f68398a7b098","type":"BasicTickFormatter"},"plot":{"id":"0c8a9c62-9e19-4376-9229-e4bf3ee159eb","subtype":"Figure","type":"Plot"},"ticker":{"id":"406ed580-42e8-4473-87e0-f2aa26bd3ae0","type":"BasicTicker"}},"id":"6c91cf71-509e-4649-bf2d-bf6c3cf2e2e3","type":"LinearAxis"},{"attributes":{"data_source":{"id":"56871e68-d346-4cc0-a89e-0f01ba27fece","type":"ColumnDataSource"},"glyph":{"id":"a6160bc3-80d3-4f68-9443-8ac224dbddad","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f8976e9b-5eb7-4d46-92c0-33135da1eb75","type":"Line"},"selection_glyph":null,"view":{"id":"6bbcb9ae-ddca-4a3b-ba41-74ecdc8b49ed","type":"CDSView"}},"id":"6a2dce89-ad70-4f0c-8695-e81f08f197a9","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"56871e68-d346-4cc0-a89e-0f01ba27fece","type":"ColumnDataSource"},"glyph":{"id":"327d7f00-9709-49c6-b45c-0e21dcd2450c","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"59612ee6-a871-4c55-b80a-a66150e45b1a","type":"VBar"},"selection_glyph":null,"view":{"id":"dd6b9db5-7336-41ff-97b4-c771dd103aa5","type":"CDSView"}},"id":"a6e6633c-efbf-4936-b054-a5b4132363a2","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"87f52651-6722-458a-9065-0463cbb10a5d","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"0c8a9c62-9e19-4376-9229-e4bf3ee159eb","subtype":"Figure","type":"Plot"},"ticker":{"id":"80ad4cd1-fd3e-4cdf-addf-9b2a7c6c0ece","type":"CategoricalTicker"}},"id":"a0df5244-58eb-42d9-98a9-35f7df91cbdc","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"59612ee6-a871-4c55-b80a-a66150e45b1a","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"0c8a9c62-9e19-4376-9229-e4bf3ee159eb","subtype":"Figure","type":"Plot"},"ticker":{"id":"406ed580-42e8-4473-87e0-f2aa26bd3ae0","type":"BasicTicker"}},"id":"15fa58ba-ac9d-43d2-953d-1d9f2e500ce7","type":"Grid"},{"attributes":{"below":[{"id":"a0df5244-58eb-42d9-98a9-35f7df91cbdc","type":"CategoricalAxis"}],"left":[{"id":"6c91cf71-509e-4649-bf2d-bf6c3cf2e2e3","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"a0df5244-58eb-42d9-98a9-35f7df91cbdc","type":"CategoricalAxis"},{"id":"f65f7870-3856-44bb-9f5a-a22f3e66ca5a","type":"Grid"},{"id":"6c91cf71-509e-4649-bf2d-bf6c3cf2e2e3","type":"LinearAxis"},{"id":"15fa58ba-ac9d-43d2-953d-1d9f2e500ce7","type":"Grid"},{"id":"6a2dce89-ad70-4f0c-8695-e81f08f197a9","type":"GlyphRenderer"},{"id":"a6e6633c-efbf-4936-b054-a5b4132363a2","type":"GlyphRenderer"}],"title":{"id":"4df65c90-4504-4284-bf7a-a50d5e191ac4","type":"Title"},"toolbar":{"id":"6a5ab572-2c45-48ca-afe2-b8e4498e30e6","type":"Toolbar"},"x_range":{"id":"bd0e6baf-3a0b-458b-87ec-93f9db08d6f0","type":"FactorRange"},"x_scale":{"id":"7c5779b7-e150-4ea5-950e-34eaf2af0755","type":"CategoricalScale"},"y_range":{"id":"a36e293c-b92f-4dfe-b1d4-d8ec37f382ed","type":"DataRange1d"},"y_scale":{"id":"91163aab-0aa8-446d-8fd1-37fcfcc527ff","type":"LinearScale"}},"id":"0c8a9c62-9e19-4376-9229-e4bf3ee159eb","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Fort Royal","Battle of the Chesapeake","Battle of Yorktown (1781)","Battle of St. Kitts","Battle of the Saintes"]},"id":"bd0e6baf-3a0b-458b-87ec-93f9db08d6f0","type":"FactorRange"},{"attributes":{"source":{"id":"56871e68-d346-4cc0-a89e-0f01ba27fece","type":"ColumnDataSource"}},"id":"6bbcb9ae-ddca-4a3b-ba41-74ecdc8b49ed","type":"CDSView"}],"root_ids":["0c8a9c62-9e19-4376-9229-e4bf3ee159eb"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"166c58fc-16cc-4f9e-9fff-455fe083af39","elementid":"3167718a-893d-4f8e-9b12-5ded9957a8ce","modelid":"0c8a9c62-9e19-4376-9229-e4bf3ee159eb"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

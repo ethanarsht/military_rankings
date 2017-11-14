@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="e00eeb94-fd14-44ac-8ce4-0f4a24f2e894"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b45c31e1-388f-4ba4-aca2-52a648c210a8":{"roots":{"references":[{"attributes":{"data_source":{"id":"4ab95ed2-033a-4207-a638-d32fcbefd8a0","type":"ColumnDataSource"},"glyph":{"id":"864bf5c9-8066-4488-8534-3d56c331ad39","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1ed5ce14-48b5-4a48-b9b2-283962289af1","type":"VBar"},"selection_glyph":null,"view":{"id":"41f93a72-6f14-4c94-88cd-953e04cd1757","type":"CDSView"}},"id":"8d08a3a0-65e0-466f-bb49-d81733960fb0","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"107b5741-b4cd-4249-9e8e-efdb7cb48b4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"72b0612c-5db8-45f7-b386-f2f165e5b6d9","type":"CategoricalTicker"}},"id":"631b0aec-effd-4acf-8c56-c0d906746efc","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"ab380be5-59e1-426d-8de6-337fb3c2257a","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"ab380be5-59e1-426d-8de6-337fb3c2257a","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"864bf5c9-8066-4488-8534-3d56c331ad39","type":"VBar"},{"attributes":{},"id":"30150a17-fa60-46d9-aa96-3646d52fc4cf","type":"CategoricalTickFormatter"},{"attributes":{},"id":"bd8ecb7f-4cf5-4c20-9702-43818f076be1","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"1ed5ce14-48b5-4a48-b9b2-283962289af1","type":"VBar"},{"attributes":{},"id":"26becd85-a64a-4a4f-a055-afeb2eb823e3","type":"CategoricalScale"},{"attributes":{"callback":null},"id":"1b0bb15c-9384-4d41-867f-6e26ee413625","type":"DataRange1d"},{"attributes":{"data_source":{"id":"4ab95ed2-033a-4207-a638-d32fcbefd8a0","type":"ColumnDataSource"},"glyph":{"id":"bb25f6ff-0cbf-461e-8d52-5fc618d405ec","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"166e5734-ab7b-46b6-a96b-1264984fc599","type":"Line"},"selection_glyph":null,"view":{"id":"b2e1828e-dc44-4691-8a5a-9bd612e4e8f0","type":"CDSView"}},"id":"c9c83773-3fae-4a98-86e0-45fc89d4e7ea","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f11a5b10-1658-4947-8acf-a258f09f2bf2","type":"HoverTool"},{"attributes":{"formatter":{"id":"d91be7b0-1d18-46f6-aca5-c2b2779da698","type":"BasicTickFormatter"},"plot":{"id":"107b5741-b4cd-4249-9e8e-efdb7cb48b4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"02d20d45-2675-4a98-a014-3d0ac31bfd0d","type":"BasicTicker"}},"id":"9630ec9a-d5f8-47bb-b580-0a44e8dc9b25","type":"LinearAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"bb25f6ff-0cbf-461e-8d52-5fc618d405ec","type":"Line"},{"attributes":{"source":{"id":"4ab95ed2-033a-4207-a638-d32fcbefd8a0","type":"ColumnDataSource"}},"id":"b2e1828e-dc44-4691-8a5a-9bd612e4e8f0","type":"CDSView"},{"attributes":{"below":[{"id":"2edd122e-7f26-4cc4-85bc-f1c5bab8386b","type":"CategoricalAxis"}],"left":[{"id":"9630ec9a-d5f8-47bb-b580-0a44e8dc9b25","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"2edd122e-7f26-4cc4-85bc-f1c5bab8386b","type":"CategoricalAxis"},{"id":"631b0aec-effd-4acf-8c56-c0d906746efc","type":"Grid"},{"id":"9630ec9a-d5f8-47bb-b580-0a44e8dc9b25","type":"LinearAxis"},{"id":"3e97473e-341c-4a7c-8788-a024d9f59407","type":"Grid"},{"id":"c9c83773-3fae-4a98-86e0-45fc89d4e7ea","type":"GlyphRenderer"},{"id":"8d08a3a0-65e0-466f-bb49-d81733960fb0","type":"GlyphRenderer"}],"title":{"id":"50de58d5-b753-4789-bf5c-6ab86d827546","type":"Title"},"toolbar":{"id":"7bdea098-33e9-4b99-9ffc-9113d99fe667","type":"Toolbar"},"x_range":{"id":"ed7cf19b-2799-4cfd-b121-361d4ae06e4d","type":"FactorRange"},"x_scale":{"id":"26becd85-a64a-4a4f-a055-afeb2eb823e3","type":"CategoricalScale"},"y_range":{"id":"1b0bb15c-9384-4d41-867f-6e26ee413625","type":"DataRange1d"},"y_scale":{"id":"bd8ecb7f-4cf5-4c20-9702-43818f076be1","type":"LinearScale"}},"id":"107b5741-b4cd-4249-9e8e-efdb7cb48b4e","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Slankamen"],"cumulative":{"__ndarray__":"CIyQBo6f4D8=","dtype":"float64","shape":[1]},"general":["Jovan Monasterlija"],"outcome":["V"],"value":{"__ndarray__":"CIyQBo6f4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABsmkA=","dtype":"float64","shape":[1]}}},"id":"4ab95ed2-033a-4207-a638-d32fcbefd8a0","type":"ColumnDataSource"},{"attributes":{},"id":"02d20d45-2675-4a98-a014-3d0ac31bfd0d","type":"BasicTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"ab380be5-59e1-426d-8de6-337fb3c2257a","type":"CategoricalColorMapper"},{"attributes":{},"id":"72b0612c-5db8-45f7-b386-f2f165e5b6d9","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"107b5741-b4cd-4249-9e8e-efdb7cb48b4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"02d20d45-2675-4a98-a014-3d0ac31bfd0d","type":"BasicTicker"}},"id":"3e97473e-341c-4a7c-8788-a024d9f59407","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Slankamen"]},"id":"ed7cf19b-2799-4cfd-b121-361d4ae06e4d","type":"FactorRange"},{"attributes":{},"id":"d91be7b0-1d18-46f6-aca5-c2b2779da698","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"4ab95ed2-033a-4207-a638-d32fcbefd8a0","type":"ColumnDataSource"}},"id":"41f93a72-6f14-4c94-88cd-953e04cd1757","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"166e5734-ab7b-46b6-a96b-1264984fc599","type":"Line"},{"attributes":{"plot":null,"text":"Jovan Monasterlija (1 - 0 - 0)"},"id":"50de58d5-b753-4789-bf5c-6ab86d827546","type":"Title"},{"attributes":{"formatter":{"id":"30150a17-fa60-46d9-aa96-3646d52fc4cf","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"107b5741-b4cd-4249-9e8e-efdb7cb48b4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"72b0612c-5db8-45f7-b386-f2f165e5b6d9","type":"CategoricalTicker"}},"id":"2edd122e-7f26-4cc4-85bc-f1c5bab8386b","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f11a5b10-1658-4947-8acf-a258f09f2bf2","type":"HoverTool"}]},"id":"7bdea098-33e9-4b99-9ffc-9113d99fe667","type":"Toolbar"}],"root_ids":["107b5741-b4cd-4249-9e8e-efdb7cb48b4e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b45c31e1-388f-4ba4-aca2-52a648c210a8","elementid":"e00eeb94-fd14-44ac-8ce4-0f4a24f2e894","modelid":"107b5741-b4cd-4249-9e8e-efdb7cb48b4e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

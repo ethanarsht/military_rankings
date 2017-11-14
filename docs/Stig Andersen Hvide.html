@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="5d22a4cb-f775-48ec-befa-15783f677f1d"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"da8b9db1-1bf2-4712-b1d5-bb50568b87c9":{"roots":{"references":[{"attributes":{},"id":"09a4059c-95aa-4987-a0be-c4e25205e098","type":"LinearScale"},{"attributes":{"data_source":{"id":"d92c982b-db0d-4258-a6ed-ed79e59340c0","type":"ColumnDataSource"},"glyph":{"id":"ac542a9a-8880-429d-8565-13ca348aef11","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f4a5669e-ef0f-4eb0-9aad-6c8191f83e31","type":"VBar"},"selection_glyph":null,"view":{"id":"d2b915ce-026a-47c9-9e39-cc40cddcdedc","type":"CDSView"}},"id":"21040a8d-68c6-4bc9-bdff-9b92ce19794a","type":"GlyphRenderer"},{"attributes":{"source":{"id":"d92c982b-db0d-4258-a6ed-ed79e59340c0","type":"ColumnDataSource"}},"id":"54dfb7cf-8fd0-48de-beb9-966a836794f8","type":"CDSView"},{"attributes":{"callback":null,"factors":["Siege of Copenhagen (1289)"]},"id":"bb8d2e97-1885-40e3-99bd-5c4379578ad1","type":"FactorRange"},{"attributes":{"plot":{"id":"2f3b7d1b-e7ac-428c-9cc2-b1b69daf63f8","subtype":"Figure","type":"Plot"},"ticker":{"id":"de17b97b-d9ce-4033-b361-43cda69b5e15","type":"CategoricalTicker"}},"id":"efc9a137-aab2-402e-b26c-b07967d924e6","type":"Grid"},{"attributes":{},"id":"58a5af49-e8f1-4e2f-843e-0f084f4c3825","type":"BasicTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Copenhagen (1289)"],"cumulative":{"__ndarray__":"AAAAAAAA4L8=","dtype":"float64","shape":[1]},"general":["Stig Andersen Hvide"],"outcome":["D"],"value":{"__ndarray__":"AAAAAAAA4L8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAklEA=","dtype":"float64","shape":[1]}}},"id":"d92c982b-db0d-4258-a6ed-ed79e59340c0","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"58a5af49-e8f1-4e2f-843e-0f084f4c3825","type":"BasicTickFormatter"},"plot":{"id":"2f3b7d1b-e7ac-428c-9cc2-b1b69daf63f8","subtype":"Figure","type":"Plot"},"ticker":{"id":"071b0352-547a-4661-b2a5-48507bd62ff2","type":"BasicTicker"}},"id":"9e9dd8ce-359c-485d-a48e-4c89551fb992","type":"LinearAxis"},{"attributes":{},"id":"d132adbf-a17e-4c14-92a8-88d2d65132ac","type":"CategoricalScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"968e1592-23bd-42fe-903e-195ca964a9a4","type":"CategoricalColorMapper"},{"attributes":{},"id":"d61c13bd-83ae-47a7-9e20-08dc6f6681ca","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"d61c13bd-83ae-47a7-9e20-08dc6f6681ca","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"2f3b7d1b-e7ac-428c-9cc2-b1b69daf63f8","subtype":"Figure","type":"Plot"},"ticker":{"id":"de17b97b-d9ce-4033-b361-43cda69b5e15","type":"CategoricalTicker"}},"id":"cca4e4cd-29e6-47a6-8a10-ce158cc7fb7e","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"31e7b056-f7aa-4222-be8b-751e3d0a22e7","type":"HoverTool"}]},"id":"cd774987-7159-4367-8ec3-12a6d1086374","type":"Toolbar"},{"attributes":{},"id":"de17b97b-d9ce-4033-b361-43cda69b5e15","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"2f3b7d1b-e7ac-428c-9cc2-b1b69daf63f8","subtype":"Figure","type":"Plot"},"ticker":{"id":"071b0352-547a-4661-b2a5-48507bd62ff2","type":"BasicTicker"}},"id":"776ca215-e5f0-48ba-aebd-69b04532818e","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"31e7b056-f7aa-4222-be8b-751e3d0a22e7","type":"HoverTool"},{"attributes":{"data_source":{"id":"d92c982b-db0d-4258-a6ed-ed79e59340c0","type":"ColumnDataSource"},"glyph":{"id":"57bdf9c6-fa92-488e-a1e3-841b534f26b4","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2b04c562-917a-409e-ae63-c7dd46c5bebd","type":"Line"},"selection_glyph":null,"view":{"id":"54dfb7cf-8fd0-48de-beb9-966a836794f8","type":"CDSView"}},"id":"6557777f-a2ed-4977-8c73-be57ffd77fca","type":"GlyphRenderer"},{"attributes":{"source":{"id":"d92c982b-db0d-4258-a6ed-ed79e59340c0","type":"ColumnDataSource"}},"id":"d2b915ce-026a-47c9-9e39-cc40cddcdedc","type":"CDSView"},{"attributes":{},"id":"071b0352-547a-4661-b2a5-48507bd62ff2","type":"BasicTicker"},{"attributes":{"callback":null},"id":"8353aab0-f4fc-4b64-8e13-adbe17b124e4","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f4a5669e-ef0f-4eb0-9aad-6c8191f83e31","type":"VBar"},{"attributes":{"below":[{"id":"cca4e4cd-29e6-47a6-8a10-ce158cc7fb7e","type":"CategoricalAxis"}],"left":[{"id":"9e9dd8ce-359c-485d-a48e-4c89551fb992","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"cca4e4cd-29e6-47a6-8a10-ce158cc7fb7e","type":"CategoricalAxis"},{"id":"efc9a137-aab2-402e-b26c-b07967d924e6","type":"Grid"},{"id":"9e9dd8ce-359c-485d-a48e-4c89551fb992","type":"LinearAxis"},{"id":"776ca215-e5f0-48ba-aebd-69b04532818e","type":"Grid"},{"id":"6557777f-a2ed-4977-8c73-be57ffd77fca","type":"GlyphRenderer"},{"id":"21040a8d-68c6-4bc9-bdff-9b92ce19794a","type":"GlyphRenderer"}],"title":{"id":"c5846ab0-be24-4d7b-aa5e-d1cbcaac52ab","type":"Title"},"toolbar":{"id":"cd774987-7159-4367-8ec3-12a6d1086374","type":"Toolbar"},"x_range":{"id":"bb8d2e97-1885-40e3-99bd-5c4379578ad1","type":"FactorRange"},"x_scale":{"id":"d132adbf-a17e-4c14-92a8-88d2d65132ac","type":"CategoricalScale"},"y_range":{"id":"8353aab0-f4fc-4b64-8e13-adbe17b124e4","type":"DataRange1d"},"y_scale":{"id":"09a4059c-95aa-4987-a0be-c4e25205e098","type":"LinearScale"}},"id":"2f3b7d1b-e7ac-428c-9cc2-b1b69daf63f8","subtype":"Figure","type":"Plot"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"57bdf9c6-fa92-488e-a1e3-841b534f26b4","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"968e1592-23bd-42fe-903e-195ca964a9a4","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"968e1592-23bd-42fe-903e-195ca964a9a4","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ac542a9a-8880-429d-8565-13ca348aef11","type":"VBar"},{"attributes":{"plot":null,"text":"Stig Andersen Hvide (0 - 0 - 1)"},"id":"c5846ab0-be24-4d7b-aa5e-d1cbcaac52ab","type":"Title"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2b04c562-917a-409e-ae63-c7dd46c5bebd","type":"Line"}],"root_ids":["2f3b7d1b-e7ac-428c-9cc2-b1b69daf63f8"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"da8b9db1-1bf2-4712-b1d5-bb50568b87c9","elementid":"5d22a4cb-f775-48ec-befa-15783f677f1d","modelid":"2f3b7d1b-e7ac-428c-9cc2-b1b69daf63f8"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

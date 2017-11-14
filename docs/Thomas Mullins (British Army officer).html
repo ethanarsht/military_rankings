@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f7f350d6-de18-41db-bcfc-aa688d49d097"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"41ac4388-6224-4080-9327-24df5ed009cf":{"roots":{"references":[{"attributes":{},"id":"dfb04632-6aae-435d-b6a6-b0f862e31abe","type":"LinearScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"037e6b32-5abc-4e4c-a3a3-c10ce7db3f75","type":"Line"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"21c9fcdb-be6e-47ad-8fa4-e97b2fb1325e","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"c5e455d5-3364-49c8-af5b-1af3ec2ec78a","subtype":"Figure","type":"Plot"},"ticker":{"id":"bf327a13-d940-4b2f-8d3a-b0076b9239ef","type":"BasicTicker"}},"id":"8f77736a-514a-410d-9dea-c97fd64ca628","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"11b12624-4642-444d-9a11-732b097ad541","type":"VBar"},{"attributes":{},"id":"e27c6914-f348-4bba-b50d-1b9a85665352","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"57da88a5-925f-490d-a53d-ed19e0969a41","type":"DataRange1d"},{"attributes":{},"id":"bf327a13-d940-4b2f-8d3a-b0076b9239ef","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"39ad0e8d-1e76-4f75-97ef-1581283107b4","type":"HoverTool"}]},"id":"82ab581a-ac86-4ee0-81a9-6ccec71194f6","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f045a21e-ffc6-45a6-bba4-ba45380edd51","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f045a21e-ffc6-45a6-bba4-ba45380edd51","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"02e0a941-456d-4107-8630-40bda5116ad1","type":"VBar"},{"attributes":{"data_source":{"id":"9060072d-eead-4368-92b6-473379eca7b7","type":"ColumnDataSource"},"glyph":{"id":"21c9fcdb-be6e-47ad-8fa4-e97b2fb1325e","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"037e6b32-5abc-4e4c-a3a3-c10ce7db3f75","type":"Line"},"selection_glyph":null,"view":{"id":"e40a3daf-124d-40dd-a27a-40e2a3e3105b","type":"CDSView"}},"id":"8cf51a6e-1c70-4172-9591-548702cc794c","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"39ad0e8d-1e76-4f75-97ef-1581283107b4","type":"HoverTool"},{"attributes":{"formatter":{"id":"e27c6914-f348-4bba-b50d-1b9a85665352","type":"BasicTickFormatter"},"plot":{"id":"c5e455d5-3364-49c8-af5b-1af3ec2ec78a","subtype":"Figure","type":"Plot"},"ticker":{"id":"bf327a13-d940-4b2f-8d3a-b0076b9239ef","type":"BasicTicker"}},"id":"aa3eb564-8e5c-4eed-920e-dce90b94cc94","type":"LinearAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f045a21e-ffc6-45a6-bba4-ba45380edd51","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"9060072d-eead-4368-92b6-473379eca7b7","type":"ColumnDataSource"}},"id":"1f048866-1835-4255-873a-eb218204538a","type":"CDSView"},{"attributes":{},"id":"049afc0e-40bc-423a-94b0-2e9e84f0ba4d","type":"CategoricalScale"},{"attributes":{"source":{"id":"9060072d-eead-4368-92b6-473379eca7b7","type":"ColumnDataSource"}},"id":"e40a3daf-124d-40dd-a27a-40e2a3e3105b","type":"CDSView"},{"attributes":{"plot":{"id":"c5e455d5-3364-49c8-af5b-1af3ec2ec78a","subtype":"Figure","type":"Plot"},"ticker":{"id":"1423abd0-c388-4cd2-a8df-5bee5ad48cf5","type":"CategoricalTicker"}},"id":"a4f5febd-f289-4124-a792-6dff27cca7a5","type":"Grid"},{"attributes":{"plot":null,"text":"Thomas Mullins (British Army officer) (0 - 0 - 1)"},"id":"e8903796-c71f-4f9c-98cf-de072f9c5a68","type":"Title"},{"attributes":{"data_source":{"id":"9060072d-eead-4368-92b6-473379eca7b7","type":"ColumnDataSource"},"glyph":{"id":"02e0a941-456d-4107-8630-40bda5116ad1","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"11b12624-4642-444d-9a11-732b097ad541","type":"VBar"},"selection_glyph":null,"view":{"id":"1f048866-1835-4255-873a-eb218204538a","type":"CDSView"}},"id":"a35db43a-5ebb-46c9-b74e-c984bcbe540f","type":"GlyphRenderer"},{"attributes":{},"id":"04fc5421-e6cc-4bee-b0ec-edf38144358b","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"d0470aa1-adad-4a51-bb75-5b20fd8088f1","type":"CategoricalAxis"}],"left":[{"id":"aa3eb564-8e5c-4eed-920e-dce90b94cc94","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"d0470aa1-adad-4a51-bb75-5b20fd8088f1","type":"CategoricalAxis"},{"id":"a4f5febd-f289-4124-a792-6dff27cca7a5","type":"Grid"},{"id":"aa3eb564-8e5c-4eed-920e-dce90b94cc94","type":"LinearAxis"},{"id":"8f77736a-514a-410d-9dea-c97fd64ca628","type":"Grid"},{"id":"8cf51a6e-1c70-4172-9591-548702cc794c","type":"GlyphRenderer"},{"id":"a35db43a-5ebb-46c9-b74e-c984bcbe540f","type":"GlyphRenderer"}],"title":{"id":"e8903796-c71f-4f9c-98cf-de072f9c5a68","type":"Title"},"toolbar":{"id":"82ab581a-ac86-4ee0-81a9-6ccec71194f6","type":"Toolbar"},"x_range":{"id":"30fdcfb4-af1d-4bef-bf8e-08d9a1f0ee69","type":"FactorRange"},"x_scale":{"id":"049afc0e-40bc-423a-94b0-2e9e84f0ba4d","type":"CategoricalScale"},"y_range":{"id":"57da88a5-925f-490d-a53d-ed19e0969a41","type":"DataRange1d"},"y_scale":{"id":"dfb04632-6aae-435d-b6a6-b0f862e31abe","type":"LinearScale"}},"id":"c5e455d5-3364-49c8-af5b-1af3ec2ec78a","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of New Orleans"]},"id":"30fdcfb4-af1d-4bef-bf8e-08d9a1f0ee69","type":"FactorRange"},{"attributes":{"formatter":{"id":"04fc5421-e6cc-4bee-b0ec-edf38144358b","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"c5e455d5-3364-49c8-af5b-1af3ec2ec78a","subtype":"Figure","type":"Plot"},"ticker":{"id":"1423abd0-c388-4cd2-a8df-5bee5ad48cf5","type":"CategoricalTicker"}},"id":"d0470aa1-adad-4a51-bb75-5b20fd8088f1","type":"CategoricalAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of New Orleans"],"cumulative":{"__ndarray__":"nxcI3faz4b8=","dtype":"float64","shape":[1]},"general":["Thomas Mullins (British Army officer)"],"outcome":["D"],"value":{"__ndarray__":"nxcI3faz4b8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABcnEA=","dtype":"float64","shape":[1]}}},"id":"9060072d-eead-4368-92b6-473379eca7b7","type":"ColumnDataSource"},{"attributes":{},"id":"1423abd0-c388-4cd2-a8df-5bee5ad48cf5","type":"CategoricalTicker"}],"root_ids":["c5e455d5-3364-49c8-af5b-1af3ec2ec78a"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"41ac4388-6224-4080-9327-24df5ed009cf","elementid":"f7f350d6-de18-41db-bcfc-aa688d49d097","modelid":"c5e455d5-3364-49c8-af5b-1af3ec2ec78a"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

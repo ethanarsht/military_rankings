@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f9b0263c-25a9-4ce5-80c0-4474e7b7bae9"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"d3702784-54e5-444b-afa5-91cae4d51a51":{"roots":{"references":[{"attributes":{"callback":null},"id":"c5b473fc-4c37-492a-8220-1ef23c08924f","type":"DataRange1d"},{"attributes":{"source":{"id":"8f7452cc-60d7-4809-8064-0c9611fcb250","type":"ColumnDataSource"}},"id":"bd6a6667-38c9-45d5-9d1c-7349142818f8","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"ee8e901c-a358-435b-9f87-9c2e334defcc","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"ee8e901c-a358-435b-9f87-9c2e334defcc","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d667086b-4948-4a1a-a554-e16c8da74113","type":"VBar"},{"attributes":{},"id":"d4af15c2-8eed-41a6-bc56-2844348bd3ed","type":"CategoricalScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3a511a35-432d-43fa-b91e-0b0e5623807b","type":"Line"},{"attributes":{},"id":"3e2a1c89-0f79-4d03-80d5-f0d380c5c63f","type":"BasicTicker"},{"attributes":{"source":{"id":"8f7452cc-60d7-4809-8064-0c9611fcb250","type":"ColumnDataSource"}},"id":"96189c81-6049-4145-85f4-15517b6bf43f","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Marston Moor","Battle of Philiphaugh","Battle of Dunbar (1650)"]},"id":"13afa28f-5643-4c4f-9a58-ac950b0935f9","type":"FactorRange"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"ee8e901c-a358-435b-9f87-9c2e334defcc","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"b00d042b-9932-4f21-9d99-ca9abb2a2be6","type":"BasicTickFormatter"},"plot":{"id":"ed40def9-4c07-4773-a19e-b1e79dd69205","subtype":"Figure","type":"Plot"},"ticker":{"id":"3e2a1c89-0f79-4d03-80d5-f0d380c5c63f","type":"BasicTicker"}},"id":"835384a4-b19b-41b0-b644-12bd4d2cfde8","type":"LinearAxis"},{"attributes":{"below":[{"id":"456bc1a8-0f19-4de2-b4db-ec7f8871290b","type":"CategoricalAxis"}],"left":[{"id":"835384a4-b19b-41b0-b644-12bd4d2cfde8","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"456bc1a8-0f19-4de2-b4db-ec7f8871290b","type":"CategoricalAxis"},{"id":"792dae14-cbfb-4c5b-bc60-b3a62db343a4","type":"Grid"},{"id":"835384a4-b19b-41b0-b644-12bd4d2cfde8","type":"LinearAxis"},{"id":"b01f6190-e886-4da9-a7e5-c1d1518c51c0","type":"Grid"},{"id":"c758c888-4bf2-40fc-9633-fc9c7c17e52b","type":"GlyphRenderer"},{"id":"34e307d1-7e87-4a6e-a27e-6e1562c11bf4","type":"GlyphRenderer"}],"title":{"id":"0d91a5be-e69c-4912-bdf2-4beee2644a83","type":"Title"},"toolbar":{"id":"5c7b7278-4407-4c97-8e9e-83ea0cfbb3b3","type":"Toolbar"},"x_range":{"id":"13afa28f-5643-4c4f-9a58-ac950b0935f9","type":"FactorRange"},"x_scale":{"id":"d4af15c2-8eed-41a6-bc56-2844348bd3ed","type":"CategoricalScale"},"y_range":{"id":"c5b473fc-4c37-492a-8220-1ef23c08924f","type":"DataRange1d"},"y_scale":{"id":"1c1af4dd-5093-4cc5-b9f3-e1b08be6bfcc","type":"LinearScale"}},"id":"ed40def9-4c07-4773-a19e-b1e79dd69205","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"8f7452cc-60d7-4809-8064-0c9611fcb250","type":"ColumnDataSource"},"glyph":{"id":"35d5153c-954b-4de1-b352-b2668c279a17","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3a511a35-432d-43fa-b91e-0b0e5623807b","type":"Line"},"selection_glyph":null,"view":{"id":"96189c81-6049-4145-85f4-15517b6bf43f","type":"CDSView"}},"id":"c758c888-4bf2-40fc-9633-fc9c7c17e52b","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"8f7452cc-60d7-4809-8064-0c9611fcb250","type":"ColumnDataSource"},"glyph":{"id":"d667086b-4948-4a1a-a554-e16c8da74113","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"96ab5a03-3627-49eb-a1aa-7e7bbadc56bd","type":"VBar"},"selection_glyph":null,"view":{"id":"bd6a6667-38c9-45d5-9d1c-7349142818f8","type":"CDSView"}},"id":"34e307d1-7e87-4a6e-a27e-6e1562c11bf4","type":"GlyphRenderer"},{"attributes":{},"id":"c9caf3ff-eb3b-4d87-90e2-3005f6625da8","type":"CategoricalTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"35d5153c-954b-4de1-b352-b2668c279a17","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"74830197-31d5-4a15-89e1-71bb5b1134f6","type":"HoverTool"}]},"id":"5c7b7278-4407-4c97-8e9e-83ea0cfbb3b3","type":"Toolbar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"74830197-31d5-4a15-89e1-71bb5b1134f6","type":"HoverTool"},{"attributes":{},"id":"b99275df-fdab-4510-8578-c34660265bd4","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"ed40def9-4c07-4773-a19e-b1e79dd69205","subtype":"Figure","type":"Plot"},"ticker":{"id":"3e2a1c89-0f79-4d03-80d5-f0d380c5c63f","type":"BasicTicker"}},"id":"b01f6190-e886-4da9-a7e5-c1d1518c51c0","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"96ab5a03-3627-49eb-a1aa-7e7bbadc56bd","type":"VBar"},{"attributes":{"formatter":{"id":"c9caf3ff-eb3b-4d87-90e2-3005f6625da8","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"ed40def9-4c07-4773-a19e-b1e79dd69205","subtype":"Figure","type":"Plot"},"ticker":{"id":"b99275df-fdab-4510-8578-c34660265bd4","type":"CategoricalTicker"}},"id":"456bc1a8-0f19-4de2-b4db-ec7f8871290b","type":"CategoricalAxis"},{"attributes":{"plot":null,"text":"David Leslie, 1st Lord Newark (2 - 0 - 1)"},"id":"0d91a5be-e69c-4912-bdf2-4beee2644a83","type":"Title"},{"attributes":{},"id":"1c1af4dd-5093-4cc5-b9f3-e1b08be6bfcc","type":"LinearScale"},{"attributes":{},"id":"b00d042b-9932-4f21-9d99-ca9abb2a2be6","type":"BasicTickFormatter"},{"attributes":{"plot":{"id":"ed40def9-4c07-4773-a19e-b1e79dd69205","subtype":"Figure","type":"Plot"},"ticker":{"id":"b99275df-fdab-4510-8578-c34660265bd4","type":"CategoricalTicker"}},"id":"792dae14-cbfb-4c5b-bc60-b3a62db343a4","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Marston Moor","Battle of Philiphaugh","Battle of Dunbar (1650)"],"cumulative":{"__ndarray__":"pMbGGQ9j3j8AK13ubM7tP6p7FZ7Jttg/","dtype":"float64","shape":[3]},"general":["David Leslie, 1st Lord Newark","David Leslie, 1st Lord Newark","David Leslie, 1st Lord Newark"],"outcome":["V","V","D"],"value":{"__ndarray__":"pMbGGQ9j3j9cj/PCyjndPyttUh8Ic+G/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAACwmUAAAAAAALSZQAAAAAAAyJlA","dtype":"float64","shape":[3]}}},"id":"8f7452cc-60d7-4809-8064-0c9611fcb250","type":"ColumnDataSource"}],"root_ids":["ed40def9-4c07-4773-a19e-b1e79dd69205"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"d3702784-54e5-444b-afa5-91cae4d51a51","elementid":"f9b0263c-25a9-4ce5-80c0-4474e7b7bae9","modelid":"ed40def9-4c07-4773-a19e-b1e79dd69205"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

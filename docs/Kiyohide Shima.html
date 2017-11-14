@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="5ddec325-c0e6-49e6-b5d2-09e36dae0112"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b897df10-df07-4cbb-a91c-2bcd45832458":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"c68e073a-fb2f-4696-93b5-1283eae108ac","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"dbc62af8-a33b-41a9-99da-5f147a1cac79","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"baf5376c-1954-4184-8e8c-ad0b45a76280","subtype":"Figure","type":"Plot"},"ticker":{"id":"45d1b222-d0e3-4360-8689-cce69db09e26","type":"CategoricalTicker"}},"id":"68f8e70a-72ec-443b-a5af-10598298ec1f","type":"CategoricalAxis"},{"attributes":{"formatter":{"id":"83f67e11-a25a-485a-bc1e-549c2977434e","type":"BasicTickFormatter"},"plot":{"id":"baf5376c-1954-4184-8e8c-ad0b45a76280","subtype":"Figure","type":"Plot"},"ticker":{"id":"67fda1eb-d5ee-43f6-bd37-775066ec76f1","type":"BasicTicker"}},"id":"bf96e35b-52d5-4334-9c62-1a3813656f53","type":"LinearAxis"},{"attributes":{},"id":"67fda1eb-d5ee-43f6-bd37-775066ec76f1","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"015f29fd-ac07-41fd-969e-0f4d29131a14","type":"HoverTool"},{"attributes":{},"id":"dbc62af8-a33b-41a9-99da-5f147a1cac79","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"68f8e70a-72ec-443b-a5af-10598298ec1f","type":"CategoricalAxis"}],"left":[{"id":"bf96e35b-52d5-4334-9c62-1a3813656f53","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"68f8e70a-72ec-443b-a5af-10598298ec1f","type":"CategoricalAxis"},{"id":"c4537c2d-a282-4d7c-80ea-680f91fc309f","type":"Grid"},{"id":"bf96e35b-52d5-4334-9c62-1a3813656f53","type":"LinearAxis"},{"id":"5efb73a4-0d36-48a1-a54d-55c1c8867f69","type":"Grid"},{"id":"8175df99-c354-4469-9727-30005bdad149","type":"GlyphRenderer"},{"id":"3e1a5ae0-5652-478c-95a2-15c03c4d4009","type":"GlyphRenderer"}],"title":{"id":"e11d6c3d-9233-46d3-b6d7-3995616431b5","type":"Title"},"toolbar":{"id":"e765604c-01cd-4d34-a9af-f7dcc58aa8e3","type":"Toolbar"},"x_range":{"id":"3927d053-ade0-4ec3-be38-99c62df0425c","type":"FactorRange"},"x_scale":{"id":"b9d98fc5-9051-499b-af25-52f0fcb330cb","type":"CategoricalScale"},"y_range":{"id":"e759b678-c777-47e9-a8e5-5109b8508eb9","type":"DataRange1d"},"y_scale":{"id":"0ba1a29b-a3e3-475e-8a70-8af1baf986aa","type":"LinearScale"}},"id":"baf5376c-1954-4184-8e8c-ad0b45a76280","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"83f67e11-a25a-485a-bc1e-549c2977434e","type":"BasicTickFormatter"},{"attributes":{},"id":"45d1b222-d0e3-4360-8689-cce69db09e26","type":"CategoricalTicker"},{"attributes":{"plot":{"id":"baf5376c-1954-4184-8e8c-ad0b45a76280","subtype":"Figure","type":"Plot"},"ticker":{"id":"45d1b222-d0e3-4360-8689-cce69db09e26","type":"CategoricalTicker"}},"id":"c4537c2d-a282-4d7c-80ea-680f91fc309f","type":"Grid"},{"attributes":{"source":{"id":"41b7f73c-1db0-4d08-8385-958f9aa78dcc","type":"ColumnDataSource"}},"id":"db49f915-4e44-4d2b-a954-dc78a826c4b5","type":"CDSView"},{"attributes":{},"id":"b9d98fc5-9051-499b-af25-52f0fcb330cb","type":"CategoricalScale"},{"attributes":{"dimension":1,"plot":{"id":"baf5376c-1954-4184-8e8c-ad0b45a76280","subtype":"Figure","type":"Plot"},"ticker":{"id":"67fda1eb-d5ee-43f6-bd37-775066ec76f1","type":"BasicTicker"}},"id":"5efb73a4-0d36-48a1-a54d-55c1c8867f69","type":"Grid"},{"attributes":{"data_source":{"id":"41b7f73c-1db0-4d08-8385-958f9aa78dcc","type":"ColumnDataSource"},"glyph":{"id":"24725961-38bb-4f83-846b-a6554b571a55","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e34fefc7-8b86-4661-beaa-0a95ad60c5db","type":"Line"},"selection_glyph":null,"view":{"id":"db49f915-4e44-4d2b-a954-dc78a826c4b5","type":"CDSView"}},"id":"8175df99-c354-4469-9727-30005bdad149","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"e759b678-c777-47e9-a8e5-5109b8508eb9","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Kiyohide Shima (1 - 0 - 1)"},"id":"e11d6c3d-9233-46d3-b6d7-3995616431b5","type":"Title"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"015f29fd-ac07-41fd-969e-0f4d29131a14","type":"HoverTool"}]},"id":"e765604c-01cd-4d34-a9af-f7dcc58aa8e3","type":"Toolbar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of the Coral Sea","Battle of Leyte Gulf"],"cumulative":{"__ndarray__":"7oAtknYv3j/YzLVVks+uPw==","dtype":"float64","shape":[2]},"general":["Kiyohide Shima","Kiyohide Shima"],"outcome":["V","D"],"value":{"__ndarray__":"7oAtknYv3j9Tx3ZHhFXavw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABYnkAAAAAAAGCeQA==","dtype":"float64","shape":[2]}}},"id":"41b7f73c-1db0-4d08-8385-958f9aa78dcc","type":"ColumnDataSource"},{"attributes":{"source":{"id":"41b7f73c-1db0-4d08-8385-958f9aa78dcc","type":"ColumnDataSource"}},"id":"9080f87e-d73e-4af2-a600-fef4fb3a53f4","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e34fefc7-8b86-4661-beaa-0a95ad60c5db","type":"Line"},{"attributes":{"data_source":{"id":"41b7f73c-1db0-4d08-8385-958f9aa78dcc","type":"ColumnDataSource"},"glyph":{"id":"2a99584e-f0ac-49a3-91cc-b43b93dca0dc","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0801caea-4fe4-44f1-8b5f-03fa611253ae","type":"VBar"},"selection_glyph":null,"view":{"id":"9080f87e-d73e-4af2-a600-fef4fb3a53f4","type":"CDSView"}},"id":"3e1a5ae0-5652-478c-95a2-15c03c4d4009","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of the Coral Sea","Battle of Leyte Gulf"]},"id":"3927d053-ade0-4ec3-be38-99c62df0425c","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"0801caea-4fe4-44f1-8b5f-03fa611253ae","type":"VBar"},{"attributes":{},"id":"0ba1a29b-a3e3-475e-8a70-8af1baf986aa","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"24725961-38bb-4f83-846b-a6554b571a55","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"c68e073a-fb2f-4696-93b5-1283eae108ac","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"c68e073a-fb2f-4696-93b5-1283eae108ac","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2a99584e-f0ac-49a3-91cc-b43b93dca0dc","type":"VBar"}],"root_ids":["baf5376c-1954-4184-8e8c-ad0b45a76280"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b897df10-df07-4cbb-a91c-2bcd45832458","elementid":"5ddec325-c0e6-49e6-b5d2-09e36dae0112","modelid":"baf5376c-1954-4184-8e8c-ad0b45a76280"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

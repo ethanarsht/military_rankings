@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f2fbd0f9-27a4-4a0d-95b4-31c55c52acef"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"24ec8d35-93b4-4181-a856-b0de4c726af8":{"roots":{"references":[{"attributes":{"formatter":{"id":"21f9188f-e521-492a-a81a-164aa1c8f3cf","type":"BasicTickFormatter"},"plot":{"id":"017d240b-de10-4681-a1f1-93ca49f99528","subtype":"Figure","type":"Plot"},"ticker":{"id":"c091353b-400a-4287-bf29-38595769cd20","type":"BasicTicker"}},"id":"c81ad260-7068-4895-b113-67541860da6c","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"ca8b9cba-b67b-4076-8e5c-ff51706aa8ab","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"ca8b9cba-b67b-4076-8e5c-ff51706aa8ab","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a9a75298-7ef2-4181-9f42-054527de089d","type":"VBar"},{"attributes":{"below":[{"id":"e8bf5695-de98-4062-8d1c-cd11c5265a20","type":"CategoricalAxis"}],"left":[{"id":"c81ad260-7068-4895-b113-67541860da6c","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"e8bf5695-de98-4062-8d1c-cd11c5265a20","type":"CategoricalAxis"},{"id":"1421d2e8-3fdf-4164-8613-a1dd2b49542e","type":"Grid"},{"id":"c81ad260-7068-4895-b113-67541860da6c","type":"LinearAxis"},{"id":"dbce3f9b-2d9c-4af6-8f4a-c7bc7d8dbdeb","type":"Grid"},{"id":"1ca50e7a-37cb-4400-ac60-2d2079254e23","type":"GlyphRenderer"},{"id":"d425f47d-b186-43a9-ac8e-ac3aa60c8119","type":"GlyphRenderer"}],"title":{"id":"f5be2963-8da2-44fa-a92c-365db930371f","type":"Title"},"toolbar":{"id":"a3034b27-7bab-41d7-88e9-67a49af2a7a6","type":"Toolbar"},"x_range":{"id":"cb42440d-e026-4fb0-bd51-8793b81c20a2","type":"FactorRange"},"x_scale":{"id":"034777db-2e48-400d-a4cd-820d18576f78","type":"CategoricalScale"},"y_range":{"id":"f4c7d5fc-1f26-442a-81ae-9edfd4bebc46","type":"DataRange1d"},"y_scale":{"id":"63a6c411-da2c-4ace-92cc-1de5d665192e","type":"LinearScale"}},"id":"017d240b-de10-4681-a1f1-93ca49f99528","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Aachen"],"cumulative":{"__ndarray__":"JrbN6O9g2z8=","dtype":"float64","shape":[1]},"general":["30th Infantry Division (United States)"],"outcome":["V"],"value":{"__ndarray__":"JrbN6O9g2z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABgnkA=","dtype":"float64","shape":[1]}}},"id":"f25ef557-ab4e-4f65-83b4-19d93e7892a0","type":"ColumnDataSource"},{"attributes":{},"id":"21f9188f-e521-492a-a81a-164aa1c8f3cf","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"017d240b-de10-4681-a1f1-93ca49f99528","subtype":"Figure","type":"Plot"},"ticker":{"id":"c091353b-400a-4287-bf29-38595769cd20","type":"BasicTicker"}},"id":"dbce3f9b-2d9c-4af6-8f4a-c7bc7d8dbdeb","type":"Grid"},{"attributes":{},"id":"5f648f23-d904-40d3-8763-5a6215999359","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Battle of Aachen"]},"id":"cb42440d-e026-4fb0-bd51-8793b81c20a2","type":"FactorRange"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"97165f4a-739b-4d1c-b281-3a805a8d48e5","type":"Line"},{"attributes":{"data_source":{"id":"f25ef557-ab4e-4f65-83b4-19d93e7892a0","type":"ColumnDataSource"},"glyph":{"id":"a9a75298-7ef2-4181-9f42-054527de089d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a6ce6bf5-1f21-4923-8c5d-3d31b6bab399","type":"VBar"},"selection_glyph":null,"view":{"id":"3b0499a7-409d-449c-8a91-e398b07d6572","type":"CDSView"}},"id":"d425f47d-b186-43a9-ac8e-ac3aa60c8119","type":"GlyphRenderer"},{"attributes":{},"id":"034777db-2e48-400d-a4cd-820d18576f78","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"30th Infantry Division (United States) (1 - 0 - 0)"},"id":"f5be2963-8da2-44fa-a92c-365db930371f","type":"Title"},{"attributes":{"formatter":{"id":"0e99c723-5986-493b-85aa-74fb7c507375","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"017d240b-de10-4681-a1f1-93ca49f99528","subtype":"Figure","type":"Plot"},"ticker":{"id":"5f648f23-d904-40d3-8763-5a6215999359","type":"CategoricalTicker"}},"id":"e8bf5695-de98-4062-8d1c-cd11c5265a20","type":"CategoricalAxis"},{"attributes":{"source":{"id":"f25ef557-ab4e-4f65-83b4-19d93e7892a0","type":"ColumnDataSource"}},"id":"c05b3d5c-9678-49e8-b37f-3ea72db719f8","type":"CDSView"},{"attributes":{"data_source":{"id":"f25ef557-ab4e-4f65-83b4-19d93e7892a0","type":"ColumnDataSource"},"glyph":{"id":"97165f4a-739b-4d1c-b281-3a805a8d48e5","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"51238104-f294-4a47-912f-2f3713427663","type":"Line"},"selection_glyph":null,"view":{"id":"c05b3d5c-9678-49e8-b37f-3ea72db719f8","type":"CDSView"}},"id":"1ca50e7a-37cb-4400-ac60-2d2079254e23","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"017d240b-de10-4681-a1f1-93ca49f99528","subtype":"Figure","type":"Plot"},"ticker":{"id":"5f648f23-d904-40d3-8763-5a6215999359","type":"CategoricalTicker"}},"id":"1421d2e8-3fdf-4164-8613-a1dd2b49542e","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"01dd93eb-61a9-4622-b83b-f0fd1da7080b","type":"HoverTool"}]},"id":"a3034b27-7bab-41d7-88e9-67a49af2a7a6","type":"Toolbar"},{"attributes":{},"id":"c091353b-400a-4287-bf29-38595769cd20","type":"BasicTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"51238104-f294-4a47-912f-2f3713427663","type":"Line"},{"attributes":{},"id":"0e99c723-5986-493b-85aa-74fb7c507375","type":"CategoricalTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"ca8b9cba-b67b-4076-8e5c-ff51706aa8ab","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"01dd93eb-61a9-4622-b83b-f0fd1da7080b","type":"HoverTool"},{"attributes":{"callback":null},"id":"f4c7d5fc-1f26-442a-81ae-9edfd4bebc46","type":"DataRange1d"},{"attributes":{"source":{"id":"f25ef557-ab4e-4f65-83b4-19d93e7892a0","type":"ColumnDataSource"}},"id":"3b0499a7-409d-449c-8a91-e398b07d6572","type":"CDSView"},{"attributes":{},"id":"63a6c411-da2c-4ace-92cc-1de5d665192e","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a6ce6bf5-1f21-4923-8c5d-3d31b6bab399","type":"VBar"}],"root_ids":["017d240b-de10-4681-a1f1-93ca49f99528"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"24ec8d35-93b4-4181-a856-b0de4c726af8","elementid":"f2fbd0f9-27a4-4a0d-95b4-31c55c52acef","modelid":"017d240b-de10-4681-a1f1-93ca49f99528"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

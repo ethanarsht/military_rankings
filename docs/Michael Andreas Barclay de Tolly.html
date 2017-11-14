@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="240154c5-eb99-42d1-9088-381b039c38ff"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"46e2dd67-a642-4001-9feb-fbf1a1ccd6d3":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"8a68c2e8-a7f4-4c06-8d22-496885eae18f","type":"HoverTool"}]},"id":"e57f2eaf-e1a5-4ab9-9994-882e5c027aa5","type":"Toolbar"},{"attributes":{"plot":{"id":"ccb78397-0c76-4037-af67-bf1ef61cc263","subtype":"Figure","type":"Plot"},"ticker":{"id":"73cf07fa-2ed6-441a-944e-c17630d3144a","type":"CategoricalTicker"}},"id":"7c7db6f1-767f-4d99-b36c-97f25db559bb","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"e9e7f5af-21e7-4647-8857-43bac61a2217","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"e9e7f5af-21e7-4647-8857-43bac61a2217","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a999c95a-745f-4f7c-bd84-479619601981","type":"VBar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f190d748-d1a5-4a89-acbb-07dc41bea4d4","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"e9e7f5af-21e7-4647-8857-43bac61a2217","type":"CategoricalColorMapper"},{"attributes":{},"id":"a84dc533-cf6a-4448-b20b-96c0b734466a","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"dc12941a-f494-4499-b10f-64dfc7fd395f","type":"ColumnDataSource"},"glyph":{"id":"a999c95a-745f-4f7c-bd84-479619601981","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a234f582-b4c8-4d28-a4dc-5c3b245f957c","type":"VBar"},"selection_glyph":null,"view":{"id":"9f732d6f-0f32-4ae4-92dd-f50e4901f4a0","type":"CDSView"}},"id":"0bdc6b5b-f911-49fa-9aeb-9a20c694f5a9","type":"GlyphRenderer"},{"attributes":{},"id":"577f235a-3fd3-46ff-9c6a-916364135aeb","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"2d6751ab-4bff-4a7d-86ad-c55bdba943df","type":"CategoricalAxis"}],"left":[{"id":"28192da3-dd4a-4100-a6f2-9269f30ab48a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"2d6751ab-4bff-4a7d-86ad-c55bdba943df","type":"CategoricalAxis"},{"id":"7c7db6f1-767f-4d99-b36c-97f25db559bb","type":"Grid"},{"id":"28192da3-dd4a-4100-a6f2-9269f30ab48a","type":"LinearAxis"},{"id":"b0d26a29-9e49-46c0-a856-a455eed87b4d","type":"Grid"},{"id":"371178b3-000c-4479-aceb-6a01d8e8c888","type":"GlyphRenderer"},{"id":"0bdc6b5b-f911-49fa-9aeb-9a20c694f5a9","type":"GlyphRenderer"}],"title":{"id":"d56b1cf5-dc18-4e61-b723-59e1e0d4a4fc","type":"Title"},"toolbar":{"id":"e57f2eaf-e1a5-4ab9-9994-882e5c027aa5","type":"Toolbar"},"x_range":{"id":"ac8d2778-8bc8-4ae8-a335-5521767ef1b2","type":"FactorRange"},"x_scale":{"id":"988c7792-3d1f-4495-b604-52c4105f0db3","type":"CategoricalScale"},"y_range":{"id":"b5c0e3c5-fcee-40b5-82e9-05349b8dfb8f","type":"DataRange1d"},"y_scale":{"id":"0f605c6e-a7d0-4d94-866a-720b05f3fa67","type":"LinearScale"}},"id":"ccb78397-0c76-4037-af67-bf1ef61cc263","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a234f582-b4c8-4d28-a4dc-5c3b245f957c","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9ef460b6-b455-4a90-a1d4-c212c0d9a212","type":"Line"},{"attributes":{},"id":"5b662903-f951-4126-9b83-69c8cac7d16c","type":"BasicTicker"},{"attributes":{"source":{"id":"dc12941a-f494-4499-b10f-64dfc7fd395f","type":"ColumnDataSource"}},"id":"9f732d6f-0f32-4ae4-92dd-f50e4901f4a0","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Borodino","Battle of Smolensk (1812)","Battle of Valutino","Battle of Dresden","Battle of Kulm","Battle of Montmartre"]},"id":"ac8d2778-8bc8-4ae8-a335-5521767ef1b2","type":"FactorRange"},{"attributes":{"formatter":{"id":"a84dc533-cf6a-4448-b20b-96c0b734466a","type":"BasicTickFormatter"},"plot":{"id":"ccb78397-0c76-4037-af67-bf1ef61cc263","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b662903-f951-4126-9b83-69c8cac7d16c","type":"BasicTicker"}},"id":"28192da3-dd4a-4100-a6f2-9269f30ab48a","type":"LinearAxis"},{"attributes":{"callback":null},"id":"b5c0e3c5-fcee-40b5-82e9-05349b8dfb8f","type":"DataRange1d"},{"attributes":{"data_source":{"id":"dc12941a-f494-4499-b10f-64dfc7fd395f","type":"ColumnDataSource"},"glyph":{"id":"9ef460b6-b455-4a90-a1d4-c212c0d9a212","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f190d748-d1a5-4a89-acbb-07dc41bea4d4","type":"Line"},"selection_glyph":null,"view":{"id":"816f6d56-c6df-4d44-a201-e0cfcc9e2f13","type":"CDSView"}},"id":"371178b3-000c-4479-aceb-6a01d8e8c888","type":"GlyphRenderer"},{"attributes":{},"id":"988c7792-3d1f-4495-b604-52c4105f0db3","type":"CategoricalScale"},{"attributes":{"source":{"id":"dc12941a-f494-4499-b10f-64dfc7fd395f","type":"ColumnDataSource"}},"id":"816f6d56-c6df-4d44-a201-e0cfcc9e2f13","type":"CDSView"},{"attributes":{},"id":"73cf07fa-2ed6-441a-944e-c17630d3144a","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"ccb78397-0c76-4037-af67-bf1ef61cc263","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b662903-f951-4126-9b83-69c8cac7d16c","type":"BasicTicker"}},"id":"b0d26a29-9e49-46c0-a856-a455eed87b4d","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"8a68c2e8-a7f4-4c06-8d22-496885eae18f","type":"HoverTool"},{"attributes":{"formatter":{"id":"577f235a-3fd3-46ff-9c6a-916364135aeb","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"ccb78397-0c76-4037-af67-bf1ef61cc263","subtype":"Figure","type":"Plot"},"ticker":{"id":"73cf07fa-2ed6-441a-944e-c17630d3144a","type":"CategoricalTicker"}},"id":"2d6751ab-4bff-4a7d-86ad-c55bdba943df","type":"CategoricalAxis"},{"attributes":{},"id":"0f605c6e-a7d0-4d94-866a-720b05f3fa67","type":"LinearScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Borodino","Battle of Smolensk (1812)","Battle of Valutino","Battle of Dresden","Battle of Kulm","Battle of Montmartre"],"cumulative":{"__ndarray__":"UUCaGLGo37+oW/w2qODvv5oTwQNtMvi/dFFe5sFLAMAcmF0Akz35v8s0LpgsYfK/","dtype":"float64","shape":[6]},"general":["Michael Andreas Barclay de Tolly","Michael Andreas Barclay de Tolly","Michael Andreas Barclay de Tolly","Michael Andreas Barclay de Tolly","Michael Andreas Barclay de Tolly","Michael Andreas Barclay de Tolly"],"outcome":["D","D","D","D","V","V"],"value":{"__ndarray__":"UUCaGLGo37+AO6+qTwzgv4vLhdAxhOC/nh73kS3K4L8wK3wxw2fdP0SNvaCZcds/","dtype":"float64","shape":[6]},"year":{"__ndarray__":"AAAAAABQnEAAAAAAAFCcQAAAAAAAUJxAAAAAAABUnEAAAAAAAFScQAAAAAAAWJxA","dtype":"float64","shape":[6]}}},"id":"dc12941a-f494-4499-b10f-64dfc7fd395f","type":"ColumnDataSource"},{"attributes":{"plot":null,"text":"Michael Andreas Barclay de Tolly (2 - 0 - 4)"},"id":"d56b1cf5-dc18-4e61-b723-59e1e0d4a4fc","type":"Title"}],"root_ids":["ccb78397-0c76-4037-af67-bf1ef61cc263"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"46e2dd67-a642-4001-9feb-fbf1a1ccd6d3","elementid":"240154c5-eb99-42d1-9088-381b039c38ff","modelid":"ccb78397-0c76-4037-af67-bf1ef61cc263"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

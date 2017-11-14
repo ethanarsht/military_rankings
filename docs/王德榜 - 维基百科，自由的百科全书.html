@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d8917a7e-fb44-405e-b4f4-c0327688789a"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"3c808723-b70d-477d-b2ba-f2ae78f709d0":{"roots":{"references":[{"attributes":{"data_source":{"id":"5b97942c-ac0b-442c-8b35-21de78bfdc0b","type":"ColumnDataSource"},"glyph":{"id":"9019504e-6754-4c61-9004-0bda1d9726c8","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5ef36f0f-2f06-4e30-a063-a45e0cabfb82","type":"VBar"},"selection_glyph":null,"view":{"id":"776af97b-f96c-48a0-a001-b956a090ebae","type":"CDSView"}},"id":"67385ea1-aa32-4273-84e9-de457b710408","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Bang Bo (Zhennan Pass)"],"cumulative":{"__ndarray__":"pNuoYpzu3D8=","dtype":"float64","shape":[1]},"general":["\u738b\u5fb7\u699c - \u7ef4\u57fa\u767e\u79d1\uff0c\u81ea\u7531\u7684\u767e\u79d1\u5168\u4e66"],"outcome":["V"],"value":{"__ndarray__":"pNuoYpzu3D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAB0nUA=","dtype":"float64","shape":[1]}}},"id":"5b97942c-ac0b-442c-8b35-21de78bfdc0b","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"5ef36f0f-2f06-4e30-a063-a45e0cabfb82","type":"VBar"},{"attributes":{"plot":null,"text":"\u738b\u5fb7\u699c - \u7ef4\u57fa\u767e\u79d1\uff0c\u81ea\u7531\u7684\u767e\u79d1\u5168\u4e66 (1 - 0 - 0)"},"id":"8960e055-54c4-4716-b9a1-34f9a129f8e8","type":"Title"},{"attributes":{"formatter":{"id":"fb62d5bd-1cc9-4449-85e0-16c7a9142749","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"6a5e0c73-95f6-4ed1-b1e4-4ba752f8d080","subtype":"Figure","type":"Plot"},"ticker":{"id":"02c058de-0824-40b0-82d1-237fb6cda3bc","type":"CategoricalTicker"}},"id":"ebe3069f-bed3-4af3-b0b3-624aa3411ace","type":"CategoricalAxis"},{"attributes":{"source":{"id":"5b97942c-ac0b-442c-8b35-21de78bfdc0b","type":"ColumnDataSource"}},"id":"0382d9aa-9d72-4a2f-ac01-b99d7a00526d","type":"CDSView"},{"attributes":{},"id":"f63e6deb-096b-4602-a97d-a9dcf314a46d","type":"CategoricalScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d2bd80d6-84b3-4f93-8da5-f576033340ae","type":"Line"},{"attributes":{"plot":{"id":"6a5e0c73-95f6-4ed1-b1e4-4ba752f8d080","subtype":"Figure","type":"Plot"},"ticker":{"id":"02c058de-0824-40b0-82d1-237fb6cda3bc","type":"CategoricalTicker"}},"id":"41189a32-b977-483f-899d-0bd9149cc4b6","type":"Grid"},{"attributes":{"below":[{"id":"ebe3069f-bed3-4af3-b0b3-624aa3411ace","type":"CategoricalAxis"}],"left":[{"id":"a1945afb-4616-42ca-b4f1-74e9587b17a4","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"ebe3069f-bed3-4af3-b0b3-624aa3411ace","type":"CategoricalAxis"},{"id":"41189a32-b977-483f-899d-0bd9149cc4b6","type":"Grid"},{"id":"a1945afb-4616-42ca-b4f1-74e9587b17a4","type":"LinearAxis"},{"id":"2db13fae-0017-431f-9fcd-09cd6bd8ad2a","type":"Grid"},{"id":"722b9c9c-457d-4ced-ad9b-9f919e0a8e3f","type":"GlyphRenderer"},{"id":"67385ea1-aa32-4273-84e9-de457b710408","type":"GlyphRenderer"}],"title":{"id":"8960e055-54c4-4716-b9a1-34f9a129f8e8","type":"Title"},"toolbar":{"id":"c454a875-35c8-48a1-83b5-d93cd9aa62ec","type":"Toolbar"},"x_range":{"id":"4f27f0b5-eaa2-4bbc-b678-7d52175b6b79","type":"FactorRange"},"x_scale":{"id":"f63e6deb-096b-4602-a97d-a9dcf314a46d","type":"CategoricalScale"},"y_range":{"id":"aeb5ecd8-5269-4c41-8e27-e982ad710e68","type":"DataRange1d"},"y_scale":{"id":"86f3835c-4ceb-4e7f-8077-336bc9a540d8","type":"LinearScale"}},"id":"6a5e0c73-95f6-4ed1-b1e4-4ba752f8d080","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f2fed8fe-7807-4c5a-b9b9-007c6ca7e79d","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f2fed8fe-7807-4c5a-b9b9-007c6ca7e79d","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9019504e-6754-4c61-9004-0bda1d9726c8","type":"VBar"},{"attributes":{},"id":"9c02ad01-061a-4882-948e-ac4f8a4179f7","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"24c56cbf-af9b-4542-a127-0f9e8e88a57b","type":"HoverTool"}]},"id":"c454a875-35c8-48a1-83b5-d93cd9aa62ec","type":"Toolbar"},{"attributes":{},"id":"e7e696cc-ef38-4e99-a00e-f1d0db26cce4","type":"BasicTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f2fed8fe-7807-4c5a-b9b9-007c6ca7e79d","type":"CategoricalColorMapper"},{"attributes":{},"id":"86f3835c-4ceb-4e7f-8077-336bc9a540d8","type":"LinearScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"24c56cbf-af9b-4542-a127-0f9e8e88a57b","type":"HoverTool"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4559e6c6-08de-414d-890c-fc7a2a8f14a6","type":"Line"},{"attributes":{"source":{"id":"5b97942c-ac0b-442c-8b35-21de78bfdc0b","type":"ColumnDataSource"}},"id":"776af97b-f96c-48a0-a001-b956a090ebae","type":"CDSView"},{"attributes":{},"id":"fb62d5bd-1cc9-4449-85e0-16c7a9142749","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"9c02ad01-061a-4882-948e-ac4f8a4179f7","type":"BasicTickFormatter"},"plot":{"id":"6a5e0c73-95f6-4ed1-b1e4-4ba752f8d080","subtype":"Figure","type":"Plot"},"ticker":{"id":"e7e696cc-ef38-4e99-a00e-f1d0db26cce4","type":"BasicTicker"}},"id":"a1945afb-4616-42ca-b4f1-74e9587b17a4","type":"LinearAxis"},{"attributes":{"data_source":{"id":"5b97942c-ac0b-442c-8b35-21de78bfdc0b","type":"ColumnDataSource"},"glyph":{"id":"d2bd80d6-84b3-4f93-8da5-f576033340ae","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4559e6c6-08de-414d-890c-fc7a2a8f14a6","type":"Line"},"selection_glyph":null,"view":{"id":"0382d9aa-9d72-4a2f-ac01-b99d7a00526d","type":"CDSView"}},"id":"722b9c9c-457d-4ced-ad9b-9f919e0a8e3f","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"6a5e0c73-95f6-4ed1-b1e4-4ba752f8d080","subtype":"Figure","type":"Plot"},"ticker":{"id":"e7e696cc-ef38-4e99-a00e-f1d0db26cce4","type":"BasicTicker"}},"id":"2db13fae-0017-431f-9fcd-09cd6bd8ad2a","type":"Grid"},{"attributes":{},"id":"02c058de-0824-40b0-82d1-237fb6cda3bc","type":"CategoricalTicker"},{"attributes":{"callback":null},"id":"aeb5ecd8-5269-4c41-8e27-e982ad710e68","type":"DataRange1d"},{"attributes":{"callback":null,"factors":["Battle of Bang Bo (Zhennan Pass)"]},"id":"4f27f0b5-eaa2-4bbc-b678-7d52175b6b79","type":"FactorRange"}],"root_ids":["6a5e0c73-95f6-4ed1-b1e4-4ba752f8d080"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"3c808723-b70d-477d-b2ba-f2ae78f709d0","elementid":"d8917a7e-fb44-405e-b4f4-c0327688789a","modelid":"6a5e0c73-95f6-4ed1-b1e4-4ba752f8d080"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

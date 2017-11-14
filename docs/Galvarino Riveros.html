@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f7516ba0-7505-4959-9dc1-d8e8664da5d5"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"428beb3b-3c52-4164-9276-2d1458be8d84":{"roots":{"references":[{"attributes":{"below":[{"id":"cb7be4a2-c078-4b5e-bd80-2c6f6930643b","type":"CategoricalAxis"}],"left":[{"id":"31b50848-4d7a-40ef-83bf-ecf0dfabb5ca","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"cb7be4a2-c078-4b5e-bd80-2c6f6930643b","type":"CategoricalAxis"},{"id":"c8d18468-8217-459f-9ee5-c8702fc50fe7","type":"Grid"},{"id":"31b50848-4d7a-40ef-83bf-ecf0dfabb5ca","type":"LinearAxis"},{"id":"c9e07875-d11b-433b-bef4-99416d451888","type":"Grid"},{"id":"f744fd6e-92c1-4a08-9f4b-f12814a3d020","type":"GlyphRenderer"},{"id":"d2e2024d-e569-417c-9fd7-55b24cf9cf10","type":"GlyphRenderer"}],"title":{"id":"f28109cc-ccaf-40a3-871a-1f596e9e2361","type":"Title"},"toolbar":{"id":"18da3e04-9b98-40eb-bf7e-5fb7a9319245","type":"Toolbar"},"x_range":{"id":"9e88dcc1-6c6c-4483-9e90-8d779b3b872c","type":"FactorRange"},"x_scale":{"id":"9d4753ab-635a-4a3f-8959-9530101e6f54","type":"CategoricalScale"},"y_range":{"id":"7d3e4457-c4d5-40d1-bc74-64836b6e2497","type":"DataRange1d"},"y_scale":{"id":"f87e52c8-dabb-433b-9b78-7f989e4d06d6","type":"LinearScale"}},"id":"a1377b0e-d494-4711-954f-9949bc848b5f","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"6141c539-a91d-40cb-a74f-7f6742d2f4ae","type":"BasicTickFormatter"},"plot":{"id":"a1377b0e-d494-4711-954f-9949bc848b5f","subtype":"Figure","type":"Plot"},"ticker":{"id":"c6e315ef-3d97-4a78-aec3-e1924876dc1c","type":"BasicTicker"}},"id":"31b50848-4d7a-40ef-83bf-ecf0dfabb5ca","type":"LinearAxis"},{"attributes":{},"id":"bb335eb7-ac41-449f-9c24-64f011008be0","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Naval Battle of Angamos"],"cumulative":{"__ndarray__":"KmCixfZZ2z8=","dtype":"float64","shape":[1]},"general":["Galvarino Riveros"],"outcome":["V"],"value":{"__ndarray__":"KmCixfZZ2z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABcnUA=","dtype":"float64","shape":[1]}}},"id":"6e0b07c9-f34f-4bd5-beec-55a10d79a7e7","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"bb335eb7-ac41-449f-9c24-64f011008be0","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"a1377b0e-d494-4711-954f-9949bc848b5f","subtype":"Figure","type":"Plot"},"ticker":{"id":"e81bbe09-26f3-492f-9139-73ae345de97d","type":"CategoricalTicker"}},"id":"cb7be4a2-c078-4b5e-bd80-2c6f6930643b","type":"CategoricalAxis"},{"attributes":{"callback":null},"id":"7d3e4457-c4d5-40d1-bc74-64836b6e2497","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f51eef55-823c-41f6-92b5-ae7f0aab1e91","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f51eef55-823c-41f6-92b5-ae7f0aab1e91","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"92e4665f-42c3-4c65-ab10-3d351d38b05d","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"a94191db-2229-4102-a08c-4db65c421979","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f51eef55-823c-41f6-92b5-ae7f0aab1e91","type":"CategoricalColorMapper"},{"attributes":{},"id":"e81bbe09-26f3-492f-9139-73ae345de97d","type":"CategoricalTicker"},{"attributes":{"plot":null,"text":"Galvarino Riveros (1 - 0 - 0)"},"id":"f28109cc-ccaf-40a3-871a-1f596e9e2361","type":"Title"},{"attributes":{},"id":"f87e52c8-dabb-433b-9b78-7f989e4d06d6","type":"LinearScale"},{"attributes":{},"id":"6141c539-a91d-40cb-a74f-7f6742d2f4ae","type":"BasicTickFormatter"},{"attributes":{},"id":"c6e315ef-3d97-4a78-aec3-e1924876dc1c","type":"BasicTicker"},{"attributes":{"source":{"id":"6e0b07c9-f34f-4bd5-beec-55a10d79a7e7","type":"ColumnDataSource"}},"id":"4e78a631-aef0-41be-b0d2-46740fa3f079","type":"CDSView"},{"attributes":{"data_source":{"id":"6e0b07c9-f34f-4bd5-beec-55a10d79a7e7","type":"ColumnDataSource"},"glyph":{"id":"92e4665f-42c3-4c65-ab10-3d351d38b05d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"fccc562c-18ee-46f1-9829-ec5c1fbef955","type":"VBar"},"selection_glyph":null,"view":{"id":"4e78a631-aef0-41be-b0d2-46740fa3f079","type":"CDSView"}},"id":"d2e2024d-e569-417c-9fd7-55b24cf9cf10","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7d1d5d0a-c376-4df8-8e12-e2b5388af817","type":"Line"},{"attributes":{"plot":{"id":"a1377b0e-d494-4711-954f-9949bc848b5f","subtype":"Figure","type":"Plot"},"ticker":{"id":"e81bbe09-26f3-492f-9139-73ae345de97d","type":"CategoricalTicker"}},"id":"c8d18468-8217-459f-9ee5-c8702fc50fe7","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"a1377b0e-d494-4711-954f-9949bc848b5f","subtype":"Figure","type":"Plot"},"ticker":{"id":"c6e315ef-3d97-4a78-aec3-e1924876dc1c","type":"BasicTicker"}},"id":"c9e07875-d11b-433b-bef4-99416d451888","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"a94191db-2229-4102-a08c-4db65c421979","type":"HoverTool"}]},"id":"18da3e04-9b98-40eb-bf7e-5fb7a9319245","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"fccc562c-18ee-46f1-9829-ec5c1fbef955","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"bc4a814f-b85d-4add-a2a5-3263b85e2b37","type":"Line"},{"attributes":{"source":{"id":"6e0b07c9-f34f-4bd5-beec-55a10d79a7e7","type":"ColumnDataSource"}},"id":"75002dbb-53fa-4f4b-867f-46ca8e1c58bb","type":"CDSView"},{"attributes":{},"id":"9d4753ab-635a-4a3f-8959-9530101e6f54","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Naval Battle of Angamos"]},"id":"9e88dcc1-6c6c-4483-9e90-8d779b3b872c","type":"FactorRange"},{"attributes":{"data_source":{"id":"6e0b07c9-f34f-4bd5-beec-55a10d79a7e7","type":"ColumnDataSource"},"glyph":{"id":"bc4a814f-b85d-4add-a2a5-3263b85e2b37","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7d1d5d0a-c376-4df8-8e12-e2b5388af817","type":"Line"},"selection_glyph":null,"view":{"id":"75002dbb-53fa-4f4b-867f-46ca8e1c58bb","type":"CDSView"}},"id":"f744fd6e-92c1-4a08-9f4b-f12814a3d020","type":"GlyphRenderer"}],"root_ids":["a1377b0e-d494-4711-954f-9949bc848b5f"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"428beb3b-3c52-4164-9276-2d1458be8d84","elementid":"f7516ba0-7505-4959-9dc1-d8e8664da5d5","modelid":"a1377b0e-d494-4711-954f-9949bc848b5f"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

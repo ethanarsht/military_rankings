@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="0e334405-d5e0-41ee-b9a3-87ccbb63e6d1"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"e01b1633-b431-489a-bdc4-147e7d195588":{"roots":{"references":[{"attributes":{"source":{"id":"88fd1817-2e67-4a22-8667-a61d40609f70","type":"ColumnDataSource"}},"id":"dcb798b5-9451-4bee-ac50-6b94dc6a30c0","type":"CDSView"},{"attributes":{},"id":"2a81ef83-b30d-4324-b8d8-b650442fd5c8","type":"CategoricalScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Spanish Fort"],"cumulative":{"__ndarray__":"Zz5YLkiZ2r8=","dtype":"float64","shape":[1]},"general":["Randall L. Gibson"],"outcome":["D"],"value":{"__ndarray__":"Zz5YLkiZ2r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAknUA=","dtype":"float64","shape":[1]}}},"id":"88fd1817-2e67-4a22-8667-a61d40609f70","type":"ColumnDataSource"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f2cd134a-e6ed-45cd-bcbb-3005d1e0e291","type":"HoverTool"},{"attributes":{"formatter":{"id":"affb064b-e0c7-4b80-8562-62374446326c","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"8bf66143-c7a5-44ba-8441-d33d61aee100","subtype":"Figure","type":"Plot"},"ticker":{"id":"cefc330a-115a-4591-a4cd-e93b115e7244","type":"CategoricalTicker"}},"id":"9898fb08-3eb0-4f90-8cd6-f007be5aac98","type":"CategoricalAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e811807d-60d4-4e3e-a8ef-5de348c5e660","type":"Line"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"feda95df-9f2f-4cd4-bb54-2eda3afcd59c","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"fdfcfcdd-fe76-43d3-b28f-d6fc0f1e70cf","type":"VBar"},{"attributes":{"plot":null,"text":"Randall L. Gibson (0 - 0 - 1)"},"id":"3ba7edf0-bad6-4303-a24f-21b8d2f729a1","type":"Title"},{"attributes":{},"id":"affb064b-e0c7-4b80-8562-62374446326c","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"6e0c1b6a-8fcf-4fc7-b5f3-27a078cd004c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"6e0c1b6a-8fcf-4fc7-b5f3-27a078cd004c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"001c4f64-3f38-491d-b6e0-c398fb6d355c","type":"VBar"},{"attributes":{"below":[{"id":"9898fb08-3eb0-4f90-8cd6-f007be5aac98","type":"CategoricalAxis"}],"left":[{"id":"e1a4d5b5-edc5-46bd-9aef-96864d7a7e5c","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"9898fb08-3eb0-4f90-8cd6-f007be5aac98","type":"CategoricalAxis"},{"id":"2c56f9fb-57e5-49a3-8256-c0aa73813504","type":"Grid"},{"id":"e1a4d5b5-edc5-46bd-9aef-96864d7a7e5c","type":"LinearAxis"},{"id":"6f9d1eb7-daab-4e74-966b-f5fcebefe518","type":"Grid"},{"id":"bb307206-04c1-4419-9c5c-0a7db2bf320c","type":"GlyphRenderer"},{"id":"e0519ebe-ea62-4969-8bd5-1c7d167fafa9","type":"GlyphRenderer"}],"title":{"id":"3ba7edf0-bad6-4303-a24f-21b8d2f729a1","type":"Title"},"toolbar":{"id":"0787c159-660b-4ad9-885d-16273eb6c542","type":"Toolbar"},"x_range":{"id":"cc101509-e8d4-4af7-a2b0-7f097e8ed178","type":"FactorRange"},"x_scale":{"id":"2a81ef83-b30d-4324-b8d8-b650442fd5c8","type":"CategoricalScale"},"y_range":{"id":"a73c69c9-6342-4abf-95e9-5c9c2e5af896","type":"DataRange1d"},"y_scale":{"id":"c64b5d6a-ecd6-4514-8ad6-d67468a4d87a","type":"LinearScale"}},"id":"8bf66143-c7a5-44ba-8441-d33d61aee100","subtype":"Figure","type":"Plot"},{"attributes":{"plot":{"id":"8bf66143-c7a5-44ba-8441-d33d61aee100","subtype":"Figure","type":"Plot"},"ticker":{"id":"cefc330a-115a-4591-a4cd-e93b115e7244","type":"CategoricalTicker"}},"id":"2c56f9fb-57e5-49a3-8256-c0aa73813504","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Spanish Fort"]},"id":"cc101509-e8d4-4af7-a2b0-7f097e8ed178","type":"FactorRange"},{"attributes":{},"id":"3f3081c5-99f7-41b6-9ba2-742194f5e3f9","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"8bf66143-c7a5-44ba-8441-d33d61aee100","subtype":"Figure","type":"Plot"},"ticker":{"id":"3f3081c5-99f7-41b6-9ba2-742194f5e3f9","type":"BasicTicker"}},"id":"6f9d1eb7-daab-4e74-966b-f5fcebefe518","type":"Grid"},{"attributes":{"callback":null},"id":"a73c69c9-6342-4abf-95e9-5c9c2e5af896","type":"DataRange1d"},{"attributes":{"data_source":{"id":"88fd1817-2e67-4a22-8667-a61d40609f70","type":"ColumnDataSource"},"glyph":{"id":"e811807d-60d4-4e3e-a8ef-5de348c5e660","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"feda95df-9f2f-4cd4-bb54-2eda3afcd59c","type":"Line"},"selection_glyph":null,"view":{"id":"0fbc11a7-0ae4-499a-af18-9fdd483d4a6f","type":"CDSView"}},"id":"bb307206-04c1-4419-9c5c-0a7db2bf320c","type":"GlyphRenderer"},{"attributes":{},"id":"14cf21df-90a2-487b-af51-5a839754bfaf","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f2cd134a-e6ed-45cd-bcbb-3005d1e0e291","type":"HoverTool"}]},"id":"0787c159-660b-4ad9-885d-16273eb6c542","type":"Toolbar"},{"attributes":{"source":{"id":"88fd1817-2e67-4a22-8667-a61d40609f70","type":"ColumnDataSource"}},"id":"0fbc11a7-0ae4-499a-af18-9fdd483d4a6f","type":"CDSView"},{"attributes":{},"id":"cefc330a-115a-4591-a4cd-e93b115e7244","type":"CategoricalTicker"},{"attributes":{},"id":"c64b5d6a-ecd6-4514-8ad6-d67468a4d87a","type":"LinearScale"},{"attributes":{"formatter":{"id":"14cf21df-90a2-487b-af51-5a839754bfaf","type":"BasicTickFormatter"},"plot":{"id":"8bf66143-c7a5-44ba-8441-d33d61aee100","subtype":"Figure","type":"Plot"},"ticker":{"id":"3f3081c5-99f7-41b6-9ba2-742194f5e3f9","type":"BasicTicker"}},"id":"e1a4d5b5-edc5-46bd-9aef-96864d7a7e5c","type":"LinearAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"6e0c1b6a-8fcf-4fc7-b5f3-27a078cd004c","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"88fd1817-2e67-4a22-8667-a61d40609f70","type":"ColumnDataSource"},"glyph":{"id":"001c4f64-3f38-491d-b6e0-c398fb6d355c","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"fdfcfcdd-fe76-43d3-b28f-d6fc0f1e70cf","type":"VBar"},"selection_glyph":null,"view":{"id":"dcb798b5-9451-4bee-ac50-6b94dc6a30c0","type":"CDSView"}},"id":"e0519ebe-ea62-4969-8bd5-1c7d167fafa9","type":"GlyphRenderer"}],"root_ids":["8bf66143-c7a5-44ba-8441-d33d61aee100"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"e01b1633-b431-489a-bdc4-147e7d195588","elementid":"0e334405-d5e0-41ee-b9a3-87ccbb63e6d1","modelid":"8bf66143-c7a5-44ba-8441-d33d61aee100"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

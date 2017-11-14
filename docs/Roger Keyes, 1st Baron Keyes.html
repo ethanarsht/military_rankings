@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="ac642acd-24ad-4287-b3d1-81e1d1f3f5f6"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"70b4c710-0724-4e91-8654-a608ff4d22ed":{"roots":{"references":[{"attributes":{"formatter":{"id":"56ff08fb-42ef-48c3-8709-525f3b413416","type":"BasicTickFormatter"},"plot":{"id":"1b3a2d8f-70e5-485c-86b2-ec5f0e17255c","subtype":"Figure","type":"Plot"},"ticker":{"id":"1509e852-ce3f-481c-b571-a7ceae94756e","type":"BasicTicker"}},"id":"2750a38b-15e5-4fa4-afd3-8559a1d4ee0b","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"e3438fa3-bf1c-4da8-916b-c81d4be3cd03","type":"HoverTool"}]},"id":"7e039a1e-d5e5-4cd8-99c8-0ef346b89afd","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"d3028cd9-ad67-4bb8-9c30-39ec0f661a40","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"d3028cd9-ad67-4bb8-9c30-39ec0f661a40","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6755f349-9ed0-413a-b6cc-91447ec59d83","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"e3438fa3-bf1c-4da8-916b-c81d4be3cd03","type":"HoverTool"},{"attributes":{"data_source":{"id":"60d2fb1f-0242-456d-a407-89045aea056c","type":"ColumnDataSource"},"glyph":{"id":"6755f349-9ed0-413a-b6cc-91447ec59d83","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"86de9d85-eab8-47d7-82ee-5c69c49f0216","type":"VBar"},"selection_glyph":null,"view":{"id":"003859d6-17a8-4098-9989-68c932ebd6eb","type":"CDSView"}},"id":"276cdc3c-ae67-4e01-8c0a-9386ce92916f","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Roger Keyes, 1st Baron Keyes (1 - 0 - 0)"},"id":"105a7239-014c-4a41-a28b-41cbdda6a6d2","type":"Title"},{"attributes":{"plot":{"id":"1b3a2d8f-70e5-485c-86b2-ec5f0e17255c","subtype":"Figure","type":"Plot"},"ticker":{"id":"757d6afc-4440-4133-9d54-b7d134ded355","type":"CategoricalTicker"}},"id":"6d8e95b9-c9c4-4995-8a76-b856f1ffff79","type":"Grid"},{"attributes":{"callback":null},"id":"03ada148-8af6-4fee-9e2a-5cbced628851","type":"DataRange1d"},{"attributes":{},"id":"56ff08fb-42ef-48c3-8709-525f3b413416","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"86de9d85-eab8-47d7-82ee-5c69c49f0216","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Heligoland (1914)"]},"id":"cc8ffebe-a086-40fb-a16b-abac6063142b","type":"FactorRange"},{"attributes":{"below":[{"id":"21ccddfa-9c8e-4f8c-a7a4-98581f2ad379","type":"CategoricalAxis"}],"left":[{"id":"2750a38b-15e5-4fa4-afd3-8559a1d4ee0b","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"21ccddfa-9c8e-4f8c-a7a4-98581f2ad379","type":"CategoricalAxis"},{"id":"6d8e95b9-c9c4-4995-8a76-b856f1ffff79","type":"Grid"},{"id":"2750a38b-15e5-4fa4-afd3-8559a1d4ee0b","type":"LinearAxis"},{"id":"2f5269bd-ecf7-4d45-a5d5-eceac460634f","type":"Grid"},{"id":"bf02347b-1e00-4062-a06a-315d5efd2f23","type":"GlyphRenderer"},{"id":"276cdc3c-ae67-4e01-8c0a-9386ce92916f","type":"GlyphRenderer"}],"title":{"id":"105a7239-014c-4a41-a28b-41cbdda6a6d2","type":"Title"},"toolbar":{"id":"7e039a1e-d5e5-4cd8-99c8-0ef346b89afd","type":"Toolbar"},"x_range":{"id":"cc8ffebe-a086-40fb-a16b-abac6063142b","type":"FactorRange"},"x_scale":{"id":"1c59f70e-9cdf-43ef-be99-9fa413b53fba","type":"CategoricalScale"},"y_range":{"id":"03ada148-8af6-4fee-9e2a-5cbced628851","type":"DataRange1d"},"y_scale":{"id":"d6b4df67-b535-4f53-8e45-3aa313650342","type":"LinearScale"}},"id":"1b3a2d8f-70e5-485c-86b2-ec5f0e17255c","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"e871bc6a-d412-4e9b-9048-c485a4c28a16","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"1b3a2d8f-70e5-485c-86b2-ec5f0e17255c","subtype":"Figure","type":"Plot"},"ticker":{"id":"757d6afc-4440-4133-9d54-b7d134ded355","type":"CategoricalTicker"}},"id":"21ccddfa-9c8e-4f8c-a7a4-98581f2ad379","type":"CategoricalAxis"},{"attributes":{},"id":"1c59f70e-9cdf-43ef-be99-9fa413b53fba","type":"CategoricalScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"652bac8d-9318-456d-b722-03caac6eaf5f","type":"Line"},{"attributes":{"data_source":{"id":"60d2fb1f-0242-456d-a407-89045aea056c","type":"ColumnDataSource"},"glyph":{"id":"652bac8d-9318-456d-b722-03caac6eaf5f","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8e8773e7-3074-460c-a8ac-d573151f2ecd","type":"Line"},"selection_glyph":null,"view":{"id":"722516b9-833a-46cb-a000-5f1e8c0f91bf","type":"CDSView"}},"id":"bf02347b-1e00-4062-a06a-315d5efd2f23","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"1b3a2d8f-70e5-485c-86b2-ec5f0e17255c","subtype":"Figure","type":"Plot"},"ticker":{"id":"1509e852-ce3f-481c-b571-a7ceae94756e","type":"BasicTicker"}},"id":"2f5269bd-ecf7-4d45-a5d5-eceac460634f","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Heligoland (1914)"],"cumulative":{"__ndarray__":"bDoBBEYx3j8=","dtype":"float64","shape":[1]},"general":["Roger Keyes, 1st Baron Keyes"],"outcome":["V"],"value":{"__ndarray__":"bDoBBEYx3j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADonUA=","dtype":"float64","shape":[1]}}},"id":"60d2fb1f-0242-456d-a407-89045aea056c","type":"ColumnDataSource"},{"attributes":{"source":{"id":"60d2fb1f-0242-456d-a407-89045aea056c","type":"ColumnDataSource"}},"id":"003859d6-17a8-4098-9989-68c932ebd6eb","type":"CDSView"},{"attributes":{},"id":"d6b4df67-b535-4f53-8e45-3aa313650342","type":"LinearScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8e8773e7-3074-460c-a8ac-d573151f2ecd","type":"Line"},{"attributes":{},"id":"e871bc6a-d412-4e9b-9048-c485a4c28a16","type":"CategoricalTickFormatter"},{"attributes":{},"id":"757d6afc-4440-4133-9d54-b7d134ded355","type":"CategoricalTicker"},{"attributes":{},"id":"1509e852-ce3f-481c-b571-a7ceae94756e","type":"BasicTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"d3028cd9-ad67-4bb8-9c30-39ec0f661a40","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"60d2fb1f-0242-456d-a407-89045aea056c","type":"ColumnDataSource"}},"id":"722516b9-833a-46cb-a000-5f1e8c0f91bf","type":"CDSView"}],"root_ids":["1b3a2d8f-70e5-485c-86b2-ec5f0e17255c"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"70b4c710-0724-4e91-8654-a608ff4d22ed","elementid":"ac642acd-24ad-4287-b3d1-81e1d1f3f5f6","modelid":"1b3a2d8f-70e5-485c-86b2-ec5f0e17255c"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

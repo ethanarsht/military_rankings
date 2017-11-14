@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="0486371b-2a62-4b9f-aff7-23938b6885bf"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"bed90b93-9155-4e5a-b6e5-e6b8e0e337e5":{"roots":{"references":[{"attributes":{},"id":"6a92121e-a9f0-4420-9127-eea21fa3d8e9","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a03ce396-c9ca-45cd-88f3-437da169ecf8","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"0025595a-2258-4791-bb4f-09aa93ff0aff","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"0025595a-2258-4791-bb4f-09aa93ff0aff","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"1f0b5aa0-dbed-456e-bea3-53b5e1159c69","type":"VBar"},{"attributes":{"source":{"id":"41b1aa4c-a5e7-49cf-a854-43df7303beb9","type":"ColumnDataSource"}},"id":"12d3e46e-d5f0-44dd-b63c-68c202d11574","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"c8accb18-ea86-480a-a906-9172d32f2ab9","type":"HoverTool"},{"attributes":{},"id":"863a5172-b7cd-4555-9098-1c1df48a22ae","type":"CategoricalTicker"},{"attributes":{"source":{"id":"41b1aa4c-a5e7-49cf-a854-43df7303beb9","type":"ColumnDataSource"}},"id":"153bcde8-a2ff-4a57-a3d3-9750ffef70cf","type":"CDSView"},{"attributes":{},"id":"95f19ca6-a0ef-4f2b-9d84-a8a72a8e0a07","type":"BasicTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"0025595a-2258-4791-bb4f-09aa93ff0aff","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Maguaga"],"cumulative":{"__ndarray__":"SBqyvNc4qT8=","dtype":"float64","shape":[1]},"general":["Adam Muir (British Army officer)"],"outcome":["I"],"value":{"__ndarray__":"SBqyvNc4qT8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABQnEA=","dtype":"float64","shape":[1]}}},"id":"41b1aa4c-a5e7-49cf-a854-43df7303beb9","type":"ColumnDataSource"},{"attributes":{"callback":null,"factors":["Battle of Maguaga"]},"id":"4405f602-53f3-42ab-820a-0ef84a4e4c71","type":"FactorRange"},{"attributes":{},"id":"63fc28d5-544c-4701-987c-4bdd00520169","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"c8accb18-ea86-480a-a906-9172d32f2ab9","type":"HoverTool"}]},"id":"827d8e43-4712-40a1-bef7-f834662dc19c","type":"Toolbar"},{"attributes":{"below":[{"id":"9c721425-c6d8-499a-be81-dffae0ea08ec","type":"CategoricalAxis"}],"left":[{"id":"04ff8e2f-b50d-4dad-8ea3-19fb05635871","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"9c721425-c6d8-499a-be81-dffae0ea08ec","type":"CategoricalAxis"},{"id":"2e9e6ab4-ef76-4f32-a26e-aced01edb415","type":"Grid"},{"id":"04ff8e2f-b50d-4dad-8ea3-19fb05635871","type":"LinearAxis"},{"id":"4adfb74d-b938-4ab9-a953-18907da28626","type":"Grid"},{"id":"c1204d1d-1190-4d2f-90d2-ee69e5a09b53","type":"GlyphRenderer"},{"id":"9ef9a4fd-84b2-4e99-bcd3-016599aa2be5","type":"GlyphRenderer"}],"title":{"id":"7e9e3b1b-66ec-47ce-8a28-295301450ee6","type":"Title"},"toolbar":{"id":"827d8e43-4712-40a1-bef7-f834662dc19c","type":"Toolbar"},"x_range":{"id":"4405f602-53f3-42ab-820a-0ef84a4e4c71","type":"FactorRange"},"x_scale":{"id":"f6dac30d-69fc-484a-b4c1-29feeee90d8b","type":"CategoricalScale"},"y_range":{"id":"bb0e78a8-8495-46aa-933c-61d6586e9544","type":"DataRange1d"},"y_scale":{"id":"6a92121e-a9f0-4420-9127-eea21fa3d8e9","type":"LinearScale"}},"id":"4a298f1f-2bdf-4b83-8e94-a5a130399f98","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"41b1aa4c-a5e7-49cf-a854-43df7303beb9","type":"ColumnDataSource"},"glyph":{"id":"a03ce396-c9ca-45cd-88f3-437da169ecf8","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1c319695-d768-445a-b42e-7d8a4b5cf4c7","type":"Line"},"selection_glyph":null,"view":{"id":"153bcde8-a2ff-4a57-a3d3-9750ffef70cf","type":"CDSView"}},"id":"c1204d1d-1190-4d2f-90d2-ee69e5a09b53","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"74da4bb1-ef28-488a-8060-c60cd1d184b4","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"4a298f1f-2bdf-4b83-8e94-a5a130399f98","subtype":"Figure","type":"Plot"},"ticker":{"id":"863a5172-b7cd-4555-9098-1c1df48a22ae","type":"CategoricalTicker"}},"id":"9c721425-c6d8-499a-be81-dffae0ea08ec","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d01bb004-5851-437e-a2c7-29cc3daa1ee4","type":"VBar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1c319695-d768-445a-b42e-7d8a4b5cf4c7","type":"Line"},{"attributes":{"plot":{"id":"4a298f1f-2bdf-4b83-8e94-a5a130399f98","subtype":"Figure","type":"Plot"},"ticker":{"id":"863a5172-b7cd-4555-9098-1c1df48a22ae","type":"CategoricalTicker"}},"id":"2e9e6ab4-ef76-4f32-a26e-aced01edb415","type":"Grid"},{"attributes":{},"id":"74da4bb1-ef28-488a-8060-c60cd1d184b4","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"41b1aa4c-a5e7-49cf-a854-43df7303beb9","type":"ColumnDataSource"},"glyph":{"id":"1f0b5aa0-dbed-456e-bea3-53b5e1159c69","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d01bb004-5851-437e-a2c7-29cc3daa1ee4","type":"VBar"},"selection_glyph":null,"view":{"id":"12d3e46e-d5f0-44dd-b63c-68c202d11574","type":"CDSView"}},"id":"9ef9a4fd-84b2-4e99-bcd3-016599aa2be5","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"bb0e78a8-8495-46aa-933c-61d6586e9544","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Adam Muir (British Army officer) (0 - 1 - 0)"},"id":"7e9e3b1b-66ec-47ce-8a28-295301450ee6","type":"Title"},{"attributes":{},"id":"f6dac30d-69fc-484a-b4c1-29feeee90d8b","type":"CategoricalScale"},{"attributes":{"dimension":1,"plot":{"id":"4a298f1f-2bdf-4b83-8e94-a5a130399f98","subtype":"Figure","type":"Plot"},"ticker":{"id":"95f19ca6-a0ef-4f2b-9d84-a8a72a8e0a07","type":"BasicTicker"}},"id":"4adfb74d-b938-4ab9-a953-18907da28626","type":"Grid"},{"attributes":{"formatter":{"id":"63fc28d5-544c-4701-987c-4bdd00520169","type":"BasicTickFormatter"},"plot":{"id":"4a298f1f-2bdf-4b83-8e94-a5a130399f98","subtype":"Figure","type":"Plot"},"ticker":{"id":"95f19ca6-a0ef-4f2b-9d84-a8a72a8e0a07","type":"BasicTicker"}},"id":"04ff8e2f-b50d-4dad-8ea3-19fb05635871","type":"LinearAxis"}],"root_ids":["4a298f1f-2bdf-4b83-8e94-a5a130399f98"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"bed90b93-9155-4e5a-b6e5-e6b8e0e337e5","elementid":"0486371b-2a62-4b9f-aff7-23938b6885bf","modelid":"4a298f1f-2bdf-4b83-8e94-a5a130399f98"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

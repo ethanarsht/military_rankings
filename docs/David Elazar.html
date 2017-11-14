@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="52c40f0f-758b-4908-ab0d-b60066bce682"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"cff5176a-bc2a-45a9-9e42-56466f5c2ace":{"roots":{"references":[{"attributes":{"data_source":{"id":"0f1282cb-91c1-4f3f-9589-8f3b4f88cc16","type":"ColumnDataSource"},"glyph":{"id":"a44ad656-5408-4995-b811-53572d96fd65","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0670ede0-101c-4026-97c5-540b4fd98745","type":"Line"},"selection_glyph":null,"view":{"id":"72e6dee7-dac9-40f0-bbb7-6bcd0f9f600e","type":"CDSView"}},"id":"8b02322b-0a08-4996-b69b-b62aee515de3","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"214129c8-c8fa-4216-9877-05bd3b3f55d5","type":"HoverTool"}]},"id":"6940ddb3-a463-48b6-ab17-356d0b4a3d83","type":"Toolbar"},{"attributes":{},"id":"83f07c5d-a6b2-4f4e-af54-0263b914c214","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"214129c8-c8fa-4216-9877-05bd3b3f55d5","type":"HoverTool"},{"attributes":{"dimension":1,"plot":{"id":"4c1d5bbb-f2ef-4016-870f-ff26dc01f441","subtype":"Figure","type":"Plot"},"ticker":{"id":"54fb9bfc-70ff-429e-b01d-4a00403723d6","type":"BasicTicker"}},"id":"19c1a6a1-39a6-4f83-bc0d-edf137a97a57","type":"Grid"},{"attributes":{"plot":{"id":"4c1d5bbb-f2ef-4016-870f-ff26dc01f441","subtype":"Figure","type":"Plot"},"ticker":{"id":"2d884bcc-bf23-4602-88c9-a223cf981c59","type":"CategoricalTicker"}},"id":"53f5c41b-2d8c-4311-85b4-481239e35fec","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Six Day War","Operation Badr (1973)","Yom Kippur War"],"cumulative":{"__ndarray__":"CFbDy2H+4T9s3BpL7UzDPwOf0qMogeY/","dtype":"float64","shape":[3]},"general":["David Elazar","David Elazar","David Elazar"],"outcome":["V","D","V"],"value":{"__ndarray__":"CFbDy2H+4T/aPfnxTFbav+jnC1HtreE/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAC8nkAAAAAAANSeQAAAAAAA1J5A","dtype":"float64","shape":[3]}}},"id":"0f1282cb-91c1-4f3f-9589-8f3b4f88cc16","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"83f07c5d-a6b2-4f4e-af54-0263b914c214","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"4c1d5bbb-f2ef-4016-870f-ff26dc01f441","subtype":"Figure","type":"Plot"},"ticker":{"id":"2d884bcc-bf23-4602-88c9-a223cf981c59","type":"CategoricalTicker"}},"id":"9c6697f3-5329-4611-8ca3-9dec1d9c72ad","type":"CategoricalAxis"},{"attributes":{"below":[{"id":"9c6697f3-5329-4611-8ca3-9dec1d9c72ad","type":"CategoricalAxis"}],"left":[{"id":"03b2c239-1f6e-42a6-befb-a8304b36ad43","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"9c6697f3-5329-4611-8ca3-9dec1d9c72ad","type":"CategoricalAxis"},{"id":"53f5c41b-2d8c-4311-85b4-481239e35fec","type":"Grid"},{"id":"03b2c239-1f6e-42a6-befb-a8304b36ad43","type":"LinearAxis"},{"id":"19c1a6a1-39a6-4f83-bc0d-edf137a97a57","type":"Grid"},{"id":"8b02322b-0a08-4996-b69b-b62aee515de3","type":"GlyphRenderer"},{"id":"017cb756-68d8-44d8-80ce-17ecb3b9f2ec","type":"GlyphRenderer"}],"title":{"id":"081a8836-ae67-432c-a89c-5d879287e345","type":"Title"},"toolbar":{"id":"6940ddb3-a463-48b6-ab17-356d0b4a3d83","type":"Toolbar"},"x_range":{"id":"0097d230-838b-4179-b18b-a0ae39884ae8","type":"FactorRange"},"x_scale":{"id":"d7c23895-2ec5-4ada-bd41-bf86aa5a71e9","type":"CategoricalScale"},"y_range":{"id":"03b8ad85-a1e9-4767-be34-f4d766852361","type":"DataRange1d"},"y_scale":{"id":"867e7a66-5915-48f6-b09e-abb4d541f9d3","type":"LinearScale"}},"id":"4c1d5bbb-f2ef-4016-870f-ff26dc01f441","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null},"id":"03b8ad85-a1e9-4767-be34-f4d766852361","type":"DataRange1d"},{"attributes":{},"id":"867e7a66-5915-48f6-b09e-abb4d541f9d3","type":"LinearScale"},{"attributes":{"data_source":{"id":"0f1282cb-91c1-4f3f-9589-8f3b4f88cc16","type":"ColumnDataSource"},"glyph":{"id":"6a6a7f90-8533-4d29-8375-cd34530a7c68","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"946bbab0-e299-496e-b145-947781ef09fa","type":"VBar"},"selection_glyph":null,"view":{"id":"f53d93e0-98b7-45eb-a5ac-0961d95912f5","type":"CDSView"}},"id":"017cb756-68d8-44d8-80ce-17ecb3b9f2ec","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"077db2db-453b-465a-9326-cfb0f3d27d71","type":"CategoricalColorMapper"},{"attributes":{"plot":null,"text":"David Elazar (2 - 0 - 1)"},"id":"081a8836-ae67-432c-a89c-5d879287e345","type":"Title"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0670ede0-101c-4026-97c5-540b4fd98745","type":"Line"},{"attributes":{"source":{"id":"0f1282cb-91c1-4f3f-9589-8f3b4f88cc16","type":"ColumnDataSource"}},"id":"f53d93e0-98b7-45eb-a5ac-0961d95912f5","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"946bbab0-e299-496e-b145-947781ef09fa","type":"VBar"},{"attributes":{"source":{"id":"0f1282cb-91c1-4f3f-9589-8f3b4f88cc16","type":"ColumnDataSource"}},"id":"72e6dee7-dac9-40f0-bbb7-6bcd0f9f600e","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a44ad656-5408-4995-b811-53572d96fd65","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"077db2db-453b-465a-9326-cfb0f3d27d71","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"077db2db-453b-465a-9326-cfb0f3d27d71","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6a6a7f90-8533-4d29-8375-cd34530a7c68","type":"VBar"},{"attributes":{"callback":null,"factors":["Six Day War","Operation Badr (1973)","Yom Kippur War"]},"id":"0097d230-838b-4179-b18b-a0ae39884ae8","type":"FactorRange"},{"attributes":{"formatter":{"id":"be8c9bdc-dd0f-4900-8197-ba1b7e035f6c","type":"BasicTickFormatter"},"plot":{"id":"4c1d5bbb-f2ef-4016-870f-ff26dc01f441","subtype":"Figure","type":"Plot"},"ticker":{"id":"54fb9bfc-70ff-429e-b01d-4a00403723d6","type":"BasicTicker"}},"id":"03b2c239-1f6e-42a6-befb-a8304b36ad43","type":"LinearAxis"},{"attributes":{},"id":"d7c23895-2ec5-4ada-bd41-bf86aa5a71e9","type":"CategoricalScale"},{"attributes":{},"id":"be8c9bdc-dd0f-4900-8197-ba1b7e035f6c","type":"BasicTickFormatter"},{"attributes":{},"id":"2d884bcc-bf23-4602-88c9-a223cf981c59","type":"CategoricalTicker"},{"attributes":{},"id":"54fb9bfc-70ff-429e-b01d-4a00403723d6","type":"BasicTicker"}],"root_ids":["4c1d5bbb-f2ef-4016-870f-ff26dc01f441"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"cff5176a-bc2a-45a9-9e42-56466f5c2ace","elementid":"52c40f0f-758b-4908-ab0d-b60066bce682","modelid":"4c1d5bbb-f2ef-4016-870f-ff26dc01f441"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

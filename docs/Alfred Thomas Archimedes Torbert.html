@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="e81c8856-0129-45c5-bba3-fa00f44dc43d"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"2ec1a5dc-a801-4c34-b54d-9826c5058e73":{"roots":{"references":[{"attributes":{},"id":"db126204-eaa5-420b-9238-be74438e48b9","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"7e10f8ee-9706-4af4-af34-4f6e2cd3525b","type":"HoverTool"}]},"id":"bbd9e6bf-659e-460d-93af-10ab3a3ad7db","type":"Toolbar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"7e10f8ee-9706-4af4-af34-4f6e2cd3525b","type":"HoverTool"},{"attributes":{"source":{"id":"6f3a4be9-43e7-4039-9993-bc64233d94b2","type":"ColumnDataSource"}},"id":"2a61a332-cc51-4824-aba8-b926cfeabd63","type":"CDSView"},{"attributes":{},"id":"f86fab4c-7575-43c7-8875-c4ee859fa611","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"0be7f62b-3929-46c8-9aa3-e0b4aeac09a6","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"744dda70-4198-4742-8eb8-789eea7b34d2","subtype":"Figure","type":"Plot"},"ticker":{"id":"db126204-eaa5-420b-9238-be74438e48b9","type":"CategoricalTicker"}},"id":"c6094471-d354-4ef9-8385-cc93eb886acf","type":"CategoricalAxis"},{"attributes":{},"id":"a2175aa2-d026-4945-a416-024c57b1fb6a","type":"LinearScale"},{"attributes":{},"id":"0be7f62b-3929-46c8-9aa3-e0b4aeac09a6","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"c6094471-d354-4ef9-8385-cc93eb886acf","type":"CategoricalAxis"}],"left":[{"id":"3bb01aef-3af3-4bfc-b8fa-dc6f00253616","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"c6094471-d354-4ef9-8385-cc93eb886acf","type":"CategoricalAxis"},{"id":"deab09fa-3b35-4da5-9b1c-8ea11198fa9b","type":"Grid"},{"id":"3bb01aef-3af3-4bfc-b8fa-dc6f00253616","type":"LinearAxis"},{"id":"759fa6b5-cf5e-4167-bce5-dddf1321f5b3","type":"Grid"},{"id":"2534634b-58c1-4bb8-a4d9-c351d60eabe6","type":"GlyphRenderer"},{"id":"1e03d654-fe46-48e0-bf38-edf5c77dd1da","type":"GlyphRenderer"}],"title":{"id":"c2e89aef-692c-4f30-8cbc-b6a418cfbfa6","type":"Title"},"toolbar":{"id":"bbd9e6bf-659e-460d-93af-10ab3a3ad7db","type":"Toolbar"},"x_range":{"id":"f7b97b71-d90c-4f25-be47-a6a30eac6403","type":"FactorRange"},"x_scale":{"id":"f86fab4c-7575-43c7-8875-c4ee859fa611","type":"CategoricalScale"},"y_range":{"id":"7ba9d206-a2e2-431d-8b8e-7a413fbf15f3","type":"DataRange1d"},"y_scale":{"id":"a2175aa2-d026-4945-a416-024c57b1fb6a","type":"LinearScale"}},"id":"744dda70-4198-4742-8eb8-789eea7b34d2","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"11485c8c-a95f-480f-8bd2-9cf6a26fdc5a","type":"Line"},{"attributes":{"callback":null,"factors":["Battle of Old Church","Battle of Tom's Brook"]},"id":"f7b97b71-d90c-4f25-be47-a6a30eac6403","type":"FactorRange"},{"attributes":{"plot":null,"text":"Alfred Thomas Archimedes Torbert (2 - 0 - 0)"},"id":"c2e89aef-692c-4f30-8cbc-b6a418cfbfa6","type":"Title"},{"attributes":{},"id":"ef47b9bb-1c82-412c-bbcd-7815ae28db74","type":"BasicTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Old Church","Battle of Tom's Brook"],"cumulative":{"__ndarray__":"AAAAAAAA4D9jDRL4JQTvPw==","dtype":"float64","shape":[2]},"general":["Alfred Thomas Archimedes Torbert","Alfred Thomas Archimedes Torbert"],"outcome":["V","V"],"value":{"__ndarray__":"AAAAAAAA4D/GGiTwSwjePw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAAgnUAAAAAAACCdQA==","dtype":"float64","shape":[2]}}},"id":"6f3a4be9-43e7-4039-9993-bc64233d94b2","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"2bf59ec8-9b11-4345-bed0-25f69f1916fa","type":"CategoricalColorMapper"},{"attributes":{"dimension":1,"plot":{"id":"744dda70-4198-4742-8eb8-789eea7b34d2","subtype":"Figure","type":"Plot"},"ticker":{"id":"ef47b9bb-1c82-412c-bbcd-7815ae28db74","type":"BasicTicker"}},"id":"759fa6b5-cf5e-4167-bce5-dddf1321f5b3","type":"Grid"},{"attributes":{"plot":{"id":"744dda70-4198-4742-8eb8-789eea7b34d2","subtype":"Figure","type":"Plot"},"ticker":{"id":"db126204-eaa5-420b-9238-be74438e48b9","type":"CategoricalTicker"}},"id":"deab09fa-3b35-4da5-9b1c-8ea11198fa9b","type":"Grid"},{"attributes":{"data_source":{"id":"6f3a4be9-43e7-4039-9993-bc64233d94b2","type":"ColumnDataSource"},"glyph":{"id":"d25bea99-64d0-41ff-946b-c78ea6a574e1","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ac3d7da8-1b44-40d1-83d5-eb15394299b4","type":"VBar"},"selection_glyph":null,"view":{"id":"2a61a332-cc51-4824-aba8-b926cfeabd63","type":"CDSView"}},"id":"1e03d654-fe46-48e0-bf38-edf5c77dd1da","type":"GlyphRenderer"},{"attributes":{"source":{"id":"6f3a4be9-43e7-4039-9993-bc64233d94b2","type":"ColumnDataSource"}},"id":"2325152b-48f3-4387-93a4-79e087005fea","type":"CDSView"},{"attributes":{"formatter":{"id":"c3c64346-ecf1-4086-bea6-400faf8f118a","type":"BasicTickFormatter"},"plot":{"id":"744dda70-4198-4742-8eb8-789eea7b34d2","subtype":"Figure","type":"Plot"},"ticker":{"id":"ef47b9bb-1c82-412c-bbcd-7815ae28db74","type":"BasicTicker"}},"id":"3bb01aef-3af3-4bfc-b8fa-dc6f00253616","type":"LinearAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"69b6d61d-9c5f-4e1d-be42-f4ef2b24d878","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"2bf59ec8-9b11-4345-bed0-25f69f1916fa","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"2bf59ec8-9b11-4345-bed0-25f69f1916fa","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d25bea99-64d0-41ff-946b-c78ea6a574e1","type":"VBar"},{"attributes":{"callback":null},"id":"7ba9d206-a2e2-431d-8b8e-7a413fbf15f3","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ac3d7da8-1b44-40d1-83d5-eb15394299b4","type":"VBar"},{"attributes":{},"id":"c3c64346-ecf1-4086-bea6-400faf8f118a","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"6f3a4be9-43e7-4039-9993-bc64233d94b2","type":"ColumnDataSource"},"glyph":{"id":"69b6d61d-9c5f-4e1d-be42-f4ef2b24d878","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"11485c8c-a95f-480f-8bd2-9cf6a26fdc5a","type":"Line"},"selection_glyph":null,"view":{"id":"2325152b-48f3-4387-93a4-79e087005fea","type":"CDSView"}},"id":"2534634b-58c1-4bb8-a4d9-c351d60eabe6","type":"GlyphRenderer"}],"root_ids":["744dda70-4198-4742-8eb8-789eea7b34d2"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"2ec1a5dc-a801-4c34-b54d-9826c5058e73","elementid":"e81c8856-0129-45c5-bba3-fa00f44dc43d","modelid":"744dda70-4198-4742-8eb8-789eea7b34d2"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

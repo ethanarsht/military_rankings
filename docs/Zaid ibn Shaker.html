@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="aa3f603a-2835-4fbc-a58c-6da8d27f6a85"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"e78a11a9-2740-4ece-b4e5-1250f90e1329":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"9aa81f84-0d44-4788-89dc-eb07355875b0","type":"CategoricalColorMapper"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"226b72f0-23b9-4a01-9c8c-f99b3dd48ca0","type":"Line"},{"attributes":{"callback":null,"factors":["Battle of Ammunition Hill","Six Day War"]},"id":"1b863034-7d4c-4278-9424-11d40899a6ed","type":"FactorRange"},{"attributes":{},"id":"788980a3-3366-4e09-9433-da0a26ee0b5b","type":"CategoricalScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"56f59dd4-2455-4860-bd61-7c9173c581ce","type":"HoverTool"},{"attributes":{"formatter":{"id":"2ad782e8-b995-43a2-91a5-433424222ac8","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"00dc5d3a-ba15-4bfb-807b-5541ab4bb467","subtype":"Figure","type":"Plot"},"ticker":{"id":"f7a5511a-4b35-4a15-92f1-cbdd3b249f2b","type":"CategoricalTicker"}},"id":"9bc150e5-eb63-4111-b8da-12b65c915977","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"2f2d2f03-ee0a-4c64-b128-89bf79534939","type":"ColumnDataSource"},"glyph":{"id":"226b72f0-23b9-4a01-9c8c-f99b3dd48ca0","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"406585c4-3d44-4b65-9fd4-dde337e5a70a","type":"Line"},"selection_glyph":null,"view":{"id":"ba0b1b19-4c13-4194-a715-a3326834293d","type":"CDSView"}},"id":"93c0be25-9102-48e3-b9e3-0f8c0dd8f4a5","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e5dd377d-d135-46ac-8030-014a4321c5a6","type":"VBar"},{"attributes":{},"id":"62def2ed-d03f-4248-acb0-131db59562f2","type":"BasicTicker"},{"attributes":{},"id":"fc1b276e-9bd1-4a42-9a9e-236e501c908a","type":"BasicTickFormatter"},{"attributes":{},"id":"2ad782e8-b995-43a2-91a5-433424222ac8","type":"CategoricalTickFormatter"},{"attributes":{},"id":"f7a5511a-4b35-4a15-92f1-cbdd3b249f2b","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"00dc5d3a-ba15-4bfb-807b-5541ab4bb467","subtype":"Figure","type":"Plot"},"ticker":{"id":"62def2ed-d03f-4248-acb0-131db59562f2","type":"BasicTicker"}},"id":"666c19d4-77c4-4e82-870f-46bc282ebb16","type":"Grid"},{"attributes":{"source":{"id":"2f2d2f03-ee0a-4c64-b128-89bf79534939","type":"ColumnDataSource"}},"id":"d148d09e-ce7a-4151-81ae-7fb1c6301761","type":"CDSView"},{"attributes":{"callback":null},"id":"6b5e283c-5f51-4691-a3ce-2d4ecfac6388","type":"DataRange1d"},{"attributes":{},"id":"0f76d5be-36a8-46b8-882a-f343889d22eb","type":"LinearScale"},{"attributes":{"formatter":{"id":"fc1b276e-9bd1-4a42-9a9e-236e501c908a","type":"BasicTickFormatter"},"plot":{"id":"00dc5d3a-ba15-4bfb-807b-5541ab4bb467","subtype":"Figure","type":"Plot"},"ticker":{"id":"62def2ed-d03f-4248-acb0-131db59562f2","type":"BasicTicker"}},"id":"971fe435-5a9f-4244-8843-7164b5f2dd74","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Zaid ibn Shaker (0 - 0 - 2)"},"id":"3d37f0c0-4b53-4d0b-82c5-51d2c29aabcd","type":"Title"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"56f59dd4-2455-4860-bd61-7c9173c581ce","type":"HoverTool"}]},"id":"f2efbd37-1ac2-413f-995b-4e031190968d","type":"Toolbar"},{"attributes":{"below":[{"id":"9bc150e5-eb63-4111-b8da-12b65c915977","type":"CategoricalAxis"}],"left":[{"id":"971fe435-5a9f-4244-8843-7164b5f2dd74","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"9bc150e5-eb63-4111-b8da-12b65c915977","type":"CategoricalAxis"},{"id":"f2bfc442-b41f-48b1-b0cb-488ce2af0ff0","type":"Grid"},{"id":"971fe435-5a9f-4244-8843-7164b5f2dd74","type":"LinearAxis"},{"id":"666c19d4-77c4-4e82-870f-46bc282ebb16","type":"Grid"},{"id":"93c0be25-9102-48e3-b9e3-0f8c0dd8f4a5","type":"GlyphRenderer"},{"id":"ae679f0a-467b-4a78-917e-f91223e591ca","type":"GlyphRenderer"}],"title":{"id":"3d37f0c0-4b53-4d0b-82c5-51d2c29aabcd","type":"Title"},"toolbar":{"id":"f2efbd37-1ac2-413f-995b-4e031190968d","type":"Toolbar"},"x_range":{"id":"1b863034-7d4c-4278-9424-11d40899a6ed","type":"FactorRange"},"x_scale":{"id":"788980a3-3366-4e09-9433-da0a26ee0b5b","type":"CategoricalScale"},"y_range":{"id":"6b5e283c-5f51-4691-a3ce-2d4ecfac6388","type":"DataRange1d"},"y_scale":{"id":"0f76d5be-36a8-46b8-882a-f343889d22eb","type":"LinearScale"}},"id":"00dc5d3a-ba15-4bfb-807b-5541ab4bb467","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"2f2d2f03-ee0a-4c64-b128-89bf79534939","type":"ColumnDataSource"}},"id":"ba0b1b19-4c13-4194-a715-a3326834293d","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Ammunition Hill","Six Day War"],"cumulative":{"__ndarray__":"AAAAAAAA4L9Gh8RHTQvxvw==","dtype":"float64","shape":[2]},"general":["Zaid ibn Shaker","Zaid ibn Shaker"],"outcome":["D","D"],"value":{"__ndarray__":"AAAAAAAA4L+MDomPmhbivw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAC8nkAAAAAAALyeQA==","dtype":"float64","shape":[2]}}},"id":"2f2d2f03-ee0a-4c64-b128-89bf79534939","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"00dc5d3a-ba15-4bfb-807b-5541ab4bb467","subtype":"Figure","type":"Plot"},"ticker":{"id":"f7a5511a-4b35-4a15-92f1-cbdd3b249f2b","type":"CategoricalTicker"}},"id":"f2bfc442-b41f-48b1-b0cb-488ce2af0ff0","type":"Grid"},{"attributes":{"data_source":{"id":"2f2d2f03-ee0a-4c64-b128-89bf79534939","type":"ColumnDataSource"},"glyph":{"id":"66b27071-469b-46ec-99c3-63654784a22d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e5dd377d-d135-46ac-8030-014a4321c5a6","type":"VBar"},"selection_glyph":null,"view":{"id":"d148d09e-ce7a-4151-81ae-7fb1c6301761","type":"CDSView"}},"id":"ae679f0a-467b-4a78-917e-f91223e591ca","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"406585c4-3d44-4b65-9fd4-dde337e5a70a","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"9aa81f84-0d44-4788-89dc-eb07355875b0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"9aa81f84-0d44-4788-89dc-eb07355875b0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"66b27071-469b-46ec-99c3-63654784a22d","type":"VBar"}],"root_ids":["00dc5d3a-ba15-4bfb-807b-5541ab4bb467"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"e78a11a9-2740-4ece-b4e5-1250f90e1329","elementid":"aa3f603a-2835-4fbc-a58c-6da8d27f6a85","modelid":"00dc5d3a-ba15-4bfb-807b-5541ab4bb467"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

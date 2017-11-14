@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="5edf2cab-76f4-465b-97fc-b0ce0eb62856"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"5eca090a-2840-4a29-ac1e-21749b0e093d":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"1f67b8ab-13a7-4eb6-8857-86ba51aa3674","type":"HoverTool"}]},"id":"bc00fad1-9370-40e5-aa7a-ea47c9e59037","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"703f1fb7-a4e9-41b8-a453-15efd8cd735b","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"8ceca550-19d0-4f53-b24a-45369e3c3261","type":"CategoricalColorMapper"},{"attributes":{},"id":"66a6780d-d75b-45a3-89ba-6f6c3a25ff95","type":"LinearScale"},{"attributes":{"dimension":1,"plot":{"id":"9dd91216-0caf-4d9a-9a46-5ec4946af4e4","subtype":"Figure","type":"Plot"},"ticker":{"id":"8642ca84-4209-45ff-a687-98db3a8630e2","type":"BasicTicker"}},"id":"1bf49791-ed46-41bf-b86b-04a6bb8438b2","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"8ceca550-19d0-4f53-b24a-45369e3c3261","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"8ceca550-19d0-4f53-b24a-45369e3c3261","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ad4e8141-02ec-4f0f-a22a-76ba2461780d","type":"VBar"},{"attributes":{"data_source":{"id":"b2635016-50ba-436c-b4fa-3576366228fe","type":"ColumnDataSource"},"glyph":{"id":"ad4e8141-02ec-4f0f-a22a-76ba2461780d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"703f1fb7-a4e9-41b8-a453-15efd8cd735b","type":"VBar"},"selection_glyph":null,"view":{"id":"5b0f3b9d-9868-4530-b26f-c13ed9e72f6a","type":"CDSView"}},"id":"82df1cda-43c0-4758-a93e-bf94a9a28faf","type":"GlyphRenderer"},{"attributes":{},"id":"14de3d8b-d3d8-4971-84c7-1fb6be4a36be","type":"CategoricalTicker"},{"attributes":{"source":{"id":"b2635016-50ba-436c-b4fa-3576366228fe","type":"ColumnDataSource"}},"id":"5b0f3b9d-9868-4530-b26f-c13ed9e72f6a","type":"CDSView"},{"attributes":{"formatter":{"id":"eac98e75-a7cc-4cc4-ad1a-1945f93585c2","type":"BasicTickFormatter"},"plot":{"id":"9dd91216-0caf-4d9a-9a46-5ec4946af4e4","subtype":"Figure","type":"Plot"},"ticker":{"id":"8642ca84-4209-45ff-a687-98db3a8630e2","type":"BasicTicker"}},"id":"111ff38b-1580-428d-a8a1-a01c020a1926","type":"LinearAxis"},{"attributes":{},"id":"eac98e75-a7cc-4cc4-ad1a-1945f93585c2","type":"BasicTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Pusan Perimeter","Battle of Triangle Hill","Battle of Kumsong"]},"id":"0e99db58-dc2e-4842-b9d4-06ce239be763","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"1f67b8ab-13a7-4eb6-8857-86ba51aa3674","type":"HoverTool"},{"attributes":{"plot":{"id":"9dd91216-0caf-4d9a-9a46-5ec4946af4e4","subtype":"Figure","type":"Plot"},"ticker":{"id":"14de3d8b-d3d8-4971-84c7-1fb6be4a36be","type":"CategoricalTicker"}},"id":"0d6bd2d6-791e-4df3-8d1b-ed3e85b26ddc","type":"Grid"},{"attributes":{},"id":"8642ca84-4209-45ff-a687-98db3a8630e2","type":"BasicTicker"},{"attributes":{},"id":"dab5b6db-bd57-4303-831d-2e47e0b4696d","type":"CategoricalScale"},{"attributes":{"source":{"id":"b2635016-50ba-436c-b4fa-3576366228fe","type":"ColumnDataSource"}},"id":"e0530329-52ca-4010-8042-2fa6d4f750eb","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3979c260-b49e-4768-9d5e-bae30daf110a","type":"Line"},{"attributes":{"below":[{"id":"cbd0c044-1f87-47e9-887f-cda03e5f54c2","type":"CategoricalAxis"}],"left":[{"id":"111ff38b-1580-428d-a8a1-a01c020a1926","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"cbd0c044-1f87-47e9-887f-cda03e5f54c2","type":"CategoricalAxis"},{"id":"0d6bd2d6-791e-4df3-8d1b-ed3e85b26ddc","type":"Grid"},{"id":"111ff38b-1580-428d-a8a1-a01c020a1926","type":"LinearAxis"},{"id":"1bf49791-ed46-41bf-b86b-04a6bb8438b2","type":"Grid"},{"id":"9e876979-c215-4720-a6cd-6ffd1a4c2bd0","type":"GlyphRenderer"},{"id":"82df1cda-43c0-4758-a93e-bf94a9a28faf","type":"GlyphRenderer"}],"title":{"id":"19470a84-d853-48ae-a958-55bae7c687e8","type":"Title"},"toolbar":{"id":"bc00fad1-9370-40e5-aa7a-ea47c9e59037","type":"Toolbar"},"x_range":{"id":"0e99db58-dc2e-4842-b9d4-06ce239be763","type":"FactorRange"},"x_scale":{"id":"dab5b6db-bd57-4303-831d-2e47e0b4696d","type":"CategoricalScale"},"y_range":{"id":"00a7d435-fe5c-4c5f-8230-8a208cf748b6","type":"DataRange1d"},"y_scale":{"id":"66a6780d-d75b-45a3-89ba-6f6c3a25ff95","type":"LinearScale"}},"id":"9dd91216-0caf-4d9a-9a46-5ec4946af4e4","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"677d591e-98f1-4957-81cc-8c50af636dc8","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"Chung Il-kwon (1 - 0 - 2)"},"id":"19470a84-d853-48ae-a958-55bae7c687e8","type":"Title"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Pusan Perimeter","Battle of Triangle Hill","Battle of Kumsong"],"cumulative":{"__ndarray__":"uhHkYta03j9g5L7RmbKUv5xw1QK1SeC/","dtype":"float64","shape":[3]},"general":["Chung Il-kwon","Chung Il-kwon","Chung Il-kwon"],"outcome":["V","D","D"],"value":{"__ndarray__":"uhHkYta03j8AAAAAAADgv/PyjmhASN+/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAB4nkAAAAAAAICeQAAAAAAAhJ5A","dtype":"float64","shape":[3]}}},"id":"b2635016-50ba-436c-b4fa-3576366228fe","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"677d591e-98f1-4957-81cc-8c50af636dc8","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"9dd91216-0caf-4d9a-9a46-5ec4946af4e4","subtype":"Figure","type":"Plot"},"ticker":{"id":"14de3d8b-d3d8-4971-84c7-1fb6be4a36be","type":"CategoricalTicker"}},"id":"cbd0c044-1f87-47e9-887f-cda03e5f54c2","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"b2635016-50ba-436c-b4fa-3576366228fe","type":"ColumnDataSource"},"glyph":{"id":"3979c260-b49e-4768-9d5e-bae30daf110a","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a69612a2-d792-4d2e-a594-ccca35d3da38","type":"Line"},"selection_glyph":null,"view":{"id":"e0530329-52ca-4010-8042-2fa6d4f750eb","type":"CDSView"}},"id":"9e876979-c215-4720-a6cd-6ffd1a4c2bd0","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a69612a2-d792-4d2e-a594-ccca35d3da38","type":"Line"},{"attributes":{"callback":null},"id":"00a7d435-fe5c-4c5f-8230-8a208cf748b6","type":"DataRange1d"}],"root_ids":["9dd91216-0caf-4d9a-9a46-5ec4946af4e4"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"5eca090a-2840-4a29-ac1e-21749b0e093d","elementid":"5edf2cab-76f4-465b-97fc-b0ce0eb62856","modelid":"9dd91216-0caf-4d9a-9a46-5ec4946af4e4"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

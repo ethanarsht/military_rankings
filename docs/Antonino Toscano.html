@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="bffdd2d7-547d-4969-86d1-43c006700ce5"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"52352c15-6b34-4c4a-9070-f6e2556fbf6d":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"b466d01d-1589-46c0-bb0a-03f7a8a4b985","type":"HoverTool"}]},"id":"80ca987d-a011-4018-a423-ff8758616647","type":"Toolbar"},{"attributes":{},"id":"d1ffe8cc-cb1c-4007-9b04-780ec91f122a","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"7f5bca38-b653-449b-9ab6-8c39812cff4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"2de8d593-a505-4eff-9dae-292a73c7875e","type":"BasicTicker"}},"id":"a5e1faf5-3958-4a4a-acd2-8bf6d8032fed","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f0272753-bab8-489a-ab52-f1ebaf81ac3f","type":"VBar"},{"attributes":{},"id":"2d012557-805e-4f30-b8c6-70c5ad777fcf","type":"CategoricalScale"},{"attributes":{"source":{"id":"2b5b47d8-7380-47c5-bfc5-3042fe4d7038","type":"ColumnDataSource"}},"id":"2ad74145-ebc0-4e64-b1d8-6125b3643063","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"b178d2fb-6eea-4c00-9f4d-e438d72cba2a","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"b178d2fb-6eea-4c00-9f4d-e438d72cba2a","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9e0ae069-a52f-4ec4-89c2-5ea4db131947","type":"VBar"},{"attributes":{"below":[{"id":"a51c1f87-a303-4fec-9def-dfa310b8f22a","type":"CategoricalAxis"}],"left":[{"id":"3dd3bd01-3c7d-4be6-ac5b-093b702fe5ca","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"a51c1f87-a303-4fec-9def-dfa310b8f22a","type":"CategoricalAxis"},{"id":"f8638d55-d785-480c-9d97-cb6f24f6537b","type":"Grid"},{"id":"3dd3bd01-3c7d-4be6-ac5b-093b702fe5ca","type":"LinearAxis"},{"id":"a5e1faf5-3958-4a4a-acd2-8bf6d8032fed","type":"Grid"},{"id":"e7fca90d-e3e4-4734-9ec5-d2dfed5d9272","type":"GlyphRenderer"},{"id":"12d17bb2-5a96-4f9f-917e-b7b16a8f35c6","type":"GlyphRenderer"}],"title":{"id":"17a763d6-a677-45fa-944e-a802038c1e54","type":"Title"},"toolbar":{"id":"80ca987d-a011-4018-a423-ff8758616647","type":"Toolbar"},"x_range":{"id":"cdc58d5f-9694-47ac-a335-b479ffa74057","type":"FactorRange"},"x_scale":{"id":"2d012557-805e-4f30-b8c6-70c5ad777fcf","type":"CategoricalScale"},"y_range":{"id":"e1355241-44bd-41db-80af-c619e1e2b470","type":"DataRange1d"},"y_scale":{"id":"2cd18805-71be-463a-bd4b-466ee0568eeb","type":"LinearScale"}},"id":"7f5bca38-b653-449b-9ab6-8c39812cff4e","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"b466d01d-1589-46c0-bb0a-03f7a8a4b985","type":"HoverTool"},{"attributes":{"formatter":{"id":"d1ffe8cc-cb1c-4007-9b04-780ec91f122a","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"7f5bca38-b653-449b-9ab6-8c39812cff4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b1f2c5f-19af-4084-8a99-5f6518fc0b7b","type":"CategoricalTicker"}},"id":"a51c1f87-a303-4fec-9def-dfa310b8f22a","type":"CategoricalAxis"},{"attributes":{},"id":"2de8d593-a505-4eff-9dae-292a73c7875e","type":"BasicTicker"},{"attributes":{"data_source":{"id":"2b5b47d8-7380-47c5-bfc5-3042fe4d7038","type":"ColumnDataSource"},"glyph":{"id":"b312a78e-9de1-4774-ba16-6a8f530af2c9","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d0238cad-e620-4d42-8e08-dc7260bcfdf4","type":"Line"},"selection_glyph":null,"view":{"id":"2ad74145-ebc0-4e64-b1d8-6125b3643063","type":"CDSView"}},"id":"e7fca90d-e3e4-4734-9ec5-d2dfed5d9272","type":"GlyphRenderer"},{"attributes":{},"id":"2cd18805-71be-463a-bd4b-466ee0568eeb","type":"LinearScale"},{"attributes":{},"id":"5b1f2c5f-19af-4084-8a99-5f6518fc0b7b","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Battle of Cape Bon (1941)"]},"id":"cdc58d5f-9694-47ac-a335-b479ffa74057","type":"FactorRange"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"b312a78e-9de1-4774-ba16-6a8f530af2c9","type":"Line"},{"attributes":{"callback":null},"id":"e1355241-44bd-41db-80af-c619e1e2b470","type":"DataRange1d"},{"attributes":{"data_source":{"id":"2b5b47d8-7380-47c5-bfc5-3042fe4d7038","type":"ColumnDataSource"},"glyph":{"id":"9e0ae069-a52f-4ec4-89c2-5ea4db131947","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f0272753-bab8-489a-ab52-f1ebaf81ac3f","type":"VBar"},"selection_glyph":null,"view":{"id":"2688e561-0d5c-4744-8e5e-9c7c37c9a1ac","type":"CDSView"}},"id":"12d17bb2-5a96-4f9f-917e-b7b16a8f35c6","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"6b7cf2d1-4742-4a8f-bd26-237e78b3fd8b","type":"BasicTickFormatter"},"plot":{"id":"7f5bca38-b653-449b-9ab6-8c39812cff4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"2de8d593-a505-4eff-9dae-292a73c7875e","type":"BasicTicker"}},"id":"3dd3bd01-3c7d-4be6-ac5b-093b702fe5ca","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Cape Bon (1941)"],"cumulative":{"__ndarray__":"onBEql/J3r8=","dtype":"float64","shape":[1]},"general":["Antonino Toscano"],"outcome":["D"],"value":{"__ndarray__":"onBEql/J3r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABUnkA=","dtype":"float64","shape":[1]}}},"id":"2b5b47d8-7380-47c5-bfc5-3042fe4d7038","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d0238cad-e620-4d42-8e08-dc7260bcfdf4","type":"Line"},{"attributes":{"plot":null,"text":"Antonino Toscano (0 - 0 - 1)"},"id":"17a763d6-a677-45fa-944e-a802038c1e54","type":"Title"},{"attributes":{},"id":"6b7cf2d1-4742-4a8f-bd26-237e78b3fd8b","type":"BasicTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"b178d2fb-6eea-4c00-9f4d-e438d72cba2a","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"2b5b47d8-7380-47c5-bfc5-3042fe4d7038","type":"ColumnDataSource"}},"id":"2688e561-0d5c-4744-8e5e-9c7c37c9a1ac","type":"CDSView"},{"attributes":{"plot":{"id":"7f5bca38-b653-449b-9ab6-8c39812cff4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b1f2c5f-19af-4084-8a99-5f6518fc0b7b","type":"CategoricalTicker"}},"id":"f8638d55-d785-480c-9d97-cb6f24f6537b","type":"Grid"}],"root_ids":["7f5bca38-b653-449b-9ab6-8c39812cff4e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"52352c15-6b34-4c4a-9070-f6e2556fbf6d","elementid":"bffdd2d7-547d-4969-86d1-43c006700ce5","modelid":"7f5bca38-b653-449b-9ab6-8c39812cff4e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

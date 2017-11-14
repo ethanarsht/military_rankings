@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="0888e1b3-0b76-4df1-b016-1dc7988bc708"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"8f6186dc-bb57-4b5f-bd57-a18efe83acc2":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"646f8eb5-1ca8-4967-8660-bd04ee865be9","type":"CategoricalColorMapper"},{"attributes":{},"id":"e8204001-9fa3-464e-aa1e-37f764d04298","type":"BasicTicker"},{"attributes":{},"id":"7149a163-3ad9-429a-a860-76caf61639ab","type":"BasicTickFormatter"},{"attributes":{},"id":"8366ef80-2f3d-4d91-ad9b-a9b17f51e07c","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"364dfcae-f5bc-411e-8c9b-c31a0239f276","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"4cf44eda-628d-463b-a213-6c0b95575f07","type":"HoverTool"},{"attributes":{"source":{"id":"caa76ae3-3ca9-4585-ace8-377032dcd7c9","type":"ColumnDataSource"}},"id":"ff5e2928-7055-4469-bf29-b06acf36ddab","type":"CDSView"},{"attributes":{"data_source":{"id":"caa76ae3-3ca9-4585-ace8-377032dcd7c9","type":"ColumnDataSource"},"glyph":{"id":"02ca8ae9-acbc-48e2-bd5c-5f3b1f4b73f1","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3a799f98-d056-460a-acf5-18bf60dcb003","type":"Line"},"selection_glyph":null,"view":{"id":"ff5e2928-7055-4469-bf29-b06acf36ddab","type":"CDSView"}},"id":"7253987f-ddd4-4985-a70c-c120268df9e2","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3a799f98-d056-460a-acf5-18bf60dcb003","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"c26b5a8d-cfaf-43fe-a216-1b9589ab95b0","subtype":"Figure","type":"Plot"},"ticker":{"id":"e8204001-9fa3-464e-aa1e-37f764d04298","type":"BasicTicker"}},"id":"e64df9d6-a710-4da0-9d18-a67f8b83728f","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"646f8eb5-1ca8-4967-8660-bd04ee865be9","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"646f8eb5-1ca8-4967-8660-bd04ee865be9","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7451cce0-fee9-4985-a730-9adb7a54cea6","type":"VBar"},{"attributes":{},"id":"da8924c3-718b-4db6-865e-db843f4e468b","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"4cf44eda-628d-463b-a213-6c0b95575f07","type":"HoverTool"}]},"id":"77e849d3-5399-40e6-bd15-5b1cbfea9848","type":"Toolbar"},{"attributes":{"plot":null,"text":"Fernand de Langle de Cary (1 - 0 - 1)"},"id":"c4c195c2-3ef0-4126-bba4-d6902d6dcf75","type":"Title"},{"attributes":{"formatter":{"id":"da8924c3-718b-4db6-865e-db843f4e468b","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"c26b5a8d-cfaf-43fe-a216-1b9589ab95b0","subtype":"Figure","type":"Plot"},"ticker":{"id":"65ac7b88-5894-4923-b169-738f412dffe6","type":"CategoricalTicker"}},"id":"8cf91abd-8065-4e8d-8b1c-28c52048db0b","type":"CategoricalAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"02ca8ae9-acbc-48e2-bd5c-5f3b1f4b73f1","type":"Line"},{"attributes":{"callback":null},"id":"3cbc33c0-c031-41dc-8ef0-43b2a8122ec1","type":"DataRange1d"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of the Ardennes","Battle of Verdun"],"cumulative":{"__ndarray__":"cq3FKpLt37+AHc3NRsVxPw==","dtype":"float64","shape":[2]},"general":["Fernand de Langle de Cary","Fernand de Langle de Cary"],"outcome":["D","V"],"value":{"__ndarray__":"cq3FKpLt37/0cP6iUxrgPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAADonUAAAAAAAPCdQA==","dtype":"float64","shape":[2]}}},"id":"caa76ae3-3ca9-4585-ace8-377032dcd7c9","type":"ColumnDataSource"},{"attributes":{"source":{"id":"caa76ae3-3ca9-4585-ace8-377032dcd7c9","type":"ColumnDataSource"}},"id":"0ebfcc17-5346-4bc4-bc15-635c2e7b9af2","type":"CDSView"},{"attributes":{"plot":{"id":"c26b5a8d-cfaf-43fe-a216-1b9589ab95b0","subtype":"Figure","type":"Plot"},"ticker":{"id":"65ac7b88-5894-4923-b169-738f412dffe6","type":"CategoricalTicker"}},"id":"9d0140e8-c325-41ec-ba84-7bca77060bde","type":"Grid"},{"attributes":{"data_source":{"id":"caa76ae3-3ca9-4585-ace8-377032dcd7c9","type":"ColumnDataSource"},"glyph":{"id":"7451cce0-fee9-4985-a730-9adb7a54cea6","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"364dfcae-f5bc-411e-8c9b-c31a0239f276","type":"VBar"},"selection_glyph":null,"view":{"id":"0ebfcc17-5346-4bc4-bc15-635c2e7b9af2","type":"CDSView"}},"id":"dfce914e-8bc4-470e-b3cf-256319e039d7","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of the Ardennes","Battle of Verdun"]},"id":"bde345f3-5226-4338-b745-f64dde32a9bd","type":"FactorRange"},{"attributes":{},"id":"65ac7b88-5894-4923-b169-738f412dffe6","type":"CategoricalTicker"},{"attributes":{},"id":"2b1f8114-775a-40d1-8441-50ce2319fe04","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"7149a163-3ad9-429a-a860-76caf61639ab","type":"BasicTickFormatter"},"plot":{"id":"c26b5a8d-cfaf-43fe-a216-1b9589ab95b0","subtype":"Figure","type":"Plot"},"ticker":{"id":"e8204001-9fa3-464e-aa1e-37f764d04298","type":"BasicTicker"}},"id":"fa644f09-8f33-4f5f-8469-63363d58bc82","type":"LinearAxis"},{"attributes":{"below":[{"id":"8cf91abd-8065-4e8d-8b1c-28c52048db0b","type":"CategoricalAxis"}],"left":[{"id":"fa644f09-8f33-4f5f-8469-63363d58bc82","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"8cf91abd-8065-4e8d-8b1c-28c52048db0b","type":"CategoricalAxis"},{"id":"9d0140e8-c325-41ec-ba84-7bca77060bde","type":"Grid"},{"id":"fa644f09-8f33-4f5f-8469-63363d58bc82","type":"LinearAxis"},{"id":"e64df9d6-a710-4da0-9d18-a67f8b83728f","type":"Grid"},{"id":"7253987f-ddd4-4985-a70c-c120268df9e2","type":"GlyphRenderer"},{"id":"dfce914e-8bc4-470e-b3cf-256319e039d7","type":"GlyphRenderer"}],"title":{"id":"c4c195c2-3ef0-4126-bba4-d6902d6dcf75","type":"Title"},"toolbar":{"id":"77e849d3-5399-40e6-bd15-5b1cbfea9848","type":"Toolbar"},"x_range":{"id":"bde345f3-5226-4338-b745-f64dde32a9bd","type":"FactorRange"},"x_scale":{"id":"2b1f8114-775a-40d1-8441-50ce2319fe04","type":"CategoricalScale"},"y_range":{"id":"3cbc33c0-c031-41dc-8ef0-43b2a8122ec1","type":"DataRange1d"},"y_scale":{"id":"8366ef80-2f3d-4d91-ad9b-a9b17f51e07c","type":"LinearScale"}},"id":"c26b5a8d-cfaf-43fe-a216-1b9589ab95b0","subtype":"Figure","type":"Plot"}],"root_ids":["c26b5a8d-cfaf-43fe-a216-1b9589ab95b0"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"8f6186dc-bb57-4b5f-bd57-a18efe83acc2","elementid":"0888e1b3-0b76-4df1-b016-1dc7988bc708","modelid":"c26b5a8d-cfaf-43fe-a216-1b9589ab95b0"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

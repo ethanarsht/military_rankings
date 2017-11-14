@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="7f7ce990-31d2-4156-99e1-8566cb837f3c"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"11d07b8e-367d-422a-a11f-8a6200619c3b":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"fcf00342-0844-4c9f-933a-5b7dc6f9e2b0","type":"CategoricalColorMapper"},{"attributes":{"callback":null},"id":"a6d09710-d3d0-4b3a-b0a9-f5b896280aff","type":"DataRange1d"},{"attributes":{"formatter":{"id":"4b98bebf-cee4-4eb5-b753-f81ccf8fa50b","type":"BasicTickFormatter"},"plot":{"id":"0db56da6-acd0-4db4-ba66-4b373110e3f1","subtype":"Figure","type":"Plot"},"ticker":{"id":"6c4b6c71-f98b-4185-b6c5-fa94b73403b2","type":"BasicTicker"}},"id":"121d140e-228e-449c-be8f-bfcc7f45cea3","type":"LinearAxis"},{"attributes":{"data_source":{"id":"bd81b333-df75-475c-80ed-b27c36183041","type":"ColumnDataSource"},"glyph":{"id":"e45b9eb3-9b04-4da5-93fb-1c9a08df5327","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b9ac2969-4e60-4b61-afd5-d2536459fb83","type":"VBar"},"selection_glyph":null,"view":{"id":"ddcf0e34-f781-4211-ad1a-beab1ec67235","type":"CDSView"}},"id":"08747f35-1010-4364-aa71-50ee9b5d8343","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Ammunition Hill","Six Day War"],"cumulative":{"__ndarray__":"AAAAAAAA4D8Eq+HlMP/wPw==","dtype":"float64","shape":[2]},"general":["Mordechai Gur","Mordechai Gur"],"outcome":["V","V"],"value":{"__ndarray__":"AAAAAAAA4D8IVsPLYf7hPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAC8nkAAAAAAALyeQA==","dtype":"float64","shape":[2]}}},"id":"bd81b333-df75-475c-80ed-b27c36183041","type":"ColumnDataSource"},{"attributes":{},"id":"099aac09-6b2c-479f-a155-12ea8428d979","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"fcf00342-0844-4c9f-933a-5b7dc6f9e2b0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"fcf00342-0844-4c9f-933a-5b7dc6f9e2b0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e45b9eb3-9b04-4da5-93fb-1c9a08df5327","type":"VBar"},{"attributes":{"below":[{"id":"ee5250ae-580c-4c4a-a36e-0a35cb5d68e4","type":"CategoricalAxis"}],"left":[{"id":"121d140e-228e-449c-be8f-bfcc7f45cea3","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"ee5250ae-580c-4c4a-a36e-0a35cb5d68e4","type":"CategoricalAxis"},{"id":"683bae1c-b7b6-4f89-9cf2-b6c94a33a4b5","type":"Grid"},{"id":"121d140e-228e-449c-be8f-bfcc7f45cea3","type":"LinearAxis"},{"id":"2067c806-8417-4af3-8185-d8e31b17f549","type":"Grid"},{"id":"e720b144-d17c-4636-a6fe-b1a2dcbf8b52","type":"GlyphRenderer"},{"id":"08747f35-1010-4364-aa71-50ee9b5d8343","type":"GlyphRenderer"}],"title":{"id":"e6603006-4cd7-4234-adf0-eee076ce664c","type":"Title"},"toolbar":{"id":"f8db691e-5c69-45af-abd0-7c05f1711c3e","type":"Toolbar"},"x_range":{"id":"efa1bb5e-3b2b-4e25-bdb1-f113fd55f50b","type":"FactorRange"},"x_scale":{"id":"099aac09-6b2c-479f-a155-12ea8428d979","type":"CategoricalScale"},"y_range":{"id":"a6d09710-d3d0-4b3a-b0a9-f5b896280aff","type":"DataRange1d"},"y_scale":{"id":"135cfc2d-d271-4534-9864-fce57a776862","type":"LinearScale"}},"id":"0db56da6-acd0-4db4-ba66-4b373110e3f1","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"dfbeb1e2-b762-4011-b4d2-b39f07a39013","type":"CategoricalTickFormatter"},{"attributes":{},"id":"f0000fbf-943b-4c0b-9a48-13516ce374a4","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b9ac2969-4e60-4b61-afd5-d2536459fb83","type":"VBar"},{"attributes":{"plot":null,"text":"Mordechai Gur (2 - 0 - 0)"},"id":"e6603006-4cd7-4234-adf0-eee076ce664c","type":"Title"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"82644849-b8d6-44ad-8c11-419c37b21c7d","type":"Line"},{"attributes":{"data_source":{"id":"bd81b333-df75-475c-80ed-b27c36183041","type":"ColumnDataSource"},"glyph":{"id":"4b0f8600-4dbd-43bf-b993-423d0b535196","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"82644849-b8d6-44ad-8c11-419c37b21c7d","type":"Line"},"selection_glyph":null,"view":{"id":"e42f05e5-4ad5-435c-be06-cb59e9ea5abe","type":"CDSView"}},"id":"e720b144-d17c-4636-a6fe-b1a2dcbf8b52","type":"GlyphRenderer"},{"attributes":{},"id":"135cfc2d-d271-4534-9864-fce57a776862","type":"LinearScale"},{"attributes":{"source":{"id":"bd81b333-df75-475c-80ed-b27c36183041","type":"ColumnDataSource"}},"id":"ddcf0e34-f781-4211-ad1a-beab1ec67235","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Ammunition Hill","Six Day War"]},"id":"efa1bb5e-3b2b-4e25-bdb1-f113fd55f50b","type":"FactorRange"},{"attributes":{},"id":"4b98bebf-cee4-4eb5-b753-f81ccf8fa50b","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"b0837279-53f2-4bed-a4ee-fa0f545639be","type":"HoverTool"}]},"id":"f8db691e-5c69-45af-abd0-7c05f1711c3e","type":"Toolbar"},{"attributes":{"source":{"id":"bd81b333-df75-475c-80ed-b27c36183041","type":"ColumnDataSource"}},"id":"e42f05e5-4ad5-435c-be06-cb59e9ea5abe","type":"CDSView"},{"attributes":{},"id":"6c4b6c71-f98b-4185-b6c5-fa94b73403b2","type":"BasicTicker"},{"attributes":{"plot":{"id":"0db56da6-acd0-4db4-ba66-4b373110e3f1","subtype":"Figure","type":"Plot"},"ticker":{"id":"f0000fbf-943b-4c0b-9a48-13516ce374a4","type":"CategoricalTicker"}},"id":"683bae1c-b7b6-4f89-9cf2-b6c94a33a4b5","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"0db56da6-acd0-4db4-ba66-4b373110e3f1","subtype":"Figure","type":"Plot"},"ticker":{"id":"6c4b6c71-f98b-4185-b6c5-fa94b73403b2","type":"BasicTicker"}},"id":"2067c806-8417-4af3-8185-d8e31b17f549","type":"Grid"},{"attributes":{"formatter":{"id":"dfbeb1e2-b762-4011-b4d2-b39f07a39013","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"0db56da6-acd0-4db4-ba66-4b373110e3f1","subtype":"Figure","type":"Plot"},"ticker":{"id":"f0000fbf-943b-4c0b-9a48-13516ce374a4","type":"CategoricalTicker"}},"id":"ee5250ae-580c-4c4a-a36e-0a35cb5d68e4","type":"CategoricalAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"b0837279-53f2-4bed-a4ee-fa0f545639be","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4b0f8600-4dbd-43bf-b993-423d0b535196","type":"Line"}],"root_ids":["0db56da6-acd0-4db4-ba66-4b373110e3f1"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"11d07b8e-367d-422a-a11f-8a6200619c3b","elementid":"7f7ce990-31d2-4156-99e1-8566cb837f3c","modelid":"0db56da6-acd0-4db4-ba66-4b373110e3f1"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

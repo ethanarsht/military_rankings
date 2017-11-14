@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="a04a4757-6a59-4361-b5f8-f885167a7fc5"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"61b8a86d-aad4-46ec-a71e-4df510396610":{"roots":{"references":[{"attributes":{"data_source":{"id":"cb5f78fe-b852-47f5-b14b-9413b4acb536","type":"ColumnDataSource"},"glyph":{"id":"aad1fef4-c1b8-4a99-9a3c-7716544376d6","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"eb10453a-83cb-4d06-a02f-adc14f153a0e","type":"Line"},"selection_glyph":null,"view":{"id":"426f06e3-64ff-48dc-b011-5b51c4400689","type":"CDSView"}},"id":"c64557c7-d0bf-4bbf-8ea9-913ff0ca4832","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"fbc6020d-bab8-4700-9b04-e769b32d3ae9","type":"CategoricalColorMapper"},{"attributes":{"dimension":1,"plot":{"id":"23c63494-b741-4a7b-810b-3b91f38f30ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"a7938f73-8d59-4b0a-9775-82e0bfcb1889","type":"BasicTicker"}},"id":"a9e6bf99-6173-4235-bd36-29e1c927ddad","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"fbc6020d-bab8-4700-9b04-e769b32d3ae9","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"fbc6020d-bab8-4700-9b04-e769b32d3ae9","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"8c928f89-71de-48b7-b079-cd870734f02c","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Breda (1624)","Siege of 's-Hertogenbosch","Capture of Maastricht"],"cumulative":{"__ndarray__":"SVOSJ+FM4L+YDbtY0Ruxv/CB9gT/7Nw/","dtype":"float64","shape":[3]},"general":["Horace Vere, 1st Baron Vere of Tilbury","Horace Vere, 1st Baron Vere of Tilbury","Horace Vere, 1st Baron Vere of Tilbury"],"outcome":["D","V","V"],"value":{"__ndarray__":"SVOSJ+FM4L8s4/X4zVLcP6uikq35meA/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABgmUAAAAAAAHSZQAAAAAAAgJlA","dtype":"float64","shape":[3]}}},"id":"cb5f78fe-b852-47f5-b14b-9413b4acb536","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a5b1ea0f-abe7-49c8-b071-48365a4a5e93","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"aad1fef4-c1b8-4a99-9a3c-7716544376d6","type":"Line"},{"attributes":{"source":{"id":"cb5f78fe-b852-47f5-b14b-9413b4acb536","type":"ColumnDataSource"}},"id":"426f06e3-64ff-48dc-b011-5b51c4400689","type":"CDSView"},{"attributes":{},"id":"e32dab4a-d3a2-4daa-8e48-86a8c573d6a3","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"cb5f78fe-b852-47f5-b14b-9413b4acb536","type":"ColumnDataSource"}},"id":"216360ce-c7fd-4e98-b341-a0ee0268b491","type":"CDSView"},{"attributes":{},"id":"32bdc059-12f0-4150-88cf-455d91980e08","type":"LinearScale"},{"attributes":{"callback":null,"factors":["Siege of Breda (1624)","Siege of 's-Hertogenbosch","Capture of Maastricht"]},"id":"0dbc77d9-cea5-449d-887a-61620b0b0a27","type":"FactorRange"},{"attributes":{},"id":"a7938f73-8d59-4b0a-9775-82e0bfcb1889","type":"BasicTicker"},{"attributes":{"formatter":{"id":"e32dab4a-d3a2-4daa-8e48-86a8c573d6a3","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"23c63494-b741-4a7b-810b-3b91f38f30ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"ba7b8471-d57f-4680-9b14-a4eef2d45f44","type":"CategoricalTicker"}},"id":"faad8048-ef33-4249-b107-b6b15374593c","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"cb5f78fe-b852-47f5-b14b-9413b4acb536","type":"ColumnDataSource"},"glyph":{"id":"8c928f89-71de-48b7-b079-cd870734f02c","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a5b1ea0f-abe7-49c8-b071-48365a4a5e93","type":"VBar"},"selection_glyph":null,"view":{"id":"216360ce-c7fd-4e98-b341-a0ee0268b491","type":"CDSView"}},"id":"26f4aa50-e8d3-4441-a6b2-04f3bf2a469b","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"faad8048-ef33-4249-b107-b6b15374593c","type":"CategoricalAxis"}],"left":[{"id":"7142fcb5-1beb-474d-afe6-0de212e6673f","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"faad8048-ef33-4249-b107-b6b15374593c","type":"CategoricalAxis"},{"id":"e809916f-3fdd-4b32-b62b-0f12c459a957","type":"Grid"},{"id":"7142fcb5-1beb-474d-afe6-0de212e6673f","type":"LinearAxis"},{"id":"a9e6bf99-6173-4235-bd36-29e1c927ddad","type":"Grid"},{"id":"c64557c7-d0bf-4bbf-8ea9-913ff0ca4832","type":"GlyphRenderer"},{"id":"26f4aa50-e8d3-4441-a6b2-04f3bf2a469b","type":"GlyphRenderer"}],"title":{"id":"92c2723d-0dc8-462a-808b-8ec151421e48","type":"Title"},"toolbar":{"id":"b33e3841-9929-4e5c-94ab-75a011a07484","type":"Toolbar"},"x_range":{"id":"0dbc77d9-cea5-449d-887a-61620b0b0a27","type":"FactorRange"},"x_scale":{"id":"c54533e4-db5b-4735-89fc-f05a3bc617a3","type":"CategoricalScale"},"y_range":{"id":"0dcbdf75-d64d-4bba-8d1a-b9c1beddcee3","type":"DataRange1d"},"y_scale":{"id":"32bdc059-12f0-4150-88cf-455d91980e08","type":"LinearScale"}},"id":"23c63494-b741-4a7b-810b-3b91f38f30ed","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"eb10453a-83cb-4d06-a02f-adc14f153a0e","type":"Line"},{"attributes":{"plot":{"id":"23c63494-b741-4a7b-810b-3b91f38f30ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"ba7b8471-d57f-4680-9b14-a4eef2d45f44","type":"CategoricalTicker"}},"id":"e809916f-3fdd-4b32-b62b-0f12c459a957","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f3e92108-0307-4aab-bd8b-ded22979c933","type":"HoverTool"}]},"id":"b33e3841-9929-4e5c-94ab-75a011a07484","type":"Toolbar"},{"attributes":{"formatter":{"id":"742ecad8-7f39-477c-959a-e28a52052a0a","type":"BasicTickFormatter"},"plot":{"id":"23c63494-b741-4a7b-810b-3b91f38f30ed","subtype":"Figure","type":"Plot"},"ticker":{"id":"a7938f73-8d59-4b0a-9775-82e0bfcb1889","type":"BasicTicker"}},"id":"7142fcb5-1beb-474d-afe6-0de212e6673f","type":"LinearAxis"},{"attributes":{},"id":"c54533e4-db5b-4735-89fc-f05a3bc617a3","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"Horace Vere, 1st Baron Vere of Tilbury (2 - 0 - 1)"},"id":"92c2723d-0dc8-462a-808b-8ec151421e48","type":"Title"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f3e92108-0307-4aab-bd8b-ded22979c933","type":"HoverTool"},{"attributes":{"callback":null},"id":"0dcbdf75-d64d-4bba-8d1a-b9c1beddcee3","type":"DataRange1d"},{"attributes":{},"id":"742ecad8-7f39-477c-959a-e28a52052a0a","type":"BasicTickFormatter"},{"attributes":{},"id":"ba7b8471-d57f-4680-9b14-a4eef2d45f44","type":"CategoricalTicker"}],"root_ids":["23c63494-b741-4a7b-810b-3b91f38f30ed"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"61b8a86d-aad4-46ec-a71e-4df510396610","elementid":"a04a4757-6a59-4361-b5f8-f885167a7fc5","modelid":"23c63494-b741-4a7b-810b-3b91f38f30ed"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="375c650f-3e61-4d2d-99d9-e70d4368a123"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"671e8d2f-6311-4dea-925c-980f5ba09ac9":{"roots":{"references":[{"attributes":{},"id":"50c9c0d5-6159-4f00-9d17-a500e68e4a35","type":"CategoricalScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"07a0d822-3ae3-4a17-a7d7-d86d7c552fa4","type":"HoverTool"},{"attributes":{"source":{"id":"43dcfbef-4705-40e1-acf0-73e64841a1ad","type":"ColumnDataSource"}},"id":"e373c750-276a-4bf2-aaa4-e80b8ce266e7","type":"CDSView"},{"attributes":{"below":[{"id":"f60019b1-8336-432a-836e-38759ce1be51","type":"CategoricalAxis"}],"left":[{"id":"1b340e13-f685-4ade-91c3-e6695f605cb3","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"f60019b1-8336-432a-836e-38759ce1be51","type":"CategoricalAxis"},{"id":"51f66dba-2de6-4716-8635-6010bcd51392","type":"Grid"},{"id":"1b340e13-f685-4ade-91c3-e6695f605cb3","type":"LinearAxis"},{"id":"ba18e5ee-5ece-4455-a3a3-7a0fc55ca349","type":"Grid"},{"id":"5cce899f-5b7e-40a8-9a23-6178922480aa","type":"GlyphRenderer"},{"id":"96c074d2-8f8d-4bce-ba68-e54eaf52a839","type":"GlyphRenderer"}],"title":{"id":"0673dd5a-9879-4648-9265-7a3d6c23b9d1","type":"Title"},"toolbar":{"id":"2004deff-8b2e-4bbf-aa4f-593e89ead25a","type":"Toolbar"},"x_range":{"id":"11df26af-942d-4990-bb30-495f74921e03","type":"FactorRange"},"x_scale":{"id":"50c9c0d5-6159-4f00-9d17-a500e68e4a35","type":"CategoricalScale"},"y_range":{"id":"e766442b-4417-416d-ac24-71db4d6fff97","type":"DataRange1d"},"y_scale":{"id":"99caefbf-9130-44c2-9946-9a9df0ad13ee","type":"LinearScale"}},"id":"2a5b0b09-2a14-43be-8c9b-9554d2f4ebce","subtype":"Figure","type":"Plot"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"1e04a57d-1452-4eca-abb4-c852e4375aa5","type":"CategoricalColorMapper"},{"attributes":{"dimension":1,"plot":{"id":"2a5b0b09-2a14-43be-8c9b-9554d2f4ebce","subtype":"Figure","type":"Plot"},"ticker":{"id":"4ff369e1-ae0d-4a25-a978-0bb435ab7946","type":"BasicTicker"}},"id":"ba18e5ee-5ece-4455-a3a3-7a0fc55ca349","type":"Grid"},{"attributes":{},"id":"c65bf925-d420-4ee8-8f8c-328c5a1000e8","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"43dcfbef-4705-40e1-acf0-73e64841a1ad","type":"ColumnDataSource"}},"id":"c8a60aec-51ea-46f2-999a-1a35048fcd8e","type":"CDSView"},{"attributes":{"formatter":{"id":"c65bf925-d420-4ee8-8f8c-328c5a1000e8","type":"BasicTickFormatter"},"plot":{"id":"2a5b0b09-2a14-43be-8c9b-9554d2f4ebce","subtype":"Figure","type":"Plot"},"ticker":{"id":"4ff369e1-ae0d-4a25-a978-0bb435ab7946","type":"BasicTicker"}},"id":"1b340e13-f685-4ade-91c3-e6695f605cb3","type":"LinearAxis"},{"attributes":{"callback":null},"id":"e766442b-4417-416d-ac24-71db4d6fff97","type":"DataRange1d"},{"attributes":{},"id":"215f8d85-be97-4b21-b556-157156f17fda","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Battle of Marston Moor","Second Battle of Newbury"]},"id":"11df26af-942d-4990-bb30-495f74921e03","type":"FactorRange"},{"attributes":{},"id":"4ff369e1-ae0d-4a25-a978-0bb435ab7946","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d6072f9c-9a0d-4c32-9589-48290cfef641","type":"VBar"},{"attributes":{"data_source":{"id":"43dcfbef-4705-40e1-acf0-73e64841a1ad","type":"ColumnDataSource"},"glyph":{"id":"719d723c-e3e1-4eb4-bc76-2f5755e6b4fb","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5b987fca-2317-427a-853c-bb687d9a341c","type":"Line"},"selection_glyph":null,"view":{"id":"e373c750-276a-4bf2-aaa4-e80b8ce266e7","type":"CDSView"}},"id":"5cce899f-5b7e-40a8-9a23-6178922480aa","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Edward Montagu, 2nd Earl of Manchester (1 - 1 - 0)"},"id":"0673dd5a-9879-4648-9265-7a3d6c23b9d1","type":"Title"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5b987fca-2317-427a-853c-bb687d9a341c","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"07a0d822-3ae3-4a17-a7d7-d86d7c552fa4","type":"HoverTool"}]},"id":"2004deff-8b2e-4bbf-aa4f-593e89ead25a","type":"Toolbar"},{"attributes":{"plot":{"id":"2a5b0b09-2a14-43be-8c9b-9554d2f4ebce","subtype":"Figure","type":"Plot"},"ticker":{"id":"215f8d85-be97-4b21-b556-157156f17fda","type":"CategoricalTicker"}},"id":"51f66dba-2de6-4716-8635-6010bcd51392","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"1e04a57d-1452-4eca-abb4-c852e4375aa5","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"1e04a57d-1452-4eca-abb4-c852e4375aa5","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"5c12b8a3-48eb-47c8-9036-8539cfe2deed","type":"VBar"},{"attributes":{"data_source":{"id":"43dcfbef-4705-40e1-acf0-73e64841a1ad","type":"ColumnDataSource"},"glyph":{"id":"5c12b8a3-48eb-47c8-9036-8539cfe2deed","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d6072f9c-9a0d-4c32-9589-48290cfef641","type":"VBar"},"selection_glyph":null,"view":{"id":"c8a60aec-51ea-46f2-999a-1a35048fcd8e","type":"CDSView"}},"id":"96c074d2-8f8d-4bce-ba68-e54eaf52a839","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"719d723c-e3e1-4eb4-bc76-2f5755e6b4fb","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Marston Moor","Second Battle of Newbury"],"cumulative":{"__ndarray__":"pMbGGQ9j3j/aLMvRWBPbPw==","dtype":"float64","shape":[2]},"general":["Edward Montagu, 2nd Earl of Manchester","Edward Montagu, 2nd Earl of Manchester"],"outcome":["V","I"],"value":{"__ndarray__":"pMbGGQ9j3j9Qztw/sn2qvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAACwmUAAAAAAALCZQA==","dtype":"float64","shape":[2]}}},"id":"43dcfbef-4705-40e1-acf0-73e64841a1ad","type":"ColumnDataSource"},{"attributes":{},"id":"99caefbf-9130-44c2-9946-9a9df0ad13ee","type":"LinearScale"},{"attributes":{},"id":"43189a3b-3325-4e75-9a3a-cc0198bee31b","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"43189a3b-3325-4e75-9a3a-cc0198bee31b","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"2a5b0b09-2a14-43be-8c9b-9554d2f4ebce","subtype":"Figure","type":"Plot"},"ticker":{"id":"215f8d85-be97-4b21-b556-157156f17fda","type":"CategoricalTicker"}},"id":"f60019b1-8336-432a-836e-38759ce1be51","type":"CategoricalAxis"}],"root_ids":["2a5b0b09-2a14-43be-8c9b-9554d2f4ebce"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"671e8d2f-6311-4dea-925c-980f5ba09ac9","elementid":"375c650f-3e61-4d2d-99d9-e70d4368a123","modelid":"2a5b0b09-2a14-43be-8c9b-9554d2f4ebce"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="5c1d320d-291e-49d9-b5cc-a2079b2358a9"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"df2d1ce6-4d3d-4860-bb98-97b5ca90a2d4":{"roots":{"references":[{"attributes":{"callback":null},"id":"db6660fa-03e9-4d8b-b705-22259792b4cf","type":"DataRange1d"},{"attributes":{"below":[{"id":"a1f61ef9-4648-4d58-9f0c-81d8f420ae5e","type":"CategoricalAxis"}],"left":[{"id":"71c5e998-0753-41ff-8a37-ec5bcd88b30a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"a1f61ef9-4648-4d58-9f0c-81d8f420ae5e","type":"CategoricalAxis"},{"id":"cc67b038-56f9-4009-99d4-9d28a2d5e8da","type":"Grid"},{"id":"71c5e998-0753-41ff-8a37-ec5bcd88b30a","type":"LinearAxis"},{"id":"77c88ddf-c93e-45ea-bdda-8b04ad13f0fe","type":"Grid"},{"id":"24c8c332-70d8-452e-8bc9-59625b4996ca","type":"GlyphRenderer"},{"id":"dd58f964-ed2f-4fbf-b06f-5c2fccb1fbbb","type":"GlyphRenderer"}],"title":{"id":"67b94dbd-ac52-4293-bb80-a77c24792829","type":"Title"},"toolbar":{"id":"94354b29-ff18-408c-96fa-0ef8613a8b8e","type":"Toolbar"},"x_range":{"id":"88fd3b95-62e5-463f-b4e8-8343a83ea73f","type":"FactorRange"},"x_scale":{"id":"923aaf9c-f2e5-4e38-8a8f-1df09c7335b0","type":"CategoricalScale"},"y_range":{"id":"db6660fa-03e9-4d8b-b705-22259792b4cf","type":"DataRange1d"},"y_scale":{"id":"d8707fe2-945a-4a07-a491-1a5f068b9429","type":"LinearScale"}},"id":"38146ecc-ca09-4d85-ab87-0dcc5423b29e","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"ddd5f4fd-4520-4c45-b9d7-c9a7d2bb7409","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"3cfcde0e-5b1a-41ac-b6e0-1d0b5b518a63","type":"ColumnDataSource"}},"id":"5d17fed5-9657-47b6-b046-4beffeb1d62e","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"38146ecc-ca09-4d85-ab87-0dcc5423b29e","subtype":"Figure","type":"Plot"},"ticker":{"id":"29a9317b-cc89-4c12-a952-1f8e2b6e0690","type":"BasicTicker"}},"id":"77c88ddf-c93e-45ea-bdda-8b04ad13f0fe","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"38f1cc4e-ef20-423e-88d8-9ebbc6596c8d","type":"HoverTool"},{"attributes":{"callback":null,"factors":["Battle of Lake Champlain (1814)"]},"id":"88fd3b95-62e5-463f-b4e8-8343a83ea73f","type":"FactorRange"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"52e1fc52-ca7b-45e2-8a88-0c2e97fa1ac3","type":"Line"},{"attributes":{"plot":null,"text":"Thomas Macdonough (1 - 0 - 0)"},"id":"67b94dbd-ac52-4293-bb80-a77c24792829","type":"Title"},{"attributes":{},"id":"923aaf9c-f2e5-4e38-8a8f-1df09c7335b0","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"3cfcde0e-5b1a-41ac-b6e0-1d0b5b518a63","type":"ColumnDataSource"},"glyph":{"id":"19a03c66-dc01-4325-a7b2-af8f4d6ce7f0","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2f88970d-8b4f-41b2-b6b1-3196631248f4","type":"VBar"},"selection_glyph":null,"view":{"id":"5d17fed5-9657-47b6-b046-4beffeb1d62e","type":"CDSView"}},"id":"dd58f964-ed2f-4fbf-b06f-5c2fccb1fbbb","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f2c6a5ac-3842-4e2c-8bb3-42b31ea4ebf1","type":"Line"},{"attributes":{},"id":"d8707fe2-945a-4a07-a491-1a5f068b9429","type":"LinearScale"},{"attributes":{},"id":"38173129-c526-43c7-a2f0-ba40286c481c","type":"CategoricalTickFormatter"},{"attributes":{"plot":{"id":"38146ecc-ca09-4d85-ab87-0dcc5423b29e","subtype":"Figure","type":"Plot"},"ticker":{"id":"af452455-f129-4919-862a-3f75e2f5c27a","type":"CategoricalTicker"}},"id":"cc67b038-56f9-4009-99d4-9d28a2d5e8da","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Lake Champlain (1814)"],"cumulative":{"__ndarray__":"CxN8sJM94j8=","dtype":"float64","shape":[1]},"general":["Thomas Macdonough"],"outcome":["V"],"value":{"__ndarray__":"CxN8sJM94j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABYnEA=","dtype":"float64","shape":[1]}}},"id":"3cfcde0e-5b1a-41ac-b6e0-1d0b5b518a63","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"cc69d7d0-00dc-4f68-9871-18ced48e952c","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"38173129-c526-43c7-a2f0-ba40286c481c","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"38146ecc-ca09-4d85-ab87-0dcc5423b29e","subtype":"Figure","type":"Plot"},"ticker":{"id":"af452455-f129-4919-862a-3f75e2f5c27a","type":"CategoricalTicker"}},"id":"a1f61ef9-4648-4d58-9f0c-81d8f420ae5e","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"38f1cc4e-ef20-423e-88d8-9ebbc6596c8d","type":"HoverTool"}]},"id":"94354b29-ff18-408c-96fa-0ef8613a8b8e","type":"Toolbar"},{"attributes":{"formatter":{"id":"ddd5f4fd-4520-4c45-b9d7-c9a7d2bb7409","type":"BasicTickFormatter"},"plot":{"id":"38146ecc-ca09-4d85-ab87-0dcc5423b29e","subtype":"Figure","type":"Plot"},"ticker":{"id":"29a9317b-cc89-4c12-a952-1f8e2b6e0690","type":"BasicTicker"}},"id":"71c5e998-0753-41ff-8a37-ec5bcd88b30a","type":"LinearAxis"},{"attributes":{"source":{"id":"3cfcde0e-5b1a-41ac-b6e0-1d0b5b518a63","type":"ColumnDataSource"}},"id":"84b7beef-d4b7-482f-b873-3f7ed8484939","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"cc69d7d0-00dc-4f68-9871-18ced48e952c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"cc69d7d0-00dc-4f68-9871-18ced48e952c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"19a03c66-dc01-4325-a7b2-af8f4d6ce7f0","type":"VBar"},{"attributes":{},"id":"af452455-f129-4919-862a-3f75e2f5c27a","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2f88970d-8b4f-41b2-b6b1-3196631248f4","type":"VBar"},{"attributes":{"data_source":{"id":"3cfcde0e-5b1a-41ac-b6e0-1d0b5b518a63","type":"ColumnDataSource"},"glyph":{"id":"f2c6a5ac-3842-4e2c-8bb3-42b31ea4ebf1","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"52e1fc52-ca7b-45e2-8a88-0c2e97fa1ac3","type":"Line"},"selection_glyph":null,"view":{"id":"84b7beef-d4b7-482f-b873-3f7ed8484939","type":"CDSView"}},"id":"24c8c332-70d8-452e-8bc9-59625b4996ca","type":"GlyphRenderer"},{"attributes":{},"id":"29a9317b-cc89-4c12-a952-1f8e2b6e0690","type":"BasicTicker"}],"root_ids":["38146ecc-ca09-4d85-ab87-0dcc5423b29e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"df2d1ce6-4d3d-4860-bb98-97b5ca90a2d4","elementid":"5c1d320d-291e-49d9-b5cc-a2079b2358a9","modelid":"38146ecc-ca09-4d85-ab87-0dcc5423b29e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

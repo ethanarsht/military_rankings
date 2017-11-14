@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f50761fc-1dfa-4cc1-ada2-e03f564a83ca"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"be764da7-10b8-4c5a-8ee3-d757e2c5f841":{"roots":{"references":[{"attributes":{"formatter":{"id":"4afafb82-7bef-4c8c-9004-7ab6906f3254","type":"BasicTickFormatter"},"plot":{"id":"6c032398-9fe9-4456-ae6d-60fe081cc444","subtype":"Figure","type":"Plot"},"ticker":{"id":"709b0d20-fa39-4fb9-b4c0-63223a36d372","type":"BasicTicker"}},"id":"0e4cfe72-1f29-43be-828d-8ea5816970ec","type":"LinearAxis"},{"attributes":{},"id":"72666a4d-59db-4454-90a0-9250e367c08d","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"96d1d51b-5da9-4886-8e24-1ab4fda54c1a","type":"ColumnDataSource"},"glyph":{"id":"238b46ba-2e9e-4535-a72b-0e059f15eec3","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e4d5e47d-e43b-41b0-aa6a-d279ff8ad3f7","type":"Line"},"selection_glyph":null,"view":{"id":"7e5d40e0-1b9b-4365-80d1-a67c95189b38","type":"CDSView"}},"id":"068a7e5b-e102-481f-83ec-73b43fec2625","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"5298bfb4-b42d-45a5-b428-37c62a227822","type":"CategoricalAxis"}],"left":[{"id":"0e4cfe72-1f29-43be-828d-8ea5816970ec","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"5298bfb4-b42d-45a5-b428-37c62a227822","type":"CategoricalAxis"},{"id":"21327f0b-f7e5-4b4b-86b4-a8e7ca226558","type":"Grid"},{"id":"0e4cfe72-1f29-43be-828d-8ea5816970ec","type":"LinearAxis"},{"id":"ca841792-30c2-4231-b001-ab72fbb752f3","type":"Grid"},{"id":"068a7e5b-e102-481f-83ec-73b43fec2625","type":"GlyphRenderer"},{"id":"165df476-fb5e-4823-9d44-d04372a9912e","type":"GlyphRenderer"}],"title":{"id":"60e4bbae-cfa5-4f0c-bc50-2b288a907666","type":"Title"},"toolbar":{"id":"d8414d7c-0c29-475f-af05-475aa63c6052","type":"Toolbar"},"x_range":{"id":"700fd6a4-f258-4e1d-9c98-40eebafc593b","type":"FactorRange"},"x_scale":{"id":"bdf6a091-a059-40d3-a6b6-4298ff5fa22d","type":"CategoricalScale"},"y_range":{"id":"283d9960-74de-4111-b5f2-195a70fb9333","type":"DataRange1d"},"y_scale":{"id":"8987a291-4396-4bbf-ac0d-678330e5003b","type":"LinearScale"}},"id":"6c032398-9fe9-4456-ae6d-60fe081cc444","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"4afafb82-7bef-4c8c-9004-7ab6906f3254","type":"BasicTickFormatter"},{"attributes":{"plot":{"id":"6c032398-9fe9-4456-ae6d-60fe081cc444","subtype":"Figure","type":"Plot"},"ticker":{"id":"72666a4d-59db-4454-90a0-9250e367c08d","type":"CategoricalTicker"}},"id":"21327f0b-f7e5-4b4b-86b4-a8e7ca226558","type":"Grid"},{"attributes":{},"id":"709b0d20-fa39-4fb9-b4c0-63223a36d372","type":"BasicTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Yorktown (1781)","Siege of Toulon"],"cumulative":{"__ndarray__":"wxa2t8TF3b9/Q+wxylPuvw==","dtype":"float64","shape":[2]},"general":["Charles O'Hara","Charles O'Hara"],"outcome":["D","D"],"value":{"__ndarray__":"wxa2t8TF3b87cCKsz+Hevw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAADUm0AAAAAAAAScQA==","dtype":"float64","shape":[2]}}},"id":"96d1d51b-5da9-4886-8e24-1ab4fda54c1a","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d0f90350-4e64-429a-8d53-21aeef58f71a","type":"HoverTool"}]},"id":"d8414d7c-0c29-475f-af05-475aa63c6052","type":"Toolbar"},{"attributes":{},"id":"bdf6a091-a059-40d3-a6b6-4298ff5fa22d","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"cbe5423e-3fc8-4143-86c4-ebf37e9d36a8","type":"VBar"},{"attributes":{},"id":"a9a78dca-9253-4a16-84b9-f56fd63290c2","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"96d1d51b-5da9-4886-8e24-1ab4fda54c1a","type":"ColumnDataSource"}},"id":"3eeb7bbf-2b25-4ce8-9b03-4f9cf9e01f85","type":"CDSView"},{"attributes":{"formatter":{"id":"a9a78dca-9253-4a16-84b9-f56fd63290c2","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"6c032398-9fe9-4456-ae6d-60fe081cc444","subtype":"Figure","type":"Plot"},"ticker":{"id":"72666a4d-59db-4454-90a0-9250e367c08d","type":"CategoricalTicker"}},"id":"5298bfb4-b42d-45a5-b428-37c62a227822","type":"CategoricalAxis"},{"attributes":{},"id":"8987a291-4396-4bbf-ac0d-678330e5003b","type":"LinearScale"},{"attributes":{"source":{"id":"96d1d51b-5da9-4886-8e24-1ab4fda54c1a","type":"ColumnDataSource"}},"id":"7e5d40e0-1b9b-4365-80d1-a67c95189b38","type":"CDSView"},{"attributes":{"callback":null},"id":"283d9960-74de-4111-b5f2-195a70fb9333","type":"DataRange1d"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"238b46ba-2e9e-4535-a72b-0e059f15eec3","type":"Line"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e4d5e47d-e43b-41b0-aa6a-d279ff8ad3f7","type":"Line"},{"attributes":{"plot":null,"text":"Charles O'Hara (0 - 0 - 2)"},"id":"60e4bbae-cfa5-4f0c-bc50-2b288a907666","type":"Title"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"d0f90350-4e64-429a-8d53-21aeef58f71a","type":"HoverTool"},{"attributes":{"dimension":1,"plot":{"id":"6c032398-9fe9-4456-ae6d-60fe081cc444","subtype":"Figure","type":"Plot"},"ticker":{"id":"709b0d20-fa39-4fb9-b4c0-63223a36d372","type":"BasicTicker"}},"id":"ca841792-30c2-4231-b001-ab72fbb752f3","type":"Grid"},{"attributes":{"data_source":{"id":"96d1d51b-5da9-4886-8e24-1ab4fda54c1a","type":"ColumnDataSource"},"glyph":{"id":"b5195141-45dc-4e8f-aaea-d6ffc3a7b2d9","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"cbe5423e-3fc8-4143-86c4-ebf37e9d36a8","type":"VBar"},"selection_glyph":null,"view":{"id":"3eeb7bbf-2b25-4ce8-9b03-4f9cf9e01f85","type":"CDSView"}},"id":"165df476-fb5e-4823-9d44-d04372a9912e","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"63205abb-af46-4695-b48a-558fccf6a22f","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"factors":["Battle of Yorktown (1781)","Siege of Toulon"]},"id":"700fd6a4-f258-4e1d-9c98-40eebafc593b","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"63205abb-af46-4695-b48a-558fccf6a22f","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"63205abb-af46-4695-b48a-558fccf6a22f","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b5195141-45dc-4e8f-aaea-d6ffc3a7b2d9","type":"VBar"}],"root_ids":["6c032398-9fe9-4456-ae6d-60fe081cc444"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"be764da7-10b8-4c5a-8ee3-d757e2c5f841","elementid":"f50761fc-1dfa-4cc1-ada2-e03f564a83ca","modelid":"6c032398-9fe9-4456-ae6d-60fe081cc444"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="6af2664b-a468-41a3-bd7e-092ed001f8d1"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"54a052ec-1c3d-49e7-ad5a-6112bce63271":{"roots":{"references":[{"attributes":{"callback":null},"id":"aa50661c-360f-46ff-a5e8-c6544c2afaae","type":"DataRange1d"},{"attributes":{"data_source":{"id":"13104f9d-152f-492e-84ac-88d5bebeb515","type":"ColumnDataSource"},"glyph":{"id":"df1bb528-a4cf-4eb1-87d4-9b3b4d014f37","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8e45f314-ee6f-41b5-914c-b51caae20f86","type":"Line"},"selection_glyph":null,"view":{"id":"d39ee983-f6d4-4da0-bf15-da6661511b09","type":"CDSView"}},"id":"a3ac2c9f-aeac-4c3e-82a8-ce3d0a41c0a3","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"29bf6709-6bb7-4e1b-add1-b03564bb72d5","type":"HoverTool"}]},"id":"ae4c0116-9eb6-4a2f-afa8-fd3d4fb87a8f","type":"Toolbar"},{"attributes":{"dimension":1,"plot":{"id":"93330372-33e8-4b36-9ec3-d92355234567","subtype":"Figure","type":"Plot"},"ticker":{"id":"4098563b-f65b-41b4-b86b-718b6694ab55","type":"BasicTicker"}},"id":"c417205b-d666-43e3-89b1-70a71d88ef70","type":"Grid"},{"attributes":{},"id":"c8e3a9ae-d0b9-4f3c-a839-215e3e2741af","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"13104f9d-152f-492e-84ac-88d5bebeb515","type":"ColumnDataSource"},"glyph":{"id":"f7792916-1644-4665-8c16-bd1576c2e4d7","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"38238b99-cc76-411b-9673-34a584fd1608","type":"VBar"},"selection_glyph":null,"view":{"id":"67d93639-7a44-4de3-a904-6569a5223225","type":"CDSView"}},"id":"87d76848-5dc9-4e04-afb3-5f14068898cb","type":"GlyphRenderer"},{"attributes":{},"id":"4098563b-f65b-41b4-b86b-718b6694ab55","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"29bf6709-6bb7-4e1b-add1-b03564bb72d5","type":"HoverTool"},{"attributes":{"plot":{"id":"93330372-33e8-4b36-9ec3-d92355234567","subtype":"Figure","type":"Plot"},"ticker":{"id":"9638a43d-104e-4850-9015-5cf7414aa21b","type":"CategoricalTicker"}},"id":"ae6b9e94-5764-4da6-9f5e-c26acb77fbb3","type":"Grid"},{"attributes":{},"id":"9638a43d-104e-4850-9015-5cf7414aa21b","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Battle of the Bzura River"]},"id":"b33728f7-2c5e-4a6a-ac9c-451cd1304de0","type":"FactorRange"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"df1bb528-a4cf-4eb1-87d4-9b3b4d014f37","type":"Line"},{"attributes":{"formatter":{"id":"49216a37-8213-405d-833c-deb5f6ba0dd9","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"93330372-33e8-4b36-9ec3-d92355234567","subtype":"Figure","type":"Plot"},"ticker":{"id":"9638a43d-104e-4850-9015-5cf7414aa21b","type":"CategoricalTicker"}},"id":"5f60d6ef-e969-48d6-957c-d07db89265e4","type":"CategoricalAxis"},{"attributes":{"plot":null,"text":"Erich Hoepner (1 - 0 - 0)"},"id":"d7e312a1-ce1b-4231-9f3f-3e3c3bafd8e4","type":"Title"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of the Bzura River"],"cumulative":{"__ndarray__":"xgjilYvj3T8=","dtype":"float64","shape":[1]},"general":["Erich Hoepner"],"outcome":["V"],"value":{"__ndarray__":"xgjilYvj3T8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABMnkA=","dtype":"float64","shape":[1]}}},"id":"13104f9d-152f-492e-84ac-88d5bebeb515","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8e45f314-ee6f-41b5-914c-b51caae20f86","type":"Line"},{"attributes":{"source":{"id":"13104f9d-152f-492e-84ac-88d5bebeb515","type":"ColumnDataSource"}},"id":"d39ee983-f6d4-4da0-bf15-da6661511b09","type":"CDSView"},{"attributes":{"source":{"id":"13104f9d-152f-492e-84ac-88d5bebeb515","type":"ColumnDataSource"}},"id":"67d93639-7a44-4de3-a904-6569a5223225","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"38238b99-cc76-411b-9673-34a584fd1608","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"10d7d4c4-f81e-4303-a7e2-e1198eb963af","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"10d7d4c4-f81e-4303-a7e2-e1198eb963af","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f7792916-1644-4665-8c16-bd1576c2e4d7","type":"VBar"},{"attributes":{"formatter":{"id":"07abb0ae-5928-4e41-bb69-324f9e9fe6ec","type":"BasicTickFormatter"},"plot":{"id":"93330372-33e8-4b36-9ec3-d92355234567","subtype":"Figure","type":"Plot"},"ticker":{"id":"4098563b-f65b-41b4-b86b-718b6694ab55","type":"BasicTicker"}},"id":"1a7c716c-0f42-4ec1-a648-cd3984975ac7","type":"LinearAxis"},{"attributes":{},"id":"49216a37-8213-405d-833c-deb5f6ba0dd9","type":"CategoricalTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"10d7d4c4-f81e-4303-a7e2-e1198eb963af","type":"CategoricalColorMapper"},{"attributes":{},"id":"07abb0ae-5928-4e41-bb69-324f9e9fe6ec","type":"BasicTickFormatter"},{"attributes":{"below":[{"id":"5f60d6ef-e969-48d6-957c-d07db89265e4","type":"CategoricalAxis"}],"left":[{"id":"1a7c716c-0f42-4ec1-a648-cd3984975ac7","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"5f60d6ef-e969-48d6-957c-d07db89265e4","type":"CategoricalAxis"},{"id":"ae6b9e94-5764-4da6-9f5e-c26acb77fbb3","type":"Grid"},{"id":"1a7c716c-0f42-4ec1-a648-cd3984975ac7","type":"LinearAxis"},{"id":"c417205b-d666-43e3-89b1-70a71d88ef70","type":"Grid"},{"id":"a3ac2c9f-aeac-4c3e-82a8-ce3d0a41c0a3","type":"GlyphRenderer"},{"id":"87d76848-5dc9-4e04-afb3-5f14068898cb","type":"GlyphRenderer"}],"title":{"id":"d7e312a1-ce1b-4231-9f3f-3e3c3bafd8e4","type":"Title"},"toolbar":{"id":"ae4c0116-9eb6-4a2f-afa8-fd3d4fb87a8f","type":"Toolbar"},"x_range":{"id":"b33728f7-2c5e-4a6a-ac9c-451cd1304de0","type":"FactorRange"},"x_scale":{"id":"c8e3a9ae-d0b9-4f3c-a839-215e3e2741af","type":"CategoricalScale"},"y_range":{"id":"aa50661c-360f-46ff-a5e8-c6544c2afaae","type":"DataRange1d"},"y_scale":{"id":"4c549aff-7fde-4838-8973-458a54a93080","type":"LinearScale"}},"id":"93330372-33e8-4b36-9ec3-d92355234567","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"4c549aff-7fde-4838-8973-458a54a93080","type":"LinearScale"}],"root_ids":["93330372-33e8-4b36-9ec3-d92355234567"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"54a052ec-1c3d-49e7-ad5a-6112bce63271","elementid":"6af2664b-a468-41a3-bd7e-092ed001f8d1","modelid":"93330372-33e8-4b36-9ec3-d92355234567"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

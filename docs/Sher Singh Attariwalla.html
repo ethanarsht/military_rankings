@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="07c841a2-ddf9-4ee7-9845-60465cf79f42"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"57d345f9-4ea8-49eb-b3ae-b7e269ca61dd":{"roots":{"references":[{"attributes":{"plot":{"id":"b4ac0bc0-26f7-47aa-a9ac-881eb4dbf7c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"9c89f577-b4d5-4bdf-9a8d-a49b433be1ed","type":"CategoricalTicker"}},"id":"1a4fc308-f5f8-4f07-8b22-0395de24be19","type":"Grid"},{"attributes":{"callback":null},"id":"07b0c6fb-ec2b-4a2b-aa7a-69ae9519cb6a","type":"DataRange1d"},{"attributes":{},"id":"2fee0aaf-acec-42d0-be80-f9076e89091b","type":"BasicTicker"},{"attributes":{"data_source":{"id":"a081fde2-5503-4875-8696-a3876b9f4bd5","type":"ColumnDataSource"},"glyph":{"id":"4f20a64d-4078-4672-b496-d9cc3c351689","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d06df0e6-8c35-4a93-a28f-ca297d4fe13e","type":"Line"},"selection_glyph":null,"view":{"id":"b95c16c9-ca26-4ca1-bdb3-cfc34f38b3b4","type":"CDSView"}},"id":"c386dabf-3519-41b2-a1e2-0bb285ef953f","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"b4ac0bc0-26f7-47aa-a9ac-881eb4dbf7c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"2fee0aaf-acec-42d0-be80-f9076e89091b","type":"BasicTicker"}},"id":"b873d14e-7fef-46e3-8ae2-0668379355cd","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"ba5e3a27-9f20-43f3-a7d6-478d99151aeb","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"7bbd1c09-4166-4d84-ac56-fb9c345ec062","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"a081fde2-5503-4875-8696-a3876b9f4bd5","type":"ColumnDataSource"}},"id":"b95c16c9-ca26-4ca1-bdb3-cfc34f38b3b4","type":"CDSView"},{"attributes":{},"id":"9c89f577-b4d5-4bdf-9a8d-a49b433be1ed","type":"CategoricalTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4f20a64d-4078-4672-b496-d9cc3c351689","type":"Line"},{"attributes":{"formatter":{"id":"d18fde59-a80f-4167-9e49-43d81d603693","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"b4ac0bc0-26f7-47aa-a9ac-881eb4dbf7c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"9c89f577-b4d5-4bdf-9a8d-a49b433be1ed","type":"CategoricalTicker"}},"id":"e5722020-0095-49f8-901b-0c821614f841","type":"CategoricalAxis"},{"attributes":{},"id":"a2eb5e6c-c9c8-41d7-b050-86d4da6b60b8","type":"CategoricalScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d06df0e6-8c35-4a93-a28f-ca297d4fe13e","type":"Line"},{"attributes":{"below":[{"id":"e5722020-0095-49f8-901b-0c821614f841","type":"CategoricalAxis"}],"left":[{"id":"de26cdd5-c381-490d-a1e4-40328e4bb72b","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"e5722020-0095-49f8-901b-0c821614f841","type":"CategoricalAxis"},{"id":"1a4fc308-f5f8-4f07-8b22-0395de24be19","type":"Grid"},{"id":"de26cdd5-c381-490d-a1e4-40328e4bb72b","type":"LinearAxis"},{"id":"b873d14e-7fef-46e3-8ae2-0668379355cd","type":"Grid"},{"id":"c386dabf-3519-41b2-a1e2-0bb285ef953f","type":"GlyphRenderer"},{"id":"a5dd3561-6e03-4692-8817-933ff1e9ed15","type":"GlyphRenderer"}],"title":{"id":"8d5e6a3e-5095-4b7b-8194-d0fcb8d7c6af","type":"Title"},"toolbar":{"id":"4bc47b13-3317-4b9f-82e6-0a6400eeea7c","type":"Toolbar"},"x_range":{"id":"157f6c47-9d7c-44da-a457-933b60936d2a","type":"FactorRange"},"x_scale":{"id":"a2eb5e6c-c9c8-41d7-b050-86d4da6b60b8","type":"CategoricalScale"},"y_range":{"id":"07b0c6fb-ec2b-4a2b-aa7a-69ae9519cb6a","type":"DataRange1d"},"y_scale":{"id":"9787054a-0cee-4863-afbd-80270ab6cd64","type":"LinearScale"}},"id":"b4ac0bc0-26f7-47aa-a9ac-881eb4dbf7c5","subtype":"Figure","type":"Plot"},{"attributes":{"plot":null,"text":"Sher Singh Attariwalla (2 - 0 - 1)"},"id":"8d5e6a3e-5095-4b7b-8194-d0fcb8d7c6af","type":"Title"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"8764c511-fb70-40ce-b2d1-8d55c8aa9c26","type":"VBar"},{"attributes":{"source":{"id":"a081fde2-5503-4875-8696-a3876b9f4bd5","type":"ColumnDataSource"}},"id":"a34ff008-4ff3-49cd-8e8b-3955ffe6b7ef","type":"CDSView"},{"attributes":{},"id":"9787054a-0cee-4863-afbd-80270ab6cd64","type":"LinearScale"},{"attributes":{"formatter":{"id":"3dbea3da-7077-4446-bc5a-8b54464af79a","type":"BasicTickFormatter"},"plot":{"id":"b4ac0bc0-26f7-47aa-a9ac-881eb4dbf7c5","subtype":"Figure","type":"Plot"},"ticker":{"id":"2fee0aaf-acec-42d0-be80-f9076e89091b","type":"BasicTicker"}},"id":"de26cdd5-c381-490d-a1e4-40328e4bb72b","type":"LinearAxis"},{"attributes":{},"id":"3dbea3da-7077-4446-bc5a-8b54464af79a","type":"BasicTickFormatter"},{"attributes":{},"id":"d18fde59-a80f-4167-9e49-43d81d603693","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"a081fde2-5503-4875-8696-a3876b9f4bd5","type":"ColumnDataSource"},"glyph":{"id":"11c5eac4-b9ee-41f3-b735-f2c6dd7b07d6","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8764c511-fb70-40ce-b2d1-8d55c8aa9c26","type":"VBar"},"selection_glyph":null,"view":{"id":"a34ff008-4ff3-49cd-8e8b-3955ffe6b7ef","type":"CDSView"}},"id":"a5dd3561-6e03-4692-8817-933ff1e9ed15","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of Ramnagar","Battle of Chillianwala","Battle of Gujarat"]},"id":"157f6c47-9d7c-44da-a457-933b60936d2a","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"7bbd1c09-4166-4d84-ac56-fb9c345ec062","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"7bbd1c09-4166-4d84-ac56-fb9c345ec062","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"11c5eac4-b9ee-41f3-b735-f2c6dd7b07d6","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Ramnagar","Battle of Chillianwala","Battle of Gujarat"],"cumulative":{"__ndarray__":"8DbJ1IOb4D80E2nLPEDvP6qhsYaWRd4/","dtype":"float64","shape":[3]},"general":["Sher Singh Attariwalla","Sher Singh Attariwalla","Sher Singh Attariwalla"],"outcome":["V","V","D"],"value":{"__ndarray__":"8DbJ1IOb4D+IuD/tcUndP19CEIhxHeC/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAADgnEAAAAAAAOScQAAAAAAA5JxA","dtype":"float64","shape":[3]}}},"id":"a081fde2-5503-4875-8696-a3876b9f4bd5","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"ba5e3a27-9f20-43f3-a7d6-478d99151aeb","type":"HoverTool"}]},"id":"4bc47b13-3317-4b9f-82e6-0a6400eeea7c","type":"Toolbar"}],"root_ids":["b4ac0bc0-26f7-47aa-a9ac-881eb4dbf7c5"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"57d345f9-4ea8-49eb-b3ae-b7e269ca61dd","elementid":"07c841a2-ddf9-4ee7-9845-60465cf79f42","modelid":"b4ac0bc0-26f7-47aa-a9ac-881eb4dbf7c5"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

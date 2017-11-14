@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="3d4086a5-4c2c-4682-a7cf-ff57076bc7f0"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"633c4968-57aa-434a-9bee-9c4fdece16d0":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"6ddc3c40-82cf-4001-b953-c144a3ed70d5","type":"Line"},{"attributes":{},"id":"ce383d2f-2efb-4e68-acde-ffab9dc30380","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d8ad45a5-974a-4e8a-a5a6-6ba7410a37fb","type":"HoverTool"}]},"id":"47596496-e92a-46fe-8cdf-5d96ee429a28","type":"Toolbar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"30f71619-a984-4f49-95cd-4c3616ddd07e","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"30f71619-a984-4f49-95cd-4c3616ddd07e","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"30f71619-a984-4f49-95cd-4c3616ddd07e","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"70789421-04bb-412b-8b67-399ddba22779","type":"VBar"},{"attributes":{"below":[{"id":"b7f20582-9bc3-4804-a866-be2d2df93892","type":"CategoricalAxis"}],"left":[{"id":"8f5e9ffd-cb05-4729-8551-a4e05a2b0a93","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"b7f20582-9bc3-4804-a866-be2d2df93892","type":"CategoricalAxis"},{"id":"43793b45-1214-40b4-b54e-2e9b865f22af","type":"Grid"},{"id":"8f5e9ffd-cb05-4729-8551-a4e05a2b0a93","type":"LinearAxis"},{"id":"478c8a84-2a81-4aeb-b34e-8d2d964a601a","type":"Grid"},{"id":"91f40d8b-14b5-4a5a-8f20-a0fa83ba3332","type":"GlyphRenderer"},{"id":"1e43983e-9b29-46d5-a5d2-9744ce2db8bf","type":"GlyphRenderer"}],"title":{"id":"acaa0a30-1183-4b7f-bbd7-412d5c1de4f9","type":"Title"},"toolbar":{"id":"47596496-e92a-46fe-8cdf-5d96ee429a28","type":"Toolbar"},"x_range":{"id":"a58ec68c-68b2-44e7-ba12-576c80d3cb93","type":"FactorRange"},"x_scale":{"id":"494d5d2c-c795-4bc1-aeb9-1731e56613a6","type":"CategoricalScale"},"y_range":{"id":"663a5b0a-9b17-4a01-a21a-5c250db2d3b2","type":"DataRange1d"},"y_scale":{"id":"4aca90c3-6ed5-4c04-8fc1-3812da57f8d7","type":"LinearScale"}},"id":"26559ba8-a1fd-4684-adf3-9d48d297cacf","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"510c9557-9875-4a16-9a5c-f0fd38a1f039","type":"ColumnDataSource"},"glyph":{"id":"70789421-04bb-412b-8b67-399ddba22779","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c0f4e823-a1e5-41e6-92f9-25eb747a3ed8","type":"VBar"},"selection_glyph":null,"view":{"id":"f97284fe-4d95-487f-8fd3-7507a59d0885","type":"CDSView"}},"id":"1e43983e-9b29-46d5-a5d2-9744ce2db8bf","type":"GlyphRenderer"},{"attributes":{},"id":"4aca90c3-6ed5-4c04-8fc1-3812da57f8d7","type":"LinearScale"},{"attributes":{"plot":{"id":"26559ba8-a1fd-4684-adf3-9d48d297cacf","subtype":"Figure","type":"Plot"},"ticker":{"id":"ce383d2f-2efb-4e68-acde-ffab9dc30380","type":"CategoricalTicker"}},"id":"43793b45-1214-40b4-b54e-2e9b865f22af","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Cecora (1620)","Battle of Dirschau","Battle of Trzciana"],"cumulative":{"__ndarray__":"YvMeZkUj3L/u+FBPfxLZv5DXFTAqX7k/","dtype":"float64","shape":[3]},"general":["Stanis\u0142aw Koniecpolski","Stanis\u0142aw Koniecpolski","Stanis\u0142aw Koniecpolski"],"outcome":["D","I","V"],"value":{"__ndarray__":"YvMeZkUj3L+g02+2MIaoP9JuVttJat8/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABQmUAAAAAAAGyZQAAAAAAAdJlA","dtype":"float64","shape":[3]}}},"id":"510c9557-9875-4a16-9a5c-f0fd38a1f039","type":"ColumnDataSource"},{"attributes":{"dimension":1,"plot":{"id":"26559ba8-a1fd-4684-adf3-9d48d297cacf","subtype":"Figure","type":"Plot"},"ticker":{"id":"c9234e95-784b-4223-99a2-60ad3d96cf10","type":"BasicTicker"}},"id":"478c8a84-2a81-4aeb-b34e-8d2d964a601a","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c0f4e823-a1e5-41e6-92f9-25eb747a3ed8","type":"VBar"},{"attributes":{},"id":"494d5d2c-c795-4bc1-aeb9-1731e56613a6","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"ba741125-d7bd-4248-b8cb-fbb4cf2713f1","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"26559ba8-a1fd-4684-adf3-9d48d297cacf","subtype":"Figure","type":"Plot"},"ticker":{"id":"ce383d2f-2efb-4e68-acde-ffab9dc30380","type":"CategoricalTicker"}},"id":"b7f20582-9bc3-4804-a866-be2d2df93892","type":"CategoricalAxis"},{"attributes":{"formatter":{"id":"12c035c8-7955-4a6b-a50c-834f66c2fb68","type":"BasicTickFormatter"},"plot":{"id":"26559ba8-a1fd-4684-adf3-9d48d297cacf","subtype":"Figure","type":"Plot"},"ticker":{"id":"c9234e95-784b-4223-99a2-60ad3d96cf10","type":"BasicTicker"}},"id":"8f5e9ffd-cb05-4729-8551-a4e05a2b0a93","type":"LinearAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7b03de0e-6ad6-4428-bf69-e03c8faff1e2","type":"Line"},{"attributes":{"callback":null,"factors":["Battle of Cecora (1620)","Battle of Dirschau","Battle of Trzciana"]},"id":"a58ec68c-68b2-44e7-ba12-576c80d3cb93","type":"FactorRange"},{"attributes":{"data_source":{"id":"510c9557-9875-4a16-9a5c-f0fd38a1f039","type":"ColumnDataSource"},"glyph":{"id":"6ddc3c40-82cf-4001-b953-c144a3ed70d5","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7b03de0e-6ad6-4428-bf69-e03c8faff1e2","type":"Line"},"selection_glyph":null,"view":{"id":"fb54842a-79bb-4f31-9bab-18619654d0c9","type":"CDSView"}},"id":"91f40d8b-14b5-4a5a-8f20-a0fa83ba3332","type":"GlyphRenderer"},{"attributes":{},"id":"12c035c8-7955-4a6b-a50c-834f66c2fb68","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"d8ad45a5-974a-4e8a-a5a6-6ba7410a37fb","type":"HoverTool"},{"attributes":{"callback":null},"id":"663a5b0a-9b17-4a01-a21a-5c250db2d3b2","type":"DataRange1d"},{"attributes":{"source":{"id":"510c9557-9875-4a16-9a5c-f0fd38a1f039","type":"ColumnDataSource"}},"id":"fb54842a-79bb-4f31-9bab-18619654d0c9","type":"CDSView"},{"attributes":{"source":{"id":"510c9557-9875-4a16-9a5c-f0fd38a1f039","type":"ColumnDataSource"}},"id":"f97284fe-4d95-487f-8fd3-7507a59d0885","type":"CDSView"},{"attributes":{},"id":"c9234e95-784b-4223-99a2-60ad3d96cf10","type":"BasicTicker"},{"attributes":{"plot":null,"text":"Stanis\u0142aw Koniecpolski (1 - 1 - 1)"},"id":"acaa0a30-1183-4b7f-bbd7-412d5c1de4f9","type":"Title"},{"attributes":{},"id":"ba741125-d7bd-4248-b8cb-fbb4cf2713f1","type":"CategoricalTickFormatter"}],"root_ids":["26559ba8-a1fd-4684-adf3-9d48d297cacf"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"633c4968-57aa-434a-9bee-9c4fdece16d0","elementid":"3d4086a5-4c2c-4682-a7cf-ff57076bc7f0","modelid":"26559ba8-a1fd-4684-adf3-9d48d297cacf"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

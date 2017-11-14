@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="82780c3e-c5d6-4a55-9814-4e2e7421c9eb"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"ae54ddc6-366e-4744-94d3-5b2d73aa079a":{"roots":{"references":[{"attributes":{"below":[{"id":"76e16441-f0b2-43fb-b707-266787c52b1c","type":"CategoricalAxis"}],"left":[{"id":"f85f045e-cffd-40c5-b1e8-18905838ca38","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"76e16441-f0b2-43fb-b707-266787c52b1c","type":"CategoricalAxis"},{"id":"21555615-22d1-4090-8409-ae287109d6f8","type":"Grid"},{"id":"f85f045e-cffd-40c5-b1e8-18905838ca38","type":"LinearAxis"},{"id":"16de278a-8e92-4853-af77-dc5ae5683576","type":"Grid"},{"id":"481a35d3-a778-4fcc-a1a0-2847cf5dd609","type":"GlyphRenderer"},{"id":"c52cbcf1-b6ed-4296-a721-e7d6534f3f90","type":"GlyphRenderer"}],"title":{"id":"9ad6e007-af3a-42b2-bfd7-9aa36e75d4b4","type":"Title"},"toolbar":{"id":"ca87d916-3ac3-4491-892d-339363c0c71a","type":"Toolbar"},"x_range":{"id":"79cb92dc-f652-41ec-9db6-4ab2cc2e1fd5","type":"FactorRange"},"x_scale":{"id":"c4be285d-197c-4f79-a51b-b5df8132e8fc","type":"CategoricalScale"},"y_range":{"id":"25bd2f32-9eef-45b2-b1a3-1382939c57a7","type":"DataRange1d"},"y_scale":{"id":"99ef3830-44b5-46d6-a0ca-5ccb0b7857f3","type":"LinearScale"}},"id":"bd7ed026-0950-4e46-aa79-608742da4921","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"6fdef4e0-2250-4ee2-bf93-073e359c4604","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4a8e0b03-ab53-4a77-88cf-8877c76c209f","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4a8e0b03-ab53-4a77-88cf-8877c76c209f","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b593de29-e356-4aec-ab38-71b16089bfa1","type":"VBar"},{"attributes":{},"id":"705f2b35-d7e6-4adc-b4b4-77ad8466ed61","type":"BasicTicker"},{"attributes":{"formatter":{"id":"78719836-d4ec-48a8-b8dc-23fcd76da18a","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"bd7ed026-0950-4e46-aa79-608742da4921","subtype":"Figure","type":"Plot"},"ticker":{"id":"6fdef4e0-2250-4ee2-bf93-073e359c4604","type":"CategoricalTicker"}},"id":"76e16441-f0b2-43fb-b707-266787c52b1c","type":"CategoricalAxis"},{"attributes":{"source":{"id":"b7423808-bb91-46a5-a38f-e77bbb6b0a48","type":"ColumnDataSource"}},"id":"a5e7810d-cfd6-40b0-a483-51beb7d966ec","type":"CDSView"},{"attributes":{},"id":"c4be285d-197c-4f79-a51b-b5df8132e8fc","type":"CategoricalScale"},{"attributes":{"plot":{"id":"bd7ed026-0950-4e46-aa79-608742da4921","subtype":"Figure","type":"Plot"},"ticker":{"id":"6fdef4e0-2250-4ee2-bf93-073e359c4604","type":"CategoricalTicker"}},"id":"21555615-22d1-4090-8409-ae287109d6f8","type":"Grid"},{"attributes":{},"id":"99ef3830-44b5-46d6-a0ca-5ccb0b7857f3","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7d48866d-a36e-4669-bdb4-72b735cf78f4","type":"Line"},{"attributes":{"callback":null},"id":"25bd2f32-9eef-45b2-b1a3-1382939c57a7","type":"DataRange1d"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"345d6bcd-570b-400d-8b54-db344c4b359d","type":"HoverTool"},{"attributes":{"data_source":{"id":"b7423808-bb91-46a5-a38f-e77bbb6b0a48","type":"ColumnDataSource"},"glyph":{"id":"7d48866d-a36e-4669-bdb4-72b735cf78f4","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"002e6b0c-904e-4f35-a6dd-87ad62c86102","type":"Line"},"selection_glyph":null,"view":{"id":"a5e7810d-cfd6-40b0-a483-51beb7d966ec","type":"CDSView"}},"id":"481a35d3-a778-4fcc-a1a0-2847cf5dd609","type":"GlyphRenderer"},{"attributes":{"source":{"id":"b7423808-bb91-46a5-a38f-e77bbb6b0a48","type":"ColumnDataSource"}},"id":"01356af0-4991-4e45-8d70-b81302e3003d","type":"CDSView"},{"attributes":{"plot":null,"text":"Francis Grenfell, 1st Baron Grenfell (1 - 0 - 0)"},"id":"9ad6e007-af3a-42b2-bfd7-9aa36e75d4b4","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4a8e0b03-ab53-4a77-88cf-8877c76c209f","type":"CategoricalColorMapper"},{"attributes":{},"id":"78719836-d4ec-48a8-b8dc-23fcd76da18a","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"db5c765a-cf1a-46b9-9869-325c991e6481","type":"BasicTickFormatter"},"plot":{"id":"bd7ed026-0950-4e46-aa79-608742da4921","subtype":"Figure","type":"Plot"},"ticker":{"id":"705f2b35-d7e6-4adc-b4b4-77ad8466ed61","type":"BasicTicker"}},"id":"f85f045e-cffd-40c5-b1e8-18905838ca38","type":"LinearAxis"},{"attributes":{"data_source":{"id":"b7423808-bb91-46a5-a38f-e77bbb6b0a48","type":"ColumnDataSource"},"glyph":{"id":"b593de29-e356-4aec-ab38-71b16089bfa1","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"023c000c-bf99-4aff-98a2-ab7a326a25a9","type":"VBar"},"selection_glyph":null,"view":{"id":"01356af0-4991-4e45-8d70-b81302e3003d","type":"CDSView"}},"id":"c52cbcf1-b6ed-4296-a721-e7d6534f3f90","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"002e6b0c-904e-4f35-a6dd-87ad62c86102","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"bd7ed026-0950-4e46-aa79-608742da4921","subtype":"Figure","type":"Plot"},"ticker":{"id":"705f2b35-d7e6-4adc-b4b4-77ad8466ed61","type":"BasicTicker"}},"id":"16de278a-8e92-4853-af77-dc5ae5683576","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"023c000c-bf99-4aff-98a2-ab7a326a25a9","type":"VBar"},{"attributes":{},"id":"db5c765a-cf1a-46b9-9869-325c991e6481","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"345d6bcd-570b-400d-8b54-db344c4b359d","type":"HoverTool"}]},"id":"ca87d916-3ac3-4491-892d-339363c0c71a","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Battle of Ginnis"]},"id":"79cb92dc-f652-41ec-9db6-4ab2cc2e1fd5","type":"FactorRange"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Ginnis"],"cumulative":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"general":["Francis Grenfell, 1st Baron Grenfell"],"outcome":["V"],"value":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAB0nUA=","dtype":"float64","shape":[1]}}},"id":"b7423808-bb91-46a5-a38f-e77bbb6b0a48","type":"ColumnDataSource"}],"root_ids":["bd7ed026-0950-4e46-aa79-608742da4921"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"ae54ddc6-366e-4744-94d3-5b2d73aa079a","elementid":"82780c3e-c5d6-4a55-9814-4e2e7421c9eb","modelid":"bd7ed026-0950-4e46-aa79-608742da4921"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="7eb9165c-801c-40f8-b555-09e983e4194a"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"879bc7a3-4280-4342-ad01-e51b378a8af9":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0685ec34-d97d-4fca-8e79-d3fa605b6f4c","type":"Line"},{"attributes":{"plot":{"id":"c86c8e01-67d3-46bb-a611-63d8dc3cb7e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"06d9736c-b9d2-45ac-8131-205cf90fbc2d","type":"CategoricalTicker"}},"id":"e2f48d74-571f-457e-8318-eb2ea49ba68a","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Chacabuco","Second Battle of Cancha Rayada"]},"id":"9732343a-37a0-481f-ba9b-8225ef3d842d","type":"FactorRange"},{"attributes":{},"id":"029462f4-1287-4f26-ac08-20c6d5c36917","type":"CategoricalScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"49ae8a26-8fc9-4f13-ac80-14f3aff3f55a","type":"HoverTool"}]},"id":"6d49d4a6-c0b0-4c10-9b2b-814f07ea5f31","type":"Toolbar"},{"attributes":{"callback":null},"id":"c321da57-92ab-44f7-8c97-b6f16c7243df","type":"DataRange1d"},{"attributes":{"source":{"id":"adc5472c-c4ba-41ae-a1d5-cb38fb275c1f","type":"ColumnDataSource"}},"id":"73e81a23-0f96-408a-8f02-1f6e9206e44c","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"49ae8a26-8fc9-4f13-ac80-14f3aff3f55a","type":"HoverTool"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Chacabuco","Second Battle of Cancha Rayada"],"cumulative":{"__ndarray__":"ZFertG2o3j+Ad0VNHD+kvw==","dtype":"float64","shape":[2]},"general":["Bernardo O'Higgins","Bernardo O'Higgins"],"outcome":["V","D"],"value":{"__ndarray__":"ZFertG2o3j8qAyqfKJjgvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABknEAAAAAAAGicQA==","dtype":"float64","shape":[2]}}},"id":"adc5472c-c4ba-41ae-a1d5-cb38fb275c1f","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"1adacd0a-db31-47ad-b37b-7af4de9ce44a","type":"VBar"},{"attributes":{},"id":"7e2d1f87-09a6-404f-ab13-f8fe03b3be69","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"8f02ab65-3264-45bf-b3a1-031663de90bd","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"8f02ab65-3264-45bf-b3a1-031663de90bd","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d72bb2c0-8527-477b-9e65-4f78451d585f","type":"VBar"},{"attributes":{},"id":"849c30fd-5591-4865-934f-19690a83d1dc","type":"BasicTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e5bcb07a-3dbe-4743-a382-c1617ff524ac","type":"Line"},{"attributes":{},"id":"f6970c07-9d4f-420a-a1e0-bc5d6634cecb","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"c86c8e01-67d3-46bb-a611-63d8dc3cb7e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"849c30fd-5591-4865-934f-19690a83d1dc","type":"BasicTicker"}},"id":"18dfbbe1-ebd4-44fc-8355-d7c73b6f14a1","type":"Grid"},{"attributes":{"plot":null,"text":"Bernardo O'Higgins (1 - 0 - 1)"},"id":"299d8135-b11b-4ad6-ba7a-ab4b72827ca7","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"8f02ab65-3264-45bf-b3a1-031663de90bd","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"adc5472c-c4ba-41ae-a1d5-cb38fb275c1f","type":"ColumnDataSource"},"glyph":{"id":"0685ec34-d97d-4fca-8e79-d3fa605b6f4c","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e5bcb07a-3dbe-4743-a382-c1617ff524ac","type":"Line"},"selection_glyph":null,"view":{"id":"73e81a23-0f96-408a-8f02-1f6e9206e44c","type":"CDSView"}},"id":"aef8984f-3b61-4413-a359-49253823a218","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"adc5472c-c4ba-41ae-a1d5-cb38fb275c1f","type":"ColumnDataSource"},"glyph":{"id":"d72bb2c0-8527-477b-9e65-4f78451d585f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1adacd0a-db31-47ad-b37b-7af4de9ce44a","type":"VBar"},"selection_glyph":null,"view":{"id":"36381d91-4b97-4e07-8763-8f15204201ff","type":"CDSView"}},"id":"a05eaca4-52e3-4619-9b71-1df0559c1d23","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"f6970c07-9d4f-420a-a1e0-bc5d6634cecb","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"c86c8e01-67d3-46bb-a611-63d8dc3cb7e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"06d9736c-b9d2-45ac-8131-205cf90fbc2d","type":"CategoricalTicker"}},"id":"49926d3e-6e75-4c51-8cae-00b660088a5a","type":"CategoricalAxis"},{"attributes":{"source":{"id":"adc5472c-c4ba-41ae-a1d5-cb38fb275c1f","type":"ColumnDataSource"}},"id":"36381d91-4b97-4e07-8763-8f15204201ff","type":"CDSView"},{"attributes":{},"id":"f78a08ca-8056-495c-93b6-1a6ca63d60cc","type":"LinearScale"},{"attributes":{},"id":"06d9736c-b9d2-45ac-8131-205cf90fbc2d","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"7e2d1f87-09a6-404f-ab13-f8fe03b3be69","type":"BasicTickFormatter"},"plot":{"id":"c86c8e01-67d3-46bb-a611-63d8dc3cb7e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"849c30fd-5591-4865-934f-19690a83d1dc","type":"BasicTicker"}},"id":"ada6f42c-1cd0-45fa-b322-905024528307","type":"LinearAxis"},{"attributes":{"below":[{"id":"49926d3e-6e75-4c51-8cae-00b660088a5a","type":"CategoricalAxis"}],"left":[{"id":"ada6f42c-1cd0-45fa-b322-905024528307","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"49926d3e-6e75-4c51-8cae-00b660088a5a","type":"CategoricalAxis"},{"id":"e2f48d74-571f-457e-8318-eb2ea49ba68a","type":"Grid"},{"id":"ada6f42c-1cd0-45fa-b322-905024528307","type":"LinearAxis"},{"id":"18dfbbe1-ebd4-44fc-8355-d7c73b6f14a1","type":"Grid"},{"id":"aef8984f-3b61-4413-a359-49253823a218","type":"GlyphRenderer"},{"id":"a05eaca4-52e3-4619-9b71-1df0559c1d23","type":"GlyphRenderer"}],"title":{"id":"299d8135-b11b-4ad6-ba7a-ab4b72827ca7","type":"Title"},"toolbar":{"id":"6d49d4a6-c0b0-4c10-9b2b-814f07ea5f31","type":"Toolbar"},"x_range":{"id":"9732343a-37a0-481f-ba9b-8225ef3d842d","type":"FactorRange"},"x_scale":{"id":"029462f4-1287-4f26-ac08-20c6d5c36917","type":"CategoricalScale"},"y_range":{"id":"c321da57-92ab-44f7-8c97-b6f16c7243df","type":"DataRange1d"},"y_scale":{"id":"f78a08ca-8056-495c-93b6-1a6ca63d60cc","type":"LinearScale"}},"id":"c86c8e01-67d3-46bb-a611-63d8dc3cb7e2","subtype":"Figure","type":"Plot"}],"root_ids":["c86c8e01-67d3-46bb-a611-63d8dc3cb7e2"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"879bc7a3-4280-4342-ad01-e51b378a8af9","elementid":"7eb9165c-801c-40f8-b555-09e983e4194a","modelid":"c86c8e01-67d3-46bb-a611-63d8dc3cb7e2"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

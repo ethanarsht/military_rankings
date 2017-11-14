@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="ca8b898b-d2e7-4586-8719-ee9d84f5ceba"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"562f9ae0-13f4-4ce6-9e38-c2b8c8a8505e":{"roots":{"references":[{"attributes":{"data_source":{"id":"ba8b3975-112f-4f20-9034-35a6ca265d12","type":"ColumnDataSource"},"glyph":{"id":"bf5cc14f-331b-4327-9334-270721692266","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1cada3b8-9ffa-4dd7-8a82-119b6afed363","type":"VBar"},"selection_glyph":null,"view":{"id":"bd81ab9e-81f1-4ed2-ae6f-bb360e2a7fe2","type":"CDSView"}},"id":"7d3d26ab-09a2-46ed-a3d3-52b350beacca","type":"GlyphRenderer"},{"attributes":{},"id":"93f356d1-ef72-45e9-9619-c3e7a71ce9d9","type":"BasicTicker"},{"attributes":{},"id":"bb76f5c7-815e-43e1-a6d3-02fa92370cb3","type":"CategoricalTickFormatter"},{"attributes":{},"id":"4580bb1b-1942-42fb-aaca-8d907bc12630","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"310e5f52-77e0-463e-b0d3-f4b3d0a71c0d","type":"CategoricalColorMapper"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"594dc7ec-10d3-41b2-b1c6-e8b47a2e7e81","type":"Line"},{"attributes":{"callback":null},"id":"67c3080f-20f9-4c94-a0b8-17ee51e569c7","type":"DataRange1d"},{"attributes":{"source":{"id":"ba8b3975-112f-4f20-9034-35a6ca265d12","type":"ColumnDataSource"}},"id":"3f5620a5-1823-425b-8e16-ff7f1900fd61","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Alexandria (47 BC)"],"cumulative":{"__ndarray__":"z4xeMk0B4r8=","dtype":"float64","shape":[1]},"general":["Ganymedes (eunuch)"],"outcome":["D"],"value":{"__ndarray__":"z4xeMk0B4r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAACIs8A=","dtype":"float64","shape":[1]}}},"id":"ba8b3975-112f-4f20-9034-35a6ca265d12","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"2a38d1d8-8147-4209-b917-ff8d10a36e74","type":"BasicTickFormatter"},"plot":{"id":"2adb2993-ed36-471b-95fe-6ce3405f034d","subtype":"Figure","type":"Plot"},"ticker":{"id":"93f356d1-ef72-45e9-9619-c3e7a71ce9d9","type":"BasicTicker"}},"id":"b949c238-b5ef-45ff-9229-9397715e0254","type":"LinearAxis"},{"attributes":{"data_source":{"id":"ba8b3975-112f-4f20-9034-35a6ca265d12","type":"ColumnDataSource"},"glyph":{"id":"594dc7ec-10d3-41b2-b1c6-e8b47a2e7e81","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3bf78d43-35f8-4263-9d00-93262a119b04","type":"Line"},"selection_glyph":null,"view":{"id":"3f5620a5-1823-425b-8e16-ff7f1900fd61","type":"CDSView"}},"id":"807f7053-a016-44d3-9d74-08bcc4fa9582","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"c42fabab-886d-45a8-996f-b1498304cfd6","type":"HoverTool"}]},"id":"d9e14e8d-0afe-4848-b5a2-a93f855d376b","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"1cada3b8-9ffa-4dd7-8a82-119b6afed363","type":"VBar"},{"attributes":{},"id":"b55c163f-45e1-416e-a04f-5a0687bb125f","type":"LinearScale"},{"attributes":{"callback":null,"factors":["Siege of Alexandria (47 BC)"]},"id":"8e9fa822-f824-469b-8b54-e4db9cc880bf","type":"FactorRange"},{"attributes":{},"id":"2a38d1d8-8147-4209-b917-ff8d10a36e74","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"]]},"id":"c42fabab-886d-45a8-996f-b1498304cfd6","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"310e5f52-77e0-463e-b0d3-f4b3d0a71c0d","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"310e5f52-77e0-463e-b0d3-f4b3d0a71c0d","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bf5cc14f-331b-4327-9334-270721692266","type":"VBar"},{"attributes":{"plot":null,"text":"Ganymedes (eunuch) (0 - 0 - 1)"},"id":"55bf20fa-8db3-4a09-a8d2-1d6bf886ad43","type":"Title"},{"attributes":{"source":{"id":"ba8b3975-112f-4f20-9034-35a6ca265d12","type":"ColumnDataSource"}},"id":"bd81ab9e-81f1-4ed2-ae6f-bb360e2a7fe2","type":"CDSView"},{"attributes":{"below":[{"id":"4c45e113-9c36-4294-a41e-2d47dfbc89ab","type":"CategoricalAxis"}],"left":[{"id":"b949c238-b5ef-45ff-9229-9397715e0254","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"4c45e113-9c36-4294-a41e-2d47dfbc89ab","type":"CategoricalAxis"},{"id":"f4e3617e-8909-4cf9-8c98-fd3a8f9ae2d6","type":"Grid"},{"id":"b949c238-b5ef-45ff-9229-9397715e0254","type":"LinearAxis"},{"id":"d8a422df-d5fe-4d82-ae2c-404e40148bb8","type":"Grid"},{"id":"807f7053-a016-44d3-9d74-08bcc4fa9582","type":"GlyphRenderer"},{"id":"7d3d26ab-09a2-46ed-a3d3-52b350beacca","type":"GlyphRenderer"}],"title":{"id":"55bf20fa-8db3-4a09-a8d2-1d6bf886ad43","type":"Title"},"toolbar":{"id":"d9e14e8d-0afe-4848-b5a2-a93f855d376b","type":"Toolbar"},"x_range":{"id":"8e9fa822-f824-469b-8b54-e4db9cc880bf","type":"FactorRange"},"x_scale":{"id":"ff106c98-bcdd-44b7-9688-aa488dd6b135","type":"CategoricalScale"},"y_range":{"id":"67c3080f-20f9-4c94-a0b8-17ee51e569c7","type":"DataRange1d"},"y_scale":{"id":"b55c163f-45e1-416e-a04f-5a0687bb125f","type":"LinearScale"}},"id":"2adb2993-ed36-471b-95fe-6ce3405f034d","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3bf78d43-35f8-4263-9d00-93262a119b04","type":"Line"},{"attributes":{},"id":"ff106c98-bcdd-44b7-9688-aa488dd6b135","type":"CategoricalScale"},{"attributes":{"dimension":1,"plot":{"id":"2adb2993-ed36-471b-95fe-6ce3405f034d","subtype":"Figure","type":"Plot"},"ticker":{"id":"93f356d1-ef72-45e9-9619-c3e7a71ce9d9","type":"BasicTicker"}},"id":"d8a422df-d5fe-4d82-ae2c-404e40148bb8","type":"Grid"},{"attributes":{"formatter":{"id":"bb76f5c7-815e-43e1-a6d3-02fa92370cb3","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"2adb2993-ed36-471b-95fe-6ce3405f034d","subtype":"Figure","type":"Plot"},"ticker":{"id":"4580bb1b-1942-42fb-aaca-8d907bc12630","type":"CategoricalTicker"}},"id":"4c45e113-9c36-4294-a41e-2d47dfbc89ab","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"2adb2993-ed36-471b-95fe-6ce3405f034d","subtype":"Figure","type":"Plot"},"ticker":{"id":"4580bb1b-1942-42fb-aaca-8d907bc12630","type":"CategoricalTicker"}},"id":"f4e3617e-8909-4cf9-8c98-fd3a8f9ae2d6","type":"Grid"}],"root_ids":["2adb2993-ed36-471b-95fe-6ce3405f034d"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"562f9ae0-13f4-4ce6-9e38-c2b8c8a8505e","elementid":"ca8b898b-d2e7-4586-8719-ee9d84f5ceba","modelid":"2adb2993-ed36-471b-95fe-6ce3405f034d"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

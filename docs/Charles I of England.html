@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="7ea8ffba-a36f-4f02-8449-96dbc22b903d"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"a8f373df-9932-4e88-816b-172108392e98":{"roots":{"references":[{"attributes":{"formatter":{"id":"c786ebe9-6bb8-44c1-9281-9f01b31b793e","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"25497b99-0fd3-4bd4-9ab6-76b0c6fb2802","subtype":"Figure","type":"Plot"},"ticker":{"id":"bea4c34b-91ce-4041-bc0e-6b9cc422cfb8","type":"CategoricalTicker"}},"id":"78218b78-80a4-4176-af94-3f33cfb8231e","type":"CategoricalAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a921d112-fc28-4ee7-b19f-2ba05de005e7","type":"Line"},{"attributes":{"callback":null,"factors":["Battle of Edgehill","First Battle of Newbury","Battle of Cropredy Bridge","Second Battle of Newbury","Battle of Naseby"]},"id":"66849b28-dd94-4969-b831-93e06cb43859","type":"FactorRange"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Edgehill","First Battle of Newbury","Battle of Cropredy Bridge","Second Battle of Newbury","Battle of Naseby"],"cumulative":{"__ndarray__":"4HHVZWBbhz//OhE8tUbfvyDACdJtFYQ/KGd5IBP9rT9BEmZMzJXZvw==","dtype":"float64","shape":[5]},"general":["Charles I of England","Charles I of England","Charles I of England","Charles I of England","Charles I of England"],"outcome":["I","D","V","I","D"],"value":{"__ndarray__":"4HHVZWBbhz9H858fyADgvwCJoapg598/IPf2q7f3qD8mP3WwblXdvw==","dtype":"float64","shape":[5]},"year":{"__ndarray__":"AAAAAAComUAAAAAAAKyZQAAAAAAAsJlAAAAAAACwmUAAAAAAALSZQA==","dtype":"float64","shape":[5]}}},"id":"e4c4cc3f-b650-4ecd-b7f4-458334d573c1","type":"ColumnDataSource"},{"attributes":{"callback":null},"id":"32432be7-145a-45ae-ab06-38862483a8f3","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Charles I of England (1 - 2 - 2)"},"id":"75d4018a-8045-466b-a9a3-8f82dfcc636b","type":"Title"},{"attributes":{"data_source":{"id":"e4c4cc3f-b650-4ecd-b7f4-458334d573c1","type":"ColumnDataSource"},"glyph":{"id":"4cdf9cc2-b227-4315-9658-9a24da805a3f","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a921d112-fc28-4ee7-b19f-2ba05de005e7","type":"Line"},"selection_glyph":null,"view":{"id":"ccaa1140-4c14-49ab-b29e-bdde21adc007","type":"CDSView"}},"id":"0c995a01-0ba6-4ec5-9dbb-fb193d4ec05c","type":"GlyphRenderer"},{"attributes":{"source":{"id":"e4c4cc3f-b650-4ecd-b7f4-458334d573c1","type":"ColumnDataSource"}},"id":"ccaa1140-4c14-49ab-b29e-bdde21adc007","type":"CDSView"},{"attributes":{"formatter":{"id":"575ee5cf-ea3d-430e-8f3d-eae514970266","type":"BasicTickFormatter"},"plot":{"id":"25497b99-0fd3-4bd4-9ab6-76b0c6fb2802","subtype":"Figure","type":"Plot"},"ticker":{"id":"550abee7-c7d8-48f0-8e3d-e6d30f0f25c6","type":"BasicTicker"}},"id":"fcc2da3a-7b7b-44e1-84f0-f94d9c2e3d1a","type":"LinearAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"d3af5405-cb3b-4bfe-8b38-6193cba82ee0","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"1f08fa0c-ff3a-4d75-9d51-f434860499e4","type":"CategoricalColorMapper"},{"attributes":{},"id":"c786ebe9-6bb8-44c1-9281-9f01b31b793e","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"e4c4cc3f-b650-4ecd-b7f4-458334d573c1","type":"ColumnDataSource"}},"id":"8c393ced-14f8-4be1-adb3-72758531df71","type":"CDSView"},{"attributes":{},"id":"550abee7-c7d8-48f0-8e3d-e6d30f0f25c6","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"1f08fa0c-ff3a-4d75-9d51-f434860499e4","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"1f08fa0c-ff3a-4d75-9d51-f434860499e4","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7514e75d-d71a-4611-8ffd-b3413755141f","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d3af5405-cb3b-4bfe-8b38-6193cba82ee0","type":"HoverTool"}]},"id":"2dfbf9e9-f35c-4bda-8220-e03b64606918","type":"Toolbar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"4cdf9cc2-b227-4315-9658-9a24da805a3f","type":"Line"},{"attributes":{"below":[{"id":"78218b78-80a4-4176-af94-3f33cfb8231e","type":"CategoricalAxis"}],"left":[{"id":"fcc2da3a-7b7b-44e1-84f0-f94d9c2e3d1a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"78218b78-80a4-4176-af94-3f33cfb8231e","type":"CategoricalAxis"},{"id":"305bcd94-d0e7-4fdb-9142-c8606df59641","type":"Grid"},{"id":"fcc2da3a-7b7b-44e1-84f0-f94d9c2e3d1a","type":"LinearAxis"},{"id":"86d544f8-84e4-435b-a196-b1f85c1196d2","type":"Grid"},{"id":"0c995a01-0ba6-4ec5-9dbb-fb193d4ec05c","type":"GlyphRenderer"},{"id":"5a8125f9-4ef8-4df5-8947-bc4226223e0f","type":"GlyphRenderer"}],"title":{"id":"75d4018a-8045-466b-a9a3-8f82dfcc636b","type":"Title"},"toolbar":{"id":"2dfbf9e9-f35c-4bda-8220-e03b64606918","type":"Toolbar"},"x_range":{"id":"66849b28-dd94-4969-b831-93e06cb43859","type":"FactorRange"},"x_scale":{"id":"b5ca9409-6fcd-4d20-8f23-15d030a755cb","type":"CategoricalScale"},"y_range":{"id":"32432be7-145a-45ae-ab06-38862483a8f3","type":"DataRange1d"},"y_scale":{"id":"ff5c9a49-39e4-4cbd-8b35-5522dae9573c","type":"LinearScale"}},"id":"25497b99-0fd3-4bd4-9ab6-76b0c6fb2802","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"575ee5cf-ea3d-430e-8f3d-eae514970266","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"25497b99-0fd3-4bd4-9ab6-76b0c6fb2802","subtype":"Figure","type":"Plot"},"ticker":{"id":"550abee7-c7d8-48f0-8e3d-e6d30f0f25c6","type":"BasicTicker"}},"id":"86d544f8-84e4-435b-a196-b1f85c1196d2","type":"Grid"},{"attributes":{"data_source":{"id":"e4c4cc3f-b650-4ecd-b7f4-458334d573c1","type":"ColumnDataSource"},"glyph":{"id":"7514e75d-d71a-4611-8ffd-b3413755141f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9b4186da-83db-4014-afe4-7ed9f8a2cb28","type":"VBar"},"selection_glyph":null,"view":{"id":"8c393ced-14f8-4be1-adb3-72758531df71","type":"CDSView"}},"id":"5a8125f9-4ef8-4df5-8947-bc4226223e0f","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9b4186da-83db-4014-afe4-7ed9f8a2cb28","type":"VBar"},{"attributes":{},"id":"b5ca9409-6fcd-4d20-8f23-15d030a755cb","type":"CategoricalScale"},{"attributes":{"plot":{"id":"25497b99-0fd3-4bd4-9ab6-76b0c6fb2802","subtype":"Figure","type":"Plot"},"ticker":{"id":"bea4c34b-91ce-4041-bc0e-6b9cc422cfb8","type":"CategoricalTicker"}},"id":"305bcd94-d0e7-4fdb-9142-c8606df59641","type":"Grid"},{"attributes":{},"id":"bea4c34b-91ce-4041-bc0e-6b9cc422cfb8","type":"CategoricalTicker"},{"attributes":{},"id":"ff5c9a49-39e4-4cbd-8b35-5522dae9573c","type":"LinearScale"}],"root_ids":["25497b99-0fd3-4bd4-9ab6-76b0c6fb2802"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"a8f373df-9932-4e88-816b-172108392e98","elementid":"7ea8ffba-a36f-4f02-8449-96dbc22b903d","modelid":"25497b99-0fd3-4bd4-9ab6-76b0c6fb2802"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="6cd605a5-83f5-4bb9-8dc4-a77e42a6bd32"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"1a6bd70c-cdeb-4cd7-ab0b-14ecc79a489b":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"3375502b-a235-4cdd-80cb-d174783c5bb4","type":"HoverTool"}]},"id":"d66668b5-61ec-49fc-845a-9a2b59188ebe","type":"Toolbar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"3375502b-a235-4cdd-80cb-d174783c5bb4","type":"HoverTool"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Cape Spartivento","Destruction of the French Fleet at Mers-el-Kebir","Japanese Raids into Indian Ocean"],"cumulative":{"__ndarray__":"INpakqmunL+c2K3wCL3bPyix7VveALa/","dtype":"float64","shape":[3]},"general":["James Somerville","James Somerville","James Somerville"],"outcome":["I","V","D"],"value":{"__ndarray__":"INpakqmunL8+htOJ84fdP3Oi1EOgnuC/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABQnkAAAAAAAFCeQAAAAAAAWJ5A","dtype":"float64","shape":[3]}}},"id":"3b17315f-8990-4cfc-93cf-05986955a897","type":"ColumnDataSource"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"b3b05022-d9a0-48cb-822b-7277e8bcf098","type":"Line"},{"attributes":{"formatter":{"id":"f2ea4b5a-83e0-47eb-8abe-b0b0de3bbc02","type":"BasicTickFormatter"},"plot":{"id":"ede294d8-d46b-4682-aeb6-f6821be26bda","subtype":"Figure","type":"Plot"},"ticker":{"id":"ab52fea6-3c33-4949-a10f-e89a93b3ec1c","type":"BasicTicker"}},"id":"6c6685b5-8f2c-4ab3-925e-0160554b8868","type":"LinearAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"9673307e-3e42-4848-bc64-561f128a2357","type":"CategoricalColorMapper"},{"attributes":{},"id":"ab52fea6-3c33-4949-a10f-e89a93b3ec1c","type":"BasicTicker"},{"attributes":{},"id":"296e08d0-aa95-4f1a-b4e8-a6624901b347","type":"LinearScale"},{"attributes":{"callback":null,"factors":["Battle of Cape Spartivento","Destruction of the French Fleet at Mers-el-Kebir","Japanese Raids into Indian Ocean"]},"id":"ca1c07d8-5b88-409d-9a31-a428fbb7ffd6","type":"FactorRange"},{"attributes":{},"id":"dc9b21d9-5308-41d3-bcbf-8fa2e4c4bc5e","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"James Somerville (1 - 1 - 1)"},"id":"797cca46-c8c4-4847-bd95-aca2cadb20e1","type":"Title"},{"attributes":{"data_source":{"id":"3b17315f-8990-4cfc-93cf-05986955a897","type":"ColumnDataSource"},"glyph":{"id":"14e767cd-7698-4cd8-9610-d273f03b36b6","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d407dbd1-208e-4436-993b-405984dc7592","type":"VBar"},"selection_glyph":null,"view":{"id":"e46f4c5e-2d4a-48e8-a84c-8bd1f1d63fbe","type":"CDSView"}},"id":"bd2bf542-1ca4-49c5-b706-2ae1378033ab","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"3b17315f-8990-4cfc-93cf-05986955a897","type":"ColumnDataSource"},"glyph":{"id":"b3b05022-d9a0-48cb-822b-7277e8bcf098","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bda41acc-1c18-4724-8296-f586aa818756","type":"Line"},"selection_glyph":null,"view":{"id":"541cda86-3d73-4930-9bfd-1ded6b00c30d","type":"CDSView"}},"id":"4525ff3c-bba9-44d4-83b7-8f1e9e7e072a","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"9673307e-3e42-4848-bc64-561f128a2357","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"9673307e-3e42-4848-bc64-561f128a2357","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"14e767cd-7698-4cd8-9610-d273f03b36b6","type":"VBar"},{"attributes":{"plot":{"id":"ede294d8-d46b-4682-aeb6-f6821be26bda","subtype":"Figure","type":"Plot"},"ticker":{"id":"03a588ed-b089-4903-aa79-cab3c336b720","type":"CategoricalTicker"}},"id":"7bf20ac6-cef1-4049-a4eb-0a6999ef4564","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"ede294d8-d46b-4682-aeb6-f6821be26bda","subtype":"Figure","type":"Plot"},"ticker":{"id":"ab52fea6-3c33-4949-a10f-e89a93b3ec1c","type":"BasicTicker"}},"id":"1882b5af-d386-489d-a605-3b2f6fb144ca","type":"Grid"},{"attributes":{"below":[{"id":"540d546a-ea41-4125-8705-bea6331cf313","type":"CategoricalAxis"}],"left":[{"id":"6c6685b5-8f2c-4ab3-925e-0160554b8868","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"540d546a-ea41-4125-8705-bea6331cf313","type":"CategoricalAxis"},{"id":"7bf20ac6-cef1-4049-a4eb-0a6999ef4564","type":"Grid"},{"id":"6c6685b5-8f2c-4ab3-925e-0160554b8868","type":"LinearAxis"},{"id":"1882b5af-d386-489d-a605-3b2f6fb144ca","type":"Grid"},{"id":"4525ff3c-bba9-44d4-83b7-8f1e9e7e072a","type":"GlyphRenderer"},{"id":"bd2bf542-1ca4-49c5-b706-2ae1378033ab","type":"GlyphRenderer"}],"title":{"id":"797cca46-c8c4-4847-bd95-aca2cadb20e1","type":"Title"},"toolbar":{"id":"d66668b5-61ec-49fc-845a-9a2b59188ebe","type":"Toolbar"},"x_range":{"id":"ca1c07d8-5b88-409d-9a31-a428fbb7ffd6","type":"FactorRange"},"x_scale":{"id":"320e776b-48ee-4461-b37d-97362eedfac4","type":"CategoricalScale"},"y_range":{"id":"da847b5b-5ba9-4493-8647-a25d25bd2d2f","type":"DataRange1d"},"y_scale":{"id":"296e08d0-aa95-4f1a-b4e8-a6624901b347","type":"LinearScale"}},"id":"ede294d8-d46b-4682-aeb6-f6821be26bda","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"f2ea4b5a-83e0-47eb-8abe-b0b0de3bbc02","type":"BasicTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"bda41acc-1c18-4724-8296-f586aa818756","type":"Line"},{"attributes":{},"id":"320e776b-48ee-4461-b37d-97362eedfac4","type":"CategoricalScale"},{"attributes":{"callback":null},"id":"da847b5b-5ba9-4493-8647-a25d25bd2d2f","type":"DataRange1d"},{"attributes":{},"id":"03a588ed-b089-4903-aa79-cab3c336b720","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"dc9b21d9-5308-41d3-bcbf-8fa2e4c4bc5e","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"ede294d8-d46b-4682-aeb6-f6821be26bda","subtype":"Figure","type":"Plot"},"ticker":{"id":"03a588ed-b089-4903-aa79-cab3c336b720","type":"CategoricalTicker"}},"id":"540d546a-ea41-4125-8705-bea6331cf313","type":"CategoricalAxis"},{"attributes":{"source":{"id":"3b17315f-8990-4cfc-93cf-05986955a897","type":"ColumnDataSource"}},"id":"541cda86-3d73-4930-9bfd-1ded6b00c30d","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d407dbd1-208e-4436-993b-405984dc7592","type":"VBar"},{"attributes":{"source":{"id":"3b17315f-8990-4cfc-93cf-05986955a897","type":"ColumnDataSource"}},"id":"e46f4c5e-2d4a-48e8-a84c-8bd1f1d63fbe","type":"CDSView"}],"root_ids":["ede294d8-d46b-4682-aeb6-f6821be26bda"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"1a6bd70c-cdeb-4cd7-ab0b-14ecc79a489b","elementid":"6cd605a5-83f5-4bb9-8dc4-a77e42a6bd32","modelid":"ede294d8-d46b-4682-aeb6-f6821be26bda"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

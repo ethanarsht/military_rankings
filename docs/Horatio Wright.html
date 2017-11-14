@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="1c9c436c-75f2-4f7d-9890-3bd54da2a999"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"e3396394-1b22-4e11-afee-4ef8b8e18f5c":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"4d39ae62-46f8-446d-958e-aca15b369491","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"3dc9f567-3acd-43ff-a3d0-c4ce458057d3","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"bfc06a43-0385-4801-ab89-828a201d56ea","type":"Line"},{"attributes":{"data_source":{"id":"d4b82a8d-b66d-4fec-81ef-c5e953759b51","type":"ColumnDataSource"},"glyph":{"id":"ec602540-19f2-4bb4-8378-b08d1fdb6f1d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3dc9f567-3acd-43ff-a3d0-c4ce458057d3","type":"VBar"},"selection_glyph":null,"view":{"id":"3df8242a-06e6-4f6c-b0b4-4f4ab99afdac","type":"CDSView"}},"id":"45b35017-4259-4d98-b40d-0e268d015b41","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Horatio Wright (1 - 1 - 1)"},"id":"dbcdf28d-c1dc-46bf-81c1-35e3f3b259a9","type":"Title"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"4d39ae62-46f8-446d-958e-aca15b369491","type":"HoverTool"}]},"id":"c1cb10bc-6a6d-406a-aa72-31fecb6a8ac3","type":"Toolbar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Cool Spring","Battle of Fort Stevens","Battle of Jerusalem Plank Road"],"cumulative":{"__ndarray__":"HHSMTmWV3r8AkNv09EOXP6Dyy/FGfqG/","dtype":"float64","shape":[3]},"general":["Horatio Wright","Horatio Wright","Horatio Wright"],"outcome":["D","V","I"],"value":{"__ndarray__":"HHSMTmWV3r+OFu1O0gTgP6C6OWxBIK2/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAAgnUAAAAAAACCdQAAAAAAAIJ1A","dtype":"float64","shape":[3]}}},"id":"d4b82a8d-b66d-4fec-81ef-c5e953759b51","type":"ColumnDataSource"},{"attributes":{"source":{"id":"d4b82a8d-b66d-4fec-81ef-c5e953759b51","type":"ColumnDataSource"}},"id":"5739b521-1f08-4986-a889-321df1295700","type":"CDSView"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"74b004a0-cf1f-4160-8051-c58fed1f6d92","type":"CategoricalColorMapper"},{"attributes":{},"id":"219a77bc-7674-4bf0-876b-392ce96f1d6c","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"c3b48b2d-3bdb-4669-a8c0-bb6bf50d5b77","subtype":"Figure","type":"Plot"},"ticker":{"id":"32e7896e-2c59-4ced-8e37-c43d1f0e94a5","type":"BasicTicker"}},"id":"bfe405c3-1429-485c-b032-ae6d23a1f128","type":"Grid"},{"attributes":{},"id":"32e7896e-2c59-4ced-8e37-c43d1f0e94a5","type":"BasicTicker"},{"attributes":{},"id":"be5248ae-1baa-4ce8-9312-f626aa130ecf","type":"LinearScale"},{"attributes":{"data_source":{"id":"d4b82a8d-b66d-4fec-81ef-c5e953759b51","type":"ColumnDataSource"},"glyph":{"id":"bfc06a43-0385-4801-ab89-828a201d56ea","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"88965455-feef-47ad-9d95-7a04fd352254","type":"Line"},"selection_glyph":null,"view":{"id":"5739b521-1f08-4986-a889-321df1295700","type":"CDSView"}},"id":"e4cfd1a8-611b-41a2-ad82-8a98034e24e5","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"8b2240cf-75c1-4e43-8162-ad10ff0d7e17","type":"CategoricalAxis"}],"left":[{"id":"0910c07a-1418-4918-8927-e3db21e52baf","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"8b2240cf-75c1-4e43-8162-ad10ff0d7e17","type":"CategoricalAxis"},{"id":"5c36e744-0b81-4571-9762-4a40aab18476","type":"Grid"},{"id":"0910c07a-1418-4918-8927-e3db21e52baf","type":"LinearAxis"},{"id":"bfe405c3-1429-485c-b032-ae6d23a1f128","type":"Grid"},{"id":"e4cfd1a8-611b-41a2-ad82-8a98034e24e5","type":"GlyphRenderer"},{"id":"45b35017-4259-4d98-b40d-0e268d015b41","type":"GlyphRenderer"}],"title":{"id":"dbcdf28d-c1dc-46bf-81c1-35e3f3b259a9","type":"Title"},"toolbar":{"id":"c1cb10bc-6a6d-406a-aa72-31fecb6a8ac3","type":"Toolbar"},"x_range":{"id":"8ce67803-a6b5-44c9-bffb-4c7f684760c7","type":"FactorRange"},"x_scale":{"id":"e3c7bc63-2af8-477f-92f2-34f10b4b16d3","type":"CategoricalScale"},"y_range":{"id":"52867d34-8340-48de-a9be-f3f26718ce78","type":"DataRange1d"},"y_scale":{"id":"be5248ae-1baa-4ce8-9312-f626aa130ecf","type":"LinearScale"}},"id":"c3b48b2d-3bdb-4669-a8c0-bb6bf50d5b77","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"74b004a0-cf1f-4160-8051-c58fed1f6d92","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"74b004a0-cf1f-4160-8051-c58fed1f6d92","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ec602540-19f2-4bb4-8378-b08d1fdb6f1d","type":"VBar"},{"attributes":{},"id":"e3c7bc63-2af8-477f-92f2-34f10b4b16d3","type":"CategoricalScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"88965455-feef-47ad-9d95-7a04fd352254","type":"Line"},{"attributes":{"callback":null},"id":"52867d34-8340-48de-a9be-f3f26718ce78","type":"DataRange1d"},{"attributes":{},"id":"e14566a3-54aa-48eb-945a-03f447502911","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"219a77bc-7674-4bf0-876b-392ce96f1d6c","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"c3b48b2d-3bdb-4669-a8c0-bb6bf50d5b77","subtype":"Figure","type":"Plot"},"ticker":{"id":"e14566a3-54aa-48eb-945a-03f447502911","type":"CategoricalTicker"}},"id":"8b2240cf-75c1-4e43-8162-ad10ff0d7e17","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"c3b48b2d-3bdb-4669-a8c0-bb6bf50d5b77","subtype":"Figure","type":"Plot"},"ticker":{"id":"e14566a3-54aa-48eb-945a-03f447502911","type":"CategoricalTicker"}},"id":"5c36e744-0b81-4571-9762-4a40aab18476","type":"Grid"},{"attributes":{},"id":"ae3f9e2a-c1ca-418f-90ec-a52f8bfd27b1","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"d4b82a8d-b66d-4fec-81ef-c5e953759b51","type":"ColumnDataSource"}},"id":"3df8242a-06e6-4f6c-b0b4-4f4ab99afdac","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Cool Spring","Battle of Fort Stevens","Battle of Jerusalem Plank Road"]},"id":"8ce67803-a6b5-44c9-bffb-4c7f684760c7","type":"FactorRange"},{"attributes":{"formatter":{"id":"ae3f9e2a-c1ca-418f-90ec-a52f8bfd27b1","type":"BasicTickFormatter"},"plot":{"id":"c3b48b2d-3bdb-4669-a8c0-bb6bf50d5b77","subtype":"Figure","type":"Plot"},"ticker":{"id":"32e7896e-2c59-4ced-8e37-c43d1f0e94a5","type":"BasicTicker"}},"id":"0910c07a-1418-4918-8927-e3db21e52baf","type":"LinearAxis"}],"root_ids":["c3b48b2d-3bdb-4669-a8c0-bb6bf50d5b77"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"e3396394-1b22-4e11-afee-4ef8b8e18f5c","elementid":"1c9c436c-75f2-4f7d-9890-3bd54da2a999","modelid":"c3b48b2d-3bdb-4669-a8c0-bb6bf50d5b77"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

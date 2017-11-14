@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="138d4858-3cbf-4c8a-afee-948253be5f29"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"df3a20f1-776e-403f-8cc7-d74397cd15dc":{"roots":{"references":[{"attributes":{},"id":"c48cc976-e725-4df5-83fe-a8db9fe7a843","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"06d12140-ac25-4137-9976-96e6d68f5d9b","type":"CategoricalAxis"}],"left":[{"id":"88d950d4-272b-4910-9fea-43f4fe8c5f98","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"06d12140-ac25-4137-9976-96e6d68f5d9b","type":"CategoricalAxis"},{"id":"8bd4928d-56fb-4b6a-8738-263b34aca64c","type":"Grid"},{"id":"88d950d4-272b-4910-9fea-43f4fe8c5f98","type":"LinearAxis"},{"id":"a8063123-83ea-49b4-94c3-47a9d6e553ac","type":"Grid"},{"id":"ae75d3c1-98f4-44e7-ade4-1be6ab2cec51","type":"GlyphRenderer"},{"id":"38cae247-bfc4-45fb-880e-d30fd0576fad","type":"GlyphRenderer"}],"title":{"id":"63a23ba6-fc45-4ded-a76a-4f1098d75162","type":"Title"},"toolbar":{"id":"8e64c3df-dc8c-49ed-863a-03e748ef025b","type":"Toolbar"},"x_range":{"id":"237f0c78-af85-4131-ae65-2d2d7835690d","type":"FactorRange"},"x_scale":{"id":"90122a01-a8d3-431a-b6b6-7427613d2e1e","type":"CategoricalScale"},"y_range":{"id":"df96a9fa-d0f1-4070-b569-23bbea309bd6","type":"DataRange1d"},"y_scale":{"id":"e1646971-9182-4b28-b70c-6aa88497b515","type":"LinearScale"}},"id":"8cbd5b13-1f58-46a0-a734-56ec71edf13d","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"219b5ffd-870b-4672-b35c-de28bc698aaa","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"8cbd5b13-1f58-46a0-a734-56ec71edf13d","subtype":"Figure","type":"Plot"},"ticker":{"id":"c48cc976-e725-4df5-83fe-a8db9fe7a843","type":"CategoricalTicker"}},"id":"06d12140-ac25-4137-9976-96e6d68f5d9b","type":"CategoricalAxis"},{"attributes":{"callback":null,"factors":["Battle of Port Arthur","Battle of the Yellow Sea","Battle of Tsushima"]},"id":"237f0c78-af85-4131-ae65-2d2d7835690d","type":"FactorRange"},{"attributes":{},"id":"109a906a-ee6c-4d18-86fa-5cf9a2cb68c3","type":"BasicTicker"},{"attributes":{"source":{"id":"6c9da045-91e9-4800-b2c5-6909ea174810","type":"ColumnDataSource"}},"id":"a68ce2ed-9c11-462e-9b00-990e66fb8155","type":"CDSView"},{"attributes":{},"id":"3a296f27-4b18-43b3-9203-99a9270f2490","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"6c9da045-91e9-4800-b2c5-6909ea174810","type":"ColumnDataSource"},"glyph":{"id":"9015e11e-87d6-43ee-891b-23d9ecfbe2a7","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bb406ba3-9584-4490-853b-27441aaa34eb","type":"Line"},"selection_glyph":null,"view":{"id":"a68ce2ed-9c11-462e-9b00-990e66fb8155","type":"CDSView"}},"id":"ae75d3c1-98f4-44e7-ade4-1be6ab2cec51","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"3fae42ca-dda4-4983-920e-318f64fcf6c5","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4f0b7e5a-2490-42f0-9b7c-d77f5afeeb04","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4f0b7e5a-2490-42f0-9b7c-d77f5afeeb04","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7e9a1aa0-30a4-4847-9676-3329cf7fdb8c","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4f0b7e5a-2490-42f0-9b7c-d77f5afeeb04","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"6c9da045-91e9-4800-b2c5-6909ea174810","type":"ColumnDataSource"}},"id":"759f7b3d-8622-46f9-9d41-2556fe222ecf","type":"CDSView"},{"attributes":{},"id":"90122a01-a8d3-431a-b6b6-7427613d2e1e","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"Dewa Shiget\u014d (1 - 2 - 0)"},"id":"63a23ba6-fc45-4ded-a76a-4f1098d75162","type":"Title"},{"attributes":{},"id":"e1646971-9182-4b28-b70c-6aa88497b515","type":"LinearScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Port Arthur","Battle of the Yellow Sea","Battle of Tsushima"],"cumulative":{"__ndarray__":"4FBcRfPVkb9YcWNgAGu1v3YAz91J4tY/","dtype":"float64","shape":[3]},"general":["Dewa Shiget\u014d","Dewa Shiget\u014d","Dewa Shiget\u014d"],"outcome":["I","I","V"],"value":{"__ndarray__":"4FBcRfPVkb8gXQyPg/Wwv8zc5/UJPdw/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAADAnUAAAAAAAMCdQAAAAAAAxJ1A","dtype":"float64","shape":[3]}}},"id":"6c9da045-91e9-4800-b2c5-6909ea174810","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"bb406ba3-9584-4490-853b-27441aaa34eb","type":"Line"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9015e11e-87d6-43ee-891b-23d9ecfbe2a7","type":"Line"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"0c92d407-9363-44c7-bebe-2fc5a411291b","type":"HoverTool"},{"attributes":{"plot":{"id":"8cbd5b13-1f58-46a0-a734-56ec71edf13d","subtype":"Figure","type":"Plot"},"ticker":{"id":"c48cc976-e725-4df5-83fe-a8db9fe7a843","type":"CategoricalTicker"}},"id":"8bd4928d-56fb-4b6a-8738-263b34aca64c","type":"Grid"},{"attributes":{"callback":null},"id":"df96a9fa-d0f1-4070-b569-23bbea309bd6","type":"DataRange1d"},{"attributes":{"data_source":{"id":"6c9da045-91e9-4800-b2c5-6909ea174810","type":"ColumnDataSource"},"glyph":{"id":"7e9a1aa0-30a4-4847-9676-3329cf7fdb8c","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3fae42ca-dda4-4983-920e-318f64fcf6c5","type":"VBar"},"selection_glyph":null,"view":{"id":"759f7b3d-8622-46f9-9d41-2556fe222ecf","type":"CDSView"}},"id":"38cae247-bfc4-45fb-880e-d30fd0576fad","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"3a296f27-4b18-43b3-9203-99a9270f2490","type":"BasicTickFormatter"},"plot":{"id":"8cbd5b13-1f58-46a0-a734-56ec71edf13d","subtype":"Figure","type":"Plot"},"ticker":{"id":"109a906a-ee6c-4d18-86fa-5cf9a2cb68c3","type":"BasicTicker"}},"id":"88d950d4-272b-4910-9fea-43f4fe8c5f98","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"0c92d407-9363-44c7-bebe-2fc5a411291b","type":"HoverTool"}]},"id":"8e64c3df-dc8c-49ed-863a-03e748ef025b","type":"Toolbar"},{"attributes":{},"id":"219b5ffd-870b-4672-b35c-de28bc698aaa","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"8cbd5b13-1f58-46a0-a734-56ec71edf13d","subtype":"Figure","type":"Plot"},"ticker":{"id":"109a906a-ee6c-4d18-86fa-5cf9a2cb68c3","type":"BasicTicker"}},"id":"a8063123-83ea-49b4-94c3-47a9d6e553ac","type":"Grid"}],"root_ids":["8cbd5b13-1f58-46a0-a734-56ec71edf13d"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"df3a20f1-776e-403f-8cc7-d74397cd15dc","elementid":"138d4858-3cbf-4c8a-afee-948253be5f29","modelid":"8cbd5b13-1f58-46a0-a734-56ec71edf13d"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="b8ccf002-76c0-488e-afef-40a6778c5616"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"aa17f8a3-fe62-4c48-aae3-e059e993c5b0":{"roots":{"references":[{"attributes":{"below":[{"id":"db122952-65f4-46c4-8f01-89e2331d4999","type":"CategoricalAxis"}],"left":[{"id":"49fc480a-acff-4233-9922-209238db655c","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"db122952-65f4-46c4-8f01-89e2331d4999","type":"CategoricalAxis"},{"id":"ee0c4597-cae8-44ce-be66-c07ab00028eb","type":"Grid"},{"id":"49fc480a-acff-4233-9922-209238db655c","type":"LinearAxis"},{"id":"d69eca2e-3684-41ed-8040-510599638118","type":"Grid"},{"id":"9fac5de2-28d9-4296-bd8a-afb53ff3e80e","type":"GlyphRenderer"},{"id":"e13a9b56-ae73-42d1-b848-2f5fe9fd2200","type":"GlyphRenderer"}],"title":{"id":"83e9c4c5-b56d-40f3-9465-c315c788c069","type":"Title"},"toolbar":{"id":"227aee32-6a51-4d7a-9bf3-a782aa08177a","type":"Toolbar"},"x_range":{"id":"fbd0646a-1960-45bf-853f-0077f32f1fcf","type":"FactorRange"},"x_scale":{"id":"8495e736-c412-4ea5-b744-fc5e71f90c49","type":"CategoricalScale"},"y_range":{"id":"e89d63a1-d1a9-444a-a42f-b5a4f61e96a4","type":"DataRange1d"},"y_scale":{"id":"93deb294-3de5-4ce8-aad4-68d9e2517818","type":"LinearScale"}},"id":"aa7bec77-d128-4dab-9622-f3c8b72dc5dc","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c2a44eaf-5a38-4333-9d31-d279824da2ff","type":"VBar"},{"attributes":{"plot":null,"text":"Raimondo Montecuccoli (1 - 0 - 1)"},"id":"83e9c4c5-b56d-40f3-9465-c315c788c069","type":"Title"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"234ecadf-4f26-4135-8ffb-60af0d1d376f","type":"Line"},{"attributes":{},"id":"93deb294-3de5-4ce8-aad4-68d9e2517818","type":"LinearScale"},{"attributes":{},"id":"4b182b22-0757-4c93-9892-e3c0deafa060","type":"BasicTicker"},{"attributes":{"plot":{"id":"aa7bec77-d128-4dab-9622-f3c8b72dc5dc","subtype":"Figure","type":"Plot"},"ticker":{"id":"905b3e8e-deb1-4b0f-ba92-4357baf8ea14","type":"CategoricalTicker"}},"id":"ee0c4597-cae8-44ce-be66-c07ab00028eb","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Zusmarshausen","Battle of Saint Gotthard (1664)"]},"id":"fbd0646a-1960-45bf-853f-0077f32f1fcf","type":"FactorRange"},{"attributes":{"data_source":{"id":"ebcb0c17-5003-4bda-b870-3b44684fcd83","type":"ColumnDataSource"},"glyph":{"id":"f1309caf-8306-4078-b961-4197e6f7d754","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c2a44eaf-5a38-4333-9d31-d279824da2ff","type":"VBar"},"selection_glyph":null,"view":{"id":"38df6370-3ab5-4b8d-a5fe-cc9a9100e156","type":"CDSView"}},"id":"e13a9b56-ae73-42d1-b848-2f5fe9fd2200","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"ce57d36d-9c18-4b6c-819c-7b70da7e7949","type":"HoverTool"},{"attributes":{},"id":"a453d144-469c-4919-b8f2-3f8966e887af","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"3537601e-1e94-4140-a98a-9f2272521035","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"3537601e-1e94-4140-a98a-9f2272521035","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f1309caf-8306-4078-b961-4197e6f7d754","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Zusmarshausen","Battle of Saint Gotthard (1664)"],"cumulative":{"__ndarray__":"TFbzjRq5279k74l3hgHAPw==","dtype":"float64","shape":[2]},"general":["Raimondo Montecuccoli","Raimondo Montecuccoli"],"outcome":["D","V"],"value":{"__ndarray__":"TFbzjRq527//Jtzk7tzhPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAADAmUAAAAAAAACaQA==","dtype":"float64","shape":[2]}}},"id":"ebcb0c17-5003-4bda-b870-3b44684fcd83","type":"ColumnDataSource"},{"attributes":{"callback":null},"id":"e89d63a1-d1a9-444a-a42f-b5a4f61e96a4","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"aa7bec77-d128-4dab-9622-f3c8b72dc5dc","subtype":"Figure","type":"Plot"},"ticker":{"id":"4b182b22-0757-4c93-9892-e3c0deafa060","type":"BasicTicker"}},"id":"d69eca2e-3684-41ed-8040-510599638118","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"3537601e-1e94-4140-a98a-9f2272521035","type":"CategoricalColorMapper"},{"attributes":{},"id":"8495e736-c412-4ea5-b744-fc5e71f90c49","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"b60fb385-71f5-46a1-9bc3-5a73245e60e4","type":"BasicTickFormatter"},"plot":{"id":"aa7bec77-d128-4dab-9622-f3c8b72dc5dc","subtype":"Figure","type":"Plot"},"ticker":{"id":"4b182b22-0757-4c93-9892-e3c0deafa060","type":"BasicTicker"}},"id":"49fc480a-acff-4233-9922-209238db655c","type":"LinearAxis"},{"attributes":{"formatter":{"id":"a453d144-469c-4919-b8f2-3f8966e887af","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"aa7bec77-d128-4dab-9622-f3c8b72dc5dc","subtype":"Figure","type":"Plot"},"ticker":{"id":"905b3e8e-deb1-4b0f-ba92-4357baf8ea14","type":"CategoricalTicker"}},"id":"db122952-65f4-46c4-8f01-89e2331d4999","type":"CategoricalAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3ac64343-2727-4db6-9183-f4ffdd540584","type":"Line"},{"attributes":{"source":{"id":"ebcb0c17-5003-4bda-b870-3b44684fcd83","type":"ColumnDataSource"}},"id":"3401d40e-82d5-4bf1-9f80-8532593230ac","type":"CDSView"},{"attributes":{},"id":"b60fb385-71f5-46a1-9bc3-5a73245e60e4","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"ce57d36d-9c18-4b6c-819c-7b70da7e7949","type":"HoverTool"}]},"id":"227aee32-6a51-4d7a-9bf3-a782aa08177a","type":"Toolbar"},{"attributes":{"source":{"id":"ebcb0c17-5003-4bda-b870-3b44684fcd83","type":"ColumnDataSource"}},"id":"38df6370-3ab5-4b8d-a5fe-cc9a9100e156","type":"CDSView"},{"attributes":{"data_source":{"id":"ebcb0c17-5003-4bda-b870-3b44684fcd83","type":"ColumnDataSource"},"glyph":{"id":"234ecadf-4f26-4135-8ffb-60af0d1d376f","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3ac64343-2727-4db6-9183-f4ffdd540584","type":"Line"},"selection_glyph":null,"view":{"id":"3401d40e-82d5-4bf1-9f80-8532593230ac","type":"CDSView"}},"id":"9fac5de2-28d9-4296-bd8a-afb53ff3e80e","type":"GlyphRenderer"},{"attributes":{},"id":"905b3e8e-deb1-4b0f-ba92-4357baf8ea14","type":"CategoricalTicker"}],"root_ids":["aa7bec77-d128-4dab-9622-f3c8b72dc5dc"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"aa17f8a3-fe62-4c48-aae3-e059e993c5b0","elementid":"b8ccf002-76c0-488e-afef-40a6778c5616","modelid":"aa7bec77-d128-4dab-9622-f3c8b72dc5dc"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="2d11e525-e0d3-4240-bb72-7dc5c9112b44"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"6bdfb7f3-e46d-4d12-ad71-f0808a525405":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2f0581d5-13ca-4a76-9a0b-159726219aef","type":"Line"},{"attributes":{"plot":{"id":"80b6bd34-662d-44a7-86f9-df5444575727","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b501f9a-387d-499c-98e3-35521c9026d2","type":"CategoricalTicker"}},"id":"66c9f465-6e4e-4f08-ad4b-140d68a68fe9","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Mulayda"],"cumulative":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"general":["Muhammed ibn Rashid"],"outcome":["V"],"value":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAACMnUA=","dtype":"float64","shape":[1]}}},"id":"f99acd58-9514-4807-9438-20e248bcb3ab","type":"ColumnDataSource"},{"attributes":{},"id":"d37e4ad5-981a-4ef7-9e7d-7798fa2661fe","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"9167205a-4b65-4b1b-830b-3751d7777304","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"9167205a-4b65-4b1b-830b-3751d7777304","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7ddaae10-7a3e-4e1d-a42f-bf2233f3298b","type":"VBar"},{"attributes":{"data_source":{"id":"f99acd58-9514-4807-9438-20e248bcb3ab","type":"ColumnDataSource"},"glyph":{"id":"7ddaae10-7a3e-4e1d-a42f-bf2233f3298b","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"142438ba-dc9b-4562-93fe-02eab108297a","type":"VBar"},"selection_glyph":null,"view":{"id":"195f5c89-f53b-42db-be92-b7cebc7d532c","type":"CDSView"}},"id":"5b865be3-ed92-4c8b-8960-b6b590e16088","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"de413e8f-bc2b-476d-999b-46d6a66ef5b4","type":"HoverTool"}]},"id":"26d50b4a-4b35-4e4b-8da2-a70a0f602fde","type":"Toolbar"},{"attributes":{"callback":null},"id":"0e93b22e-79e6-4cf1-975f-71ede2ce9d17","type":"DataRange1d"},{"attributes":{},"id":"713c20e4-09ae-4965-91ae-4122efe15f07","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"13fe4bb7-7afd-4922-b440-0fd497e76de6","type":"CategoricalAxis"}],"left":[{"id":"fb9ecdf6-b2cd-49d9-a953-3b18b8be31cc","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"13fe4bb7-7afd-4922-b440-0fd497e76de6","type":"CategoricalAxis"},{"id":"66c9f465-6e4e-4f08-ad4b-140d68a68fe9","type":"Grid"},{"id":"fb9ecdf6-b2cd-49d9-a953-3b18b8be31cc","type":"LinearAxis"},{"id":"a4dd387f-0393-4401-bc26-1b25fb2ce724","type":"Grid"},{"id":"cc562316-b18d-4f09-a09c-d4fe65fa735c","type":"GlyphRenderer"},{"id":"5b865be3-ed92-4c8b-8960-b6b590e16088","type":"GlyphRenderer"}],"title":{"id":"6e56503e-850a-43d5-97f9-bfcf067490b6","type":"Title"},"toolbar":{"id":"26d50b4a-4b35-4e4b-8da2-a70a0f602fde","type":"Toolbar"},"x_range":{"id":"b4f79d9f-ebdf-4b5f-ae2b-1c62b3f344d0","type":"FactorRange"},"x_scale":{"id":"d37e4ad5-981a-4ef7-9e7d-7798fa2661fe","type":"CategoricalScale"},"y_range":{"id":"0e93b22e-79e6-4cf1-975f-71ede2ce9d17","type":"DataRange1d"},"y_scale":{"id":"6924ce79-dfec-4b8d-b79f-9507f0a947b7","type":"LinearScale"}},"id":"80b6bd34-662d-44a7-86f9-df5444575727","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"f99acd58-9514-4807-9438-20e248bcb3ab","type":"ColumnDataSource"}},"id":"63622c38-5324-429a-963d-4d62a3965409","type":"CDSView"},{"attributes":{"source":{"id":"f99acd58-9514-4807-9438-20e248bcb3ab","type":"ColumnDataSource"}},"id":"195f5c89-f53b-42db-be92-b7cebc7d532c","type":"CDSView"},{"attributes":{},"id":"2cace240-7da6-4bdc-8ca5-135a607c7e98","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"f99acd58-9514-4807-9438-20e248bcb3ab","type":"ColumnDataSource"},"glyph":{"id":"317668ac-6022-48ad-8cd4-9f6976149188","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2f0581d5-13ca-4a76-9a0b-159726219aef","type":"Line"},"selection_glyph":null,"view":{"id":"63622c38-5324-429a-963d-4d62a3965409","type":"CDSView"}},"id":"cc562316-b18d-4f09-a09c-d4fe65fa735c","type":"GlyphRenderer"},{"attributes":{},"id":"5b501f9a-387d-499c-98e3-35521c9026d2","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Battle of Mulayda"]},"id":"b4f79d9f-ebdf-4b5f-ae2b-1c62b3f344d0","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"de413e8f-bc2b-476d-999b-46d6a66ef5b4","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"317668ac-6022-48ad-8cd4-9f6976149188","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"142438ba-dc9b-4562-93fe-02eab108297a","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"80b6bd34-662d-44a7-86f9-df5444575727","subtype":"Figure","type":"Plot"},"ticker":{"id":"933388c2-efd1-478c-b1f3-15f42cdfe4a4","type":"BasicTicker"}},"id":"a4dd387f-0393-4401-bc26-1b25fb2ce724","type":"Grid"},{"attributes":{},"id":"933388c2-efd1-478c-b1f3-15f42cdfe4a4","type":"BasicTicker"},{"attributes":{"formatter":{"id":"2cace240-7da6-4bdc-8ca5-135a607c7e98","type":"BasicTickFormatter"},"plot":{"id":"80b6bd34-662d-44a7-86f9-df5444575727","subtype":"Figure","type":"Plot"},"ticker":{"id":"933388c2-efd1-478c-b1f3-15f42cdfe4a4","type":"BasicTicker"}},"id":"fb9ecdf6-b2cd-49d9-a953-3b18b8be31cc","type":"LinearAxis"},{"attributes":{},"id":"6924ce79-dfec-4b8d-b79f-9507f0a947b7","type":"LinearScale"},{"attributes":{"formatter":{"id":"713c20e4-09ae-4965-91ae-4122efe15f07","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"80b6bd34-662d-44a7-86f9-df5444575727","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b501f9a-387d-499c-98e3-35521c9026d2","type":"CategoricalTicker"}},"id":"13fe4bb7-7afd-4922-b440-0fd497e76de6","type":"CategoricalAxis"},{"attributes":{"plot":null,"text":"Muhammed ibn Rashid (1 - 0 - 0)"},"id":"6e56503e-850a-43d5-97f9-bfcf067490b6","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"9167205a-4b65-4b1b-830b-3751d7777304","type":"CategoricalColorMapper"}],"root_ids":["80b6bd34-662d-44a7-86f9-df5444575727"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"6bdfb7f3-e46d-4d12-ad71-f0808a525405","elementid":"2d11e525-e0d3-4240-bb72-7dc5c9112b44","modelid":"80b6bd34-662d-44a7-86f9-df5444575727"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="b0456c44-77bf-4c80-b865-bb0bb20aef00"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"5df6c610-a7cb-4525-b37c-a56ca273ebc4":{"roots":{"references":[{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Shanghai (1932)","Battle of Shanghai (1937)"],"cumulative":{"__ndarray__":"kFu1zU2yoD8A853T94Xevw==","dtype":"float64","shape":[2]},"general":["Zhang Zhizhong","Zhang Zhizhong"],"outcome":["I","D"],"value":{"__ndarray__":"kFu1zU2yoD85T6rGIE7gvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAAwnkAAAAAAAESeQA==","dtype":"float64","shape":[2]}}},"id":"031d50b9-2e65-4faa-ba2a-f8b61439bdc8","type":"ColumnDataSource"},{"attributes":{},"id":"0796507d-847c-4917-a9e8-4f2949387576","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"ab7a4b84-7ec6-4933-8d12-c61673728258","type":"HoverTool"}]},"id":"1b0facd9-77eb-4b7c-9c7d-c69188bf4cfb","type":"Toolbar"},{"attributes":{},"id":"36350d67-d9af-4446-93ac-91b8c162d673","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"8bd85ad4-3381-446d-b485-6bd06f7da01d","type":"VBar"},{"attributes":{},"id":"50ecf0f6-27f1-4e75-9b09-fcaf6fcfc89e","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"7eb18313-cf8a-4886-a541-09aabf059de4","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"7eb18313-cf8a-4886-a541-09aabf059de4","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"62497416-e712-4608-8b7e-b033460dd6ba","type":"VBar"},{"attributes":{"data_source":{"id":"031d50b9-2e65-4faa-ba2a-f8b61439bdc8","type":"ColumnDataSource"},"glyph":{"id":"2b59aaad-d9cf-451e-8f5a-bd96f264215d","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5ff913c6-1d42-4211-86ab-4283450b781a","type":"Line"},"selection_glyph":null,"view":{"id":"061d844e-09bc-4c71-ae2c-766d844fee95","type":"CDSView"}},"id":"8387d912-618c-4047-8061-26c4e445d25f","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"ab7a4b84-7ec6-4933-8d12-c61673728258","type":"HoverTool"},{"attributes":{},"id":"1c6a844a-efe7-4ae6-9c92-91d3b9aa4820","type":"BasicTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"7eb18313-cf8a-4886-a541-09aabf059de4","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"factors":["Battle of Shanghai (1932)","Battle of Shanghai (1937)"]},"id":"809dc1d0-3b4c-4856-94e4-6ad89ea6fb5d","type":"FactorRange"},{"attributes":{"below":[{"id":"e3c03fea-34fa-471c-ae41-ca558ab4a157","type":"CategoricalAxis"}],"left":[{"id":"3eaf2979-ddc1-4b2b-914d-5206edc0d90d","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"e3c03fea-34fa-471c-ae41-ca558ab4a157","type":"CategoricalAxis"},{"id":"68a77c5c-4794-4920-a103-02aa9379af1c","type":"Grid"},{"id":"3eaf2979-ddc1-4b2b-914d-5206edc0d90d","type":"LinearAxis"},{"id":"07adeab6-3251-4b8a-a374-2af5f81f5b96","type":"Grid"},{"id":"8387d912-618c-4047-8061-26c4e445d25f","type":"GlyphRenderer"},{"id":"1487ef05-d4e0-4a9b-8633-5b75b7a2e0be","type":"GlyphRenderer"}],"title":{"id":"2114c6df-e4b9-4290-ad36-65f622ce7eb8","type":"Title"},"toolbar":{"id":"1b0facd9-77eb-4b7c-9c7d-c69188bf4cfb","type":"Toolbar"},"x_range":{"id":"809dc1d0-3b4c-4856-94e4-6ad89ea6fb5d","type":"FactorRange"},"x_scale":{"id":"05fa1500-bef1-44da-a94f-c0e9c4112494","type":"CategoricalScale"},"y_range":{"id":"12652aed-d55e-4b09-9636-c0a9a8655166","type":"DataRange1d"},"y_scale":{"id":"36350d67-d9af-4446-93ac-91b8c162d673","type":"LinearScale"}},"id":"cb0dc6f4-a5b2-44ca-86e1-6cceffa01651","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"1c6a844a-efe7-4ae6-9c92-91d3b9aa4820","type":"BasicTickFormatter"},"plot":{"id":"cb0dc6f4-a5b2-44ca-86e1-6cceffa01651","subtype":"Figure","type":"Plot"},"ticker":{"id":"b19b8bb5-8f94-463c-8584-8a486d7727fc","type":"BasicTicker"}},"id":"3eaf2979-ddc1-4b2b-914d-5206edc0d90d","type":"LinearAxis"},{"attributes":{"formatter":{"id":"50ecf0f6-27f1-4e75-9b09-fcaf6fcfc89e","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"cb0dc6f4-a5b2-44ca-86e1-6cceffa01651","subtype":"Figure","type":"Plot"},"ticker":{"id":"0796507d-847c-4917-a9e8-4f2949387576","type":"CategoricalTicker"}},"id":"e3c03fea-34fa-471c-ae41-ca558ab4a157","type":"CategoricalAxis"},{"attributes":{"source":{"id":"031d50b9-2e65-4faa-ba2a-f8b61439bdc8","type":"ColumnDataSource"}},"id":"061d844e-09bc-4c71-ae2c-766d844fee95","type":"CDSView"},{"attributes":{},"id":"b19b8bb5-8f94-463c-8584-8a486d7727fc","type":"BasicTicker"},{"attributes":{"plot":null,"text":"Zhang Zhizhong (0 - 1 - 1)"},"id":"2114c6df-e4b9-4290-ad36-65f622ce7eb8","type":"Title"},{"attributes":{"source":{"id":"031d50b9-2e65-4faa-ba2a-f8b61439bdc8","type":"ColumnDataSource"}},"id":"513c62ba-5e77-4a69-b9e9-74a208cf51e4","type":"CDSView"},{"attributes":{"callback":null},"id":"12652aed-d55e-4b09-9636-c0a9a8655166","type":"DataRange1d"},{"attributes":{"data_source":{"id":"031d50b9-2e65-4faa-ba2a-f8b61439bdc8","type":"ColumnDataSource"},"glyph":{"id":"62497416-e712-4608-8b7e-b033460dd6ba","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8bd85ad4-3381-446d-b485-6bd06f7da01d","type":"VBar"},"selection_glyph":null,"view":{"id":"513c62ba-5e77-4a69-b9e9-74a208cf51e4","type":"CDSView"}},"id":"1487ef05-d4e0-4a9b-8633-5b75b7a2e0be","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"cb0dc6f4-a5b2-44ca-86e1-6cceffa01651","subtype":"Figure","type":"Plot"},"ticker":{"id":"b19b8bb5-8f94-463c-8584-8a486d7727fc","type":"BasicTicker"}},"id":"07adeab6-3251-4b8a-a374-2af5f81f5b96","type":"Grid"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5ff913c6-1d42-4211-86ab-4283450b781a","type":"Line"},{"attributes":{"plot":{"id":"cb0dc6f4-a5b2-44ca-86e1-6cceffa01651","subtype":"Figure","type":"Plot"},"ticker":{"id":"0796507d-847c-4917-a9e8-4f2949387576","type":"CategoricalTicker"}},"id":"68a77c5c-4794-4920-a103-02aa9379af1c","type":"Grid"},{"attributes":{},"id":"05fa1500-bef1-44da-a94f-c0e9c4112494","type":"CategoricalScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2b59aaad-d9cf-451e-8f5a-bd96f264215d","type":"Line"}],"root_ids":["cb0dc6f4-a5b2-44ca-86e1-6cceffa01651"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"5df6c610-a7cb-4525-b37c-a56ca273ebc4","elementid":"b0456c44-77bf-4c80-b865-bb0bb20aef00","modelid":"cb0dc6f4-a5b2-44ca-86e1-6cceffa01651"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

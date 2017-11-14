@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="a40f0bf0-ba83-436f-b767-dcc25d340ed4"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"f302d510-8b7b-4120-9749-5e25670f7cf0":{"roots":{"references":[{"attributes":{},"id":"82590d39-b63d-4ddc-a5ad-6d97e785f857","type":"LinearScale"},{"attributes":{},"id":"5936de20-8d1e-469e-b8bb-2d07f5daa032","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"81a3a038-941a-41c2-a8b1-9e7c54557884","type":"CategoricalAxis"}],"left":[{"id":"351db0de-f472-4f61-99b6-787e04cdc444","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"81a3a038-941a-41c2-a8b1-9e7c54557884","type":"CategoricalAxis"},{"id":"b44b0e10-d43b-41f5-be41-8efb6bad8611","type":"Grid"},{"id":"351db0de-f472-4f61-99b6-787e04cdc444","type":"LinearAxis"},{"id":"253ac2d6-e457-4cc8-8216-c42d4eb34f1d","type":"Grid"},{"id":"6172c867-cfcf-4374-9217-178ca0666771","type":"GlyphRenderer"},{"id":"a68d51a8-2eec-4560-a866-a6e48753c1f9","type":"GlyphRenderer"}],"title":{"id":"f5cd7ccf-aa23-4c62-b0e0-9f54a01a0426","type":"Title"},"toolbar":{"id":"b3d8ed32-0317-45cd-8b95-fd98cc1aca75","type":"Toolbar"},"x_range":{"id":"662ebe6c-b7bf-4600-b3c3-9cf39ad36c85","type":"FactorRange"},"x_scale":{"id":"9574e68f-2cc6-4e63-b809-c38dceb3deb9","type":"CategoricalScale"},"y_range":{"id":"32e03f19-6ddf-44ff-afe7-264fba0069b0","type":"DataRange1d"},"y_scale":{"id":"82590d39-b63d-4ddc-a5ad-6d97e785f857","type":"LinearScale"}},"id":"56a0e1d3-da8f-4d4a-bd06-d770221bca49","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"415c7add-e7b9-4413-83e9-c54453a36d32","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"7028c85a-1d98-4cf1-b1d0-573c5f5221a1","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f3f49a47-52e8-41b0-bd60-e924fb9b69d7","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"eadd5cde-2125-4788-9e80-9f868b694c58","type":"ColumnDataSource"}},"id":"d3b5f67e-e58f-400d-9c0c-93c9e3d4557a","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8ef6a760-1c60-4c7e-9668-4ea61e69de55","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Minden"],"cumulative":{"__ndarray__":"NYb3UdlU4L8=","dtype":"float64","shape":[1]},"general":["Louis Georges \u00c9rasme de Contades"],"outcome":["D"],"value":{"__ndarray__":"NYb3UdlU4L8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAB8m0A=","dtype":"float64","shape":[1]}}},"id":"eadd5cde-2125-4788-9e80-9f868b694c58","type":"ColumnDataSource"},{"attributes":{"source":{"id":"eadd5cde-2125-4788-9e80-9f868b694c58","type":"ColumnDataSource"}},"id":"e724039e-37ff-4fae-acbb-67d6fcdbd18d","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"de2bbf30-ea74-4869-aab4-61707c042275","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Minden"]},"id":"662ebe6c-b7bf-4600-b3c3-9cf39ad36c85","type":"FactorRange"},{"attributes":{"data_source":{"id":"eadd5cde-2125-4788-9e80-9f868b694c58","type":"ColumnDataSource"},"glyph":{"id":"8ef6a760-1c60-4c7e-9668-4ea61e69de55","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"df21760b-a2b9-48ef-92e4-d91226409805","type":"Line"},"selection_glyph":null,"view":{"id":"d3b5f67e-e58f-400d-9c0c-93c9e3d4557a","type":"CDSView"}},"id":"6172c867-cfcf-4374-9217-178ca0666771","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"32e03f19-6ddf-44ff-afe7-264fba0069b0","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"56a0e1d3-da8f-4d4a-bd06-d770221bca49","subtype":"Figure","type":"Plot"},"ticker":{"id":"da8310a6-19c8-42a1-acbd-8f06a5242fd7","type":"BasicTicker"}},"id":"253ac2d6-e457-4cc8-8216-c42d4eb34f1d","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f3f49a47-52e8-41b0-bd60-e924fb9b69d7","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f3f49a47-52e8-41b0-bd60-e924fb9b69d7","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"43430ba4-5317-40f5-934a-4d19da5ba834","type":"VBar"},{"attributes":{"formatter":{"id":"5936de20-8d1e-469e-b8bb-2d07f5daa032","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"56a0e1d3-da8f-4d4a-bd06-d770221bca49","subtype":"Figure","type":"Plot"},"ticker":{"id":"c395fc94-d438-4688-8a7b-d0a5e7656ffb","type":"CategoricalTicker"}},"id":"81a3a038-941a-41c2-a8b1-9e7c54557884","type":"CategoricalAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"df21760b-a2b9-48ef-92e4-d91226409805","type":"Line"},{"attributes":{"formatter":{"id":"415c7add-e7b9-4413-83e9-c54453a36d32","type":"BasicTickFormatter"},"plot":{"id":"56a0e1d3-da8f-4d4a-bd06-d770221bca49","subtype":"Figure","type":"Plot"},"ticker":{"id":"da8310a6-19c8-42a1-acbd-8f06a5242fd7","type":"BasicTicker"}},"id":"351db0de-f472-4f61-99b6-787e04cdc444","type":"LinearAxis"},{"attributes":{"data_source":{"id":"eadd5cde-2125-4788-9e80-9f868b694c58","type":"ColumnDataSource"},"glyph":{"id":"43430ba4-5317-40f5-934a-4d19da5ba834","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"de2bbf30-ea74-4869-aab4-61707c042275","type":"VBar"},"selection_glyph":null,"view":{"id":"e724039e-37ff-4fae-acbb-67d6fcdbd18d","type":"CDSView"}},"id":"a68d51a8-2eec-4560-a866-a6e48753c1f9","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Louis Georges \u00c9rasme de Contades (0 - 0 - 1)"},"id":"f5cd7ccf-aa23-4c62-b0e0-9f54a01a0426","type":"Title"},{"attributes":{},"id":"da8310a6-19c8-42a1-acbd-8f06a5242fd7","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"7028c85a-1d98-4cf1-b1d0-573c5f5221a1","type":"HoverTool"}]},"id":"b3d8ed32-0317-45cd-8b95-fd98cc1aca75","type":"Toolbar"},{"attributes":{},"id":"9574e68f-2cc6-4e63-b809-c38dceb3deb9","type":"CategoricalScale"},{"attributes":{"plot":{"id":"56a0e1d3-da8f-4d4a-bd06-d770221bca49","subtype":"Figure","type":"Plot"},"ticker":{"id":"c395fc94-d438-4688-8a7b-d0a5e7656ffb","type":"CategoricalTicker"}},"id":"b44b0e10-d43b-41f5-be41-8efb6bad8611","type":"Grid"},{"attributes":{},"id":"c395fc94-d438-4688-8a7b-d0a5e7656ffb","type":"CategoricalTicker"}],"root_ids":["56a0e1d3-da8f-4d4a-bd06-d770221bca49"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"f302d510-8b7b-4120-9749-5e25670f7cf0","elementid":"a40f0bf0-ba83-436f-b767-dcc25d340ed4","modelid":"56a0e1d3-da8f-4d4a-bd06-d770221bca49"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

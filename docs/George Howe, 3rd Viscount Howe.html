@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="9f395101-97c6-41f4-80d4-8ad3ad0361f7"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"bfdeb6f0-2d46-4944-9052-7c4e88e8c138":{"roots":{"references":[{"attributes":{"below":[{"id":"2957a70a-c15a-4f2a-a486-17e4a201c05d","type":"CategoricalAxis"}],"left":[{"id":"72c56583-d6e5-44fd-93e7-06780fd8b7f3","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"2957a70a-c15a-4f2a-a486-17e4a201c05d","type":"CategoricalAxis"},{"id":"f4808302-d510-4e89-962f-46b47b474b6d","type":"Grid"},{"id":"72c56583-d6e5-44fd-93e7-06780fd8b7f3","type":"LinearAxis"},{"id":"92dc2808-1e16-4ab6-bb7a-debf62e71b48","type":"Grid"},{"id":"e3212ff3-b0fb-43d9-bcde-25a1ce7d7002","type":"GlyphRenderer"},{"id":"204be9b2-83af-43f6-b4ee-3ddcbc58afff","type":"GlyphRenderer"}],"title":{"id":"e2fd47b7-1870-4e37-ae89-b353108320e6","type":"Title"},"toolbar":{"id":"353cf705-eb42-46ab-bd38-dd3fb3e0afc2","type":"Toolbar"},"x_range":{"id":"65aa2f29-972a-435c-85dd-33d0b88328f5","type":"FactorRange"},"x_scale":{"id":"4d8263db-8b4b-4bea-930c-db6cf6d9a484","type":"CategoricalScale"},"y_range":{"id":"f4463ec9-a0eb-4b11-b398-eb8fed19588d","type":"DataRange1d"},"y_scale":{"id":"7fe969f8-6115-4e1c-9d52-cd694432f247","type":"LinearScale"}},"id":"6efebf8e-add8-4a44-b646-fde978b1ef85","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"c84c1279-87eb-4d0b-9010-984edc5ca290","type":"ColumnDataSource"},"glyph":{"id":"a88d4f55-6688-411c-9857-f449d696e243","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e6494e5c-a96f-4d1a-8e50-9f62641c89e4","type":"Line"},"selection_glyph":null,"view":{"id":"3d4f957e-189d-4f39-bcef-84424c1f5781","type":"CDSView"}},"id":"e3212ff3-b0fb-43d9-bcde-25a1ce7d7002","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e6494e5c-a96f-4d1a-8e50-9f62641c89e4","type":"Line"},{"attributes":{"source":{"id":"c84c1279-87eb-4d0b-9010-984edc5ca290","type":"ColumnDataSource"}},"id":"e700a39b-2408-4f20-990c-58221449b975","type":"CDSView"},{"attributes":{"data_source":{"id":"c84c1279-87eb-4d0b-9010-984edc5ca290","type":"ColumnDataSource"},"glyph":{"id":"2fcb93ca-6025-46f8-bc27-c03b8833b7e0","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"dc0b0a65-9e9a-4ef5-b33f-cf11c6af9ee8","type":"VBar"},"selection_glyph":null,"view":{"id":"e700a39b-2408-4f20-990c-58221449b975","type":"CDSView"}},"id":"204be9b2-83af-43f6-b4ee-3ddcbc58afff","type":"GlyphRenderer"},{"attributes":{"source":{"id":"c84c1279-87eb-4d0b-9010-984edc5ca290","type":"ColumnDataSource"}},"id":"3d4f957e-189d-4f39-bcef-84424c1f5781","type":"CDSView"},{"attributes":{},"id":"4d8263db-8b4b-4bea-930c-db6cf6d9a484","type":"CategoricalScale"},{"attributes":{},"id":"9765dd31-dbba-4a93-b1d2-09ebc7068615","type":"CategoricalTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"332a1050-a22d-4623-b0af-703b5d16ca6f","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"3c48fc89-e8be-4f43-8139-7134367df937","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"3c48fc89-e8be-4f43-8139-7134367df937","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2fcb93ca-6025-46f8-bc27-c03b8833b7e0","type":"VBar"},{"attributes":{"formatter":{"id":"8b046ecc-3d3a-4f47-a8ef-1b2a1eb91420","type":"BasicTickFormatter"},"plot":{"id":"6efebf8e-add8-4a44-b646-fde978b1ef85","subtype":"Figure","type":"Plot"},"ticker":{"id":"ee2b3d42-3b62-4074-b856-10484a9c70e2","type":"BasicTicker"}},"id":"72c56583-d6e5-44fd-93e7-06780fd8b7f3","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Bernetz Brook","Battle of Carillon"],"cumulative":{"__ndarray__":"6yroRPjd4L8WiZ6DIYvxvw==","dtype":"float64","shape":[2]},"general":["George Howe, 3rd Viscount Howe","George Howe, 3rd Viscount Howe"],"outcome":["D","D"],"value":{"__ndarray__":"6yroRPjd4L9C51TCSjjivw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAB4m0AAAAAAAHibQA==","dtype":"float64","shape":[2]}}},"id":"c84c1279-87eb-4d0b-9010-984edc5ca290","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"6efebf8e-add8-4a44-b646-fde978b1ef85","subtype":"Figure","type":"Plot"},"ticker":{"id":"9765dd31-dbba-4a93-b1d2-09ebc7068615","type":"CategoricalTicker"}},"id":"f4808302-d510-4e89-962f-46b47b474b6d","type":"Grid"},{"attributes":{},"id":"7fe969f8-6115-4e1c-9d52-cd694432f247","type":"LinearScale"},{"attributes":{},"id":"ee2b3d42-3b62-4074-b856-10484a9c70e2","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"332a1050-a22d-4623-b0af-703b5d16ca6f","type":"HoverTool"}]},"id":"353cf705-eb42-46ab-bd38-dd3fb3e0afc2","type":"Toolbar"},{"attributes":{"plot":null,"text":"George Howe, 3rd Viscount Howe (0 - 0 - 2)"},"id":"e2fd47b7-1870-4e37-ae89-b353108320e6","type":"Title"},{"attributes":{"formatter":{"id":"b7190fbd-337d-4aca-85cf-00f5251cb843","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"6efebf8e-add8-4a44-b646-fde978b1ef85","subtype":"Figure","type":"Plot"},"ticker":{"id":"9765dd31-dbba-4a93-b1d2-09ebc7068615","type":"CategoricalTicker"}},"id":"2957a70a-c15a-4f2a-a486-17e4a201c05d","type":"CategoricalAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"3c48fc89-e8be-4f43-8139-7134367df937","type":"CategoricalColorMapper"},{"attributes":{},"id":"8b046ecc-3d3a-4f47-a8ef-1b2a1eb91420","type":"BasicTickFormatter"},{"attributes":{},"id":"b7190fbd-337d-4aca-85cf-00f5251cb843","type":"CategoricalTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a88d4f55-6688-411c-9857-f449d696e243","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"dc0b0a65-9e9a-4ef5-b33f-cf11c6af9ee8","type":"VBar"},{"attributes":{"callback":null},"id":"f4463ec9-a0eb-4b11-b398-eb8fed19588d","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"6efebf8e-add8-4a44-b646-fde978b1ef85","subtype":"Figure","type":"Plot"},"ticker":{"id":"ee2b3d42-3b62-4074-b856-10484a9c70e2","type":"BasicTicker"}},"id":"92dc2808-1e16-4ab6-bb7a-debf62e71b48","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Bernetz Brook","Battle of Carillon"]},"id":"65aa2f29-972a-435c-85dd-33d0b88328f5","type":"FactorRange"}],"root_ids":["6efebf8e-add8-4a44-b646-fde978b1ef85"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"bfdeb6f0-2d46-4944-9052-7c4e88e8c138","elementid":"9f395101-97c6-41f4-80d4-8ad3ad0361f7","modelid":"6efebf8e-add8-4a44-b646-fde978b1ef85"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

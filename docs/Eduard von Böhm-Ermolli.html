@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f188e16a-27f9-41ad-8493-624c936385a2"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"4fd5bbf0-e028-4c2f-89c8-8f5a8621cea3":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"c16f7e5a-19d6-44f3-99cc-41a4fb90b377","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"4f750b2a-383f-437f-aed2-35ac1cd03319","type":"HoverTool"},{"attributes":{"data_source":{"id":"dae29825-1326-4832-8648-1ae2d96a009d","type":"ColumnDataSource"},"glyph":{"id":"dffdb90b-a14f-4261-a6ee-f28d40bf664c","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"741d6ced-ce15-46b5-ba69-f5e3ffbcae9a","type":"Line"},"selection_glyph":null,"view":{"id":"0d334b71-50f8-4e9c-90c1-a3e733a90596","type":"CDSView"}},"id":"4385d566-3d78-4590-af44-206ceeeb74e4","type":"GlyphRenderer"},{"attributes":{},"id":"a66e0126-4a3f-473f-ad89-a225ff43ea88","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"c16f7e5a-19d6-44f3-99cc-41a4fb90b377","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"c16f7e5a-19d6-44f3-99cc-41a4fb90b377","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2e4e79e5-2ec3-456d-9ceb-af3c5d3f687f","type":"VBar"},{"attributes":{"formatter":{"id":"df8d3485-26e8-4d8b-bbf2-1cda441b2bdc","type":"BasicTickFormatter"},"plot":{"id":"7730c95d-8f8b-41a0-8ade-6b8044cf1c42","subtype":"Figure","type":"Plot"},"ticker":{"id":"c294efb3-246d-41a1-b71e-12db1e585af6","type":"BasicTicker"}},"id":"183c58f7-837c-46a3-ab01-8c5922ad844f","type":"LinearAxis"},{"attributes":{},"id":"8355e892-d3a5-4032-a811-735d7308133c","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"4f750b2a-383f-437f-aed2-35ac1cd03319","type":"HoverTool"}]},"id":"fdc545c5-70c1-48b3-ae46-9295ce261216","type":"Toolbar"},{"attributes":{},"id":"df8d3485-26e8-4d8b-bbf2-1cda441b2bdc","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"45f33dff-3730-4fd3-9f84-fff08ae45b6a","type":"DataRange1d"},{"attributes":{"source":{"id":"dae29825-1326-4832-8648-1ae2d96a009d","type":"ColumnDataSource"}},"id":"0d334b71-50f8-4e9c-90c1-a3e733a90596","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Galicia","Brusilov offensive","Battle of Zborov (1917)"],"cumulative":{"__ndarray__":"awwB1mlV37+OCR9argLvv8eEDy1Xgfe/","dtype":"float64","shape":[3]},"general":["Eduard von B\u00f6hm-Ermolli","Eduard von B\u00f6hm-Ermolli","Eduard von B\u00f6hm-Ermolli"],"outcome":["D","D","D"],"value":{"__ndarray__":"awwB1mlV37+wBj3e8q/evwAAAAAAAOC/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAADonUAAAAAAAPCdQAAAAAAA9J1A","dtype":"float64","shape":[3]}}},"id":"dae29825-1326-4832-8648-1ae2d96a009d","type":"ColumnDataSource"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"dffdb90b-a14f-4261-a6ee-f28d40bf664c","type":"Line"},{"attributes":{"plot":{"id":"7730c95d-8f8b-41a0-8ade-6b8044cf1c42","subtype":"Figure","type":"Plot"},"ticker":{"id":"8355e892-d3a5-4032-a811-735d7308133c","type":"CategoricalTicker"}},"id":"dc99a802-db50-4eb6-ba31-2038fba2dd07","type":"Grid"},{"attributes":{},"id":"035e32a5-c35c-4ff2-b8d8-9dec38f50e06","type":"CategoricalScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"741d6ced-ce15-46b5-ba69-f5e3ffbcae9a","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"7730c95d-8f8b-41a0-8ade-6b8044cf1c42","subtype":"Figure","type":"Plot"},"ticker":{"id":"c294efb3-246d-41a1-b71e-12db1e585af6","type":"BasicTicker"}},"id":"295a1147-a27f-4f7f-a595-c253b429ffa8","type":"Grid"},{"attributes":{"source":{"id":"dae29825-1326-4832-8648-1ae2d96a009d","type":"ColumnDataSource"}},"id":"3c74cc79-bd49-4cb3-b9bf-855a5fe9e8d8","type":"CDSView"},{"attributes":{"data_source":{"id":"dae29825-1326-4832-8648-1ae2d96a009d","type":"ColumnDataSource"},"glyph":{"id":"2e4e79e5-2ec3-456d-9ceb-af3c5d3f687f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1ca7e87a-5211-4c5b-84e5-068cca289834","type":"VBar"},"selection_glyph":null,"view":{"id":"3c74cc79-bd49-4cb3-b9bf-855a5fe9e8d8","type":"CDSView"}},"id":"557c01e8-3010-4a3d-b4ba-ac41c882345b","type":"GlyphRenderer"},{"attributes":{},"id":"c294efb3-246d-41a1-b71e-12db1e585af6","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"1ca7e87a-5211-4c5b-84e5-068cca289834","type":"VBar"},{"attributes":{"plot":null,"text":"Eduard von B\u00f6hm-Ermolli (0 - 0 - 3)"},"id":"d9683b61-2945-4ce8-b9a6-3c5217823be6","type":"Title"},{"attributes":{"callback":null,"factors":["Battle of Galicia","Brusilov offensive","Battle of Zborov (1917)"]},"id":"a247072b-df3f-4f6e-8698-3e74701b362a","type":"FactorRange"},{"attributes":{"below":[{"id":"631a242e-226b-486d-8fb1-9805ac224ab5","type":"CategoricalAxis"}],"left":[{"id":"183c58f7-837c-46a3-ab01-8c5922ad844f","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"631a242e-226b-486d-8fb1-9805ac224ab5","type":"CategoricalAxis"},{"id":"dc99a802-db50-4eb6-ba31-2038fba2dd07","type":"Grid"},{"id":"183c58f7-837c-46a3-ab01-8c5922ad844f","type":"LinearAxis"},{"id":"295a1147-a27f-4f7f-a595-c253b429ffa8","type":"Grid"},{"id":"4385d566-3d78-4590-af44-206ceeeb74e4","type":"GlyphRenderer"},{"id":"557c01e8-3010-4a3d-b4ba-ac41c882345b","type":"GlyphRenderer"}],"title":{"id":"d9683b61-2945-4ce8-b9a6-3c5217823be6","type":"Title"},"toolbar":{"id":"fdc545c5-70c1-48b3-ae46-9295ce261216","type":"Toolbar"},"x_range":{"id":"a247072b-df3f-4f6e-8698-3e74701b362a","type":"FactorRange"},"x_scale":{"id":"035e32a5-c35c-4ff2-b8d8-9dec38f50e06","type":"CategoricalScale"},"y_range":{"id":"45f33dff-3730-4fd3-9f84-fff08ae45b6a","type":"DataRange1d"},"y_scale":{"id":"a66e0126-4a3f-473f-ad89-a225ff43ea88","type":"LinearScale"}},"id":"7730c95d-8f8b-41a0-8ade-6b8044cf1c42","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"8409988d-4c46-4ec3-b0cf-2507df09afaf","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"7730c95d-8f8b-41a0-8ade-6b8044cf1c42","subtype":"Figure","type":"Plot"},"ticker":{"id":"8355e892-d3a5-4032-a811-735d7308133c","type":"CategoricalTicker"}},"id":"631a242e-226b-486d-8fb1-9805ac224ab5","type":"CategoricalAxis"},{"attributes":{},"id":"8409988d-4c46-4ec3-b0cf-2507df09afaf","type":"CategoricalTickFormatter"}],"root_ids":["7730c95d-8f8b-41a0-8ade-6b8044cf1c42"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"4fd5bbf0-e028-4c2f-89c8-8f5a8621cea3","elementid":"f188e16a-27f9-41ad-8493-624c936385a2","modelid":"7730c95d-8f8b-41a0-8ade-6b8044cf1c42"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

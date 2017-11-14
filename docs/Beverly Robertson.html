@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="3320ba57-0e70-4669-9d19-b2e89d993014"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"aeedb5b0-6703-467e-945a-2d8ad2891840":{"roots":{"references":[{"attributes":{},"id":"3fce8e81-ab4c-49cd-a7f7-2ce80d0711ce","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"a3b1f3a4-af0d-4538-a117-ec69d90f0c83","type":"HoverTool"},{"attributes":{"callback":null,"factors":["Battle of White Hall","Battle of Upperville"]},"id":"cc604588-e38d-4e11-b996-0779b20b9e55","type":"FactorRange"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"a3b1f3a4-af0d-4538-a117-ec69d90f0c83","type":"HoverTool"}]},"id":"74f652d0-31c2-448f-873d-630d1e828282","type":"Toolbar"},{"attributes":{"formatter":{"id":"5b785223-d452-4c91-8ec9-2287206619a5","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"b4a3b3e5-ee15-47ec-b905-7ada0407deb4","subtype":"Figure","type":"Plot"},"ticker":{"id":"dda04866-6184-4ee9-b25c-734494d8192e","type":"CategoricalTicker"}},"id":"4b586fec-beb8-4ddb-aa16-2667d766647a","type":"CategoricalAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"1895ce80-4d51-4017-92c7-e36b200af66e","type":"CategoricalColorMapper"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1e832d46-0c61-4aca-a583-27ac27e0c5df","type":"Line"},{"attributes":{"data_source":{"id":"51ae23e3-18ca-424d-a0d0-04074afbc241","type":"ColumnDataSource"},"glyph":{"id":"1e832d46-0c61-4aca-a583-27ac27e0c5df","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"fe112d5e-ad8a-42ae-ba11-a2a7a17e8504","type":"Line"},"selection_glyph":null,"view":{"id":"9eea83ee-caa2-4799-ba36-268b7448fa5e","type":"CDSView"}},"id":"30aa2fba-5936-4a16-bab9-c855ac6e8071","type":"GlyphRenderer"},{"attributes":{"source":{"id":"51ae23e3-18ca-424d-a0d0-04074afbc241","type":"ColumnDataSource"}},"id":"9eea83ee-caa2-4799-ba36-268b7448fa5e","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"1895ce80-4d51-4017-92c7-e36b200af66e","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"1895ce80-4d51-4017-92c7-e36b200af66e","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"827352e2-fb30-49cc-a722-7725b5681fab","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of White Hall","Battle of Upperville"],"cumulative":{"__ndarray__":"QBKAMHcmuT9AEoAwdya5Pw==","dtype":"float64","shape":[2]},"general":["Beverly Robertson","Beverly Robertson"],"outcome":["I","I"],"value":{"__ndarray__":"QBKAMHcmuT8AAAAAAAAAAA==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAAYnUAAAAAAABydQA==","dtype":"float64","shape":[2]}}},"id":"51ae23e3-18ca-424d-a0d0-04074afbc241","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"b4a3b3e5-ee15-47ec-b905-7ada0407deb4","subtype":"Figure","type":"Plot"},"ticker":{"id":"dda04866-6184-4ee9-b25c-734494d8192e","type":"CategoricalTicker"}},"id":"1af44883-f173-47f7-bd44-cb4280b75e75","type":"Grid"},{"attributes":{},"id":"dda04866-6184-4ee9-b25c-734494d8192e","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"0e8efb61-0196-460f-9196-85f810296f97","type":"BasicTickFormatter"},"plot":{"id":"b4a3b3e5-ee15-47ec-b905-7ada0407deb4","subtype":"Figure","type":"Plot"},"ticker":{"id":"3fce8e81-ab4c-49cd-a7f7-2ce80d0711ce","type":"BasicTicker"}},"id":"5203be33-fe61-4202-9e47-5c98166e8e33","type":"LinearAxis"},{"attributes":{"dimension":1,"plot":{"id":"b4a3b3e5-ee15-47ec-b905-7ada0407deb4","subtype":"Figure","type":"Plot"},"ticker":{"id":"3fce8e81-ab4c-49cd-a7f7-2ce80d0711ce","type":"BasicTicker"}},"id":"c41957f5-19f4-4824-8e8a-56168a4a72f9","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"049776a1-4e44-4860-be00-79dcef23fcbf","type":"VBar"},{"attributes":{},"id":"955c3fca-fb13-478d-8dd2-564b5c08b30b","type":"LinearScale"},{"attributes":{"data_source":{"id":"51ae23e3-18ca-424d-a0d0-04074afbc241","type":"ColumnDataSource"},"glyph":{"id":"827352e2-fb30-49cc-a722-7725b5681fab","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"049776a1-4e44-4860-be00-79dcef23fcbf","type":"VBar"},"selection_glyph":null,"view":{"id":"1cf1fb1c-a773-4b05-acce-a904476e8746","type":"CDSView"}},"id":"c5e3e310-adf5-4f76-a8aa-c32248955b32","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"fe112d5e-ad8a-42ae-ba11-a2a7a17e8504","type":"Line"},{"attributes":{"source":{"id":"51ae23e3-18ca-424d-a0d0-04074afbc241","type":"ColumnDataSource"}},"id":"1cf1fb1c-a773-4b05-acce-a904476e8746","type":"CDSView"},{"attributes":{},"id":"cce55ef1-aac2-468d-a417-9b089dace8a8","type":"CategoricalScale"},{"attributes":{},"id":"0e8efb61-0196-460f-9196-85f810296f97","type":"BasicTickFormatter"},{"attributes":{},"id":"5b785223-d452-4c91-8ec9-2287206619a5","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"Beverly Robertson (0 - 2 - 0)"},"id":"69ebf027-70dd-42ae-a981-0515e212d3c8","type":"Title"},{"attributes":{"below":[{"id":"4b586fec-beb8-4ddb-aa16-2667d766647a","type":"CategoricalAxis"}],"left":[{"id":"5203be33-fe61-4202-9e47-5c98166e8e33","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"4b586fec-beb8-4ddb-aa16-2667d766647a","type":"CategoricalAxis"},{"id":"1af44883-f173-47f7-bd44-cb4280b75e75","type":"Grid"},{"id":"5203be33-fe61-4202-9e47-5c98166e8e33","type":"LinearAxis"},{"id":"c41957f5-19f4-4824-8e8a-56168a4a72f9","type":"Grid"},{"id":"30aa2fba-5936-4a16-bab9-c855ac6e8071","type":"GlyphRenderer"},{"id":"c5e3e310-adf5-4f76-a8aa-c32248955b32","type":"GlyphRenderer"}],"title":{"id":"69ebf027-70dd-42ae-a981-0515e212d3c8","type":"Title"},"toolbar":{"id":"74f652d0-31c2-448f-873d-630d1e828282","type":"Toolbar"},"x_range":{"id":"cc604588-e38d-4e11-b996-0779b20b9e55","type":"FactorRange"},"x_scale":{"id":"cce55ef1-aac2-468d-a417-9b089dace8a8","type":"CategoricalScale"},"y_range":{"id":"9a1762cc-63d0-4723-9393-36d3045bd46d","type":"DataRange1d"},"y_scale":{"id":"955c3fca-fb13-478d-8dd2-564b5c08b30b","type":"LinearScale"}},"id":"b4a3b3e5-ee15-47ec-b905-7ada0407deb4","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null},"id":"9a1762cc-63d0-4723-9393-36d3045bd46d","type":"DataRange1d"}],"root_ids":["b4a3b3e5-ee15-47ec-b905-7ada0407deb4"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"aeedb5b0-6703-467e-945a-2d8ad2891840","elementid":"3320ba57-0e70-4669-9d19-b2e89d993014","modelid":"b4a3b3e5-ee15-47ec-b905-7ada0407deb4"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

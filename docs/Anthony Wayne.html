@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c56a09a2-82e1-4a43-9c81-17bec9256dfa"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"9d05c097-1358-43e7-91af-435518fc8d99":{"roots":{"references":[{"attributes":{"callback":null},"id":"bf49a5ea-ef1e-4dcd-ad34-16d6ea1a21f0","type":"DataRange1d"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Brandywine","Battle of Stony Point","Battle of Fallen Timbers"],"cumulative":{"__ndarray__":"yDbaamvm378AVOw1yW2hv4D+44Onud0/","dtype":"float64","shape":[3]},"general":["Anthony Wayne","Anthony Wayne","Anthony Wayne"],"outcome":["D","V","V"],"value":{"__ndarray__":"yDbaamvm379IrBxEsrjdPwCJoapg598/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAADEm0AAAAAAAMybQAAAAAAACJxA","dtype":"float64","shape":[3]}}},"id":"16c79c70-e00c-4fbb-b17d-42f2c9cd34fa","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"cbdb4a11-76cd-4ff0-b206-502ad2d7798f","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"d7693281-cba9-4fd4-8cfd-b81b91046450","subtype":"Figure","type":"Plot"},"ticker":{"id":"2863de26-a341-45ef-8522-5f3e120d7186","type":"CategoricalTicker"}},"id":"195c40a8-a89a-495c-a0dc-4538293d818f","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"16c79c70-e00c-4fbb-b17d-42f2c9cd34fa","type":"ColumnDataSource"},"glyph":{"id":"0cb9ac0c-98f5-4dc0-bab5-14672c8e37c9","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c6a7f504-13de-4e47-8e3b-8a4551365e0a","type":"Line"},"selection_glyph":null,"view":{"id":"aad441d6-bcfc-47be-b1e3-d830e2ac3259","type":"CDSView"}},"id":"2d13063c-29f6-4e28-ae6f-d248f4086d23","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"406df15f-44c7-4912-a301-ed295e6b3745","type":"HoverTool"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"c6a7f504-13de-4e47-8e3b-8a4551365e0a","type":"Line"},{"attributes":{},"id":"cbdb4a11-76cd-4ff0-b206-502ad2d7798f","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"16c79c70-e00c-4fbb-b17d-42f2c9cd34fa","type":"ColumnDataSource"},"glyph":{"id":"570ef71c-57f2-4e50-83d9-d2c059533ac6","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1ae0f812-e733-4fdc-8283-f4da21e70261","type":"VBar"},"selection_glyph":null,"view":{"id":"7d1143da-7a67-4154-9e04-a9d097a73b86","type":"CDSView"}},"id":"a892bc6c-f30e-44d2-ad6c-a310bf721f13","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"195c40a8-a89a-495c-a0dc-4538293d818f","type":"CategoricalAxis"}],"left":[{"id":"e93fddda-0119-43ef-801b-21abda6b07d5","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"195c40a8-a89a-495c-a0dc-4538293d818f","type":"CategoricalAxis"},{"id":"321a29bb-53a4-4592-ac7c-2a1d8e68a9ab","type":"Grid"},{"id":"e93fddda-0119-43ef-801b-21abda6b07d5","type":"LinearAxis"},{"id":"2f7668d0-23dc-4e29-81f6-fd09278afa3b","type":"Grid"},{"id":"2d13063c-29f6-4e28-ae6f-d248f4086d23","type":"GlyphRenderer"},{"id":"a892bc6c-f30e-44d2-ad6c-a310bf721f13","type":"GlyphRenderer"}],"title":{"id":"3580a0b4-5da0-44cd-aeaf-24cd99724554","type":"Title"},"toolbar":{"id":"500da4f1-01d3-461f-a4c8-e4d6611d2257","type":"Toolbar"},"x_range":{"id":"cf99903d-695f-4653-84ef-a83f45c7061a","type":"FactorRange"},"x_scale":{"id":"caf5870c-7df3-442a-b190-3dfc9784f0a1","type":"CategoricalScale"},"y_range":{"id":"bf49a5ea-ef1e-4dcd-ad34-16d6ea1a21f0","type":"DataRange1d"},"y_scale":{"id":"279ed3ec-9a55-44a7-8373-86a1851cfb9b","type":"LinearScale"}},"id":"d7693281-cba9-4fd4-8cfd-b81b91046450","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"4df27a22-7043-4590-9483-e7b1656e0146","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"16c79c70-e00c-4fbb-b17d-42f2c9cd34fa","type":"ColumnDataSource"}},"id":"7d1143da-7a67-4154-9e04-a9d097a73b86","type":"CDSView"},{"attributes":{},"id":"2863de26-a341-45ef-8522-5f3e120d7186","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"d7693281-cba9-4fd4-8cfd-b81b91046450","subtype":"Figure","type":"Plot"},"ticker":{"id":"055804e2-e16d-47ff-baab-375c76cf1e88","type":"BasicTicker"}},"id":"2f7668d0-23dc-4e29-81f6-fd09278afa3b","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Brandywine","Battle of Stony Point","Battle of Fallen Timbers"]},"id":"cf99903d-695f-4653-84ef-a83f45c7061a","type":"FactorRange"},{"attributes":{},"id":"caf5870c-7df3-442a-b190-3dfc9784f0a1","type":"CategoricalScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0cb9ac0c-98f5-4dc0-bab5-14672c8e37c9","type":"Line"},{"attributes":{},"id":"279ed3ec-9a55-44a7-8373-86a1851cfb9b","type":"LinearScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"6252d8be-0e59-4174-bb21-f7fbe5fdc8a8","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"1ae0f812-e733-4fdc-8283-f4da21e70261","type":"VBar"},{"attributes":{"plot":{"id":"d7693281-cba9-4fd4-8cfd-b81b91046450","subtype":"Figure","type":"Plot"},"ticker":{"id":"2863de26-a341-45ef-8522-5f3e120d7186","type":"CategoricalTicker"}},"id":"321a29bb-53a4-4592-ac7c-2a1d8e68a9ab","type":"Grid"},{"attributes":{"plot":null,"text":"Anthony Wayne (2 - 0 - 1)"},"id":"3580a0b4-5da0-44cd-aeaf-24cd99724554","type":"Title"},{"attributes":{"source":{"id":"16c79c70-e00c-4fbb-b17d-42f2c9cd34fa","type":"ColumnDataSource"}},"id":"aad441d6-bcfc-47be-b1e3-d830e2ac3259","type":"CDSView"},{"attributes":{"formatter":{"id":"4df27a22-7043-4590-9483-e7b1656e0146","type":"BasicTickFormatter"},"plot":{"id":"d7693281-cba9-4fd4-8cfd-b81b91046450","subtype":"Figure","type":"Plot"},"ticker":{"id":"055804e2-e16d-47ff-baab-375c76cf1e88","type":"BasicTicker"}},"id":"e93fddda-0119-43ef-801b-21abda6b07d5","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"6252d8be-0e59-4174-bb21-f7fbe5fdc8a8","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"6252d8be-0e59-4174-bb21-f7fbe5fdc8a8","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"570ef71c-57f2-4e50-83d9-d2c059533ac6","type":"VBar"},{"attributes":{},"id":"055804e2-e16d-47ff-baab-375c76cf1e88","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"406df15f-44c7-4912-a301-ed295e6b3745","type":"HoverTool"}]},"id":"500da4f1-01d3-461f-a4c8-e4d6611d2257","type":"Toolbar"}],"root_ids":["d7693281-cba9-4fd4-8cfd-b81b91046450"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"9d05c097-1358-43e7-91af-435518fc8d99","elementid":"c56a09a2-82e1-4a43-9c81-17bec9256dfa","modelid":"d7693281-cba9-4fd4-8cfd-b81b91046450"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

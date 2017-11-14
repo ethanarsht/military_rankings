@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="51970565-792e-4005-ba97-1e2a92ff76e1"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"ad779a5e-62e9-4724-8199-885502f37323":{"roots":{"references":[{"attributes":{"data_source":{"id":"aec2f09a-2506-4e2f-bcea-3563b3c40dee","type":"ColumnDataSource"},"glyph":{"id":"080d4d9a-04f0-400b-8229-cfb79827ba09","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"50fc1097-59b4-4056-b8f0-4426b5ac631f","type":"Line"},"selection_glyph":null,"view":{"id":"ca0d9181-478a-4103-885c-66fcf57b19a6","type":"CDSView"}},"id":"3fa8f448-aaf4-4b9b-8890-b2ad52e9468d","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Bear Paw","Battle of the Big Hole","Battle of the Clearwater"],"cumulative":{"__ndarray__":"LKYnpUEw3b8Bo5jhEDDdvzaXUyfuAe2/","dtype":"float64","shape":[3]},"general":["Chief Joseph","Chief Joseph","Chief Joseph"],"outcome":["D","I","D"],"value":{"__ndarray__":"LKYnpUEw3b8AgJWBx2HoPmuLDm3L09y/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABUnUAAAAAAAFSdQAAAAAAAVJ1A","dtype":"float64","shape":[3]}}},"id":"aec2f09a-2506-4e2f-bcea-3563b3c40dee","type":"ColumnDataSource"},{"attributes":{},"id":"5486ce1d-b5de-4e37-9428-42dacf081848","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4874891f-995a-4155-b912-d368d1ebd5f5","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4874891f-995a-4155-b912-d368d1ebd5f5","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d7b04466-e595-48d1-9eba-015fc0eab8b4","type":"VBar"},{"attributes":{"callback":null},"id":"b4ade014-76a9-40bc-8d8f-2da3606658c9","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Chief Joseph (0 - 1 - 2)"},"id":"3becaf8a-3836-4453-81db-22241bb19d33","type":"Title"},{"attributes":{"formatter":{"id":"5486ce1d-b5de-4e37-9428-42dacf081848","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"cc79632d-e186-4c6f-9dd0-2fac5eff2315","subtype":"Figure","type":"Plot"},"ticker":{"id":"3353b778-6a09-42dd-b99b-934e787c9b2f","type":"CategoricalTicker"}},"id":"f922c45c-97c0-4fa5-86cd-1b359f34fbac","type":"CategoricalAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"c3b53227-c9c0-448a-9ad6-8f75eda4bd9f","type":"HoverTool"},{"attributes":{"formatter":{"id":"f03dfcea-6d59-48c8-8079-b8649431722c","type":"BasicTickFormatter"},"plot":{"id":"cc79632d-e186-4c6f-9dd0-2fac5eff2315","subtype":"Figure","type":"Plot"},"ticker":{"id":"ab2acf42-f863-4d2e-a122-de8c26f42933","type":"BasicTicker"}},"id":"1b68cd1d-46a9-4c3f-96fe-543fd205b341","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7b58a170-ed38-429c-b33d-2cd2f60676bf","type":"VBar"},{"attributes":{"source":{"id":"aec2f09a-2506-4e2f-bcea-3563b3c40dee","type":"ColumnDataSource"}},"id":"ca0d9181-478a-4103-885c-66fcf57b19a6","type":"CDSView"},{"attributes":{"data_source":{"id":"aec2f09a-2506-4e2f-bcea-3563b3c40dee","type":"ColumnDataSource"},"glyph":{"id":"d7b04466-e595-48d1-9eba-015fc0eab8b4","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7b58a170-ed38-429c-b33d-2cd2f60676bf","type":"VBar"},"selection_glyph":null,"view":{"id":"dbfe35c6-4898-438e-8e9b-3c23e35d3ac5","type":"CDSView"}},"id":"44c69e19-d64b-4b24-ab6a-2662b8167429","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"50fc1097-59b4-4056-b8f0-4426b5ac631f","type":"Line"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"080d4d9a-04f0-400b-8229-cfb79827ba09","type":"Line"},{"attributes":{},"id":"4037bff3-ebc7-4ba6-acea-1bad649f65fa","type":"CategoricalScale"},{"attributes":{},"id":"f03dfcea-6d59-48c8-8079-b8649431722c","type":"BasicTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4874891f-995a-4155-b912-d368d1ebd5f5","type":"CategoricalColorMapper"},{"attributes":{},"id":"9b5da5a4-5608-40bb-bb9c-70a9e27ce44d","type":"LinearScale"},{"attributes":{},"id":"3353b778-6a09-42dd-b99b-934e787c9b2f","type":"CategoricalTicker"},{"attributes":{},"id":"ab2acf42-f863-4d2e-a122-de8c26f42933","type":"BasicTicker"},{"attributes":{"source":{"id":"aec2f09a-2506-4e2f-bcea-3563b3c40dee","type":"ColumnDataSource"}},"id":"dbfe35c6-4898-438e-8e9b-3c23e35d3ac5","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"c3b53227-c9c0-448a-9ad6-8f75eda4bd9f","type":"HoverTool"}]},"id":"9a73011c-7458-4b07-bd36-e4ddd8eec059","type":"Toolbar"},{"attributes":{"plot":{"id":"cc79632d-e186-4c6f-9dd0-2fac5eff2315","subtype":"Figure","type":"Plot"},"ticker":{"id":"3353b778-6a09-42dd-b99b-934e787c9b2f","type":"CategoricalTicker"}},"id":"0cf7dcd5-2e77-4441-985d-14553318add1","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"cc79632d-e186-4c6f-9dd0-2fac5eff2315","subtype":"Figure","type":"Plot"},"ticker":{"id":"ab2acf42-f863-4d2e-a122-de8c26f42933","type":"BasicTicker"}},"id":"715af9b1-b073-4fac-ad53-5ce9428c7590","type":"Grid"},{"attributes":{"below":[{"id":"f922c45c-97c0-4fa5-86cd-1b359f34fbac","type":"CategoricalAxis"}],"left":[{"id":"1b68cd1d-46a9-4c3f-96fe-543fd205b341","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"f922c45c-97c0-4fa5-86cd-1b359f34fbac","type":"CategoricalAxis"},{"id":"0cf7dcd5-2e77-4441-985d-14553318add1","type":"Grid"},{"id":"1b68cd1d-46a9-4c3f-96fe-543fd205b341","type":"LinearAxis"},{"id":"715af9b1-b073-4fac-ad53-5ce9428c7590","type":"Grid"},{"id":"3fa8f448-aaf4-4b9b-8890-b2ad52e9468d","type":"GlyphRenderer"},{"id":"44c69e19-d64b-4b24-ab6a-2662b8167429","type":"GlyphRenderer"}],"title":{"id":"3becaf8a-3836-4453-81db-22241bb19d33","type":"Title"},"toolbar":{"id":"9a73011c-7458-4b07-bd36-e4ddd8eec059","type":"Toolbar"},"x_range":{"id":"75019702-0717-4ece-a6cc-77ac3050e964","type":"FactorRange"},"x_scale":{"id":"4037bff3-ebc7-4ba6-acea-1bad649f65fa","type":"CategoricalScale"},"y_range":{"id":"b4ade014-76a9-40bc-8d8f-2da3606658c9","type":"DataRange1d"},"y_scale":{"id":"9b5da5a4-5608-40bb-bb9c-70a9e27ce44d","type":"LinearScale"}},"id":"cc79632d-e186-4c6f-9dd0-2fac5eff2315","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Bear Paw","Battle of the Big Hole","Battle of the Clearwater"]},"id":"75019702-0717-4ece-a6cc-77ac3050e964","type":"FactorRange"}],"root_ids":["cc79632d-e186-4c6f-9dd0-2fac5eff2315"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"ad779a5e-62e9-4724-8199-885502f37323","elementid":"51970565-792e-4005-ba97-1e2a92ff76e1","modelid":"cc79632d-e186-4c6f-9dd0-2fac5eff2315"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

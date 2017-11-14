@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="20cc9805-ad88-4e80-9557-dd366785dc11"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b915ba6f-2020-4c10-af94-12e78a53bb1a":{"roots":{"references":[{"attributes":{},"id":"9e8217c7-aad8-47b6-bfbe-2456e3200d0c","type":"BasicTickFormatter"},{"attributes":{},"id":"2d750190-752a-41b4-9167-64009ee7e11c","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Dominguez Rancho","Battle of Petsamo (1939)"]},"id":"96095978-b4d2-4ea7-879f-5b5a5939be0e","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9e80c1d7-6841-43a2-a7b0-e242eb649876","type":"VBar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"759f9e9b-8e71-436c-aa43-1a1181872fc0","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"3f002e85-b9d1-4538-b05a-c87d41a4fd08","subtype":"Figure","type":"Plot"},"ticker":{"id":"c62d127a-8b56-485e-b922-cc25539c7353","type":"BasicTicker"}},"id":"3cf3fdbe-1b4b-4fd9-982d-1b158a15dbbf","type":"Grid"},{"attributes":{"data_source":{"id":"918875b7-039b-4f4f-a797-77155610bb7c","type":"ColumnDataSource"},"glyph":{"id":"db597563-a2b4-43c2-8945-05e59aad2326","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9e80c1d7-6841-43a2-a7b0-e242eb649876","type":"VBar"},"selection_glyph":null,"view":{"id":"10abf0ef-00a4-46a2-8927-b3480cc3c6af","type":"CDSView"}},"id":"95227cb9-38b5-43c4-a0cc-9b6cfd743646","type":"GlyphRenderer"},{"attributes":{},"id":"9acc9bd7-bc04-48c2-9465-c3205b70d8cf","type":"LinearScale"},{"attributes":{"formatter":{"id":"9e8217c7-aad8-47b6-bfbe-2456e3200d0c","type":"BasicTickFormatter"},"plot":{"id":"3f002e85-b9d1-4538-b05a-c87d41a4fd08","subtype":"Figure","type":"Plot"},"ticker":{"id":"c62d127a-8b56-485e-b922-cc25539c7353","type":"BasicTicker"}},"id":"e802311b-2dd0-4c32-bdad-535ba1c208b8","type":"LinearAxis"},{"attributes":{},"id":"44cca890-f586-4e60-8773-0a4a0a1016f0","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"2d750190-752a-41b4-9167-64009ee7e11c","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"3f002e85-b9d1-4538-b05a-c87d41a4fd08","subtype":"Figure","type":"Plot"},"ticker":{"id":"ad2f94b3-5d6d-4ca2-beb0-23e30a93cec4","type":"CategoricalTicker"}},"id":"79c1eae7-988d-4625-964f-04d75494daba","type":"CategoricalAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f79cbca1-02ec-4148-91f8-ef13f4b4e1a2","type":"HoverTool"},{"attributes":{"plot":{"id":"3f002e85-b9d1-4538-b05a-c87d41a4fd08","subtype":"Figure","type":"Plot"},"ticker":{"id":"ad2f94b3-5d6d-4ca2-beb0-23e30a93cec4","type":"CategoricalTicker"}},"id":"0e1ae95a-69a1-4be1-ae75-8cde86be14ea","type":"Grid"},{"attributes":{"data_source":{"id":"918875b7-039b-4f4f-a797-77155610bb7c","type":"ColumnDataSource"},"glyph":{"id":"9086acc1-f5d4-4c3f-9765-b358f78baedd","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"759f9e9b-8e71-436c-aa43-1a1181872fc0","type":"Line"},"selection_glyph":null,"view":{"id":"99e59834-3901-432f-bdd1-b001fc3c4f32","type":"CDSView"}},"id":"1ff839a4-2680-4839-9ebe-ee98a662c308","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"79c1eae7-988d-4625-964f-04d75494daba","type":"CategoricalAxis"}],"left":[{"id":"e802311b-2dd0-4c32-bdad-535ba1c208b8","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"79c1eae7-988d-4625-964f-04d75494daba","type":"CategoricalAxis"},{"id":"0e1ae95a-69a1-4be1-ae75-8cde86be14ea","type":"Grid"},{"id":"e802311b-2dd0-4c32-bdad-535ba1c208b8","type":"LinearAxis"},{"id":"3cf3fdbe-1b4b-4fd9-982d-1b158a15dbbf","type":"Grid"},{"id":"1ff839a4-2680-4839-9ebe-ee98a662c308","type":"GlyphRenderer"},{"id":"95227cb9-38b5-43c4-a0cc-9b6cfd743646","type":"GlyphRenderer"}],"title":{"id":"7999a265-d2b0-4d9e-a9bd-88d7718deba0","type":"Title"},"toolbar":{"id":"b5e51de4-acb8-4a19-8718-4b5afe01fb86","type":"Toolbar"},"x_range":{"id":"96095978-b4d2-4ea7-879f-5b5a5939be0e","type":"FactorRange"},"x_scale":{"id":"44cca890-f586-4e60-8773-0a4a0a1016f0","type":"CategoricalScale"},"y_range":{"id":"587b3e2e-34c4-4f00-867b-0c054f76619d","type":"DataRange1d"},"y_scale":{"id":"9acc9bd7-bc04-48c2-9465-c3205b70d8cf","type":"LinearScale"}},"id":"3f002e85-b9d1-4538-b05a-c87d41a4fd08","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"ad2f94b3-5d6d-4ca2-beb0-23e30a93cec4","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f79cbca1-02ec-4148-91f8-ef13f4b4e1a2","type":"HoverTool"}]},"id":"b5e51de4-acb8-4a19-8718-4b5afe01fb86","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"3eeae0cf-ac11-4308-bffe-a5704340a39e","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"3eeae0cf-ac11-4308-bffe-a5704340a39e","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"db597563-a2b4-43c2-8945-05e59aad2326","type":"VBar"},{"attributes":{},"id":"c62d127a-8b56-485e-b922-cc25539c7353","type":"BasicTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9086acc1-f5d4-4c3f-9765-b358f78baedd","type":"Line"},{"attributes":{"plot":null,"text":"Captain (armed forces) (0 - 0 - 2)"},"id":"7999a265-d2b0-4d9e-a9bd-88d7718deba0","type":"Title"},{"attributes":{"source":{"id":"918875b7-039b-4f4f-a797-77155610bb7c","type":"ColumnDataSource"}},"id":"10abf0ef-00a4-46a2-8927-b3480cc3c6af","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Dominguez Rancho","Battle of Petsamo (1939)"],"cumulative":{"__ndarray__":"83h50hC/4b96vDxpiN/wvw==","dtype":"float64","shape":[2]},"general":["Captain (armed forces)","Captain (armed forces)"],"outcome":["D","D"],"value":{"__ndarray__":"83h50hC/4b8AAAAAAADgvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAADYnEAAAAAAAEyeQA==","dtype":"float64","shape":[2]}}},"id":"918875b7-039b-4f4f-a797-77155610bb7c","type":"ColumnDataSource"},{"attributes":{"source":{"id":"918875b7-039b-4f4f-a797-77155610bb7c","type":"ColumnDataSource"}},"id":"99e59834-3901-432f-bdd1-b001fc3c4f32","type":"CDSView"},{"attributes":{"callback":null},"id":"587b3e2e-34c4-4f00-867b-0c054f76619d","type":"DataRange1d"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"3eeae0cf-ac11-4308-bffe-a5704340a39e","type":"CategoricalColorMapper"}],"root_ids":["3f002e85-b9d1-4538-b05a-c87d41a4fd08"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b915ba6f-2020-4c10-af94-12e78a53bb1a","elementid":"20cc9805-ad88-4e80-9557-dd366785dc11","modelid":"3f002e85-b9d1-4538-b05a-c87d41a4fd08"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

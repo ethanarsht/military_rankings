@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="fcae14cb-0a2f-499f-9e69-1cdd95fc8261"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"2ed8d677-4b97-483e-8669-cc6b49b31bd0":{"roots":{"references":[{"attributes":{},"id":"db0b687b-db69-4174-bb9e-690194efe362","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f4293aef-e444-4bbc-b1ce-cd0a35fdb1b8","type":"CategoricalColorMapper"},{"attributes":{"callback":null},"id":"69afe17c-73d3-46c7-8ab5-b819d7dde8e2","type":"DataRange1d"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"5ea900ee-2eed-4632-b73c-5108cca20410","type":"HoverTool"},{"attributes":{"callback":null,"factors":["Battle of Helsingborg","Battle of Gadebusch"]},"id":"67a1164b-0110-49ae-9efb-46b122a06001","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9b1bbed5-bc67-4d99-9d3d-052a4404c3d3","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1fe3d9df-e5ec-4b4d-8879-5420560f2e57","type":"Line"},{"attributes":{},"id":"e13e02c0-1b2b-4726-8fdc-90073ba07e27","type":"CategoricalScale"},{"attributes":{"source":{"id":"0db68742-ec1c-439e-8af8-514e8bcd2fcc","type":"ColumnDataSource"}},"id":"fec81d44-b37d-4fd6-aaf4-da2d24d00ef2","type":"CDSView"},{"attributes":{"plot":{"id":"f2f74183-f409-4836-9949-03ad1b5f9d5c","subtype":"Figure","type":"Plot"},"ticker":{"id":"db0b687b-db69-4174-bb9e-690194efe362","type":"CategoricalTicker"}},"id":"a5dc89b1-fb57-4c3e-bcda-80358356fd44","type":"Grid"},{"attributes":{"plot":null,"text":"Magnus Stenbock (1 - 0 - 1)"},"id":"5f19cc42-b276-422d-a08e-abc6b88f0d22","type":"Title"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f4293aef-e444-4bbc-b1ce-cd0a35fdb1b8","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f4293aef-e444-4bbc-b1ce-cd0a35fdb1b8","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"fa715321-7696-403a-89e1-f4eda2520774","type":"VBar"},{"attributes":{"data_source":{"id":"0db68742-ec1c-439e-8af8-514e8bcd2fcc","type":"ColumnDataSource"},"glyph":{"id":"1fe3d9df-e5ec-4b4d-8879-5420560f2e57","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d79fe6f5-64c1-426e-9482-8cf7cda14d0f","type":"Line"},"selection_glyph":null,"view":{"id":"fec81d44-b37d-4fd6-aaf4-da2d24d00ef2","type":"CDSView"}},"id":"5a1a5042-b2b2-43a8-8d9e-86cef55745a6","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"9f56ad13-0092-4350-a369-0422f21b8470","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"f2f74183-f409-4836-9949-03ad1b5f9d5c","subtype":"Figure","type":"Plot"},"ticker":{"id":"db0b687b-db69-4174-bb9e-690194efe362","type":"CategoricalTicker"}},"id":"1f974bd4-dfa6-48ac-928d-a54623186de4","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"0db68742-ec1c-439e-8af8-514e8bcd2fcc","type":"ColumnDataSource"},"glyph":{"id":"fa715321-7696-403a-89e1-f4eda2520774","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9b1bbed5-bc67-4d99-9d3d-052a4404c3d3","type":"VBar"},"selection_glyph":null,"view":{"id":"cd7802b4-4ea9-40e4-bfd6-047e0e0b70a7","type":"CDSView"}},"id":"a42196cc-0f42-46b6-887b-cccaf815bbb3","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d79fe6f5-64c1-426e-9482-8cf7cda14d0f","type":"Line"},{"attributes":{},"id":"b8fb333e-ab77-4934-8fac-7966d9bd1df7","type":"LinearScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"5ea900ee-2eed-4632-b73c-5108cca20410","type":"HoverTool"}]},"id":"b5b41bb3-4d99-4c0b-9b9d-9d205c655509","type":"Toolbar"},{"attributes":{"dimension":1,"plot":{"id":"f2f74183-f409-4836-9949-03ad1b5f9d5c","subtype":"Figure","type":"Plot"},"ticker":{"id":"a86626e6-a8f4-4bf2-85dd-3905c2373d2d","type":"BasicTicker"}},"id":"547784b3-0c32-45f8-94d1-fb9d2e32014c","type":"Grid"},{"attributes":{},"id":"bb8b2e2d-97c7-427e-910c-634cfbf43cdf","type":"BasicTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Helsingborg","Battle of Gadebusch"],"cumulative":{"__ndarray__":"HD1Ng8Qc4D+A20Vq0HSTPw==","dtype":"float64","shape":[2]},"general":["Magnus Stenbock","Magnus Stenbock"],"outcome":["V","D"],"value":{"__ndarray__":"HD1Ng8Qc4D+AHPb/OwLfvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAC4mkAAAAAAAMCaQA==","dtype":"float64","shape":[2]}}},"id":"0db68742-ec1c-439e-8af8-514e8bcd2fcc","type":"ColumnDataSource"},{"attributes":{"source":{"id":"0db68742-ec1c-439e-8af8-514e8bcd2fcc","type":"ColumnDataSource"}},"id":"cd7802b4-4ea9-40e4-bfd6-047e0e0b70a7","type":"CDSView"},{"attributes":{},"id":"a86626e6-a8f4-4bf2-85dd-3905c2373d2d","type":"BasicTicker"},{"attributes":{"formatter":{"id":"bb8b2e2d-97c7-427e-910c-634cfbf43cdf","type":"BasicTickFormatter"},"plot":{"id":"f2f74183-f409-4836-9949-03ad1b5f9d5c","subtype":"Figure","type":"Plot"},"ticker":{"id":"a86626e6-a8f4-4bf2-85dd-3905c2373d2d","type":"BasicTicker"}},"id":"64f918c6-258e-434c-a16e-6f97473f74fd","type":"LinearAxis"},{"attributes":{"below":[{"id":"1f974bd4-dfa6-48ac-928d-a54623186de4","type":"CategoricalAxis"}],"left":[{"id":"64f918c6-258e-434c-a16e-6f97473f74fd","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"1f974bd4-dfa6-48ac-928d-a54623186de4","type":"CategoricalAxis"},{"id":"a5dc89b1-fb57-4c3e-bcda-80358356fd44","type":"Grid"},{"id":"64f918c6-258e-434c-a16e-6f97473f74fd","type":"LinearAxis"},{"id":"547784b3-0c32-45f8-94d1-fb9d2e32014c","type":"Grid"},{"id":"5a1a5042-b2b2-43a8-8d9e-86cef55745a6","type":"GlyphRenderer"},{"id":"a42196cc-0f42-46b6-887b-cccaf815bbb3","type":"GlyphRenderer"}],"title":{"id":"5f19cc42-b276-422d-a08e-abc6b88f0d22","type":"Title"},"toolbar":{"id":"b5b41bb3-4d99-4c0b-9b9d-9d205c655509","type":"Toolbar"},"x_range":{"id":"67a1164b-0110-49ae-9efb-46b122a06001","type":"FactorRange"},"x_scale":{"id":"e13e02c0-1b2b-4726-8fdc-90073ba07e27","type":"CategoricalScale"},"y_range":{"id":"69afe17c-73d3-46c7-8ab5-b819d7dde8e2","type":"DataRange1d"},"y_scale":{"id":"b8fb333e-ab77-4934-8fac-7966d9bd1df7","type":"LinearScale"}},"id":"f2f74183-f409-4836-9949-03ad1b5f9d5c","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"9f56ad13-0092-4350-a369-0422f21b8470","type":"CategoricalTickFormatter"}],"root_ids":["f2f74183-f409-4836-9949-03ad1b5f9d5c"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"2ed8d677-4b97-483e-8669-cc6b49b31bd0","elementid":"fcae14cb-0a2f-499f-9e69-1cdd95fc8261","modelid":"f2f74183-f409-4836-9949-03ad1b5f9d5c"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

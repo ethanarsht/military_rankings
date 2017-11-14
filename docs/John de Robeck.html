@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="ca34b70a-cca4-4bbe-9ea2-bd38ca4fb0a1"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"40611f40-1bfb-4816-95fc-1c13c8ead238":{"roots":{"references":[{"attributes":{"formatter":{"id":"01dea0f4-ef68-44f8-bfec-29edcd9b99e8","type":"BasicTickFormatter"},"plot":{"id":"9e4678f6-3950-41b9-b6c1-77d8a09e6a6d","subtype":"Figure","type":"Plot"},"ticker":{"id":"89f98433-2001-4eb3-a1e4-260b7e35f831","type":"BasicTicker"}},"id":"5ec3ffd0-25be-4ff1-b1a1-319b12d405e3","type":"LinearAxis"},{"attributes":{},"id":"01dea0f4-ef68-44f8-bfec-29edcd9b99e8","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"ae1e9690-8397-4a15-945a-3feb0d395c38","type":"DataRange1d"},{"attributes":{"below":[{"id":"0d1258b7-92b2-4c89-a317-9224133508aa","type":"CategoricalAxis"}],"left":[{"id":"5ec3ffd0-25be-4ff1-b1a1-319b12d405e3","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"0d1258b7-92b2-4c89-a317-9224133508aa","type":"CategoricalAxis"},{"id":"1214c08e-9dc1-4236-912b-51e874228241","type":"Grid"},{"id":"5ec3ffd0-25be-4ff1-b1a1-319b12d405e3","type":"LinearAxis"},{"id":"127c593d-a8a4-438c-ae0f-93ecb0a73d23","type":"Grid"},{"id":"fd7870e9-5d3b-411d-bff9-db5159b8c3ce","type":"GlyphRenderer"},{"id":"7762dcfe-c788-4619-8f34-c331fbeb3380","type":"GlyphRenderer"}],"title":{"id":"3c017c3a-9263-4f2f-b86a-904e51206541","type":"Title"},"toolbar":{"id":"44c9e308-47a5-4e59-b8e9-8c73cd094aea","type":"Toolbar"},"x_range":{"id":"5fb8e2f6-86ce-4eb3-89fe-95a1e47c6f34","type":"FactorRange"},"x_scale":{"id":"e405a9e5-64a8-4043-b725-cf5c72ef6362","type":"CategoricalScale"},"y_range":{"id":"ae1e9690-8397-4a15-945a-3feb0d395c38","type":"DataRange1d"},"y_scale":{"id":"08c0b662-b647-4377-8c5b-be047ab73888","type":"LinearScale"}},"id":"9e4678f6-3950-41b9-b6c1-77d8a09e6a6d","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"89f98433-2001-4eb3-a1e4-260b7e35f831","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"7bfd946b-ad70-48a8-be71-4ed134546ca3","type":"HoverTool"},{"attributes":{"plot":{"id":"9e4678f6-3950-41b9-b6c1-77d8a09e6a6d","subtype":"Figure","type":"Plot"},"ticker":{"id":"e2aa12a4-f6a8-4621-9ea7-94280b8de7c1","type":"CategoricalTicker"}},"id":"1214c08e-9dc1-4236-912b-51e874228241","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f78d0498-0ed1-4189-877c-f3376553df1a","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f78d0498-0ed1-4189-877c-f3376553df1a","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a991e47d-3f2c-49c2-8c19-60b564084921","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"7bfd946b-ad70-48a8-be71-4ed134546ca3","type":"HoverTool"}]},"id":"44c9e308-47a5-4e59-b8e9-8c73cd094aea","type":"Toolbar"},{"attributes":{"data_source":{"id":"4c46df1d-c4ec-4a85-8f87-a8c09e53eb88","type":"ColumnDataSource"},"glyph":{"id":"3b7afd06-a55a-4a8f-bcd5-da1a6e64615f","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"81539df6-8fd5-4c70-bb8a-9a98e0d25f65","type":"Line"},"selection_glyph":null,"view":{"id":"5ce45c5b-aa06-4a1b-a94c-a722c8b4808f","type":"CDSView"}},"id":"fd7870e9-5d3b-411d-bff9-db5159b8c3ce","type":"GlyphRenderer"},{"attributes":{},"id":"b0c752be-4696-4624-8c6e-c3bce23227fd","type":"CategoricalTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"81539df6-8fd5-4c70-bb8a-9a98e0d25f65","type":"Line"},{"attributes":{"formatter":{"id":"b0c752be-4696-4624-8c6e-c3bce23227fd","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"9e4678f6-3950-41b9-b6c1-77d8a09e6a6d","subtype":"Figure","type":"Plot"},"ticker":{"id":"e2aa12a4-f6a8-4621-9ea7-94280b8de7c1","type":"CategoricalTicker"}},"id":"0d1258b7-92b2-4c89-a317-9224133508aa","type":"CategoricalAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Gallipoli","Naval operations in the Dardanelles Campaign"],"cumulative":{"__ndarray__":"uYj1ijfB4L8gF7Fe8SaYvw==","dtype":"float64","shape":[2]},"general":["John de Robeck","John de Robeck"],"outcome":["D","V"],"value":{"__ndarray__":"uYj1ijfB4L8AAAAAAADgPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAADsnUAAAAAAAOydQA==","dtype":"float64","shape":[2]}}},"id":"4c46df1d-c4ec-4a85-8f87-a8c09e53eb88","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f78d0498-0ed1-4189-877c-f3376553df1a","type":"CategoricalColorMapper"},{"attributes":{"plot":null,"text":"John de Robeck (1 - 0 - 1)"},"id":"3c017c3a-9263-4f2f-b86a-904e51206541","type":"Title"},{"attributes":{"source":{"id":"4c46df1d-c4ec-4a85-8f87-a8c09e53eb88","type":"ColumnDataSource"}},"id":"fbad2313-1970-41d7-bf20-bbc9cacd1e7b","type":"CDSView"},{"attributes":{},"id":"08c0b662-b647-4377-8c5b-be047ab73888","type":"LinearScale"},{"attributes":{},"id":"e405a9e5-64a8-4043-b725-cf5c72ef6362","type":"CategoricalScale"},{"attributes":{"dimension":1,"plot":{"id":"9e4678f6-3950-41b9-b6c1-77d8a09e6a6d","subtype":"Figure","type":"Plot"},"ticker":{"id":"89f98433-2001-4eb3-a1e4-260b7e35f831","type":"BasicTicker"}},"id":"127c593d-a8a4-438c-ae0f-93ecb0a73d23","type":"Grid"},{"attributes":{},"id":"e2aa12a4-f6a8-4621-9ea7-94280b8de7c1","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"4c46df1d-c4ec-4a85-8f87-a8c09e53eb88","type":"ColumnDataSource"},"glyph":{"id":"a991e47d-3f2c-49c2-8c19-60b564084921","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"fa29f0d0-2b42-4ba9-9e9a-e70c6b901d19","type":"VBar"},"selection_glyph":null,"view":{"id":"fbad2313-1970-41d7-bf20-bbc9cacd1e7b","type":"CDSView"}},"id":"7762dcfe-c788-4619-8f34-c331fbeb3380","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"fa29f0d0-2b42-4ba9-9e9a-e70c6b901d19","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Gallipoli","Naval operations in the Dardanelles Campaign"]},"id":"5fb8e2f6-86ce-4eb3-89fe-95a1e47c6f34","type":"FactorRange"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3b7afd06-a55a-4a8f-bcd5-da1a6e64615f","type":"Line"},{"attributes":{"source":{"id":"4c46df1d-c4ec-4a85-8f87-a8c09e53eb88","type":"ColumnDataSource"}},"id":"5ce45c5b-aa06-4a1b-a94c-a722c8b4808f","type":"CDSView"}],"root_ids":["9e4678f6-3950-41b9-b6c1-77d8a09e6a6d"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"40611f40-1bfb-4816-95fc-1c13c8ead238","elementid":"ca34b70a-cca4-4bbe-9ea2-bd38ca4fb0a1","modelid":"9e4678f6-3950-41b9-b6c1-77d8a09e6a6d"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

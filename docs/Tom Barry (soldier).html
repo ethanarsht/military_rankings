@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f8742cd8-fdae-4442-897a-27b138b9d946"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"fdd8d210-4f3b-4586-90c8-b3080892c9ea":{"roots":{"references":[{"attributes":{},"id":"f8e6367f-dfb7-464c-9819-025717bd7a18","type":"CategoricalScale"},{"attributes":{"dimension":1,"plot":{"id":"2ce0f7db-6930-4fca-9bbd-a2f4fecb1b9c","subtype":"Figure","type":"Plot"},"ticker":{"id":"e4a96abc-07f8-4e2c-af2d-928d224f59da","type":"BasicTicker"}},"id":"4525e0d4-a355-48ee-9c97-18990ef399d5","type":"Grid"},{"attributes":{"source":{"id":"b479a873-4e89-4e66-9872-63984dd615e2","type":"ColumnDataSource"}},"id":"ffe07033-c7b5-4cc6-9583-d0e9b20faa76","type":"CDSView"},{"attributes":{"data_source":{"id":"b479a873-4e89-4e66-9872-63984dd615e2","type":"ColumnDataSource"},"glyph":{"id":"831f86c8-205d-4592-91a6-c8787266ff25","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"dbb22342-d415-4bfd-9c00-30a35eb8db49","type":"VBar"},"selection_glyph":null,"view":{"id":"ffe07033-c7b5-4cc6-9583-d0e9b20faa76","type":"CDSView"}},"id":"d01589c9-643a-49d3-9682-3357baf740ee","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"dbb22342-d415-4bfd-9c00-30a35eb8db49","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"41b403b4-91a2-4559-85ad-3a7f37edb2b6","type":"HoverTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"41b403b4-91a2-4559-85ad-3a7f37edb2b6","type":"HoverTool"}]},"id":"41c2b67e-1cc6-4348-95a6-2bbc142c89f0","type":"Toolbar"},{"attributes":{"plot":null,"text":"Tom Barry (soldier) (1 - 0 - 0)"},"id":"59e7bb71-7692-40d6-b84e-5328cd936d1e","type":"Title"},{"attributes":{},"id":"e150b79f-92a1-4c6d-9ba2-3e07d8225f1c","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Kilmichael Ambush"]},"id":"af044ce6-cc1b-4ba7-8d09-2d04545d3809","type":"FactorRange"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f1f4996e-d395-4ab8-88b1-c88be83ddeb9","type":"Line"},{"attributes":{"source":{"id":"b479a873-4e89-4e66-9872-63984dd615e2","type":"ColumnDataSource"}},"id":"d8963e9e-f908-44ca-8bc0-8458410f9554","type":"CDSView"},{"attributes":{"data_source":{"id":"b479a873-4e89-4e66-9872-63984dd615e2","type":"ColumnDataSource"},"glyph":{"id":"902a9fdd-7301-4cba-8575-aa0c7f75cf1c","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f1f4996e-d395-4ab8-88b1-c88be83ddeb9","type":"Line"},"selection_glyph":null,"view":{"id":"d8963e9e-f908-44ca-8bc0-8458410f9554","type":"CDSView"}},"id":"19c408ea-4404-4014-9334-cf4b60b5df4f","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"63500122-9e37-41ba-819b-8231198234af","type":"BasicTickFormatter"},"plot":{"id":"2ce0f7db-6930-4fca-9bbd-a2f4fecb1b9c","subtype":"Figure","type":"Plot"},"ticker":{"id":"e4a96abc-07f8-4e2c-af2d-928d224f59da","type":"BasicTicker"}},"id":"6372ad24-c2d9-41d2-8efc-f0712aa76fe2","type":"LinearAxis"},{"attributes":{},"id":"63500122-9e37-41ba-819b-8231198234af","type":"BasicTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Kilmichael Ambush"],"cumulative":{"__ndarray__":"SKwcRLK43T8=","dtype":"float64","shape":[1]},"general":["Tom Barry (soldier)"],"outcome":["V"],"value":{"__ndarray__":"SKwcRLK43T8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAAnkA=","dtype":"float64","shape":[1]}}},"id":"b479a873-4e89-4e66-9872-63984dd615e2","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"8d922d69-02a1-4615-a8cc-b5e1bff26820","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"8d922d69-02a1-4615-a8cc-b5e1bff26820","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"831f86c8-205d-4592-91a6-c8787266ff25","type":"VBar"},{"attributes":{},"id":"6e2ab3df-f637-4ca7-9cc0-d7a938122a85","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"6e2ab3df-f637-4ca7-9cc0-d7a938122a85","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"2ce0f7db-6930-4fca-9bbd-a2f4fecb1b9c","subtype":"Figure","type":"Plot"},"ticker":{"id":"e150b79f-92a1-4c6d-9ba2-3e07d8225f1c","type":"CategoricalTicker"}},"id":"98d1014f-886c-4470-b2e5-916643a66e3c","type":"CategoricalAxis"},{"attributes":{"callback":null},"id":"a338a101-2950-4c9e-b175-1a4e4d1111ea","type":"DataRange1d"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"902a9fdd-7301-4cba-8575-aa0c7f75cf1c","type":"Line"},{"attributes":{},"id":"e4a96abc-07f8-4e2c-af2d-928d224f59da","type":"BasicTicker"},{"attributes":{},"id":"a11ade59-c8c0-484e-955c-b0c17b291dc6","type":"LinearScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"8d922d69-02a1-4615-a8cc-b5e1bff26820","type":"CategoricalColorMapper"},{"attributes":{"plot":{"id":"2ce0f7db-6930-4fca-9bbd-a2f4fecb1b9c","subtype":"Figure","type":"Plot"},"ticker":{"id":"e150b79f-92a1-4c6d-9ba2-3e07d8225f1c","type":"CategoricalTicker"}},"id":"ed976da9-07b9-4e62-beb1-3024570fc771","type":"Grid"},{"attributes":{"below":[{"id":"98d1014f-886c-4470-b2e5-916643a66e3c","type":"CategoricalAxis"}],"left":[{"id":"6372ad24-c2d9-41d2-8efc-f0712aa76fe2","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"98d1014f-886c-4470-b2e5-916643a66e3c","type":"CategoricalAxis"},{"id":"ed976da9-07b9-4e62-beb1-3024570fc771","type":"Grid"},{"id":"6372ad24-c2d9-41d2-8efc-f0712aa76fe2","type":"LinearAxis"},{"id":"4525e0d4-a355-48ee-9c97-18990ef399d5","type":"Grid"},{"id":"19c408ea-4404-4014-9334-cf4b60b5df4f","type":"GlyphRenderer"},{"id":"d01589c9-643a-49d3-9682-3357baf740ee","type":"GlyphRenderer"}],"title":{"id":"59e7bb71-7692-40d6-b84e-5328cd936d1e","type":"Title"},"toolbar":{"id":"41c2b67e-1cc6-4348-95a6-2bbc142c89f0","type":"Toolbar"},"x_range":{"id":"af044ce6-cc1b-4ba7-8d09-2d04545d3809","type":"FactorRange"},"x_scale":{"id":"f8e6367f-dfb7-464c-9819-025717bd7a18","type":"CategoricalScale"},"y_range":{"id":"a338a101-2950-4c9e-b175-1a4e4d1111ea","type":"DataRange1d"},"y_scale":{"id":"a11ade59-c8c0-484e-955c-b0c17b291dc6","type":"LinearScale"}},"id":"2ce0f7db-6930-4fca-9bbd-a2f4fecb1b9c","subtype":"Figure","type":"Plot"}],"root_ids":["2ce0f7db-6930-4fca-9bbd-a2f4fecb1b9c"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"fdd8d210-4f3b-4586-90c8-b3080892c9ea","elementid":"f8742cd8-fdae-4442-897a-27b138b9d946","modelid":"2ce0f7db-6930-4fca-9bbd-a2f4fecb1b9c"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

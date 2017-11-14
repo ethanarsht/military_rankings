@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="b384b343-7aab-4762-9a25-232a83eb12bc"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"a2cb83d6-31f9-47b7-ba34-5dac382c2733":{"roots":{"references":[{"attributes":{"plot":null,"text":"Henry de Nassau, Lord Overkirk (2 - 0 - 0)"},"id":"ebca50c6-8ab8-4740-8a8b-109dfc25f6fe","type":"Title"},{"attributes":{"source":{"id":"ee1863df-2fb4-4247-9ad4-ee5d1b7576d0","type":"ColumnDataSource"}},"id":"5c8d57e6-8342-4199-b021-2b9dd14fb4e1","type":"CDSView"},{"attributes":{"source":{"id":"ee1863df-2fb4-4247-9ad4-ee5d1b7576d0","type":"ColumnDataSource"}},"id":"a5ae28a0-7660-48c1-a48b-0f4d2dbbb26e","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9292fa53-1a07-47b3-82cf-74f5da59df8b","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Ramillies","Battle of Oudenarde"],"cumulative":{"__ndarray__":"vBm7fdrL3z/2TscUDvPvPw==","dtype":"float64","shape":[2]},"general":["Henry de Nassau, Lord Overkirk","Henry de Nassau, Lord Overkirk"],"outcome":["V","V"],"value":{"__ndarray__":"vBm7fdrL3z8YwunVIA3gPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAComkAAAAAAALCaQA==","dtype":"float64","shape":[2]}}},"id":"ee1863df-2fb4-4247-9ad4-ee5d1b7576d0","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"29d64ff6-9d9b-4cb5-b5e0-5b7cab03a0ab","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"29d64ff6-9d9b-4cb5-b5e0-5b7cab03a0ab","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"4bc1fa53-64e5-4b3b-b50b-58ad650dec2f","type":"VBar"},{"attributes":{"callback":null},"id":"aa196d97-7485-4e83-aeb8-9f1164b20c8e","type":"DataRange1d"},{"attributes":{"data_source":{"id":"ee1863df-2fb4-4247-9ad4-ee5d1b7576d0","type":"ColumnDataSource"},"glyph":{"id":"66085559-0a60-4cf4-9d09-a13d32a00f63","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9292fa53-1a07-47b3-82cf-74f5da59df8b","type":"Line"},"selection_glyph":null,"view":{"id":"a5ae28a0-7660-48c1-a48b-0f4d2dbbb26e","type":"CDSView"}},"id":"59da6ac3-422e-4a40-afbb-b7092490f517","type":"GlyphRenderer"},{"attributes":{},"id":"c616d78c-4cba-44ac-af88-28c1871438fb","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Battle of Ramillies","Battle of Oudenarde"]},"id":"2f44a6ed-ad0b-4531-b5b0-921a108ba222","type":"FactorRange"},{"attributes":{"formatter":{"id":"8aa1e926-c254-41ea-8762-cb6a1403401e","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"6625e1b1-7d3c-4543-8709-ca307b85d41b","subtype":"Figure","type":"Plot"},"ticker":{"id":"c616d78c-4cba-44ac-af88-28c1871438fb","type":"CategoricalTicker"}},"id":"08f55caf-9e52-4cd8-a360-dc00a4013056","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"4fbdd2e1-3fa3-4983-9a27-eb35aa25aeb9","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"6625e1b1-7d3c-4543-8709-ca307b85d41b","subtype":"Figure","type":"Plot"},"ticker":{"id":"97888d3e-b0ff-413a-9d3c-d2b71ba27a22","type":"BasicTicker"}},"id":"2892573d-9f21-42e9-a6d3-ef08ef0d71ab","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f1fcfe93-be3b-4b8a-bb7d-92627c5a11ef","type":"HoverTool"},{"attributes":{},"id":"c7608eee-80f0-45a3-851b-140168807a63","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"ee1863df-2fb4-4247-9ad4-ee5d1b7576d0","type":"ColumnDataSource"},"glyph":{"id":"4bc1fa53-64e5-4b3b-b50b-58ad650dec2f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4fbdd2e1-3fa3-4983-9a27-eb35aa25aeb9","type":"VBar"},"selection_glyph":null,"view":{"id":"5c8d57e6-8342-4199-b021-2b9dd14fb4e1","type":"CDSView"}},"id":"c62ac060-205e-49d2-bc8e-b71c70c0474d","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"66085559-0a60-4cf4-9d09-a13d32a00f63","type":"Line"},{"attributes":{},"id":"12045c3b-08d3-46be-87c9-43871e78a44d","type":"BasicTickFormatter"},{"attributes":{},"id":"12ace881-4fef-40ee-9678-77bc55fa7902","type":"LinearScale"},{"attributes":{},"id":"8aa1e926-c254-41ea-8762-cb6a1403401e","type":"CategoricalTickFormatter"},{"attributes":{},"id":"97888d3e-b0ff-413a-9d3c-d2b71ba27a22","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f1fcfe93-be3b-4b8a-bb7d-92627c5a11ef","type":"HoverTool"}]},"id":"851e90aa-83c8-4ed4-918b-ea69bf664315","type":"Toolbar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"29d64ff6-9d9b-4cb5-b5e0-5b7cab03a0ab","type":"CategoricalColorMapper"},{"attributes":{"below":[{"id":"08f55caf-9e52-4cd8-a360-dc00a4013056","type":"CategoricalAxis"}],"left":[{"id":"fb2d54a2-0456-48a0-bbee-ed54695f44e5","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"08f55caf-9e52-4cd8-a360-dc00a4013056","type":"CategoricalAxis"},{"id":"48bb574e-51a0-4baf-881f-f8ed958b0e63","type":"Grid"},{"id":"fb2d54a2-0456-48a0-bbee-ed54695f44e5","type":"LinearAxis"},{"id":"2892573d-9f21-42e9-a6d3-ef08ef0d71ab","type":"Grid"},{"id":"59da6ac3-422e-4a40-afbb-b7092490f517","type":"GlyphRenderer"},{"id":"c62ac060-205e-49d2-bc8e-b71c70c0474d","type":"GlyphRenderer"}],"title":{"id":"ebca50c6-8ab8-4740-8a8b-109dfc25f6fe","type":"Title"},"toolbar":{"id":"851e90aa-83c8-4ed4-918b-ea69bf664315","type":"Toolbar"},"x_range":{"id":"2f44a6ed-ad0b-4531-b5b0-921a108ba222","type":"FactorRange"},"x_scale":{"id":"c7608eee-80f0-45a3-851b-140168807a63","type":"CategoricalScale"},"y_range":{"id":"aa196d97-7485-4e83-aeb8-9f1164b20c8e","type":"DataRange1d"},"y_scale":{"id":"12ace881-4fef-40ee-9678-77bc55fa7902","type":"LinearScale"}},"id":"6625e1b1-7d3c-4543-8709-ca307b85d41b","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"12045c3b-08d3-46be-87c9-43871e78a44d","type":"BasicTickFormatter"},"plot":{"id":"6625e1b1-7d3c-4543-8709-ca307b85d41b","subtype":"Figure","type":"Plot"},"ticker":{"id":"97888d3e-b0ff-413a-9d3c-d2b71ba27a22","type":"BasicTicker"}},"id":"fb2d54a2-0456-48a0-bbee-ed54695f44e5","type":"LinearAxis"},{"attributes":{"plot":{"id":"6625e1b1-7d3c-4543-8709-ca307b85d41b","subtype":"Figure","type":"Plot"},"ticker":{"id":"c616d78c-4cba-44ac-af88-28c1871438fb","type":"CategoricalTicker"}},"id":"48bb574e-51a0-4baf-881f-f8ed958b0e63","type":"Grid"}],"root_ids":["6625e1b1-7d3c-4543-8709-ca307b85d41b"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"a2cb83d6-31f9-47b7-ba34-5dac382c2733","elementid":"b384b343-7aab-4762-9a25-232a83eb12bc","modelid":"6625e1b1-7d3c-4543-8709-ca307b85d41b"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

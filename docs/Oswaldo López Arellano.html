@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="e1da7f59-92f2-4cfa-8a77-770365d8378f"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"6f3b5eb6-0648-4879-973d-45db6336528e":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"62242098-ff4b-4be5-a8c9-69385c57b020","type":"HoverTool"},{"attributes":{},"id":"35b891d0-504e-47f6-a34a-38326e868093","type":"LinearScale"},{"attributes":{"formatter":{"id":"358d3191-9106-498f-b6d1-2eb418653075","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"207ae7d3-aa27-40a4-9421-962c5f7533db","subtype":"Figure","type":"Plot"},"ticker":{"id":"e8ec4435-6ee5-4130-9ac1-dd275f3229d6","type":"CategoricalTicker"}},"id":"37cf145a-8963-4e7d-979d-e627e1987cb9","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"62242098-ff4b-4be5-a8c9-69385c57b020","type":"HoverTool"}]},"id":"874d578c-0ec0-4303-b09f-d15c11968c04","type":"Toolbar"},{"attributes":{"data_source":{"id":"3743b253-4d2b-4398-9f90-799722ea0730","type":"ColumnDataSource"},"glyph":{"id":"c786a22b-aa52-4ead-bb4d-442c2e0d73fa","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ebc82147-da5c-46ae-a80d-a6191c8af38c","type":"Line"},"selection_glyph":null,"view":{"id":"69ff6302-38bc-41eb-90f2-ba9ce908b377","type":"CDSView"}},"id":"f335f550-95d5-4a70-9fb8-c1ba14ff2bd9","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Football War"]},"id":"53c91757-cc5f-47d0-be2b-32f3d06cddc6","type":"FactorRange"},{"attributes":{"source":{"id":"3743b253-4d2b-4398-9f90-799722ea0730","type":"ColumnDataSource"}},"id":"b6649a6d-8001-44fb-8040-538180ff9019","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"50615ed6-901c-43b4-b495-74d1be16f0d9","type":"VBar"},{"attributes":{},"id":"bf31a331-e4b5-4578-ac92-bb89fa5cca47","type":"CategoricalScale"},{"attributes":{},"id":"358d3191-9106-498f-b6d1-2eb418653075","type":"CategoricalTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"41ef3181-4e33-4c9b-820f-b85a44626d48","type":"CategoricalColorMapper"},{"attributes":{"below":[{"id":"37cf145a-8963-4e7d-979d-e627e1987cb9","type":"CategoricalAxis"}],"left":[{"id":"ad2e72a9-d977-4a03-a83a-a664704d4d37","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"37cf145a-8963-4e7d-979d-e627e1987cb9","type":"CategoricalAxis"},{"id":"3eeb67f5-d35c-4caf-a545-1891953f206c","type":"Grid"},{"id":"ad2e72a9-d977-4a03-a83a-a664704d4d37","type":"LinearAxis"},{"id":"eb5891a5-76a2-4512-be41-72e8e41c6515","type":"Grid"},{"id":"f335f550-95d5-4a70-9fb8-c1ba14ff2bd9","type":"GlyphRenderer"},{"id":"788dbf84-3b7e-4a77-a876-7050a52e2949","type":"GlyphRenderer"}],"title":{"id":"cd79946b-4e54-401d-b8fc-fa11ba171601","type":"Title"},"toolbar":{"id":"874d578c-0ec0-4303-b09f-d15c11968c04","type":"Toolbar"},"x_range":{"id":"53c91757-cc5f-47d0-be2b-32f3d06cddc6","type":"FactorRange"},"x_scale":{"id":"bf31a331-e4b5-4578-ac92-bb89fa5cca47","type":"CategoricalScale"},"y_range":{"id":"6de7dbd0-c4b4-4380-929d-22c071b140b8","type":"DataRange1d"},"y_scale":{"id":"35b891d0-504e-47f6-a34a-38326e868093","type":"LinearScale"}},"id":"207ae7d3-aa27-40a4-9421-962c5f7533db","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"41ef3181-4e33-4c9b-820f-b85a44626d48","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"41ef3181-4e33-4c9b-820f-b85a44626d48","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"95f2c75e-047d-404e-a2bb-256c4a1751b2","type":"VBar"},{"attributes":{},"id":"35fe45cb-5621-4086-af85-3dc6a7aa1784","type":"BasicTicker"},{"attributes":{"data_source":{"id":"3743b253-4d2b-4398-9f90-799722ea0730","type":"ColumnDataSource"},"glyph":{"id":"95f2c75e-047d-404e-a2bb-256c4a1751b2","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"50615ed6-901c-43b4-b495-74d1be16f0d9","type":"VBar"},"selection_glyph":null,"view":{"id":"b6649a6d-8001-44fb-8040-538180ff9019","type":"CDSView"}},"id":"788dbf84-3b7e-4a77-a876-7050a52e2949","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"3e1d65ec-785f-4aa8-ac46-55c047331709","type":"BasicTickFormatter"},"plot":{"id":"207ae7d3-aa27-40a4-9421-962c5f7533db","subtype":"Figure","type":"Plot"},"ticker":{"id":"35fe45cb-5621-4086-af85-3dc6a7aa1784","type":"BasicTicker"}},"id":"ad2e72a9-d977-4a03-a83a-a664704d4d37","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Football War"],"cumulative":{"__ndarray__":"oKQ73pxciT8=","dtype":"float64","shape":[1]},"general":["Oswaldo L\u00f3pez Arellano"],"outcome":["I"],"value":{"__ndarray__":"oKQ73pxciT8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADEnkA=","dtype":"float64","shape":[1]}}},"id":"3743b253-4d2b-4398-9f90-799722ea0730","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ebc82147-da5c-46ae-a80d-a6191c8af38c","type":"Line"},{"attributes":{"plot":null,"text":"Oswaldo L\u00f3pez Arellano (0 - 1 - 0)"},"id":"cd79946b-4e54-401d-b8fc-fa11ba171601","type":"Title"},{"attributes":{},"id":"e8ec4435-6ee5-4130-9ac1-dd275f3229d6","type":"CategoricalTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"c786a22b-aa52-4ead-bb4d-442c2e0d73fa","type":"Line"},{"attributes":{"plot":{"id":"207ae7d3-aa27-40a4-9421-962c5f7533db","subtype":"Figure","type":"Plot"},"ticker":{"id":"e8ec4435-6ee5-4130-9ac1-dd275f3229d6","type":"CategoricalTicker"}},"id":"3eeb67f5-d35c-4caf-a545-1891953f206c","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"207ae7d3-aa27-40a4-9421-962c5f7533db","subtype":"Figure","type":"Plot"},"ticker":{"id":"35fe45cb-5621-4086-af85-3dc6a7aa1784","type":"BasicTicker"}},"id":"eb5891a5-76a2-4512-be41-72e8e41c6515","type":"Grid"},{"attributes":{"source":{"id":"3743b253-4d2b-4398-9f90-799722ea0730","type":"ColumnDataSource"}},"id":"69ff6302-38bc-41eb-90f2-ba9ce908b377","type":"CDSView"},{"attributes":{},"id":"3e1d65ec-785f-4aa8-ac46-55c047331709","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"6de7dbd0-c4b4-4380-929d-22c071b140b8","type":"DataRange1d"}],"root_ids":["207ae7d3-aa27-40a4-9421-962c5f7533db"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"6f3b5eb6-0648-4879-973d-45db6336528e","elementid":"e1da7f59-92f2-4cfa-8a77-770365d8378f","modelid":"207ae7d3-aa27-40a4-9421-962c5f7533db"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

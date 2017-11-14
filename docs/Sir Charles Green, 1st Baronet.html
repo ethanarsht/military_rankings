@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="7ff5c19f-1e86-4ad5-bc83-7ee524efc90e"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"49a3fd37-3eb4-424e-bf3c-089760486970":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3806653a-8ca2-473b-95f4-270d7ce79268","type":"Line"},{"attributes":{},"id":"541bf275-4d44-4271-aa77-88e62c86d26d","type":"CategoricalTickFormatter"},{"attributes":{},"id":"d0b6b75b-f6a5-493d-809d-da7810643f20","type":"CategoricalScale"},{"attributes":{"source":{"id":"53cf5fa8-527f-4887-844c-22704152e2a1","type":"ColumnDataSource"}},"id":"a3ebf656-e148-4a30-a38e-f03fd46537a2","type":"CDSView"},{"attributes":{"callback":null},"id":"674cb380-3083-4aeb-a5e3-d44a30dfd51e","type":"DataRange1d"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"06b040ca-ef7d-4f35-9b83-25bc68074ab4","type":"HoverTool"},{"attributes":{"formatter":{"id":"b7354b74-5aee-47fe-8247-71d383c0a54e","type":"BasicTickFormatter"},"plot":{"id":"a0ad47c8-2c09-48e5-84e9-397172f00f20","subtype":"Figure","type":"Plot"},"ticker":{"id":"5d5aad5c-8dda-4bdd-9750-115654d39921","type":"BasicTicker"}},"id":"e2bc0125-2c03-4980-ae7e-75ee8f943af7","type":"LinearAxis"},{"attributes":{},"id":"87824c50-28a1-46bb-80d1-7654a9adbb86","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"f0968ede-1bbc-4b4d-a99d-fd1aee10885a","type":"CategoricalAxis"}],"left":[{"id":"e2bc0125-2c03-4980-ae7e-75ee8f943af7","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"f0968ede-1bbc-4b4d-a99d-fd1aee10885a","type":"CategoricalAxis"},{"id":"a98ecde0-f90c-4bf8-b179-4e8931a9c001","type":"Grid"},{"id":"e2bc0125-2c03-4980-ae7e-75ee8f943af7","type":"LinearAxis"},{"id":"9a821c8d-ce40-4f52-bf8a-a59457cd4cf3","type":"Grid"},{"id":"28116f46-d5b9-4140-aa06-53d054f02d33","type":"GlyphRenderer"},{"id":"dd4adfdc-f1f0-4c8b-baa3-f02e1fb1b3a9","type":"GlyphRenderer"}],"title":{"id":"1f6c4363-4ea2-4ea5-b78d-50e4f530eeb7","type":"Title"},"toolbar":{"id":"8065195a-fdfb-4843-b166-440fe592f368","type":"Toolbar"},"x_range":{"id":"6779f418-3eb1-4cbe-98de-8086a7f83117","type":"FactorRange"},"x_scale":{"id":"d0b6b75b-f6a5-493d-809d-da7810643f20","type":"CategoricalScale"},"y_range":{"id":"674cb380-3083-4aeb-a5e3-d44a30dfd51e","type":"DataRange1d"},"y_scale":{"id":"77d13e59-06ae-4898-ae5b-8bf53c95aeef","type":"LinearScale"}},"id":"a0ad47c8-2c09-48e5-84e9-397172f00f20","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d27dac64-b1b5-4afe-88ed-55b8de6bd802","type":"Line"},{"attributes":{"plot":{"id":"a0ad47c8-2c09-48e5-84e9-397172f00f20","subtype":"Figure","type":"Plot"},"ticker":{"id":"87824c50-28a1-46bb-80d1-7654a9adbb86","type":"CategoricalTicker"}},"id":"a98ecde0-f90c-4bf8-b179-4e8931a9c001","type":"Grid"},{"attributes":{"plot":null,"text":"Sir Charles Green, 1st Baronet (1 - 0 - 0)"},"id":"1f6c4363-4ea2-4ea5-b78d-50e4f530eeb7","type":"Title"},{"attributes":{},"id":"b7354b74-5aee-47fe-8247-71d383c0a54e","type":"BasicTickFormatter"},{"attributes":{},"id":"5d5aad5c-8dda-4bdd-9750-115654d39921","type":"BasicTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Suriname"],"cumulative":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"general":["Sir Charles Green, 1st Baronet"],"outcome":["V"],"value":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAwnEA=","dtype":"float64","shape":[1]}}},"id":"53cf5fa8-527f-4887-844c-22704152e2a1","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"541bf275-4d44-4271-aa77-88e62c86d26d","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"a0ad47c8-2c09-48e5-84e9-397172f00f20","subtype":"Figure","type":"Plot"},"ticker":{"id":"87824c50-28a1-46bb-80d1-7654a9adbb86","type":"CategoricalTicker"}},"id":"f0968ede-1bbc-4b4d-a99d-fd1aee10885a","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"53cf5fa8-527f-4887-844c-22704152e2a1","type":"ColumnDataSource"},"glyph":{"id":"9ba3664a-d0ad-4b80-b897-9daed6ae9e69","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"52ec1134-7437-4468-9eff-ca052413e1b8","type":"VBar"},"selection_glyph":null,"view":{"id":"a3ebf656-e148-4a30-a38e-f03fd46537a2","type":"CDSView"}},"id":"dd4adfdc-f1f0-4c8b-baa3-f02e1fb1b3a9","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f8a86b41-f46a-4468-9196-012eaecee169","type":"CategoricalColorMapper"},{"attributes":{},"id":"77d13e59-06ae-4898-ae5b-8bf53c95aeef","type":"LinearScale"},{"attributes":{"data_source":{"id":"53cf5fa8-527f-4887-844c-22704152e2a1","type":"ColumnDataSource"},"glyph":{"id":"3806653a-8ca2-473b-95f4-270d7ce79268","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d27dac64-b1b5-4afe-88ed-55b8de6bd802","type":"Line"},"selection_glyph":null,"view":{"id":"d416e5c5-537a-428f-add8-3ba0163101a8","type":"CDSView"}},"id":"28116f46-d5b9-4140-aa06-53d054f02d33","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f8a86b41-f46a-4468-9196-012eaecee169","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f8a86b41-f46a-4468-9196-012eaecee169","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9ba3664a-d0ad-4b80-b897-9daed6ae9e69","type":"VBar"},{"attributes":{"source":{"id":"53cf5fa8-527f-4887-844c-22704152e2a1","type":"ColumnDataSource"}},"id":"d416e5c5-537a-428f-add8-3ba0163101a8","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Suriname"]},"id":"6779f418-3eb1-4cbe-98de-8086a7f83117","type":"FactorRange"},{"attributes":{"dimension":1,"plot":{"id":"a0ad47c8-2c09-48e5-84e9-397172f00f20","subtype":"Figure","type":"Plot"},"ticker":{"id":"5d5aad5c-8dda-4bdd-9750-115654d39921","type":"BasicTicker"}},"id":"9a821c8d-ce40-4f52-bf8a-a59457cd4cf3","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"52ec1134-7437-4468-9eff-ca052413e1b8","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"06b040ca-ef7d-4f35-9b83-25bc68074ab4","type":"HoverTool"}]},"id":"8065195a-fdfb-4843-b166-440fe592f368","type":"Toolbar"}],"root_ids":["a0ad47c8-2c09-48e5-84e9-397172f00f20"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"49a3fd37-3eb4-424e-bf3c-089760486970","elementid":"7ff5c19f-1e86-4ad5-bc83-7ee524efc90e","modelid":"a0ad47c8-2c09-48e5-84e9-397172f00f20"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

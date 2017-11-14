@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="29087d0f-f687-4386-8e05-683079c9f411"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"faab05ef-70e5-46f8-b96a-cb0925dcee5d":{"roots":{"references":[{"attributes":{"source":{"id":"716e6287-a2d2-4d70-b5b4-e36371c6615b","type":"ColumnDataSource"}},"id":"2957e0c9-10b3-4e41-b3d7-0200f4c186c9","type":"CDSView"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"c58bf06d-1915-4a77-a2e0-725c6cfe6209","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"2bf1056e-278b-4efb-8725-2f8e66978431","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"0b7d3a1d-9e8f-452c-9d4c-f0307ff199ea","subtype":"Figure","type":"Plot"},"ticker":{"id":"97df936e-5a8f-4f24-8875-efae11c6efa3","type":"CategoricalTicker"}},"id":"5535efdc-abef-4a8c-9efd-3ab1c6d2bfd9","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"be809bc6-0b09-474b-aca4-b8b0915536f6","type":"HoverTool"}]},"id":"90b66f21-d763-4523-b53f-4f740cf2c4ee","type":"Toolbar"},{"attributes":{"source":{"id":"716e6287-a2d2-4d70-b5b4-e36371c6615b","type":"ColumnDataSource"}},"id":"c128c6d3-711d-4753-b0b1-c56ff26ab7df","type":"CDSView"},{"attributes":{},"id":"97df936e-5a8f-4f24-8875-efae11c6efa3","type":"CategoricalTicker"},{"attributes":{},"id":"2bf1056e-278b-4efb-8725-2f8e66978431","type":"CategoricalTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8276d5d1-76da-4003-8684-19e74dc18afe","type":"Line"},{"attributes":{},"id":"ac09e83a-08cd-4fb3-9168-dc3216a7af2f","type":"BasicTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"197e3b2b-6d6f-4e4c-9bf6-0e89ea8cdc33","type":"Line"},{"attributes":{"formatter":{"id":"ac09e83a-08cd-4fb3-9168-dc3216a7af2f","type":"BasicTickFormatter"},"plot":{"id":"0b7d3a1d-9e8f-452c-9d4c-f0307ff199ea","subtype":"Figure","type":"Plot"},"ticker":{"id":"18171add-c4c4-49cc-9f26-1a9b85e2823a","type":"BasicTicker"}},"id":"ed05f419-956f-4e83-997d-96237a8d6ebe","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"71c5cdbc-36ff-407c-97a5-ce6aed2df24c","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"be809bc6-0b09-474b-aca4-b8b0915536f6","type":"HoverTool"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Vitoria"],"cumulative":{"__ndarray__":"LKG8m91A3j8=","dtype":"float64","shape":[1]},"general":["George Ramsay, 9th Earl of Dalhousie"],"outcome":["V"],"value":{"__ndarray__":"LKG8m91A3j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABUnEA=","dtype":"float64","shape":[1]}}},"id":"716e6287-a2d2-4d70-b5b4-e36371c6615b","type":"ColumnDataSource"},{"attributes":{},"id":"427e5abe-f5ea-4688-891f-6a6f92c4f89c","type":"CategoricalScale"},{"attributes":{"plot":{"id":"0b7d3a1d-9e8f-452c-9d4c-f0307ff199ea","subtype":"Figure","type":"Plot"},"ticker":{"id":"97df936e-5a8f-4f24-8875-efae11c6efa3","type":"CategoricalTicker"}},"id":"a2d2d07b-fda6-4fe3-a2d5-adb20eabd617","type":"Grid"},{"attributes":{"data_source":{"id":"716e6287-a2d2-4d70-b5b4-e36371c6615b","type":"ColumnDataSource"},"glyph":{"id":"81226863-18a5-481d-b708-485b4898ae28","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"71c5cdbc-36ff-407c-97a5-ce6aed2df24c","type":"VBar"},"selection_glyph":null,"view":{"id":"2957e0c9-10b3-4e41-b3d7-0200f4c186c9","type":"CDSView"}},"id":"0481cd48-dc87-4bd9-b44e-c5de34aefc9a","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"0b7d3a1d-9e8f-452c-9d4c-f0307ff199ea","subtype":"Figure","type":"Plot"},"ticker":{"id":"18171add-c4c4-49cc-9f26-1a9b85e2823a","type":"BasicTicker"}},"id":"b833c7db-2284-46d6-a5e4-f0008d058b70","type":"Grid"},{"attributes":{},"id":"1ea24de6-eb2a-4c51-aac0-05dc8349fa37","type":"LinearScale"},{"attributes":{"plot":null,"text":"George Ramsay, 9th Earl of Dalhousie (1 - 0 - 0)"},"id":"bef0eb1d-3ba4-4348-86fc-b71ad8632281","type":"Title"},{"attributes":{},"id":"18171add-c4c4-49cc-9f26-1a9b85e2823a","type":"BasicTicker"},{"attributes":{"callback":null},"id":"f2c8b14e-ad2d-4c1e-870f-6da7b5687f70","type":"DataRange1d"},{"attributes":{"below":[{"id":"5535efdc-abef-4a8c-9efd-3ab1c6d2bfd9","type":"CategoricalAxis"}],"left":[{"id":"ed05f419-956f-4e83-997d-96237a8d6ebe","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"5535efdc-abef-4a8c-9efd-3ab1c6d2bfd9","type":"CategoricalAxis"},{"id":"a2d2d07b-fda6-4fe3-a2d5-adb20eabd617","type":"Grid"},{"id":"ed05f419-956f-4e83-997d-96237a8d6ebe","type":"LinearAxis"},{"id":"b833c7db-2284-46d6-a5e4-f0008d058b70","type":"Grid"},{"id":"cc39f13b-7ed7-416e-9eeb-f13d3b4d2141","type":"GlyphRenderer"},{"id":"0481cd48-dc87-4bd9-b44e-c5de34aefc9a","type":"GlyphRenderer"}],"title":{"id":"bef0eb1d-3ba4-4348-86fc-b71ad8632281","type":"Title"},"toolbar":{"id":"90b66f21-d763-4523-b53f-4f740cf2c4ee","type":"Toolbar"},"x_range":{"id":"36c1527a-c954-4cf3-bef6-73a0a5cd7fb8","type":"FactorRange"},"x_scale":{"id":"427e5abe-f5ea-4688-891f-6a6f92c4f89c","type":"CategoricalScale"},"y_range":{"id":"f2c8b14e-ad2d-4c1e-870f-6da7b5687f70","type":"DataRange1d"},"y_scale":{"id":"1ea24de6-eb2a-4c51-aac0-05dc8349fa37","type":"LinearScale"}},"id":"0b7d3a1d-9e8f-452c-9d4c-f0307ff199ea","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"716e6287-a2d2-4d70-b5b4-e36371c6615b","type":"ColumnDataSource"},"glyph":{"id":"197e3b2b-6d6f-4e4c-9bf6-0e89ea8cdc33","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8276d5d1-76da-4003-8684-19e74dc18afe","type":"Line"},"selection_glyph":null,"view":{"id":"c128c6d3-711d-4753-b0b1-c56ff26ab7df","type":"CDSView"}},"id":"cc39f13b-7ed7-416e-9eeb-f13d3b4d2141","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"c58bf06d-1915-4a77-a2e0-725c6cfe6209","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"c58bf06d-1915-4a77-a2e0-725c6cfe6209","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"81226863-18a5-481d-b708-485b4898ae28","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Vitoria"]},"id":"36c1527a-c954-4cf3-bef6-73a0a5cd7fb8","type":"FactorRange"}],"root_ids":["0b7d3a1d-9e8f-452c-9d4c-f0307ff199ea"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"faab05ef-70e5-46f8-b96a-cb0925dcee5d","elementid":"29087d0f-f687-4386-8e05-683079c9f411","modelid":"0b7d3a1d-9e8f-452c-9d4c-f0307ff199ea"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

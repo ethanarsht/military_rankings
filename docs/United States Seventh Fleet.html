@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c43c3442-3ff4-44e3-a211-ff24f6f57c68"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"66b93b94-9ea2-4145-a0a9-4439e1d563e3":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"a9ff6389-7019-4345-a6b4-b68a7fa117e9","type":"HoverTool"}]},"id":"08e4b19f-de47-4623-9f39-55b8569fa768","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7d9db02f-4643-4990-b93d-3a72a85acb60","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"a9ff6389-7019-4345-a6b4-b68a7fa117e9","type":"HoverTool"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5a335088-7196-4eac-8cad-c89098bd6480","type":"Line"},{"attributes":{"data_source":{"id":"8d04c463-491d-4f8e-a594-b29ea28fd72f","type":"ColumnDataSource"},"glyph":{"id":"225865f1-9f04-4c9f-83b0-3ab2ea3c3902","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7d9db02f-4643-4990-b93d-3a72a85acb60","type":"VBar"},"selection_glyph":null,"view":{"id":"3227f864-1b55-4934-8edb-a7ddaaa2789b","type":"CDSView"}},"id":"1fc8b163-8fea-46db-a8b6-87a37adda42a","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"89c35820-4012-4f88-820f-1ef467821a24","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"fb5e8ace-b3ed-4cbe-967e-058de5d8fef4","subtype":"Figure","type":"Plot"},"ticker":{"id":"f342e24f-b5c5-412a-ae01-56457f10ffcf","type":"CategoricalTicker"}},"id":"d0c281a7-fe92-4fb2-87df-40fc082c0eb3","type":"CategoricalAxis"},{"attributes":{"plot":null,"text":"United States Seventh Fleet (1 - 0 - 0)"},"id":"998e0dd8-27fa-472c-b205-6b91c2bef580","type":"Title"},{"attributes":{"source":{"id":"8d04c463-491d-4f8e-a594-b29ea28fd72f","type":"ColumnDataSource"}},"id":"3227f864-1b55-4934-8edb-a7ddaaa2789b","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Leyte Gulf"],"cumulative":{"__ndarray__":"9rOq7t0l2j8=","dtype":"float64","shape":[1]},"general":["United States Seventh Fleet"],"outcome":["V"],"value":{"__ndarray__":"9rOq7t0l2j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABgnkA=","dtype":"float64","shape":[1]}}},"id":"8d04c463-491d-4f8e-a594-b29ea28fd72f","type":"ColumnDataSource"},{"attributes":{},"id":"0734666e-d592-44d8-8f8d-4cfa111c7299","type":"LinearScale"},{"attributes":{"source":{"id":"8d04c463-491d-4f8e-a594-b29ea28fd72f","type":"ColumnDataSource"}},"id":"39c04fc5-864b-4daf-b36b-613b7fa9abc0","type":"CDSView"},{"attributes":{},"id":"405ff904-f648-4c44-a30d-4d0ddf3f0f42","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"fe2e3aa0-7be2-4926-8f03-a5866bffd978","type":"DataRange1d"},{"attributes":{},"id":"adb59993-8851-4170-a78c-e29502b2445b","type":"BasicTicker"},{"attributes":{},"id":"89c35820-4012-4f88-820f-1ef467821a24","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"d0c281a7-fe92-4fb2-87df-40fc082c0eb3","type":"CategoricalAxis"}],"left":[{"id":"bc0978d3-17a2-4b95-a9cf-3f0b8c635c81","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"d0c281a7-fe92-4fb2-87df-40fc082c0eb3","type":"CategoricalAxis"},{"id":"1b39b840-79c6-4421-8223-dbdc09a7f7d1","type":"Grid"},{"id":"bc0978d3-17a2-4b95-a9cf-3f0b8c635c81","type":"LinearAxis"},{"id":"39a20af4-e01c-411f-a43d-ae42d4eb1d85","type":"Grid"},{"id":"d528f785-41fb-4a33-b56f-f7144d9d5f2f","type":"GlyphRenderer"},{"id":"1fc8b163-8fea-46db-a8b6-87a37adda42a","type":"GlyphRenderer"}],"title":{"id":"998e0dd8-27fa-472c-b205-6b91c2bef580","type":"Title"},"toolbar":{"id":"08e4b19f-de47-4623-9f39-55b8569fa768","type":"Toolbar"},"x_range":{"id":"b7a2f012-dd35-47ee-99c7-81bbf22a5068","type":"FactorRange"},"x_scale":{"id":"96060b3c-fd8c-47ec-a610-5d62ee906cf1","type":"CategoricalScale"},"y_range":{"id":"fe2e3aa0-7be2-4926-8f03-a5866bffd978","type":"DataRange1d"},"y_scale":{"id":"0734666e-d592-44d8-8f8d-4cfa111c7299","type":"LinearScale"}},"id":"fb5e8ace-b3ed-4cbe-967e-058de5d8fef4","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"96060b3c-fd8c-47ec-a610-5d62ee906cf1","type":"CategoricalScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f68d9ab9-6317-42f7-abb3-0e5f239000ad","type":"CategoricalColorMapper"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"437ee722-2f0f-4a32-b945-596d965edc70","type":"Line"},{"attributes":{"plot":{"id":"fb5e8ace-b3ed-4cbe-967e-058de5d8fef4","subtype":"Figure","type":"Plot"},"ticker":{"id":"f342e24f-b5c5-412a-ae01-56457f10ffcf","type":"CategoricalTicker"}},"id":"1b39b840-79c6-4421-8223-dbdc09a7f7d1","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Leyte Gulf"]},"id":"b7a2f012-dd35-47ee-99c7-81bbf22a5068","type":"FactorRange"},{"attributes":{"formatter":{"id":"405ff904-f648-4c44-a30d-4d0ddf3f0f42","type":"BasicTickFormatter"},"plot":{"id":"fb5e8ace-b3ed-4cbe-967e-058de5d8fef4","subtype":"Figure","type":"Plot"},"ticker":{"id":"adb59993-8851-4170-a78c-e29502b2445b","type":"BasicTicker"}},"id":"bc0978d3-17a2-4b95-a9cf-3f0b8c635c81","type":"LinearAxis"},{"attributes":{"dimension":1,"plot":{"id":"fb5e8ace-b3ed-4cbe-967e-058de5d8fef4","subtype":"Figure","type":"Plot"},"ticker":{"id":"adb59993-8851-4170-a78c-e29502b2445b","type":"BasicTicker"}},"id":"39a20af4-e01c-411f-a43d-ae42d4eb1d85","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f68d9ab9-6317-42f7-abb3-0e5f239000ad","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f68d9ab9-6317-42f7-abb3-0e5f239000ad","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"225865f1-9f04-4c9f-83b0-3ab2ea3c3902","type":"VBar"},{"attributes":{"data_source":{"id":"8d04c463-491d-4f8e-a594-b29ea28fd72f","type":"ColumnDataSource"},"glyph":{"id":"437ee722-2f0f-4a32-b945-596d965edc70","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5a335088-7196-4eac-8cad-c89098bd6480","type":"Line"},"selection_glyph":null,"view":{"id":"39c04fc5-864b-4daf-b36b-613b7fa9abc0","type":"CDSView"}},"id":"d528f785-41fb-4a33-b56f-f7144d9d5f2f","type":"GlyphRenderer"},{"attributes":{},"id":"f342e24f-b5c5-412a-ae01-56457f10ffcf","type":"CategoricalTicker"}],"root_ids":["fb5e8ace-b3ed-4cbe-967e-058de5d8fef4"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"66b93b94-9ea2-4145-a0a9-4439e1d563e3","elementid":"c43c3442-3ff4-44e3-a211-ff24f6f57c68","modelid":"fb5e8ace-b3ed-4cbe-967e-058de5d8fef4"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

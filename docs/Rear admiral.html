@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="077deef9-5e53-4616-b3ee-416b0afa9d4c"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b1bb64ec-be57-4822-85a6-d5f93e74836b":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a4a61f8a-e24e-433e-8e76-4c84837a7a23","type":"Line"},{"attributes":{},"id":"4594685b-681a-486a-8c0e-898873a010a0","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"a0f41cd9-cf0b-408d-8dd6-7922cb2d5386","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"a0f41cd9-cf0b-408d-8dd6-7922cb2d5386","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f457f01f-dadd-43e1-9d34-6dc864313e6e","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"a0f41cd9-cf0b-408d-8dd6-7922cb2d5386","type":"CategoricalColorMapper"},{"attributes":{"callback":null},"id":"050c9ffb-81f9-478f-afb7-9aace6a204a6","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"719e96f5-a7a4-4229-82bb-d461f28369a1","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"8d066c81-9015-4d87-ab4b-1813e21d77d1","type":"HoverTool"},{"attributes":{"source":{"id":"267c6a06-9730-48fc-8640-1056eb7bd8c1","type":"ColumnDataSource"}},"id":"8ba75e6a-4bf0-490e-8d65-99e8953a1bbf","type":"CDSView"},{"attributes":{"data_source":{"id":"267c6a06-9730-48fc-8640-1056eb7bd8c1","type":"ColumnDataSource"},"glyph":{"id":"a4a61f8a-e24e-433e-8e76-4c84837a7a23","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"84ec98c9-cf33-47fb-b172-06b422af58ad","type":"Line"},"selection_glyph":null,"view":{"id":"8ba75e6a-4bf0-490e-8d65-99e8953a1bbf","type":"CDSView"}},"id":"1e1a398c-d7ff-43a0-b126-77028451cc30","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"8d066c81-9015-4d87-ab4b-1813e21d77d1","type":"HoverTool"}]},"id":"6b9b212f-c822-4dd5-bd31-19f961ed3bde","type":"Toolbar"},{"attributes":{"data_source":{"id":"267c6a06-9730-48fc-8640-1056eb7bd8c1","type":"ColumnDataSource"},"glyph":{"id":"f457f01f-dadd-43e1-9d34-6dc864313e6e","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"719e96f5-a7a4-4229-82bb-d461f28369a1","type":"VBar"},"selection_glyph":null,"view":{"id":"8f088aa7-b00f-49a9-8e42-7d950f5b1c0e","type":"CDSView"}},"id":"db5968e7-54ca-417b-9837-9e098c66a111","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"edd6a0e7-5a4a-4231-9c7e-19883c7f833c","type":"BasicTickFormatter"},"plot":{"id":"865ab625-11b4-43e0-8150-4a13990351fd","subtype":"Figure","type":"Plot"},"ticker":{"id":"5e3c1060-a1d0-432b-b3b1-070d08864752","type":"BasicTicker"}},"id":"e5b6d76b-763a-4860-87de-1a791c604850","type":"LinearAxis"},{"attributes":{"formatter":{"id":"ca7489e0-9b8e-44f4-9dba-380096109d8d","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"865ab625-11b4-43e0-8150-4a13990351fd","subtype":"Figure","type":"Plot"},"ticker":{"id":"d9b9a031-fc1e-435c-b677-da6f8a696f00","type":"CategoricalTicker"}},"id":"a53e0925-9bfb-4247-a75a-c249202239d2","type":"CategoricalAxis"},{"attributes":{"callback":null,"factors":["Second Kashmir War","Indo-Pakistani War of 1971"]},"id":"08719fbf-b631-473f-a591-745dbf1a2db5","type":"FactorRange"},{"attributes":{},"id":"d9b9a031-fc1e-435c-b677-da6f8a696f00","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"a53e0925-9bfb-4247-a75a-c249202239d2","type":"CategoricalAxis"}],"left":[{"id":"e5b6d76b-763a-4860-87de-1a791c604850","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"a53e0925-9bfb-4247-a75a-c249202239d2","type":"CategoricalAxis"},{"id":"ed7953be-94bd-40a2-991d-fdf00d80f46e","type":"Grid"},{"id":"e5b6d76b-763a-4860-87de-1a791c604850","type":"LinearAxis"},{"id":"1001e5da-2a5a-4207-bd4f-713d15dc3882","type":"Grid"},{"id":"1e1a398c-d7ff-43a0-b126-77028451cc30","type":"GlyphRenderer"},{"id":"db5968e7-54ca-417b-9837-9e098c66a111","type":"GlyphRenderer"}],"title":{"id":"86c90d1d-a701-42e8-a65d-a2b3421bf6ec","type":"Title"},"toolbar":{"id":"6b9b212f-c822-4dd5-bd31-19f961ed3bde","type":"Toolbar"},"x_range":{"id":"08719fbf-b631-473f-a591-745dbf1a2db5","type":"FactorRange"},"x_scale":{"id":"4594685b-681a-486a-8c0e-898873a010a0","type":"CategoricalScale"},"y_range":{"id":"050c9ffb-81f9-478f-afb7-9aace6a204a6","type":"DataRange1d"},"y_scale":{"id":"ba70b15d-31db-4f0a-888f-29e5e6e00877","type":"LinearScale"}},"id":"865ab625-11b4-43e0-8150-4a13990351fd","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"267c6a06-9730-48fc-8640-1056eb7bd8c1","type":"ColumnDataSource"}},"id":"8f088aa7-b00f-49a9-8e42-7d950f5b1c0e","type":"CDSView"},{"attributes":{},"id":"ca7489e0-9b8e-44f4-9dba-380096109d8d","type":"CategoricalTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"84ec98c9-cf33-47fb-b172-06b422af58ad","type":"Line"},{"attributes":{"plot":null,"text":"Rear admiral (0 - 1 - 1)"},"id":"86c90d1d-a701-42e8-a65d-a2b3421bf6ec","type":"Title"},{"attributes":{"plot":{"id":"865ab625-11b4-43e0-8150-4a13990351fd","subtype":"Figure","type":"Plot"},"ticker":{"id":"d9b9a031-fc1e-435c-b677-da6f8a696f00","type":"CategoricalTicker"}},"id":"ed7953be-94bd-40a2-991d-fdf00d80f46e","type":"Grid"},{"attributes":{},"id":"ba70b15d-31db-4f0a-888f-29e5e6e00877","type":"LinearScale"},{"attributes":{},"id":"edd6a0e7-5a4a-4231-9c7e-19883c7f833c","type":"BasicTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Second Kashmir War","Indo-Pakistani War of 1971"],"cumulative":{"__ndarray__":"8GnLpcPopj8LnYdZlkfbvw==","dtype":"float64","shape":[2]},"general":["Rear admiral","Rear admiral"],"outcome":["I","D"],"value":{"__ndarray__":"8GnLpcPopj9JCkHOriTevw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAC0nkAAAAAAAMyeQA==","dtype":"float64","shape":[2]}}},"id":"267c6a06-9730-48fc-8640-1056eb7bd8c1","type":"ColumnDataSource"},{"attributes":{"dimension":1,"plot":{"id":"865ab625-11b4-43e0-8150-4a13990351fd","subtype":"Figure","type":"Plot"},"ticker":{"id":"5e3c1060-a1d0-432b-b3b1-070d08864752","type":"BasicTicker"}},"id":"1001e5da-2a5a-4207-bd4f-713d15dc3882","type":"Grid"},{"attributes":{},"id":"5e3c1060-a1d0-432b-b3b1-070d08864752","type":"BasicTicker"}],"root_ids":["865ab625-11b4-43e0-8150-4a13990351fd"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b1bb64ec-be57-4822-85a6-d5f93e74836b","elementid":"077deef9-5e53-4616-b3ee-416b0afa9d4c","modelid":"865ab625-11b4-43e0-8150-4a13990351fd"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

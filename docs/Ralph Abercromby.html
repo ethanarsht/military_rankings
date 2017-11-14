@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="963c30c5-d4c3-41ab-8622-79db3643ec14"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"f769d65f-c199-4623-97db-e9caf81b3d03":{"roots":{"references":[{"attributes":{"source":{"id":"e9086c4a-535e-40ac-9def-2a71f41eef51","type":"ColumnDataSource"}},"id":"58ed3150-170b-4000-a273-b8d209f131ab","type":"CDSView"},{"attributes":{"data_source":{"id":"e9086c4a-535e-40ac-9def-2a71f41eef51","type":"ColumnDataSource"},"glyph":{"id":"69e3696d-87a3-4695-a108-5e2fd5f367e4","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b816cce2-2c8b-4f1f-856f-0211240ae872","type":"VBar"},"selection_glyph":null,"view":{"id":"58ed3150-170b-4000-a273-b8d209f131ab","type":"CDSView"}},"id":"ee66452c-1865-411f-b158-20e7290394b7","type":"GlyphRenderer"},{"attributes":{},"id":"c0fa9ba2-a7b1-4803-9443-936addd9c2a7","type":"BasicTicker"},{"attributes":{"source":{"id":"e9086c4a-535e-40ac-9def-2a71f41eef51","type":"ColumnDataSource"}},"id":"bcd2f3bd-7c8e-4f95-986c-dfa9a9573a04","type":"CDSView"},{"attributes":{},"id":"9d36d15e-3f08-4139-99db-dfaaf3719e90","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Callantsoog","Battle of Castricum","Battle of Krabbendam","Battle of Abukir (1801)"],"cumulative":{"__ndarray__":"HHWjlsRO3z9AalnWNA2Mv5rqKlHsTN8/ilYr+mEz7j8=","dtype":"float64","shape":[4]},"general":["Ralph Abercromby","Ralph Abercromby","Ralph Abercromby","Ralph Abercromby"],"outcome":["V","D","V","V"],"value":{"__ndarray__":"HHWjlsRO3z83IKselxfgv/ba7vuqFuA/esIro9cZ3T8=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAAAcnEAAAAAAABycQAAAAAAAHJxAAAAAAAAknEA=","dtype":"float64","shape":[4]}}},"id":"e9086c4a-535e-40ac-9def-2a71f41eef51","type":"ColumnDataSource"},{"attributes":{},"id":"d84d0f6c-716b-4b34-80ee-49f9f028c349","type":"BasicTickFormatter"},{"attributes":{},"id":"1b8cb2ba-38bf-4134-b28e-f24e1c49cedc","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"c3a6545e-e18d-45bb-95e3-dc4648dab0fe","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"c3a6545e-e18d-45bb-95e3-dc4648dab0fe","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"69e3696d-87a3-4695-a108-5e2fd5f367e4","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"c3a6545e-e18d-45bb-95e3-dc4648dab0fe","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"e9086c4a-535e-40ac-9def-2a71f41eef51","type":"ColumnDataSource"},"glyph":{"id":"cdcf887b-2580-4b3c-9a9b-28a3331497d8","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"db1ed4ad-e34a-44fd-a97a-1c6437efbf01","type":"Line"},"selection_glyph":null,"view":{"id":"bcd2f3bd-7c8e-4f95-986c-dfa9a9573a04","type":"CDSView"}},"id":"119352f1-61c4-4ffd-91c2-c63eae310ace","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"cdcf887b-2580-4b3c-9a9b-28a3331497d8","type":"Line"},{"attributes":{"below":[{"id":"cc196d9c-3fe7-4c9c-8b77-e9d18131ca6e","type":"CategoricalAxis"}],"left":[{"id":"d8a868ee-096a-4405-9081-0f8c1fd96fae","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"cc196d9c-3fe7-4c9c-8b77-e9d18131ca6e","type":"CategoricalAxis"},{"id":"eddfb766-558c-42fe-9068-4f02765d36a8","type":"Grid"},{"id":"d8a868ee-096a-4405-9081-0f8c1fd96fae","type":"LinearAxis"},{"id":"c7989ca1-dcdc-4844-8bf8-2be3d6031f61","type":"Grid"},{"id":"119352f1-61c4-4ffd-91c2-c63eae310ace","type":"GlyphRenderer"},{"id":"ee66452c-1865-411f-b158-20e7290394b7","type":"GlyphRenderer"}],"title":{"id":"846e9bda-3cd0-4e19-a056-2499f99f6086","type":"Title"},"toolbar":{"id":"5296202c-c52c-46c0-92cd-89ca9b61d25c","type":"Toolbar"},"x_range":{"id":"34f219ee-82b1-4606-af30-857b9ac1f8de","type":"FactorRange"},"x_scale":{"id":"394d4f3b-3a35-4bf5-8919-29997021530f","type":"CategoricalScale"},"y_range":{"id":"71eb6578-8de1-4cb3-bb4d-874e9192748f","type":"DataRange1d"},"y_scale":{"id":"db6593c9-9edd-4fb6-88ab-4bbb8249fd87","type":"LinearScale"}},"id":"833d8f2f-53de-4b79-9770-e7bf7cd78e2d","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"394d4f3b-3a35-4bf5-8919-29997021530f","type":"CategoricalScale"},{"attributes":{"plot":{"id":"833d8f2f-53de-4b79-9770-e7bf7cd78e2d","subtype":"Figure","type":"Plot"},"ticker":{"id":"1b8cb2ba-38bf-4134-b28e-f24e1c49cedc","type":"CategoricalTicker"}},"id":"eddfb766-558c-42fe-9068-4f02765d36a8","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b816cce2-2c8b-4f1f-856f-0211240ae872","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Callantsoog","Battle of Castricum","Battle of Krabbendam","Battle of Abukir (1801)"]},"id":"34f219ee-82b1-4606-af30-857b9ac1f8de","type":"FactorRange"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"db1ed4ad-e34a-44fd-a97a-1c6437efbf01","type":"Line"},{"attributes":{},"id":"db6593c9-9edd-4fb6-88ab-4bbb8249fd87","type":"LinearScale"},{"attributes":{"formatter":{"id":"9d36d15e-3f08-4139-99db-dfaaf3719e90","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"833d8f2f-53de-4b79-9770-e7bf7cd78e2d","subtype":"Figure","type":"Plot"},"ticker":{"id":"1b8cb2ba-38bf-4134-b28e-f24e1c49cedc","type":"CategoricalTicker"}},"id":"cc196d9c-3fe7-4c9c-8b77-e9d18131ca6e","type":"CategoricalAxis"},{"attributes":{"callback":null},"id":"71eb6578-8de1-4cb3-bb4d-874e9192748f","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Ralph Abercromby (3 - 0 - 1)"},"id":"846e9bda-3cd0-4e19-a056-2499f99f6086","type":"Title"},{"attributes":{"formatter":{"id":"d84d0f6c-716b-4b34-80ee-49f9f028c349","type":"BasicTickFormatter"},"plot":{"id":"833d8f2f-53de-4b79-9770-e7bf7cd78e2d","subtype":"Figure","type":"Plot"},"ticker":{"id":"c0fa9ba2-a7b1-4803-9443-936addd9c2a7","type":"BasicTicker"}},"id":"d8a868ee-096a-4405-9081-0f8c1fd96fae","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d7c58514-03b0-478b-90c0-8d4a14aff16d","type":"HoverTool"}]},"id":"5296202c-c52c-46c0-92cd-89ca9b61d25c","type":"Toolbar"},{"attributes":{"dimension":1,"plot":{"id":"833d8f2f-53de-4b79-9770-e7bf7cd78e2d","subtype":"Figure","type":"Plot"},"ticker":{"id":"c0fa9ba2-a7b1-4803-9443-936addd9c2a7","type":"BasicTicker"}},"id":"c7989ca1-dcdc-4844-8bf8-2be3d6031f61","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"d7c58514-03b0-478b-90c0-8d4a14aff16d","type":"HoverTool"}],"root_ids":["833d8f2f-53de-4b79-9770-e7bf7cd78e2d"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"f769d65f-c199-4623-97db-e9caf81b3d03","elementid":"963c30c5-d4c3-41ab-8622-79db3643ec14","modelid":"833d8f2f-53de-4b79-9770-e7bf7cd78e2d"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

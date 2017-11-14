@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="368e645b-c8db-4fae-9ccc-625ed68dcc75"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b271a80a-4599-4446-96fc-1f53e0acef2d":{"roots":{"references":[{"attributes":{"data_source":{"id":"fe02a63b-aed7-4b2e-a1cd-b437964683f7","type":"ColumnDataSource"},"glyph":{"id":"be21e1a8-11ae-4e3d-8c66-dd500e73590f","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6e467cc6-b0aa-4ffd-8a8c-0eb56f74cf27","type":"Line"},"selection_glyph":null,"view":{"id":"4f99247a-3a2b-4e4f-b9b7-004eb1bddbc3","type":"CDSView"}},"id":"942299d0-44ce-497a-b917-b3061b3ab02a","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b50569d5-0620-46bc-bc5e-4c15f4ef6295","type":"VBar"},{"attributes":{},"id":"5a9a8c8e-4187-4e5c-9bd5-f5e26ca2ba95","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"92b3a8a7-6ec3-4220-b46c-561cc4b9122e","subtype":"Figure","type":"Plot"},"ticker":{"id":"c60e3373-a9d3-474b-831a-dbef6752cfcf","type":"BasicTicker"}},"id":"5614b66c-1610-4294-b293-5d3abbb681d8","type":"Grid"},{"attributes":{"formatter":{"id":"739902f5-a36b-4be6-8bdb-a9ffab2fd4b8","type":"BasicTickFormatter"},"plot":{"id":"92b3a8a7-6ec3-4220-b46c-561cc4b9122e","subtype":"Figure","type":"Plot"},"ticker":{"id":"c60e3373-a9d3-474b-831a-dbef6752cfcf","type":"BasicTicker"}},"id":"f5df2f26-ef76-4a33-888a-7c7b6a22600f","type":"LinearAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"6e467cc6-b0aa-4ffd-8a8c-0eb56f74cf27","type":"Line"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"be21e1a8-11ae-4e3d-8c66-dd500e73590f","type":"Line"},{"attributes":{"formatter":{"id":"dc5bfe42-ec77-4e1f-b06f-2b418d8d44f8","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"92b3a8a7-6ec3-4220-b46c-561cc4b9122e","subtype":"Figure","type":"Plot"},"ticker":{"id":"5a9a8c8e-4187-4e5c-9bd5-f5e26ca2ba95","type":"CategoricalTicker"}},"id":"70037766-46c3-4808-a60d-3079dfd38928","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"71d49b4b-6907-4bde-85d8-77bc068aac32","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"71d49b4b-6907-4bde-85d8-77bc068aac32","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"93d06f6f-4ff4-42f5-ac8f-04e1f177bfa5","type":"VBar"},{"attributes":{"source":{"id":"fe02a63b-aed7-4b2e-a1cd-b437964683f7","type":"ColumnDataSource"}},"id":"7400880c-3203-4250-af03-5168e5c2bf9f","type":"CDSView"},{"attributes":{"callback":null},"id":"10261ae5-ac44-4f9c-b89e-f12688a15955","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"7772975e-4435-4803-9e04-25099f3a05c8","type":"HoverTool"}]},"id":"de70eeaf-b199-49a8-967b-092770eedac0","type":"Toolbar"},{"attributes":{},"id":"b0399adc-8ec5-49ec-b865-cd7d0d8b5365","type":"LinearScale"},{"attributes":{},"id":"1302e370-2d68-4388-8cbf-46735d0d5684","type":"CategoricalScale"},{"attributes":{},"id":"dc5bfe42-ec77-4e1f-b06f-2b418d8d44f8","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"70037766-46c3-4808-a60d-3079dfd38928","type":"CategoricalAxis"}],"left":[{"id":"f5df2f26-ef76-4a33-888a-7c7b6a22600f","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"70037766-46c3-4808-a60d-3079dfd38928","type":"CategoricalAxis"},{"id":"b56b524b-fae6-4447-ae2c-08a3fbe95429","type":"Grid"},{"id":"f5df2f26-ef76-4a33-888a-7c7b6a22600f","type":"LinearAxis"},{"id":"5614b66c-1610-4294-b293-5d3abbb681d8","type":"Grid"},{"id":"942299d0-44ce-497a-b917-b3061b3ab02a","type":"GlyphRenderer"},{"id":"47531848-c7fa-499c-aca0-f1bb6c13aaa0","type":"GlyphRenderer"}],"title":{"id":"f68241ec-8a09-4146-8d39-49502b3ef78a","type":"Title"},"toolbar":{"id":"de70eeaf-b199-49a8-967b-092770eedac0","type":"Toolbar"},"x_range":{"id":"57e9f630-8cc6-4e41-ad05-217c408ae9c4","type":"FactorRange"},"x_scale":{"id":"1302e370-2d68-4388-8cbf-46735d0d5684","type":"CategoricalScale"},"y_range":{"id":"10261ae5-ac44-4f9c-b89e-f12688a15955","type":"DataRange1d"},"y_scale":{"id":"b0399adc-8ec5-49ec-b865-cd7d0d8b5365","type":"LinearScale"}},"id":"92b3a8a7-6ec3-4220-b46c-561cc4b9122e","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"fe02a63b-aed7-4b2e-a1cd-b437964683f7","type":"ColumnDataSource"}},"id":"4f99247a-3a2b-4e4f-b9b7-004eb1bddbc3","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Cape St Vincent (1797)"]},"id":"57e9f630-8cc6-4e41-ad05-217c408ae9c4","type":"FactorRange"},{"attributes":{},"id":"739902f5-a36b-4be6-8bdb-a9ffab2fd4b8","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"fe02a63b-aed7-4b2e-a1cd-b437964683f7","type":"ColumnDataSource"},"glyph":{"id":"93d06f6f-4ff4-42f5-ac8f-04e1f177bfa5","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b50569d5-0620-46bc-bc5e-4c15f4ef6295","type":"VBar"},"selection_glyph":null,"view":{"id":"7400880c-3203-4250-af03-5168e5c2bf9f","type":"CDSView"}},"id":"47531848-c7fa-499c-aca0-f1bb6c13aaa0","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Jos\u00e9 de C\u00f3rdoba y Ramos (0 - 0 - 1)"},"id":"f68241ec-8a09-4146-8d39-49502b3ef78a","type":"Title"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Cape St Vincent (1797)"],"cumulative":{"__ndarray__":"6pTC7iYn4b8=","dtype":"float64","shape":[1]},"general":["Jos\u00e9 de C\u00f3rdoba y Ramos"],"outcome":["D"],"value":{"__ndarray__":"6pTC7iYn4b8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAUnEA=","dtype":"float64","shape":[1]}}},"id":"fe02a63b-aed7-4b2e-a1cd-b437964683f7","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"71d49b4b-6907-4bde-85d8-77bc068aac32","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"7772975e-4435-4803-9e04-25099f3a05c8","type":"HoverTool"},{"attributes":{"plot":{"id":"92b3a8a7-6ec3-4220-b46c-561cc4b9122e","subtype":"Figure","type":"Plot"},"ticker":{"id":"5a9a8c8e-4187-4e5c-9bd5-f5e26ca2ba95","type":"CategoricalTicker"}},"id":"b56b524b-fae6-4447-ae2c-08a3fbe95429","type":"Grid"},{"attributes":{},"id":"c60e3373-a9d3-474b-831a-dbef6752cfcf","type":"BasicTicker"}],"root_ids":["92b3a8a7-6ec3-4220-b46c-561cc4b9122e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b271a80a-4599-4446-96fc-1f53e0acef2d","elementid":"368e645b-c8db-4fae-9ccc-625ed68dcc75","modelid":"92b3a8a7-6ec3-4220-b46c-561cc4b9122e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

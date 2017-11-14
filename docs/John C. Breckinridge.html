@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="74ef71d4-237d-4993-8cd4-96ce378e43fe"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"8bfec8be-2f2d-4398-94b7-35996e9fe205":{"roots":{"references":[{"attributes":{"formatter":{"id":"92b2e36c-21ed-43ae-80a7-0c98e3764f4c","type":"BasicTickFormatter"},"plot":{"id":"0cdaaa89-1261-401e-8350-6707936eeb4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"56b0d31b-bc07-4f1e-abcb-157dd8a41507","type":"BasicTicker"}},"id":"3db6e633-e61a-4b3f-9598-9c7fe703f958","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"42503e64-0691-4049-8a26-20e4be94a939","type":"HoverTool"}]},"id":"a3c6a02e-86f4-4d2e-a48c-0a30d5b75630","type":"Toolbar"},{"attributes":{"formatter":{"id":"16c4dc6c-95aa-437a-9f9f-f4dca1a62d22","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"0cdaaa89-1261-401e-8350-6707936eeb4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"ec1d93e2-7f13-40b1-961f-3fa3d80475fe","type":"CategoricalTicker"}},"id":"6c584ab6-a38c-4ad5-b949-073ce0b192cf","type":"CategoricalAxis"},{"attributes":{},"id":"56b0d31b-bc07-4f1e-abcb-157dd8a41507","type":"BasicTicker"},{"attributes":{"source":{"id":"5146a45a-0c7d-4c62-bad3-5a0d59996dab","type":"ColumnDataSource"}},"id":"09834cba-85c7-4c54-8a78-670cd73e1e8f","type":"CDSView"},{"attributes":{"source":{"id":"5146a45a-0c7d-4c62-bad3-5a0d59996dab","type":"ColumnDataSource"}},"id":"73b04b16-a29f-4c97-9945-fdadc1775903","type":"CDSView"},{"attributes":{},"id":"ec1d93e2-7f13-40b1-961f-3fa3d80475fe","type":"CategoricalTicker"},{"attributes":{},"id":"ca53540b-c674-4c5e-be5c-a61ae5930bfd","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"3720da51-f905-4b1b-a240-26b1cd0d57d2","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"3720da51-f905-4b1b-a240-26b1cd0d57d2","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7954ba4a-10ac-4830-868a-23c7a6ab5c61","type":"VBar"},{"attributes":{"below":[{"id":"6c584ab6-a38c-4ad5-b949-073ce0b192cf","type":"CategoricalAxis"}],"left":[{"id":"3db6e633-e61a-4b3f-9598-9c7fe703f958","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"6c584ab6-a38c-4ad5-b949-073ce0b192cf","type":"CategoricalAxis"},{"id":"600546b3-4b8c-46ab-8830-d43f527357ae","type":"Grid"},{"id":"3db6e633-e61a-4b3f-9598-9c7fe703f958","type":"LinearAxis"},{"id":"4b00b760-688f-4f82-bf96-e8e65ee49314","type":"Grid"},{"id":"ddf255d7-21f0-44ba-9030-4faa86c392af","type":"GlyphRenderer"},{"id":"63a08d51-3895-498f-94ef-72ce290bec8b","type":"GlyphRenderer"}],"title":{"id":"16cff975-9a35-4a79-9152-4296ed6bdd64","type":"Title"},"toolbar":{"id":"a3c6a02e-86f4-4d2e-a48c-0a30d5b75630","type":"Toolbar"},"x_range":{"id":"2954279c-2ce9-46a6-995f-f2eafcd17abe","type":"FactorRange"},"x_scale":{"id":"533c540d-c55c-4e79-8dcc-0801d5f7cbb7","type":"CategoricalScale"},"y_range":{"id":"9579a4ea-ed18-4d7a-85ce-2b414cdbb9a2","type":"DataRange1d"},"y_scale":{"id":"ca53540b-c674-4c5e-be5c-a61ae5930bfd","type":"LinearScale"}},"id":"0cdaaa89-1261-401e-8350-6707936eeb4e","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Baton Rouge (1862)","Battle of Davis' Cross Roads","Battle of Bull's Gap","Battle of Cool Spring","Battle of New Market"]},"id":"2954279c-2ce9-46a6-995f-f2eafcd17abe","type":"FactorRange"},{"attributes":{"data_source":{"id":"5146a45a-0c7d-4c62-bad3-5a0d59996dab","type":"ColumnDataSource"},"glyph":{"id":"8cb83f4b-2ce3-448e-b471-93d9c5f8b5ac","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ad5beeaa-8030-4368-a57e-5c31e67fdf7e","type":"Line"},"selection_glyph":null,"view":{"id":"73b04b16-a29f-4c97-9945-fdadc1775903","type":"CDSView"}},"id":"ddf255d7-21f0-44ba-9030-4faa86c392af","type":"GlyphRenderer"},{"attributes":{},"id":"92b2e36c-21ed-43ae-80a7-0c98e3764f4c","type":"BasicTickFormatter"},{"attributes":{},"id":"16c4dc6c-95aa-437a-9f9f-f4dca1a62d22","type":"CategoricalTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ad5beeaa-8030-4368-a57e-5c31e67fdf7e","type":"Line"},{"attributes":{"data_source":{"id":"5146a45a-0c7d-4c62-bad3-5a0d59996dab","type":"ColumnDataSource"},"glyph":{"id":"7954ba4a-10ac-4830-868a-23c7a6ab5c61","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"145ba3b9-3f0c-493d-b48f-ed334691a0c3","type":"VBar"},"selection_glyph":null,"view":{"id":"09834cba-85c7-4c54-8a78-670cd73e1e8f","type":"CDSView"}},"id":"63a08d51-3895-498f-94ef-72ce290bec8b","type":"GlyphRenderer"},{"attributes":{},"id":"533c540d-c55c-4e79-8dcc-0801d5f7cbb7","type":"CategoricalScale"},{"attributes":{"callback":null},"id":"9579a4ea-ed18-4d7a-85ce-2b414cdbb9a2","type":"DataRange1d"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"42503e64-0691-4049-8a26-20e4be94a939","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"145ba3b9-3f0c-493d-b48f-ed334691a0c3","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8cb83f4b-2ce3-448e-b471-93d9c5f8b5ac","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Baton Rouge (1862)","Battle of Davis' Cross Roads","Battle of Bull's Gap","Battle of Cool Spring","Battle of New Market"],"cumulative":{"__ndarray__":"99BvisUc4L/R6Tog3tDgvyA6XQfEG5q/bFNKjIbC3D+fC4YKIQbvPw==","dtype":"float64","shape":[5]},"general":["John C. Breckinridge","John C. Breckinridge","John C. Breckinridge","John C. Breckinridge","John C. Breckinridge"],"outcome":["D","I","V","V","V"],"value":{"__ndarray__":"99BvisUc4L9AG2O5EoOWvwAAAAAAAOA/DifAzEJk3j/p4WDE3aTgPw==","dtype":"float64","shape":[5]},"year":{"__ndarray__":"AAAAAAAYnUAAAAAAABydQAAAAAAAIJ1AAAAAAAAgnUAAAAAAACCdQA==","dtype":"float64","shape":[5]}}},"id":"5146a45a-0c7d-4c62-bad3-5a0d59996dab","type":"ColumnDataSource"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"3720da51-f905-4b1b-a240-26b1cd0d57d2","type":"CategoricalColorMapper"},{"attributes":{"dimension":1,"plot":{"id":"0cdaaa89-1261-401e-8350-6707936eeb4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"56b0d31b-bc07-4f1e-abcb-157dd8a41507","type":"BasicTicker"}},"id":"4b00b760-688f-4f82-bf96-e8e65ee49314","type":"Grid"},{"attributes":{"plot":null,"text":"John C. Breckinridge (3 - 1 - 1)"},"id":"16cff975-9a35-4a79-9152-4296ed6bdd64","type":"Title"},{"attributes":{"plot":{"id":"0cdaaa89-1261-401e-8350-6707936eeb4e","subtype":"Figure","type":"Plot"},"ticker":{"id":"ec1d93e2-7f13-40b1-961f-3fa3d80475fe","type":"CategoricalTicker"}},"id":"600546b3-4b8c-46ab-8830-d43f527357ae","type":"Grid"}],"root_ids":["0cdaaa89-1261-401e-8350-6707936eeb4e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"8bfec8be-2f2d-4398-94b7-35996e9fe205","elementid":"74ef71d4-237d-4993-8cd4-96ce378e43fe","modelid":"0cdaaa89-1261-401e-8350-6707936eeb4e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

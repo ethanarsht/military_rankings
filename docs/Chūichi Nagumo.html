@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f7f90a0d-cbbb-4a53-9955-00e8daffd9fc"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"879cf1ff-41c9-43df-8086-4b15c5c5e98a":{"roots":{"references":[{"attributes":{"data_source":{"id":"2d16161c-8915-44b5-ba44-dcc6b325df4a","type":"ColumnDataSource"},"glyph":{"id":"dcc3885f-2986-41a6-b701-da5901a11040","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"83bfb1b4-f0e9-452e-be4a-91b73a88c441","type":"Line"},"selection_glyph":null,"view":{"id":"9d0f6051-3773-40c3-b0e4-09697d236941","type":"CDSView"}},"id":"b5bc80b6-9b60-4d68-98b6-2f1b7a3bec14","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"d6a57473-aa29-4c85-b29c-8f20d7524c99","type":"CategoricalAxis"}],"left":[{"id":"21f769cf-4192-46e5-ab7a-5a428cd40aab","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"d6a57473-aa29-4c85-b29c-8f20d7524c99","type":"CategoricalAxis"},{"id":"1392557a-b2e9-4e4d-911e-dcd46dc57a93","type":"Grid"},{"id":"21f769cf-4192-46e5-ab7a-5a428cd40aab","type":"LinearAxis"},{"id":"9ad677cf-9b74-4352-ae15-474aebfd45b4","type":"Grid"},{"id":"b5bc80b6-9b60-4d68-98b6-2f1b7a3bec14","type":"GlyphRenderer"},{"id":"451020d6-a763-45a3-9905-b825be860758","type":"GlyphRenderer"}],"title":{"id":"d3dbf2b2-e38b-473a-9687-1eac7657fafd","type":"Title"},"toolbar":{"id":"dd47ac19-2043-4448-8dfa-bfb83ddefc86","type":"Toolbar"},"x_range":{"id":"230b03fb-edd7-44a4-a54a-ecb9d338b739","type":"FactorRange"},"x_scale":{"id":"be97948f-5319-410b-8101-494b01bbaf9f","type":"CategoricalScale"},"y_range":{"id":"c2d0cf78-0955-424f-aef3-404e0d9c9d63","type":"DataRange1d"},"y_scale":{"id":"18bfd0c5-f097-4ba9-b9b1-940b584a98ac","type":"LinearScale"}},"id":"7eb388c6-d757-4103-b456-442e1a8fdd0e","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":1,"plot":{"id":"7eb388c6-d757-4103-b456-442e1a8fdd0e","subtype":"Figure","type":"Plot"},"ticker":{"id":"cec74be1-750a-4370-aae3-e58fe2a81f5d","type":"BasicTicker"}},"id":"9ad677cf-9b74-4352-ae15-474aebfd45b4","type":"Grid"},{"attributes":{},"id":"fd46f2c8-d149-4c8f-9371-f95c33c57c32","type":"CategoricalTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"83bfb1b4-f0e9-452e-be4a-91b73a88c441","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b1174320-a5ac-468c-8223-94308067c9b3","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"1f3573eb-82a4-4237-ba37-e23ea768a7b6","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"d9b427f0-4a88-4c36-9028-fa68821b3553","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"d9b427f0-4a88-4c36-9028-fa68821b3553","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d56840d8-25a2-4279-8aec-6301c0495d1f","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"dcc3885f-2986-41a6-b701-da5901a11040","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"d9b427f0-4a88-4c36-9028-fa68821b3553","type":"CategoricalColorMapper"},{"attributes":{},"id":"027ff3bd-56c9-4e8b-9fa6-f40f0aefa18e","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"027ff3bd-56c9-4e8b-9fa6-f40f0aefa18e","type":"BasicTickFormatter"},"plot":{"id":"7eb388c6-d757-4103-b456-442e1a8fdd0e","subtype":"Figure","type":"Plot"},"ticker":{"id":"cec74be1-750a-4370-aae3-e58fe2a81f5d","type":"BasicTicker"}},"id":"21f769cf-4192-46e5-ab7a-5a428cd40aab","type":"LinearAxis"},{"attributes":{},"id":"be97948f-5319-410b-8101-494b01bbaf9f","type":"CategoricalScale"},{"attributes":{"plot":{"id":"7eb388c6-d757-4103-b456-442e1a8fdd0e","subtype":"Figure","type":"Plot"},"ticker":{"id":"966f5b60-ba7d-49d1-9ff6-8eb6c83ded4b","type":"CategoricalTicker"}},"id":"1392557a-b2e9-4e4d-911e-dcd46dc57a93","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Midway","Battle of the Eastern Solomons","Battle of the Santa Cruz Islands","Bombing of Darwin (February 1942)","Japanese Raids into Indian Ocean","Battle of Saipan"]},"id":"230b03fb-edd7-44a4-a54a-ecb9d338b739","type":"FactorRange"},{"attributes":{},"id":"18bfd0c5-f097-4ba9-b9b1-940b584a98ac","type":"LinearScale"},{"attributes":{"source":{"id":"2d16161c-8915-44b5-ba44-dcc6b325df4a","type":"ColumnDataSource"}},"id":"9d0f6051-3773-40c3-b0e4-09697d236941","type":"CDSView"},{"attributes":{"source":{"id":"2d16161c-8915-44b5-ba44-dcc6b325df4a","type":"ColumnDataSource"}},"id":"f38d2885-ff54-43fd-988d-af1d927517c7","type":"CDSView"},{"attributes":{"callback":null},"id":"c2d0cf78-0955-424f-aef3-404e0d9c9d63","type":"DataRange1d"},{"attributes":{},"id":"966f5b60-ba7d-49d1-9ff6-8eb6c83ded4b","type":"CategoricalTicker"},{"attributes":{"plot":null,"text":"Ch\u016bichi Nagumo (3 - 0 - 3)"},"id":"d3dbf2b2-e38b-473a-9687-1eac7657fafd","type":"Title"},{"attributes":{},"id":"cec74be1-750a-4370-aae3-e58fe2a81f5d","type":"BasicTicker"},{"attributes":{"data_source":{"id":"2d16161c-8915-44b5-ba44-dcc6b325df4a","type":"ColumnDataSource"},"glyph":{"id":"d56840d8-25a2-4279-8aec-6301c0495d1f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b1174320-a5ac-468c-8223-94308067c9b3","type":"VBar"},"selection_glyph":null,"view":{"id":"f38d2885-ff54-43fd-988d-af1d927517c7","type":"CDSView"}},"id":"451020d6-a763-45a3-9905-b825be860758","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"1f3573eb-82a4-4237-ba37-e23ea768a7b6","type":"HoverTool"}]},"id":"dd47ac19-2043-4448-8dfa-bfb83ddefc86","type":"Toolbar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Midway","Battle of the Eastern Solomons","Battle of the Santa Cruz Islands","Bombing of Darwin (February 1942)","Japanese Raids into Indian Ocean","Battle of Saipan"],"cumulative":{"__ndarray__":"0Xm4Dzbf279w0i+NHxTwv62ZfGxinuG/ABf9F1AIhD+BI1k6KtbgP/wYiI9FObA/","dtype":"float64","shape":[6]},"general":["Ch\u016bichi Nagumo","Ch\u016bichi Nagumo","Ch\u016bichi Nagumo","Ch\u016bichi Nagumo","Ch\u016bichi Nagumo","Ch\u016bichi Nagumo"],"outcome":["D","D","V","V","V","D"],"value":{"__ndarray__":"0Xm4Dzbf27/4Z4MSpDjiv2YWxlu5E90/CY7crIPu4T8lL/n5CIbgP8NA0BADnt2/","dtype":"float64","shape":[6]},"year":{"__ndarray__":"AAAAAABYnkAAAAAAAFieQAAAAAAAWJ5AAAAAAABYnkAAAAAAAFieQAAAAAAAYJ5A","dtype":"float64","shape":[6]}}},"id":"2d16161c-8915-44b5-ba44-dcc6b325df4a","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"fd46f2c8-d149-4c8f-9371-f95c33c57c32","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"7eb388c6-d757-4103-b456-442e1a8fdd0e","subtype":"Figure","type":"Plot"},"ticker":{"id":"966f5b60-ba7d-49d1-9ff6-8eb6c83ded4b","type":"CategoricalTicker"}},"id":"d6a57473-aa29-4c85-b29c-8f20d7524c99","type":"CategoricalAxis"}],"root_ids":["7eb388c6-d757-4103-b456-442e1a8fdd0e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"879cf1ff-41c9-43df-8086-4b15c5c5e98a","elementid":"f7f90a0d-cbbb-4a53-9955-00e8daffd9fc","modelid":"7eb388c6-d757-4103-b456-442e1a8fdd0e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

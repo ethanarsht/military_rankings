@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="6c5e2b29-9bd2-4fab-8ab0-a364cfbac51f"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"48c83252-32fd-40ad-bcb2-ec1ccb34054a":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"4f6ccd66-2aa3-4384-8434-7a43907493a4","type":"HoverTool"},{"attributes":{},"id":"67c39f7b-74fc-4769-9f45-12a2fe13e4e4","type":"CategoricalTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"848c015e-3833-4efd-91e4-13eb4bdc8fac","type":"Line"},{"attributes":{"below":[{"id":"b7514708-fc54-463a-bf61-d9f6c177bdbb","type":"CategoricalAxis"}],"left":[{"id":"464fd5b3-72c3-4c3a-a40a-0db47e86606b","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"b7514708-fc54-463a-bf61-d9f6c177bdbb","type":"CategoricalAxis"},{"id":"4604b342-a9d5-44b8-bece-9e4794ea4cfd","type":"Grid"},{"id":"464fd5b3-72c3-4c3a-a40a-0db47e86606b","type":"LinearAxis"},{"id":"0a5a8276-7fb9-4e19-bece-dec31f618248","type":"Grid"},{"id":"4e0ba062-beab-411a-8d93-432b45e0dfb7","type":"GlyphRenderer"},{"id":"1c79dae7-de54-421e-801b-2c9720d866f9","type":"GlyphRenderer"}],"title":{"id":"76854e99-a9c2-4eb3-83c3-312bae7dff71","type":"Title"},"toolbar":{"id":"6a607e8e-f622-43df-bc57-49948d6ff606","type":"Toolbar"},"x_range":{"id":"02bf7916-dd9d-4fea-87b5-a91d13da90e3","type":"FactorRange"},"x_scale":{"id":"a365fb9d-4197-4d92-8d74-00111c1bd397","type":"CategoricalScale"},"y_range":{"id":"4f3dff40-a070-4d40-a2b9-345cfeabec06","type":"DataRange1d"},"y_scale":{"id":"887a73ad-9905-4de5-b57a-d05e2b9e57c0","type":"LinearScale"}},"id":"526fb0e6-f63d-4e71-8f0b-fbeea23f683d","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"eb91a253-080a-48e3-99e1-14cd05241b19","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Bregalnica","Battle of Kolubara"]},"id":"02bf7916-dd9d-4fea-87b5-a91d13da90e3","type":"FactorRange"},{"attributes":{"formatter":{"id":"11673df4-98e7-4a1e-82f1-f4ecd061cdc3","type":"BasicTickFormatter"},"plot":{"id":"526fb0e6-f63d-4e71-8f0b-fbeea23f683d","subtype":"Figure","type":"Plot"},"ticker":{"id":"db51d10d-ea91-45b0-8f94-74b93eb1e457","type":"BasicTicker"}},"id":"464fd5b3-72c3-4c3a-a40a-0db47e86606b","type":"LinearAxis"},{"attributes":{},"id":"db51d10d-ea91-45b0-8f94-74b93eb1e457","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"d57d5536-497d-4965-a331-a1836af77c47","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"d57d5536-497d-4965-a331-a1836af77c47","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"906ff3bc-8845-4587-9db2-cb4253c25260","type":"VBar"},{"attributes":{},"id":"a365fb9d-4197-4d92-8d74-00111c1bd397","type":"CategoricalScale"},{"attributes":{},"id":"11673df4-98e7-4a1e-82f1-f4ecd061cdc3","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"4f3dff40-a070-4d40-a2b9-345cfeabec06","type":"DataRange1d"},{"attributes":{"data_source":{"id":"df81fd65-9c5d-4d95-b8d3-4972b58afae9","type":"ColumnDataSource"},"glyph":{"id":"906ff3bc-8845-4587-9db2-cb4253c25260","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"eef781ac-1373-4624-8917-21012295226f","type":"VBar"},"selection_glyph":null,"view":{"id":"1350f8be-d056-4da6-a94b-0c770ebb2700","type":"CDSView"}},"id":"1c79dae7-de54-421e-801b-2c9720d866f9","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"c07cbab5-c857-4592-81e7-0bde56622dc3","type":"Line"},{"attributes":{"plot":{"id":"526fb0e6-f63d-4e71-8f0b-fbeea23f683d","subtype":"Figure","type":"Plot"},"ticker":{"id":"67c39f7b-74fc-4769-9f45-12a2fe13e4e4","type":"CategoricalTicker"}},"id":"4604b342-a9d5-44b8-bece-9e4794ea4cfd","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"4f6ccd66-2aa3-4384-8434-7a43907493a4","type":"HoverTool"}]},"id":"6a607e8e-f622-43df-bc57-49948d6ff606","type":"Toolbar"},{"attributes":{"source":{"id":"df81fd65-9c5d-4d95-b8d3-4972b58afae9","type":"ColumnDataSource"}},"id":"cfa49133-d0f1-4c74-824d-4f5dab5574ed","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Bregalnica","Battle of Kolubara"],"cumulative":{"__ndarray__":"kK7/GfKb3j/txI4SC3PvPw==","dtype":"float64","shape":[2]},"general":["\u017divojin Mi\u0161i\u0107","\u017divojin Mi\u0161i\u0107"],"outcome":["V","V"],"value":{"__ndarray__":"kK7/GfKb3j+l7Y4FEiXgPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAADknUAAAAAAAOidQA==","dtype":"float64","shape":[2]}}},"id":"df81fd65-9c5d-4d95-b8d3-4972b58afae9","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"df81fd65-9c5d-4d95-b8d3-4972b58afae9","type":"ColumnDataSource"},"glyph":{"id":"848c015e-3833-4efd-91e4-13eb4bdc8fac","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c07cbab5-c857-4592-81e7-0bde56622dc3","type":"Line"},"selection_glyph":null,"view":{"id":"cfa49133-d0f1-4c74-824d-4f5dab5574ed","type":"CDSView"}},"id":"4e0ba062-beab-411a-8d93-432b45e0dfb7","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"eef781ac-1373-4624-8917-21012295226f","type":"VBar"},{"attributes":{"source":{"id":"df81fd65-9c5d-4d95-b8d3-4972b58afae9","type":"ColumnDataSource"}},"id":"1350f8be-d056-4da6-a94b-0c770ebb2700","type":"CDSView"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"d57d5536-497d-4965-a331-a1836af77c47","type":"CategoricalColorMapper"},{"attributes":{},"id":"887a73ad-9905-4de5-b57a-d05e2b9e57c0","type":"LinearScale"},{"attributes":{"dimension":1,"plot":{"id":"526fb0e6-f63d-4e71-8f0b-fbeea23f683d","subtype":"Figure","type":"Plot"},"ticker":{"id":"db51d10d-ea91-45b0-8f94-74b93eb1e457","type":"BasicTicker"}},"id":"0a5a8276-7fb9-4e19-bece-dec31f618248","type":"Grid"},{"attributes":{"plot":null,"text":"\u017divojin Mi\u0161i\u0107 (2 - 0 - 0)"},"id":"76854e99-a9c2-4eb3-83c3-312bae7dff71","type":"Title"},{"attributes":{"formatter":{"id":"eb91a253-080a-48e3-99e1-14cd05241b19","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"526fb0e6-f63d-4e71-8f0b-fbeea23f683d","subtype":"Figure","type":"Plot"},"ticker":{"id":"67c39f7b-74fc-4769-9f45-12a2fe13e4e4","type":"CategoricalTicker"}},"id":"b7514708-fc54-463a-bf61-d9f6c177bdbb","type":"CategoricalAxis"}],"root_ids":["526fb0e6-f63d-4e71-8f0b-fbeea23f683d"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"48c83252-32fd-40ad-bcb2-ec1ccb34054a","elementid":"6c5e2b29-9bd2-4fab-8ab0-a364cfbac51f","modelid":"526fb0e6-f63d-4e71-8f0b-fbeea23f683d"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

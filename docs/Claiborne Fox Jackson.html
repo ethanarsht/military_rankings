@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="25c949e2-2012-4192-aa67-93fa78502c8e"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"9cc9b979-95c7-401d-9fcf-a53ea468dd3e":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0d117f7f-7c10-4f04-89ce-d25606bde56c","type":"Line"},{"attributes":{"formatter":{"id":"aa520fdb-9e00-47ab-87d0-ecd9af8397d3","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"df6d1780-9948-42a4-875c-78fd701e63c0","subtype":"Figure","type":"Plot"},"ticker":{"id":"b8073f1d-c35d-4736-9e3f-dc8e8c93f2f9","type":"CategoricalTicker"}},"id":"3f9d14d9-c381-419d-bb4e-3dd04d13df45","type":"CategoricalAxis"},{"attributes":{"source":{"id":"4d820fea-61a6-4391-82b1-c16c05d08ea4","type":"ColumnDataSource"}},"id":"ad652669-40e9-4a90-928a-4a971657f14a","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"2c68423a-7785-4435-907e-54682c5cde40","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"2c68423a-7785-4435-907e-54682c5cde40","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6cdd3a9f-dddf-4c9f-9e87-9cc472ca0b41","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"df6d1780-9948-42a4-875c-78fd701e63c0","subtype":"Figure","type":"Plot"},"ticker":{"id":"aa1e43f5-4b0a-433d-8b9d-09f42c3d4afb","type":"BasicTicker"}},"id":"93109b66-93da-420c-8f04-8fcaa3d3d358","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"3a96b135-ff72-48f1-8330-9179772995e5","type":"HoverTool"},{"attributes":{"source":{"id":"4d820fea-61a6-4391-82b1-c16c05d08ea4","type":"ColumnDataSource"}},"id":"dec92f20-8b1b-42a7-936b-a3ef8f4d5378","type":"CDSView"},{"attributes":{"callback":null},"id":"accf0681-d9db-459b-b084-ea11e7769303","type":"DataRange1d"},{"attributes":{"plot":{"id":"df6d1780-9948-42a4-875c-78fd701e63c0","subtype":"Figure","type":"Plot"},"ticker":{"id":"b8073f1d-c35d-4736-9e3f-dc8e8c93f2f9","type":"CategoricalTicker"}},"id":"e5611e9d-0e3b-4b3c-af42-cc5c005e21cc","type":"Grid"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"add41fc1-3c94-4be6-bdef-b30b12342d63","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"2c68423a-7785-4435-907e-54682c5cde40","type":"CategoricalColorMapper"},{"attributes":{},"id":"aa1e43f5-4b0a-433d-8b9d-09f42c3d4afb","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"3a96b135-ff72-48f1-8330-9179772995e5","type":"HoverTool"}]},"id":"0d793eb1-50b8-4e11-955c-d100b5786d33","type":"Toolbar"},{"attributes":{},"id":"ef6c0415-197c-486a-a063-4d0202559c07","type":"LinearScale"},{"attributes":{"plot":null,"text":"Claiborne Fox Jackson (1 - 0 - 0)"},"id":"3dac99d4-627c-457f-bb56-45340afce61f","type":"Title"},{"attributes":{"below":[{"id":"3f9d14d9-c381-419d-bb4e-3dd04d13df45","type":"CategoricalAxis"}],"left":[{"id":"83f0db16-3295-4d3c-b060-2f524a0f5a54","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"3f9d14d9-c381-419d-bb4e-3dd04d13df45","type":"CategoricalAxis"},{"id":"e5611e9d-0e3b-4b3c-af42-cc5c005e21cc","type":"Grid"},{"id":"83f0db16-3295-4d3c-b060-2f524a0f5a54","type":"LinearAxis"},{"id":"93109b66-93da-420c-8f04-8fcaa3d3d358","type":"Grid"},{"id":"d85246aa-2f49-43ad-a78b-b94367d6aa7d","type":"GlyphRenderer"},{"id":"b252f0e1-ec9f-4199-ba6f-f0fb18a97788","type":"GlyphRenderer"}],"title":{"id":"3dac99d4-627c-457f-bb56-45340afce61f","type":"Title"},"toolbar":{"id":"0d793eb1-50b8-4e11-955c-d100b5786d33","type":"Toolbar"},"x_range":{"id":"2cdea606-a7fd-4679-b8f9-f472de827f80","type":"FactorRange"},"x_scale":{"id":"88863bc9-ee2b-481a-9aed-57be0bd6c5ac","type":"CategoricalScale"},"y_range":{"id":"accf0681-d9db-459b-b084-ea11e7769303","type":"DataRange1d"},"y_scale":{"id":"ef6c0415-197c-486a-a063-4d0202559c07","type":"LinearScale"}},"id":"df6d1780-9948-42a4-875c-78fd701e63c0","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Carthage (1861)"],"cumulative":{"__ndarray__":"QlMLHEkx3D8=","dtype":"float64","shape":[1]},"general":["Claiborne Fox Jackson"],"outcome":["V"],"value":{"__ndarray__":"QlMLHEkx3D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAUnUA=","dtype":"float64","shape":[1]}}},"id":"4d820fea-61a6-4391-82b1-c16c05d08ea4","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"efc15386-2157-4c89-bb66-7b0b2a9c1edf","type":"BasicTickFormatter"},"plot":{"id":"df6d1780-9948-42a4-875c-78fd701e63c0","subtype":"Figure","type":"Plot"},"ticker":{"id":"aa1e43f5-4b0a-433d-8b9d-09f42c3d4afb","type":"BasicTicker"}},"id":"83f0db16-3295-4d3c-b060-2f524a0f5a54","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"cc8708dc-4e75-4b37-b55f-e47107d58527","type":"VBar"},{"attributes":{"data_source":{"id":"4d820fea-61a6-4391-82b1-c16c05d08ea4","type":"ColumnDataSource"},"glyph":{"id":"add41fc1-3c94-4be6-bdef-b30b12342d63","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0d117f7f-7c10-4f04-89ce-d25606bde56c","type":"Line"},"selection_glyph":null,"view":{"id":"dec92f20-8b1b-42a7-936b-a3ef8f4d5378","type":"CDSView"}},"id":"d85246aa-2f49-43ad-a78b-b94367d6aa7d","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"4d820fea-61a6-4391-82b1-c16c05d08ea4","type":"ColumnDataSource"},"glyph":{"id":"6cdd3a9f-dddf-4c9f-9e87-9cc472ca0b41","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"cc8708dc-4e75-4b37-b55f-e47107d58527","type":"VBar"},"selection_glyph":null,"view":{"id":"ad652669-40e9-4a90-928a-4a971657f14a","type":"CDSView"}},"id":"b252f0e1-ec9f-4199-ba6f-f0fb18a97788","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of Carthage (1861)"]},"id":"2cdea606-a7fd-4679-b8f9-f472de827f80","type":"FactorRange"},{"attributes":{},"id":"b8073f1d-c35d-4736-9e3f-dc8e8c93f2f9","type":"CategoricalTicker"},{"attributes":{},"id":"88863bc9-ee2b-481a-9aed-57be0bd6c5ac","type":"CategoricalScale"},{"attributes":{},"id":"efc15386-2157-4c89-bb66-7b0b2a9c1edf","type":"BasicTickFormatter"},{"attributes":{},"id":"aa520fdb-9e00-47ab-87d0-ecd9af8397d3","type":"CategoricalTickFormatter"}],"root_ids":["df6d1780-9948-42a4-875c-78fd701e63c0"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"9cc9b979-95c7-401d-9fcf-a53ea468dd3e","elementid":"25c949e2-2012-4192-aa67-93fa78502c8e","modelid":"df6d1780-9948-42a4-875c-78fd701e63c0"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

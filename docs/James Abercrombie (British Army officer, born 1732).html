@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d6c04eb5-42db-4435-a2c8-b7c8c49a69f4"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b5baf880-8409-4cc8-b598-5eb33c7e903e":{"roots":{"references":[{"attributes":{},"id":"7ef280fb-f237-4838-adc5-392e2cb53ea7","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"89fe15a5-bfae-4b19-ab8e-533dd16c1c09","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"89fe15a5-bfae-4b19-ab8e-533dd16c1c09","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7ba3f71b-8ffe-4c28-9432-ea6d6a0c7162","type":"VBar"},{"attributes":{"below":[{"id":"4cc21d15-6014-4ce0-a1de-9b7b0dbc3092","type":"CategoricalAxis"}],"left":[{"id":"169cd071-652f-420a-a9cf-0f75552f9bfa","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"4cc21d15-6014-4ce0-a1de-9b7b0dbc3092","type":"CategoricalAxis"},{"id":"9f936fa3-e11d-49c9-b3ff-30025ec83add","type":"Grid"},{"id":"169cd071-652f-420a-a9cf-0f75552f9bfa","type":"LinearAxis"},{"id":"ecbb2f37-fa22-4799-b7fc-6af7ae04a840","type":"Grid"},{"id":"c8c59dbf-20ab-40bb-b505-0450f4c0f3be","type":"GlyphRenderer"},{"id":"bae6cc10-60e3-4c40-b8ef-bad38250941a","type":"GlyphRenderer"}],"title":{"id":"6137a003-953f-4367-bfc1-71e88cb406e6","type":"Title"},"toolbar":{"id":"28587e67-4703-4473-972c-d54cc82608b2","type":"Toolbar"},"x_range":{"id":"e8b810f2-0e53-4f16-8b5a-fe75a2130f43","type":"FactorRange"},"x_scale":{"id":"e4b06922-8e1e-4c70-80ba-271f200f1cfe","type":"CategoricalScale"},"y_range":{"id":"ede214ac-4758-442d-8b20-ad706ead7491","type":"DataRange1d"},"y_scale":{"id":"7a12c973-d0bd-4136-b03a-922f0878f427","type":"LinearScale"}},"id":"2c71dbe0-51a5-4f66-817e-4f6fad96f72e","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"1a7b1225-839f-4f7f-88a2-babb29eafc5c","type":"HoverTool"}]},"id":"28587e67-4703-4473-972c-d54cc82608b2","type":"Toolbar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0b72f24c-af90-466b-99c5-c9f089520c60","type":"Line"},{"attributes":{"source":{"id":"f54794c2-8ad3-4a42-805e-8a8b8f049891","type":"ColumnDataSource"}},"id":"9c80a40f-78d7-402e-a3f9-e2b31d7714a0","type":"CDSView"},{"attributes":{"plot":{"id":"2c71dbe0-51a5-4f66-817e-4f6fad96f72e","subtype":"Figure","type":"Plot"},"ticker":{"id":"aa6c760e-47c6-477d-b0a8-a5da45fec9f6","type":"CategoricalTicker"}},"id":"9f936fa3-e11d-49c9-b3ff-30025ec83add","type":"Grid"},{"attributes":{"callback":null},"id":"ede214ac-4758-442d-8b20-ad706ead7491","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d6370ca9-fde5-4ba6-b9b6-aa532796b787","type":"VBar"},{"attributes":{},"id":"4ed0c949-990d-4c89-895e-c216938c3a0e","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"1a7b1225-839f-4f7f-88a2-babb29eafc5c","type":"HoverTool"},{"attributes":{},"id":"7a12c973-d0bd-4136-b03a-922f0878f427","type":"LinearScale"},{"attributes":{},"id":"aa6c760e-47c6-477d-b0a8-a5da45fec9f6","type":"CategoricalTicker"},{"attributes":{},"id":"e4b06922-8e1e-4c70-80ba-271f200f1cfe","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Battle of Bunker Hill"]},"id":"e8b810f2-0e53-4f16-8b5a-fe75a2130f43","type":"FactorRange"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Bunker Hill"],"cumulative":{"__ndarray__":"SH6IHd4s3z8=","dtype":"float64","shape":[1]},"general":["James Abercrombie (British Army officer, born 1732)"],"outcome":["V"],"value":{"__ndarray__":"SH6IHd4s3z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAC8m0A=","dtype":"float64","shape":[1]}}},"id":"f54794c2-8ad3-4a42-805e-8a8b8f049891","type":"ColumnDataSource"},{"attributes":{"source":{"id":"f54794c2-8ad3-4a42-805e-8a8b8f049891","type":"ColumnDataSource"}},"id":"1a046400-494f-446d-b01e-cdd5936bf7ad","type":"CDSView"},{"attributes":{"formatter":{"id":"7ef280fb-f237-4838-adc5-392e2cb53ea7","type":"BasicTickFormatter"},"plot":{"id":"2c71dbe0-51a5-4f66-817e-4f6fad96f72e","subtype":"Figure","type":"Plot"},"ticker":{"id":"4ed0c949-990d-4c89-895e-c216938c3a0e","type":"BasicTicker"}},"id":"169cd071-652f-420a-a9cf-0f75552f9bfa","type":"LinearAxis"},{"attributes":{"data_source":{"id":"f54794c2-8ad3-4a42-805e-8a8b8f049891","type":"ColumnDataSource"},"glyph":{"id":"7ba3f71b-8ffe-4c28-9432-ea6d6a0c7162","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d6370ca9-fde5-4ba6-b9b6-aa532796b787","type":"VBar"},"selection_glyph":null,"view":{"id":"9c80a40f-78d7-402e-a3f9-e2b31d7714a0","type":"CDSView"}},"id":"bae6cc10-60e3-4c40-b8ef-bad38250941a","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"89fe15a5-bfae-4b19-ab8e-533dd16c1c09","type":"CategoricalColorMapper"},{"attributes":{},"id":"00560db9-b71b-431f-9b7e-5ff3dd387619","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"2c71dbe0-51a5-4f66-817e-4f6fad96f72e","subtype":"Figure","type":"Plot"},"ticker":{"id":"4ed0c949-990d-4c89-895e-c216938c3a0e","type":"BasicTicker"}},"id":"ecbb2f37-fa22-4799-b7fc-6af7ae04a840","type":"Grid"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"43095330-5829-4c04-8c70-8fc56ab7346f","type":"Line"},{"attributes":{"plot":null,"text":"James Abercrombie (British Army officer, born 1732) (1 - 0 - 0)"},"id":"6137a003-953f-4367-bfc1-71e88cb406e6","type":"Title"},{"attributes":{"data_source":{"id":"f54794c2-8ad3-4a42-805e-8a8b8f049891","type":"ColumnDataSource"},"glyph":{"id":"43095330-5829-4c04-8c70-8fc56ab7346f","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0b72f24c-af90-466b-99c5-c9f089520c60","type":"Line"},"selection_glyph":null,"view":{"id":"1a046400-494f-446d-b01e-cdd5936bf7ad","type":"CDSView"}},"id":"c8c59dbf-20ab-40bb-b505-0450f4c0f3be","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"00560db9-b71b-431f-9b7e-5ff3dd387619","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"2c71dbe0-51a5-4f66-817e-4f6fad96f72e","subtype":"Figure","type":"Plot"},"ticker":{"id":"aa6c760e-47c6-477d-b0a8-a5da45fec9f6","type":"CategoricalTicker"}},"id":"4cc21d15-6014-4ce0-a1de-9b7b0dbc3092","type":"CategoricalAxis"}],"root_ids":["2c71dbe0-51a5-4f66-817e-4f6fad96f72e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b5baf880-8409-4cc8-b598-5eb33c7e903e","elementid":"d6c04eb5-42db-4435-a2c8-b7c8c49a69f4","modelid":"2c71dbe0-51a5-4f66-817e-4f6fad96f72e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

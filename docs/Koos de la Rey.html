@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="173761a6-4fe8-4c53-a6aa-d9bc4990debf"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"fa7026b6-d111-4b00-9996-d911f6fbb19b":{"roots":{"references":[{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"6d29cf48-2a2c-42f2-847e-c1c3393c62bf","type":"CategoricalColorMapper"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ec152aa3-f1d9-40d1-a798-e7b677998979","type":"Line"},{"attributes":{"callback":null},"id":"06820eaa-2967-44a0-8908-5e66d38a1904","type":"DataRange1d"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Magersfontein","Battle of Modder River"],"cumulative":{"__ndarray__":"jIEnjsDa4D8goyG4A6KTPw==","dtype":"float64","shape":[2]},"general":["Koos de la Rey","Koos de la Rey"],"outcome":["V","D"],"value":{"__ndarray__":"jIEnjsDa4D9zdGZwsD3gvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAACsnUAAAAAAAKydQA==","dtype":"float64","shape":[2]}}},"id":"e587e053-f8eb-4bfb-a637-5d2afadce894","type":"ColumnDataSource"},{"attributes":{},"id":"0d2ac34d-9e12-409b-b0d3-f78c4fc85590","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"9d2714c1-3ad9-4968-95e4-72067576be30","type":"HoverTool"},{"attributes":{"below":[{"id":"db2b284d-583a-48bf-8652-0490b74cc7a5","type":"CategoricalAxis"}],"left":[{"id":"3dd68a9e-76be-446c-86a9-bfcfd334a108","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"db2b284d-583a-48bf-8652-0490b74cc7a5","type":"CategoricalAxis"},{"id":"b9b1c3e0-f9b1-4cd4-a90e-9e596e87bb30","type":"Grid"},{"id":"3dd68a9e-76be-446c-86a9-bfcfd334a108","type":"LinearAxis"},{"id":"6dc05ef1-9ce7-40d5-965d-ded1d77e2fd0","type":"Grid"},{"id":"ed6930f7-0bc9-433f-b48c-e8ca0975e551","type":"GlyphRenderer"},{"id":"ad0de64c-a83c-493c-9884-e20baa93e126","type":"GlyphRenderer"}],"title":{"id":"ae096926-9779-4be8-a66c-3d98050b5401","type":"Title"},"toolbar":{"id":"b03d5ee5-ddb9-4646-a355-af4dd83134ba","type":"Toolbar"},"x_range":{"id":"d06b4866-37fb-4f3e-aa92-aa0f64875365","type":"FactorRange"},"x_scale":{"id":"c6004a4a-76c9-420f-aadd-71c4b110823e","type":"CategoricalScale"},"y_range":{"id":"06820eaa-2967-44a0-8908-5e66d38a1904","type":"DataRange1d"},"y_scale":{"id":"de7d7545-f604-4c3e-8ebb-452b65fafbf4","type":"LinearScale"}},"id":"eac56fce-dedd-49c3-932b-e7863785875d","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"a8d6540d-a621-41db-8e44-555bd4fae0ff","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"9d2714c1-3ad9-4968-95e4-72067576be30","type":"HoverTool"}]},"id":"b03d5ee5-ddb9-4646-a355-af4dd83134ba","type":"Toolbar"},{"attributes":{"plot":null,"text":"Koos de la Rey (1 - 0 - 1)"},"id":"ae096926-9779-4be8-a66c-3d98050b5401","type":"Title"},{"attributes":{},"id":"de7d7545-f604-4c3e-8ebb-452b65fafbf4","type":"LinearScale"},{"attributes":{},"id":"3073b15f-61c7-4c7a-a629-5a00a7ebe2fb","type":"BasicTicker"},{"attributes":{"data_source":{"id":"e587e053-f8eb-4bfb-a637-5d2afadce894","type":"ColumnDataSource"},"glyph":{"id":"c258db10-ddae-4a89-b785-760dbe865bf0","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"af9d5b71-f2d2-4239-a749-8210de110f3c","type":"VBar"},"selection_glyph":null,"view":{"id":"1ee810b8-0573-40e5-9cb2-2d995bec2476","type":"CDSView"}},"id":"ad0de64c-a83c-493c-9884-e20baa93e126","type":"GlyphRenderer"},{"attributes":{},"id":"c6004a4a-76c9-420f-aadd-71c4b110823e","type":"CategoricalScale"},{"attributes":{"source":{"id":"e587e053-f8eb-4bfb-a637-5d2afadce894","type":"ColumnDataSource"}},"id":"13fd5ac3-cba4-4d34-b302-d7de172139fa","type":"CDSView"},{"attributes":{"formatter":{"id":"bfc6b87f-6f86-42e6-a46a-e948597662cd","type":"BasicTickFormatter"},"plot":{"id":"eac56fce-dedd-49c3-932b-e7863785875d","subtype":"Figure","type":"Plot"},"ticker":{"id":"3073b15f-61c7-4c7a-a629-5a00a7ebe2fb","type":"BasicTicker"}},"id":"3dd68a9e-76be-446c-86a9-bfcfd334a108","type":"LinearAxis"},{"attributes":{"data_source":{"id":"e587e053-f8eb-4bfb-a637-5d2afadce894","type":"ColumnDataSource"},"glyph":{"id":"916dd525-dc0d-4823-9b2c-bce3f85b43ea","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ec152aa3-f1d9-40d1-a798-e7b677998979","type":"Line"},"selection_glyph":null,"view":{"id":"13fd5ac3-cba4-4d34-b302-d7de172139fa","type":"CDSView"}},"id":"ed6930f7-0bc9-433f-b48c-e8ca0975e551","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"eac56fce-dedd-49c3-932b-e7863785875d","subtype":"Figure","type":"Plot"},"ticker":{"id":"3073b15f-61c7-4c7a-a629-5a00a7ebe2fb","type":"BasicTicker"}},"id":"6dc05ef1-9ce7-40d5-965d-ded1d77e2fd0","type":"Grid"},{"attributes":{"plot":{"id":"eac56fce-dedd-49c3-932b-e7863785875d","subtype":"Figure","type":"Plot"},"ticker":{"id":"a8d6540d-a621-41db-8e44-555bd4fae0ff","type":"CategoricalTicker"}},"id":"b9b1c3e0-f9b1-4cd4-a90e-9e596e87bb30","type":"Grid"},{"attributes":{"formatter":{"id":"0d2ac34d-9e12-409b-b0d3-f78c4fc85590","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"eac56fce-dedd-49c3-932b-e7863785875d","subtype":"Figure","type":"Plot"},"ticker":{"id":"a8d6540d-a621-41db-8e44-555bd4fae0ff","type":"CategoricalTicker"}},"id":"db2b284d-583a-48bf-8652-0490b74cc7a5","type":"CategoricalAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"916dd525-dc0d-4823-9b2c-bce3f85b43ea","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"af9d5b71-f2d2-4239-a749-8210de110f3c","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Magersfontein","Battle of Modder River"]},"id":"d06b4866-37fb-4f3e-aa92-aa0f64875365","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"6d29cf48-2a2c-42f2-847e-c1c3393c62bf","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"6d29cf48-2a2c-42f2-847e-c1c3393c62bf","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c258db10-ddae-4a89-b785-760dbe865bf0","type":"VBar"},{"attributes":{"source":{"id":"e587e053-f8eb-4bfb-a637-5d2afadce894","type":"ColumnDataSource"}},"id":"1ee810b8-0573-40e5-9cb2-2d995bec2476","type":"CDSView"},{"attributes":{},"id":"bfc6b87f-6f86-42e6-a46a-e948597662cd","type":"BasicTickFormatter"}],"root_ids":["eac56fce-dedd-49c3-932b-e7863785875d"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"fa7026b6-d111-4b00-9996-d911f6fbb19b","elementid":"173761a6-4fe8-4c53-a6aa-d9bc4990debf","modelid":"eac56fce-dedd-49c3-932b-e7863785875d"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

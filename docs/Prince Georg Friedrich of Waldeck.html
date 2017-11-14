@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="fae4f8fe-9965-48f0-9850-d01a692bf7f4"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"71d05396-498b-4f73-a790-f92973c5f373":{"roots":{"references":[{"attributes":{},"id":"1e589d23-73bd-4e78-b5ef-2d7b1b7bbb35","type":"BasicTicker"},{"attributes":{},"id":"9c307541-83b9-4924-a3dd-4c88e0fe316b","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"923e18e8-864e-4d1b-af78-7208fad87168","type":"HoverTool"}]},"id":"f01c7567-641c-49eb-bc98-bb4906b65364","type":"Toolbar"},{"attributes":{"formatter":{"id":"e71b3ab3-8863-4de1-a6b4-afe5bce62d6d","type":"BasicTickFormatter"},"plot":{"id":"f25ece51-13b6-45a0-a2c7-9b74b1ba6bca","subtype":"Figure","type":"Plot"},"ticker":{"id":"1e589d23-73bd-4e78-b5ef-2d7b1b7bbb35","type":"BasicTicker"}},"id":"ce4847ee-6810-45dd-acd5-49191b9d35cf","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Prostken","Battle of Saint Gotthard (1664)","Battle of Vienna","Battle of Fleurus (1690)","Battle of Leuze"],"cumulative":{"__ndarray__":"uVXb3CQL4T9cvtvgCXTxP2Vnj6YVyfk/Hw8aDK6x8T8+HjQYXGPjPw==","dtype":"float64","shape":[5]},"general":["Prince Georg Friedrich of Waldeck","Prince Georg Friedrich of Waldeck","Prince Georg Friedrich of Waldeck","Prince Georg Friedrich of Waldeck","Prince Georg Friedrich of Waldeck"],"outcome":["V","V","V","D","D"],"value":{"__ndarray__":"uVXb3CQL4T//Jtzk7tzhPxJSZ4sXquA/jLDqNM8u4L8AAAAAAADgvw==","dtype":"float64","shape":[5]},"year":{"__ndarray__":"AAAAAADgmUAAAAAAAACaQAAAAAAATJpAAAAAAABomkAAAAAAAGyaQA==","dtype":"float64","shape":[5]}}},"id":"3e83de72-48c0-40b8-ae28-e3240391db2d","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"13bbe318-bde7-473d-ad86-bd3248cfc568","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"923e18e8-864e-4d1b-af78-7208fad87168","type":"HoverTool"},{"attributes":{"callback":null},"id":"846a3216-6820-424e-a4df-5a528f0beb67","type":"DataRange1d"},{"attributes":{"source":{"id":"3e83de72-48c0-40b8-ae28-e3240391db2d","type":"ColumnDataSource"}},"id":"ab866845-e1fa-44d4-9525-ddb18ce493c0","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"42e23570-9682-4127-98a6-31d38bfa6fe8","type":"Line"},{"attributes":{"plot":{"id":"f25ece51-13b6-45a0-a2c7-9b74b1ba6bca","subtype":"Figure","type":"Plot"},"ticker":{"id":"e3e8a000-e53a-4bcb-8a95-ed13eb630630","type":"CategoricalTicker"}},"id":"af9837d1-95df-4c11-a8e7-6c29c82f5372","type":"Grid"},{"attributes":{},"id":"ff05bac9-03cf-4abd-b7fa-f34757bc37b0","type":"CategoricalScale"},{"attributes":{"dimension":1,"plot":{"id":"f25ece51-13b6-45a0-a2c7-9b74b1ba6bca","subtype":"Figure","type":"Plot"},"ticker":{"id":"1e589d23-73bd-4e78-b5ef-2d7b1b7bbb35","type":"BasicTicker"}},"id":"2b2ad475-146a-40f9-bbf5-d31b3d15f1ef","type":"Grid"},{"attributes":{"below":[{"id":"e4de77e1-03e3-4245-b5d8-629ecf633d97","type":"CategoricalAxis"}],"left":[{"id":"ce4847ee-6810-45dd-acd5-49191b9d35cf","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"e4de77e1-03e3-4245-b5d8-629ecf633d97","type":"CategoricalAxis"},{"id":"af9837d1-95df-4c11-a8e7-6c29c82f5372","type":"Grid"},{"id":"ce4847ee-6810-45dd-acd5-49191b9d35cf","type":"LinearAxis"},{"id":"2b2ad475-146a-40f9-bbf5-d31b3d15f1ef","type":"Grid"},{"id":"1953d1e4-b531-4b32-a961-0476dd1c386d","type":"GlyphRenderer"},{"id":"6e5c9f69-c15f-404a-a789-ad7d718d613d","type":"GlyphRenderer"}],"title":{"id":"36cb4cee-af6d-480e-bdc3-aecc0b4917f1","type":"Title"},"toolbar":{"id":"f01c7567-641c-49eb-bc98-bb4906b65364","type":"Toolbar"},"x_range":{"id":"fdad029c-ac81-4623-b904-da78e3f71cb1","type":"FactorRange"},"x_scale":{"id":"ff05bac9-03cf-4abd-b7fa-f34757bc37b0","type":"CategoricalScale"},"y_range":{"id":"846a3216-6820-424e-a4df-5a528f0beb67","type":"DataRange1d"},"y_scale":{"id":"92bdd430-1e46-4916-b87c-2681ea839053","type":"LinearScale"}},"id":"f25ece51-13b6-45a0-a2c7-9b74b1ba6bca","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Prostken","Battle of Saint Gotthard (1664)","Battle of Vienna","Battle of Fleurus (1690)","Battle of Leuze"]},"id":"fdad029c-ac81-4623-b904-da78e3f71cb1","type":"FactorRange"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"77b57513-40aa-40b8-98f8-f0e907b6d3b4","type":"CategoricalColorMapper"},{"attributes":{},"id":"e71b3ab3-8863-4de1-a6b4-afe5bce62d6d","type":"BasicTickFormatter"},{"attributes":{"plot":null,"text":"Prince Georg Friedrich of Waldeck (3 - 0 - 2)"},"id":"36cb4cee-af6d-480e-bdc3-aecc0b4917f1","type":"Title"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"77b57513-40aa-40b8-98f8-f0e907b6d3b4","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"77b57513-40aa-40b8-98f8-f0e907b6d3b4","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"1ee8e311-06ac-4ff4-b4ca-e71e524692f5","type":"VBar"},{"attributes":{"data_source":{"id":"3e83de72-48c0-40b8-ae28-e3240391db2d","type":"ColumnDataSource"},"glyph":{"id":"1ee8e311-06ac-4ff4-b4ca-e71e524692f5","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"13bbe318-bde7-473d-ad86-bd3248cfc568","type":"VBar"},"selection_glyph":null,"view":{"id":"45f391da-3eaa-4a81-a2b4-0fa27d1a638a","type":"CDSView"}},"id":"6e5c9f69-c15f-404a-a789-ad7d718d613d","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"9c307541-83b9-4924-a3dd-4c88e0fe316b","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"f25ece51-13b6-45a0-a2c7-9b74b1ba6bca","subtype":"Figure","type":"Plot"},"ticker":{"id":"e3e8a000-e53a-4bcb-8a95-ed13eb630630","type":"CategoricalTicker"}},"id":"e4de77e1-03e3-4245-b5d8-629ecf633d97","type":"CategoricalAxis"},{"attributes":{},"id":"92bdd430-1e46-4916-b87c-2681ea839053","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"69374346-0549-4c66-9e5c-d720917b926b","type":"Line"},{"attributes":{"source":{"id":"3e83de72-48c0-40b8-ae28-e3240391db2d","type":"ColumnDataSource"}},"id":"45f391da-3eaa-4a81-a2b4-0fa27d1a638a","type":"CDSView"},{"attributes":{},"id":"e3e8a000-e53a-4bcb-8a95-ed13eb630630","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"3e83de72-48c0-40b8-ae28-e3240391db2d","type":"ColumnDataSource"},"glyph":{"id":"69374346-0549-4c66-9e5c-d720917b926b","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"42e23570-9682-4127-98a6-31d38bfa6fe8","type":"Line"},"selection_glyph":null,"view":{"id":"ab866845-e1fa-44d4-9525-ddb18ce493c0","type":"CDSView"}},"id":"1953d1e4-b531-4b32-a961-0476dd1c386d","type":"GlyphRenderer"}],"root_ids":["f25ece51-13b6-45a0-a2c7-9b74b1ba6bca"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"71d05396-498b-4f73-a790-f92973c5f373","elementid":"fae4f8fe-9965-48f0-9850-d01a692bf7f4","modelid":"f25ece51-13b6-45a0-a2c7-9b74b1ba6bca"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

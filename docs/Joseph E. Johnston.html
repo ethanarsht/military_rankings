@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="72c0401d-49d0-46f3-8118-17b257d80aac"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"f10b07c7-33d7-4811-b8bd-6caba386a4c9":{"roots":{"references":[{"attributes":{"data_source":{"id":"15a70230-a7b6-41f1-b292-6ef2ba36eeae","type":"ColumnDataSource"},"glyph":{"id":"eaa1a6bc-b776-43d2-b215-79ba4e262c20","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"44abb188-c4ca-440b-b6e9-d5f1507686ca","type":"VBar"},"selection_glyph":null,"view":{"id":"9181535c-689d-4ffc-97bc-f4c1a816b101","type":"CDSView"}},"id":"5f8e33d6-9838-4857-ac6e-030d0bd49636","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1e0ce2de-0e30-494d-9a11-8ad8b8968d47","type":"Line"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"62a643e4-3419-4b27-b25c-b3a1f49a8484","type":"HoverTool"},{"attributes":{"source":{"id":"15a70230-a7b6-41f1-b292-6ef2ba36eeae","type":"ColumnDataSource"}},"id":"9181535c-689d-4ffc-97bc-f4c1a816b101","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"886b7331-f7d8-4a64-90fb-61ebd88383b6","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"886b7331-f7d8-4a64-90fb-61ebd88383b6","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"eaa1a6bc-b776-43d2-b215-79ba4e262c20","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0e02307b-bc02-4f52-a3b4-ceef27b7ae76","type":"Line"},{"attributes":{},"id":"f3d1111c-f0e2-4b67-a28f-6b4aa8d3cecc","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Battle of 1st Bull Run","Battle of Seven Pines","Battle of Williamsburg","Battle of Yorktown (1862)","Battle of Adairsville","Battle of Dallas","Battle of Kennesaw Mountain","Battle of Resaca","Battle of Bentonville"]},"id":"cd07f499-0025-4e58-997a-d528a90ed432","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"44abb188-c4ca-440b-b6e9-d5f1507686ca","type":"VBar"},{"attributes":{},"id":"97db396d-1bd9-4c1a-a3ef-a08e379b8649","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"Joseph E. Johnston (2 - 3 - 4)"},"id":"2f99d978-ba95-4041-84e1-d7591e6e6e36","type":"Title"},{"attributes":{"plot":{"id":"4294bf27-c07f-4291-a689-987c58cb3ab4","subtype":"Figure","type":"Plot"},"ticker":{"id":"f3d1111c-f0e2-4b67-a28f-6b4aa8d3cecc","type":"CategoricalTicker"}},"id":"ac7fa9e3-d731-43e0-8266-911660868e8b","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"4294bf27-c07f-4291-a689-987c58cb3ab4","subtype":"Figure","type":"Plot"},"ticker":{"id":"8d949306-ba1b-4fa5-b145-22bec2d12eea","type":"BasicTicker"}},"id":"79dc46e2-bcbc-4bad-a7a5-fea1b505f745","type":"Grid"},{"attributes":{"formatter":{"id":"2943febf-fe6a-4eca-b2f8-b47360f64e71","type":"BasicTickFormatter"},"plot":{"id":"4294bf27-c07f-4291-a689-987c58cb3ab4","subtype":"Figure","type":"Plot"},"ticker":{"id":"8d949306-ba1b-4fa5-b145-22bec2d12eea","type":"BasicTicker"}},"id":"a91d96e5-81c6-44ba-baa3-8af41b9452c1","type":"LinearAxis"},{"attributes":{},"id":"a60f53ed-0afa-4789-940a-754152818d73","type":"LinearScale"},{"attributes":{},"id":"2fa13735-5d38-46d2-b4f1-ced9b8312af2","type":"CategoricalScale"},{"attributes":{"below":[{"id":"83b8bb9f-eeac-4544-b524-45c2750f755f","type":"CategoricalAxis"}],"left":[{"id":"a91d96e5-81c6-44ba-baa3-8af41b9452c1","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"83b8bb9f-eeac-4544-b524-45c2750f755f","type":"CategoricalAxis"},{"id":"ac7fa9e3-d731-43e0-8266-911660868e8b","type":"Grid"},{"id":"a91d96e5-81c6-44ba-baa3-8af41b9452c1","type":"LinearAxis"},{"id":"79dc46e2-bcbc-4bad-a7a5-fea1b505f745","type":"Grid"},{"id":"9f544799-0c68-4d82-924e-a103fb81b48b","type":"GlyphRenderer"},{"id":"5f8e33d6-9838-4857-ac6e-030d0bd49636","type":"GlyphRenderer"}],"title":{"id":"2f99d978-ba95-4041-84e1-d7591e6e6e36","type":"Title"},"toolbar":{"id":"65876569-cd4c-4d19-8254-956833891ded","type":"Toolbar"},"x_range":{"id":"cd07f499-0025-4e58-997a-d528a90ed432","type":"FactorRange"},"x_scale":{"id":"2fa13735-5d38-46d2-b4f1-ced9b8312af2","type":"CategoricalScale"},"y_range":{"id":"5e05cc8a-ca2c-4cf4-8938-c222ef850960","type":"DataRange1d"},"y_scale":{"id":"a60f53ed-0afa-4789-940a-754152818d73","type":"LinearScale"}},"id":"4294bf27-c07f-4291-a689-987c58cb3ab4","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"97db396d-1bd9-4c1a-a3ef-a08e379b8649","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"4294bf27-c07f-4291-a689-987c58cb3ab4","subtype":"Figure","type":"Plot"},"ticker":{"id":"f3d1111c-f0e2-4b67-a28f-6b4aa8d3cecc","type":"CategoricalTicker"}},"id":"83b8bb9f-eeac-4544-b524-45c2750f755f","type":"CategoricalAxis"},{"attributes":{"callback":null},"id":"5e05cc8a-ca2c-4cf4-8938-c222ef850960","type":"DataRange1d"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"886b7331-f7d8-4a64-90fb-61ebd88383b6","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of 1st Bull Run","Battle of Seven Pines","Battle of Williamsburg","Battle of Yorktown (1862)","Battle of Adairsville","Battle of Dallas","Battle of Kennesaw Mountain","Battle of Resaca","Battle of Bentonville"],"cumulative":{"__ndarray__":"WoOExg4V4D+AxBTzoF94v0Dq0PTpL3U/UMG6o/nDrj/wOTUF7nrcvz9HvyVSMu2/5EqODtLH2r8ksg4zmEbZvz6PORQkKuu/","dtype":"float64","shape":[9]},"general":["Joseph E. Johnston","Joseph E. Johnston","Joseph E. Johnston","Joseph E. Johnston","Joseph E. Johnston","Joseph E. Johnston","Joseph E. Johnston","Joseph E. Johnston","Joseph E. Johnston"],"outcome":["V","D","I","I","D","D","V","I","D"],"value":{"__ndarray__":"WoOExg4V4D/jrGoIzkXgv2DX8nPFx4Y/CKQgZfwdrD8NSdactingv45USUa26d2/mkPwPNKc3z8AjPm3nROYP1hsZPWvDd2/","dtype":"float64","shape":[9]},"year":{"__ndarray__":"AAAAAAAUnUAAAAAAABidQAAAAAAAGJ1AAAAAAAAYnUAAAAAAACCdQAAAAAAAIJ1AAAAAAAAgnUAAAAAAACCdQAAAAAAAJJ1A","dtype":"float64","shape":[9]}}},"id":"15a70230-a7b6-41f1-b292-6ef2ba36eeae","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"15a70230-a7b6-41f1-b292-6ef2ba36eeae","type":"ColumnDataSource"},"glyph":{"id":"0e02307b-bc02-4f52-a3b4-ceef27b7ae76","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1e0ce2de-0e30-494d-9a11-8ad8b8968d47","type":"Line"},"selection_glyph":null,"view":{"id":"508aee71-b287-4147-ad0a-8b41d1b0533f","type":"CDSView"}},"id":"9f544799-0c68-4d82-924e-a103fb81b48b","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"62a643e4-3419-4b27-b25c-b3a1f49a8484","type":"HoverTool"}]},"id":"65876569-cd4c-4d19-8254-956833891ded","type":"Toolbar"},{"attributes":{"source":{"id":"15a70230-a7b6-41f1-b292-6ef2ba36eeae","type":"ColumnDataSource"}},"id":"508aee71-b287-4147-ad0a-8b41d1b0533f","type":"CDSView"},{"attributes":{},"id":"2943febf-fe6a-4eca-b2f8-b47360f64e71","type":"BasicTickFormatter"},{"attributes":{},"id":"8d949306-ba1b-4fa5-b145-22bec2d12eea","type":"BasicTicker"}],"root_ids":["4294bf27-c07f-4291-a689-987c58cb3ab4"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"f10b07c7-33d7-4811-b8bd-6caba386a4c9","elementid":"72c0401d-49d0-46f3-8118-17b257d80aac","modelid":"4294bf27-c07f-4291-a689-987c58cb3ab4"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

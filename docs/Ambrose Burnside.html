@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="eb16c5ba-2b93-459b-af04-3edcf422afb3"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"99d2c918-1c73-4c74-a77d-119b1678671e":{"roots":{"references":[{"attributes":{},"id":"fadd8322-3846-42ab-b7ad-953003f65645","type":"BasicTicker"},{"attributes":{"data_source":{"id":"73bfb108-36a3-4de2-aa6b-5f73df9e2b74","type":"ColumnDataSource"},"glyph":{"id":"34bf207c-5221-466f-b0b5-310ed2b49860","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3a2f912a-c66a-43af-abb0-486f6ff7d645","type":"VBar"},"selection_glyph":null,"view":{"id":"7790ba2a-237f-409c-a660-9f16b89f7df8","type":"CDSView"}},"id":"d197b351-354e-4948-b2f8-a2cf5d9121bc","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"de8b6eb0-482b-491a-b7e7-7f3c3e4a088d","type":"Line"},{"attributes":{"formatter":{"id":"3ebaeb38-8a19-492c-bed1-4b77e654cb98","type":"BasicTickFormatter"},"plot":{"id":"68b6f9dc-2800-4dbb-bb0f-62a5195d107b","subtype":"Figure","type":"Plot"},"ticker":{"id":"fadd8322-3846-42ab-b7ad-953003f65645","type":"BasicTicker"}},"id":"17812b96-c1d8-4abb-ae3b-bdf43718937b","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Fredericksburg","Battle of New Bern","Battle of Roanoke Island","Battle of South Mountain","Battle of Fort Sanders","Battle of the Crater"],"cumulative":{"__ndarray__":"rmCNAETC4L8Iy7YJUqiyv+pN8WQsudc/1rTo0OsZ6z/QWrrJ6rz2P2vUh/SW4+w/","dtype":"float64","shape":[6]},"general":["Ambrose Burnside","Ambrose Burnside","Ambrose Burnside","Ambrose Burnside","Ambrose Burnside","Ambrose Burnside"],"outcome":["D","V","V","V","V","D"],"value":{"__ndarray__":"rmCNAETC4L+aDq1+c9rcP6wAX+dAY9w/whvgPKt63j/LAIzC6V/iPzXh7J4+luC/","dtype":"float64","shape":[6]},"year":{"__ndarray__":"AAAAAAAYnUAAAAAAABidQAAAAAAAGJ1AAAAAAAAYnUAAAAAAABydQAAAAAAAIJ1A","dtype":"float64","shape":[6]}}},"id":"73bfb108-36a3-4de2-aa6b-5f73df9e2b74","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"b8f60b61-61b3-4f50-b128-6f07674a9b1b","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"71f3bb59-1d62-45ff-a483-8663985aa0aa","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"7d8ed1d0-7cca-496c-b5fe-4e14134c72ff","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"68b6f9dc-2800-4dbb-bb0f-62a5195d107b","subtype":"Figure","type":"Plot"},"ticker":{"id":"ff88797b-2f33-447a-80ce-4873a1024c52","type":"CategoricalTicker"}},"id":"2d273f6b-b7d3-4802-b702-d30b57e6fe16","type":"CategoricalAxis"},{"attributes":{"dimension":1,"plot":{"id":"68b6f9dc-2800-4dbb-bb0f-62a5195d107b","subtype":"Figure","type":"Plot"},"ticker":{"id":"fadd8322-3846-42ab-b7ad-953003f65645","type":"BasicTicker"}},"id":"d1f4e614-ef0a-483c-8a16-078876a8e151","type":"Grid"},{"attributes":{},"id":"a0ab93c2-5fe6-4cd0-b65a-0eb3e41eac3d","type":"CategoricalScale"},{"attributes":{"below":[{"id":"2d273f6b-b7d3-4802-b702-d30b57e6fe16","type":"CategoricalAxis"}],"left":[{"id":"17812b96-c1d8-4abb-ae3b-bdf43718937b","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"2d273f6b-b7d3-4802-b702-d30b57e6fe16","type":"CategoricalAxis"},{"id":"a8f0d212-d394-4d1c-ac8e-f0bd44ac549f","type":"Grid"},{"id":"17812b96-c1d8-4abb-ae3b-bdf43718937b","type":"LinearAxis"},{"id":"d1f4e614-ef0a-483c-8a16-078876a8e151","type":"Grid"},{"id":"fffa7df1-3bbb-45f2-a63c-6bf73736715d","type":"GlyphRenderer"},{"id":"d197b351-354e-4948-b2f8-a2cf5d9121bc","type":"GlyphRenderer"}],"title":{"id":"8ead0036-9811-4fc3-a544-a064887af48a","type":"Title"},"toolbar":{"id":"a9e06935-34fb-41a2-9821-4b18e4a40a4a","type":"Toolbar"},"x_range":{"id":"e1abb758-aad7-4bdc-b338-c65e2355f49a","type":"FactorRange"},"x_scale":{"id":"a0ab93c2-5fe6-4cd0-b65a-0eb3e41eac3d","type":"CategoricalScale"},"y_range":{"id":"bb5012fb-fe96-4619-80ab-fc792bfc0a23","type":"DataRange1d"},"y_scale":{"id":"7cb0b924-3317-4c1f-b860-511d0076a6d6","type":"LinearScale"}},"id":"68b6f9dc-2800-4dbb-bb0f-62a5195d107b","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"7cb0b924-3317-4c1f-b860-511d0076a6d6","type":"LinearScale"},{"attributes":{},"id":"7d8ed1d0-7cca-496c-b5fe-4e14134c72ff","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"73bfb108-36a3-4de2-aa6b-5f73df9e2b74","type":"ColumnDataSource"}},"id":"b8f910fe-8212-46f4-a236-e5c53f5b33c7","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"aac65fd9-927e-4292-89f3-6a1b82dc52c6","type":"HoverTool"},{"attributes":{},"id":"ff88797b-2f33-447a-80ce-4873a1024c52","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"aac65fd9-927e-4292-89f3-6a1b82dc52c6","type":"HoverTool"}]},"id":"a9e06935-34fb-41a2-9821-4b18e4a40a4a","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"71f3bb59-1d62-45ff-a483-8663985aa0aa","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"71f3bb59-1d62-45ff-a483-8663985aa0aa","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"34bf207c-5221-466f-b0b5-310ed2b49860","type":"VBar"},{"attributes":{"source":{"id":"73bfb108-36a3-4de2-aa6b-5f73df9e2b74","type":"ColumnDataSource"}},"id":"7790ba2a-237f-409c-a660-9f16b89f7df8","type":"CDSView"},{"attributes":{},"id":"3ebaeb38-8a19-492c-bed1-4b77e654cb98","type":"BasicTickFormatter"},{"attributes":{"plot":null,"text":"Ambrose Burnside (4 - 0 - 2)"},"id":"8ead0036-9811-4fc3-a544-a064887af48a","type":"Title"},{"attributes":{"plot":{"id":"68b6f9dc-2800-4dbb-bb0f-62a5195d107b","subtype":"Figure","type":"Plot"},"ticker":{"id":"ff88797b-2f33-447a-80ce-4873a1024c52","type":"CategoricalTicker"}},"id":"a8f0d212-d394-4d1c-ac8e-f0bd44ac549f","type":"Grid"},{"attributes":{"data_source":{"id":"73bfb108-36a3-4de2-aa6b-5f73df9e2b74","type":"ColumnDataSource"},"glyph":{"id":"de8b6eb0-482b-491a-b7e7-7f3c3e4a088d","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b8f60b61-61b3-4f50-b128-6f07674a9b1b","type":"Line"},"selection_glyph":null,"view":{"id":"b8f910fe-8212-46f4-a236-e5c53f5b33c7","type":"CDSView"}},"id":"fffa7df1-3bbb-45f2-a63c-6bf73736715d","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"bb5012fb-fe96-4619-80ab-fc792bfc0a23","type":"DataRange1d"},{"attributes":{"callback":null,"factors":["Battle of Fredericksburg","Battle of New Bern","Battle of Roanoke Island","Battle of South Mountain","Battle of Fort Sanders","Battle of the Crater"]},"id":"e1abb758-aad7-4bdc-b338-c65e2355f49a","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"3a2f912a-c66a-43af-abb0-486f6ff7d645","type":"VBar"}],"root_ids":["68b6f9dc-2800-4dbb-bb0f-62a5195d107b"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"99d2c918-1c73-4c74-a77d-119b1678671e","elementid":"eb16c5ba-2b93-459b-af04-3edcf422afb3","modelid":"68b6f9dc-2800-4dbb-bb0f-62a5195d107b"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="e905c734-0bf4-43c6-8a71-415acbe8094b"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"7528cc28-19e2-4747-9999-a70143fb56c7":{"roots":{"references":[{"attributes":{},"id":"10dead17-99c5-42c6-9f59-3f04d81d493c","type":"BasicTicker"},{"attributes":{"callback":null},"id":"95d1c9c4-e28c-437a-9d0c-dd62605e1b1d","type":"DataRange1d"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ba11c659-2aa9-4c33-937b-3f344dca488c","type":"Line"},{"attributes":{},"id":"171e7e6c-4cb0-4a7e-ba30-c7a4196eaeb0","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"892c16c1-758d-4116-9be5-4f63c3be79ba","type":"CategoricalColorMapper"},{"attributes":{},"id":"50f51787-3ee0-4c07-a49b-7339a29e9db2","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"892c16c1-758d-4116-9be5-4f63c3be79ba","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"892c16c1-758d-4116-9be5-4f63c3be79ba","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"3e5328ca-dda5-4d88-84ff-11b1e84cbda6","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Bornholm (1676)"]},"id":"3820e91e-ed2b-44fb-9794-c9e41f1971ba","type":"FactorRange"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5174d6fa-d9c7-412d-a8f7-2d190537f545","type":"Line"},{"attributes":{"data_source":{"id":"8608045d-8a05-4f8a-a6aa-544019cb1983","type":"ColumnDataSource"},"glyph":{"id":"ba11c659-2aa9-4c33-937b-3f344dca488c","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5174d6fa-d9c7-412d-a8f7-2d190537f545","type":"Line"},"selection_glyph":null,"view":{"id":"86b0f933-33f6-44d8-902d-4a9913e00e1f","type":"CDSView"}},"id":"020dc022-c5ab-4c89-a395-48b053bbd14a","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"317ad9e6-79bb-46d4-a34d-42d62ee3a25a","subtype":"Figure","type":"Plot"},"ticker":{"id":"171e7e6c-4cb0-4a7e-ba30-c7a4196eaeb0","type":"CategoricalTicker"}},"id":"d2fec46a-eca0-4bab-ab33-c0ba0bb2fbc3","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"20a9771b-0905-4922-b4a4-64c3539001e8","type":"VBar"},{"attributes":{"source":{"id":"8608045d-8a05-4f8a-a6aa-544019cb1983","type":"ColumnDataSource"}},"id":"86b0f933-33f6-44d8-902d-4a9913e00e1f","type":"CDSView"},{"attributes":{},"id":"c50d4440-e1e6-4848-b344-7dc84759023c","type":"LinearScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"3d1e8376-19f3-4efd-ad00-c57d740c85cc","type":"HoverTool"},{"attributes":{"below":[{"id":"752288bd-7911-449f-869e-acbc2d47618e","type":"CategoricalAxis"}],"left":[{"id":"6548f8a5-6269-403a-8386-eaa2e10b3bf3","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"752288bd-7911-449f-869e-acbc2d47618e","type":"CategoricalAxis"},{"id":"d2fec46a-eca0-4bab-ab33-c0ba0bb2fbc3","type":"Grid"},{"id":"6548f8a5-6269-403a-8386-eaa2e10b3bf3","type":"LinearAxis"},{"id":"35820f14-974a-4b36-92a7-3bbf2381eccb","type":"Grid"},{"id":"020dc022-c5ab-4c89-a395-48b053bbd14a","type":"GlyphRenderer"},{"id":"bce188ed-0c15-4c91-9acd-ace124219317","type":"GlyphRenderer"}],"title":{"id":"50b7867f-a218-4e4d-a943-a1c56bee2be4","type":"Title"},"toolbar":{"id":"bf0ba8ba-c734-4240-a4d7-606bc75672ed","type":"Toolbar"},"x_range":{"id":"3820e91e-ed2b-44fb-9794-c9e41f1971ba","type":"FactorRange"},"x_scale":{"id":"61ca4931-6ef0-402f-a04e-eb731d946d69","type":"CategoricalScale"},"y_range":{"id":"95d1c9c4-e28c-437a-9d0c-dd62605e1b1d","type":"DataRange1d"},"y_scale":{"id":"c50d4440-e1e6-4848-b344-7dc84759023c","type":"LinearScale"}},"id":"317ad9e6-79bb-46d4-a34d-42d62ee3a25a","subtype":"Figure","type":"Plot"},{"attributes":{"plot":null,"text":"Niels Juel (0 - 1 - 0)"},"id":"50b7867f-a218-4e4d-a943-a1c56bee2be4","type":"Title"},{"attributes":{"source":{"id":"8608045d-8a05-4f8a-a6aa-544019cb1983","type":"ColumnDataSource"}},"id":"2561265d-9934-4bdf-a500-2d70559dd818","type":"CDSView"},{"attributes":{},"id":"991b9553-3d4d-49c2-b7d1-e6661977401f","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"3d1e8376-19f3-4efd-ad00-c57d740c85cc","type":"HoverTool"}]},"id":"bf0ba8ba-c734-4240-a4d7-606bc75672ed","type":"Toolbar"},{"attributes":{"formatter":{"id":"50f51787-3ee0-4c07-a49b-7339a29e9db2","type":"BasicTickFormatter"},"plot":{"id":"317ad9e6-79bb-46d4-a34d-42d62ee3a25a","subtype":"Figure","type":"Plot"},"ticker":{"id":"10dead17-99c5-42c6-9f59-3f04d81d493c","type":"BasicTicker"}},"id":"6548f8a5-6269-403a-8386-eaa2e10b3bf3","type":"LinearAxis"},{"attributes":{"data_source":{"id":"8608045d-8a05-4f8a-a6aa-544019cb1983","type":"ColumnDataSource"},"glyph":{"id":"3e5328ca-dda5-4d88-84ff-11b1e84cbda6","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"20a9771b-0905-4922-b4a4-64c3539001e8","type":"VBar"},"selection_glyph":null,"view":{"id":"2561265d-9934-4bdf-a500-2d70559dd818","type":"CDSView"}},"id":"bce188ed-0c15-4c91-9acd-ace124219317","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"317ad9e6-79bb-46d4-a34d-42d62ee3a25a","subtype":"Figure","type":"Plot"},"ticker":{"id":"10dead17-99c5-42c6-9f59-3f04d81d493c","type":"BasicTicker"}},"id":"35820f14-974a-4b36-92a7-3bbf2381eccb","type":"Grid"},{"attributes":{},"id":"61ca4931-6ef0-402f-a04e-eb731d946d69","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"991b9553-3d4d-49c2-b7d1-e6661977401f","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"317ad9e6-79bb-46d4-a34d-42d62ee3a25a","subtype":"Figure","type":"Plot"},"ticker":{"id":"171e7e6c-4cb0-4a7e-ba30-c7a4196eaeb0","type":"CategoricalTicker"}},"id":"752288bd-7911-449f-869e-acbc2d47618e","type":"CategoricalAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Bornholm (1676)"],"cumulative":{"__ndarray__":"UDIxffbuoT8=","dtype":"float64","shape":[1]},"general":["Niels Juel"],"outcome":["I"],"value":{"__ndarray__":"UDIxffbuoT8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAwmkA=","dtype":"float64","shape":[1]}}},"id":"8608045d-8a05-4f8a-a6aa-544019cb1983","type":"ColumnDataSource"}],"root_ids":["317ad9e6-79bb-46d4-a34d-42d62ee3a25a"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"7528cc28-19e2-4747-9999-a70143fb56c7","elementid":"e905c734-0bf4-43c6-8a71-415acbe8094b","modelid":"317ad9e6-79bb-46d4-a34d-42d62ee3a25a"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

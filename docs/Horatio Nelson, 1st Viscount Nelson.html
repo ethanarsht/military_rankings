@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="63a347f3-fd29-45a6-8941-1e5428d5a99a"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"b9ffa94d-4776-4a93-be8a-b326aaf8ae1c":{"roots":{"references":[{"attributes":{},"id":"0e357987-507b-496c-8666-9467ccc87c3e","type":"LinearScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Cape St Vincent (1797)","Battle of the Nile","Battle of Copenhagen (1801)","Battle of Trafalgar"],"cumulative":{"__ndarray__":"LCMOq6UO4T+z7ROO2aXwPyCuo+sA3fg/KH/pZByCAEA=","dtype":"float64","shape":[4]},"general":["Horatio Nelson, 1st Viscount Nelson","Horatio Nelson, 1st Viscount Nelson","Horatio Nelson, 1st Viscount Nelson","Horatio Nelson, 1st Viscount Nelson"],"outcome":["V","V","V","V"],"value":{"__ndarray__":"LCMOq6UO4T86uBlxDT3gP9qAH7tObuA/YqBevG9O4D8=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAAAUnEAAAAAAABicQAAAAAAAJJxAAAAAAAA0nEA=","dtype":"float64","shape":[4]}}},"id":"ecf32a05-4941-4b69-ac8e-c5ae30486d65","type":"ColumnDataSource"},{"attributes":{"callback":null},"id":"a9a466d1-2abf-403d-b304-e69ec1e05d5f","type":"DataRange1d"},{"attributes":{},"id":"2a94f371-c4bd-434a-b074-acb6fbf65c7a","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"Horatio Nelson, 1st Viscount Nelson (4 - 0 - 0)"},"id":"a2bb277f-2a8e-4f06-bc97-278b84d49066","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"550e210a-20be-4f28-acba-04c6fa6180e8","type":"CategoricalColorMapper"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"beb44e08-8e24-409f-a62b-4014f5f60a18","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"38c10e47-e9fb-43d5-acde-3eabee59c883","type":"VBar"},{"attributes":{},"id":"c9a5944e-1146-45f7-adbd-652283b8e53a","type":"BasicTicker"},{"attributes":{},"id":"be988289-95bf-48ff-a5ad-2d70ffa61371","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"c54dcabc-939b-452f-b968-dac5be375adc","type":"BasicTickFormatter"},"plot":{"id":"f4c21dad-365f-41dd-8fb9-a14b99c07075","subtype":"Figure","type":"Plot"},"ticker":{"id":"c9a5944e-1146-45f7-adbd-652283b8e53a","type":"BasicTicker"}},"id":"ad1abf31-4062-4699-899c-34bd337ecc5a","type":"LinearAxis"},{"attributes":{"source":{"id":"ecf32a05-4941-4b69-ac8e-c5ae30486d65","type":"ColumnDataSource"}},"id":"0ce0d2bd-79e1-491c-97be-969aca8fc64b","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"603f5f12-9834-41cd-9200-6b1ad91d0609","type":"HoverTool"}]},"id":"a7fddcde-622f-4f59-bcc4-be3c6869f676","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"550e210a-20be-4f28-acba-04c6fa6180e8","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"550e210a-20be-4f28-acba-04c6fa6180e8","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"40b631e9-f60b-4133-bb8d-21ca344d2e15","type":"VBar"},{"attributes":{},"id":"dce26969-d109-4a3f-bbb3-47a24f6190bb","type":"CategoricalTicker"},{"attributes":{},"id":"c54dcabc-939b-452f-b968-dac5be375adc","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"603f5f12-9834-41cd-9200-6b1ad91d0609","type":"HoverTool"},{"attributes":{"below":[{"id":"55559872-7702-4697-b09c-eab1e2467a73","type":"CategoricalAxis"}],"left":[{"id":"ad1abf31-4062-4699-899c-34bd337ecc5a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"55559872-7702-4697-b09c-eab1e2467a73","type":"CategoricalAxis"},{"id":"c9b49f59-8a35-4cb8-b3b0-d0878f1c394a","type":"Grid"},{"id":"ad1abf31-4062-4699-899c-34bd337ecc5a","type":"LinearAxis"},{"id":"69bbec9b-e15f-4362-bcb0-8c16b2bd3481","type":"Grid"},{"id":"a9fa2987-d099-4e65-82a4-8d6d411f3179","type":"GlyphRenderer"},{"id":"3dc80545-0f1d-4de2-abc9-a467e5298f79","type":"GlyphRenderer"}],"title":{"id":"a2bb277f-2a8e-4f06-bc97-278b84d49066","type":"Title"},"toolbar":{"id":"a7fddcde-622f-4f59-bcc4-be3c6869f676","type":"Toolbar"},"x_range":{"id":"4231429e-8257-401b-a397-c5d067eeb094","type":"FactorRange"},"x_scale":{"id":"be988289-95bf-48ff-a5ad-2d70ffa61371","type":"CategoricalScale"},"y_range":{"id":"a9a466d1-2abf-403d-b304-e69ec1e05d5f","type":"DataRange1d"},"y_scale":{"id":"0e357987-507b-496c-8666-9467ccc87c3e","type":"LinearScale"}},"id":"f4c21dad-365f-41dd-8fb9-a14b99c07075","subtype":"Figure","type":"Plot"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"b13ff629-8192-4a3f-ac7e-e0129a336ec5","type":"Line"},{"attributes":{"plot":{"id":"f4c21dad-365f-41dd-8fb9-a14b99c07075","subtype":"Figure","type":"Plot"},"ticker":{"id":"dce26969-d109-4a3f-bbb3-47a24f6190bb","type":"CategoricalTicker"}},"id":"c9b49f59-8a35-4cb8-b3b0-d0878f1c394a","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Cape St Vincent (1797)","Battle of the Nile","Battle of Copenhagen (1801)","Battle of Trafalgar"]},"id":"4231429e-8257-401b-a397-c5d067eeb094","type":"FactorRange"},{"attributes":{"formatter":{"id":"2a94f371-c4bd-434a-b074-acb6fbf65c7a","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"f4c21dad-365f-41dd-8fb9-a14b99c07075","subtype":"Figure","type":"Plot"},"ticker":{"id":"dce26969-d109-4a3f-bbb3-47a24f6190bb","type":"CategoricalTicker"}},"id":"55559872-7702-4697-b09c-eab1e2467a73","type":"CategoricalAxis"},{"attributes":{"source":{"id":"ecf32a05-4941-4b69-ac8e-c5ae30486d65","type":"ColumnDataSource"}},"id":"e94d6448-aca7-4353-8125-b183f5c0d6be","type":"CDSView"},{"attributes":{"data_source":{"id":"ecf32a05-4941-4b69-ac8e-c5ae30486d65","type":"ColumnDataSource"},"glyph":{"id":"40b631e9-f60b-4133-bb8d-21ca344d2e15","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"38c10e47-e9fb-43d5-acde-3eabee59c883","type":"VBar"},"selection_glyph":null,"view":{"id":"0ce0d2bd-79e1-491c-97be-969aca8fc64b","type":"CDSView"}},"id":"3dc80545-0f1d-4de2-abc9-a467e5298f79","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"f4c21dad-365f-41dd-8fb9-a14b99c07075","subtype":"Figure","type":"Plot"},"ticker":{"id":"c9a5944e-1146-45f7-adbd-652283b8e53a","type":"BasicTicker"}},"id":"69bbec9b-e15f-4362-bcb0-8c16b2bd3481","type":"Grid"},{"attributes":{"data_source":{"id":"ecf32a05-4941-4b69-ac8e-c5ae30486d65","type":"ColumnDataSource"},"glyph":{"id":"b13ff629-8192-4a3f-ac7e-e0129a336ec5","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"beb44e08-8e24-409f-a62b-4014f5f60a18","type":"Line"},"selection_glyph":null,"view":{"id":"e94d6448-aca7-4353-8125-b183f5c0d6be","type":"CDSView"}},"id":"a9fa2987-d099-4e65-82a4-8d6d411f3179","type":"GlyphRenderer"}],"root_ids":["f4c21dad-365f-41dd-8fb9-a14b99c07075"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"b9ffa94d-4776-4a93-be8a-b326aaf8ae1c","elementid":"63a347f3-fd29-45a6-8941-1e5428d5a99a","modelid":"f4c21dad-365f-41dd-8fb9-a14b99c07075"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

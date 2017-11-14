@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="df2269a3-9883-4e74-945c-7def0ec55bf1"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"5bc59f5d-390a-4e80-bb41-30deb4e580e0":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"582623f2-6dc1-4517-b09f-eafc15e03373","type":"HoverTool"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0d69c8b1-4dc9-4b7e-95fa-6ce94448f63b","type":"Line"},{"attributes":{"plot":{"id":"e61ad740-812d-46e4-9952-9ab1334ee44c","subtype":"Figure","type":"Plot"},"ticker":{"id":"a4bfcf6d-b032-45f7-accd-67a919aa44a6","type":"CategoricalTicker"}},"id":"ac53e13e-a4d7-4d53-8dee-2c880b5c4896","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"50b1bf66-4ebf-41e1-a5e8-08cbd9cc6645","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"factors":["Siege of Namwon"]},"id":"0c6bd827-3107-4c53-8a7c-5ad7028ce800","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"50b1bf66-4ebf-41e1-a5e8-08cbd9cc6645","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"50b1bf66-4ebf-41e1-a5e8-08cbd9cc6645","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"891e5129-12ee-4b34-b21e-98216557837b","type":"VBar"},{"attributes":{},"id":"a50c4a4c-ec31-4f68-8243-7390f3f7ed4d","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"Shin Ho (0 - 0 - 1)"},"id":"3b95cfad-7e6b-4300-9abb-2ecffd2adf7e","type":"Title"},{"attributes":{},"id":"8aa1ae2e-d6c5-41da-8392-f4e2ac915f53","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Namwon"],"cumulative":{"__ndarray__":"FsfAltaH278=","dtype":"float64","shape":[1]},"general":["Shin Ho"],"outcome":["D"],"value":{"__ndarray__":"FsfAltaH278=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAD0mEA=","dtype":"float64","shape":[1]}}},"id":"e5af0796-f05c-4742-b1f5-cb0b84239ce0","type":"ColumnDataSource"},{"attributes":{},"id":"cf66f05b-160f-4746-bcb3-46a2c7828409","type":"BasicTicker"},{"attributes":{"formatter":{"id":"095ec78c-af90-416e-aaed-7c6038f96bc7","type":"BasicTickFormatter"},"plot":{"id":"e61ad740-812d-46e4-9952-9ab1334ee44c","subtype":"Figure","type":"Plot"},"ticker":{"id":"cf66f05b-160f-4746-bcb3-46a2c7828409","type":"BasicTicker"}},"id":"9ac431ff-8975-4092-af33-682e361a3c13","type":"LinearAxis"},{"attributes":{"data_source":{"id":"e5af0796-f05c-4742-b1f5-cb0b84239ce0","type":"ColumnDataSource"},"glyph":{"id":"891e5129-12ee-4b34-b21e-98216557837b","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"875bbd08-fa1e-464d-87ee-a3d3554ab298","type":"VBar"},"selection_glyph":null,"view":{"id":"9a8bde94-cd32-4bc7-b831-85d6c2f44126","type":"CDSView"}},"id":"6f3f32fe-1289-45fc-84f7-df0d4ad7d895","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"8aa1ae2e-d6c5-41da-8392-f4e2ac915f53","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"e61ad740-812d-46e4-9952-9ab1334ee44c","subtype":"Figure","type":"Plot"},"ticker":{"id":"a4bfcf6d-b032-45f7-accd-67a919aa44a6","type":"CategoricalTicker"}},"id":"b19e53a8-f549-49c7-8e4e-8188c0d9ccb8","type":"CategoricalAxis"},{"attributes":{"source":{"id":"e5af0796-f05c-4742-b1f5-cb0b84239ce0","type":"ColumnDataSource"}},"id":"8a0b61e9-262a-4b32-84f8-5740acd9d8ba","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"e61ad740-812d-46e4-9952-9ab1334ee44c","subtype":"Figure","type":"Plot"},"ticker":{"id":"cf66f05b-160f-4746-bcb3-46a2c7828409","type":"BasicTicker"}},"id":"cd8b0ef0-52ae-42ab-9dea-5ecfd41eb641","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"582623f2-6dc1-4517-b09f-eafc15e03373","type":"HoverTool"}]},"id":"e2403a55-15ab-4900-96e6-cb7818e11a71","type":"Toolbar"},{"attributes":{},"id":"a4bfcf6d-b032-45f7-accd-67a919aa44a6","type":"CategoricalTicker"},{"attributes":{"callback":null},"id":"da489ca1-0687-4839-8a96-0b213ec68842","type":"DataRange1d"},{"attributes":{"data_source":{"id":"e5af0796-f05c-4742-b1f5-cb0b84239ce0","type":"ColumnDataSource"},"glyph":{"id":"0d69c8b1-4dc9-4b7e-95fa-6ce94448f63b","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"107ace98-3f6c-4858-8a3e-8cbf1434ea3c","type":"Line"},"selection_glyph":null,"view":{"id":"8a0b61e9-262a-4b32-84f8-5740acd9d8ba","type":"CDSView"}},"id":"0cea306c-c2ae-4a95-a84b-fdf7417d7655","type":"GlyphRenderer"},{"attributes":{},"id":"095ec78c-af90-416e-aaed-7c6038f96bc7","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"875bbd08-fa1e-464d-87ee-a3d3554ab298","type":"VBar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"107ace98-3f6c-4858-8a3e-8cbf1434ea3c","type":"Line"},{"attributes":{"source":{"id":"e5af0796-f05c-4742-b1f5-cb0b84239ce0","type":"ColumnDataSource"}},"id":"9a8bde94-cd32-4bc7-b831-85d6c2f44126","type":"CDSView"},{"attributes":{"below":[{"id":"b19e53a8-f549-49c7-8e4e-8188c0d9ccb8","type":"CategoricalAxis"}],"left":[{"id":"9ac431ff-8975-4092-af33-682e361a3c13","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"b19e53a8-f549-49c7-8e4e-8188c0d9ccb8","type":"CategoricalAxis"},{"id":"ac53e13e-a4d7-4d53-8dee-2c880b5c4896","type":"Grid"},{"id":"9ac431ff-8975-4092-af33-682e361a3c13","type":"LinearAxis"},{"id":"cd8b0ef0-52ae-42ab-9dea-5ecfd41eb641","type":"Grid"},{"id":"0cea306c-c2ae-4a95-a84b-fdf7417d7655","type":"GlyphRenderer"},{"id":"6f3f32fe-1289-45fc-84f7-df0d4ad7d895","type":"GlyphRenderer"}],"title":{"id":"3b95cfad-7e6b-4300-9abb-2ecffd2adf7e","type":"Title"},"toolbar":{"id":"e2403a55-15ab-4900-96e6-cb7818e11a71","type":"Toolbar"},"x_range":{"id":"0c6bd827-3107-4c53-8a7c-5ad7028ce800","type":"FactorRange"},"x_scale":{"id":"a50c4a4c-ec31-4f68-8243-7390f3f7ed4d","type":"CategoricalScale"},"y_range":{"id":"da489ca1-0687-4839-8a96-0b213ec68842","type":"DataRange1d"},"y_scale":{"id":"5a6b3b94-18ce-4537-813c-2ad20af24ee3","type":"LinearScale"}},"id":"e61ad740-812d-46e4-9952-9ab1334ee44c","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"5a6b3b94-18ce-4537-813c-2ad20af24ee3","type":"LinearScale"}],"root_ids":["e61ad740-812d-46e4-9952-9ab1334ee44c"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"5bc59f5d-390a-4e80-bb41-30deb4e580e0","elementid":"df2269a3-9883-4e74-945c-7def0ec55bf1","modelid":"e61ad740-812d-46e4-9952-9ab1334ee44c"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

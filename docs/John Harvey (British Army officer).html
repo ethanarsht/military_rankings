@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="a911a26a-58b9-40af-8514-8344c4cd6405"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"d7a96729-2b30-40e2-a51a-267cd0684eba":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"6cf2d02d-8089-482e-bd7d-432b69fb7074","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"e50e292c-0860-46fe-83fb-9500ed138ce2","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"2afe50ab-b253-4a9b-ab13-62825f56d09d","type":"ColumnDataSource"},"glyph":{"id":"556ff3d8-a70d-4ae7-bfa7-05d75842d6ce","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"36c75d01-d83d-4324-9811-a3c8acf77c51","type":"Line"},"selection_glyph":null,"view":{"id":"e0db6e58-5404-4189-b792-e7ebe0773d91","type":"CDSView"}},"id":"af4535cc-15d3-4dad-b441-f66df54bf8f1","type":"GlyphRenderer"},{"attributes":{},"id":"200b3895-f747-4ea9-a493-61c17379e4a8","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Stoney Creek"],"cumulative":{"__ndarray__":"mGQR2moZ4j8=","dtype":"float64","shape":[1]},"general":["John Harvey (British Army officer)"],"outcome":["V"],"value":{"__ndarray__":"mGQR2moZ4j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABUnEA=","dtype":"float64","shape":[1]}}},"id":"2afe50ab-b253-4a9b-ab13-62825f56d09d","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"9b43b423-e9b4-436a-89ec-5df2021926e6","type":"BasicTickFormatter"},"plot":{"id":"89a2cb4e-2ac2-48a5-b8b2-bb3da5ea7975","subtype":"Figure","type":"Plot"},"ticker":{"id":"cdba894c-9d8e-4dce-9f01-fe11781b506d","type":"BasicTicker"}},"id":"3c149027-ba53-41d1-a2a2-6cea51d6513d","type":"LinearAxis"},{"attributes":{},"id":"11cce22d-7f42-4475-b0b4-6e3c03a233a8","type":"CategoricalTicker"},{"attributes":{"below":[{"id":"8d0cb530-3661-4a84-b914-c872c21c5415","type":"CategoricalAxis"}],"left":[{"id":"3c149027-ba53-41d1-a2a2-6cea51d6513d","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"8d0cb530-3661-4a84-b914-c872c21c5415","type":"CategoricalAxis"},{"id":"2c2de07e-5c25-4438-866f-00f26f213e12","type":"Grid"},{"id":"3c149027-ba53-41d1-a2a2-6cea51d6513d","type":"LinearAxis"},{"id":"512a5a72-afa0-4d71-aaad-17564c30832a","type":"Grid"},{"id":"af4535cc-15d3-4dad-b441-f66df54bf8f1","type":"GlyphRenderer"},{"id":"aee47b88-2c3f-4dfb-9d18-41df3a6f96b8","type":"GlyphRenderer"}],"title":{"id":"8e87441b-b04c-40fa-8619-cb760ec9eb61","type":"Title"},"toolbar":{"id":"09438718-2a28-4833-9fa6-da045e3fdc76","type":"Toolbar"},"x_range":{"id":"56277872-873c-4984-8f94-3afbb368c494","type":"FactorRange"},"x_scale":{"id":"24609f62-ac96-4661-83ce-5eccd150082d","type":"CategoricalScale"},"y_range":{"id":"a232b9d2-80a8-4886-9a59-389fcb41dae7","type":"DataRange1d"},"y_scale":{"id":"67733b18-6de0-45b7-b09c-47b1dc83b234","type":"LinearScale"}},"id":"89a2cb4e-2ac2-48a5-b8b2-bb3da5ea7975","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"2afe50ab-b253-4a9b-ab13-62825f56d09d","type":"ColumnDataSource"},"glyph":{"id":"be81fe3e-d876-4896-8f74-150547a90d83","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"dd23e9d8-183b-4820-99b5-098f475c00fc","type":"VBar"},"selection_glyph":null,"view":{"id":"e25f6298-899b-42b4-8d5f-b5f9550a4239","type":"CDSView"}},"id":"aee47b88-2c3f-4dfb-9d18-41df3a6f96b8","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"36c75d01-d83d-4324-9811-a3c8acf77c51","type":"Line"},{"attributes":{"plot":{"id":"89a2cb4e-2ac2-48a5-b8b2-bb3da5ea7975","subtype":"Figure","type":"Plot"},"ticker":{"id":"11cce22d-7f42-4475-b0b4-6e3c03a233a8","type":"CategoricalTicker"}},"id":"2c2de07e-5c25-4438-866f-00f26f213e12","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"6cf2d02d-8089-482e-bd7d-432b69fb7074","type":"HoverTool"}]},"id":"09438718-2a28-4833-9fa6-da045e3fdc76","type":"Toolbar"},{"attributes":{"source":{"id":"2afe50ab-b253-4a9b-ab13-62825f56d09d","type":"ColumnDataSource"}},"id":"e25f6298-899b-42b4-8d5f-b5f9550a4239","type":"CDSView"},{"attributes":{},"id":"24609f62-ac96-4661-83ce-5eccd150082d","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"John Harvey (British Army officer) (1 - 0 - 0)"},"id":"8e87441b-b04c-40fa-8619-cb760ec9eb61","type":"Title"},{"attributes":{"source":{"id":"2afe50ab-b253-4a9b-ab13-62825f56d09d","type":"ColumnDataSource"}},"id":"e0db6e58-5404-4189-b792-e7ebe0773d91","type":"CDSView"},{"attributes":{},"id":"9b43b423-e9b4-436a-89ec-5df2021926e6","type":"BasicTickFormatter"},{"attributes":{},"id":"cdba894c-9d8e-4dce-9f01-fe11781b506d","type":"BasicTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"556ff3d8-a70d-4ae7-bfa7-05d75842d6ce","type":"Line"},{"attributes":{"callback":null},"id":"a232b9d2-80a8-4886-9a59-389fcb41dae7","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"dd23e9d8-183b-4820-99b5-098f475c00fc","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"89a2cb4e-2ac2-48a5-b8b2-bb3da5ea7975","subtype":"Figure","type":"Plot"},"ticker":{"id":"cdba894c-9d8e-4dce-9f01-fe11781b506d","type":"BasicTicker"}},"id":"512a5a72-afa0-4d71-aaad-17564c30832a","type":"Grid"},{"attributes":{},"id":"67733b18-6de0-45b7-b09c-47b1dc83b234","type":"LinearScale"},{"attributes":{"formatter":{"id":"200b3895-f747-4ea9-a493-61c17379e4a8","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"89a2cb4e-2ac2-48a5-b8b2-bb3da5ea7975","subtype":"Figure","type":"Plot"},"ticker":{"id":"11cce22d-7f42-4475-b0b4-6e3c03a233a8","type":"CategoricalTicker"}},"id":"8d0cb530-3661-4a84-b914-c872c21c5415","type":"CategoricalAxis"},{"attributes":{"callback":null,"factors":["Battle of Stoney Creek"]},"id":"56277872-873c-4984-8f94-3afbb368c494","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"e50e292c-0860-46fe-83fb-9500ed138ce2","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"e50e292c-0860-46fe-83fb-9500ed138ce2","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"be81fe3e-d876-4896-8f74-150547a90d83","type":"VBar"}],"root_ids":["89a2cb4e-2ac2-48a5-b8b2-bb3da5ea7975"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"d7a96729-2b30-40e2-a51a-267cd0684eba","elementid":"a911a26a-58b9-40af-8514-8344c4cd6405","modelid":"89a2cb4e-2ac2-48a5-b8b2-bb3da5ea7975"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

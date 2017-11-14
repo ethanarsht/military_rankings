@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="8af57419-e212-4bec-9cac-21743a38810d"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"ec28ef6a-874e-45dd-ba30-f9b2ed01870a":{"roots":{"references":[{"attributes":{"data_source":{"id":"d88a0ff1-e9c0-4dce-a305-a0d5253ea157","type":"ColumnDataSource"},"glyph":{"id":"8dce5a10-37bc-4733-a82e-28800eca0ef5","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b455a02a-7866-48a7-b965-df879f2b0945","type":"VBar"},"selection_glyph":null,"view":{"id":"74c8cf19-79ea-4434-af61-de9c28cd4012","type":"CDSView"}},"id":"21578a37-c138-45cd-ad6b-ff0fbd55e22a","type":"GlyphRenderer"},{"attributes":{"source":{"id":"d88a0ff1-e9c0-4dce-a305-a0d5253ea157","type":"ColumnDataSource"}},"id":"cd3ac1f9-ea5d-4b01-ad2e-b381042c74ba","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9d780167-043f-4695-a039-6b9cfaef281a","type":"Line"},{"attributes":{"formatter":{"id":"462aa282-13e1-4e61-a93e-2a0d1c518384","type":"BasicTickFormatter"},"plot":{"id":"05d7b000-9364-4c31-a3c7-ada1b442d89a","subtype":"Figure","type":"Plot"},"ticker":{"id":"84440bd3-260b-402a-b240-a5d5304871ca","type":"BasicTicker"}},"id":"9e0c28ed-bf09-4a93-92f7-6c0f85c874d0","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b455a02a-7866-48a7-b965-df879f2b0945","type":"VBar"},{"attributes":{},"id":"462aa282-13e1-4e61-a93e-2a0d1c518384","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"d88a0ff1-e9c0-4dce-a305-a0d5253ea157","type":"ColumnDataSource"}},"id":"74c8cf19-79ea-4434-af61-de9c28cd4012","type":"CDSView"},{"attributes":{},"id":"84440bd3-260b-402a-b240-a5d5304871ca","type":"BasicTicker"},{"attributes":{"data_source":{"id":"d88a0ff1-e9c0-4dce-a305-a0d5253ea157","type":"ColumnDataSource"},"glyph":{"id":"9d780167-043f-4695-a039-6b9cfaef281a","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0c6e0d85-a3dd-4ebf-8caa-c4686bd2f62e","type":"Line"},"selection_glyph":null,"view":{"id":"cd3ac1f9-ea5d-4b01-ad2e-b381042c74ba","type":"CDSView"}},"id":"002741ae-826f-453b-8aa5-ae6991a01c2a","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Vlaardingen"],"cumulative":{"__ndarray__":"FRquxVau4j8=","dtype":"float64","shape":[1]},"general":["Dirk III, Count of Holland"],"outcome":["V"],"value":{"__ndarray__":"FRquxVau4j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADQj0A=","dtype":"float64","shape":[1]}}},"id":"d88a0ff1-e9c0-4dce-a305-a0d5253ea157","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"2fcd32b6-8c2d-4207-855b-a32f2b04e9a2","type":"HoverTool"}]},"id":"f3e49690-b956-4dc8-81fc-ef70e865b765","type":"Toolbar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0c6e0d85-a3dd-4ebf-8caa-c4686bd2f62e","type":"Line"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"2fcd32b6-8c2d-4207-855b-a32f2b04e9a2","type":"HoverTool"},{"attributes":{},"id":"244ed537-ce95-4f9c-96c6-37cfacc5df15","type":"LinearScale"},{"attributes":{},"id":"71ede492-d1b1-49ad-b139-ea288f3ca1b0","type":"CategoricalScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"39631d47-aa9e-4808-a73b-7a882ed9a58d","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"eba58bbf-927d-4f31-bf03-0ce9bd86b8b9","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"05d7b000-9364-4c31-a3c7-ada1b442d89a","subtype":"Figure","type":"Plot"},"ticker":{"id":"a0ca0847-440f-49f4-95aa-91edbb607a2a","type":"CategoricalTicker"}},"id":"de47fa25-3fc5-4932-b25d-5d352fd6b450","type":"CategoricalAxis"},{"attributes":{"callback":null},"id":"b29567e9-174d-4c00-b495-fa0e7cf8e1ff","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"05d7b000-9364-4c31-a3c7-ada1b442d89a","subtype":"Figure","type":"Plot"},"ticker":{"id":"84440bd3-260b-402a-b240-a5d5304871ca","type":"BasicTicker"}},"id":"4e2b403d-9374-4139-81fb-c5beaf894986","type":"Grid"},{"attributes":{},"id":"a0ca0847-440f-49f4-95aa-91edbb607a2a","type":"CategoricalTicker"},{"attributes":{"plot":{"id":"05d7b000-9364-4c31-a3c7-ada1b442d89a","subtype":"Figure","type":"Plot"},"ticker":{"id":"a0ca0847-440f-49f4-95aa-91edbb607a2a","type":"CategoricalTicker"}},"id":"734fc349-fa80-47e2-af47-4c3208e0f7b6","type":"Grid"},{"attributes":{"below":[{"id":"de47fa25-3fc5-4932-b25d-5d352fd6b450","type":"CategoricalAxis"}],"left":[{"id":"9e0c28ed-bf09-4a93-92f7-6c0f85c874d0","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"de47fa25-3fc5-4932-b25d-5d352fd6b450","type":"CategoricalAxis"},{"id":"734fc349-fa80-47e2-af47-4c3208e0f7b6","type":"Grid"},{"id":"9e0c28ed-bf09-4a93-92f7-6c0f85c874d0","type":"LinearAxis"},{"id":"4e2b403d-9374-4139-81fb-c5beaf894986","type":"Grid"},{"id":"002741ae-826f-453b-8aa5-ae6991a01c2a","type":"GlyphRenderer"},{"id":"21578a37-c138-45cd-ad6b-ff0fbd55e22a","type":"GlyphRenderer"}],"title":{"id":"e0ea2fa7-c8d3-408e-b088-4a6fcb7716a6","type":"Title"},"toolbar":{"id":"f3e49690-b956-4dc8-81fc-ef70e865b765","type":"Toolbar"},"x_range":{"id":"399269a2-5325-4a5b-96ad-21d706219407","type":"FactorRange"},"x_scale":{"id":"71ede492-d1b1-49ad-b139-ea288f3ca1b0","type":"CategoricalScale"},"y_range":{"id":"b29567e9-174d-4c00-b495-fa0e7cf8e1ff","type":"DataRange1d"},"y_scale":{"id":"244ed537-ce95-4f9c-96c6-37cfacc5df15","type":"LinearScale"}},"id":"05d7b000-9364-4c31-a3c7-ada1b442d89a","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"39631d47-aa9e-4808-a73b-7a882ed9a58d","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"39631d47-aa9e-4808-a73b-7a882ed9a58d","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"8dce5a10-37bc-4733-a82e-28800eca0ef5","type":"VBar"},{"attributes":{"plot":null,"text":"Dirk III, Count of Holland (1 - 0 - 0)"},"id":"e0ea2fa7-c8d3-408e-b088-4a6fcb7716a6","type":"Title"},{"attributes":{},"id":"eba58bbf-927d-4f31-bf03-0ce9bd86b8b9","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Vlaardingen"]},"id":"399269a2-5325-4a5b-96ad-21d706219407","type":"FactorRange"}],"root_ids":["05d7b000-9364-4c31-a3c7-ada1b442d89a"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"ec28ef6a-874e-45dd-ba30-f9b2ed01870a","elementid":"8af57419-e212-4bec-9cac-21743a38810d","modelid":"05d7b000-9364-4c31-a3c7-ada1b442d89a"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

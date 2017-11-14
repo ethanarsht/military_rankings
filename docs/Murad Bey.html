@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="3d21a627-9693-45d1-9807-21463995d3a4"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"8d147260-09a8-4abf-bde4-92e11eeb9e0b":{"roots":{"references":[{"attributes":{"plot":{"id":"237b2eb1-72f9-4c3f-8311-e1d193f40aeb","subtype":"Figure","type":"Plot"},"ticker":{"id":"0365aa60-0c7f-4772-bcf1-48aef361b9c3","type":"CategoricalTicker"}},"id":"8b58eb67-22a2-4f67-9fd4-495fefddad97","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"ad783399-5a05-4915-ac67-3218924acced","type":"CategoricalColorMapper"},{"attributes":{},"id":"2c6e830d-88b9-4575-8cea-e855c243f851","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of the Pyramids","Battle of Abukir (1799)","Siege of El Arish"],"cumulative":{"__ndarray__":"Im2Ikx2s4L+odftTBQTxv5CqavqSOPq/","dtype":"float64","shape":[3]},"general":["Murad Bey","Murad Bey","Murad Bey"],"outcome":["D","D","D"],"value":{"__ndarray__":"Im2Ikx2s4L8vfm4U7Vvhv9Bp3kwbaeK/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAAYnEAAAAAAABycQAAAAAAAHJxA","dtype":"float64","shape":[3]}}},"id":"73541b0a-fe91-4920-af9a-defb38969372","type":"ColumnDataSource"},{"attributes":{"callback":null},"id":"56871213-5f4d-4fa7-afcd-3cead9f820da","type":"DataRange1d"},{"attributes":{"source":{"id":"73541b0a-fe91-4920-af9a-defb38969372","type":"ColumnDataSource"}},"id":"7e30b1ab-a6a4-48ad-beaa-5606910b5d93","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"0da5a5f9-8fe0-48f6-a2fa-dfbf5e4d5576","type":"VBar"},{"attributes":{"plot":null,"text":"Murad Bey (0 - 0 - 3)"},"id":"ffdc00dc-41df-433c-8f1a-f795b1cd1535","type":"Title"},{"attributes":{},"id":"0365aa60-0c7f-4772-bcf1-48aef361b9c3","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"237b2eb1-72f9-4c3f-8311-e1d193f40aeb","subtype":"Figure","type":"Plot"},"ticker":{"id":"29a25dec-5da1-4d6d-8e9a-70336065de60","type":"BasicTicker"}},"id":"8502889d-1ec4-4b34-b04a-6baa2e764cab","type":"Grid"},{"attributes":{"data_source":{"id":"73541b0a-fe91-4920-af9a-defb38969372","type":"ColumnDataSource"},"glyph":{"id":"57d38bcd-9ea4-4276-9ec0-87453d647a53","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0da5a5f9-8fe0-48f6-a2fa-dfbf5e4d5576","type":"VBar"},"selection_glyph":null,"view":{"id":"7e30b1ab-a6a4-48ad-beaa-5606910b5d93","type":"CDSView"}},"id":"768752e6-f754-4fd2-88c3-8355fd0e7600","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8737bb83-7a4b-4cf1-aa3e-39ef97e42d4d","type":"Line"},{"attributes":{},"id":"29a25dec-5da1-4d6d-8e9a-70336065de60","type":"BasicTicker"},{"attributes":{"formatter":{"id":"2c6e830d-88b9-4575-8cea-e855c243f851","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"237b2eb1-72f9-4c3f-8311-e1d193f40aeb","subtype":"Figure","type":"Plot"},"ticker":{"id":"0365aa60-0c7f-4772-bcf1-48aef361b9c3","type":"CategoricalTicker"}},"id":"16ff7e66-fb0c-4dda-8ab8-319815cac8e7","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"75a51cbf-34e2-4f77-b7c6-9033f0629375","type":"HoverTool"}]},"id":"ee731a4d-ed72-4836-ad29-69ca2cdd5631","type":"Toolbar"},{"attributes":{},"id":"e0fe2295-291b-41b7-bda4-c0add520125f","type":"CategoricalScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"75a51cbf-34e2-4f77-b7c6-9033f0629375","type":"HoverTool"},{"attributes":{"callback":null,"factors":["Battle of the Pyramids","Battle of Abukir (1799)","Siege of El Arish"]},"id":"696391ec-be65-4691-a6bf-f7c592f3f7a4","type":"FactorRange"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"77732aa2-5544-4ad1-ad24-9dc8cd6078bf","type":"Line"},{"attributes":{"source":{"id":"73541b0a-fe91-4920-af9a-defb38969372","type":"ColumnDataSource"}},"id":"a765b832-249a-4ecf-ab50-5a1688a1b251","type":"CDSView"},{"attributes":{"formatter":{"id":"9c3898b5-f2ef-42f8-9f98-4c7379685f0c","type":"BasicTickFormatter"},"plot":{"id":"237b2eb1-72f9-4c3f-8311-e1d193f40aeb","subtype":"Figure","type":"Plot"},"ticker":{"id":"29a25dec-5da1-4d6d-8e9a-70336065de60","type":"BasicTicker"}},"id":"d7f69809-4cdb-47c7-a270-2b0414c30f5b","type":"LinearAxis"},{"attributes":{},"id":"3137790c-ab45-4b3e-a39f-dd23a79c0344","type":"LinearScale"},{"attributes":{},"id":"9c3898b5-f2ef-42f8-9f98-4c7379685f0c","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"ad783399-5a05-4915-ac67-3218924acced","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"ad783399-5a05-4915-ac67-3218924acced","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"57d38bcd-9ea4-4276-9ec0-87453d647a53","type":"VBar"},{"attributes":{"data_source":{"id":"73541b0a-fe91-4920-af9a-defb38969372","type":"ColumnDataSource"},"glyph":{"id":"8737bb83-7a4b-4cf1-aa3e-39ef97e42d4d","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"77732aa2-5544-4ad1-ad24-9dc8cd6078bf","type":"Line"},"selection_glyph":null,"view":{"id":"a765b832-249a-4ecf-ab50-5a1688a1b251","type":"CDSView"}},"id":"c73dc967-2de1-4cd6-9699-41e1758bccae","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"16ff7e66-fb0c-4dda-8ab8-319815cac8e7","type":"CategoricalAxis"}],"left":[{"id":"d7f69809-4cdb-47c7-a270-2b0414c30f5b","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"16ff7e66-fb0c-4dda-8ab8-319815cac8e7","type":"CategoricalAxis"},{"id":"8b58eb67-22a2-4f67-9fd4-495fefddad97","type":"Grid"},{"id":"d7f69809-4cdb-47c7-a270-2b0414c30f5b","type":"LinearAxis"},{"id":"8502889d-1ec4-4b34-b04a-6baa2e764cab","type":"Grid"},{"id":"c73dc967-2de1-4cd6-9699-41e1758bccae","type":"GlyphRenderer"},{"id":"768752e6-f754-4fd2-88c3-8355fd0e7600","type":"GlyphRenderer"}],"title":{"id":"ffdc00dc-41df-433c-8f1a-f795b1cd1535","type":"Title"},"toolbar":{"id":"ee731a4d-ed72-4836-ad29-69ca2cdd5631","type":"Toolbar"},"x_range":{"id":"696391ec-be65-4691-a6bf-f7c592f3f7a4","type":"FactorRange"},"x_scale":{"id":"e0fe2295-291b-41b7-bda4-c0add520125f","type":"CategoricalScale"},"y_range":{"id":"56871213-5f4d-4fa7-afcd-3cead9f820da","type":"DataRange1d"},"y_scale":{"id":"3137790c-ab45-4b3e-a39f-dd23a79c0344","type":"LinearScale"}},"id":"237b2eb1-72f9-4c3f-8311-e1d193f40aeb","subtype":"Figure","type":"Plot"}],"root_ids":["237b2eb1-72f9-4c3f-8311-e1d193f40aeb"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"8d147260-09a8-4abf-bde4-92e11eeb9e0b","elementid":"3d21a627-9693-45d1-9807-21463995d3a4","modelid":"237b2eb1-72f9-4c3f-8311-e1d193f40aeb"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

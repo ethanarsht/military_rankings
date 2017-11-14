@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="28b522d4-4f9d-419d-8799-8ffd4cc349b2"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"8ff176f9-4b17-4f0e-8857-5cf169bdef00":{"roots":{"references":[{"attributes":{"source":{"id":"e35bda04-bed2-4991-a58a-ab1dfecf1e7f","type":"ColumnDataSource"}},"id":"a7db2b67-4924-4681-b5b4-8dd2466d3626","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Albuera"]},"id":"021c4267-7df3-4eb8-b6db-e5c09f000097","type":"FactorRange"},{"attributes":{"formatter":{"id":"bb009771-e7db-4247-889d-8f84eb6832b0","type":"BasicTickFormatter"},"plot":{"id":"720ce2be-25da-4963-b249-3fb35723fc4d","subtype":"Figure","type":"Plot"},"ticker":{"id":"cd1b3d22-185d-4745-83cd-4b1423bee3d9","type":"BasicTicker"}},"id":"5541467f-988c-4ccc-ae27-9d6219655457","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"11e81100-a301-40da-9f45-97c686847657","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"11e81100-a301-40da-9f45-97c686847657","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"095085ee-9ed4-456e-af22-883725f1df40","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"720ce2be-25da-4963-b249-3fb35723fc4d","subtype":"Figure","type":"Plot"},"ticker":{"id":"cd1b3d22-185d-4745-83cd-4b1423bee3d9","type":"BasicTicker"}},"id":"97d770ff-efcf-47e6-8ad3-03207f484abd","type":"Grid"},{"attributes":{"source":{"id":"e35bda04-bed2-4991-a58a-ab1dfecf1e7f","type":"ColumnDataSource"}},"id":"70edcc92-a782-4d0c-84ed-7b27e9af9d9e","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Albuera"],"cumulative":{"__ndarray__":"gH4ZtqLLl78=","dtype":"float64","shape":[1]},"general":["William Beresford, 1st Viscount Beresford"],"outcome":["I"],"value":{"__ndarray__":"gH4ZtqLLl78=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABMnEA=","dtype":"float64","shape":[1]}}},"id":"e35bda04-bed2-4991-a58a-ab1dfecf1e7f","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"a60490d8-9551-4349-a491-86e8c1aa556b","type":"HoverTool"}]},"id":"481dd98a-02e8-4d1f-92a9-8880962b4322","type":"Toolbar"},{"attributes":{},"id":"e81be5e6-0cac-471e-ac35-0df119df9a48","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"1fbcc37c-a6df-48c8-b6b6-aa592447ebc2","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"720ce2be-25da-4963-b249-3fb35723fc4d","subtype":"Figure","type":"Plot"},"ticker":{"id":"7cd3467e-2f2b-4885-8d75-a006cc1ff5bd","type":"CategoricalTicker"}},"id":"f3c36849-b4b1-4e9c-b2c8-f8a60c5dcdb4","type":"CategoricalAxis"},{"attributes":{},"id":"bb009771-e7db-4247-889d-8f84eb6832b0","type":"BasicTickFormatter"},{"attributes":{},"id":"cd1b3d22-185d-4745-83cd-4b1423bee3d9","type":"BasicTicker"},{"attributes":{"plot":{"id":"720ce2be-25da-4963-b249-3fb35723fc4d","subtype":"Figure","type":"Plot"},"ticker":{"id":"7cd3467e-2f2b-4885-8d75-a006cc1ff5bd","type":"CategoricalTicker"}},"id":"82ec5b7a-2e47-41a0-a7f7-1ff90a5fcdec","type":"Grid"},{"attributes":{},"id":"1fbcc37c-a6df-48c8-b6b6-aa592447ebc2","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"e35bda04-bed2-4991-a58a-ab1dfecf1e7f","type":"ColumnDataSource"},"glyph":{"id":"7876dc97-67bd-49c5-8492-62dff7610354","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b5037e10-7d7a-4826-8d11-ae44f5963105","type":"Line"},"selection_glyph":null,"view":{"id":"70edcc92-a782-4d0c-84ed-7b27e9af9d9e","type":"CDSView"}},"id":"51add819-716f-4b03-aad4-1ded07528fc9","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"a60490d8-9551-4349-a491-86e8c1aa556b","type":"HoverTool"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"11e81100-a301-40da-9f45-97c686847657","type":"CategoricalColorMapper"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7876dc97-67bd-49c5-8492-62dff7610354","type":"Line"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"b5037e10-7d7a-4826-8d11-ae44f5963105","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b3c22613-7857-45cc-ba65-29d9ecfa5111","type":"VBar"},{"attributes":{},"id":"1b1902b4-19f4-4e46-918f-326fe54d1aba","type":"LinearScale"},{"attributes":{"data_source":{"id":"e35bda04-bed2-4991-a58a-ab1dfecf1e7f","type":"ColumnDataSource"},"glyph":{"id":"095085ee-9ed4-456e-af22-883725f1df40","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b3c22613-7857-45cc-ba65-29d9ecfa5111","type":"VBar"},"selection_glyph":null,"view":{"id":"a7db2b67-4924-4681-b5b4-8dd2466d3626","type":"CDSView"}},"id":"175a90e3-e142-4cba-9cb0-ddcf31dd2d63","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"f3c36849-b4b1-4e9c-b2c8-f8a60c5dcdb4","type":"CategoricalAxis"}],"left":[{"id":"5541467f-988c-4ccc-ae27-9d6219655457","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"f3c36849-b4b1-4e9c-b2c8-f8a60c5dcdb4","type":"CategoricalAxis"},{"id":"82ec5b7a-2e47-41a0-a7f7-1ff90a5fcdec","type":"Grid"},{"id":"5541467f-988c-4ccc-ae27-9d6219655457","type":"LinearAxis"},{"id":"97d770ff-efcf-47e6-8ad3-03207f484abd","type":"Grid"},{"id":"51add819-716f-4b03-aad4-1ded07528fc9","type":"GlyphRenderer"},{"id":"175a90e3-e142-4cba-9cb0-ddcf31dd2d63","type":"GlyphRenderer"}],"title":{"id":"235d8aa7-8e42-40e7-8b5f-4b6517c0634a","type":"Title"},"toolbar":{"id":"481dd98a-02e8-4d1f-92a9-8880962b4322","type":"Toolbar"},"x_range":{"id":"021c4267-7df3-4eb8-b6db-e5c09f000097","type":"FactorRange"},"x_scale":{"id":"e81be5e6-0cac-471e-ac35-0df119df9a48","type":"CategoricalScale"},"y_range":{"id":"1d714431-7042-4572-8c3c-d7016ce658ce","type":"DataRange1d"},"y_scale":{"id":"1b1902b4-19f4-4e46-918f-326fe54d1aba","type":"LinearScale"}},"id":"720ce2be-25da-4963-b249-3fb35723fc4d","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null},"id":"1d714431-7042-4572-8c3c-d7016ce658ce","type":"DataRange1d"},{"attributes":{},"id":"7cd3467e-2f2b-4885-8d75-a006cc1ff5bd","type":"CategoricalTicker"},{"attributes":{"plot":null,"text":"William Beresford, 1st Viscount Beresford (0 - 1 - 0)"},"id":"235d8aa7-8e42-40e7-8b5f-4b6517c0634a","type":"Title"}],"root_ids":["720ce2be-25da-4963-b249-3fb35723fc4d"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"8ff176f9-4b17-4f0e-8857-5cf169bdef00","elementid":"28b522d4-4f9d-419d-8799-8ffd4cc349b2","modelid":"720ce2be-25da-4963-b249-3fb35723fc4d"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

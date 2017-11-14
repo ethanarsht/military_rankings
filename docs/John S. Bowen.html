@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="6ad5c8d3-82c7-4a80-aad7-38244357e219"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"a15943a9-0bd9-43cb-963b-63a0842240ab":{"roots":{"references":[{"attributes":{"data_source":{"id":"6d9b235f-3f82-4758-8242-4925d72a8828","type":"ColumnDataSource"},"glyph":{"id":"e73b22e5-8e66-4474-84ca-c8d53b3be049","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bf319ec6-36ec-4970-8fb4-4e748f5d71e3","type":"Line"},"selection_glyph":null,"view":{"id":"3d9c620d-4e31-40b9-9014-2b2c491b0c67","type":"CDSView"}},"id":"d59c0b1e-4a6d-499a-9969-1599e79c497d","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"bf319ec6-36ec-4970-8fb4-4e748f5d71e3","type":"Line"},{"attributes":{},"id":"8e60bd0c-d6b2-4956-824f-20986243c146","type":"BasicTickFormatter"},{"attributes":{},"id":"02137fb0-4a57-4fc9-8932-86d72cbc6ec8","type":"CategoricalScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"b5eba5ef-f565-437f-a447-a0bc0611b82a","type":"HoverTool"},{"attributes":{},"id":"c464796b-2f4d-4b92-b762-50537bf85d84","type":"LinearScale"},{"attributes":{"source":{"id":"6d9b235f-3f82-4758-8242-4925d72a8828","type":"ColumnDataSource"}},"id":"d20a3713-3665-4a32-b49f-07d4f1d76f7a","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Big Black River Bridge","Battle of Grand Gulf","Battle of Port Gibson"],"cumulative":{"__ndarray__":"AAAAAAAA4L8AAHdeVZ9Yv4A7r6pPDOC/","dtype":"float64","shape":[3]},"general":["John S. Bowen","John S. Bowen","John S. Bowen"],"outcome":["D","V","D"],"value":{"__ndarray__":"AAAAAAAA4L8AiaGqYOffPwAAAAAAAOC/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAAcnUAAAAAAABydQAAAAAAAHJ1A","dtype":"float64","shape":[3]}}},"id":"6d9b235f-3f82-4758-8242-4925d72a8828","type":"ColumnDataSource"},{"attributes":{},"id":"67c18ce8-bf7c-4fe9-9d00-21662c15891c","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"741963d0-2c71-47e7-809d-87c1fface288","type":"CategoricalColorMapper"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e73b22e5-8e66-4474-84ca-c8d53b3be049","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"b5eba5ef-f565-437f-a447-a0bc0611b82a","type":"HoverTool"}]},"id":"896df0bf-8ed0-4772-8738-934012016084","type":"Toolbar"},{"attributes":{"dimension":1,"plot":{"id":"ed07d9a1-ad45-4a59-8925-9e518bcfb9ef","subtype":"Figure","type":"Plot"},"ticker":{"id":"4aba0604-e7ac-4fa5-803d-55ae865df9cb","type":"BasicTicker"}},"id":"c99dcda5-3fcc-4cf8-a050-c40f7379395c","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b8e25270-7001-4e40-902f-0020867995e0","type":"VBar"},{"attributes":{"below":[{"id":"86fe809d-a769-4032-a7ce-995d55031527","type":"CategoricalAxis"}],"left":[{"id":"493a3c73-e94d-42d8-9f95-8a79a6fb0550","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"86fe809d-a769-4032-a7ce-995d55031527","type":"CategoricalAxis"},{"id":"c7b9daa5-4fa1-4f9d-869d-dd73c16ffebe","type":"Grid"},{"id":"493a3c73-e94d-42d8-9f95-8a79a6fb0550","type":"LinearAxis"},{"id":"c99dcda5-3fcc-4cf8-a050-c40f7379395c","type":"Grid"},{"id":"d59c0b1e-4a6d-499a-9969-1599e79c497d","type":"GlyphRenderer"},{"id":"4ed635a6-dec9-4d97-9f42-0087f8a8c3fe","type":"GlyphRenderer"}],"title":{"id":"0ee86283-b3e0-448a-9f0e-d07f4d29d7c2","type":"Title"},"toolbar":{"id":"896df0bf-8ed0-4772-8738-934012016084","type":"Toolbar"},"x_range":{"id":"668554aa-8abd-4f95-8650-e34275b02c37","type":"FactorRange"},"x_scale":{"id":"02137fb0-4a57-4fc9-8932-86d72cbc6ec8","type":"CategoricalScale"},"y_range":{"id":"54ec4dcf-7ebd-4953-935c-9e9726de9d4a","type":"DataRange1d"},"y_scale":{"id":"c464796b-2f4d-4b92-b762-50537bf85d84","type":"LinearScale"}},"id":"ed07d9a1-ad45-4a59-8925-9e518bcfb9ef","subtype":"Figure","type":"Plot"},{"attributes":{"plot":null,"text":"John S. Bowen (1 - 0 - 2)"},"id":"0ee86283-b3e0-448a-9f0e-d07f4d29d7c2","type":"Title"},{"attributes":{},"id":"4aba0604-e7ac-4fa5-803d-55ae865df9cb","type":"BasicTicker"},{"attributes":{"data_source":{"id":"6d9b235f-3f82-4758-8242-4925d72a8828","type":"ColumnDataSource"},"glyph":{"id":"f9e4ecf9-2163-433a-b7dc-47272494adda","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b8e25270-7001-4e40-902f-0020867995e0","type":"VBar"},"selection_glyph":null,"view":{"id":"d20a3713-3665-4a32-b49f-07d4f1d76f7a","type":"CDSView"}},"id":"4ed635a6-dec9-4d97-9f42-0087f8a8c3fe","type":"GlyphRenderer"},{"attributes":{"source":{"id":"6d9b235f-3f82-4758-8242-4925d72a8828","type":"ColumnDataSource"}},"id":"3d9c620d-4e31-40b9-9014-2b2c491b0c67","type":"CDSView"},{"attributes":{},"id":"76ea2d2d-ab10-4594-803d-afc384a135e6","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"76ea2d2d-ab10-4594-803d-afc384a135e6","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"ed07d9a1-ad45-4a59-8925-9e518bcfb9ef","subtype":"Figure","type":"Plot"},"ticker":{"id":"67c18ce8-bf7c-4fe9-9d00-21662c15891c","type":"CategoricalTicker"}},"id":"86fe809d-a769-4032-a7ce-995d55031527","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"741963d0-2c71-47e7-809d-87c1fface288","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"741963d0-2c71-47e7-809d-87c1fface288","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f9e4ecf9-2163-433a-b7dc-47272494adda","type":"VBar"},{"attributes":{"formatter":{"id":"8e60bd0c-d6b2-4956-824f-20986243c146","type":"BasicTickFormatter"},"plot":{"id":"ed07d9a1-ad45-4a59-8925-9e518bcfb9ef","subtype":"Figure","type":"Plot"},"ticker":{"id":"4aba0604-e7ac-4fa5-803d-55ae865df9cb","type":"BasicTicker"}},"id":"493a3c73-e94d-42d8-9f95-8a79a6fb0550","type":"LinearAxis"},{"attributes":{"callback":null},"id":"54ec4dcf-7ebd-4953-935c-9e9726de9d4a","type":"DataRange1d"},{"attributes":{"callback":null,"factors":["Battle of Big Black River Bridge","Battle of Grand Gulf","Battle of Port Gibson"]},"id":"668554aa-8abd-4f95-8650-e34275b02c37","type":"FactorRange"},{"attributes":{"plot":{"id":"ed07d9a1-ad45-4a59-8925-9e518bcfb9ef","subtype":"Figure","type":"Plot"},"ticker":{"id":"67c18ce8-bf7c-4fe9-9d00-21662c15891c","type":"CategoricalTicker"}},"id":"c7b9daa5-4fa1-4f9d-869d-dd73c16ffebe","type":"Grid"}],"root_ids":["ed07d9a1-ad45-4a59-8925-9e518bcfb9ef"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"a15943a9-0bd9-43cb-963b-63a0842240ab","elementid":"6ad5c8d3-82c7-4a80-aad7-38244357e219","modelid":"ed07d9a1-ad45-4a59-8925-9e518bcfb9ef"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

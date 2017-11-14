@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="224417cf-a92d-413d-9a1d-a54d4a44921f"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"79787978-d7df-4cea-ad5d-e2405ef752ff":{"roots":{"references":[{"attributes":{},"id":"3a0a5e3a-c6ea-4b1d-b5f1-23ef20628ada","type":"CategoricalTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"120334ae-3c6f-4946-9bec-a7601557d7d0","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"6cbc0126-b11d-45e2-aeed-056989514767","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"f47fa4b5-ab5e-423d-8141-f224d0f32f81","type":"ColumnDataSource"}},"id":"c17c72df-0385-403b-b03b-89c0605e39a4","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"307b8691-ba92-4a47-9d04-da19376d6e90","type":"VBar"},{"attributes":{"below":[{"id":"f739621e-f4ba-433e-8b09-253a50dfc0de","type":"CategoricalAxis"}],"left":[{"id":"7aca5e47-1522-4cd8-9414-a6c3de2c0504","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"f739621e-f4ba-433e-8b09-253a50dfc0de","type":"CategoricalAxis"},{"id":"0f7ff13e-3a42-45c8-8924-255d382baa52","type":"Grid"},{"id":"7aca5e47-1522-4cd8-9414-a6c3de2c0504","type":"LinearAxis"},{"id":"c5065224-1153-412f-a426-6ce11b71c2bc","type":"Grid"},{"id":"3f18ade3-dbe3-455f-ada4-8da8b74c958b","type":"GlyphRenderer"},{"id":"a42fe3c8-bbc2-4dff-94b4-b864843b4d53","type":"GlyphRenderer"}],"title":{"id":"8556600e-9c81-463e-9ab9-95c2bef83aae","type":"Title"},"toolbar":{"id":"b35f93f4-adae-4a56-a7a9-c46debaa2232","type":"Toolbar"},"x_range":{"id":"1f4acc23-f1d2-4668-b75f-57756ee9f1c5","type":"FactorRange"},"x_scale":{"id":"ddc0d053-f773-43c5-bc8c-3a97e54fc999","type":"CategoricalScale"},"y_range":{"id":"bf69a92d-f19e-47bc-83be-9141ef397b68","type":"DataRange1d"},"y_scale":{"id":"edda53a3-f8a7-4984-bd40-c07c15980ba3","type":"LinearScale"}},"id":"42974f5b-074f-4dab-8905-6b0b78d750e2","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"e9be78a8-a777-4b00-b15b-37349e9307fc","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"f47fa4b5-ab5e-423d-8141-f224d0f32f81","type":"ColumnDataSource"},"glyph":{"id":"c46cc6fd-5608-4723-afa5-be5bb0bffc83","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"307b8691-ba92-4a47-9d04-da19376d6e90","type":"VBar"},"selection_glyph":null,"view":{"id":"c17c72df-0385-403b-b03b-89c0605e39a4","type":"CDSView"}},"id":"a42fe3c8-bbc2-4dff-94b4-b864843b4d53","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Preston (1715)"],"cumulative":{"__ndarray__":"5Kfy8I2F3r8=","dtype":"float64","shape":[1]},"general":["William Maxwell, 5th Earl of Nithsdale"],"outcome":["D"],"value":{"__ndarray__":"5Kfy8I2F3r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADMmkA=","dtype":"float64","shape":[1]}}},"id":"f47fa4b5-ab5e-423d-8141-f224d0f32f81","type":"ColumnDataSource"},{"attributes":{"callback":null},"id":"bf69a92d-f19e-47bc-83be-9141ef397b68","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"6cbc0126-b11d-45e2-aeed-056989514767","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"6cbc0126-b11d-45e2-aeed-056989514767","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c46cc6fd-5608-4723-afa5-be5bb0bffc83","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"9f2ab00c-6770-48b6-a56b-71c2027a84f3","type":"HoverTool"},{"attributes":{"plot":{"id":"42974f5b-074f-4dab-8905-6b0b78d750e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"3a0a5e3a-c6ea-4b1d-b5f1-23ef20628ada","type":"CategoricalTicker"}},"id":"0f7ff13e-3a42-45c8-8924-255d382baa52","type":"Grid"},{"attributes":{"formatter":{"id":"e9be78a8-a777-4b00-b15b-37349e9307fc","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"42974f5b-074f-4dab-8905-6b0b78d750e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"3a0a5e3a-c6ea-4b1d-b5f1-23ef20628ada","type":"CategoricalTicker"}},"id":"f739621e-f4ba-433e-8b09-253a50dfc0de","type":"CategoricalAxis"},{"attributes":{"formatter":{"id":"ce14bae4-fb86-4b8e-b8d1-3fcfd1eecce0","type":"BasicTickFormatter"},"plot":{"id":"42974f5b-074f-4dab-8905-6b0b78d750e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"234d0aeb-b2c1-443f-8207-734778d68fe1","type":"BasicTicker"}},"id":"7aca5e47-1522-4cd8-9414-a6c3de2c0504","type":"LinearAxis"},{"attributes":{},"id":"ce14bae4-fb86-4b8e-b8d1-3fcfd1eecce0","type":"BasicTickFormatter"},{"attributes":{},"id":"ddc0d053-f773-43c5-bc8c-3a97e54fc999","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Battle of Preston (1715)"]},"id":"1f4acc23-f1d2-4668-b75f-57756ee9f1c5","type":"FactorRange"},{"attributes":{"source":{"id":"f47fa4b5-ab5e-423d-8141-f224d0f32f81","type":"ColumnDataSource"}},"id":"018312b8-fde7-4c5a-8c1d-5e29caa8ecd7","type":"CDSView"},{"attributes":{},"id":"edda53a3-f8a7-4984-bd40-c07c15980ba3","type":"LinearScale"},{"attributes":{"plot":null,"text":"William Maxwell, 5th Earl of Nithsdale (0 - 0 - 1)"},"id":"8556600e-9c81-463e-9ab9-95c2bef83aae","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"42974f5b-074f-4dab-8905-6b0b78d750e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"234d0aeb-b2c1-443f-8207-734778d68fe1","type":"BasicTicker"}},"id":"c5065224-1153-412f-a426-6ce11b71c2bc","type":"Grid"},{"attributes":{},"id":"234d0aeb-b2c1-443f-8207-734778d68fe1","type":"BasicTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e1264967-b7ab-4397-b17a-7fa945095715","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"9f2ab00c-6770-48b6-a56b-71c2027a84f3","type":"HoverTool"}]},"id":"b35f93f4-adae-4a56-a7a9-c46debaa2232","type":"Toolbar"},{"attributes":{"data_source":{"id":"f47fa4b5-ab5e-423d-8141-f224d0f32f81","type":"ColumnDataSource"},"glyph":{"id":"120334ae-3c6f-4946-9bec-a7601557d7d0","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e1264967-b7ab-4397-b17a-7fa945095715","type":"Line"},"selection_glyph":null,"view":{"id":"018312b8-fde7-4c5a-8c1d-5e29caa8ecd7","type":"CDSView"}},"id":"3f18ade3-dbe3-455f-ada4-8da8b74c958b","type":"GlyphRenderer"}],"root_ids":["42974f5b-074f-4dab-8905-6b0b78d750e2"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"79787978-d7df-4cea-ad5d-e2405ef752ff","elementid":"224417cf-a92d-413d-9a1d-a54d4a44921f","modelid":"42974f5b-074f-4dab-8905-6b0b78d750e2"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

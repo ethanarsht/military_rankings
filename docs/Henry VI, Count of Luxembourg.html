@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="cece63a2-3962-47d3-8555-0aa0666f94cf"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"54534239-cb41-472e-b0a0-9d3fb429c74e":{"roots":{"references":[{"attributes":{"callback":null},"id":"288c0496-565a-4e32-9ab3-e09eadfcf320","type":"DataRange1d"},{"attributes":{},"id":"5b88c93d-ea28-46cd-a6b3-3df7d81b2216","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"d10503f9-f53a-4aaf-879b-64912d9dbdbe","type":"ColumnDataSource"},"glyph":{"id":"f76a96c3-dfdb-49eb-92f5-06b14ce6ff6a","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ca351b28-c394-4740-bffb-f122db4f7a48","type":"Line"},"selection_glyph":null,"view":{"id":"f2ac0b59-bd2a-4629-9ce1-e042c47cdc72","type":"CDSView"}},"id":"62726a16-2e4f-43de-8d6b-130511a74cb4","type":"GlyphRenderer"},{"attributes":{},"id":"c2ef4674-1522-49ae-b456-5400039b46ee","type":"BasicTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f76a96c3-dfdb-49eb-92f5-06b14ce6ff6a","type":"Line"},{"attributes":{},"id":"28b6736a-d903-4550-8652-c821e973dc3b","type":"CategoricalScale"},{"attributes":{},"id":"393a4c4a-c6b7-4295-b7e7-326388e4261d","type":"CategoricalTickFormatter"},{"attributes":{},"id":"816aa40a-3292-47bd-9f31-5ca864f487e4","type":"LinearScale"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"2ed6e061-a07a-4bae-b015-ca0d41c882cb","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"6ec1c8b8-6946-47d2-915a-f1bbf518be20","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"6ec1c8b8-6946-47d2-915a-f1bbf518be20","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"1bfce8cc-d773-4a3e-8c44-857cdb5e8acf","type":"VBar"},{"attributes":{"formatter":{"id":"393a4c4a-c6b7-4295-b7e7-326388e4261d","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"df2c0e84-4dfa-46ab-b6a5-33ed01ac1ebf","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b88c93d-ea28-46cd-a6b3-3df7d81b2216","type":"CategoricalTicker"}},"id":"9c31c4ec-4db5-4169-bbf4-9649d7da8f0c","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b36984cc-f8f4-4845-be32-b66cda366979","type":"VBar"},{"attributes":{"plot":{"id":"df2c0e84-4dfa-46ab-b6a5-33ed01ac1ebf","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b88c93d-ea28-46cd-a6b3-3df7d81b2216","type":"CategoricalTicker"}},"id":"c32a0596-ad38-4e79-8d84-cc424bdc92ad","type":"Grid"},{"attributes":{"data_source":{"id":"d10503f9-f53a-4aaf-879b-64912d9dbdbe","type":"ColumnDataSource"},"glyph":{"id":"1bfce8cc-d773-4a3e-8c44-857cdb5e8acf","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b36984cc-f8f4-4845-be32-b66cda366979","type":"VBar"},"selection_glyph":null,"view":{"id":"5e748edb-a57c-4f8e-bfa0-05d11514638c","type":"CDSView"}},"id":"7c3a3441-d061-4ce0-9e66-a78f44fbacee","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Henry VI, Count of Luxembourg (0 - 0 - 1)"},"id":"e8569ad0-9a66-4887-be20-635b2cd8412c","type":"Title"},{"attributes":{"callback":null,"factors":["Battle of Worringen"]},"id":"74755c27-b5e6-4462-8336-f2eca7ba07f5","type":"FactorRange"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"6ec1c8b8-6946-47d2-915a-f1bbf518be20","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"c2ef4674-1522-49ae-b456-5400039b46ee","type":"BasicTickFormatter"},"plot":{"id":"df2c0e84-4dfa-46ab-b6a5-33ed01ac1ebf","subtype":"Figure","type":"Plot"},"ticker":{"id":"6164d9cf-e181-4026-9f43-e657166a952b","type":"BasicTicker"}},"id":"318f06e2-d15c-4ffc-9ca5-cbac4ad446ec","type":"LinearAxis"},{"attributes":{"below":[{"id":"9c31c4ec-4db5-4169-bbf4-9649d7da8f0c","type":"CategoricalAxis"}],"left":[{"id":"318f06e2-d15c-4ffc-9ca5-cbac4ad446ec","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"9c31c4ec-4db5-4169-bbf4-9649d7da8f0c","type":"CategoricalAxis"},{"id":"c32a0596-ad38-4e79-8d84-cc424bdc92ad","type":"Grid"},{"id":"318f06e2-d15c-4ffc-9ca5-cbac4ad446ec","type":"LinearAxis"},{"id":"418586bf-e2ff-4e68-935d-63961d1fe7af","type":"Grid"},{"id":"62726a16-2e4f-43de-8d6b-130511a74cb4","type":"GlyphRenderer"},{"id":"7c3a3441-d061-4ce0-9e66-a78f44fbacee","type":"GlyphRenderer"}],"title":{"id":"e8569ad0-9a66-4887-be20-635b2cd8412c","type":"Title"},"toolbar":{"id":"e6f03ad2-02cf-4069-b785-c108f2ca015d","type":"Toolbar"},"x_range":{"id":"74755c27-b5e6-4462-8336-f2eca7ba07f5","type":"FactorRange"},"x_scale":{"id":"28b6736a-d903-4550-8652-c821e973dc3b","type":"CategoricalScale"},"y_range":{"id":"288c0496-565a-4e32-9ab3-e09eadfcf320","type":"DataRange1d"},"y_scale":{"id":"816aa40a-3292-47bd-9f31-5ca864f487e4","type":"LinearScale"}},"id":"df2c0e84-4dfa-46ab-b6a5-33ed01ac1ebf","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"6164d9cf-e181-4026-9f43-e657166a952b","type":"BasicTicker"},{"attributes":{"source":{"id":"d10503f9-f53a-4aaf-879b-64912d9dbdbe","type":"ColumnDataSource"}},"id":"f2ac0b59-bd2a-4629-9ce1-e042c47cdc72","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ca351b28-c394-4740-bffb-f122db4f7a48","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"df2c0e84-4dfa-46ab-b6a5-33ed01ac1ebf","subtype":"Figure","type":"Plot"},"ticker":{"id":"6164d9cf-e181-4026-9f43-e657166a952b","type":"BasicTicker"}},"id":"418586bf-e2ff-4e68-935d-63961d1fe7af","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"2ed6e061-a07a-4bae-b015-ca0d41c882cb","type":"HoverTool"}]},"id":"e6f03ad2-02cf-4069-b785-c108f2ca015d","type":"Toolbar"},{"attributes":{"source":{"id":"d10503f9-f53a-4aaf-879b-64912d9dbdbe","type":"ColumnDataSource"}},"id":"5e748edb-a57c-4f8e-bfa0-05d11514638c","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Worringen"],"cumulative":{"__ndarray__":"hz5kUQln3r8=","dtype":"float64","shape":[1]},"general":["Henry VI, Count of Luxembourg"],"outcome":["D"],"value":{"__ndarray__":"hz5kUQln3r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAglEA=","dtype":"float64","shape":[1]}}},"id":"d10503f9-f53a-4aaf-879b-64912d9dbdbe","type":"ColumnDataSource"}],"root_ids":["df2c0e84-4dfa-46ab-b6a5-33ed01ac1ebf"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"54534239-cb41-472e-b0a0-9d3fb429c74e","elementid":"cece63a2-3962-47d3-8555-0aa0666f94cf","modelid":"df2c0e84-4dfa-46ab-b6a5-33ed01ac1ebf"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

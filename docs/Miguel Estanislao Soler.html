@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="82e32386-3454-45d4-81a1-2ab1660ffffb"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"5abf7582-de27-4c62-85a5-07a6bd147f5d":{"roots":{"references":[{"attributes":{},"id":"7c7fcaf5-0826-426d-8201-4cea93e561e5","type":"CategoricalScale"},{"attributes":{"dimension":1,"plot":{"id":"36036b0d-d9b6-4507-bfa3-1cecea7e91f0","subtype":"Figure","type":"Plot"},"ticker":{"id":"6ea14695-6d7a-4d24-a081-2a9275f91a01","type":"BasicTicker"}},"id":"74c9f830-68e7-4237-9e98-5c5c42e59531","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"7d3184d3-b166-46fd-9475-c27d6d6ca310","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"7d3184d3-b166-46fd-9475-c27d6d6ca310","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"96d44a0a-7367-4660-b58f-8f3bd08bee70","type":"VBar"},{"attributes":{"data_source":{"id":"a80ffa40-ac6e-403c-a04e-2f1b7a23e9f9","type":"ColumnDataSource"},"glyph":{"id":"96d44a0a-7367-4660-b58f-8f3bd08bee70","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"dd5d3ff2-011b-4fa2-852b-ac988c0eb9a5","type":"VBar"},"selection_glyph":null,"view":{"id":"f61e35f9-cba2-4e9c-b02e-e04ca49762cd","type":"CDSView"}},"id":"f299ed82-e847-4045-ac27-ad6f3fee723f","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"7d3184d3-b166-46fd-9475-c27d6d6ca310","type":"CategoricalColorMapper"},{"attributes":{"plot":null,"text":"Miguel Estanislao Soler (1 - 0 - 0)"},"id":"add2a07a-965d-4a76-8c73-0b339000ae24","type":"Title"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"ed430a8a-7ac4-4651-b598-8a5e97ae6854","type":"HoverTool"},{"attributes":{},"id":"db0e1be7-3ec0-440e-b7b9-589fb18bcd82","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"b6cb966a-c550-4a12-9a42-220a29c06461","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"36036b0d-d9b6-4507-bfa3-1cecea7e91f0","subtype":"Figure","type":"Plot"},"ticker":{"id":"db0e1be7-3ec0-440e-b7b9-589fb18bcd82","type":"CategoricalTicker"}},"id":"ce1b6a21-034b-4dce-9363-2fe538d48399","type":"CategoricalAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"785ee909-b060-486c-95b5-206d06ca5241","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"ed430a8a-7ac4-4651-b598-8a5e97ae6854","type":"HoverTool"}]},"id":"e96f0ade-4cac-4fcf-8403-52fbf8f8f76a","type":"Toolbar"},{"attributes":{},"id":"770a2dbb-1773-4d86-8a93-91f72d246eac","type":"LinearScale"},{"attributes":{"source":{"id":"a80ffa40-ac6e-403c-a04e-2f1b7a23e9f9","type":"ColumnDataSource"}},"id":"3aed1f81-234c-46a3-b754-09157d717320","type":"CDSView"},{"attributes":{"plot":{"id":"36036b0d-d9b6-4507-bfa3-1cecea7e91f0","subtype":"Figure","type":"Plot"},"ticker":{"id":"db0e1be7-3ec0-440e-b7b9-589fb18bcd82","type":"CategoricalTicker"}},"id":"3be272ac-8b16-4076-bd8d-6eff1dc7e4f8","type":"Grid"},{"attributes":{"below":[{"id":"ce1b6a21-034b-4dce-9363-2fe538d48399","type":"CategoricalAxis"}],"left":[{"id":"c288b68f-5502-45cb-a788-ab4c98693d27","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"ce1b6a21-034b-4dce-9363-2fe538d48399","type":"CategoricalAxis"},{"id":"3be272ac-8b16-4076-bd8d-6eff1dc7e4f8","type":"Grid"},{"id":"c288b68f-5502-45cb-a788-ab4c98693d27","type":"LinearAxis"},{"id":"74c9f830-68e7-4237-9e98-5c5c42e59531","type":"Grid"},{"id":"861b9260-3896-4b29-8467-fafe668cfde4","type":"GlyphRenderer"},{"id":"f299ed82-e847-4045-ac27-ad6f3fee723f","type":"GlyphRenderer"}],"title":{"id":"add2a07a-965d-4a76-8c73-0b339000ae24","type":"Title"},"toolbar":{"id":"e96f0ade-4cac-4fcf-8403-52fbf8f8f76a","type":"Toolbar"},"x_range":{"id":"55d9fa4b-94ea-4470-afdb-a5e16dd61e72","type":"FactorRange"},"x_scale":{"id":"7c7fcaf5-0826-426d-8201-4cea93e561e5","type":"CategoricalScale"},"y_range":{"id":"0c2ae905-df7f-4697-8e64-421f40bec510","type":"DataRange1d"},"y_scale":{"id":"770a2dbb-1773-4d86-8a93-91f72d246eac","type":"LinearScale"}},"id":"36036b0d-d9b6-4507-bfa3-1cecea7e91f0","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Chacabuco"]},"id":"55d9fa4b-94ea-4470-afdb-a5e16dd61e72","type":"FactorRange"},{"attributes":{},"id":"6ea14695-6d7a-4d24-a081-2a9275f91a01","type":"BasicTicker"},{"attributes":{},"id":"9eb76fd1-d941-4b73-9da2-dea0c0862183","type":"BasicTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5db6841d-ab29-4ba7-b534-14a39ee47544","type":"Line"},{"attributes":{"source":{"id":"a80ffa40-ac6e-403c-a04e-2f1b7a23e9f9","type":"ColumnDataSource"}},"id":"f61e35f9-cba2-4e9c-b02e-e04ca49762cd","type":"CDSView"},{"attributes":{},"id":"b6cb966a-c550-4a12-9a42-220a29c06461","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"dd5d3ff2-011b-4fa2-852b-ac988c0eb9a5","type":"VBar"},{"attributes":{"formatter":{"id":"9eb76fd1-d941-4b73-9da2-dea0c0862183","type":"BasicTickFormatter"},"plot":{"id":"36036b0d-d9b6-4507-bfa3-1cecea7e91f0","subtype":"Figure","type":"Plot"},"ticker":{"id":"6ea14695-6d7a-4d24-a081-2a9275f91a01","type":"BasicTicker"}},"id":"c288b68f-5502-45cb-a788-ab4c98693d27","type":"LinearAxis"},{"attributes":{"data_source":{"id":"a80ffa40-ac6e-403c-a04e-2f1b7a23e9f9","type":"ColumnDataSource"},"glyph":{"id":"5db6841d-ab29-4ba7-b534-14a39ee47544","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"785ee909-b060-486c-95b5-206d06ca5241","type":"Line"},"selection_glyph":null,"view":{"id":"3aed1f81-234c-46a3-b754-09157d717320","type":"CDSView"}},"id":"861b9260-3896-4b29-8467-fafe668cfde4","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"0c2ae905-df7f-4697-8e64-421f40bec510","type":"DataRange1d"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Chacabuco"],"cumulative":{"__ndarray__":"ZFertG2o3j8=","dtype":"float64","shape":[1]},"general":["Miguel Estanislao Soler"],"outcome":["V"],"value":{"__ndarray__":"ZFertG2o3j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABknEA=","dtype":"float64","shape":[1]}}},"id":"a80ffa40-ac6e-403c-a04e-2f1b7a23e9f9","type":"ColumnDataSource"}],"root_ids":["36036b0d-d9b6-4507-bfa3-1cecea7e91f0"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"5abf7582-de27-4c62-85a5-07a6bd147f5d","elementid":"82e32386-3454-45d4-81a1-2ab1660ffffb","modelid":"36036b0d-d9b6-4507-bfa3-1cecea7e91f0"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

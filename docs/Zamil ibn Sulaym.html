@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c02d2816-6f72-4e92-a1d8-7b44b8a8bcfa"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"23d02f76-6039-47ed-be8d-0ef2bd6d1ea1":{"roots":{"references":[{"attributes":{"data_source":{"id":"c8974a21-fafe-42cb-a32d-3efb7d76feb3","type":"ColumnDataSource"},"glyph":{"id":"ac81f942-8773-4d19-b1f2-6af9a172892f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"28586a67-1bbc-4187-a896-f14332644511","type":"VBar"},"selection_glyph":null,"view":{"id":"36f452a7-f50f-46c6-9790-48685a392c3d","type":"CDSView"}},"id":"5b54daee-f9fa-4a58-97ee-e9de5ca83226","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"f607300c-39fc-44ed-99f0-b6211e1e2868","type":"BasicTickFormatter"},"plot":{"id":"720dac02-4e32-4140-9a92-28d8c0beb5e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"b011f0f3-ee75-40db-abb0-f4ee87b821c4","type":"BasicTicker"}},"id":"ad78abc4-00c1-493c-8c64-69d1c21b84a5","type":"LinearAxis"},{"attributes":{"plot":{"id":"720dac02-4e32-4140-9a92-28d8c0beb5e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"d08c08cc-29e2-44ce-ae39-173bda526e19","type":"CategoricalTicker"}},"id":"f42df8c9-5b5a-4614-b39c-b63a818b56fd","type":"Grid"},{"attributes":{"below":[{"id":"b758b2b0-f249-4569-b39d-db3a2946a835","type":"CategoricalAxis"}],"left":[{"id":"ad78abc4-00c1-493c-8c64-69d1c21b84a5","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"b758b2b0-f249-4569-b39d-db3a2946a835","type":"CategoricalAxis"},{"id":"f42df8c9-5b5a-4614-b39c-b63a818b56fd","type":"Grid"},{"id":"ad78abc4-00c1-493c-8c64-69d1c21b84a5","type":"LinearAxis"},{"id":"4a758062-298d-48a7-9c81-1c751cd28b78","type":"Grid"},{"id":"79d0471f-0cb8-42e5-9890-7d82b3ab942f","type":"GlyphRenderer"},{"id":"5b54daee-f9fa-4a58-97ee-e9de5ca83226","type":"GlyphRenderer"}],"title":{"id":"12a432f1-8180-48b2-ad76-5ec54bb5ecac","type":"Title"},"toolbar":{"id":"f5bb52ac-c61a-49a1-8c30-f5d0b86942c0","type":"Toolbar"},"x_range":{"id":"4c22891f-0967-4571-9234-dca39b159002","type":"FactorRange"},"x_scale":{"id":"5b815785-7b34-4b01-8298-e2a83012ed5a","type":"CategoricalScale"},"y_range":{"id":"9322e377-bf8b-4b66-abea-ea29de427c4e","type":"DataRange1d"},"y_scale":{"id":"c284ada7-1a1b-4594-b119-c7334ef6108e","type":"LinearScale"}},"id":"720dac02-4e32-4140-9a92-28d8c0beb5e8","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"d08c08cc-29e2-44ce-ae39-173bda526e19","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Battle of Mulayda"]},"id":"4c22891f-0967-4571-9234-dca39b159002","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"01c2c0f8-b982-4ead-bf79-9d5167a9e445","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"01c2c0f8-b982-4ead-bf79-9d5167a9e445","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ac81f942-8773-4d19-b1f2-6af9a172892f","type":"VBar"},{"attributes":{},"id":"b011f0f3-ee75-40db-abb0-f4ee87b821c4","type":"BasicTicker"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"81bcb4a6-2aa2-4c9f-a948-5fff6465bdf4","type":"Line"},{"attributes":{"source":{"id":"c8974a21-fafe-42cb-a32d-3efb7d76feb3","type":"ColumnDataSource"}},"id":"19ab04eb-c31c-46eb-9d31-2b2552244b07","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"94850266-09e2-4d1d-9078-b2f1cf20aa86","type":"HoverTool"},{"attributes":{},"id":"9977bb9c-1232-4c9b-9f7b-7d8876cf8efc","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"720dac02-4e32-4140-9a92-28d8c0beb5e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"b011f0f3-ee75-40db-abb0-f4ee87b821c4","type":"BasicTicker"}},"id":"4a758062-298d-48a7-9c81-1c751cd28b78","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"28586a67-1bbc-4187-a896-f14332644511","type":"VBar"},{"attributes":{"source":{"id":"c8974a21-fafe-42cb-a32d-3efb7d76feb3","type":"ColumnDataSource"}},"id":"36f452a7-f50f-46c6-9790-48685a392c3d","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Mulayda"],"cumulative":{"__ndarray__":"AAAAAAAA4L8=","dtype":"float64","shape":[1]},"general":["Zamil ibn Sulaym"],"outcome":["D"],"value":{"__ndarray__":"AAAAAAAA4L8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAACMnUA=","dtype":"float64","shape":[1]}}},"id":"c8974a21-fafe-42cb-a32d-3efb7d76feb3","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"c8974a21-fafe-42cb-a32d-3efb7d76feb3","type":"ColumnDataSource"},"glyph":{"id":"81bcb4a6-2aa2-4c9f-a948-5fff6465bdf4","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0764f35c-db8a-4c92-99e9-df72799cb5a1","type":"Line"},"selection_glyph":null,"view":{"id":"19ab04eb-c31c-46eb-9d31-2b2552244b07","type":"CDSView"}},"id":"79d0471f-0cb8-42e5-9890-7d82b3ab942f","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"94850266-09e2-4d1d-9078-b2f1cf20aa86","type":"HoverTool"}]},"id":"f5bb52ac-c61a-49a1-8c30-f5d0b86942c0","type":"Toolbar"},{"attributes":{"formatter":{"id":"9977bb9c-1232-4c9b-9f7b-7d8876cf8efc","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"720dac02-4e32-4140-9a92-28d8c0beb5e8","subtype":"Figure","type":"Plot"},"ticker":{"id":"d08c08cc-29e2-44ce-ae39-173bda526e19","type":"CategoricalTicker"}},"id":"b758b2b0-f249-4569-b39d-db3a2946a835","type":"CategoricalAxis"},{"attributes":{"callback":null},"id":"9322e377-bf8b-4b66-abea-ea29de427c4e","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Zamil ibn Sulaym (0 - 0 - 1)"},"id":"12a432f1-8180-48b2-ad76-5ec54bb5ecac","type":"Title"},{"attributes":{},"id":"5b815785-7b34-4b01-8298-e2a83012ed5a","type":"CategoricalScale"},{"attributes":{},"id":"c284ada7-1a1b-4594-b119-c7334ef6108e","type":"LinearScale"},{"attributes":{},"id":"f607300c-39fc-44ed-99f0-b6211e1e2868","type":"BasicTickFormatter"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"01c2c0f8-b982-4ead-bf79-9d5167a9e445","type":"CategoricalColorMapper"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"0764f35c-db8a-4c92-99e9-df72799cb5a1","type":"Line"}],"root_ids":["720dac02-4e32-4140-9a92-28d8c0beb5e8"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"23d02f76-6039-47ed-be8d-0ef2bd6d1ea1","elementid":"c02d2816-6f72-4e92-a1d8-7b44b8a8bcfa","modelid":"720dac02-4e32-4140-9a92-28d8c0beb5e8"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

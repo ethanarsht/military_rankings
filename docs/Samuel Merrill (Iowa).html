@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="369d9fdc-473c-457f-abaf-0ce82e50a745"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"34bdefa5-b31d-4b6d-964d-1b0c7f21b0c0":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9990de43-907b-44f2-8283-38bd21c56404","type":"Line"},{"attributes":{},"id":"951cc543-ecc1-4b29-b57f-513b22f06224","type":"CategoricalScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"93932940-219a-4f25-959f-7a1af2d3f196","type":"Line"},{"attributes":{"source":{"id":"30b5a3b3-3102-49c0-97ec-541590d4a7fa","type":"ColumnDataSource"}},"id":"7f2ad2d5-026f-475c-a9a9-fa8a65dd363a","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"69e8a006-920d-4f54-92c4-bba54969924e","type":"HoverTool"},{"attributes":{"dimension":1,"plot":{"id":"d88fef9f-bb0e-4be5-a390-9fe30bf677c4","subtype":"Figure","type":"Plot"},"ticker":{"id":"aa1b313a-e377-482d-86b5-395e91ddb80c","type":"BasicTicker"}},"id":"05fa99d3-63cc-4417-bc8f-9a482daaec4c","type":"Grid"},{"attributes":{"callback":null},"id":"a401f595-1670-473b-abec-6410548777b2","type":"DataRange1d"},{"attributes":{"below":[{"id":"f40641e1-5184-4376-a59f-a5c508113a51","type":"CategoricalAxis"}],"left":[{"id":"7125140b-9703-4234-89c1-bfaa6158c748","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"f40641e1-5184-4376-a59f-a5c508113a51","type":"CategoricalAxis"},{"id":"3f1e858c-690d-4c28-b74d-6b777b8ca8b2","type":"Grid"},{"id":"7125140b-9703-4234-89c1-bfaa6158c748","type":"LinearAxis"},{"id":"05fa99d3-63cc-4417-bc8f-9a482daaec4c","type":"Grid"},{"id":"4ccdf360-80b7-45c1-bea8-2ec030b591a2","type":"GlyphRenderer"},{"id":"4950dc68-0b0a-4787-addd-656c3f144c5d","type":"GlyphRenderer"}],"title":{"id":"5e996096-9ff7-4bec-acde-f940c9677d24","type":"Title"},"toolbar":{"id":"76922735-2e5b-4dbd-93c4-c12c585b025f","type":"Toolbar"},"x_range":{"id":"cab87b8e-2fdb-4a90-884f-0886f99fd752","type":"FactorRange"},"x_scale":{"id":"951cc543-ecc1-4b29-b57f-513b22f06224","type":"CategoricalScale"},"y_range":{"id":"a401f595-1670-473b-abec-6410548777b2","type":"DataRange1d"},"y_scale":{"id":"5f858548-4b85-4fe8-9cf0-a6903e0db488","type":"LinearScale"}},"id":"d88fef9f-bb0e-4be5-a390-9fe30bf677c4","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"30b5a3b3-3102-49c0-97ec-541590d4a7fa","type":"ColumnDataSource"},"glyph":{"id":"cd167495-4fb9-4c8e-8704-1ac41087c27a","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"81a70f1b-20e5-4890-a2cf-5f632e5b3dab","type":"VBar"},"selection_glyph":null,"view":{"id":"7b8f834c-5dab-41a3-b6f9-aa45e5dd7d15","type":"CDSView"}},"id":"4950dc68-0b0a-4787-addd-656c3f144c5d","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"31083e2b-47d7-4f02-97bf-f38d1668ec43","type":"BasicTickFormatter"},"plot":{"id":"d88fef9f-bb0e-4be5-a390-9fe30bf677c4","subtype":"Figure","type":"Plot"},"ticker":{"id":"aa1b313a-e377-482d-86b5-395e91ddb80c","type":"BasicTicker"}},"id":"7125140b-9703-4234-89c1-bfaa6158c748","type":"LinearAxis"},{"attributes":{},"id":"aa1b313a-e377-482d-86b5-395e91ddb80c","type":"BasicTicker"},{"attributes":{},"id":"5f858548-4b85-4fe8-9cf0-a6903e0db488","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"19d59061-e47d-4506-9651-15a917e04d17","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"19d59061-e47d-4506-9651-15a917e04d17","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"cd167495-4fb9-4c8e-8704-1ac41087c27a","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"81a70f1b-20e5-4890-a2cf-5f632e5b3dab","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Hartville"]},"id":"cab87b8e-2fdb-4a90-884f-0886f99fd752","type":"FactorRange"},{"attributes":{"source":{"id":"30b5a3b3-3102-49c0-97ec-541590d4a7fa","type":"ColumnDataSource"}},"id":"7b8f834c-5dab-41a3-b6f9-aa45e5dd7d15","type":"CDSView"},{"attributes":{"data_source":{"id":"30b5a3b3-3102-49c0-97ec-541590d4a7fa","type":"ColumnDataSource"},"glyph":{"id":"9990de43-907b-44f2-8283-38bd21c56404","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"93932940-219a-4f25-959f-7a1af2d3f196","type":"Line"},"selection_glyph":null,"view":{"id":"7f2ad2d5-026f-475c-a9a9-fa8a65dd363a","type":"CDSView"}},"id":"4ccdf360-80b7-45c1-bea8-2ec030b591a2","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Samuel Merrill (Iowa) (0 - 1 - 0)"},"id":"5e996096-9ff7-4bec-acde-f940c9677d24","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"19d59061-e47d-4506-9651-15a917e04d17","type":"CategoricalColorMapper"},{"attributes":{},"id":"31083e2b-47d7-4f02-97bf-f38d1668ec43","type":"BasicTickFormatter"},{"attributes":{},"id":"c9277703-1175-4844-9f7c-c4293418db1f","type":"CategoricalTicker"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Hartville"],"cumulative":{"__ndarray__":"AAB3XlWfWL8=","dtype":"float64","shape":[1]},"general":["Samuel Merrill (Iowa)"],"outcome":["I"],"value":{"__ndarray__":"AAB3XlWfWL8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAcnUA=","dtype":"float64","shape":[1]}}},"id":"30b5a3b3-3102-49c0-97ec-541590d4a7fa","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"d88fef9f-bb0e-4be5-a390-9fe30bf677c4","subtype":"Figure","type":"Plot"},"ticker":{"id":"c9277703-1175-4844-9f7c-c4293418db1f","type":"CategoricalTicker"}},"id":"3f1e858c-690d-4c28-b74d-6b777b8ca8b2","type":"Grid"},{"attributes":{"formatter":{"id":"a8b46a4e-8773-4609-801a-8cf812839195","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"d88fef9f-bb0e-4be5-a390-9fe30bf677c4","subtype":"Figure","type":"Plot"},"ticker":{"id":"c9277703-1175-4844-9f7c-c4293418db1f","type":"CategoricalTicker"}},"id":"f40641e1-5184-4376-a59f-a5c508113a51","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"69e8a006-920d-4f54-92c4-bba54969924e","type":"HoverTool"}]},"id":"76922735-2e5b-4dbd-93c4-c12c585b025f","type":"Toolbar"},{"attributes":{},"id":"a8b46a4e-8773-4609-801a-8cf812839195","type":"CategoricalTickFormatter"}],"root_ids":["d88fef9f-bb0e-4be5-a390-9fe30bf677c4"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"34bdefa5-b31d-4b6d-964d-1b0c7f21b0c0","elementid":"369d9fdc-473c-457f-abaf-0ce82e50a745","modelid":"d88fef9f-bb0e-4be5-a390-9fe30bf677c4"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

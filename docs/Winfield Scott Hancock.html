@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="ffd65c8d-4dbe-4cd1-bb43-92f430c32cd9"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"f95d4d24-80b7-4a34-aaee-bf10cb6046d4":{"roots":{"references":[{"attributes":{"data_source":{"id":"24abaee4-4e1f-4be9-88db-69ca32cfb52e","type":"ColumnDataSource"},"glyph":{"id":"caa3bf23-8c5b-4c6d-9f92-5a3687286a08","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2169ba33-e23c-4f37-b702-92a8913afecb","type":"VBar"},"selection_glyph":null,"view":{"id":"4961d7f4-6908-458a-b69a-0f4e84641724","type":"CDSView"}},"id":"fbd44719-6b64-4eaf-a271-c71dbb8c4c61","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"0ce2dd43-48e5-40bb-8416-7fcd8f913213","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"0ce2dd43-48e5-40bb-8416-7fcd8f913213","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"caa3bf23-8c5b-4c6d-9f92-5a3687286a08","type":"VBar"},{"attributes":{},"id":"76c38d01-1d72-4922-96dc-09eb865d23e4","type":"BasicTicker"},{"attributes":{"data_source":{"id":"24abaee4-4e1f-4be9-88db-69ca32cfb52e","type":"ColumnDataSource"},"glyph":{"id":"9f830a58-e3c7-41ed-a5b0-f045dcb387cc","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b759f281-8052-4671-b7af-8375bbf2df89","type":"Line"},"selection_glyph":null,"view":{"id":"8724a723-eecc-480e-a17d-b50a3f35267d","type":"CDSView"}},"id":"edd5e325-da7a-4b7e-b695-0cdd37c64aac","type":"GlyphRenderer"},{"attributes":{"source":{"id":"24abaee4-4e1f-4be9-88db-69ca32cfb52e","type":"ColumnDataSource"}},"id":"8724a723-eecc-480e-a17d-b50a3f35267d","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"5ea492da-6864-4f63-99a9-4960a45be96e","type":"HoverTool"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Garnett's & Golding's Farm","Battle of Boydton Plank Road","Second Battle of Ream's Station"],"cumulative":{"__ndarray__":"AAAAAAAAAAAQjW5NSb6nv1Ekhj80iOG/","dtype":"float64","shape":[3]},"general":["Winfield Scott Hancock","Winfield Scott Hancock","Winfield Scott Hancock"],"outcome":["I","I","D"],"value":{"__ndarray__":"AAAAAAAAAAAQjW5NSb6nv4A7r6pPDOC/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAAYnUAAAAAAACCdQAAAAAAAIJ1A","dtype":"float64","shape":[3]}}},"id":"24abaee4-4e1f-4be9-88db-69ca32cfb52e","type":"ColumnDataSource"},{"attributes":{},"id":"ccee44fe-24d8-400b-8c11-49989393d6ff","type":"CategoricalTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"9f830a58-e3c7-41ed-a5b0-f045dcb387cc","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"2169ba33-e23c-4f37-b702-92a8913afecb","type":"VBar"},{"attributes":{},"id":"7adde05c-6acf-4d7d-b314-eb8331197b42","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Battle of Garnett's & Golding's Farm","Battle of Boydton Plank Road","Second Battle of Ream's Station"]},"id":"feee8091-7a82-4866-bfa2-ab8f18e43908","type":"FactorRange"},{"attributes":{"source":{"id":"24abaee4-4e1f-4be9-88db-69ca32cfb52e","type":"ColumnDataSource"}},"id":"4961d7f4-6908-458a-b69a-0f4e84641724","type":"CDSView"},{"attributes":{"formatter":{"id":"962a5818-d7aa-43e4-930f-ab5ff0ed8ab6","type":"BasicTickFormatter"},"plot":{"id":"c52cf3f9-5251-44a1-96ac-6933a8cfae79","subtype":"Figure","type":"Plot"},"ticker":{"id":"76c38d01-1d72-4922-96dc-09eb865d23e4","type":"BasicTicker"}},"id":"3ebdc90b-f46b-45bb-ad62-9b5a306d863d","type":"LinearAxis"},{"attributes":{},"id":"d125ed61-fa24-4b7d-911b-8d0d0b631f89","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"c52cf3f9-5251-44a1-96ac-6933a8cfae79","subtype":"Figure","type":"Plot"},"ticker":{"id":"76c38d01-1d72-4922-96dc-09eb865d23e4","type":"BasicTicker"}},"id":"0b95007b-54d8-47ec-b011-c047db4a0a10","type":"Grid"},{"attributes":{"formatter":{"id":"ccee44fe-24d8-400b-8c11-49989393d6ff","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"c52cf3f9-5251-44a1-96ac-6933a8cfae79","subtype":"Figure","type":"Plot"},"ticker":{"id":"d125ed61-fa24-4b7d-911b-8d0d0b631f89","type":"CategoricalTicker"}},"id":"f996f160-cadc-4420-8204-f1f1b081cc73","type":"CategoricalAxis"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"b759f281-8052-4671-b7af-8375bbf2df89","type":"Line"},{"attributes":{"plot":{"id":"c52cf3f9-5251-44a1-96ac-6933a8cfae79","subtype":"Figure","type":"Plot"},"ticker":{"id":"d125ed61-fa24-4b7d-911b-8d0d0b631f89","type":"CategoricalTicker"}},"id":"f5a2394f-c62c-478d-a6b0-16b449da9e0c","type":"Grid"},{"attributes":{"plot":null,"text":"Winfield Scott Hancock (0 - 2 - 1)"},"id":"65f36a7b-92ab-46df-b2fb-5feda023d1cf","type":"Title"},{"attributes":{},"id":"4ea96b58-18b3-4437-af4b-0874268ee619","type":"LinearScale"},{"attributes":{},"id":"962a5818-d7aa-43e4-930f-ab5ff0ed8ab6","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"05de5ef5-dec0-46c4-bddd-2a6016b8b5ce","type":"DataRange1d"},{"attributes":{"below":[{"id":"f996f160-cadc-4420-8204-f1f1b081cc73","type":"CategoricalAxis"}],"left":[{"id":"3ebdc90b-f46b-45bb-ad62-9b5a306d863d","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"f996f160-cadc-4420-8204-f1f1b081cc73","type":"CategoricalAxis"},{"id":"f5a2394f-c62c-478d-a6b0-16b449da9e0c","type":"Grid"},{"id":"3ebdc90b-f46b-45bb-ad62-9b5a306d863d","type":"LinearAxis"},{"id":"0b95007b-54d8-47ec-b011-c047db4a0a10","type":"Grid"},{"id":"edd5e325-da7a-4b7e-b695-0cdd37c64aac","type":"GlyphRenderer"},{"id":"fbd44719-6b64-4eaf-a271-c71dbb8c4c61","type":"GlyphRenderer"}],"title":{"id":"65f36a7b-92ab-46df-b2fb-5feda023d1cf","type":"Title"},"toolbar":{"id":"1e131cc0-9233-4e49-926d-2c0029f4bbd9","type":"Toolbar"},"x_range":{"id":"feee8091-7a82-4866-bfa2-ab8f18e43908","type":"FactorRange"},"x_scale":{"id":"7adde05c-6acf-4d7d-b314-eb8331197b42","type":"CategoricalScale"},"y_range":{"id":"05de5ef5-dec0-46c4-bddd-2a6016b8b5ce","type":"DataRange1d"},"y_scale":{"id":"4ea96b58-18b3-4437-af4b-0874268ee619","type":"LinearScale"}},"id":"c52cf3f9-5251-44a1-96ac-6933a8cfae79","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"5ea492da-6864-4f63-99a9-4960a45be96e","type":"HoverTool"}]},"id":"1e131cc0-9233-4e49-926d-2c0029f4bbd9","type":"Toolbar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"0ce2dd43-48e5-40bb-8416-7fcd8f913213","type":"CategoricalColorMapper"}],"root_ids":["c52cf3f9-5251-44a1-96ac-6933a8cfae79"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"f95d4d24-80b7-4a34-aaee-bf10cb6046d4","elementid":"ffd65c8d-4dbe-4cd1-bb43-92f430c32cd9","modelid":"c52cf3f9-5251-44a1-96ac-6933a8cfae79"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

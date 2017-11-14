@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="78e2b810-209a-4307-9284-387e80346647"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"3df86ee3-778b-436a-8584-3450b9161c5a":{"roots":{"references":[{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"0389f03c-b4ed-4f07-90df-35728c3a1ac0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"0389f03c-b4ed-4f07-90df-35728c3a1ac0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a08d2489-2013-46ea-8f70-a3d039fb4009","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"cbb222ca-2f90-4332-b9c7-a0510770f208","type":"Line"},{"attributes":{},"id":"fb9c8865-c358-46cf-9f63-5339b6bf14c3","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"339f97a3-9fd8-4b99-8df5-054753931e73","subtype":"Figure","type":"Plot"},"ticker":{"id":"e3a39339-550b-4a7b-8adf-041cfcb9a514","type":"BasicTicker"}},"id":"cc3db01e-0f0d-4e9e-965a-137596615db5","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"0389f03c-b4ed-4f07-90df-35728c3a1ac0","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"dc0eaf2a-f034-43c0-9aca-38b0c78e5117","type":"HoverTool"},{"attributes":{"source":{"id":"92241ab2-7fb5-4954-8a4f-02e9a002ace2","type":"ColumnDataSource"}},"id":"c1ecfc41-5a9f-45b8-a604-c24a67af7a2f","type":"CDSView"},{"attributes":{"plot":{"id":"339f97a3-9fd8-4b99-8df5-054753931e73","subtype":"Figure","type":"Plot"},"ticker":{"id":"3247b1c2-e4de-49c5-8578-4eb494cb246c","type":"CategoricalTicker"}},"id":"454269df-114c-403a-a54a-e7eb84699d4a","type":"Grid"},{"attributes":{"source":{"id":"92241ab2-7fb5-4954-8a4f-02e9a002ace2","type":"ColumnDataSource"}},"id":"d0ec35ee-6217-4a6b-9469-dc87030fc7e9","type":"CDSView"},{"attributes":{},"id":"e365667b-2f30-426e-b4ba-f7a2298e854c","type":"LinearScale"},{"attributes":{"callback":null},"id":"83d386bc-1b87-47aa-b502-6ddeeed57661","type":"DataRange1d"},{"attributes":{},"id":"3247b1c2-e4de-49c5-8578-4eb494cb246c","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"92241ab2-7fb5-4954-8a4f-02e9a002ace2","type":"ColumnDataSource"},"glyph":{"id":"cbb222ca-2f90-4332-b9c7-a0510770f208","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f933547b-0693-47d5-a729-c9646baf91f6","type":"Line"},"selection_glyph":null,"view":{"id":"d0ec35ee-6217-4a6b-9469-dc87030fc7e9","type":"CDSView"}},"id":"ec4306fb-4597-405d-9460-8489d519e2a5","type":"GlyphRenderer"},{"attributes":{},"id":"b18aecf5-8658-4b92-aafe-98a91c9b49ef","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"92241ab2-7fb5-4954-8a4f-02e9a002ace2","type":"ColumnDataSource"},"glyph":{"id":"a08d2489-2013-46ea-8f70-a3d039fb4009","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9aafd080-a17f-4c43-9bd6-c0f094b0d837","type":"VBar"},"selection_glyph":null,"view":{"id":"c1ecfc41-5a9f-45b8-a604-c24a67af7a2f","type":"CDSView"}},"id":"d6e8f685-93a2-46c1-83c8-ac1a455bce9e","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"William I of the Netherlands (0 - 0 - 4)"},"id":"07c46cae-0026-4979-b8cd-a8fcc36805bc","type":"Title"},{"attributes":{},"id":"e0e1d6d2-7e29-4745-8ca8-8d9ab3920901","type":"CategoricalScale"},{"attributes":{"below":[{"id":"6dca19c1-2425-4c69-ade2-6583fbf597d2","type":"CategoricalAxis"}],"left":[{"id":"30e01e8f-1cf5-424c-82ae-3336880cd973","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"6dca19c1-2425-4c69-ade2-6583fbf597d2","type":"CategoricalAxis"},{"id":"454269df-114c-403a-a54a-e7eb84699d4a","type":"Grid"},{"id":"30e01e8f-1cf5-424c-82ae-3336880cd973","type":"LinearAxis"},{"id":"cc3db01e-0f0d-4e9e-965a-137596615db5","type":"Grid"},{"id":"ec4306fb-4597-405d-9460-8489d519e2a5","type":"GlyphRenderer"},{"id":"d6e8f685-93a2-46c1-83c8-ac1a455bce9e","type":"GlyphRenderer"}],"title":{"id":"07c46cae-0026-4979-b8cd-a8fcc36805bc","type":"Title"},"toolbar":{"id":"427dccd0-f7a3-49f1-a464-f326849da523","type":"Toolbar"},"x_range":{"id":"7c8fa2eb-40a7-4925-aa27-0b747fd885a0","type":"FactorRange"},"x_scale":{"id":"e0e1d6d2-7e29-4745-8ca8-8d9ab3920901","type":"CategoricalScale"},"y_range":{"id":"83d386bc-1b87-47aa-b502-6ddeeed57661","type":"DataRange1d"},"y_scale":{"id":"e365667b-2f30-426e-b4ba-f7a2298e854c","type":"LinearScale"}},"id":"339f97a3-9fd8-4b99-8df5-054753931e73","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Wattignies","Battle of Fleurus (1794)","Battle of Castricum","Ten days campaign"],"cumulative":{"__ndarray__":"/dM5nWfm3b820Wojo1juv7b4CiEdOPe/poOo+ie+/r8=","dtype":"float64","shape":[4]},"general":["William I of the Netherlands","William I of the Netherlands","William I of the Netherlands","William I of the Netherlands"],"outcome":["D","D","D","D"],"value":{"__ndarray__":"/dM5nWfm3b9vzpup3srevzcgqx6XF+C/wSt2ZisY3r8=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAAAEnEAAAAAAAAicQAAAAAAAHJxAAAAAAACcnEA=","dtype":"float64","shape":[4]}}},"id":"92241ab2-7fb5-4954-8a4f-02e9a002ace2","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f933547b-0693-47d5-a729-c9646baf91f6","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"dc0eaf2a-f034-43c0-9aca-38b0c78e5117","type":"HoverTool"}]},"id":"427dccd0-f7a3-49f1-a464-f326849da523","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"9aafd080-a17f-4c43-9bd6-c0f094b0d837","type":"VBar"},{"attributes":{},"id":"e3a39339-550b-4a7b-8adf-041cfcb9a514","type":"BasicTicker"},{"attributes":{"formatter":{"id":"b18aecf5-8658-4b92-aafe-98a91c9b49ef","type":"BasicTickFormatter"},"plot":{"id":"339f97a3-9fd8-4b99-8df5-054753931e73","subtype":"Figure","type":"Plot"},"ticker":{"id":"e3a39339-550b-4a7b-8adf-041cfcb9a514","type":"BasicTicker"}},"id":"30e01e8f-1cf5-424c-82ae-3336880cd973","type":"LinearAxis"},{"attributes":{"formatter":{"id":"fb9c8865-c358-46cf-9f63-5339b6bf14c3","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"339f97a3-9fd8-4b99-8df5-054753931e73","subtype":"Figure","type":"Plot"},"ticker":{"id":"3247b1c2-e4de-49c5-8578-4eb494cb246c","type":"CategoricalTicker"}},"id":"6dca19c1-2425-4c69-ade2-6583fbf597d2","type":"CategoricalAxis"},{"attributes":{"callback":null,"factors":["Battle of Wattignies","Battle of Fleurus (1794)","Battle of Castricum","Ten days campaign"]},"id":"7c8fa2eb-40a7-4925-aa27-0b747fd885a0","type":"FactorRange"}],"root_ids":["339f97a3-9fd8-4b99-8df5-054753931e73"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"3df86ee3-778b-436a-8584-3450b9161c5a","elementid":"78e2b810-209a-4307-9284-387e80346647","modelid":"339f97a3-9fd8-4b99-8df5-054753931e73"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

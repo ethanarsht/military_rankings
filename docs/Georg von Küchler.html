@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="b671abbf-24d4-4524-9516-a268d2f838e2"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"7583f685-9fa5-44ef-963a-4b7ee9f93234":{"roots":{"references":[{"attributes":{},"id":"b94f33d1-386b-47e8-af2f-d0c9fca99a93","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"45f0a88d-9dd5-4076-a018-c8b103729218","type":"ColumnDataSource"}},"id":"9048bd3f-4c75-48de-8fef-56636f0fdfa0","type":"CDSView"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f2083984-814c-4cc9-a761-97367ef50df1","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"b5e4d5b9-011e-46eb-8a04-c61fc1740479","type":"HoverTool"},{"attributes":{"below":[{"id":"49d89884-38aa-4d1e-a435-9001302d3789","type":"CategoricalAxis"}],"left":[{"id":"276bb212-655c-4e28-910e-5a0629baf9e4","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"49d89884-38aa-4d1e-a435-9001302d3789","type":"CategoricalAxis"},{"id":"8c1c3c19-82ad-4b91-8497-2465433dd361","type":"Grid"},{"id":"276bb212-655c-4e28-910e-5a0629baf9e4","type":"LinearAxis"},{"id":"4a8f0b26-d6c1-44d7-a559-e779e372e56d","type":"Grid"},{"id":"952c6a02-f4fb-409e-9d0a-13372c2d5599","type":"GlyphRenderer"},{"id":"3665cf34-f2fe-489c-9ba6-9bd45de7a426","type":"GlyphRenderer"}],"title":{"id":"d144c751-d5da-474b-89c4-2a9fa2d8b7c4","type":"Title"},"toolbar":{"id":"8a5fbe90-96be-40ff-aa00-57dfad41db38","type":"Toolbar"},"x_range":{"id":"397432eb-c19b-4922-9c99-60529a5e91fd","type":"FactorRange"},"x_scale":{"id":"5d100003-187b-4ab4-a64a-ed92f90430ef","type":"CategoricalScale"},"y_range":{"id":"a38ac88c-9d6f-4ac1-9c7f-9b948cf5fcab","type":"DataRange1d"},"y_scale":{"id":"87e0c0b3-3f4e-44c4-a043-e539ffa3b536","type":"LinearScale"}},"id":"8197386d-277d-4092-ba65-38b19db70615","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a0e44652-9d60-47f6-afa1-64ba3a91c2b1","type":"VBar"},{"attributes":{"formatter":{"id":"b94f33d1-386b-47e8-af2f-d0c9fca99a93","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"8197386d-277d-4092-ba65-38b19db70615","subtype":"Figure","type":"Plot"},"ticker":{"id":"56cf773d-2328-414f-8585-c908fc6f030f","type":"CategoricalTicker"}},"id":"49d89884-38aa-4d1e-a435-9001302d3789","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"8197386d-277d-4092-ba65-38b19db70615","subtype":"Figure","type":"Plot"},"ticker":{"id":"56cf773d-2328-414f-8585-c908fc6f030f","type":"CategoricalTicker"}},"id":"8c1c3c19-82ad-4b91-8497-2465433dd361","type":"Grid"},{"attributes":{},"id":"56cf773d-2328-414f-8585-c908fc6f030f","type":"CategoricalTicker"},{"attributes":{"callback":null},"id":"a38ac88c-9d6f-4ac1-9c7f-9b948cf5fcab","type":"DataRange1d"},{"attributes":{},"id":"5d100003-187b-4ab4-a64a-ed92f90430ef","type":"CategoricalScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"b5e4d5b9-011e-46eb-8a04-c61fc1740479","type":"HoverTool"}]},"id":"8a5fbe90-96be-40ff-aa00-57dfad41db38","type":"Toolbar"},{"attributes":{"dimension":1,"plot":{"id":"8197386d-277d-4092-ba65-38b19db70615","subtype":"Figure","type":"Plot"},"ticker":{"id":"2e0ffcf4-38ed-42e8-99ac-a0d3458249a0","type":"BasicTicker"}},"id":"4a8f0b26-d6c1-44d7-a559-e779e372e56d","type":"Grid"},{"attributes":{},"id":"2e0ffcf4-38ed-42e8-99ac-a0d3458249a0","type":"BasicTicker"},{"attributes":{"formatter":{"id":"9bad7204-aaf5-4588-9f7e-64650f160012","type":"BasicTickFormatter"},"plot":{"id":"8197386d-277d-4092-ba65-38b19db70615","subtype":"Figure","type":"Plot"},"ticker":{"id":"2e0ffcf4-38ed-42e8-99ac-a0d3458249a0","type":"BasicTicker"}},"id":"276bb212-655c-4e28-910e-5a0629baf9e4","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Warsaw (1939)","Siege of Leningrad"],"cumulative":{"__ndarray__":"9mii+yPJ3j+ACAqEduJ/vw==","dtype":"float64","shape":[2]},"general":["Georg von K\u00fcchler","Georg von K\u00fcchler"],"outcome":["V","D"],"value":{"__ndarray__":"9mii+yPJ3j8YkbLVrUjfvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABMnkAAAAAAAFSeQA==","dtype":"float64","shape":[2]}}},"id":"45f0a88d-9dd5-4076-a018-c8b103729218","type":"ColumnDataSource"},{"attributes":{},"id":"87e0c0b3-3f4e-44c4-a043-e539ffa3b536","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f2083984-814c-4cc9-a761-97367ef50df1","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f2083984-814c-4cc9-a761-97367ef50df1","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"4e9d724e-87f9-4e1f-9032-9edfac3a0789","type":"VBar"},{"attributes":{},"id":"9bad7204-aaf5-4588-9f7e-64650f160012","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"45f0a88d-9dd5-4076-a018-c8b103729218","type":"ColumnDataSource"},"glyph":{"id":"4e9d724e-87f9-4e1f-9032-9edfac3a0789","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a0e44652-9d60-47f6-afa1-64ba3a91c2b1","type":"VBar"},"selection_glyph":null,"view":{"id":"9048bd3f-4c75-48de-8fef-56636f0fdfa0","type":"CDSView"}},"id":"3665cf34-f2fe-489c-9ba6-9bd45de7a426","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Georg von K\u00fcchler (1 - 0 - 1)"},"id":"d144c751-d5da-474b-89c4-2a9fa2d8b7c4","type":"Title"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1c46a48e-7cb0-4c63-996b-148a8a12433c","type":"Line"},{"attributes":{"data_source":{"id":"45f0a88d-9dd5-4076-a018-c8b103729218","type":"ColumnDataSource"},"glyph":{"id":"72157cea-77ba-4d8f-ab25-b1029f23cf39","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1c46a48e-7cb0-4c63-996b-148a8a12433c","type":"Line"},"selection_glyph":null,"view":{"id":"92122c90-13a9-44c2-9d8f-62d166ff9318","type":"CDSView"}},"id":"952c6a02-f4fb-409e-9d0a-13372c2d5599","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"72157cea-77ba-4d8f-ab25-b1029f23cf39","type":"Line"},{"attributes":{"source":{"id":"45f0a88d-9dd5-4076-a018-c8b103729218","type":"ColumnDataSource"}},"id":"92122c90-13a9-44c2-9d8f-62d166ff9318","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Warsaw (1939)","Siege of Leningrad"]},"id":"397432eb-c19b-4922-9c99-60529a5e91fd","type":"FactorRange"}],"root_ids":["8197386d-277d-4092-ba65-38b19db70615"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"7583f685-9fa5-44ef-963a-4b7ee9f93234","elementid":"b671abbf-24d4-4524-9516-a268d2f838e2","modelid":"8197386d-277d-4092-ba65-38b19db70615"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

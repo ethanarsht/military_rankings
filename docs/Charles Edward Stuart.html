@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f5b6baa4-f5c1-400c-994b-1186131a5f97"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"d1e1bf72-9b7c-4660-ac91-6fcefb6538a3":{"roots":{"references":[{"attributes":{"plot":{"id":"6f5cc85c-89a7-478d-9209-962b568be33a","subtype":"Figure","type":"Plot"},"ticker":{"id":"248736cf-b376-4ee8-b04f-810b3d1d565e","type":"CategoricalTicker"}},"id":"11c6aed0-b7f9-4d9d-9b1c-d0d84b0ff8c9","type":"Grid"},{"attributes":{},"id":"c254a914-340f-4771-8ab8-346526d9113d","type":"BasicTicker"},{"attributes":{"formatter":{"id":"3ec36b21-23de-4f6f-80b5-c32822593a6b","type":"BasicTickFormatter"},"plot":{"id":"6f5cc85c-89a7-478d-9209-962b568be33a","subtype":"Figure","type":"Plot"},"ticker":{"id":"c254a914-340f-4771-8ab8-346526d9113d","type":"BasicTicker"}},"id":"ac2191a7-c1b6-4d91-be7c-29c6667a3a59","type":"LinearAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"4069d521-7dbe-4bd0-9854-e7a1408ccaee","type":"HoverTool"},{"attributes":{},"id":"9bf29bf5-c9e2-475d-aec6-012168c30072","type":"LinearScale"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Prestonpans","Battle of Culloden Moor","Battle of Falkirk (1746)"],"cumulative":{"__ndarray__":"4qy/SGyh3z8AvE1qPxM9vzXbd/gvcN8/","dtype":"float64","shape":[3]},"general":["Charles Edward Stuart","Charles Edward Stuart","Charles Edward Stuart"],"outcome":["V","D","V"],"value":{"__ndarray__":"4qy/SGyh3z9RQJoYsajfv6RuUsh0d98/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABEm0AAAAAAAEibQAAAAAAASJtA","dtype":"float64","shape":[3]}}},"id":"ae47b068-ddf6-4955-9850-2211c8c60116","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"ae47b068-ddf6-4955-9850-2211c8c60116","type":"ColumnDataSource"},"glyph":{"id":"c1f108a2-8b0a-45a2-8bf2-481309e62747","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6018c6bb-dd5c-45b1-a586-9e16f853ea08","type":"VBar"},"selection_glyph":null,"view":{"id":"333bff7a-859d-48a8-9e7f-5a6cdd5ba0e8","type":"CDSView"}},"id":"1bc8c7df-3db9-4710-aa37-87bd6207af91","type":"GlyphRenderer"},{"attributes":{"source":{"id":"ae47b068-ddf6-4955-9850-2211c8c60116","type":"ColumnDataSource"}},"id":"5bcbadfd-b9a6-4c11-9cd0-d77f878c190e","type":"CDSView"},{"attributes":{"formatter":{"id":"fe451300-3567-45ef-8fe9-636507f8fa26","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"6f5cc85c-89a7-478d-9209-962b568be33a","subtype":"Figure","type":"Plot"},"ticker":{"id":"248736cf-b376-4ee8-b04f-810b3d1d565e","type":"CategoricalTicker"}},"id":"0aa48276-8a88-43fb-bce8-f2427178014b","type":"CategoricalAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"2e2437bd-583e-490e-b64b-df3cc9191a0c","type":"CategoricalColorMapper"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e361de27-59df-4433-b069-633543dea8af","type":"Line"},{"attributes":{"below":[{"id":"0aa48276-8a88-43fb-bce8-f2427178014b","type":"CategoricalAxis"}],"left":[{"id":"ac2191a7-c1b6-4d91-be7c-29c6667a3a59","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"0aa48276-8a88-43fb-bce8-f2427178014b","type":"CategoricalAxis"},{"id":"11c6aed0-b7f9-4d9d-9b1c-d0d84b0ff8c9","type":"Grid"},{"id":"ac2191a7-c1b6-4d91-be7c-29c6667a3a59","type":"LinearAxis"},{"id":"b8ce8d92-1ac5-4781-8261-ed5fb77a7636","type":"Grid"},{"id":"7add4201-7399-4ebe-87fe-130ba0c0565d","type":"GlyphRenderer"},{"id":"1bc8c7df-3db9-4710-aa37-87bd6207af91","type":"GlyphRenderer"}],"title":{"id":"a86e5765-8015-4813-8e5d-7742de53244e","type":"Title"},"toolbar":{"id":"8136cd45-94e3-421b-a142-ba13c55ea676","type":"Toolbar"},"x_range":{"id":"2eca7004-8c81-4444-960f-7ae6d6ed6bfd","type":"FactorRange"},"x_scale":{"id":"813d8d7e-01e2-4a81-80f0-6ff20fd75971","type":"CategoricalScale"},"y_range":{"id":"fa399f69-00d8-4a58-8818-544851020683","type":"DataRange1d"},"y_scale":{"id":"9bf29bf5-c9e2-475d-aec6-012168c30072","type":"LinearScale"}},"id":"6f5cc85c-89a7-478d-9209-962b568be33a","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"ae47b068-ddf6-4955-9850-2211c8c60116","type":"ColumnDataSource"},"glyph":{"id":"85d44fa8-e918-406e-9e30-4c8e855237b1","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e361de27-59df-4433-b069-633543dea8af","type":"Line"},"selection_glyph":null,"view":{"id":"5bcbadfd-b9a6-4c11-9cd0-d77f878c190e","type":"CDSView"}},"id":"7add4201-7399-4ebe-87fe-130ba0c0565d","type":"GlyphRenderer"},{"attributes":{},"id":"248736cf-b376-4ee8-b04f-810b3d1d565e","type":"CategoricalTicker"},{"attributes":{},"id":"fe451300-3567-45ef-8fe9-636507f8fa26","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"2e2437bd-583e-490e-b64b-df3cc9191a0c","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"2e2437bd-583e-490e-b64b-df3cc9191a0c","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c1f108a2-8b0a-45a2-8bf2-481309e62747","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"85d44fa8-e918-406e-9e30-4c8e855237b1","type":"Line"},{"attributes":{"plot":null,"text":"Charles Edward Stuart (2 - 0 - 1)"},"id":"a86e5765-8015-4813-8e5d-7742de53244e","type":"Title"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6018c6bb-dd5c-45b1-a586-9e16f853ea08","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"4069d521-7dbe-4bd0-9854-e7a1408ccaee","type":"HoverTool"}]},"id":"8136cd45-94e3-421b-a142-ba13c55ea676","type":"Toolbar"},{"attributes":{},"id":"813d8d7e-01e2-4a81-80f0-6ff20fd75971","type":"CategoricalScale"},{"attributes":{},"id":"3ec36b21-23de-4f6f-80b5-c32822593a6b","type":"BasicTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Prestonpans","Battle of Culloden Moor","Battle of Falkirk (1746)"]},"id":"2eca7004-8c81-4444-960f-7ae6d6ed6bfd","type":"FactorRange"},{"attributes":{"source":{"id":"ae47b068-ddf6-4955-9850-2211c8c60116","type":"ColumnDataSource"}},"id":"333bff7a-859d-48a8-9e7f-5a6cdd5ba0e8","type":"CDSView"},{"attributes":{"callback":null},"id":"fa399f69-00d8-4a58-8818-544851020683","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"6f5cc85c-89a7-478d-9209-962b568be33a","subtype":"Figure","type":"Plot"},"ticker":{"id":"c254a914-340f-4771-8ab8-346526d9113d","type":"BasicTicker"}},"id":"b8ce8d92-1ac5-4781-8261-ed5fb77a7636","type":"Grid"}],"root_ids":["6f5cc85c-89a7-478d-9209-962b568be33a"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"d1e1bf72-9b7c-4660-ac91-6fcefb6538a3","elementid":"f5b6baa4-f5c1-400c-994b-1186131a5f97","modelid":"6f5cc85c-89a7-478d-9209-962b568be33a"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

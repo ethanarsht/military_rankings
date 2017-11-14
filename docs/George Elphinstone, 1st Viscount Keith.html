@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f1f8435f-925c-4799-9421-42fcf347adad"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"fa2f10e0-5420-4ea9-94c0-d6bc73c21d8d":{"roots":{"references":[{"attributes":{"formatter":{"id":"ddcdbdb9-f394-4db0-ac70-f0b313cf5208","type":"BasicTickFormatter"},"plot":{"id":"e08e1ae6-4e9d-40a7-a6a6-c2d4783743d0","subtype":"Figure","type":"Plot"},"ticker":{"id":"8a0c4105-a2d4-4c25-9669-17a8c45716c7","type":"BasicTicker"}},"id":"b7f0a316-4251-4edb-b3fb-ecfc447b4534","type":"LinearAxis"},{"attributes":{},"id":"03c4f163-8a92-4640-a007-50bf4032be41","type":"CategoricalScale"},{"attributes":{},"id":"21920080-a309-46a3-a89f-f871c20908d5","type":"CategoricalTicker"},{"attributes":{},"id":"ddcdbdb9-f394-4db0-ac70-f0b313cf5208","type":"BasicTickFormatter"},{"attributes":{"callback":null},"id":"f4e72d7a-3414-4b26-8ced-145827cc6076","type":"DataRange1d"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"54b79f6f-2a31-445f-8991-e7d1044046b4","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"54b79f6f-2a31-445f-8991-e7d1044046b4","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"54b79f6f-2a31-445f-8991-e7d1044046b4","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"7c29ff40-7cd6-4c65-9ffd-b47f6a16dcac","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"e08e1ae6-4e9d-40a7-a6a6-c2d4783743d0","subtype":"Figure","type":"Plot"},"ticker":{"id":"8a0c4105-a2d4-4c25-9669-17a8c45716c7","type":"BasicTicker"}},"id":"aa78a71e-3eeb-49e8-b560-bc42e06119f6","type":"Grid"},{"attributes":{"data_source":{"id":"fac2a4f0-100e-4619-9fd4-f4728c1947f5","type":"ColumnDataSource"},"glyph":{"id":"7c29ff40-7cd6-4c65-9ffd-b47f6a16dcac","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5adfd28b-9c93-4356-934f-ba5bce687b98","type":"VBar"},"selection_glyph":null,"view":{"id":"6ab69ba0-279d-40d6-99eb-7750c332c39c","type":"CDSView"}},"id":"f05db3b9-91bc-4ff8-9661-088007533736","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"George Elphinstone, 1st Viscount Keith (1 - 0 - 0)"},"id":"528e296a-e15d-463f-85c3-aeac0e0f2954","type":"Title"},{"attributes":{},"id":"531d57ee-0d72-4cdb-8cf9-3a9f65d53a06","type":"CategoricalTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"439fc6dd-58b7-4945-969c-20b0769f90b2","type":"Line"},{"attributes":{"source":{"id":"fac2a4f0-100e-4619-9fd4-f4728c1947f5","type":"ColumnDataSource"}},"id":"6ab69ba0-279d-40d6-99eb-7750c332c39c","type":"CDSView"},{"attributes":{"callback":null,"factors":["Battle of Muizenberg"]},"id":"8a83c4bc-90d6-4d0e-9caa-b953773c7839","type":"FactorRange"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Muizenberg"],"cumulative":{"__ndarray__":"uVXb3CQL4T8=","dtype":"float64","shape":[1]},"general":["George Elphinstone, 1st Viscount Keith"],"outcome":["V"],"value":{"__ndarray__":"uVXb3CQL4T8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAMnEA=","dtype":"float64","shape":[1]}}},"id":"fac2a4f0-100e-4619-9fd4-f4728c1947f5","type":"ColumnDataSource"},{"attributes":{},"id":"8a0c4105-a2d4-4c25-9669-17a8c45716c7","type":"BasicTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f6b401b7-47e5-4750-84cd-9385b8f6abaf","type":"Line"},{"attributes":{"source":{"id":"fac2a4f0-100e-4619-9fd4-f4728c1947f5","type":"ColumnDataSource"}},"id":"60d5654d-3da8-477f-8d16-31733bd93f2d","type":"CDSView"},{"attributes":{"formatter":{"id":"531d57ee-0d72-4cdb-8cf9-3a9f65d53a06","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"e08e1ae6-4e9d-40a7-a6a6-c2d4783743d0","subtype":"Figure","type":"Plot"},"ticker":{"id":"21920080-a309-46a3-a89f-f871c20908d5","type":"CategoricalTicker"}},"id":"ffd219cf-1a6b-484a-b797-031f2086953b","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"fac2a4f0-100e-4619-9fd4-f4728c1947f5","type":"ColumnDataSource"},"glyph":{"id":"439fc6dd-58b7-4945-969c-20b0769f90b2","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f6b401b7-47e5-4750-84cd-9385b8f6abaf","type":"Line"},"selection_glyph":null,"view":{"id":"60d5654d-3da8-477f-8d16-31733bd93f2d","type":"CDSView"}},"id":"16d5cf73-192c-4280-8c90-c2d6fdb5a473","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"9a701e6d-d5d3-4555-8f0d-ef84b63d496e","type":"HoverTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"9a701e6d-d5d3-4555-8f0d-ef84b63d496e","type":"HoverTool"}]},"id":"56763e89-b738-4998-9b66-3f069db86c28","type":"Toolbar"},{"attributes":{},"id":"126f9ac6-aa7b-43cb-9964-e4a568eb37c0","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"5adfd28b-9c93-4356-934f-ba5bce687b98","type":"VBar"},{"attributes":{"below":[{"id":"ffd219cf-1a6b-484a-b797-031f2086953b","type":"CategoricalAxis"}],"left":[{"id":"b7f0a316-4251-4edb-b3fb-ecfc447b4534","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"ffd219cf-1a6b-484a-b797-031f2086953b","type":"CategoricalAxis"},{"id":"85a97539-07ce-4d83-aa97-d08ca43fe7e1","type":"Grid"},{"id":"b7f0a316-4251-4edb-b3fb-ecfc447b4534","type":"LinearAxis"},{"id":"aa78a71e-3eeb-49e8-b560-bc42e06119f6","type":"Grid"},{"id":"16d5cf73-192c-4280-8c90-c2d6fdb5a473","type":"GlyphRenderer"},{"id":"f05db3b9-91bc-4ff8-9661-088007533736","type":"GlyphRenderer"}],"title":{"id":"528e296a-e15d-463f-85c3-aeac0e0f2954","type":"Title"},"toolbar":{"id":"56763e89-b738-4998-9b66-3f069db86c28","type":"Toolbar"},"x_range":{"id":"8a83c4bc-90d6-4d0e-9caa-b953773c7839","type":"FactorRange"},"x_scale":{"id":"03c4f163-8a92-4640-a007-50bf4032be41","type":"CategoricalScale"},"y_range":{"id":"f4e72d7a-3414-4b26-8ced-145827cc6076","type":"DataRange1d"},"y_scale":{"id":"126f9ac6-aa7b-43cb-9964-e4a568eb37c0","type":"LinearScale"}},"id":"e08e1ae6-4e9d-40a7-a6a6-c2d4783743d0","subtype":"Figure","type":"Plot"},{"attributes":{"plot":{"id":"e08e1ae6-4e9d-40a7-a6a6-c2d4783743d0","subtype":"Figure","type":"Plot"},"ticker":{"id":"21920080-a309-46a3-a89f-f871c20908d5","type":"CategoricalTicker"}},"id":"85a97539-07ce-4d83-aa97-d08ca43fe7e1","type":"Grid"}],"root_ids":["e08e1ae6-4e9d-40a7-a6a6-c2d4783743d0"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"fa2f10e0-5420-4ea9-94c0-d6bc73c21d8d","elementid":"f1f8435f-925c-4799-9421-42fcf347adad","modelid":"e08e1ae6-4e9d-40a7-a6a6-c2d4783743d0"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

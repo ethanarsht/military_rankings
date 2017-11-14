@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="ac8df2e7-8944-4fe6-bdce-438670e012d5"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"340325a3-7888-4b70-ad5d-1dadfed1ee6a":{"roots":{"references":[{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"dea22301-a4d0-4d22-988e-241421add222","type":"Line"},{"attributes":{"callback":null},"id":"dde35fe7-651c-4674-a089-1b38d8e4c8ca","type":"DataRange1d"},{"attributes":{},"id":"a607eaf4-d7c4-4e5a-867a-2ba05f53a52f","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"767f2bd7-e2e6-4a02-b6ae-b61258bf1c09","type":"HoverTool"}]},"id":"41a1cca0-5a3c-4f11-99af-ab6b54e6150d","type":"Toolbar"},{"attributes":{"data_source":{"id":"5a6f3dae-8c93-4510-9489-adf1c5ac1492","type":"ColumnDataSource"},"glyph":{"id":"2550f7a0-e7ab-4a82-b375-924fad04c5e2","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"dea22301-a4d0-4d22-988e-241421add222","type":"Line"},"selection_glyph":null,"view":{"id":"2ed35e93-4433-4ef0-a103-2f83e31703c4","type":"CDSView"}},"id":"fc18068c-e310-4b36-bc6b-cd109d510fd9","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Leopold V, Duke of Austria (1 - 0 - 0)"},"id":"212726b0-0065-40a8-884d-9aaf3ca667ec","type":"Title"},{"attributes":{"callback":null,"factors":["Siege of Acre (1189\u20131191)"]},"id":"fc7a29c7-2512-440a-beb8-f5b1209076b9","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"767f2bd7-e2e6-4a02-b6ae-b61258bf1c09","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f0558cab-6324-4464-8e33-7e5666b3919a","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f0558cab-6324-4464-8e33-7e5666b3919a","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"605da7c1-2550-4353-98c5-0a7f1c14c43f","type":"VBar"},{"attributes":{},"id":"57285c43-e027-43b7-8442-68cd1a46f727","type":"LinearScale"},{"attributes":{},"id":"4ee87490-59e2-4b9b-9a8f-4fd137d5258e","type":"CategoricalScale"},{"attributes":{},"id":"9bc1b843-d765-4d89-9238-d67e9314fdc4","type":"CategoricalTicker"},{"attributes":{},"id":"86a693a4-e289-47e9-99dd-a7a8b53c4b5d","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"86a693a4-e289-47e9-99dd-a7a8b53c4b5d","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"8f4c00f9-da01-43e3-a888-fee0c21a87cb","subtype":"Figure","type":"Plot"},"ticker":{"id":"9bc1b843-d765-4d89-9238-d67e9314fdc4","type":"CategoricalTicker"}},"id":"d42c24a8-bebd-4479-a4e0-31662158fb24","type":"CategoricalAxis"},{"attributes":{"dimension":1,"plot":{"id":"8f4c00f9-da01-43e3-a888-fee0c21a87cb","subtype":"Figure","type":"Plot"},"ticker":{"id":"587fccd9-9791-41dd-91e5-2dae0bf838dd","type":"BasicTicker"}},"id":"4d354eb8-1d62-4116-b8d4-b30ca1d65563","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"4cbc6310-0d81-4b72-a160-a13a0b7deb09","type":"VBar"},{"attributes":{"plot":{"id":"8f4c00f9-da01-43e3-a888-fee0c21a87cb","subtype":"Figure","type":"Plot"},"ticker":{"id":"9bc1b843-d765-4d89-9238-d67e9314fdc4","type":"CategoricalTicker"}},"id":"fabdd3e8-2668-4453-9c4c-5935f80850e0","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Acre (1189\u20131191)"],"cumulative":{"__ndarray__":"SH6IHd4s3z8=","dtype":"float64","shape":[1]},"general":["Leopold V, Duke of Austria"],"outcome":["V"],"value":{"__ndarray__":"SH6IHd4s3z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAACUkkA=","dtype":"float64","shape":[1]}}},"id":"5a6f3dae-8c93-4510-9489-adf1c5ac1492","type":"ColumnDataSource"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2550f7a0-e7ab-4a82-b375-924fad04c5e2","type":"Line"},{"attributes":{"data_source":{"id":"5a6f3dae-8c93-4510-9489-adf1c5ac1492","type":"ColumnDataSource"},"glyph":{"id":"605da7c1-2550-4353-98c5-0a7f1c14c43f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4cbc6310-0d81-4b72-a160-a13a0b7deb09","type":"VBar"},"selection_glyph":null,"view":{"id":"00349f43-53d2-4d9f-8419-d4857ee16b47","type":"CDSView"}},"id":"34bf2d69-67fd-417a-8ec3-abc1fee4eca5","type":"GlyphRenderer"},{"attributes":{"source":{"id":"5a6f3dae-8c93-4510-9489-adf1c5ac1492","type":"ColumnDataSource"}},"id":"00349f43-53d2-4d9f-8419-d4857ee16b47","type":"CDSView"},{"attributes":{"below":[{"id":"d42c24a8-bebd-4479-a4e0-31662158fb24","type":"CategoricalAxis"}],"left":[{"id":"1393e78c-ed6b-4b29-90f0-a9ce2a8ec123","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"d42c24a8-bebd-4479-a4e0-31662158fb24","type":"CategoricalAxis"},{"id":"fabdd3e8-2668-4453-9c4c-5935f80850e0","type":"Grid"},{"id":"1393e78c-ed6b-4b29-90f0-a9ce2a8ec123","type":"LinearAxis"},{"id":"4d354eb8-1d62-4116-b8d4-b30ca1d65563","type":"Grid"},{"id":"fc18068c-e310-4b36-bc6b-cd109d510fd9","type":"GlyphRenderer"},{"id":"34bf2d69-67fd-417a-8ec3-abc1fee4eca5","type":"GlyphRenderer"}],"title":{"id":"212726b0-0065-40a8-884d-9aaf3ca667ec","type":"Title"},"toolbar":{"id":"41a1cca0-5a3c-4f11-99af-ab6b54e6150d","type":"Toolbar"},"x_range":{"id":"fc7a29c7-2512-440a-beb8-f5b1209076b9","type":"FactorRange"},"x_scale":{"id":"4ee87490-59e2-4b9b-9a8f-4fd137d5258e","type":"CategoricalScale"},"y_range":{"id":"dde35fe7-651c-4674-a089-1b38d8e4c8ca","type":"DataRange1d"},"y_scale":{"id":"57285c43-e027-43b7-8442-68cd1a46f727","type":"LinearScale"}},"id":"8f4c00f9-da01-43e3-a888-fee0c21a87cb","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"a607eaf4-d7c4-4e5a-867a-2ba05f53a52f","type":"BasicTickFormatter"},"plot":{"id":"8f4c00f9-da01-43e3-a888-fee0c21a87cb","subtype":"Figure","type":"Plot"},"ticker":{"id":"587fccd9-9791-41dd-91e5-2dae0bf838dd","type":"BasicTicker"}},"id":"1393e78c-ed6b-4b29-90f0-a9ce2a8ec123","type":"LinearAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f0558cab-6324-4464-8e33-7e5666b3919a","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"5a6f3dae-8c93-4510-9489-adf1c5ac1492","type":"ColumnDataSource"}},"id":"2ed35e93-4433-4ef0-a103-2f83e31703c4","type":"CDSView"},{"attributes":{},"id":"587fccd9-9791-41dd-91e5-2dae0bf838dd","type":"BasicTicker"}],"root_ids":["8f4c00f9-da01-43e3-a888-fee0c21a87cb"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"340325a3-7888-4b70-ad5d-1dadfed1ee6a","elementid":"ac8df2e7-8944-4fe6-bdce-438670e012d5","modelid":"8f4c00f9-da01-43e3-a888-fee0c21a87cb"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

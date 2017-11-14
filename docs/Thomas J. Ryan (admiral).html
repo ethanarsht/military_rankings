@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="12c54313-9003-4d87-bae7-8c0afae61fa5"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"2b912faf-1660-495b-9289-2495b29d5c9e":{"roots":{"references":[{"attributes":{},"id":"8baa5592-114c-41c5-868d-a64b9a6e607a","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"254c1045-db8b-4008-8a76-d0e0f856b995","type":"Line"},{"attributes":{"formatter":{"id":"b3e565ca-c456-4599-ab56-7717a8d842f2","type":"BasicTickFormatter"},"plot":{"id":"c5598c37-e98b-408c-b9f2-8d767bd1aecd","subtype":"Figure","type":"Plot"},"ticker":{"id":"8dc7b546-4d0d-4e03-a2e0-06e9823afef0","type":"BasicTicker"}},"id":"d062423c-f400-4eaa-8a34-3c524d1a0f7a","type":"LinearAxis"},{"attributes":{},"id":"8dc7b546-4d0d-4e03-a2e0-06e9823afef0","type":"BasicTicker"},{"attributes":{"below":[{"id":"26889aff-f268-44cf-b24c-298ea16cba73","type":"CategoricalAxis"}],"left":[{"id":"d062423c-f400-4eaa-8a34-3c524d1a0f7a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"26889aff-f268-44cf-b24c-298ea16cba73","type":"CategoricalAxis"},{"id":"ddeb4e9a-e2d8-45d8-ae58-a8739a9ef7df","type":"Grid"},{"id":"d062423c-f400-4eaa-8a34-3c524d1a0f7a","type":"LinearAxis"},{"id":"e0e3ae26-4482-4e25-bb86-4539c80e05ef","type":"Grid"},{"id":"2f7be42f-9861-4b8f-a4b3-4d3919bc53c9","type":"GlyphRenderer"},{"id":"5c6f4bd1-1c76-4244-839a-944ac329b02e","type":"GlyphRenderer"}],"title":{"id":"132410a6-2e5d-4c26-b856-6e54d383c9d5","type":"Title"},"toolbar":{"id":"50beee9c-ff2e-4f1a-9bb4-cdc251874263","type":"Toolbar"},"x_range":{"id":"2f76bdf3-675b-40ad-b286-ec7efc1d380a","type":"FactorRange"},"x_scale":{"id":"2836eed9-85e1-4233-adff-ce5636f6d57a","type":"CategoricalScale"},"y_range":{"id":"b42633c9-857c-4db6-b700-693165cfe5ac","type":"DataRange1d"},"y_scale":{"id":"8baa5592-114c-41c5-868d-a64b9a6e607a","type":"LinearScale"}},"id":"c5598c37-e98b-408c-b9f2-8d767bd1aecd","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":1,"plot":{"id":"c5598c37-e98b-408c-b9f2-8d767bd1aecd","subtype":"Figure","type":"Plot"},"ticker":{"id":"8dc7b546-4d0d-4e03-a2e0-06e9823afef0","type":"BasicTicker"}},"id":"e0e3ae26-4482-4e25-bb86-4539c80e05ef","type":"Grid"},{"attributes":{"callback":null},"id":"b42633c9-857c-4db6-b700-693165cfe5ac","type":"DataRange1d"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"4de6ad60-b61b-48fd-9f39-5508d298e864","type":"HoverTool"},{"attributes":{"plot":{"id":"c5598c37-e98b-408c-b9f2-8d767bd1aecd","subtype":"Figure","type":"Plot"},"ticker":{"id":"b67d522c-ab1e-48af-84fb-067c5c53c4a0","type":"CategoricalTicker"}},"id":"ddeb4e9a-e2d8-45d8-ae58-a8739a9ef7df","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"fbcd883c-3e69-48ce-98bc-7fc391c21d63","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"fbcd883c-3e69-48ce-98bc-7fc391c21d63","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"49f73343-25ef-49d2-9ab8-d2f9beec6694","type":"VBar"},{"attributes":{"data_source":{"id":"0bb0759b-e363-4f30-b96c-2ed693dc12e0","type":"ColumnDataSource"},"glyph":{"id":"49f73343-25ef-49d2-9ab8-d2f9beec6694","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c5a702ab-20ca-4de9-a7b2-3d8582e7ee61","type":"VBar"},"selection_glyph":null,"view":{"id":"79c172f9-d269-4d85-9651-290752740078","type":"CDSView"}},"id":"5c6f4bd1-1c76-4244-839a-944ac329b02e","type":"GlyphRenderer"},{"attributes":{},"id":"9d2d5229-10a2-4b06-bdfb-2348958d20c4","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"Thomas J. Ryan (admiral) (1 - 0 - 1)"},"id":"132410a6-2e5d-4c26-b856-6e54d383c9d5","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"fbcd883c-3e69-48ce-98bc-7fc391c21d63","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"9d2d5229-10a2-4b06-bdfb-2348958d20c4","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"c5598c37-e98b-408c-b9f2-8d767bd1aecd","subtype":"Figure","type":"Plot"},"ticker":{"id":"b67d522c-ab1e-48af-84fb-067c5c53c4a0","type":"CategoricalTicker"}},"id":"26889aff-f268-44cf-b24c-298ea16cba73","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c5a702ab-20ca-4de9-a7b2-3d8582e7ee61","type":"VBar"},{"attributes":{"data_source":{"id":"0bb0759b-e363-4f30-b96c-2ed693dc12e0","type":"ColumnDataSource"},"glyph":{"id":"254c1045-db8b-4008-8a76-d0e0f856b995","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f5cf1cda-4374-41e4-93c5-d715d8e79b8b","type":"Line"},"selection_glyph":null,"view":{"id":"d30fa11e-441d-4a44-90e3-1fb49ed0699a","type":"CDSView"}},"id":"2f7be42f-9861-4b8f-a4b3-4d3919bc53c9","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of New Georgia","Battle off Horaniu"],"cumulative":{"__ndarray__":"UKcdFUyZ3D+AfQYCmvqrvw==","dtype":"float64","shape":[2]},"general":["Thomas J. Ryan (admiral)","Thomas J. Ryan (admiral)"],"outcome":["V","D"],"value":{"__ndarray__":"UKcdFUyZ3D+AO6+qTwzgvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABcnkAAAAAAAFyeQA==","dtype":"float64","shape":[2]}}},"id":"0bb0759b-e363-4f30-b96c-2ed693dc12e0","type":"ColumnDataSource"},{"attributes":{"source":{"id":"0bb0759b-e363-4f30-b96c-2ed693dc12e0","type":"ColumnDataSource"}},"id":"d30fa11e-441d-4a44-90e3-1fb49ed0699a","type":"CDSView"},{"attributes":{},"id":"b67d522c-ab1e-48af-84fb-067c5c53c4a0","type":"CategoricalTicker"},{"attributes":{"source":{"id":"0bb0759b-e363-4f30-b96c-2ed693dc12e0","type":"ColumnDataSource"}},"id":"79c172f9-d269-4d85-9651-290752740078","type":"CDSView"},{"attributes":{},"id":"2836eed9-85e1-4233-adff-ce5636f6d57a","type":"CategoricalScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f5cf1cda-4374-41e4-93c5-d715d8e79b8b","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"4de6ad60-b61b-48fd-9f39-5508d298e864","type":"HoverTool"}]},"id":"50beee9c-ff2e-4f1a-9bb4-cdc251874263","type":"Toolbar"},{"attributes":{},"id":"b3e565ca-c456-4599-ab56-7717a8d842f2","type":"BasicTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of New Georgia","Battle off Horaniu"]},"id":"2f76bdf3-675b-40ad-b286-ec7efc1d380a","type":"FactorRange"}],"root_ids":["c5598c37-e98b-408c-b9f2-8d767bd1aecd"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"2b912faf-1660-495b-9289-2495b29d5c9e","elementid":"12c54313-9003-4d87-bae7-8c0afae61fa5","modelid":"c5598c37-e98b-408c-b9f2-8d767bd1aecd"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

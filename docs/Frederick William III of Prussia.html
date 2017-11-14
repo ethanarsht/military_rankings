@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f80f86d4-30ba-4d54-bb19-4855ebed1dc4"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"a876105b-b4ba-495d-8d03-28728bcb5fa2":{"roots":{"references":[{"attributes":{},"id":"0ea9d9c6-51f0-461d-a579-1c8f214b6cc0","type":"LinearScale"},{"attributes":{},"id":"6acc6af4-36ca-4256-b448-6788ae4dea77","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["Battle of Dresden","Battle of Montmartre"]},"id":"dda8d9fa-c28a-4b95-bb28-59ca985ed34b","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"1923745a-05a4-4168-a97d-6b095f66d35c","type":"HoverTool"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Dresden","Battle of Montmartre"],"cumulative":{"__ndarray__":"nh73kS3K4L/gv8IMBou4vw==","dtype":"float64","shape":[2]},"general":["Frederick William III of Prussia","Frederick William III of Prussia"],"outcome":["D","V"],"value":{"__ndarray__":"nh73kS3K4L9Ejb2gmXHbPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABUnEAAAAAAAFicQA==","dtype":"float64","shape":[2]}}},"id":"320af291-22f7-4673-84d9-57d57cc57ac0","type":"ColumnDataSource"},{"attributes":{"source":{"id":"320af291-22f7-4673-84d9-57d57cc57ac0","type":"ColumnDataSource"}},"id":"a234dc95-8a1f-476f-b70b-ea56580f959b","type":"CDSView"},{"attributes":{},"id":"51de084a-c100-4fb7-91e0-ab2835f5dd0c","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"320af291-22f7-4673-84d9-57d57cc57ac0","type":"ColumnDataSource"}},"id":"ca7afd98-85a6-4286-bb00-0a8d417c242a","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e0aca09c-3676-4778-8658-4a4a91dc0bb4","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"d69de9a4-7759-43ab-85cd-4664711c8747","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"d69de9a4-7759-43ab-85cd-4664711c8747","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f00d749a-770c-4f86-ba9e-6d2d67bba95d","type":"VBar"},{"attributes":{},"id":"cfd96933-f4dc-46c5-9cee-9b7411f38696","type":"CategoricalScale"},{"attributes":{},"id":"54fcfebf-f3aa-4e6b-aca2-98069754f1b0","type":"CategoricalTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"89265f63-1d83-415c-858b-dddde17512b1","type":"Line"},{"attributes":{"data_source":{"id":"320af291-22f7-4673-84d9-57d57cc57ac0","type":"ColumnDataSource"},"glyph":{"id":"f00d749a-770c-4f86-ba9e-6d2d67bba95d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e0aca09c-3676-4778-8658-4a4a91dc0bb4","type":"VBar"},"selection_glyph":null,"view":{"id":"a234dc95-8a1f-476f-b70b-ea56580f959b","type":"CDSView"}},"id":"a5987d95-9d03-4d70-9600-4fbb2c7804a9","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Frederick William III of Prussia (1 - 0 - 1)"},"id":"9e33a6dc-5595-473e-822c-f3a5f002b5dd","type":"Title"},{"attributes":{},"id":"d124924f-8fab-40b1-9db3-2c6cda6f4af2","type":"BasicTickFormatter"},{"attributes":{"below":[{"id":"5ad38535-5108-4cf0-a253-2a7803566ab8","type":"CategoricalAxis"}],"left":[{"id":"11282aaa-a7e1-4a26-a502-2f86f7ce64e7","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"5ad38535-5108-4cf0-a253-2a7803566ab8","type":"CategoricalAxis"},{"id":"3cc77abb-9165-4fd8-8c31-0a4920b11c32","type":"Grid"},{"id":"11282aaa-a7e1-4a26-a502-2f86f7ce64e7","type":"LinearAxis"},{"id":"96f05656-1150-46ce-b2ef-9770d9e7124f","type":"Grid"},{"id":"8b7877ed-f34d-4f5f-ae86-c8bf153fd1c8","type":"GlyphRenderer"},{"id":"a5987d95-9d03-4d70-9600-4fbb2c7804a9","type":"GlyphRenderer"}],"title":{"id":"9e33a6dc-5595-473e-822c-f3a5f002b5dd","type":"Title"},"toolbar":{"id":"05e7e66f-3677-40b7-b75a-d1f9e4dc4260","type":"Toolbar"},"x_range":{"id":"dda8d9fa-c28a-4b95-bb28-59ca985ed34b","type":"FactorRange"},"x_scale":{"id":"cfd96933-f4dc-46c5-9cee-9b7411f38696","type":"CategoricalScale"},"y_range":{"id":"3176607f-7095-449d-9848-a7d17b3298d0","type":"DataRange1d"},"y_scale":{"id":"0ea9d9c6-51f0-461d-a579-1c8f214b6cc0","type":"LinearScale"}},"id":"0d382b4a-21d3-4977-ac40-a908724cfbe0","subtype":"Figure","type":"Plot"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"da59c7f6-c293-4037-85cd-28d077a2ec50","type":"Line"},{"attributes":{"formatter":{"id":"d124924f-8fab-40b1-9db3-2c6cda6f4af2","type":"BasicTickFormatter"},"plot":{"id":"0d382b4a-21d3-4977-ac40-a908724cfbe0","subtype":"Figure","type":"Plot"},"ticker":{"id":"6acc6af4-36ca-4256-b448-6788ae4dea77","type":"BasicTicker"}},"id":"11282aaa-a7e1-4a26-a502-2f86f7ce64e7","type":"LinearAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"d69de9a4-7759-43ab-85cd-4664711c8747","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"320af291-22f7-4673-84d9-57d57cc57ac0","type":"ColumnDataSource"},"glyph":{"id":"da59c7f6-c293-4037-85cd-28d077a2ec50","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"89265f63-1d83-415c-858b-dddde17512b1","type":"Line"},"selection_glyph":null,"view":{"id":"ca7afd98-85a6-4286-bb00-0a8d417c242a","type":"CDSView"}},"id":"8b7877ed-f34d-4f5f-ae86-c8bf153fd1c8","type":"GlyphRenderer"},{"attributes":{"dimension":1,"plot":{"id":"0d382b4a-21d3-4977-ac40-a908724cfbe0","subtype":"Figure","type":"Plot"},"ticker":{"id":"6acc6af4-36ca-4256-b448-6788ae4dea77","type":"BasicTicker"}},"id":"96f05656-1150-46ce-b2ef-9770d9e7124f","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"1923745a-05a4-4168-a97d-6b095f66d35c","type":"HoverTool"}]},"id":"05e7e66f-3677-40b7-b75a-d1f9e4dc4260","type":"Toolbar"},{"attributes":{"callback":null},"id":"3176607f-7095-449d-9848-a7d17b3298d0","type":"DataRange1d"},{"attributes":{"plot":{"id":"0d382b4a-21d3-4977-ac40-a908724cfbe0","subtype":"Figure","type":"Plot"},"ticker":{"id":"54fcfebf-f3aa-4e6b-aca2-98069754f1b0","type":"CategoricalTicker"}},"id":"3cc77abb-9165-4fd8-8c31-0a4920b11c32","type":"Grid"},{"attributes":{"formatter":{"id":"51de084a-c100-4fb7-91e0-ab2835f5dd0c","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"0d382b4a-21d3-4977-ac40-a908724cfbe0","subtype":"Figure","type":"Plot"},"ticker":{"id":"54fcfebf-f3aa-4e6b-aca2-98069754f1b0","type":"CategoricalTicker"}},"id":"5ad38535-5108-4cf0-a253-2a7803566ab8","type":"CategoricalAxis"}],"root_ids":["0d382b4a-21d3-4977-ac40-a908724cfbe0"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"a876105b-b4ba-495d-8d03-28728bcb5fa2","elementid":"f80f86d4-30ba-4d54-bb19-4855ebed1dc4","modelid":"0d382b4a-21d3-4977-ac40-a908724cfbe0"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

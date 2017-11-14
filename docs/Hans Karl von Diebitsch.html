@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="8e9c5e7b-0e14-446f-91c5-2594928cec31"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"6014bff4-4f97-4623-86ad-ae3ba1243dcc":{"roots":{"references":[{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d696dbda-c1f3-462e-8419-8447ced1bfc9","type":"Line"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2be75501-e81a-483b-8855-c5f0261c3c90","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"644e104d-c652-4895-8029-ac31dff48065","type":"HoverTool"}]},"id":"7df3c17b-fa2d-4a72-9ba7-d77c25c76673","type":"Toolbar"},{"attributes":{},"id":"49009a7d-a658-49e8-9978-a0c9aae3a46b","type":"CategoricalTickFormatter"},{"attributes":{"callback":null},"id":"109dba75-0290-4da1-9afb-faf338150847","type":"DataRange1d"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"644e104d-c652-4895-8029-ac31dff48065","type":"HoverTool"},{"attributes":{},"id":"ead35147-02bf-450f-be79-a566218c1cf9","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"0806312e-ab30-43d2-a8b5-8654bec00d48","subtype":"Figure","type":"Plot"},"ticker":{"id":"dec77eea-1e39-469a-8819-c2d03cd0e3cd","type":"BasicTicker"}},"id":"9db4bc81-cdeb-419f-bfa3-cee0d6693325","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Kulevicha","Battle of Olszynka Grochowska"],"cumulative":{"__ndarray__":"ckTybUfB3j/sRDY7mjrbPw==","dtype":"float64","shape":[2]},"general":["Hans Karl von Diebitsch","Hans Karl von Diebitsch"],"outcome":["V","I"],"value":{"__ndarray__":"ckTybUfB3j8w/N+VaTWsvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAACUnEAAAAAAAJycQA==","dtype":"float64","shape":[2]}}},"id":"bcab9ab8-7716-41c6-bb52-a7e00ebb4c65","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"bcab9ab8-7716-41c6-bb52-a7e00ebb4c65","type":"ColumnDataSource"},"glyph":{"id":"d696dbda-c1f3-462e-8419-8447ced1bfc9","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2be75501-e81a-483b-8855-c5f0261c3c90","type":"Line"},"selection_glyph":null,"view":{"id":"5a4b1577-9c63-48b1-8683-4fd6cf867f7b","type":"CDSView"}},"id":"809ba27d-1283-4408-899a-6009177f947c","type":"GlyphRenderer"},{"attributes":{},"id":"dec77eea-1e39-469a-8819-c2d03cd0e3cd","type":"BasicTicker"},{"attributes":{"source":{"id":"bcab9ab8-7716-41c6-bb52-a7e00ebb4c65","type":"ColumnDataSource"}},"id":"70d38b70-e82b-409d-adea-5b2e7b91c17f","type":"CDSView"},{"attributes":{"formatter":{"id":"49009a7d-a658-49e8-9978-a0c9aae3a46b","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"0806312e-ab30-43d2-a8b5-8654bec00d48","subtype":"Figure","type":"Plot"},"ticker":{"id":"ec785f15-730d-462b-9c31-38a9a6aecbb1","type":"CategoricalTicker"}},"id":"f4f579e5-c0e1-458b-b79b-36d37fe268d2","type":"CategoricalAxis"},{"attributes":{"source":{"id":"bcab9ab8-7716-41c6-bb52-a7e00ebb4c65","type":"ColumnDataSource"}},"id":"5a4b1577-9c63-48b1-8683-4fd6cf867f7b","type":"CDSView"},{"attributes":{"data_source":{"id":"bcab9ab8-7716-41c6-bb52-a7e00ebb4c65","type":"ColumnDataSource"},"glyph":{"id":"3ce35744-8246-4114-a043-93466aab8af9","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"07ef1638-9a2e-401c-a80c-34d136ab1d35","type":"VBar"},"selection_glyph":null,"view":{"id":"70d38b70-e82b-409d-adea-5b2e7b91c17f","type":"CDSView"}},"id":"0d563a5c-3c93-4e15-89c8-8ed9f7bae000","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Hans Karl von Diebitsch (1 - 1 - 0)"},"id":"49a66f08-22c7-4c0a-8e08-3ca520abc1f9","type":"Title"},{"attributes":{"callback":null,"factors":["Battle of Kulevicha","Battle of Olszynka Grochowska"]},"id":"404a8f10-0925-49b1-9c7d-1a8e4d82937c","type":"FactorRange"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"41e13576-4c03-4927-b1d3-7a53d467fb5e","type":"CategoricalColorMapper"},{"attributes":{},"id":"2011141e-0527-46e8-99e7-e2a81440ee2e","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"07ef1638-9a2e-401c-a80c-34d136ab1d35","type":"VBar"},{"attributes":{"plot":{"id":"0806312e-ab30-43d2-a8b5-8654bec00d48","subtype":"Figure","type":"Plot"},"ticker":{"id":"ec785f15-730d-462b-9c31-38a9a6aecbb1","type":"CategoricalTicker"}},"id":"df1a9824-eeb2-4436-a496-510130662857","type":"Grid"},{"attributes":{"formatter":{"id":"ead35147-02bf-450f-be79-a566218c1cf9","type":"BasicTickFormatter"},"plot":{"id":"0806312e-ab30-43d2-a8b5-8654bec00d48","subtype":"Figure","type":"Plot"},"ticker":{"id":"dec77eea-1e39-469a-8819-c2d03cd0e3cd","type":"BasicTicker"}},"id":"fe96544c-3c49-41f6-89b3-e4319035c2df","type":"LinearAxis"},{"attributes":{},"id":"ec785f15-730d-462b-9c31-38a9a6aecbb1","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"41e13576-4c03-4927-b1d3-7a53d467fb5e","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"41e13576-4c03-4927-b1d3-7a53d467fb5e","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"3ce35744-8246-4114-a043-93466aab8af9","type":"VBar"},{"attributes":{},"id":"57f799ad-230b-4d38-a450-5124a2e7cf4d","type":"CategoricalScale"},{"attributes":{"below":[{"id":"f4f579e5-c0e1-458b-b79b-36d37fe268d2","type":"CategoricalAxis"}],"left":[{"id":"fe96544c-3c49-41f6-89b3-e4319035c2df","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"f4f579e5-c0e1-458b-b79b-36d37fe268d2","type":"CategoricalAxis"},{"id":"df1a9824-eeb2-4436-a496-510130662857","type":"Grid"},{"id":"fe96544c-3c49-41f6-89b3-e4319035c2df","type":"LinearAxis"},{"id":"9db4bc81-cdeb-419f-bfa3-cee0d6693325","type":"Grid"},{"id":"809ba27d-1283-4408-899a-6009177f947c","type":"GlyphRenderer"},{"id":"0d563a5c-3c93-4e15-89c8-8ed9f7bae000","type":"GlyphRenderer"}],"title":{"id":"49a66f08-22c7-4c0a-8e08-3ca520abc1f9","type":"Title"},"toolbar":{"id":"7df3c17b-fa2d-4a72-9ba7-d77c25c76673","type":"Toolbar"},"x_range":{"id":"404a8f10-0925-49b1-9c7d-1a8e4d82937c","type":"FactorRange"},"x_scale":{"id":"57f799ad-230b-4d38-a450-5124a2e7cf4d","type":"CategoricalScale"},"y_range":{"id":"109dba75-0290-4da1-9afb-faf338150847","type":"DataRange1d"},"y_scale":{"id":"2011141e-0527-46e8-99e7-e2a81440ee2e","type":"LinearScale"}},"id":"0806312e-ab30-43d2-a8b5-8654bec00d48","subtype":"Figure","type":"Plot"}],"root_ids":["0806312e-ab30-43d2-a8b5-8654bec00d48"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"6014bff4-4f97-4623-86ad-ae3ba1243dcc","elementid":"8e9c5e7b-0e14-446f-91c5-2594928cec31","modelid":"0806312e-ab30-43d2-a8b5-8654bec00d48"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="de03efba-ee26-489b-9e46-9d873659eed8"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"a58971ea-96e0-462a-ad0f-9986613b16d5":{"roots":{"references":[{"attributes":{"source":{"id":"b1180fa6-983d-4b0b-9543-e3118dec9f74","type":"ColumnDataSource"}},"id":"59903500-3bad-47a3-bc41-f5e1a3153f38","type":"CDSView"},{"attributes":{"plot":{"id":"7fc7ad0d-841f-48e1-b38b-20ff1533175e","subtype":"Figure","type":"Plot"},"ticker":{"id":"1eb35d6d-132e-4cbf-a70e-cf63ae67fe5d","type":"CategoricalTicker"}},"id":"e9d0388f-2907-4504-b1ff-8c25f3dc1005","type":"Grid"},{"attributes":{"below":[{"id":"e39c9ba6-4aee-46ec-bf74-37424a8e0321","type":"CategoricalAxis"}],"left":[{"id":"ac72477b-08cd-4910-b264-a3b3bcaf2035","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"e39c9ba6-4aee-46ec-bf74-37424a8e0321","type":"CategoricalAxis"},{"id":"e9d0388f-2907-4504-b1ff-8c25f3dc1005","type":"Grid"},{"id":"ac72477b-08cd-4910-b264-a3b3bcaf2035","type":"LinearAxis"},{"id":"0cc19946-19f6-4acd-b3b1-0e29892f306b","type":"Grid"},{"id":"9eff51e4-5705-4d4d-aeaa-9f68d1fea8a1","type":"GlyphRenderer"},{"id":"04b61bf1-7ce9-4707-9336-1d47a6460da4","type":"GlyphRenderer"}],"title":{"id":"8881932f-15b1-4255-aa38-a2ad76e1db1f","type":"Title"},"toolbar":{"id":"6984cbcc-3729-40cf-87aa-0c029ab4cf89","type":"Toolbar"},"x_range":{"id":"f01cb08a-0d0e-435a-9ece-e1a15557d02e","type":"FactorRange"},"x_scale":{"id":"b6ca153f-4c91-4160-a717-1965fde10734","type":"CategoricalScale"},"y_range":{"id":"cde8c682-111f-476d-9741-4821172412f9","type":"DataRange1d"},"y_scale":{"id":"bc433ff7-6aea-432e-bb27-7dc5d2d2cb4a","type":"LinearScale"}},"id":"7fc7ad0d-841f-48e1-b38b-20ff1533175e","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"2a12af0c-f84e-4cfd-8806-35cee17a7767","type":"BasicTicker"},{"attributes":{"formatter":{"id":"9311ae72-0e63-4bdd-956a-cef1fbcc92a9","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"7fc7ad0d-841f-48e1-b38b-20ff1533175e","subtype":"Figure","type":"Plot"},"ticker":{"id":"1eb35d6d-132e-4cbf-a70e-cf63ae67fe5d","type":"CategoricalTicker"}},"id":"e39c9ba6-4aee-46ec-bf74-37424a8e0321","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"b1180fa6-983d-4b0b-9543-e3118dec9f74","type":"ColumnDataSource"},"glyph":{"id":"b1ec7bf2-ee5a-4aa1-bc8a-0efeb53edd70","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"04b60f1e-2a88-4d65-816e-de2a661aa6ac","type":"VBar"},"selection_glyph":null,"view":{"id":"41c63bf2-2e7b-4a00-86f9-cf3d3947a04a","type":"CDSView"}},"id":"04b61bf1-7ce9-4707-9336-1d47a6460da4","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5eb6ae1f-4e67-4ca0-942e-a73efa22804a","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"5ecc8dbd-1ff5-4af8-9e6a-9f1c1c7f7360","type":"HoverTool"}]},"id":"6984cbcc-3729-40cf-87aa-0c029ab4cf89","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"04b60f1e-2a88-4d65-816e-de2a661aa6ac","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of the Plains of Abraham","Battle of Bunker Hill","Battle of Harlem Heights","Battle of Long Island","Battle of Pell's Point","Battle of White Plains","Battle of Brandywine","Battle of Germantown"]},"id":"f01cb08a-0d0e-435a-9ece-e1a15557d02e","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"c559703e-a0c0-4235-b514-4c882cf2ea1b","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"c559703e-a0c0-4235-b514-4c882cf2ea1b","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b1ec7bf2-ee5a-4aa1-bc8a-0efeb53edd70","type":"VBar"},{"attributes":{"callback":null},"id":"cde8c682-111f-476d-9741-4821172412f9","type":"DataRange1d"},{"attributes":{},"id":"34c6c17b-f012-4990-8f97-57fa3aaf62e5","type":"BasicTickFormatter"},{"attributes":{},"id":"b6ca153f-4c91-4160-a717-1965fde10734","type":"CategoricalScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"c559703e-a0c0-4235-b514-4c882cf2ea1b","type":"CategoricalColorMapper"},{"attributes":{},"id":"1eb35d6d-132e-4cbf-a70e-cf63ae67fe5d","type":"CategoricalTicker"},{"attributes":{"source":{"id":"b1180fa6-983d-4b0b-9543-e3118dec9f74","type":"ColumnDataSource"}},"id":"41c63bf2-2e7b-4a00-86f9-cf3d3947a04a","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"5ecc8dbd-1ff5-4af8-9e6a-9f1c1c7f7360","type":"HoverTool"},{"attributes":{"dimension":1,"plot":{"id":"7fc7ad0d-841f-48e1-b38b-20ff1533175e","subtype":"Figure","type":"Plot"},"ticker":{"id":"2a12af0c-f84e-4cfd-8806-35cee17a7767","type":"BasicTicker"}},"id":"0cc19946-19f6-4acd-b3b1-0e29892f306b","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of the Plains of Abraham","Battle of Bunker Hill","Battle of Harlem Heights","Battle of Long Island","Battle of Pell's Point","Battle of White Plains","Battle of Brandywine","Battle of Germantown"],"cumulative":{"__ndarray__":"XHoGOjAQ3z9SfMcrhx7vP65OeKz8ENs/e31KeNdk7D8/IedeDg/1P2LvaM1ki/w/moreDVg8AkDDwtl/QE4GQA==","dtype":"float64","shape":[8]},"general":["William Howe, 5th Viscount Howe","William Howe, 5th Viscount Howe","William Howe, 5th Viscount Howe","William Howe, 5th Viscount Howe","William Howe, 5th Viscount Howe","William Howe, 5th Viscount Howe","William Howe, 5th Viscount Howe","William Howe, 5th Viscount Howe"],"outcome":["V","V","D","V","V","V","V","V"],"value":{"__ndarray__":"XHoGOjAQ3z9Ifogd3izfP/tUi9UIluG/SKwcRLK43T8GigeLinLbP444B7pZ8d0/TJdQOS213z+l4OzHoUfgPw==","dtype":"float64","shape":[8]},"year":{"__ndarray__":"AAAAAAB8m0AAAAAAALybQAAAAAAAwJtAAAAAAADAm0AAAAAAAMCbQAAAAAAAwJtAAAAAAADEm0AAAAAAAMSbQA==","dtype":"float64","shape":[8]}}},"id":"b1180fa6-983d-4b0b-9543-e3118dec9f74","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"34c6c17b-f012-4990-8f97-57fa3aaf62e5","type":"BasicTickFormatter"},"plot":{"id":"7fc7ad0d-841f-48e1-b38b-20ff1533175e","subtype":"Figure","type":"Plot"},"ticker":{"id":"2a12af0c-f84e-4cfd-8806-35cee17a7767","type":"BasicTicker"}},"id":"ac72477b-08cd-4910-b264-a3b3bcaf2035","type":"LinearAxis"},{"attributes":{},"id":"bc433ff7-6aea-432e-bb27-7dc5d2d2cb4a","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"26b0ab5f-4316-4015-8543-5a4f87edd3ee","type":"Line"},{"attributes":{},"id":"9311ae72-0e63-4bdd-956a-cef1fbcc92a9","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"William Howe, 5th Viscount Howe (7 - 0 - 1)"},"id":"8881932f-15b1-4255-aa38-a2ad76e1db1f","type":"Title"},{"attributes":{"data_source":{"id":"b1180fa6-983d-4b0b-9543-e3118dec9f74","type":"ColumnDataSource"},"glyph":{"id":"26b0ab5f-4316-4015-8543-5a4f87edd3ee","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5eb6ae1f-4e67-4ca0-942e-a73efa22804a","type":"Line"},"selection_glyph":null,"view":{"id":"59903500-3bad-47a3-bc41-f5e1a3153f38","type":"CDSView"}},"id":"9eff51e4-5705-4d4d-aeaa-9f68d1fea8a1","type":"GlyphRenderer"}],"root_ids":["7fc7ad0d-841f-48e1-b38b-20ff1533175e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"a58971ea-96e0-462a-ad0f-9986613b16d5","elementid":"de03efba-ee26-489b-9e46-9d873659eed8","modelid":"7fc7ad0d-841f-48e1-b38b-20ff1533175e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

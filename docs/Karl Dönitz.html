@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="8b7ace7f-0373-4024-bbde-e9c2f70a6ccd"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"75915993-f4fc-4de3-b6d4-fb4164c578b0":{"roots":{"references":[{"attributes":{"dimension":1,"plot":{"id":"aa863a0b-ef93-40eb-a644-b817a28760e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"92fd4120-97c8-42c0-862f-f109b2d5734e","type":"BasicTicker"}},"id":"220de705-f5c2-4107-b6c0-a3701864f6e9","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"4d4040ce-2288-4849-8f95-fe69ad29bc60","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"4d4040ce-2288-4849-8f95-fe69ad29bc60","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"dc06f2b5-d3f9-48d9-a2d2-28707786b858","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"8b02dfd3-feb2-4df3-a972-a131d56057b9","type":"HoverTool"}]},"id":"d8c9a213-3b4f-4128-a2b2-9a61c1925ee3","type":"Toolbar"},{"attributes":{},"id":"b12cddd1-81f5-4dbb-9435-2e43fd0d5286","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"165fca6a-8116-441f-ac0e-5407cc7733ff","type":"VBar"},{"attributes":{},"id":"7872d301-f323-4dc3-b187-dc320c225e1f","type":"CategoricalTickFormatter"},{"attributes":{},"id":"92fd4120-97c8-42c0-862f-f109b2d5734e","type":"BasicTicker"},{"attributes":{"formatter":{"id":"7872d301-f323-4dc3-b187-dc320c225e1f","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"aa863a0b-ef93-40eb-a644-b817a28760e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"fe2aedb3-7cf0-435f-b6f9-ebf03a6dd7d9","type":"CategoricalTicker"}},"id":"9783286c-2400-4b7b-b5f5-97c0c6fc73a4","type":"CategoricalAxis"},{"attributes":{"callback":null,"factors":["Battle of the St. Lawrence","Convoy PQ-17"]},"id":"c7705e86-e77a-4d76-a2e3-5fa951be3b37","type":"FactorRange"},{"attributes":{"plot":{"id":"aa863a0b-ef93-40eb-a644-b817a28760e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"fe2aedb3-7cf0-435f-b6f9-ebf03a6dd7d9","type":"CategoricalTicker"}},"id":"93232acf-f332-4f7c-a6f1-00cbc27d07bd","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"4d4040ce-2288-4849-8f95-fe69ad29bc60","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"cfc40521-4237-4456-becd-88e0f652c00c","type":"ColumnDataSource"}},"id":"8ddcbf9b-018d-4415-a941-d7e0576f8e81","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"8b02dfd3-feb2-4df3-a972-a131d56057b9","type":"HoverTool"},{"attributes":{"data_source":{"id":"cfc40521-4237-4456-becd-88e0f652c00c","type":"ColumnDataSource"},"glyph":{"id":"dc06f2b5-d3f9-48d9-a2d2-28707786b858","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"165fca6a-8116-441f-ac0e-5407cc7733ff","type":"VBar"},"selection_glyph":null,"view":{"id":"8ddcbf9b-018d-4415-a941-d7e0576f8e81","type":"CDSView"}},"id":"303f3e15-4992-4e66-aa90-6eaaf7d50ed7","type":"GlyphRenderer"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5284d02a-0725-4033-a456-ed2c8bb85934","type":"Line"},{"attributes":{},"id":"fe2aedb3-7cf0-435f-b6f9-ebf03a6dd7d9","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"cfc40521-4237-4456-becd-88e0f652c00c","type":"ColumnDataSource"},"glyph":{"id":"3309dd5d-28d3-40d1-abd1-b162ec9f4f4b","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"5284d02a-0725-4033-a456-ed2c8bb85934","type":"Line"},"selection_glyph":null,"view":{"id":"aa65c5e9-6b42-426f-92df-7dd421159035","type":"CDSView"}},"id":"c4ea2ec7-6d0c-45ef-91d4-26866d7c9816","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Karl D\u00f6nitz (1 - 0 - 1)"},"id":"c44b4523-04cc-42ef-9024-0d80a7a12783","type":"Title"},{"attributes":{"formatter":{"id":"0f3d9be3-863f-4ae7-8bf8-bf45bbd2d7bd","type":"BasicTickFormatter"},"plot":{"id":"aa863a0b-ef93-40eb-a644-b817a28760e2","subtype":"Figure","type":"Plot"},"ticker":{"id":"92fd4120-97c8-42c0-862f-f109b2d5734e","type":"BasicTicker"}},"id":"d8d5674f-4230-4949-b745-7d174f6388cf","type":"LinearAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"3309dd5d-28d3-40d1-abd1-b162ec9f4f4b","type":"Line"},{"attributes":{},"id":"0f3d9be3-863f-4ae7-8bf8-bf45bbd2d7bd","type":"BasicTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of the St. Lawrence","Convoy PQ-17"],"cumulative":{"__ndarray__":"GQrvMFcN2r+c10M8o8q3Pw==","dtype":"float64","shape":[2]},"general":["Karl D\u00f6nitz","Karl D\u00f6nitz"],"outcome":["D","V"],"value":{"__ndarray__":"GQrvMFcN2r8AAAAAAADgPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABYnkAAAAAAAFieQA==","dtype":"float64","shape":[2]}}},"id":"cfc40521-4237-4456-becd-88e0f652c00c","type":"ColumnDataSource"},{"attributes":{"callback":null},"id":"153d576c-5215-4c34-aba3-b5786d36a5b3","type":"DataRange1d"},{"attributes":{"source":{"id":"cfc40521-4237-4456-becd-88e0f652c00c","type":"ColumnDataSource"}},"id":"aa65c5e9-6b42-426f-92df-7dd421159035","type":"CDSView"},{"attributes":{"below":[{"id":"9783286c-2400-4b7b-b5f5-97c0c6fc73a4","type":"CategoricalAxis"}],"left":[{"id":"d8d5674f-4230-4949-b745-7d174f6388cf","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"9783286c-2400-4b7b-b5f5-97c0c6fc73a4","type":"CategoricalAxis"},{"id":"93232acf-f332-4f7c-a6f1-00cbc27d07bd","type":"Grid"},{"id":"d8d5674f-4230-4949-b745-7d174f6388cf","type":"LinearAxis"},{"id":"220de705-f5c2-4107-b6c0-a3701864f6e9","type":"Grid"},{"id":"c4ea2ec7-6d0c-45ef-91d4-26866d7c9816","type":"GlyphRenderer"},{"id":"303f3e15-4992-4e66-aa90-6eaaf7d50ed7","type":"GlyphRenderer"}],"title":{"id":"c44b4523-04cc-42ef-9024-0d80a7a12783","type":"Title"},"toolbar":{"id":"d8c9a213-3b4f-4128-a2b2-9a61c1925ee3","type":"Toolbar"},"x_range":{"id":"c7705e86-e77a-4d76-a2e3-5fa951be3b37","type":"FactorRange"},"x_scale":{"id":"b12cddd1-81f5-4dbb-9435-2e43fd0d5286","type":"CategoricalScale"},"y_range":{"id":"153d576c-5215-4c34-aba3-b5786d36a5b3","type":"DataRange1d"},"y_scale":{"id":"776bbc40-9daf-40a1-95c4-502a0a3c696a","type":"LinearScale"}},"id":"aa863a0b-ef93-40eb-a644-b817a28760e2","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"776bbc40-9daf-40a1-95c4-502a0a3c696a","type":"LinearScale"}],"root_ids":["aa863a0b-ef93-40eb-a644-b817a28760e2"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"75915993-f4fc-4de3-b6d4-fb4164c578b0","elementid":"8b7ace7f-0373-4024-bbde-e9c2f70a6ccd","modelid":"aa863a0b-ef93-40eb-a644-b817a28760e2"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

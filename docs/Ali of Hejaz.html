@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="b7405afa-4260-4b15-9b99-66ad57d199d4"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"48cf3055-b886-41bf-8270-c9a9bfa28f89":{"roots":{"references":[{"attributes":{},"id":"27876080-1393-4271-9b57-dfed80b53b30","type":"BasicTickFormatter"},{"attributes":{"plot":null,"text":"Ali of Hejaz (0 - 0 - 1)"},"id":"432dcebb-bf33-477d-b191-475a90326605","type":"Title"},{"attributes":{},"id":"d6eb8634-5893-48e0-8a8c-f95ced74c551","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"8943c232-4773-49ea-adfa-3b08cd53a5f0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"8943c232-4773-49ea-adfa-3b08cd53a5f0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"598911ec-b6bc-45b1-a97d-b1c55bc52287","type":"VBar"},{"attributes":{"data_source":{"id":"2756ced4-ce0d-4a4a-8191-a5e656f4ccf7","type":"ColumnDataSource"},"glyph":{"id":"64ce79d5-497f-473a-9992-694ffab256fd","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"afd72115-aa41-4aa7-9448-50728fda7ef5","type":"Line"},"selection_glyph":null,"view":{"id":"66142d8e-b47a-47e6-856c-6922c08cc5fc","type":"CDSView"}},"id":"70e23a51-23bb-467a-b3c9-116acbd29fc9","type":"GlyphRenderer"},{"attributes":{"source":{"id":"2756ced4-ce0d-4a4a-8191-a5e656f4ccf7","type":"ColumnDataSource"}},"id":"d736b772-e1aa-4839-b22b-8c8831088aa6","type":"CDSView"},{"attributes":{},"id":"baba0d52-f544-4c74-aa5f-f529d7e985b3","type":"CategoricalScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"afd72115-aa41-4aa7-9448-50728fda7ef5","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Jeddah 1925"],"cumulative":{"__ndarray__":"lJq+8/PG2r8=","dtype":"float64","shape":[1]},"general":["Ali of Hejaz"],"outcome":["D"],"value":{"__ndarray__":"lJq+8/PG2r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAAUnkA=","dtype":"float64","shape":[1]}}},"id":"2756ced4-ce0d-4a4a-8191-a5e656f4ccf7","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"27876080-1393-4271-9b57-dfed80b53b30","type":"BasicTickFormatter"},"plot":{"id":"2dc58939-435c-47b1-8663-13b20946fe3f","subtype":"Figure","type":"Plot"},"ticker":{"id":"a5e68b43-a816-411a-bee5-7beb9688c0bd","type":"BasicTicker"}},"id":"d4a050f6-0140-4c70-83fb-88963bffdf09","type":"LinearAxis"},{"attributes":{"callback":null,"factors":["Battle of Jeddah 1925"]},"id":"5d90e954-5047-43de-be4b-264e72d12647","type":"FactorRange"},{"attributes":{},"id":"4ba0148c-3e4d-4ddf-a43f-f93cb66715bd","type":"CategoricalTickFormatter"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"64ce79d5-497f-473a-9992-694ffab256fd","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"8943c232-4773-49ea-adfa-3b08cd53a5f0","type":"CategoricalColorMapper"},{"attributes":{"plot":{"id":"2dc58939-435c-47b1-8663-13b20946fe3f","subtype":"Figure","type":"Plot"},"ticker":{"id":"d6eb8634-5893-48e0-8a8c-f95ced74c551","type":"CategoricalTicker"}},"id":"c482df8c-4e44-40b0-a069-29f08d7d71a8","type":"Grid"},{"attributes":{"callback":null},"id":"0607496b-9752-4926-ace7-65c4faa9998e","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"74ef0f03-c8f2-4c4b-8a6b-3abd94649ded","type":"HoverTool"}]},"id":"90cac038-e1f2-4998-b0db-8c55940118fd","type":"Toolbar"},{"attributes":{"below":[{"id":"b06bf7ff-f3e0-40a9-ae2e-e585c15c1e27","type":"CategoricalAxis"}],"left":[{"id":"d4a050f6-0140-4c70-83fb-88963bffdf09","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"b06bf7ff-f3e0-40a9-ae2e-e585c15c1e27","type":"CategoricalAxis"},{"id":"c482df8c-4e44-40b0-a069-29f08d7d71a8","type":"Grid"},{"id":"d4a050f6-0140-4c70-83fb-88963bffdf09","type":"LinearAxis"},{"id":"1ab4ae1a-2bf9-488d-904e-ec8a1b67e9a4","type":"Grid"},{"id":"70e23a51-23bb-467a-b3c9-116acbd29fc9","type":"GlyphRenderer"},{"id":"23c6417d-c356-4ae6-93c6-7401b623e4b1","type":"GlyphRenderer"}],"title":{"id":"432dcebb-bf33-477d-b191-475a90326605","type":"Title"},"toolbar":{"id":"90cac038-e1f2-4998-b0db-8c55940118fd","type":"Toolbar"},"x_range":{"id":"5d90e954-5047-43de-be4b-264e72d12647","type":"FactorRange"},"x_scale":{"id":"baba0d52-f544-4c74-aa5f-f529d7e985b3","type":"CategoricalScale"},"y_range":{"id":"0607496b-9752-4926-ace7-65c4faa9998e","type":"DataRange1d"},"y_scale":{"id":"a52d7b85-4eea-4cf4-9233-5cca2240115e","type":"LinearScale"}},"id":"2dc58939-435c-47b1-8663-13b20946fe3f","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"2756ced4-ce0d-4a4a-8191-a5e656f4ccf7","type":"ColumnDataSource"}},"id":"66142d8e-b47a-47e6-856c-6922c08cc5fc","type":"CDSView"},{"attributes":{"data_source":{"id":"2756ced4-ce0d-4a4a-8191-a5e656f4ccf7","type":"ColumnDataSource"},"glyph":{"id":"598911ec-b6bc-45b1-a97d-b1c55bc52287","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4daf4b26-f6f7-450a-b764-55ecb54486bb","type":"VBar"},"selection_glyph":null,"view":{"id":"d736b772-e1aa-4839-b22b-8c8831088aa6","type":"CDSView"}},"id":"23c6417d-c356-4ae6-93c6-7401b623e4b1","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"74ef0f03-c8f2-4c4b-8a6b-3abd94649ded","type":"HoverTool"},{"attributes":{},"id":"a52d7b85-4eea-4cf4-9233-5cca2240115e","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"4daf4b26-f6f7-450a-b764-55ecb54486bb","type":"VBar"},{"attributes":{"formatter":{"id":"4ba0148c-3e4d-4ddf-a43f-f93cb66715bd","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"2dc58939-435c-47b1-8663-13b20946fe3f","subtype":"Figure","type":"Plot"},"ticker":{"id":"d6eb8634-5893-48e0-8a8c-f95ced74c551","type":"CategoricalTicker"}},"id":"b06bf7ff-f3e0-40a9-ae2e-e585c15c1e27","type":"CategoricalAxis"},{"attributes":{},"id":"a5e68b43-a816-411a-bee5-7beb9688c0bd","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"2dc58939-435c-47b1-8663-13b20946fe3f","subtype":"Figure","type":"Plot"},"ticker":{"id":"a5e68b43-a816-411a-bee5-7beb9688c0bd","type":"BasicTicker"}},"id":"1ab4ae1a-2bf9-488d-904e-ec8a1b67e9a4","type":"Grid"}],"root_ids":["2dc58939-435c-47b1-8663-13b20946fe3f"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"48cf3055-b886-41bf-8270-c9a9bfa28f89","elementid":"b7405afa-4260-4b15-9b99-66ad57d199d4","modelid":"2dc58939-435c-47b1-8663-13b20946fe3f"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

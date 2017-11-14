@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="ab5b8e5d-5d25-4f85-91b2-739dec4d429c"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"c197e1db-ed68-4785-a8d4-490acd0378c0":{"roots":{"references":[{"attributes":{},"id":"683a3eda-d158-499c-b362-281c3c0006f4","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"f05c88f1-99a3-4d2e-a516-a6b0f51ad12a","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"f05c88f1-99a3-4d2e-a516-a6b0f51ad12a","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"cdcabb0a-907f-4759-9053-6a9077224f8d","type":"VBar"},{"attributes":{"below":[{"id":"2cf3a7f8-7152-42a6-82c3-a29def4487d2","type":"CategoricalAxis"}],"left":[{"id":"055ca10c-738b-454d-8f8c-9876b26a9f15","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"2cf3a7f8-7152-42a6-82c3-a29def4487d2","type":"CategoricalAxis"},{"id":"a043650c-ac3b-4516-afa2-e3956a7fc67d","type":"Grid"},{"id":"055ca10c-738b-454d-8f8c-9876b26a9f15","type":"LinearAxis"},{"id":"d1fae1bf-68d1-416f-93cb-f2718a1bac44","type":"Grid"},{"id":"3101acbc-190a-4325-8649-625c3ea83189","type":"GlyphRenderer"},{"id":"5c76b76f-3197-4279-8d45-33336e6b1ff2","type":"GlyphRenderer"}],"title":{"id":"990f8abb-ccb4-4359-abb5-51f72a169e23","type":"Title"},"toolbar":{"id":"e4214f04-977d-4524-9e36-5cb8fde70af0","type":"Toolbar"},"x_range":{"id":"0d64e1eb-f135-4b37-996d-64e80586ff07","type":"FactorRange"},"x_scale":{"id":"0b27937b-7cc2-49d6-b5be-099aff288700","type":"CategoricalScale"},"y_range":{"id":"32d0786f-ddd7-4dbb-bd5a-d91f070e0ad1","type":"DataRange1d"},"y_scale":{"id":"683a3eda-d158-499c-b362-281c3c0006f4","type":"LinearScale"}},"id":"a39fbd66-b59a-4609-807a-d7657e13f988","subtype":"Figure","type":"Plot"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"f05c88f1-99a3-4d2e-a516-a6b0f51ad12a","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"b1725ecd-4204-4932-82f0-df0217c02a64","type":"ColumnDataSource"}},"id":"531015c8-9fbd-4427-9d7e-e5342c9ff137","type":"CDSView"},{"attributes":{"data_source":{"id":"b1725ecd-4204-4932-82f0-df0217c02a64","type":"ColumnDataSource"},"glyph":{"id":"7a968edb-2dfd-4f28-92db-115bd36839ea","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"17bd8d23-bf70-40db-97c3-cc488b32eb58","type":"Line"},"selection_glyph":null,"view":{"id":"531015c8-9fbd-4427-9d7e-e5342c9ff137","type":"CDSView"}},"id":"3101acbc-190a-4325-8649-625c3ea83189","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Siege of Kazan (1552)"],"cumulative":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"general":["Shahghali"],"outcome":["V"],"value":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABAmEA=","dtype":"float64","shape":[1]}}},"id":"b1725ecd-4204-4932-82f0-df0217c02a64","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"45d8726c-b939-4752-a638-e30949b95d2c","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"a39fbd66-b59a-4609-807a-d7657e13f988","subtype":"Figure","type":"Plot"},"ticker":{"id":"7d4ecbd0-093c-4c4c-9bc3-8c5e607ca2cb","type":"CategoricalTicker"}},"id":"2cf3a7f8-7152-42a6-82c3-a29def4487d2","type":"CategoricalAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"7a968edb-2dfd-4f28-92db-115bd36839ea","type":"Line"},{"attributes":{"formatter":{"id":"77025437-926c-4e50-9623-eb27fc07d37f","type":"BasicTickFormatter"},"plot":{"id":"a39fbd66-b59a-4609-807a-d7657e13f988","subtype":"Figure","type":"Plot"},"ticker":{"id":"1b062142-ee7b-434f-a3b5-896b90d22746","type":"BasicTicker"}},"id":"055ca10c-738b-454d-8f8c-9876b26a9f15","type":"LinearAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"82cd2346-e64f-4b6e-ba9e-cdb482b258ca","type":"HoverTool"},{"attributes":{},"id":"1b062142-ee7b-434f-a3b5-896b90d22746","type":"BasicTicker"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"17bd8d23-bf70-40db-97c3-cc488b32eb58","type":"Line"},{"attributes":{"plot":null,"text":"Shahghali (1 - 0 - 0)"},"id":"990f8abb-ccb4-4359-abb5-51f72a169e23","type":"Title"},{"attributes":{},"id":"0b27937b-7cc2-49d6-b5be-099aff288700","type":"CategoricalScale"},{"attributes":{},"id":"7d4ecbd0-093c-4c4c-9bc3-8c5e607ca2cb","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Siege of Kazan (1552)"]},"id":"0d64e1eb-f135-4b37-996d-64e80586ff07","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"a622d734-99bf-4db1-a07b-febc304915b5","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"a39fbd66-b59a-4609-807a-d7657e13f988","subtype":"Figure","type":"Plot"},"ticker":{"id":"1b062142-ee7b-434f-a3b5-896b90d22746","type":"BasicTicker"}},"id":"d1fae1bf-68d1-416f-93cb-f2718a1bac44","type":"Grid"},{"attributes":{"data_source":{"id":"b1725ecd-4204-4932-82f0-df0217c02a64","type":"ColumnDataSource"},"glyph":{"id":"cdcabb0a-907f-4759-9053-6a9077224f8d","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a622d734-99bf-4db1-a07b-febc304915b5","type":"VBar"},"selection_glyph":null,"view":{"id":"b7111aa4-5c47-4919-874f-aa447dcc1e43","type":"CDSView"}},"id":"5c76b76f-3197-4279-8d45-33336e6b1ff2","type":"GlyphRenderer"},{"attributes":{"source":{"id":"b1725ecd-4204-4932-82f0-df0217c02a64","type":"ColumnDataSource"}},"id":"b7111aa4-5c47-4919-874f-aa447dcc1e43","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"82cd2346-e64f-4b6e-ba9e-cdb482b258ca","type":"HoverTool"}]},"id":"e4214f04-977d-4524-9e36-5cb8fde70af0","type":"Toolbar"},{"attributes":{},"id":"45d8726c-b939-4752-a638-e30949b95d2c","type":"CategoricalTickFormatter"},{"attributes":{"callback":null},"id":"32d0786f-ddd7-4dbb-bd5a-d91f070e0ad1","type":"DataRange1d"},{"attributes":{"plot":{"id":"a39fbd66-b59a-4609-807a-d7657e13f988","subtype":"Figure","type":"Plot"},"ticker":{"id":"7d4ecbd0-093c-4c4c-9bc3-8c5e607ca2cb","type":"CategoricalTicker"}},"id":"a043650c-ac3b-4516-afa2-e3956a7fc67d","type":"Grid"},{"attributes":{},"id":"77025437-926c-4e50-9623-eb27fc07d37f","type":"BasicTickFormatter"}],"root_ids":["a39fbd66-b59a-4609-807a-d7657e13f988"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"c197e1db-ed68-4785-a8d4-490acd0378c0","elementid":"ab5b8e5d-5d25-4f85-91b2-739dec4d429c","modelid":"a39fbd66-b59a-4609-807a-d7657e13f988"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

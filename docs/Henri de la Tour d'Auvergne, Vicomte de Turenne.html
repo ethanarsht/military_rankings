@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="f2ed931b-f216-41ce-9f93-27303bf0eefe"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"0f31da97-83e2-40b2-b2e2-b053c633e8d0":{"roots":{"references":[{"attributes":{"data_source":{"id":"0a94666f-bec0-436c-a21f-533db29e2d0a","type":"ColumnDataSource"},"glyph":{"id":"e1a4d91d-e8ed-4ebc-801c-6c58b0bff827","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f3c13539-b456-4ead-8918-1b5f3ac29b4f","type":"Line"},"selection_glyph":null,"view":{"id":"003f8d26-c9ba-4ecc-89df-833bd47abf97","type":"CDSView"}},"id":"4bb2644f-5958-4fa4-94ff-aa3634a24b30","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"142aa75d-5e8d-4608-a826-931313632490","type":"HoverTool"},{"attributes":{},"id":"4d2ed991-d5e7-4f35-a931-dc00411f7e01","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"c44fe652-25a9-4f64-a598-e7d8bd85606b","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"c44fe652-25a9-4f64-a598-e7d8bd85606b","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b426664a-486e-4d81-bd03-d7addc813862","type":"VBar"},{"attributes":{},"id":"2a75b4cd-50e6-4ba3-b72e-059561dfe1f7","type":"CategoricalTicker"},{"attributes":{"dimension":1,"plot":{"id":"cdfd63b2-ae2e-41d4-9935-05e799f0510b","subtype":"Figure","type":"Plot"},"ticker":{"id":"4d2ed991-d5e7-4f35-a931-dc00411f7e01","type":"BasicTicker"}},"id":"89d460ae-355d-4fca-a33f-de978e975b6b","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Freiburg","Battle of Zusmarshausen","Battle of the Dunes (1658)","Battle of Turckheim"],"cumulative":{"__ndarray__":"Wmn5iGhG3z+x3STWl2ftP06sJlQqaPY/nv5+Dt/K/j8=","dtype":"float64","shape":[4]},"general":["Henri de la Tour d'Auvergne, Vicomte de Turenne","Henri de la Tour d'Auvergne, Vicomte de Turenne","Henri de la Tour d'Auvergne, Vicomte de Turenne","Henri de la Tour d'Auvergne, Vicomte de Turenne"],"outcome":["V","V","V","V"],"value":{"__ndarray__":"Wmn5iGhG3z8IUlAjx4jbP9j1UKR50d4/oKSwdGnF4D8=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAACwmUAAAAAAAMCZQAAAAAAA6JlAAAAAAAAsmkA=","dtype":"float64","shape":[4]}}},"id":"0a94666f-bec0-436c-a21f-533db29e2d0a","type":"ColumnDataSource"},{"attributes":{"callback":null,"factors":["Battle of Freiburg","Battle of Zusmarshausen","Battle of the Dunes (1658)","Battle of Turckheim"]},"id":"95e33d21-8cbf-4ea2-9da0-6c535fcd94dd","type":"FactorRange"},{"attributes":{"source":{"id":"0a94666f-bec0-436c-a21f-533db29e2d0a","type":"ColumnDataSource"}},"id":"d6896d05-06ff-43af-a3db-e63fa9f10f6f","type":"CDSView"},{"attributes":{"plot":{"id":"cdfd63b2-ae2e-41d4-9935-05e799f0510b","subtype":"Figure","type":"Plot"},"ticker":{"id":"2a75b4cd-50e6-4ba3-b72e-059561dfe1f7","type":"CategoricalTicker"}},"id":"724115e5-09e6-49fb-ace6-65ef6638ffb6","type":"Grid"},{"attributes":{"plot":null,"text":"Henri de la Tour d'Auvergne, Vicomte de Turenne (4 - 0 - 0)"},"id":"c6e488e0-f28f-43fb-a3a6-1696f11e7d95","type":"Title"},{"attributes":{"callback":null},"id":"d3e49c33-a331-4289-8fbc-782e15fb44f4","type":"DataRange1d"},{"attributes":{"formatter":{"id":"19e210fa-77c1-43e2-bf5a-9fba57d0c791","type":"BasicTickFormatter"},"plot":{"id":"cdfd63b2-ae2e-41d4-9935-05e799f0510b","subtype":"Figure","type":"Plot"},"ticker":{"id":"4d2ed991-d5e7-4f35-a931-dc00411f7e01","type":"BasicTicker"}},"id":"2488347b-964d-4069-90e4-226d92dfdd41","type":"LinearAxis"},{"attributes":{"formatter":{"id":"a6e44062-e7f8-46e6-8aa0-d6e3e4cdc8d3","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"cdfd63b2-ae2e-41d4-9935-05e799f0510b","subtype":"Figure","type":"Plot"},"ticker":{"id":"2a75b4cd-50e6-4ba3-b72e-059561dfe1f7","type":"CategoricalTicker"}},"id":"5cd46053-5097-4e93-aa32-44afb03369d3","type":"CategoricalAxis"},{"attributes":{},"id":"ea88b09a-fc9f-4932-9539-f8c15406d980","type":"CategoricalScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e1a4d91d-e8ed-4ebc-801c-6c58b0bff827","type":"Line"},{"attributes":{},"id":"4d5ac822-1cb3-4632-9cde-b71461b07885","type":"LinearScale"},{"attributes":{"source":{"id":"0a94666f-bec0-436c-a21f-533db29e2d0a","type":"ColumnDataSource"}},"id":"003f8d26-c9ba-4ecc-89df-833bd47abf97","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b1a9ef1d-c035-4819-838f-a5e6b29368a2","type":"VBar"},{"attributes":{"data_source":{"id":"0a94666f-bec0-436c-a21f-533db29e2d0a","type":"ColumnDataSource"},"glyph":{"id":"b426664a-486e-4d81-bd03-d7addc813862","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b1a9ef1d-c035-4819-838f-a5e6b29368a2","type":"VBar"},"selection_glyph":null,"view":{"id":"d6896d05-06ff-43af-a3db-e63fa9f10f6f","type":"CDSView"}},"id":"0c8454ff-c909-469b-a774-285b3ae55a1f","type":"GlyphRenderer"},{"attributes":{},"id":"a6e44062-e7f8-46e6-8aa0-d6e3e4cdc8d3","type":"CategoricalTickFormatter"},{"attributes":{},"id":"19e210fa-77c1-43e2-bf5a-9fba57d0c791","type":"BasicTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"f3c13539-b456-4ead-8918-1b5f3ac29b4f","type":"Line"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"c44fe652-25a9-4f64-a598-e7d8bd85606b","type":"CategoricalColorMapper"},{"attributes":{"below":[{"id":"5cd46053-5097-4e93-aa32-44afb03369d3","type":"CategoricalAxis"}],"left":[{"id":"2488347b-964d-4069-90e4-226d92dfdd41","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"5cd46053-5097-4e93-aa32-44afb03369d3","type":"CategoricalAxis"},{"id":"724115e5-09e6-49fb-ace6-65ef6638ffb6","type":"Grid"},{"id":"2488347b-964d-4069-90e4-226d92dfdd41","type":"LinearAxis"},{"id":"89d460ae-355d-4fca-a33f-de978e975b6b","type":"Grid"},{"id":"4bb2644f-5958-4fa4-94ff-aa3634a24b30","type":"GlyphRenderer"},{"id":"0c8454ff-c909-469b-a774-285b3ae55a1f","type":"GlyphRenderer"}],"title":{"id":"c6e488e0-f28f-43fb-a3a6-1696f11e7d95","type":"Title"},"toolbar":{"id":"660a700f-e4f5-4328-ae2a-1e6a6f3c516e","type":"Toolbar"},"x_range":{"id":"95e33d21-8cbf-4ea2-9da0-6c535fcd94dd","type":"FactorRange"},"x_scale":{"id":"ea88b09a-fc9f-4932-9539-f8c15406d980","type":"CategoricalScale"},"y_range":{"id":"d3e49c33-a331-4289-8fbc-782e15fb44f4","type":"DataRange1d"},"y_scale":{"id":"4d5ac822-1cb3-4632-9cde-b71461b07885","type":"LinearScale"}},"id":"cdfd63b2-ae2e-41d4-9935-05e799f0510b","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"142aa75d-5e8d-4608-a826-931313632490","type":"HoverTool"}]},"id":"660a700f-e4f5-4328-ae2a-1e6a6f3c516e","type":"Toolbar"}],"root_ids":["cdfd63b2-ae2e-41d4-9935-05e799f0510b"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"0f31da97-83e2-40b2-b2e2-b053c633e8d0","elementid":"f2ed931b-f216-41ce-9f93-27303bf0eefe","modelid":"cdfd63b2-ae2e-41d4-9935-05e799f0510b"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

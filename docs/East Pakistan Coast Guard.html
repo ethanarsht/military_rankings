@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="2a9a35ae-d967-4816-9965-2d6a2e76f989"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"e2cab13f-0c4a-4d90-974f-06458b5842e7":{"roots":{"references":[{"attributes":{},"id":"6095e9a4-7c31-4bd9-9a02-04ed07de45f5","type":"LinearScale"},{"attributes":{"source":{"id":"879c2ceb-bc37-44db-8a18-faf1af8d7dd8","type":"ColumnDataSource"}},"id":"c9800a11-90b8-4fa1-9d5c-6ea071b37087","type":"CDSView"},{"attributes":{},"id":"7bb0133d-065e-4746-8d6e-028c3f5ac812","type":"BasicTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"a81a848f-072d-4808-bfec-db092f344503","type":"Line"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d0e91207-80df-4332-9802-e1c963cd3f10","type":"Line"},{"attributes":{"callback":null,"factors":["Indo-Pakistani War of 1971"]},"id":"2335c7e6-422b-425a-b02f-70f6e37ef311","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"471e7389-7381-49a3-9c43-879fe7d9bda1","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"471e7389-7381-49a3-9c43-879fe7d9bda1","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"0f44bac5-0218-41d9-9b2c-e4d03ea7b93f","type":"VBar"},{"attributes":{"plot":{"id":"b28f6d71-c915-4009-bb77-5f91a280b07e","subtype":"Figure","type":"Plot"},"ticker":{"id":"bd771189-1cb5-42b3-96c2-2b63e6f5a7dc","type":"CategoricalTicker"}},"id":"dc1b6bb6-d4c4-4763-9b09-3dc3bd554961","type":"Grid"},{"attributes":{"dimension":1,"plot":{"id":"b28f6d71-c915-4009-bb77-5f91a280b07e","subtype":"Figure","type":"Plot"},"ticker":{"id":"d06167b3-866d-4a88-8578-3476f29eb57b","type":"BasicTicker"}},"id":"0d79307f-4617-410a-b0b2-2847c497ff7e","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"069864df-48d6-42bc-a776-f5e741095c39","type":"HoverTool"},{"attributes":{},"id":"bd771189-1cb5-42b3-96c2-2b63e6f5a7dc","type":"CategoricalTicker"},{"attributes":{"callback":null},"id":"fa8d9f2d-4f50-40c6-92ab-905c7505ef56","type":"DataRange1d"},{"attributes":{"plot":null,"text":"East Pakistan Coast Guard (0 - 0 - 1)"},"id":"a760e171-3200-4666-b8b1-1d10892d208a","type":"Title"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"471e7389-7381-49a3-9c43-879fe7d9bda1","type":"CategoricalColorMapper"},{"attributes":{},"id":"32dae23e-3f6b-440e-8141-3c97e8d2344c","type":"CategoricalScale"},{"attributes":{"source":{"id":"879c2ceb-bc37-44db-8a18-faf1af8d7dd8","type":"ColumnDataSource"}},"id":"90ca3ade-cf23-4566-8cb6-eaf1eb59ccab","type":"CDSView"},{"attributes":{"formatter":{"id":"f02fbc87-d050-410e-bfb8-5e6b023c55d9","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"b28f6d71-c915-4009-bb77-5f91a280b07e","subtype":"Figure","type":"Plot"},"ticker":{"id":"bd771189-1cb5-42b3-96c2-2b63e6f5a7dc","type":"CategoricalTicker"}},"id":"9c300834-7ebc-4844-8326-97bfdb9a5038","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"03bc42b1-de2b-45ee-961e-025a841db244","type":"VBar"},{"attributes":{},"id":"d06167b3-866d-4a88-8578-3476f29eb57b","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"069864df-48d6-42bc-a776-f5e741095c39","type":"HoverTool"}]},"id":"587b8517-b0bf-4fb2-8954-c66bff66b15b","type":"Toolbar"},{"attributes":{"formatter":{"id":"7bb0133d-065e-4746-8d6e-028c3f5ac812","type":"BasicTickFormatter"},"plot":{"id":"b28f6d71-c915-4009-bb77-5f91a280b07e","subtype":"Figure","type":"Plot"},"ticker":{"id":"d06167b3-866d-4a88-8578-3476f29eb57b","type":"BasicTicker"}},"id":"d60a23cc-bfa6-4a4a-ac78-45861049e74d","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Indo-Pakistani War of 1971"],"cumulative":{"__ndarray__":"SQpBzq4k3r8=","dtype":"float64","shape":[1]},"general":["East Pakistan Coast Guard"],"outcome":["D"],"value":{"__ndarray__":"SQpBzq4k3r8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADMnkA=","dtype":"float64","shape":[1]}}},"id":"879c2ceb-bc37-44db-8a18-faf1af8d7dd8","type":"ColumnDataSource"},{"attributes":{},"id":"f02fbc87-d050-410e-bfb8-5e6b023c55d9","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"879c2ceb-bc37-44db-8a18-faf1af8d7dd8","type":"ColumnDataSource"},"glyph":{"id":"0f44bac5-0218-41d9-9b2c-e4d03ea7b93f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"03bc42b1-de2b-45ee-961e-025a841db244","type":"VBar"},"selection_glyph":null,"view":{"id":"90ca3ade-cf23-4566-8cb6-eaf1eb59ccab","type":"CDSView"}},"id":"b75b41a2-2117-445b-97b5-3281bfa0e016","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"879c2ceb-bc37-44db-8a18-faf1af8d7dd8","type":"ColumnDataSource"},"glyph":{"id":"d0e91207-80df-4332-9802-e1c963cd3f10","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a81a848f-072d-4808-bfec-db092f344503","type":"Line"},"selection_glyph":null,"view":{"id":"c9800a11-90b8-4fa1-9d5c-6ea071b37087","type":"CDSView"}},"id":"7cd5bc7e-4225-4d84-b158-d7a8e427e8bb","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"9c300834-7ebc-4844-8326-97bfdb9a5038","type":"CategoricalAxis"}],"left":[{"id":"d60a23cc-bfa6-4a4a-ac78-45861049e74d","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"9c300834-7ebc-4844-8326-97bfdb9a5038","type":"CategoricalAxis"},{"id":"dc1b6bb6-d4c4-4763-9b09-3dc3bd554961","type":"Grid"},{"id":"d60a23cc-bfa6-4a4a-ac78-45861049e74d","type":"LinearAxis"},{"id":"0d79307f-4617-410a-b0b2-2847c497ff7e","type":"Grid"},{"id":"7cd5bc7e-4225-4d84-b158-d7a8e427e8bb","type":"GlyphRenderer"},{"id":"b75b41a2-2117-445b-97b5-3281bfa0e016","type":"GlyphRenderer"}],"title":{"id":"a760e171-3200-4666-b8b1-1d10892d208a","type":"Title"},"toolbar":{"id":"587b8517-b0bf-4fb2-8954-c66bff66b15b","type":"Toolbar"},"x_range":{"id":"2335c7e6-422b-425a-b02f-70f6e37ef311","type":"FactorRange"},"x_scale":{"id":"32dae23e-3f6b-440e-8141-3c97e8d2344c","type":"CategoricalScale"},"y_range":{"id":"fa8d9f2d-4f50-40c6-92ab-905c7505ef56","type":"DataRange1d"},"y_scale":{"id":"6095e9a4-7c31-4bd9-9a02-04ed07de45f5","type":"LinearScale"}},"id":"b28f6d71-c915-4009-bb77-5f91a280b07e","subtype":"Figure","type":"Plot"}],"root_ids":["b28f6d71-c915-4009-bb77-5f91a280b07e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"e2cab13f-0c4a-4d90-974f-06458b5842e7","elementid":"2a9a35ae-d967-4816-9965-2d6a2e76f989","modelid":"b28f6d71-c915-4009-bb77-5f91a280b07e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

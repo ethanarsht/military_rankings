@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="80c49283-862e-479f-a1d1-0aa0f18fd9b2"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"322a0dc9-1e24-4140-b62d-4f0046bbb1af":{"roots":{"references":[{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"8051eba2-a4e7-4914-a124-622a07a7d61d","type":"HoverTool"},{"attributes":{},"id":"4f5e6d89-6255-4e2d-8b30-507214f56fd2","type":"BasicTicker"},{"attributes":{},"id":"b70779d4-0d63-43e0-acea-423fe4fc73f5","type":"CategoricalTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"8051eba2-a4e7-4914-a124-622a07a7d61d","type":"HoverTool"}]},"id":"620abe82-8482-4b9f-8fb5-c40cf858b4d7","type":"Toolbar"},{"attributes":{"data_source":{"id":"212f209f-cba6-4e16-8f39-59bb34361674","type":"ColumnDataSource"},"glyph":{"id":"1f218867-8242-4b7f-9051-3fb52862eb28","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ee1ce8d9-3f85-44aa-be22-91302a26aa07","type":"Line"},"selection_glyph":null,"view":{"id":"a721b220-5b1e-42b8-aca4-ec86f6c15172","type":"CDSView"}},"id":"2eb65078-fce2-4062-9899-87ae0df1bd95","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"5fddbc8a-0a81-4805-bb25-63be1894541c","type":"DataRange1d"},{"attributes":{"source":{"id":"212f209f-cba6-4e16-8f39-59bb34361674","type":"ColumnDataSource"}},"id":"d6aaf19d-0d49-4536-a769-39c4ab553eab","type":"CDSView"},{"attributes":{"below":[{"id":"59678c88-6322-4cac-912f-2fed01552354","type":"CategoricalAxis"}],"left":[{"id":"b16d5c9a-e7fa-4f9f-a61d-31d09be9d73c","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"59678c88-6322-4cac-912f-2fed01552354","type":"CategoricalAxis"},{"id":"e3451ad1-1256-4e21-a792-74b072f23137","type":"Grid"},{"id":"b16d5c9a-e7fa-4f9f-a61d-31d09be9d73c","type":"LinearAxis"},{"id":"ccc6a45c-88e1-41bb-85fc-1decd305b06d","type":"Grid"},{"id":"2eb65078-fce2-4062-9899-87ae0df1bd95","type":"GlyphRenderer"},{"id":"b85be4ff-5fac-4c1a-a366-d451de4e4c55","type":"GlyphRenderer"}],"title":{"id":"424c9908-0a72-4591-ae85-07e77d63570c","type":"Title"},"toolbar":{"id":"620abe82-8482-4b9f-8fb5-c40cf858b4d7","type":"Toolbar"},"x_range":{"id":"1fb71ef2-c725-4376-b76c-3f3690235103","type":"FactorRange"},"x_scale":{"id":"ae13d84f-4921-4b46-bc41-ef44a865b58c","type":"CategoricalScale"},"y_range":{"id":"5fddbc8a-0a81-4805-bb25-63be1894541c","type":"DataRange1d"},"y_scale":{"id":"87161298-045f-4635-b0d2-b5039ca4ed38","type":"LinearScale"}},"id":"6f33c768-f97e-458a-8344-82e01436b629","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1c00cf94-c6a6-49b6-a84b-64bf2e7b9811","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"6f33c768-f97e-458a-8344-82e01436b629","subtype":"Figure","type":"Plot"},"ticker":{"id":"4f5e6d89-6255-4e2d-8b30-507214f56fd2","type":"BasicTicker"}},"id":"ccc6a45c-88e1-41bb-85fc-1decd305b06d","type":"Grid"},{"attributes":{},"id":"87161298-045f-4635-b0d2-b5039ca4ed38","type":"LinearScale"},{"attributes":{"plot":{"id":"6f33c768-f97e-458a-8344-82e01436b629","subtype":"Figure","type":"Plot"},"ticker":{"id":"b70779d4-0d63-43e0-acea-423fe4fc73f5","type":"CategoricalTicker"}},"id":"e3451ad1-1256-4e21-a792-74b072f23137","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"28da56e1-15bb-4d33-a6be-81d90540877f","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"28da56e1-15bb-4d33-a6be-81d90540877f","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"689bf3f8-12b8-4d3b-b8e4-58b39e500ede","type":"VBar"},{"attributes":{},"id":"59615686-af3d-43b2-9119-f582089a6222","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Calabria","Battle of Cape Spartivento","Battle of Taranto"],"cumulative":{"__ndarray__":"wFh8ObeMk7/AM0QO+0B4PyoFFZoyYuK/","dtype":"float64","shape":[3]},"general":["Inigo Campioni","Inigo Campioni","Inigo Campioni"],"outcome":["I","I","D"],"value":{"__ndarray__":"wFh8ObeMk7+wZQ399ZyZP5KNMZC0kuK/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAABQnkAAAAAAAFCeQAAAAAAAUJ5A","dtype":"float64","shape":[3]}}},"id":"212f209f-cba6-4e16-8f39-59bb34361674","type":"ColumnDataSource"},{"attributes":{"source":{"id":"212f209f-cba6-4e16-8f39-59bb34361674","type":"ColumnDataSource"}},"id":"a721b220-5b1e-42b8-aca4-ec86f6c15172","type":"CDSView"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1f218867-8242-4b7f-9051-3fb52862eb28","type":"Line"},{"attributes":{"formatter":{"id":"1c00cf94-c6a6-49b6-a84b-64bf2e7b9811","type":"BasicTickFormatter"},"plot":{"id":"6f33c768-f97e-458a-8344-82e01436b629","subtype":"Figure","type":"Plot"},"ticker":{"id":"4f5e6d89-6255-4e2d-8b30-507214f56fd2","type":"BasicTicker"}},"id":"b16d5c9a-e7fa-4f9f-a61d-31d09be9d73c","type":"LinearAxis"},{"attributes":{"formatter":{"id":"59615686-af3d-43b2-9119-f582089a6222","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"6f33c768-f97e-458a-8344-82e01436b629","subtype":"Figure","type":"Plot"},"ticker":{"id":"b70779d4-0d63-43e0-acea-423fe4fc73f5","type":"CategoricalTicker"}},"id":"59678c88-6322-4cac-912f-2fed01552354","type":"CategoricalAxis"},{"attributes":{},"id":"ae13d84f-4921-4b46-bc41-ef44a865b58c","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"212f209f-cba6-4e16-8f39-59bb34361674","type":"ColumnDataSource"},"glyph":{"id":"689bf3f8-12b8-4d3b-b8e4-58b39e500ede","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"059097de-e300-4175-97e7-f3b57c0a23ab","type":"VBar"},"selection_glyph":null,"view":{"id":"d6aaf19d-0d49-4536-a769-39c4ab553eab","type":"CDSView"}},"id":"b85be4ff-5fac-4c1a-a366-d451de4e4c55","type":"GlyphRenderer"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"28da56e1-15bb-4d33-a6be-81d90540877f","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"factors":["Battle of Calabria","Battle of Cape Spartivento","Battle of Taranto"]},"id":"1fb71ef2-c725-4376-b76c-3f3690235103","type":"FactorRange"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"ee1ce8d9-3f85-44aa-be22-91302a26aa07","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"059097de-e300-4175-97e7-f3b57c0a23ab","type":"VBar"},{"attributes":{"plot":null,"text":"Inigo Campioni (0 - 2 - 1)"},"id":"424c9908-0a72-4591-ae85-07e77d63570c","type":"Title"}],"root_ids":["6f33c768-f97e-458a-8344-82e01436b629"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"322a0dc9-1e24-4140-b62d-4f0046bbb1af","elementid":"80c49283-862e-479f-a1d1-0aa0f18fd9b2","modelid":"6f33c768-f97e-458a-8344-82e01436b629"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

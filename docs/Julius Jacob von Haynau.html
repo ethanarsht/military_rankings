@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="39b7a2e1-06e2-49fa-9a6e-793f8df4637c"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"3cbc0fcd-e82e-4aed-b144-c19cf5da838e":{"roots":{"references":[{"attributes":{"formatter":{"id":"ef62ffe5-35dc-493f-8c8c-953e0efac277","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"bfd4de43-24b8-4100-9403-a61312bda8f8","subtype":"Figure","type":"Plot"},"ticker":{"id":"55b9e19e-cf4a-43cd-9eaf-11086649d057","type":"CategoricalTicker"}},"id":"30162b9a-1eb8-4e94-ad73-6cce43c8af96","type":"CategoricalAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"2a96e7ba-7fa6-4eb7-94f8-a52086611acc","type":"CategoricalColorMapper"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"f88bfe5b-43f9-4306-8f8b-d2d2b9a0bb73","type":"HoverTool"},{"attributes":{},"id":"55b9e19e-cf4a-43cd-9eaf-11086649d057","type":"CategoricalTicker"},{"attributes":{},"id":"ed96e34a-9f55-4852-8bab-3cc32d264f2d","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"ed96e34a-9f55-4852-8bab-3cc32d264f2d","type":"BasicTickFormatter"},"plot":{"id":"bfd4de43-24b8-4100-9403-a61312bda8f8","subtype":"Figure","type":"Plot"},"ticker":{"id":"3368bbea-e937-4d72-8692-24467f306e57","type":"BasicTicker"}},"id":"95d874aa-0023-406a-9473-34ef187f7637","type":"LinearAxis"},{"attributes":{"dimension":1,"plot":{"id":"bfd4de43-24b8-4100-9403-a61312bda8f8","subtype":"Figure","type":"Plot"},"ticker":{"id":"3368bbea-e937-4d72-8692-24467f306e57","type":"BasicTicker"}},"id":"b398ce1e-bbfb-424e-bc04-3c6afa97b59f","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Ten Days of Brescia"],"cumulative":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"general":["Julius Jacob von Haynau"],"outcome":["V"],"value":{"__ndarray__":"AAAAAAAA4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAADknEA=","dtype":"float64","shape":[1]}}},"id":"e3dbdcba-6a72-4c7e-88e5-166dfedec768","type":"ColumnDataSource"},{"attributes":{"source":{"id":"e3dbdcba-6a72-4c7e-88e5-166dfedec768","type":"ColumnDataSource"}},"id":"8dceaaf7-851c-4bee-b7d5-2f031db2b4e5","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"51d98d2f-b058-48b4-8d41-f5505e8a9046","type":"VBar"},{"attributes":{"plot":{"id":"bfd4de43-24b8-4100-9403-a61312bda8f8","subtype":"Figure","type":"Plot"},"ticker":{"id":"55b9e19e-cf4a-43cd-9eaf-11086649d057","type":"CategoricalTicker"}},"id":"28be1a83-939d-4446-8f0a-42dd27911fba","type":"Grid"},{"attributes":{"below":[{"id":"30162b9a-1eb8-4e94-ad73-6cce43c8af96","type":"CategoricalAxis"}],"left":[{"id":"95d874aa-0023-406a-9473-34ef187f7637","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"30162b9a-1eb8-4e94-ad73-6cce43c8af96","type":"CategoricalAxis"},{"id":"28be1a83-939d-4446-8f0a-42dd27911fba","type":"Grid"},{"id":"95d874aa-0023-406a-9473-34ef187f7637","type":"LinearAxis"},{"id":"b398ce1e-bbfb-424e-bc04-3c6afa97b59f","type":"Grid"},{"id":"1f90a868-fe97-4025-b4f2-c8117e1cfb00","type":"GlyphRenderer"},{"id":"deb5d40c-2b33-41b0-a39a-910fc86445be","type":"GlyphRenderer"}],"title":{"id":"dc81f488-f07e-4e96-91dc-004d8733a00c","type":"Title"},"toolbar":{"id":"99176264-5ae9-41ce-8803-5bd2196955c4","type":"Toolbar"},"x_range":{"id":"e6db51e6-445d-4855-9960-2fac5219748b","type":"FactorRange"},"x_scale":{"id":"f8250e06-c0d0-4ad6-b00e-e886dcbe8d32","type":"CategoricalScale"},"y_range":{"id":"1fc6ac4a-808a-4df3-85cd-f2d79db26b50","type":"DataRange1d"},"y_scale":{"id":"2f6f0769-3adf-4bdf-ac6f-13bef3880cae","type":"LinearScale"}},"id":"bfd4de43-24b8-4100-9403-a61312bda8f8","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f88bfe5b-43f9-4306-8f8b-d2d2b9a0bb73","type":"HoverTool"}]},"id":"99176264-5ae9-41ce-8803-5bd2196955c4","type":"Toolbar"},{"attributes":{"source":{"id":"e3dbdcba-6a72-4c7e-88e5-166dfedec768","type":"ColumnDataSource"}},"id":"baeb1927-16a9-4e55-8164-48c048754db7","type":"CDSView"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"fb558059-e46a-4299-a879-6f7a78a92ddc","type":"Line"},{"attributes":{"callback":null,"factors":["Ten Days of Brescia"]},"id":"e6db51e6-445d-4855-9960-2fac5219748b","type":"FactorRange"},{"attributes":{},"id":"ef62ffe5-35dc-493f-8c8c-953e0efac277","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"e3dbdcba-6a72-4c7e-88e5-166dfedec768","type":"ColumnDataSource"},"glyph":{"id":"19749aa7-77d6-48a8-94cb-b7517b8cebbf","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"fb558059-e46a-4299-a879-6f7a78a92ddc","type":"Line"},"selection_glyph":null,"view":{"id":"baeb1927-16a9-4e55-8164-48c048754db7","type":"CDSView"}},"id":"1f90a868-fe97-4025-b4f2-c8117e1cfb00","type":"GlyphRenderer"},{"attributes":{},"id":"f8250e06-c0d0-4ad6-b00e-e886dcbe8d32","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"2a96e7ba-7fa6-4eb7-94f8-a52086611acc","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"2a96e7ba-7fa6-4eb7-94f8-a52086611acc","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6bae699e-6a02-47d2-90d1-5c7bdd2275cd","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"19749aa7-77d6-48a8-94cb-b7517b8cebbf","type":"Line"},{"attributes":{"callback":null},"id":"1fc6ac4a-808a-4df3-85cd-f2d79db26b50","type":"DataRange1d"},{"attributes":{},"id":"2f6f0769-3adf-4bdf-ac6f-13bef3880cae","type":"LinearScale"},{"attributes":{},"id":"3368bbea-e937-4d72-8692-24467f306e57","type":"BasicTicker"},{"attributes":{"data_source":{"id":"e3dbdcba-6a72-4c7e-88e5-166dfedec768","type":"ColumnDataSource"},"glyph":{"id":"6bae699e-6a02-47d2-90d1-5c7bdd2275cd","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"51d98d2f-b058-48b4-8d41-f5505e8a9046","type":"VBar"},"selection_glyph":null,"view":{"id":"8dceaaf7-851c-4bee-b7d5-2f031db2b4e5","type":"CDSView"}},"id":"deb5d40c-2b33-41b0-a39a-910fc86445be","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Julius Jacob von Haynau (1 - 0 - 0)"},"id":"dc81f488-f07e-4e96-91dc-004d8733a00c","type":"Title"}],"root_ids":["bfd4de43-24b8-4100-9403-a61312bda8f8"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"3cbc0fcd-e82e-4aed-b144-c19cf5da838e","elementid":"39b7a2e1-06e2-49fa-9a6e-793f8df4637c","modelid":"bfd4de43-24b8-4100-9403-a61312bda8f8"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

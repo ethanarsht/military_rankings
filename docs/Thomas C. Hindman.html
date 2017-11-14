@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c2be6c3f-d968-4302-bda7-e9857c9eeddd"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"fe2ee12e-992b-41ec-b7bb-40f76d083bf2":{"roots":{"references":[{"attributes":{},"id":"f555508a-4274-4abd-a9b7-cccf977959b2","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"factors":["Battle of Hill's Plantation","Battle of Prairie Grove","Battle of Davis' Cross Roads"]},"id":"2a022a42-985d-43d5-8526-6dfdb18d31db","type":"FactorRange"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"c5c76b39-6325-410c-9c1c-b46a8f44b3f9","type":"Line"},{"attributes":{},"id":"9de4523d-b697-4297-b545-52eddd28e31a","type":"CategoricalScale"},{"attributes":{"below":[{"id":"3cb666ea-9da6-40ab-8853-f71af3130e53","type":"CategoricalAxis"}],"left":[{"id":"c4b9d4c1-3d5b-4dba-b3b6-7c24ef1231b7","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"3cb666ea-9da6-40ab-8853-f71af3130e53","type":"CategoricalAxis"},{"id":"b53c322f-b036-440f-90ec-0984b3b669d7","type":"Grid"},{"id":"c4b9d4c1-3d5b-4dba-b3b6-7c24ef1231b7","type":"LinearAxis"},{"id":"790be068-09a1-47f9-b483-6a6fe8c5b0a1","type":"Grid"},{"id":"76cdae9a-6277-419c-8d3d-0b983b0c5744","type":"GlyphRenderer"},{"id":"0d555b9d-1125-41a3-a51e-b37cfa7022d3","type":"GlyphRenderer"}],"title":{"id":"f864e4db-82f5-48ab-ad03-206beda49a71","type":"Title"},"toolbar":{"id":"0f8081bb-5feb-4c6b-9479-70eb33654a3b","type":"Toolbar"},"x_range":{"id":"2a022a42-985d-43d5-8526-6dfdb18d31db","type":"FactorRange"},"x_scale":{"id":"9de4523d-b697-4297-b545-52eddd28e31a","type":"CategoricalScale"},"y_range":{"id":"35111158-0c54-430d-add8-0b03ca247ec1","type":"DataRange1d"},"y_scale":{"id":"d3d06c22-a4d7-492c-961f-b33aef9090e6","type":"LinearScale"}},"id":"b253f739-889b-4adc-953e-43c517f3861c","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"fe36b385-1e67-4ca5-a715-6315028b3e92","type":"VBar"},{"attributes":{},"id":"c40f5340-94a2-4992-b542-3982f23d8d02","type":"BasicTicker"},{"attributes":{"formatter":{"id":"299d176f-1f9c-4041-8b54-c673830c8242","type":"BasicTickFormatter"},"plot":{"id":"b253f739-889b-4adc-953e-43c517f3861c","subtype":"Figure","type":"Plot"},"ticker":{"id":"c40f5340-94a2-4992-b542-3982f23d8d02","type":"BasicTicker"}},"id":"c4b9d4c1-3d5b-4dba-b3b6-7c24ef1231b7","type":"LinearAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"15141e4d-f9da-470e-ad63-bdb5d678e0aa","type":"Line"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"5bc688e9-81ea-43a4-b61c-6ad0f63dd0e7","type":"HoverTool"},{"attributes":{"dimension":1,"plot":{"id":"b253f739-889b-4adc-953e-43c517f3861c","subtype":"Figure","type":"Plot"},"ticker":{"id":"c40f5340-94a2-4992-b542-3982f23d8d02","type":"BasicTicker"}},"id":"790be068-09a1-47f9-b483-6a6fe8c5b0a1","type":"Grid"},{"attributes":{},"id":"d3d06c22-a4d7-492c-961f-b33aef9090e6","type":"LinearScale"},{"attributes":{"callback":null},"id":"35111158-0c54-430d-add8-0b03ca247ec1","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"5bc688e9-81ea-43a4-b61c-6ad0f63dd0e7","type":"HoverTool"}]},"id":"0f8081bb-5feb-4c6b-9479-70eb33654a3b","type":"Toolbar"},{"attributes":{"data_source":{"id":"06cc0fdb-ca1b-4813-8063-c9b1f35969b4","type":"ColumnDataSource"},"glyph":{"id":"0f7cf7b6-d5a9-46df-a97e-94a6a83264bb","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"fe36b385-1e67-4ca5-a715-6315028b3e92","type":"VBar"},"selection_glyph":null,"view":{"id":"6d089807-076f-4310-ba1a-d9c3ef7ef411","type":"CDSView"}},"id":"0d555b9d-1125-41a3-a51e-b37cfa7022d3","type":"GlyphRenderer"},{"attributes":{},"id":"299d176f-1f9c-4041-8b54-c673830c8242","type":"BasicTickFormatter"},{"attributes":{"plot":null,"text":"Thomas C. Hindman (0 - 1 - 2)"},"id":"f864e4db-82f5-48ab-ad03-206beda49a71","type":"Title"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Hill's Plantation","Battle of Prairie Grove","Battle of Davis' Cross Roads"],"cumulative":{"__ndarray__":"0jOKnvg647/mbQkzysnxv1P67n3WI/K/","dtype":"float64","shape":[3]},"general":["Thomas C. Hindman","Thomas C. Hindman","Thomas C. Hindman"],"outcome":["D","D","I"],"value":{"__ndarray__":"0jOKnvg647/5p4jHm1jgv0AbY7kSg5a/","dtype":"float64","shape":[3]},"year":{"__ndarray__":"AAAAAAAYnUAAAAAAABidQAAAAAAAHJ1A","dtype":"float64","shape":[3]}}},"id":"06cc0fdb-ca1b-4813-8063-c9b1f35969b4","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"f555508a-4274-4abd-a9b7-cccf977959b2","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"b253f739-889b-4adc-953e-43c517f3861c","subtype":"Figure","type":"Plot"},"ticker":{"id":"521c7b76-8141-45a5-b22e-d2b4c9c882c3","type":"CategoricalTicker"}},"id":"3cb666ea-9da6-40ab-8853-f71af3130e53","type":"CategoricalAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"191bf510-b7be-45f4-bf6a-8978c9d3dbd3","type":"CategoricalColorMapper"},{"attributes":{"plot":{"id":"b253f739-889b-4adc-953e-43c517f3861c","subtype":"Figure","type":"Plot"},"ticker":{"id":"521c7b76-8141-45a5-b22e-d2b4c9c882c3","type":"CategoricalTicker"}},"id":"b53c322f-b036-440f-90ec-0984b3b669d7","type":"Grid"},{"attributes":{"data_source":{"id":"06cc0fdb-ca1b-4813-8063-c9b1f35969b4","type":"ColumnDataSource"},"glyph":{"id":"15141e4d-f9da-470e-ad63-bdb5d678e0aa","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c5c76b39-6325-410c-9c1c-b46a8f44b3f9","type":"Line"},"selection_glyph":null,"view":{"id":"fe3ca194-be1b-4f9e-8487-0c2ed660069b","type":"CDSView"}},"id":"76cdae9a-6277-419c-8d3d-0b983b0c5744","type":"GlyphRenderer"},{"attributes":{},"id":"521c7b76-8141-45a5-b22e-d2b4c9c882c3","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"191bf510-b7be-45f4-bf6a-8978c9d3dbd3","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"191bf510-b7be-45f4-bf6a-8978c9d3dbd3","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"0f7cf7b6-d5a9-46df-a97e-94a6a83264bb","type":"VBar"},{"attributes":{"source":{"id":"06cc0fdb-ca1b-4813-8063-c9b1f35969b4","type":"ColumnDataSource"}},"id":"fe3ca194-be1b-4f9e-8487-0c2ed660069b","type":"CDSView"},{"attributes":{"source":{"id":"06cc0fdb-ca1b-4813-8063-c9b1f35969b4","type":"ColumnDataSource"}},"id":"6d089807-076f-4310-ba1a-d9c3ef7ef411","type":"CDSView"}],"root_ids":["b253f739-889b-4adc-953e-43c517f3861c"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"fe2ee12e-992b-41ec-b7bb-40f76d083bf2","elementid":"c2be6c3f-d968-4302-bda7-e9857c9eeddd","modelid":"b253f739-889b-4adc-953e-43c517f3861c"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

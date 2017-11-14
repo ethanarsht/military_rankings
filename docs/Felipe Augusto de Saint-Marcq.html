@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="1ece9776-0d33-4c4c-bc2d-fa27ddf923b0"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"4d5ae7d7-c05b-4f15-83f2-e20bae0b3616":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"21bb4536-b55e-4747-b948-33339ad4c589","type":"HoverTool"}]},"id":"a3ea1edb-76be-46fb-9d91-996f021f8b27","type":"Toolbar"},{"attributes":{"callback":null},"id":"a72d4ca0-6382-4ece-bf69-a937d6e9dc21","type":"DataRange1d"},{"attributes":{"source":{"id":"92ddab84-04a8-4f34-ae1f-c07f83693b8c","type":"ColumnDataSource"}},"id":"9ceb9d49-3f15-432e-b9a5-c7d6441bf565","type":"CDSView"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["First Siege of Zaragoza"],"cumulative":{"__ndarray__":"uKtkCAmR4D8=","dtype":"float64","shape":[1]},"general":["Felipe Augusto de Saint-Marcq"],"outcome":["V"],"value":{"__ndarray__":"uKtkCAmR4D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABAnEA=","dtype":"float64","shape":[1]}}},"id":"92ddab84-04a8-4f34-ae1f-c07f83693b8c","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"2ee200fc-9c80-4410-9eea-e55d33427bde","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"2ee200fc-9c80-4410-9eea-e55d33427bde","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"732e8368-0524-4da3-8454-b34ece63da6b","type":"VBar"},{"attributes":{},"id":"b450a6e8-4688-449b-8fc7-1588812a468d","type":"LinearScale"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"2ee200fc-9c80-4410-9eea-e55d33427bde","type":"CategoricalColorMapper"},{"attributes":{},"id":"83a7211b-6a3a-4f6e-831c-bbdb9040c64f","type":"BasicTicker"},{"attributes":{"source":{"id":"92ddab84-04a8-4f34-ae1f-c07f83693b8c","type":"ColumnDataSource"}},"id":"618dd42c-ed15-48b5-97d2-75b384d114b6","type":"CDSView"},{"attributes":{},"id":"0eed1d44-666e-4616-988e-3890aa69e79a","type":"CategoricalTicker"},{"attributes":{"plot":null,"text":"Felipe Augusto de Saint-Marcq (1 - 0 - 0)"},"id":"e062bc04-8603-4b12-9b45-cdc6c929cf86","type":"Title"},{"attributes":{"callback":null,"factors":["First Siege of Zaragoza"]},"id":"6255bbc4-6964-4930-b020-88bcf4df5a98","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"21bb4536-b55e-4747-b948-33339ad4c589","type":"HoverTool"},{"attributes":{"data_source":{"id":"92ddab84-04a8-4f34-ae1f-c07f83693b8c","type":"ColumnDataSource"},"glyph":{"id":"74199258-212e-4a8b-b70e-8bdcc0dabc17","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"dc5e6306-e964-41c3-a615-4a12b5f44a15","type":"Line"},"selection_glyph":null,"view":{"id":"618dd42c-ed15-48b5-97d2-75b384d114b6","type":"CDSView"}},"id":"9d9771c2-a133-4425-8273-33d0f86f363d","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"3b4f4002-de93-4bd1-9abc-f3f2eec5ccad","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"74199258-212e-4a8b-b70e-8bdcc0dabc17","type":"Line"},{"attributes":{"formatter":{"id":"8bcf6818-90eb-4e0a-be9f-d218f9c9765b","type":"BasicTickFormatter"},"plot":{"id":"71d77a3a-34fb-4924-912c-b543778ff310","subtype":"Figure","type":"Plot"},"ticker":{"id":"83a7211b-6a3a-4f6e-831c-bbdb9040c64f","type":"BasicTicker"}},"id":"2fc397eb-b8d4-4d90-9afa-8eba46d9a87c","type":"LinearAxis"},{"attributes":{},"id":"8bcf6818-90eb-4e0a-be9f-d218f9c9765b","type":"BasicTickFormatter"},{"attributes":{"below":[{"id":"516023bc-ee91-419b-ae27-fb775f3bdadd","type":"CategoricalAxis"}],"left":[{"id":"2fc397eb-b8d4-4d90-9afa-8eba46d9a87c","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"516023bc-ee91-419b-ae27-fb775f3bdadd","type":"CategoricalAxis"},{"id":"73c496f1-1dec-4a8b-ab8f-a4f19f18717e","type":"Grid"},{"id":"2fc397eb-b8d4-4d90-9afa-8eba46d9a87c","type":"LinearAxis"},{"id":"f107e044-696d-43c5-a6b3-69cab2c45861","type":"Grid"},{"id":"9d9771c2-a133-4425-8273-33d0f86f363d","type":"GlyphRenderer"},{"id":"4866a28c-22bf-4329-a0f7-512760e3b0ee","type":"GlyphRenderer"}],"title":{"id":"e062bc04-8603-4b12-9b45-cdc6c929cf86","type":"Title"},"toolbar":{"id":"a3ea1edb-76be-46fb-9d91-996f021f8b27","type":"Toolbar"},"x_range":{"id":"6255bbc4-6964-4930-b020-88bcf4df5a98","type":"FactorRange"},"x_scale":{"id":"040dd9d6-2372-4d66-949e-c87b69e1b9e2","type":"CategoricalScale"},"y_range":{"id":"a72d4ca0-6382-4ece-bf69-a937d6e9dc21","type":"DataRange1d"},"y_scale":{"id":"b450a6e8-4688-449b-8fc7-1588812a468d","type":"LinearScale"}},"id":"71d77a3a-34fb-4924-912c-b543778ff310","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"040dd9d6-2372-4d66-949e-c87b69e1b9e2","type":"CategoricalScale"},{"attributes":{},"id":"d9f08b90-dc50-411e-8603-04d710610863","type":"CategoricalTickFormatter"},{"attributes":{"plot":{"id":"71d77a3a-34fb-4924-912c-b543778ff310","subtype":"Figure","type":"Plot"},"ticker":{"id":"0eed1d44-666e-4616-988e-3890aa69e79a","type":"CategoricalTicker"}},"id":"73c496f1-1dec-4a8b-ab8f-a4f19f18717e","type":"Grid"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"dc5e6306-e964-41c3-a615-4a12b5f44a15","type":"Line"},{"attributes":{"dimension":1,"plot":{"id":"71d77a3a-34fb-4924-912c-b543778ff310","subtype":"Figure","type":"Plot"},"ticker":{"id":"83a7211b-6a3a-4f6e-831c-bbdb9040c64f","type":"BasicTicker"}},"id":"f107e044-696d-43c5-a6b3-69cab2c45861","type":"Grid"},{"attributes":{"data_source":{"id":"92ddab84-04a8-4f34-ae1f-c07f83693b8c","type":"ColumnDataSource"},"glyph":{"id":"732e8368-0524-4da3-8454-b34ece63da6b","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3b4f4002-de93-4bd1-9abc-f3f2eec5ccad","type":"VBar"},"selection_glyph":null,"view":{"id":"9ceb9d49-3f15-432e-b9a5-c7d6441bf565","type":"CDSView"}},"id":"4866a28c-22bf-4329-a0f7-512760e3b0ee","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"d9f08b90-dc50-411e-8603-04d710610863","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"71d77a3a-34fb-4924-912c-b543778ff310","subtype":"Figure","type":"Plot"},"ticker":{"id":"0eed1d44-666e-4616-988e-3890aa69e79a","type":"CategoricalTicker"}},"id":"516023bc-ee91-419b-ae27-fb775f3bdadd","type":"CategoricalAxis"}],"root_ids":["71d77a3a-34fb-4924-912c-b543778ff310"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"4d5ae7d7-c05b-4f15-83f2-e20bae0b3616","elementid":"1ece9776-0d33-4c4c-bc2d-fa27ddf923b0","modelid":"71d77a3a-34fb-4924-912c-b543778ff310"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

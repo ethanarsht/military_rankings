@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d9506ed8-3681-4396-99ae-56d17456ad71"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"4f8a3beb-7f12-4023-be40-ad1b21e99a44":{"roots":{"references":[{"attributes":{"source":{"id":"f94fac12-1077-4259-98e8-061e722af0e9","type":"ColumnDataSource"}},"id":"63c496ac-823d-414a-b182-af1b3b3cb909","type":"CDSView"},{"attributes":{"callback":null},"id":"08312f7e-445b-46b1-b7c1-ee7bbaad65c3","type":"DataRange1d"},{"attributes":{"formatter":{"id":"7b756268-f7a9-45fa-861e-85ab2d0f0a09","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"73324ca9-449a-4544-8659-94656e394b1a","subtype":"Figure","type":"Plot"},"ticker":{"id":"066d77ec-48f9-493b-993f-17fd710db3b5","type":"CategoricalTicker"}},"id":"bdff5db3-2fe5-46ef-b89f-1f0429318050","type":"CategoricalAxis"},{"attributes":{"dimension":1,"plot":{"id":"73324ca9-449a-4544-8659-94656e394b1a","subtype":"Figure","type":"Plot"},"ticker":{"id":"a5c08066-626a-4a89-ae3a-2119303cfdc1","type":"BasicTicker"}},"id":"68343bdc-d800-4556-9b4e-8fb9442d43f2","type":"Grid"},{"attributes":{},"id":"066d77ec-48f9-493b-993f-17fd710db3b5","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"db35e4eb-b61a-4f26-b7f3-df632de57dac","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"db35e4eb-b61a-4f26-b7f3-df632de57dac","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"3e85c2eb-7516-4725-9ffa-ecd37c0f799e","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"db35e4eb-b61a-4f26-b7f3-df632de57dac","type":"CategoricalColorMapper"},{"attributes":{"data_source":{"id":"f94fac12-1077-4259-98e8-061e722af0e9","type":"ColumnDataSource"},"glyph":{"id":"3e85c2eb-7516-4725-9ffa-ecd37c0f799e","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c0a461ae-45a1-45bc-aa0d-e1c385c72482","type":"VBar"},"selection_glyph":null,"view":{"id":"63c496ac-823d-414a-b182-af1b3b3cb909","type":"CDSView"}},"id":"713c0134-f327-42c9-b1cf-3dcfa03caf63","type":"GlyphRenderer"},{"attributes":{},"id":"49a6a0db-94fa-420c-b9a0-2b849b64617d","type":"LinearScale"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"8f2a0411-cb9a-4b4f-ac8c-b7d009aa59a6","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of the Visayas"],"cumulative":{"__ndarray__":"rMLbHVOQ3z8=","dtype":"float64","shape":[1]},"general":["Macario Peralta, Jr."],"outcome":["V"],"value":{"__ndarray__":"rMLbHVOQ3z8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABknkA=","dtype":"float64","shape":[1]}}},"id":"f94fac12-1077-4259-98e8-061e722af0e9","type":"ColumnDataSource"},{"attributes":{},"id":"1a1d70b0-d637-4cb4-aefc-90abf623da05","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"bdbefd8c-0995-414e-9e1a-71f7f17007bf","type":"BasicTickFormatter"},"plot":{"id":"73324ca9-449a-4544-8659-94656e394b1a","subtype":"Figure","type":"Plot"},"ticker":{"id":"a5c08066-626a-4a89-ae3a-2119303cfdc1","type":"BasicTicker"}},"id":"736bbae6-4de8-458c-825d-b94d54d62f1a","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"b202024a-1802-40f0-ac98-c72f4461ea89","type":"HoverTool"}]},"id":"d0655ea6-a112-4dd4-bfd2-fd954d01b4a4","type":"Toolbar"},{"attributes":{"below":[{"id":"bdff5db3-2fe5-46ef-b89f-1f0429318050","type":"CategoricalAxis"}],"left":[{"id":"736bbae6-4de8-458c-825d-b94d54d62f1a","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"bdff5db3-2fe5-46ef-b89f-1f0429318050","type":"CategoricalAxis"},{"id":"950e3f02-4b2a-4ece-93b0-51fe1e479ec7","type":"Grid"},{"id":"736bbae6-4de8-458c-825d-b94d54d62f1a","type":"LinearAxis"},{"id":"68343bdc-d800-4556-9b4e-8fb9442d43f2","type":"Grid"},{"id":"66b2e576-ce3d-4a2e-921e-5010479347f2","type":"GlyphRenderer"},{"id":"713c0134-f327-42c9-b1cf-3dcfa03caf63","type":"GlyphRenderer"}],"title":{"id":"149726ad-0c90-4447-92c7-d6996450dff4","type":"Title"},"toolbar":{"id":"d0655ea6-a112-4dd4-bfd2-fd954d01b4a4","type":"Toolbar"},"x_range":{"id":"a0823906-f2c8-4800-acb4-7711466ebb12","type":"FactorRange"},"x_scale":{"id":"1a1d70b0-d637-4cb4-aefc-90abf623da05","type":"CategoricalScale"},"y_range":{"id":"08312f7e-445b-46b1-b7c1-ee7bbaad65c3","type":"DataRange1d"},"y_scale":{"id":"49a6a0db-94fa-420c-b9a0-2b849b64617d","type":"LinearScale"}},"id":"73324ca9-449a-4544-8659-94656e394b1a","subtype":"Figure","type":"Plot"},{"attributes":{"plot":null,"text":"Macario Peralta, Jr. (1 - 0 - 0)"},"id":"149726ad-0c90-4447-92c7-d6996450dff4","type":"Title"},{"attributes":{"source":{"id":"f94fac12-1077-4259-98e8-061e722af0e9","type":"ColumnDataSource"}},"id":"a1bf3c25-c3a9-4348-90b4-e25a380ca842","type":"CDSView"},{"attributes":{},"id":"7b756268-f7a9-45fa-861e-85ab2d0f0a09","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"b202024a-1802-40f0-ac98-c72f4461ea89","type":"HoverTool"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"210d0b1f-f600-4230-983e-b827a67b96b8","type":"Line"},{"attributes":{"plot":{"id":"73324ca9-449a-4544-8659-94656e394b1a","subtype":"Figure","type":"Plot"},"ticker":{"id":"066d77ec-48f9-493b-993f-17fd710db3b5","type":"CategoricalTicker"}},"id":"950e3f02-4b2a-4ece-93b0-51fe1e479ec7","type":"Grid"},{"attributes":{"data_source":{"id":"f94fac12-1077-4259-98e8-061e722af0e9","type":"ColumnDataSource"},"glyph":{"id":"8f2a0411-cb9a-4b4f-ac8c-b7d009aa59a6","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"210d0b1f-f600-4230-983e-b827a67b96b8","type":"Line"},"selection_glyph":null,"view":{"id":"a1bf3c25-c3a9-4348-90b4-e25a380ca842","type":"CDSView"}},"id":"66b2e576-ce3d-4a2e-921e-5010479347f2","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of the Visayas"]},"id":"a0823906-f2c8-4800-acb4-7711466ebb12","type":"FactorRange"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c0a461ae-45a1-45bc-aa0d-e1c385c72482","type":"VBar"},{"attributes":{},"id":"a5c08066-626a-4a89-ae3a-2119303cfdc1","type":"BasicTicker"},{"attributes":{},"id":"bdbefd8c-0995-414e-9e1a-71f7f17007bf","type":"BasicTickFormatter"}],"root_ids":["73324ca9-449a-4544-8659-94656e394b1a"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"4f8a3beb-7f12-4023-be40-ad1b21e99a44","elementid":"d9506ed8-3681-4396-99ae-56d17456ad71","modelid":"73324ca9-449a-4544-8659-94656e394b1a"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

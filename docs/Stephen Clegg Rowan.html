@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="0811812f-ca35-4915-ae2a-214060c1dcaa"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"eb39a59d-2079-4eea-ac90-b11fab64c97c":{"roots":{"references":[{"attributes":{"plot":{"id":"52c10fa5-ee6a-4b40-9e44-f09e61565aec","subtype":"Figure","type":"Plot"},"ticker":{"id":"5d782f9a-a931-4967-8530-0b82fb8fddb8","type":"CategoricalTicker"}},"id":"57ae6126-491b-4627-b459-57e0f7869a15","type":"Grid"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"5f6d820f-c98d-483a-9048-c167b6c26337","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"ccae12d2-4055-40e1-9ed5-8dc603ac9448","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Elizabeth City","Battle of New Bern"],"cumulative":{"__ndarray__":"LJ1qfuKJ3D/j1Yv+KrLsPw==","dtype":"float64","shape":[2]},"general":["Stephen Clegg Rowan","Stephen Clegg Rowan"],"outcome":["V","V"],"value":{"__ndarray__":"LJ1qfuKJ3D+aDq1+c9rcPw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAAYnUAAAAAAABidQA==","dtype":"float64","shape":[2]}}},"id":"68d0d8e7-6afc-4418-a2e2-171b5af0749c","type":"ColumnDataSource"},{"attributes":{},"id":"099fabba-26d7-4ca1-9a7f-6bebb5a3942d","type":"LinearScale"},{"attributes":{"callback":null},"id":"1a85e8d7-0983-4535-b275-f21b046af785","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"81bb47be-70ae-4780-8c21-f8bf732b38fb","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"81bb47be-70ae-4780-8c21-f8bf732b38fb","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"d152d74e-1071-4feb-8174-24e5812ce925","type":"VBar"},{"attributes":{"source":{"id":"68d0d8e7-6afc-4418-a2e2-171b5af0749c","type":"ColumnDataSource"}},"id":"6cce60ae-3dc1-46e1-8ec4-14e5277b03c6","type":"CDSView"},{"attributes":{"data_source":{"id":"68d0d8e7-6afc-4418-a2e2-171b5af0749c","type":"ColumnDataSource"},"glyph":{"id":"5f6d820f-c98d-483a-9048-c167b6c26337","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e2bd0858-74f2-47bb-a379-512e902f3560","type":"Line"},"selection_glyph":null,"view":{"id":"6cce60ae-3dc1-46e1-8ec4-14e5277b03c6","type":"CDSView"}},"id":"e9e89860-38ba-471b-b954-7acba9a40220","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"bc0f4d63-8b67-4865-9c3f-4ecd0067ff31","type":"CategoricalAxis"}],"left":[{"id":"d1bbcf52-95e0-439d-9ccb-97181ebe2bba","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"bc0f4d63-8b67-4865-9c3f-4ecd0067ff31","type":"CategoricalAxis"},{"id":"57ae6126-491b-4627-b459-57e0f7869a15","type":"Grid"},{"id":"d1bbcf52-95e0-439d-9ccb-97181ebe2bba","type":"LinearAxis"},{"id":"bd9efd00-bf7a-477c-ae07-19f27ea91529","type":"Grid"},{"id":"e9e89860-38ba-471b-b954-7acba9a40220","type":"GlyphRenderer"},{"id":"18d292ca-eff3-401e-a8f4-e5d0f5d271f4","type":"GlyphRenderer"}],"title":{"id":"7a40c583-e599-4356-8493-4ef13f3cd8f1","type":"Title"},"toolbar":{"id":"da6210a2-16ef-4935-bdf0-2152a2eb3cc2","type":"Toolbar"},"x_range":{"id":"8957a3aa-a8af-4ae9-a1e3-7b2f56989b84","type":"FactorRange"},"x_scale":{"id":"034d2496-3236-4319-86ab-92d17079c6ad","type":"CategoricalScale"},"y_range":{"id":"1a85e8d7-0983-4535-b275-f21b046af785","type":"DataRange1d"},"y_scale":{"id":"099fabba-26d7-4ca1-9a7f-6bebb5a3942d","type":"LinearScale"}},"id":"52c10fa5-ee6a-4b40-9e44-f09e61565aec","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"034d2496-3236-4319-86ab-92d17079c6ad","type":"CategoricalScale"},{"attributes":{},"id":"5d782f9a-a931-4967-8530-0b82fb8fddb8","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Battle of Elizabeth City","Battle of New Bern"]},"id":"8957a3aa-a8af-4ae9-a1e3-7b2f56989b84","type":"FactorRange"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"81bb47be-70ae-4780-8c21-f8bf732b38fb","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"aba45190-9eca-4d10-a6a7-2bff2952c65e","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"52c10fa5-ee6a-4b40-9e44-f09e61565aec","subtype":"Figure","type":"Plot"},"ticker":{"id":"5d782f9a-a931-4967-8530-0b82fb8fddb8","type":"CategoricalTicker"}},"id":"bc0f4d63-8b67-4865-9c3f-4ecd0067ff31","type":"CategoricalAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"54a0ca55-b806-4662-a08f-5406c092df18","type":"HoverTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"54a0ca55-b806-4662-a08f-5406c092df18","type":"HoverTool"}]},"id":"da6210a2-16ef-4935-bdf0-2152a2eb3cc2","type":"Toolbar"},{"attributes":{},"id":"1b4f61ae-1ec3-46aa-8dfd-ca3f8a532974","type":"BasicTicker"},{"attributes":{"source":{"id":"68d0d8e7-6afc-4418-a2e2-171b5af0749c","type":"ColumnDataSource"}},"id":"efff60eb-0864-4132-904c-571e709df0f7","type":"CDSView"},{"attributes":{"data_source":{"id":"68d0d8e7-6afc-4418-a2e2-171b5af0749c","type":"ColumnDataSource"},"glyph":{"id":"d152d74e-1071-4feb-8174-24e5812ce925","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ccae12d2-4055-40e1-9ed5-8dc603ac9448","type":"VBar"},"selection_glyph":null,"view":{"id":"efff60eb-0864-4132-904c-571e709df0f7","type":"CDSView"}},"id":"18d292ca-eff3-401e-a8f4-e5d0f5d271f4","type":"GlyphRenderer"},{"attributes":{},"id":"aba45190-9eca-4d10-a6a7-2bff2952c65e","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"a19974e3-844e-4967-ac17-5f69ac762579","type":"BasicTickFormatter"},"plot":{"id":"52c10fa5-ee6a-4b40-9e44-f09e61565aec","subtype":"Figure","type":"Plot"},"ticker":{"id":"1b4f61ae-1ec3-46aa-8dfd-ca3f8a532974","type":"BasicTicker"}},"id":"d1bbcf52-95e0-439d-9ccb-97181ebe2bba","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Stephen Clegg Rowan (2 - 0 - 0)"},"id":"7a40c583-e599-4356-8493-4ef13f3cd8f1","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"52c10fa5-ee6a-4b40-9e44-f09e61565aec","subtype":"Figure","type":"Plot"},"ticker":{"id":"1b4f61ae-1ec3-46aa-8dfd-ca3f8a532974","type":"BasicTicker"}},"id":"bd9efd00-bf7a-477c-ae07-19f27ea91529","type":"Grid"},{"attributes":{},"id":"a19974e3-844e-4967-ac17-5f69ac762579","type":"BasicTickFormatter"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e2bd0858-74f2-47bb-a379-512e902f3560","type":"Line"}],"root_ids":["52c10fa5-ee6a-4b40-9e44-f09e61565aec"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"eb39a59d-2079-4eea-ac90-b11fab64c97c","elementid":"0811812f-ca35-4915-ae2a-214060c1dcaa","modelid":"52c10fa5-ee6a-4b40-9e44-f09e61565aec"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

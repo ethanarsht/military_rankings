@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d9450a67-8add-4e41-a1ed-26d117407943"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"6ae5fe80-d96f-42a6-bd76-321b2fafb078":{"roots":{"references":[{"attributes":{"source":{"id":"31c1ed4c-6ef2-4211-b7b4-b396d21ac65f","type":"ColumnDataSource"}},"id":"b6fc03bb-3ecd-4ae0-93fb-a55120fee5c2","type":"CDSView"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"c79d5557-6120-4d9a-a50c-78e33664a4ec","type":"HoverTool"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Honnecourt","Battle of Rocroi"],"cumulative":{"__ndarray__":"KM+oT1dq3T+gN4OtaVyovw==","dtype":"float64","shape":[2]},"general":["Francisco de Melo","Francisco de Melo"],"outcome":["V","D"],"value":{"__ndarray__":"KM+oT1dq3T8Om6xC8jrgvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAAComUAAAAAAAKyZQA==","dtype":"float64","shape":[2]}}},"id":"31c1ed4c-6ef2-4211-b7b4-b396d21ac65f","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"78712403-54af-4e56-9118-984143f67fdd","type":"CategoricalAxis"}],"left":[{"id":"7aa1974e-9326-4f69-96ed-9f08b7733b36","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"78712403-54af-4e56-9118-984143f67fdd","type":"CategoricalAxis"},{"id":"e7b84abc-595f-4da3-aea8-ac997bdb8d80","type":"Grid"},{"id":"7aa1974e-9326-4f69-96ed-9f08b7733b36","type":"LinearAxis"},{"id":"a1e6f163-c0f6-41c8-929c-3fb6b2400fe1","type":"Grid"},{"id":"036e92e2-06e1-4be9-bc2d-40162ff34db0","type":"GlyphRenderer"},{"id":"5b992c82-5c33-433a-a7f0-9df283e49d92","type":"GlyphRenderer"}],"title":{"id":"8312bb60-4a57-45df-9ffb-6ba66a3b4eaa","type":"Title"},"toolbar":{"id":"7aef4c33-0e10-4af7-ba50-6e18a273b511","type":"Toolbar"},"x_range":{"id":"34b384f4-95ec-4821-8fa1-5235e0efa645","type":"FactorRange"},"x_scale":{"id":"ed381d08-206f-4db4-9fe3-c894909f035a","type":"CategoricalScale"},"y_range":{"id":"e18111e6-1ba3-4eef-8d45-f8eef3958877","type":"DataRange1d"},"y_scale":{"id":"1708f95d-73cc-4988-aa1c-80b497f4081e","type":"LinearScale"}},"id":"54dceece-ad32-4929-b753-43ffe072bb75","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"184d3029-4208-42f9-aa19-e87d1bcd65e7","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"c79d5557-6120-4d9a-a50c-78e33664a4ec","type":"HoverTool"}]},"id":"7aef4c33-0e10-4af7-ba50-6e18a273b511","type":"Toolbar"},{"attributes":{"data_source":{"id":"31c1ed4c-6ef2-4211-b7b4-b396d21ac65f","type":"ColumnDataSource"},"glyph":{"id":"c1245b5b-62cc-4c16-95c7-d67bfc7ada7a","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"38925cb8-a568-4e86-9c83-486b942046ea","type":"VBar"},"selection_glyph":null,"view":{"id":"ffd29672-ab9c-492e-9284-c9ffb339e997","type":"CDSView"}},"id":"5b992c82-5c33-433a-a7f0-9df283e49d92","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1e8f53dd-6f9b-42e5-92e8-f29e793c0269","type":"Line"},{"attributes":{"source":{"id":"31c1ed4c-6ef2-4211-b7b4-b396d21ac65f","type":"ColumnDataSource"}},"id":"ffd29672-ab9c-492e-9284-c9ffb339e997","type":"CDSView"},{"attributes":{},"id":"e4762cbf-d90c-4ff1-b1c9-bb396e43d308","type":"CategoricalTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"086c7806-0004-40f4-9e50-34108212bf46","type":"CategoricalColorMapper"},{"attributes":{"formatter":{"id":"184d3029-4208-42f9-aa19-e87d1bcd65e7","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"54dceece-ad32-4929-b753-43ffe072bb75","subtype":"Figure","type":"Plot"},"ticker":{"id":"e4762cbf-d90c-4ff1-b1c9-bb396e43d308","type":"CategoricalTicker"}},"id":"78712403-54af-4e56-9118-984143f67fdd","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"54dceece-ad32-4929-b753-43ffe072bb75","subtype":"Figure","type":"Plot"},"ticker":{"id":"e4762cbf-d90c-4ff1-b1c9-bb396e43d308","type":"CategoricalTicker"}},"id":"e7b84abc-595f-4da3-aea8-ac997bdb8d80","type":"Grid"},{"attributes":{},"id":"dced889f-6395-4ca4-9a90-106fe3305f5a","type":"BasicTicker"},{"attributes":{},"id":"854f58e7-5918-4b62-b956-c1a861e83750","type":"BasicTickFormatter"},{"attributes":{},"id":"1708f95d-73cc-4988-aa1c-80b497f4081e","type":"LinearScale"},{"attributes":{"callback":null},"id":"e18111e6-1ba3-4eef-8d45-f8eef3958877","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"54dceece-ad32-4929-b753-43ffe072bb75","subtype":"Figure","type":"Plot"},"ticker":{"id":"dced889f-6395-4ca4-9a90-106fe3305f5a","type":"BasicTicker"}},"id":"a1e6f163-c0f6-41c8-929c-3fb6b2400fe1","type":"Grid"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"62ee6e24-49ff-482a-9957-e6883b901e20","type":"Line"},{"attributes":{"plot":null,"text":"Francisco de Melo (1 - 0 - 1)"},"id":"8312bb60-4a57-45df-9ffb-6ba66a3b4eaa","type":"Title"},{"attributes":{},"id":"ed381d08-206f-4db4-9fe3-c894909f035a","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"854f58e7-5918-4b62-b956-c1a861e83750","type":"BasicTickFormatter"},"plot":{"id":"54dceece-ad32-4929-b753-43ffe072bb75","subtype":"Figure","type":"Plot"},"ticker":{"id":"dced889f-6395-4ca4-9a90-106fe3305f5a","type":"BasicTicker"}},"id":"7aa1974e-9326-4f69-96ed-9f08b7733b36","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"38925cb8-a568-4e86-9c83-486b942046ea","type":"VBar"},{"attributes":{"data_source":{"id":"31c1ed4c-6ef2-4211-b7b4-b396d21ac65f","type":"ColumnDataSource"},"glyph":{"id":"1e8f53dd-6f9b-42e5-92e8-f29e793c0269","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"62ee6e24-49ff-482a-9957-e6883b901e20","type":"Line"},"selection_glyph":null,"view":{"id":"b6fc03bb-3ecd-4ae0-93fb-a55120fee5c2","type":"CDSView"}},"id":"036e92e2-06e1-4be9-bc2d-40162ff34db0","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"086c7806-0004-40f4-9e50-34108212bf46","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"086c7806-0004-40f4-9e50-34108212bf46","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"c1245b5b-62cc-4c16-95c7-d67bfc7ada7a","type":"VBar"},{"attributes":{"callback":null,"factors":["Battle of Honnecourt","Battle of Rocroi"]},"id":"34b384f4-95ec-4821-8fa1-5235e0efa645","type":"FactorRange"}],"root_ids":["54dceece-ad32-4929-b753-43ffe072bb75"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"6ae5fe80-d96f-42a6-bd76-321b2fafb078","elementid":"d9450a67-8add-4e41-a1ed-26d117407943","modelid":"54dceece-ad32-4929-b753-43ffe072bb75"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

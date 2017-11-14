@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="c7d0ec34-f9ae-445a-baab-fa706c469a2e"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"8a90564a-7e23-438d-93cb-677c18221bfa":{"roots":{"references":[{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"bec04622-8402-491b-95f4-a5a3c440da26","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"bec04622-8402-491b-95f4-a5a3c440da26","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"b03d8d32-98bf-4a2c-832c-16fe3d340aa7","type":"VBar"},{"attributes":{"source":{"id":"c3fcb8df-62ff-4a46-a170-b5ed61615b10","type":"ColumnDataSource"}},"id":"bb4efd99-795c-4a2e-9a9d-cefc1a5fdcaa","type":"CDSView"},{"attributes":{},"id":"ec1f390b-c84d-4867-b0d9-e88ed25bc9d3","type":"CategoricalTickFormatter"},{"attributes":{},"id":"3f7df9db-2866-4d81-9c78-25b4a300f7b5","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"c3fcb8df-62ff-4a46-a170-b5ed61615b10","type":"ColumnDataSource"}},"id":"84032fe6-180a-4614-8051-25c64c863ac9","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"749629d7-d8ff-4d4a-b6b1-fc78a45dbc21","subtype":"Figure","type":"Plot"},"ticker":{"id":"458058f9-f66b-4b41-86d7-85fe80d0fb57","type":"BasicTicker"}},"id":"f0bbafe0-9d04-4dc6-b40b-0f0df32d1855","type":"Grid"},{"attributes":{"callback":null,"factors":["Battle of Sevastopol","Battle of Debrecen"]},"id":"de1d4336-eef5-4783-8237-550c6a4025bc","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"d5798ffc-02cc-4201-86f3-4f51e9b609e6","type":"HoverTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d5798ffc-02cc-4201-86f3-4f51e9b609e6","type":"HoverTool"}]},"id":"3528ec2b-0176-4320-8e65-7d649052b659","type":"Toolbar"},{"attributes":{"below":[{"id":"1b7a24e8-f697-4bf7-a50d-07d7b1c03698","type":"CategoricalAxis"}],"left":[{"id":"da9e5788-dfd2-404d-b367-5e0653109051","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"1b7a24e8-f697-4bf7-a50d-07d7b1c03698","type":"CategoricalAxis"},{"id":"bba1936a-83cf-4ada-a7f4-250616aa7eb3","type":"Grid"},{"id":"da9e5788-dfd2-404d-b367-5e0653109051","type":"LinearAxis"},{"id":"f0bbafe0-9d04-4dc6-b40b-0f0df32d1855","type":"Grid"},{"id":"46b869ac-c2b7-4566-8c7a-243d7def0556","type":"GlyphRenderer"},{"id":"dcab8ea8-e75a-40ce-b429-01ebc2d7478c","type":"GlyphRenderer"}],"title":{"id":"bd42e9ff-452c-491f-b81d-c374590a8ce8","type":"Title"},"toolbar":{"id":"3528ec2b-0176-4320-8e65-7d649052b659","type":"Toolbar"},"x_range":{"id":"de1d4336-eef5-4783-8237-550c6a4025bc","type":"FactorRange"},"x_scale":{"id":"1fc25708-0d12-4c53-aba0-cd9da3475232","type":"CategoricalScale"},"y_range":{"id":"a039ca24-e121-450e-b10c-d2e78715e8f1","type":"DataRange1d"},"y_scale":{"id":"6e0dec61-dfae-42db-aaaa-ddd0a29efd25","type":"LinearScale"}},"id":"749629d7-d8ff-4d4a-b6b1-fc78a45dbc21","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"73f3d873-c53a-46c0-9e2a-cb43616c54dd","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"779e543d-4928-4bc2-b9ab-c2cb9d2fe528","type":"VBar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1ad840e4-0cca-433a-b5f9-a38471b05415","type":"Line"},{"attributes":{"plot":{"id":"749629d7-d8ff-4d4a-b6b1-fc78a45dbc21","subtype":"Figure","type":"Plot"},"ticker":{"id":"90c5f766-61ef-44e3-9ea9-f5bf43f67ed6","type":"CategoricalTicker"}},"id":"bba1936a-83cf-4ada-a7f4-250616aa7eb3","type":"Grid"},{"attributes":{"formatter":{"id":"3f7df9db-2866-4d81-9c78-25b4a300f7b5","type":"BasicTickFormatter"},"plot":{"id":"749629d7-d8ff-4d4a-b6b1-fc78a45dbc21","subtype":"Figure","type":"Plot"},"ticker":{"id":"458058f9-f66b-4b41-86d7-85fe80d0fb57","type":"BasicTicker"}},"id":"da9e5788-dfd2-404d-b367-5e0653109051","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Sevastopol","Battle of Debrecen"],"cumulative":{"__ndarray__":"Nvb/0jso3j8ov5rTCJa1vw==","dtype":"float64","shape":[2]},"general":["Gheorghe Avramescu","Gheorghe Avramescu"],"outcome":["V","D"],"value":{"__ndarray__":"Nvb/0jso3j8AU/MD38bhvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAABUnkAAAAAAAGCeQA==","dtype":"float64","shape":[2]}}},"id":"c3fcb8df-62ff-4a46-a170-b5ed61615b10","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"c3fcb8df-62ff-4a46-a170-b5ed61615b10","type":"ColumnDataSource"},"glyph":{"id":"b03d8d32-98bf-4a2c-832c-16fe3d340aa7","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"779e543d-4928-4bc2-b9ab-c2cb9d2fe528","type":"VBar"},"selection_glyph":null,"view":{"id":"bb4efd99-795c-4a2e-9a9d-cefc1a5fdcaa","type":"CDSView"}},"id":"dcab8ea8-e75a-40ce-b429-01ebc2d7478c","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"ec1f390b-c84d-4867-b0d9-e88ed25bc9d3","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"749629d7-d8ff-4d4a-b6b1-fc78a45dbc21","subtype":"Figure","type":"Plot"},"ticker":{"id":"90c5f766-61ef-44e3-9ea9-f5bf43f67ed6","type":"CategoricalTicker"}},"id":"1b7a24e8-f697-4bf7-a50d-07d7b1c03698","type":"CategoricalAxis"},{"attributes":{"callback":null},"id":"a039ca24-e121-450e-b10c-d2e78715e8f1","type":"DataRange1d"},{"attributes":{"data_source":{"id":"c3fcb8df-62ff-4a46-a170-b5ed61615b10","type":"ColumnDataSource"},"glyph":{"id":"1ad840e4-0cca-433a-b5f9-a38471b05415","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"73f3d873-c53a-46c0-9e2a-cb43616c54dd","type":"Line"},"selection_glyph":null,"view":{"id":"84032fe6-180a-4614-8051-25c64c863ac9","type":"CDSView"}},"id":"46b869ac-c2b7-4566-8c7a-243d7def0556","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Gheorghe Avramescu (1 - 0 - 1)"},"id":"bd42e9ff-452c-491f-b81d-c374590a8ce8","type":"Title"},{"attributes":{},"id":"1fc25708-0d12-4c53-aba0-cd9da3475232","type":"CategoricalScale"},{"attributes":{},"id":"458058f9-f66b-4b41-86d7-85fe80d0fb57","type":"BasicTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"bec04622-8402-491b-95f4-a5a3c440da26","type":"CategoricalColorMapper"},{"attributes":{},"id":"6e0dec61-dfae-42db-aaaa-ddd0a29efd25","type":"LinearScale"},{"attributes":{},"id":"90c5f766-61ef-44e3-9ea9-f5bf43f67ed6","type":"CategoricalTicker"}],"root_ids":["749629d7-d8ff-4d4a-b6b1-fc78a45dbc21"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"8a90564a-7e23-438d-93cb-677c18221bfa","elementid":"c7d0ec34-f9ae-445a-baab-fa706c469a2e","modelid":"749629d7-d8ff-4d4a-b6b1-fc78a45dbc21"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

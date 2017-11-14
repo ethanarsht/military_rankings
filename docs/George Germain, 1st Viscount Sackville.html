@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d223ae8b-acba-48f4-a496-ea33ebdf9e52"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"7b73b274-6947-4cc8-b197-e4c38548239f":{"roots":{"references":[{"attributes":{},"id":"e8fb4b9c-813e-4bc8-8085-86f49d1a7d57","type":"CategoricalTickFormatter"},{"attributes":{"plot":{"id":"2b0e26d2-8c66-4b6e-8520-da305d62f89d","subtype":"Figure","type":"Plot"},"ticker":{"id":"54ce81f0-3e2d-4820-9b58-1f0726b6cf87","type":"CategoricalTicker"}},"id":"029bc2f9-59eb-42e0-aedb-4d1030607df2","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"bca2facc-1b90-4527-82fe-3ab640d8ee57","type":"VBar"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Minden"],"cumulative":{"__ndarray__":"yii89js84D8=","dtype":"float64","shape":[1]},"general":["George Germain, 1st Viscount Sackville"],"outcome":["V"],"value":{"__ndarray__":"yii89js84D8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAAB8m0A=","dtype":"float64","shape":[1]}}},"id":"055b3034-6265-47ea-b6ac-fa02b60d8ac4","type":"ColumnDataSource"},{"attributes":{"callback":null},"id":"3fa9fbb8-888b-4208-b7d6-f35433309aa8","type":"DataRange1d"},{"attributes":{"source":{"id":"055b3034-6265-47ea-b6ac-fa02b60d8ac4","type":"ColumnDataSource"}},"id":"4fed7baf-9d88-4bcf-bac8-7e29fa71c6fc","type":"CDSView"},{"attributes":{},"id":"54ce81f0-3e2d-4820-9b58-1f0726b6cf87","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"055b3034-6265-47ea-b6ac-fa02b60d8ac4","type":"ColumnDataSource"},"glyph":{"id":"928448b9-01d0-4a9e-b8ed-10778783a7c1","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"d51e35c3-a727-44d2-a682-f41e0b0eec63","type":"Line"},"selection_glyph":null,"view":{"id":"560de5b7-00e5-456e-9a9a-aebba211b179","type":"CDSView"}},"id":"7f780942-5a03-46e7-b757-fe8544859b23","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"055b3034-6265-47ea-b6ac-fa02b60d8ac4","type":"ColumnDataSource"},"glyph":{"id":"e2e6ab0f-2195-404e-a1b3-c91ae66c207b","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"bca2facc-1b90-4527-82fe-3ab640d8ee57","type":"VBar"},"selection_glyph":null,"view":{"id":"4fed7baf-9d88-4bcf-bac8-7e29fa71c6fc","type":"CDSView"}},"id":"f4da1761-99f7-41e2-ac31-89acc78ce4c1","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["Battle of Minden"]},"id":"c22dd9af-aa2b-4a23-9799-881302b0d529","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"222f15ec-cdc0-4227-8ff1-861502757ed8","type":"HoverTool"},{"attributes":{"dimension":1,"plot":{"id":"2b0e26d2-8c66-4b6e-8520-da305d62f89d","subtype":"Figure","type":"Plot"},"ticker":{"id":"ad11921f-3236-414e-8f5b-1cc1c8eda6a5","type":"BasicTicker"}},"id":"025f8cde-5e97-4fe6-8e7f-feba949dac5d","type":"Grid"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"419b5ed4-c016-4814-8604-c01e1adc61c0","type":"CategoricalColorMapper"},{"attributes":{},"id":"3132155e-96c1-403f-8621-b755da83f9be","type":"LinearScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"d51e35c3-a727-44d2-a682-f41e0b0eec63","type":"Line"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"419b5ed4-c016-4814-8604-c01e1adc61c0","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"419b5ed4-c016-4814-8604-c01e1adc61c0","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"e2e6ab0f-2195-404e-a1b3-c91ae66c207b","type":"VBar"},{"attributes":{},"id":"ad11921f-3236-414e-8f5b-1cc1c8eda6a5","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"222f15ec-cdc0-4227-8ff1-861502757ed8","type":"HoverTool"}]},"id":"9a97ac09-340f-4d9e-81f2-f7f5658eae01","type":"Toolbar"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"928448b9-01d0-4a9e-b8ed-10778783a7c1","type":"Line"},{"attributes":{"below":[{"id":"e1850c40-5572-4066-b366-c275539414f5","type":"CategoricalAxis"}],"left":[{"id":"764a54c2-c8d7-43cd-a8b9-8c29d2c1b2be","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"e1850c40-5572-4066-b366-c275539414f5","type":"CategoricalAxis"},{"id":"029bc2f9-59eb-42e0-aedb-4d1030607df2","type":"Grid"},{"id":"764a54c2-c8d7-43cd-a8b9-8c29d2c1b2be","type":"LinearAxis"},{"id":"025f8cde-5e97-4fe6-8e7f-feba949dac5d","type":"Grid"},{"id":"7f780942-5a03-46e7-b757-fe8544859b23","type":"GlyphRenderer"},{"id":"f4da1761-99f7-41e2-ac31-89acc78ce4c1","type":"GlyphRenderer"}],"title":{"id":"131b0771-7e22-45c8-a274-040c3435a24e","type":"Title"},"toolbar":{"id":"9a97ac09-340f-4d9e-81f2-f7f5658eae01","type":"Toolbar"},"x_range":{"id":"c22dd9af-aa2b-4a23-9799-881302b0d529","type":"FactorRange"},"x_scale":{"id":"77c990e3-7be5-4f34-ac88-66c1a79a6ac8","type":"CategoricalScale"},"y_range":{"id":"3fa9fbb8-888b-4208-b7d6-f35433309aa8","type":"DataRange1d"},"y_scale":{"id":"3132155e-96c1-403f-8621-b755da83f9be","type":"LinearScale"}},"id":"2b0e26d2-8c66-4b6e-8520-da305d62f89d","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"8af886cb-8973-4bd6-8b95-3fadd352df02","type":"BasicTickFormatter"},"plot":{"id":"2b0e26d2-8c66-4b6e-8520-da305d62f89d","subtype":"Figure","type":"Plot"},"ticker":{"id":"ad11921f-3236-414e-8f5b-1cc1c8eda6a5","type":"BasicTicker"}},"id":"764a54c2-c8d7-43cd-a8b9-8c29d2c1b2be","type":"LinearAxis"},{"attributes":{},"id":"77c990e3-7be5-4f34-ac88-66c1a79a6ac8","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"e8fb4b9c-813e-4bc8-8085-86f49d1a7d57","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"2b0e26d2-8c66-4b6e-8520-da305d62f89d","subtype":"Figure","type":"Plot"},"ticker":{"id":"54ce81f0-3e2d-4820-9b58-1f0726b6cf87","type":"CategoricalTicker"}},"id":"e1850c40-5572-4066-b366-c275539414f5","type":"CategoricalAxis"},{"attributes":{"plot":null,"text":"George Germain, 1st Viscount Sackville (1 - 0 - 0)"},"id":"131b0771-7e22-45c8-a274-040c3435a24e","type":"Title"},{"attributes":{},"id":"8af886cb-8973-4bd6-8b95-3fadd352df02","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"055b3034-6265-47ea-b6ac-fa02b60d8ac4","type":"ColumnDataSource"}},"id":"560de5b7-00e5-456e-9a9a-aebba211b179","type":"CDSView"}],"root_ids":["2b0e26d2-8c66-4b6e-8520-da305d62f89d"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"7b73b274-6947-4cc8-b197-e4c38548239f","elementid":"d223ae8b-acba-48f4-a496-ea33ebdf9e52","modelid":"2b0e26d2-8c66-4b6e-8520-da305d62f89d"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

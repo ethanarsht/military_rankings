@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="d7fa5d2d-d644-4dd6-b2b3-185040990294"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"e863d55b-00b4-4f35-88e9-f9db7549f68a":{"roots":{"references":[{"attributes":{"dimension":1,"plot":{"id":"fb43f7fc-1a49-4f8b-985e-c45077978ed3","subtype":"Figure","type":"Plot"},"ticker":{"id":"a69d0b15-d9b9-41c8-ae0e-46214315ce03","type":"BasicTicker"}},"id":"1b9d5288-fd03-494c-ac9a-17dc22fdda79","type":"Grid"},{"attributes":{"data_source":{"id":"32503faa-951f-40cd-a8d7-dd0c56322953","type":"ColumnDataSource"},"glyph":{"id":"12cbff5f-a9b5-4646-b44d-7e0c08535890","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"30ea3575-59f0-4e91-9795-55ccaebf28d1","type":"VBar"},"selection_glyph":null,"view":{"id":"027cb112-cdf0-4e48-a76d-1a3604726cb2","type":"CDSView"}},"id":"c5ef647e-1530-43ba-bd91-eb1855d91b7c","type":"GlyphRenderer"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"84d1a77a-8681-4925-bda4-6bd41bf89da0","type":"Line"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Fort Necessity"],"cumulative":{"__ndarray__":"TM5p1M6X3j8=","dtype":"float64","shape":[1]},"general":["Louis Coulon de Villiers"],"outcome":["V"],"value":{"__ndarray__":"TM5p1M6X3j8=","dtype":"float64","shape":[1]},"year":{"__ndarray__":"AAAAAABom0A=","dtype":"float64","shape":[1]}}},"id":"32503faa-951f-40cd-a8d7-dd0c56322953","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"32503faa-951f-40cd-a8d7-dd0c56322953","type":"ColumnDataSource"},"glyph":{"id":"84d1a77a-8681-4925-bda4-6bd41bf89da0","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"30a2028f-f805-472b-bfb8-5a7a8d45faf5","type":"Line"},"selection_glyph":null,"view":{"id":"8d328966-a472-4f61-858f-ebbe3f7bd40e","type":"CDSView"}},"id":"e663e259-6422-45a8-89c5-b178caf52549","type":"GlyphRenderer"},{"attributes":{},"id":"41806c73-3fda-4c6d-8a9d-bb0b40e765f8","type":"CategoricalTicker"},{"attributes":{},"id":"481e200b-8097-45dc-8069-00ec436969d1","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["Battle of Fort Necessity"]},"id":"6e432ab9-1a78-4056-a594-3a6301d3c33f","type":"FactorRange"},{"attributes":{"source":{"id":"32503faa-951f-40cd-a8d7-dd0c56322953","type":"ColumnDataSource"}},"id":"027cb112-cdf0-4e48-a76d-1a3604726cb2","type":"CDSView"},{"attributes":{"plot":{"id":"fb43f7fc-1a49-4f8b-985e-c45077978ed3","subtype":"Figure","type":"Plot"},"ticker":{"id":"41806c73-3fda-4c6d-8a9d-bb0b40e765f8","type":"CategoricalTicker"}},"id":"f5f4ab47-0feb-4f19-a903-c146a93115df","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"03960fd3-8861-452a-97a0-274105d88116","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"03960fd3-8861-452a-97a0-274105d88116","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"12cbff5f-a9b5-4646-b44d-7e0c08535890","type":"VBar"},{"attributes":{"formatter":{"id":"e0cf69d9-39c2-4cea-9d97-1164732eecb5","type":"BasicTickFormatter"},"plot":{"id":"fb43f7fc-1a49-4f8b-985e-c45077978ed3","subtype":"Figure","type":"Plot"},"ticker":{"id":"a69d0b15-d9b9-41c8-ae0e-46214315ce03","type":"BasicTicker"}},"id":"ae061d12-ef04-48fd-ac9e-46690881fb60","type":"LinearAxis"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"9c6ae7c5-bebd-461e-9e63-158ff8b4a2d5","type":"HoverTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"9c6ae7c5-bebd-461e-9e63-158ff8b4a2d5","type":"HoverTool"}]},"id":"001e7661-e16d-47d4-9973-436d818db747","type":"Toolbar"},{"attributes":{"below":[{"id":"48825d7c-9587-4361-ba56-b91dc0817953","type":"CategoricalAxis"}],"left":[{"id":"ae061d12-ef04-48fd-ac9e-46690881fb60","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"48825d7c-9587-4361-ba56-b91dc0817953","type":"CategoricalAxis"},{"id":"f5f4ab47-0feb-4f19-a903-c146a93115df","type":"Grid"},{"id":"ae061d12-ef04-48fd-ac9e-46690881fb60","type":"LinearAxis"},{"id":"1b9d5288-fd03-494c-ac9a-17dc22fdda79","type":"Grid"},{"id":"e663e259-6422-45a8-89c5-b178caf52549","type":"GlyphRenderer"},{"id":"c5ef647e-1530-43ba-bd91-eb1855d91b7c","type":"GlyphRenderer"}],"title":{"id":"78e2bf76-537a-48b7-b89c-8c228c2743b4","type":"Title"},"toolbar":{"id":"001e7661-e16d-47d4-9973-436d818db747","type":"Toolbar"},"x_range":{"id":"6e432ab9-1a78-4056-a594-3a6301d3c33f","type":"FactorRange"},"x_scale":{"id":"481e200b-8097-45dc-8069-00ec436969d1","type":"CategoricalScale"},"y_range":{"id":"7fb783f0-2cf7-4b43-879c-0188dceb298a","type":"DataRange1d"},"y_scale":{"id":"9f6ec2fd-c826-4f5b-93a7-2f997ce0b0d9","type":"LinearScale"}},"id":"fb43f7fc-1a49-4f8b-985e-c45077978ed3","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"e0cf69d9-39c2-4cea-9d97-1164732eecb5","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"30ea3575-59f0-4e91-9795-55ccaebf28d1","type":"VBar"},{"attributes":{"formatter":{"id":"25fede04-49ad-4fd1-8bcc-b4b39bf049ec","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"fb43f7fc-1a49-4f8b-985e-c45077978ed3","subtype":"Figure","type":"Plot"},"ticker":{"id":"41806c73-3fda-4c6d-8a9d-bb0b40e765f8","type":"CategoricalTicker"}},"id":"48825d7c-9587-4361-ba56-b91dc0817953","type":"CategoricalAxis"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"03960fd3-8861-452a-97a0-274105d88116","type":"CategoricalColorMapper"},{"attributes":{"plot":null,"text":"Louis Coulon de Villiers (1 - 0 - 0)"},"id":"78e2bf76-537a-48b7-b89c-8c228c2743b4","type":"Title"},{"attributes":{},"id":"a69d0b15-d9b9-41c8-ae0e-46214315ce03","type":"BasicTicker"},{"attributes":{"callback":null},"id":"7fb783f0-2cf7-4b43-879c-0188dceb298a","type":"DataRange1d"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"30a2028f-f805-472b-bfb8-5a7a8d45faf5","type":"Line"},{"attributes":{"source":{"id":"32503faa-951f-40cd-a8d7-dd0c56322953","type":"ColumnDataSource"}},"id":"8d328966-a472-4f61-858f-ebbe3f7bd40e","type":"CDSView"},{"attributes":{},"id":"25fede04-49ad-4fd1-8bcc-b4b39bf049ec","type":"CategoricalTickFormatter"},{"attributes":{},"id":"9f6ec2fd-c826-4f5b-93a7-2f997ce0b0d9","type":"LinearScale"}],"root_ids":["fb43f7fc-1a49-4f8b-985e-c45077978ed3"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"e863d55b-00b4-4f35-88e9-f9db7549f68a","elementid":"d7fa5d2d-d644-4dd6-b2b3-185040990294","modelid":"fb43f7fc-1a49-4f8b-985e-c45077978ed3"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

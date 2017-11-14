@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="e7f81422-4074-4dd3-b05c-ef441891da99"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"40866dba-5ca2-417c-bf25-f2bd3e011b6d":{"roots":{"references":[{"attributes":{},"id":"b616d880-4f3e-4d9a-8ec1-fb972e208464","type":"CategoricalTickFormatter"},{"attributes":{},"id":"184d4b7d-bffc-4b6a-adfc-c265488c2e09","type":"BasicTickFormatter"},{"attributes":{"below":[{"id":"8a2998b1-45fd-47fb-8653-1de67d20587b","type":"CategoricalAxis"}],"left":[{"id":"373b09e3-fa37-48b2-84de-0baa31c112cb","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"8a2998b1-45fd-47fb-8653-1de67d20587b","type":"CategoricalAxis"},{"id":"58d47f9b-a901-4f51-87b1-909c2978a4fc","type":"Grid"},{"id":"373b09e3-fa37-48b2-84de-0baa31c112cb","type":"LinearAxis"},{"id":"21bfe6d3-fe10-49e6-87f4-f72097c94529","type":"Grid"},{"id":"b1dd30b8-9f87-488a-b2e2-dcecf292a4d0","type":"GlyphRenderer"},{"id":"070e51e3-4594-4759-b30c-8890a2d32e16","type":"GlyphRenderer"}],"title":{"id":"0d802270-db39-42b7-aefe-0cbfea8eaf00","type":"Title"},"toolbar":{"id":"bbb9cc44-4388-418b-b78b-799a31989d5d","type":"Toolbar"},"x_range":{"id":"1f3c915f-231e-46e8-a010-851c97acb262","type":"FactorRange"},"x_scale":{"id":"8132810c-22c6-481b-9042-aa618859f4eb","type":"CategoricalScale"},"y_range":{"id":"ca0f74fe-0fb3-49fb-bc89-e37a91bffa51","type":"DataRange1d"},"y_scale":{"id":"59000749-b685-4878-910d-9d13e81a7f04","type":"LinearScale"}},"id":"3320b07d-d35c-4650-99c5-3b2f2200864a","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":["Battle of Ferozeshah","Battle of Sobraon"]},"id":"1f3c915f-231e-46e8-a010-851c97acb262","type":"FactorRange"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"3abf8867-c4b0-427a-a03c-0a6e8d6c5d4f","type":"HoverTool"},{"attributes":{"callback":null},"id":"ca0f74fe-0fb3-49fb-bc89-e37a91bffa51","type":"DataRange1d"},{"attributes":{"formatter":{"id":"b616d880-4f3e-4d9a-8ec1-fb972e208464","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"3320b07d-d35c-4650-99c5-3b2f2200864a","subtype":"Figure","type":"Plot"},"ticker":{"id":"88d7a592-b5e7-4aba-9f37-5d092ef51f09","type":"CategoricalTicker"}},"id":"8a2998b1-45fd-47fb-8653-1de67d20587b","type":"CategoricalAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"476f37ec-71f9-4801-86f4-d53ad517bf46","type":"Line"},{"attributes":{},"id":"88d7a592-b5e7-4aba-9f37-5d092ef51f09","type":"CategoricalTicker"},{"attributes":{},"id":"8132810c-22c6-481b-9042-aa618859f4eb","type":"CategoricalScale"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"2042b91b-9659-4893-be9f-699c3ddb77a1","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"3abf8867-c4b0-427a-a03c-0a6e8d6c5d4f","type":"HoverTool"}]},"id":"bbb9cc44-4388-418b-b78b-799a31989d5d","type":"Toolbar"},{"attributes":{},"id":"dab9d4c7-5895-491d-96f1-05fcbd73bf8d","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"56e49a2a-d854-476d-99cd-18a725f5f807","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"56e49a2a-d854-476d-99cd-18a725f5f807","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"caa18571-7a43-4c33-bcf1-a50b3065862f","type":"VBar"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"56e49a2a-d854-476d-99cd-18a725f5f807","type":"CategoricalColorMapper"},{"attributes":{"plot":{"id":"3320b07d-d35c-4650-99c5-3b2f2200864a","subtype":"Figure","type":"Plot"},"ticker":{"id":"88d7a592-b5e7-4aba-9f37-5d092ef51f09","type":"CategoricalTicker"}},"id":"58d47f9b-a901-4f51-87b1-909c2978a4fc","type":"Grid"},{"attributes":{"source":{"id":"44f5a3fa-4ea2-40ed-bc6b-ce9460d769da","type":"ColumnDataSource"}},"id":"af1bb91c-8886-4ce8-9e9e-6e6dbfb995b9","type":"CDSView"},{"attributes":{"formatter":{"id":"184d4b7d-bffc-4b6a-adfc-c265488c2e09","type":"BasicTickFormatter"},"plot":{"id":"3320b07d-d35c-4650-99c5-3b2f2200864a","subtype":"Figure","type":"Plot"},"ticker":{"id":"dab9d4c7-5895-491d-96f1-05fcbd73bf8d","type":"BasicTicker"}},"id":"373b09e3-fa37-48b2-84de-0baa31c112cb","type":"LinearAxis"},{"attributes":{"dimension":1,"plot":{"id":"3320b07d-d35c-4650-99c5-3b2f2200864a","subtype":"Figure","type":"Plot"},"ticker":{"id":"dab9d4c7-5895-491d-96f1-05fcbd73bf8d","type":"BasicTicker"}},"id":"21bfe6d3-fe10-49e6-87f4-f72097c94529","type":"Grid"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["Battle of Ferozeshah","Battle of Sobraon"],"cumulative":{"__ndarray__":"cPGdrd6j4L94wkCq0o7wvw==","dtype":"float64","shape":[2]},"general":["Tej Singh","Tej Singh"],"outcome":["D","D"],"value":{"__ndarray__":"cPGdrd6j4L+Bk+Omxnngvw==","dtype":"float64","shape":[2]},"year":{"__ndarray__":"AAAAAADUnEAAAAAAANicQA==","dtype":"float64","shape":[2]}}},"id":"44f5a3fa-4ea2-40ed-bc6b-ce9460d769da","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"44f5a3fa-4ea2-40ed-bc6b-ce9460d769da","type":"ColumnDataSource"},"glyph":{"id":"caa18571-7a43-4c33-bcf1-a50b3065862f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"cc3658af-fcbd-4457-a2c6-ddb02e3a475b","type":"VBar"},"selection_glyph":null,"view":{"id":"7b87e5ba-f3d6-4986-9f3b-57fb24b37444","type":"CDSView"}},"id":"070e51e3-4594-4759-b30c-8890a2d32e16","type":"GlyphRenderer"},{"attributes":{"source":{"id":"44f5a3fa-4ea2-40ed-bc6b-ce9460d769da","type":"ColumnDataSource"}},"id":"7b87e5ba-f3d6-4986-9f3b-57fb24b37444","type":"CDSView"},{"attributes":{},"id":"59000749-b685-4878-910d-9d13e81a7f04","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"cc3658af-fcbd-4457-a2c6-ddb02e3a475b","type":"VBar"},{"attributes":{"plot":null,"text":"Tej Singh (0 - 0 - 2)"},"id":"0d802270-db39-42b7-aefe-0cbfea8eaf00","type":"Title"},{"attributes":{"data_source":{"id":"44f5a3fa-4ea2-40ed-bc6b-ce9460d769da","type":"ColumnDataSource"},"glyph":{"id":"476f37ec-71f9-4801-86f4-d53ad517bf46","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2042b91b-9659-4893-be9f-699c3ddb77a1","type":"Line"},"selection_glyph":null,"view":{"id":"af1bb91c-8886-4ce8-9e9e-6e6dbfb995b9","type":"CDSView"}},"id":"b1dd30b8-9f87-488a-b2e2-dcecf292a4d0","type":"GlyphRenderer"}],"root_ids":["3320b07d-d35c-4650-99c5-3b2f2200864a"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"40866dba-5ca2-417c-bf25-f2bd3e011b6d","elementid":"e7f81422-4074-4dd3-b05c-ef441891da99","modelid":"3320b07d-d35c-4650-99c5-3b2f2200864a"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

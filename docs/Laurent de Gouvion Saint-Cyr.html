@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="b59bf9c1-7ac6-4571-a197-4cda18e0f7dc"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"8e81a10b-0bbf-40da-a563-ebc391c33bc7":{"roots":{"references":[{"attributes":{},"id":"9a1ae7f6-436c-4403-9b75-9e37d9b2e899","type":"BasicTicker"},{"attributes":{"factors":["V","D","I"],"palette":["Blue","Red","Yellow"]},"id":"cdf90565-4dfa-4594-9d08-4181be3ffafc","type":"CategoricalColorMapper"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"outcome","transform":{"id":"cdf90565-4dfa-4594-9d08-4181be3ffafc","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.5},"line_color":{"field":"outcome","transform":{"id":"cdf90565-4dfa-4594-9d08-4181be3ffafc","type":"CategoricalColorMapper"}},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"f9eb2cc7-28fc-4da3-b901-2dd14f82b3e1","type":"VBar"},{"attributes":{"callback":null,"factors":["First Battle of Polotsk","Second Battle of Polotsk","Battle of Dresden","Battle of Kulm"]},"id":"937366c9-de93-4044-b613-98e163294aa2","type":"FactorRange"},{"attributes":{"callback":null,"column_names":["battle","general","outcome","value","year","cumulative"],"data":{"battle":["First Battle of Polotsk","Second Battle of Polotsk","Battle of Dresden","Battle of Kulm"],"cumulative":{"__ndarray__":"QCk4+3HogT+iURQDg2ndvxDeSnWkza8/b3TpaQCf2b8=","dtype":"float64","shape":[4]},"general":["Laurent de Gouvion Saint-Cyr","Laurent de Gouvion Saint-Cyr","Laurent de Gouvion Saint-Cyr","Laurent de Gouvion Saint-Cyr"],"outcome":["I","D","V","D"],"value":{"__ndarray__":"QCk4+3HogT/sEu6Sxvjdv7LW3sibseA/MdCS+LSY3b8=","dtype":"float64","shape":[4]},"year":{"__ndarray__":"AAAAAABQnEAAAAAAAFCcQAAAAAAAVJxAAAAAAABUnEA=","dtype":"float64","shape":[4]}}},"id":"18e2e648-a892-44cb-9df4-530fab9a970b","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"44248a95-20dc-4ac5-9170-a8fdde037827","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"ee183b7a-37f3-4445-8c28-c74a1a7dc43e","subtype":"Figure","type":"Plot"},"ticker":{"id":"0fd662fc-0359-4d63-a75d-fbc376c21c3c","type":"CategoricalTicker"}},"id":"694e65ee-e477-4f8b-a20f-e7f16ed7af25","type":"CategoricalAxis"},{"attributes":{"plot":{"id":"ee183b7a-37f3-4445-8c28-c74a1a7dc43e","subtype":"Figure","type":"Plot"},"ticker":{"id":"0fd662fc-0359-4d63-a75d-fbc376c21c3c","type":"CategoricalTicker"}},"id":"ac1cc91c-fd16-4c3f-90e7-2f731e4df7ab","type":"Grid"},{"attributes":{"below":[{"id":"694e65ee-e477-4f8b-a20f-e7f16ed7af25","type":"CategoricalAxis"}],"left":[{"id":"59a214e6-7984-420b-8421-f88911d8c395","type":"LinearAxis"}],"plot_width":800,"renderers":[{"id":"694e65ee-e477-4f8b-a20f-e7f16ed7af25","type":"CategoricalAxis"},{"id":"ac1cc91c-fd16-4c3f-90e7-2f731e4df7ab","type":"Grid"},{"id":"59a214e6-7984-420b-8421-f88911d8c395","type":"LinearAxis"},{"id":"6a749ce5-b581-4071-95d1-605104902864","type":"Grid"},{"id":"6a6ece9d-505f-4a0d-935e-5571d29edfc4","type":"GlyphRenderer"},{"id":"2a056dff-1d26-442f-b02c-6fe7aa867c99","type":"GlyphRenderer"}],"title":{"id":"d05bf43a-cabf-42b2-a191-8a9849a90413","type":"Title"},"toolbar":{"id":"6ac681b7-7f96-442d-9422-f8c9c53b5b9a","type":"Toolbar"},"x_range":{"id":"937366c9-de93-4044-b613-98e163294aa2","type":"FactorRange"},"x_scale":{"id":"103a3cf4-1aaa-4901-95a9-0d84203fe7b3","type":"CategoricalScale"},"y_range":{"id":"3eaadb27-28b5-41db-9dd4-8e0232e137ae","type":"DataRange1d"},"y_scale":{"id":"c7de5a85-a782-45f2-bae3-eb9d26857a0b","type":"LinearScale"}},"id":"ee183b7a-37f3-4445-8c28-c74a1a7dc43e","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"103a3cf4-1aaa-4901-95a9-0d84203fe7b3","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"0ad3e3aa-5339-4688-b88e-ebe7d415db2a","type":"BasicTickFormatter"},"plot":{"id":"ee183b7a-37f3-4445-8c28-c74a1a7dc43e","subtype":"Figure","type":"Plot"},"ticker":{"id":"9a1ae7f6-436c-4403-9b75-9e37d9b2e899","type":"BasicTicker"}},"id":"59a214e6-7984-420b-8421-f88911d8c395","type":"LinearAxis"},{"attributes":{"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"1312fb69-cfed-4042-8ad0-4b9dd47f8216","type":"Line"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"value"},"width":{"value":0.9},"x":{"field":"battle"}},"id":"6df7220c-7c55-4748-be0c-cbaee3b57a27","type":"VBar"},{"attributes":{},"id":"0ad3e3aa-5339-4688-b88e-ebe7d415db2a","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Battle","@battle"],["Outcome","@outcome"],["WAR","@value"],["Cumulative WAR","@cumulative"],["Year","@year"]]},"id":"b8dd07a0-7751-4d68-843f-599b647cdd1a","type":"HoverTool"},{"attributes":{"dimension":1,"plot":{"id":"ee183b7a-37f3-4445-8c28-c74a1a7dc43e","subtype":"Figure","type":"Plot"},"ticker":{"id":"9a1ae7f6-436c-4403-9b75-9e37d9b2e899","type":"BasicTicker"}},"id":"6a749ce5-b581-4071-95d1-605104902864","type":"Grid"},{"attributes":{"plot":null,"text":"Laurent de Gouvion Saint-Cyr (1 - 1 - 2)"},"id":"d05bf43a-cabf-42b2-a191-8a9849a90413","type":"Title"},{"attributes":{"source":{"id":"18e2e648-a892-44cb-9df4-530fab9a970b","type":"ColumnDataSource"}},"id":"90dba92c-b4f6-4488-841e-eb16a3e8f380","type":"CDSView"},{"attributes":{"data_source":{"id":"18e2e648-a892-44cb-9df4-530fab9a970b","type":"ColumnDataSource"},"glyph":{"id":"1312fb69-cfed-4042-8ad0-4b9dd47f8216","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e73abbdd-2dec-478a-bfb3-ecb5fae273d6","type":"Line"},"selection_glyph":null,"view":{"id":"90dba92c-b4f6-4488-841e-eb16a3e8f380","type":"CDSView"}},"id":"6a6ece9d-505f-4a0d-935e-5571d29edfc4","type":"GlyphRenderer"},{"attributes":{},"id":"c7de5a85-a782-45f2-bae3-eb9d26857a0b","type":"LinearScale"},{"attributes":{},"id":"0fd662fc-0359-4d63-a75d-fbc376c21c3c","type":"CategoricalTicker"},{"attributes":{},"id":"44248a95-20dc-4ac5-9170-a8fdde037827","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"18e2e648-a892-44cb-9df4-530fab9a970b","type":"ColumnDataSource"},"glyph":{"id":"f9eb2cc7-28fc-4da3-b901-2dd14f82b3e1","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"6df7220c-7c55-4748-be0c-cbaee3b57a27","type":"VBar"},"selection_glyph":null,"view":{"id":"9e2497b5-d2bc-48c5-a738-57282c848b2a","type":"CDSView"}},"id":"2a056dff-1d26-442f-b02c-6fe7aa867c99","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"3eaadb27-28b5-41db-9dd4-8e0232e137ae","type":"DataRange1d"},{"attributes":{"source":{"id":"18e2e648-a892-44cb-9df4-530fab9a970b","type":"ColumnDataSource"}},"id":"9e2497b5-d2bc-48c5-a738-57282c848b2a","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"b8dd07a0-7751-4d68-843f-599b647cdd1a","type":"HoverTool"}]},"id":"6ac681b7-7f96-442d-9422-f8c9c53b5b9a","type":"Toolbar"},{"attributes":{"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":5},"x":{"field":"battle"},"y":{"field":"cumulative"}},"id":"e73abbdd-2dec-478a-bfb3-ecb5fae273d6","type":"Line"}],"root_ids":["ee183b7a-37f3-4445-8c28-c74a1a7dc43e"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"8e81a10b-0bbf-40da-a563-ebc391c33bc7","elementid":"b59bf9c1-7ac6-4571-a197-4cda18e0f7dc","modelid":"ee183b7a-37f3-4445-8c28-c74a1a7dc43e"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>
